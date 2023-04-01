@@ -1,0 +1,360 @@
+-- params : ...
+-- function num : 0 , upvalues : _ENV
+local DormRoleBaseEntity = class("DormRoleBaseEntity")
+local DormUtil = require("Game.Dorm.DormUtil")
+local DormEnum = require("Game.Dorm.DormEnum")
+local cs_DormAStarUtils = CS.DormAStarUtils
+local cs_ParentContraint = ((CS.UnityEngine).Animations).ParentConstraint
+local cs_ConstraintSource = ((CS.UnityEngine).Animations).ConstraintSource
+local speed = 0.5
+DormRoleBaseEntity.GetBelongRoomEntity = function(self)
+  -- function num : 0_0
+  return nil
+end
+
+DormRoleBaseEntity.GetDormRoleResName = function(self)
+  -- function num : 0_1
+end
+
+DormRoleBaseEntity.GetDormMoveSpeed = function(self)
+  -- function num : 0_2
+end
+
+DormRoleBaseEntity.TargetPosPossible = function(self, pos)
+  -- function num : 0_3
+  return (self:GetCharAStarComp()):IsPathPossible((self.transform).position, pos)
+end
+
+DormRoleBaseEntity.GetCharAStarComp = function(self)
+  -- function num : 0_4
+  return nil
+end
+
+DormRoleBaseEntity.DoMoveAStar = function(self, pos, completeAction, timeout, reachVelocity, noEndSpeedZero)
+  -- function num : 0_5
+  if not reachVelocity then
+    reachVelocity = false
+  end
+  if not noEndSpeedZero then
+    noEndSpeedZero = false
+  end
+  local possible = self:TargetPosPossible(pos)
+  if not possible then
+    return false
+  end
+  ;
+  (self:GetCharAStarComp()):MoveDestPos(pos, function(success)
+    -- function num : 0_5_0 , upvalues : noEndSpeedZero, self, completeAction
+    if not noEndSpeedZero then
+      self:SetMoveAniSpeed(0)
+    end
+    if completeAction ~= nil then
+      completeAction(success)
+    end
+  end
+, reachVelocity, timeout)
+  return true
+end
+
+DormRoleBaseEntity.ListenerAIEvent = function(self, eventId, action)
+  -- function num : 0_6
+  (self.aiCtrl):AddListenerForDormAI(eventId, action)
+end
+
+DormRoleBaseEntity.SetNavmeshCutActive = function(self, active)
+  -- function num : 0_7
+  (self:GetCharAStarComp()):SetNavMeshCutEnabled(active)
+end
+
+DormRoleBaseEntity.SetStarAIPathActive = function(self, active)
+  -- function num : 0_8
+  -- DECOMPILER ERROR at PC3: Confused about usage of register: R2 in 'UnsetPending'
+
+  ((self:GetCharAStarComp()).aiPath).canMove = active
+end
+
+DormRoleBaseEntity.SetUnityPos = function(self, pos)
+  -- function num : 0_9
+  -- DECOMPILER ERROR at PC1: Confused about usage of register: R2 in 'UnsetPending'
+
+  (self.transform).localPosition = pos
+end
+
+DormRoleBaseEntity.SetUnityWorldPos = function(self, pos)
+  -- function num : 0_10
+  -- DECOMPILER ERROR at PC1: Confused about usage of register: R2 in 'UnsetPending'
+
+  (self.transform).position = pos
+end
+
+DormRoleBaseEntity.SetLocalRotation = function(self, rot)
+  -- function num : 0_11
+  -- DECOMPILER ERROR at PC1: Confused about usage of register: R2 in 'UnsetPending'
+
+  (self.transform).localRotation = rot
+end
+
+DormRoleBaseEntity.SetObjectActive = function(self, active)
+  -- function num : 0_12
+  (self.gameObject):SetActive(active)
+end
+
+DormRoleBaseEntity.AnimatorCrossFade = function(self, aniName, transTime)
+  -- function num : 0_13
+  if not transTime then
+    transTime = 0.25
+  end
+  ;
+  (self.animator):CrossFadeInFixedTime(aniName, transTime)
+end
+
+DormRoleBaseEntity.AnimatorTrigger = function(self, trigger)
+  -- function num : 0_14
+  (self.animator):SetTrigger(trigger)
+end
+
+DormRoleBaseEntity.AnimatorStand = function(self)
+  -- function num : 0_15
+  (self.animator):ResetTrigger("DormFloat")
+  ;
+  (self.animator):SetTrigger("DormStand")
+end
+
+DormRoleBaseEntity.AnimatorFloat = function(self)
+  -- function num : 0_16
+  (self.animator):ResetTrigger("DormStand")
+  ;
+  (self.animator):SetTrigger("DormFloat")
+end
+
+DormRoleBaseEntity.ResetAnimatorTrigger = function(self)
+  -- function num : 0_17
+  (self.animator):ResetTrigger("DormFloat")
+  ;
+  (self.animator):ResetTrigger("DormStand")
+end
+
+DormRoleBaseEntity.SetMoveAniSpeed = function(self, value)
+  -- function num : 0_18
+  (self.animator):SetFloat("DormWalkSpeed", value)
+end
+
+DormRoleBaseEntity.DormLogicToWorld = function(self, logicpos)
+  -- function num : 0_19 , upvalues : DormUtil
+  local x, y = (DormUtil.FntCoord2XY)(logicpos)
+  local destPos = (DormUtil.GetFntUnityCoord)(x, y)
+  local worldPos = ((self.transform).parent):TransformPoint(destPos)
+  return worldPos
+end
+
+DormRoleBaseEntity.DoMoveInteractCurve = function(self, curveId, interActionId, pos)
+  -- function num : 0_20 , upvalues : DormUtil
+  local dormConfig = (DormUtil.GetDormConfigAsset)()
+  self.curTweener = (dormConfig:StartInteractMove(self:GetDormRoleResName(), interActionId, curveId - 1, self.transform, pos)):OnComplete(function()
+    -- function num : 0_20_0 , upvalues : self
+    self.curTweener = nil
+  end
+)
+end
+
+DormRoleBaseEntity.DoMoveUnityPos = function(self, pos, completeAction)
+  -- function num : 0_21 , upvalues : _ENV, speed
+  local destPos = pos
+  local curPos = (self.transform).position
+  local moveTime = (Vector3.Distance)(curPos, destPos) / (speed * self:GetDormMoveSpeed())
+  local forward = destPos - curPos
+  forward = (Vector3.New)(forward.x, forward.y, forward.z)
+  -- DECOMPILER ERROR at PC32: Confused about usage of register: R7 in 'UnsetPending'
+
+  if forward:Magnitude() > 0 then
+    (self.transform).rotation = (Quaternion.LookRotation)(forward, Vector3.up)
+  end
+  local lastPos = 0
+  self.curTweener = (((self.transform):DOMove(destPos, moveTime)):OnComplete(function()
+    -- function num : 0_21_0 , upvalues : self, completeAction
+    self.curTweener = nil
+    if completeAction ~= nil then
+      completeAction()
+    end
+  end
+)):OnUpdate(function()
+    -- function num : 0_21_1 , upvalues : _ENV, self, lastPos, moveTime
+    local curPos = (GR.GetTweenEaseValue)(self.curTweener)
+    local pos = curPos - lastPos
+    lastPos = curPos
+    local avgPos = Time.deltaTime / moveTime
+    local velocity = pos / avgPos
+    self:SetMoveAniSpeed(velocity)
+  end
+)
+end
+
+DormRoleBaseEntity.SetLogicPos = function(self, x, y)
+  -- function num : 0_22 , upvalues : DormUtil
+  self.x = x
+  self.y = y
+  local destPos = (DormUtil.GetFntUnityCoord)(x, y)
+  -- DECOMPILER ERROR at PC7: Confused about usage of register: R4 in 'UnsetPending'
+
+  ;
+  (self.transform).localPosition = destPos
+end
+
+DormRoleBaseEntity.SetCharacterPosFromUnity = function(self, unityPos)
+  -- function num : 0_23 , upvalues : DormUtil, DormEnum
+  local newX, newY = (DormUtil.UnityCoord2Fnt)(unityPos, (DormEnum.eDormFntType).Furniture)
+  local oldX = self.x
+  local oldY = self.y
+  local move = newX ~= oldX or newY ~= oldY
+  do
+    if move then
+      local roomEntity = self:GetBelongRoomEntity()
+      if roomEntity == nil or not (DormUtil.IsFntCoordLegal)(newX, newY, (roomEntity.roomData):GetRoomGridLengthCount()) then
+        move = false
+      end
+    end
+    if move then
+      self:SetLogicPos(newX, newY)
+    end
+    do return move, newX, newY end
+    -- DECOMPILER ERROR: 4 unprocessed JMP targets
+  end
+end
+
+DormRoleBaseEntity.QuickExitAIState = function(self)
+  -- function num : 0_24
+  if self.curTweener ~= nil then
+    (self.curTweener):Kill()
+    self.curTweener = nil
+  end
+  ;
+  (self.aiCtrl):AIInterruptCurrState(true)
+end
+
+DormRoleBaseEntity.AIStartExitWait = function(self, action, ...)
+  -- function num : 0_25
+  (self.aiCtrl):AIStartExitWait(action, ...)
+end
+
+DormRoleBaseEntity.DormForceStopMove = function(self)
+  -- function num : 0_26
+  local astarCharcter = self:GetCharAStarComp()
+  if astarCharcter ~= nil then
+    astarCharcter:ForceStopMove()
+  end
+  self:SetMoveAniSpeed(0)
+  if self.curTweener ~= nil then
+    (self.curTweener):Kill()
+    self.curTweener = nil
+  end
+end
+
+DormRoleBaseEntity.StartCmderCheckMove = function(self, minDistance, action)
+  -- function num : 0_27
+  (self:GetCharAStarComp()):StartCheckMove(minDistance, action)
+end
+
+DormRoleBaseEntity.StopCmderCheckMove = function(self)
+  -- function num : 0_28
+  (self:GetCharAStarComp()):StopCheckMove()
+end
+
+DormRoleBaseEntity.StartCheckAnimator = function(self, aniName, action)
+  -- function num : 0_29
+  (self:GetCharAStarComp()):StartCheckAnimator(aniName, action)
+end
+
+DormRoleBaseEntity.StopCheckAnimator = function(self)
+  -- function num : 0_30
+  (self:GetCharAStarComp()):StopCheckAnimator()
+end
+
+DormRoleBaseEntity.StartSmoothLookAtTarget = function(self, transform, action)
+  -- function num : 0_31
+  (self:GetCharAStarComp()):StartSmoothLookAtTarget(transform, action)
+end
+
+DormRoleBaseEntity.StartSmoothRotate = function(self, qua, action)
+  -- function num : 0_32
+  (self:GetCharAStarComp()):StartSmoothRotate(qua, action)
+end
+
+DormRoleBaseEntity.GetRandomOnePoint = function(self, gscore)
+  -- function num : 0_33 , upvalues : cs_DormAStarUtils
+  if not gscore then
+    gscore = 10000
+  end
+  local ok, pos = (cs_DormAStarUtils.RandomOnePoint)((self.transform).position, gscore)
+  return ok, pos
+end
+
+DormRoleBaseEntity.GetRandomBFSPoint = function(self, depth)
+  -- function num : 0_34 , upvalues : cs_DormAStarUtils
+  if not depth then
+    depth = 1
+  end
+  local ok, pos = (cs_DormAStarUtils.RandomBFSPoint)((self.transform).position, depth)
+  return ok, pos
+end
+
+DormRoleBaseEntity.GetRandomPathPoint = function(self, length, spread)
+  -- function num : 0_35 , upvalues : cs_DormAStarUtils
+  if not length then
+    length = 10
+  end
+  if not spread then
+    spread = 10000
+  end
+  local ok, pos = (cs_DormAStarUtils.RandomPathPoint)((self.transform).position, length, spread)
+  return ok, pos
+end
+
+DormRoleBaseEntity.GetRoleName = function(self)
+  -- function num : 0_36
+  return ""
+end
+
+DormRoleBaseEntity.DormAddParentConstraint = function(self)
+  -- function num : 0_37 , upvalues : _ENV, cs_ParentContraint, cs_ConstraintSource
+  if IsNull(self._roleConstraint) then
+    self._roleConstraint = (self.gameObject):AddComponent(typeof(cs_ParentContraint))
+    local source = cs_ConstraintSource()
+    source.weight = 1
+    ;
+    (self._roleConstraint):AddSource(source)
+  end
+  do
+    -- DECOMPILER ERROR at PC20: Confused about usage of register: R1 in 'UnsetPending'
+
+    ;
+    (self._roleConstraint).constraintActive = true
+    return self._roleConstraint
+  end
+end
+
+DormRoleBaseEntity.DormRemoveParentConstraint = function(self, real)
+  -- function num : 0_38 , upvalues : _ENV
+  if real then
+    DestroyUnityObject(self._roleConstraint)
+    self._roleConstraint = nil
+  else
+    -- DECOMPILER ERROR at PC13: Confused about usage of register: R2 in 'UnsetPending'
+
+    if not IsNull(self._roleConstraint) then
+      (self._roleConstraint).constraintActive = false
+    end
+  end
+end
+
+DormRoleBaseEntity.OnDelete = function(self)
+  -- function num : 0_39
+  (self.aiCtrl):AIInterruptCurrState()
+  self._roleConstraint = nil
+  if self.curTweener ~= nil then
+    (self.curTweener):Kill()
+    self.curTweener = nil
+  end
+end
+
+return DormRoleBaseEntity
+

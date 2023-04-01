@@ -1,0 +1,94 @@
+{
+  "Data": [
+    {
+      "ItemId": 5,
+      "Type": 2,
+      "Name": "test",
+      "PickSeId": [
+        37,
+        21
+      ],
+      "CollidingItemSeId": [
+        7,
+        19,
+        22
+      ],
+      "CollidingCharacterSeId": [
+        56
+      ]
+    },
+    {
+      "ItemId": 6,
+      "Type": 2,
+      "Name": "test",
+      "PickSeId": [
+        37,
+        21
+      ],
+      "CollidingItemSeId": [
+        7,
+        19,
+        22
+      ],
+      "CollidingCharacterSeId": [
+        56
+      ]
+    },
+    {
+      "ItemId": 7,
+      "Type": 2,
+      "Name": "test",
+      "PickSeId": [
+        37
+      ],
+      "CollidingItemSeId": [
+        7,
+        19,
+        22
+      ],
+      "CollidingCharacterSeId": [
+        56
+      ]
+    },
+    {
+      "ItemId": 8,
+      "Type": 2,
+      "Name": "test",
+      "PickSeId": [
+        21
+      ],
+      "CollidingItemSeId": [
+        7,
+        19,
+        22
+      ],
+      "CollidingCharacterSeId": [
+        57
+      ]
+    },
+    {
+      "ItemId": 300200,
+      "Type": 1,
+      "Name": "anna",
+      "PrefabPath": "Res/Character/anna/dfmodel_anna.prefab"
+    },
+    {
+      "ItemId": 301303,
+      "Type": 1,
+      "Name": "betty_newyear",
+      "PrefabPath": "Res/Character/betty_newyear/dfmodel_betty_newyear.prefab"
+    },
+    {
+      "ItemId": 302200,
+      "Type": 1,
+      "Name": "aki",
+      "PrefabPath": "Res/Character/aki/dfmodel_aki.prefab"
+    },
+    {
+      "ItemId": 302600,
+      "Type": 1,
+      "Name": "nanaka",
+      "PrefabPath": "Res/Character/nanaka/dfmodel_nanaka.prefab"
+    }
+  ]
+}

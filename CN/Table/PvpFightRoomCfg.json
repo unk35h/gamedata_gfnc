@@ -1,0 +1,25 @@
+{
+  "Data": [
+    {
+      "Roomtypeid": 1,
+      "BattleRoleNumber": 3,
+      "BattlePlayerNumber": 2,
+      "PrepareTime": 60,
+      "BattleTime": 600
+    },
+    {
+      "Roomtypeid": 2,
+      "BattleRoleNumber": 3,
+      "BattlePlayerNumber": 4,
+      "PrepareTime": 60,
+      "BattleTime": 600
+    },
+    {
+      "Roomtypeid": 3,
+      "BattleRoleNumber": 3,
+      "BattlePlayerNumber": 10,
+      "PrepareTime": 60,
+      "BattleTime": 600
+    }
+  ]
+}

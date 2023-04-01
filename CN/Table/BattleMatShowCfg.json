@@ -1,0 +1,245 @@
+{
+  "Data": [
+    {
+      "Id": 1,
+      "LoopCount": 1,
+      "ResetAlpha": true,
+      "WholeAlpha": 102
+    },
+    {
+      "Id": 2,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#BF5800",
+      "OutlineColorIntensity": 320,
+      "OutlineWider": 10,
+      "OutlineScale": 3,
+      "MainColor": "#FFB36C"
+    },
+    {
+      "Id": 3,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#BF0000",
+      "OutlineColorIntensity": 400,
+      "OutlineWider": 10,
+      "OutlineScale": 3,
+      "MainColor": "#AB3636"
+    },
+    {
+      "Id": 4,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#FF9151",
+      "OutlineColorIntensity": 400,
+      "OutlineWider": 10,
+      "OutlineScale": 3,
+      "MainColor": "#BF0507"
+    },
+    {
+      "Id": 5,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#FF5951",
+      "OutlineColorIntensity": 400,
+      "OutlineWider": 10,
+      "OutlineScale": 3,
+      "MainColor": "#BF0002"
+    },
+    {
+      "Id": 6,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#BF0000",
+      "OutlineColorIntensity": 400,
+      "OutlineWider": 10,
+      "OutlineScale": 3,
+      "MainColor": "#AB3636"
+    },
+    {
+      "Id": 7,
+      "LoopCount": 1,
+      "ResetAlpha": true,
+      "WholeAlpha": 102
+    },
+    {
+      "Id": 8,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#BF5800",
+      "OutlineColorIntensity": 320,
+      "OutlineWider": 10,
+      "OutlineScale": 3,
+      "MainColor": "#FFB36C"
+    },
+    {
+      "Id": 9,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#BF0000",
+      "OutlineColorIntensity": 400,
+      "OutlineWider": 10,
+      "OutlineScale": 3,
+      "MainColor": "#AB3636"
+    },
+    {
+      "Id": 10,
+      "LoopCount": 1,
+      "MainColor": "#2B8ED2"
+    },
+    {
+      "Id": 11,
+      "LoopCount": 1,
+      "ResetAlpha": true,
+      "WholeAlpha": 102
+    },
+    {
+      "Id": 12,
+      "LoopCount": 1,
+      "ResetAlpha": true,
+      "WholeAlpha": 102
+    },
+    {
+      "Id": 13,
+      "LoopCount": 1,
+      "ResetAlpha": true,
+      "WholeAlpha": 102
+    },
+    {
+      "Id": 14,
+      "LoopCount": 1,
+      "ResetAlpha": true,
+      "WholeAlpha": 102
+    },
+    {
+      "Id": 15,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#BF5800",
+      "OutlineColorIntensity": 320,
+      "OutlineWider": 10,
+      "OutlineScale": 3,
+      "MainColor": "#FFB36C"
+    },
+    {
+      "Id": 16,
+      "LoopCount": 1,
+      "ResetAlpha": true,
+      "WholeAlpha": 102
+    },
+    {
+      "Id": 17,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#BF5800",
+      "OutlineColorIntensity": 320,
+      "OutlineWider": 10,
+      "OutlineScale": 3,
+      "MainColor": "#FFB36C"
+    },
+    {
+      "Id": 18,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#BF0000",
+      "OutlineColorIntensity": 400,
+      "OutlineWider": 10,
+      "OutlineScale": 3,
+      "MainColor": "#AB3636"
+    },
+    {
+      "Id": 19,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#A100BF",
+      "OutlineColorIntensity": 400,
+      "OutlineWider": 10,
+      "OutlineScale": 3,
+      "MainColor": "#A100BF"
+    },
+    {
+      "Id": 20,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#BF0005",
+      "OutlineColorIntensity": 400,
+      "OutlineWider": 10,
+      "OutlineScale": 3
+    },
+    {
+      "Id": 21,
+      "IsContinued": true,
+      "DurationFrame": 15,
+      "LoopCount": 1,
+      "ResetAlpha": true,
+      "OutlineEnable": true
+    },
+    {
+      "Id": 22,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#FF009F",
+      "OutlineColorIntensity": 400,
+      "OutlineWider": 10,
+      "OutlineScale": 3
+    },
+    {
+      "Id": 23,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#B5B08A",
+      "OutlineColorIntensity": 300,
+      "OutlineWider": 10,
+      "OutlineScale": 3
+    },
+    {
+      "Id": 24,
+      "LoopCount": 1,
+      "ResetAlpha": true,
+      "WholeAlpha": 200,
+      "MainColor": "#2B8ED2"
+    },
+    {
+      "Id": 25,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#BF5B29",
+      "OutlineColorIntensity": 500,
+      "OutlineWider": 10,
+      "OutlineScale": 3
+    },
+    {
+      "Id": 26,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#8B10BF",
+      "OutlineColorIntensity": 500,
+      "OutlineWider": 10,
+      "OutlineScale": 3
+    },
+    {
+      "Id": 27,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#FF009F",
+      "OutlineColorIntensity": 400,
+      "OutlineWider": 10,
+      "OutlineScale": 3
+    },
+    {
+      "Id": 28,
+      "LoopCount": 1,
+      "ResetAlpha": true,
+      "WholeAlpha": 40
+    },
+    {
+      "Id": 29,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#FF009F",
+      "OutlineColorIntensity": 500,
+      "OutlineWider": 10,
+      "OutlineScale": 3
+    }
+  ]
+}

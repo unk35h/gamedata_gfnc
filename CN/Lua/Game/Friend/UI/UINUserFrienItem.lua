@@ -1,0 +1,117 @@
+-- params : ...
+-- function num : 0 , upvalues : _ENV
+local UINUserFrienItem = class("UINUserFrienItem", UIBaseNode)
+local base = UIBaseNode
+local UINUserHead = require("Game.CommonUI.Head.UINUserHead")
+UINUserFrienItem.OnInit = function(self)
+  -- function num : 0_0 , upvalues : _ENV, UINUserHead
+  (UIUtil.LuaUIBindingTable)(self.transform, self.ui)
+  ;
+  (UIUtil.AddButtonListener)((self.ui).friendItem, self, self.OnCliclFriendItem)
+  self.userHeadNode = (UINUserHead.New)()
+  ;
+  (self.userHeadNode):Init((self.ui).obj_UINUserHead)
+end
+
+UINUserFrienItem.InitWithFriendData = function(self, friendData, clickCallback, resLoader)
+  -- function num : 0_1
+  self.friendData = friendData
+  self.clickCallback = clickCallback
+  self.resLoader = resLoader
+  self:FrienItemRefreshUI()
+end
+
+UINUserFrienItem.FrienItemRefreshUI = function(self)
+  -- function num : 0_2
+  -- DECOMPILER ERROR at PC5: Confused about usage of register: R1 in 'UnsetPending'
+
+  ((self.ui).tex_Name).text = (self.friendData):GetAlias()
+  -- DECOMPILER ERROR at PC11: Confused about usage of register: R1 in 'UnsetPending'
+
+  ;
+  ((self.ui).tex_Level).text = (self.friendData):GetUserLevel()
+  ;
+  (self.userHeadNode):InitUserHeadUI((self.friendData):GetAvatarId(), (self.friendData):GetAvatarFrameId(), self.resLoader)
+  self:RefreshFrienOnlineState()
+end
+
+UINUserFrienItem.RefreshUserHead = function(self, avatarId)
+  -- function num : 0_3 , upvalues : _ENV
+  if avatarId == nil or avatarId == 0 then
+    return 
+  end
+  local cfg = (ConfigData.portrait)[avatarId]
+  if cfg == nil or cfg.icon == nil then
+    error("can\'t read portraitCfg with id:" .. tostring(avatarId))
+    return 
+  end
+  local icon = cfg.icon
+  -- DECOMPILER ERROR at PC36: Confused about usage of register: R4 in 'UnsetPending'
+
+  if (string.IsNullOrEmpty)(icon) ~= nil then
+    ((self.ui).img_UserHead).sprite = CRH:GetSprite(icon, CommonAtlasType.HeroHeadIcon)
+  end
+end
+
+UINUserFrienItem.RefreshUserHeadFrame = function(self, avatarFrameId)
+  -- function num : 0_4 , upvalues : _ENV
+  if avatarFrameId == nil or avatarFrameId == 0 then
+    return 
+  end
+  local cfg = (ConfigData.portrait_frame)[avatarFrameId]
+  if cfg == nil or cfg.icon == nil then
+    error("can\'t read portrait_frameCfg with id:" .. tostring(avatarFrameId))
+    return 
+  end
+  local icon = cfg.icon
+  -- DECOMPILER ERROR at PC36: Confused about usage of register: R4 in 'UnsetPending'
+
+  if (string.IsNullOrEmpty)(icon) ~= nil then
+    ((self.ui).img_Frame).sprite = CRH:GetSprite(icon, CommonAtlasType.HeroHeadIcon)
+  end
+end
+
+UINUserFrienItem.RefreshFrienOnlineState = function(self)
+  -- function num : 0_5 , upvalues : _ENV
+  local lastOfflineTs = (self.friendData):GetOnlineState()
+  if lastOfflineTs == nil then
+    ((self.ui).onLine):SetActive(false)
+    ;
+    ((self.ui).offLine):SetActive(false)
+    return 
+  else
+    if lastOfflineTs == 0 then
+      ((self.ui).onLine):SetActive(true)
+      ;
+      ((self.ui).offLine):SetActive(false)
+      return 
+    end
+  end
+  local timepassCtrl = ControllerManager:GetController(ControllerTypeId.TimePass, false)
+  local isToday, dayPassTimeStamp = timepassCtrl:GetIsLogicToday(lastOfflineTs)
+  ;
+  ((self.ui).onLine):SetActive(isToday)
+  ;
+  ((self.ui).offLine):SetActive(not isToday)
+  if not isToday then
+    local timeSpan = dayPassTimeStamp - lastOfflineTs
+    local day = (math.floor)(timeSpan / 86400)
+    ;
+    ((self.ui).tex_OffLineTime):SetIndex(0, tostring(day))
+  end
+end
+
+UINUserFrienItem.OnCliclFriendItem = function(self)
+  -- function num : 0_6
+  if self.clickCallback ~= nil then
+    (self.clickCallback)(self)
+  end
+end
+
+UINUserFrienItem.OnDelete = function(self)
+  -- function num : 0_7 , upvalues : base
+  (base.OnDelete)(self)
+end
+
+return UINUserFrienItem
+

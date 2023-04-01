@@ -1,0 +1,88 @@
+{
+  "Data": [
+    {
+      "Id": 1,
+      "ShowNumber": true,
+      "SpriteGap": -12
+    },
+    {
+      "Id": 2,
+      "Icon": "plus",
+      "ShowNumber": true,
+      "SpriteGap": -12
+    },
+    {
+      "Id": 3,
+      "ShowNumber": true,
+      "SpriteGap": -12
+    },
+    {
+      "Id": 4,
+      "Icon": "crit",
+      "ShowNumber": true,
+      "NumberFont": 1,
+      "SpriteGap": -12
+    },
+    {
+      "Id": 5,
+      "Icon": "realhurt",
+      "ShowNumber": true,
+      "SpriteGap": -12
+    },
+    {
+      "Id": 6,
+      "Icon": "dodge",
+      "SpriteGap": -12
+    },
+    {
+      "Id": 7,
+      "Icon": "shield",
+      "SpriteGap": -12
+    },
+    {
+      "Id": 8,
+      "Icon": "immune",
+      "SpriteGap": -12
+    },
+    {
+      "Id": 9,
+      "Icon": "HealCrit",
+      "ShowNumber": true,
+      "NumberFont": 1,
+      "SpriteGap": -12
+    },
+    {
+      "Id": 10,
+      "Icon": "shield_hit",
+      "ShowNumber": true,
+      "SpriteGap": -12
+    },
+    {
+      "Id": 11,
+      "Icon": "shield_up",
+      "ShowNumber": true,
+      "SpriteGap": -12
+    },
+    {
+      "Id": 12,
+      "Icon": "gedang",
+      "SpriteGap": -12
+    },
+    {
+      "Id": 13,
+      "Icon": "return",
+      "ShowNumber": true,
+      "SpriteGap": -12
+    },
+    {
+      "Id": 14,
+      "ShowNumber": true,
+      "SpriteGap": -12
+    },
+    {
+      "Id": 15,
+      "ShowNumber": true,
+      "SpriteGap": -12
+    }
+  ]
+}

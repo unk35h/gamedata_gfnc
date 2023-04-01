@@ -1,0 +1,3943 @@
+{
+  "Data": [
+    {
+      "Id": 1,
+      "Name": "召唤物",
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true
+    },
+    {
+      "Id": 2,
+      "Name": "小猪",
+      "Info": "守护者是下位净化者，常驻各扇区内部，负责监测正常程序的运行与权限。保护正常程序是它们的首要工作。",
+      "SrcId": 2011,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        511,
+        201101
+      ],
+      "MonsterTag": [
+        4
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 3,
+      "Name": "守护者",
+      "Info": "守护者是下位净化者，常驻各扇区内部，负责监测正常程序的运行与权限。保护正常程序是它们的首要工作。",
+      "SrcId": 2011,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        511,
+        201101
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 4,
+      "Name": "肃清者",
+      "Info": "肃清者是下位净化者，相较于其他下位净化者，它们能针对恶意驻留的异常程序，并具备一定的远程处理能力。",
+      "SrcId": 2002,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 3,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        502,
+        200201
+      ],
+      "MonsterTag": [
+        8,
+        2
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 5,
+      "Name": "捍卫者",
+      "Info": "捍卫者是下位净化者，部分常驻各扇区，部分于逆巴比伦塔待命。其较为出色的清除能力往往使它们成为异常程序清除行动中的主力。",
+      "SrcId": 2007,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        507,
+        200302
+      ],
+      "MonsterTag": [
+        4
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 6,
+      "Name": "肃清者II",
+      "Info": "肃清者是下位净化者，相较于其他下位净化者，它们能针对恶意驻留的异常程序，并具备一定的远程处理能力。",
+      "SrcId": 2014,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 3,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        502,
+        200201,
+        200203
+      ],
+      "MonsterTag": [
+        6
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 7,
+      "Name": "捍卫者II",
+      "Info": "捍卫者是下位净化者，部分常驻各扇区，部分于逆巴比伦塔待命。其较为出色的清除能力往往使它们成为异常程序清除行动中的主力。",
+      "SrcId": 2015,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        507,
+        200302,
+        200701
+      ],
+      "MonsterTag": [
+        4
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 8,
+      "Name": "守护者II",
+      "Info": "守护者是下位净化者，常驻各扇区内部，负责监测正常程序的运行与权限。保护正常程序是它们的首要工作。",
+      "SrcId": 2016,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        511,
+        201101,
+        201102
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 9,
+      "Name": "刚毅",
+      "Info": "刚毅是中位净化者中的执行者，或驻守于防火墙周围，或驻守于各扇区与逆巴比伦塔，较少受到调度。刚毅长于防御进攻，是对抗异常程序的前锋。",
+      "SrcId": 2008,
+      "Intensity": 2,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        508,
+        200801,
+        200802
+      ],
+      "MonsterTag": [
+        5,
+        8
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 10,
+      "Name": "节制",
+      "Info": "节制是中位净化者中的执行者，可自主接管少量下位净化者，在各方位给予目标关键且致命的打击。",
+      "SrcId": 2012,
+      "Intensity": 2,
+      "Career": 2,
+      "Camp": 3,
+      "Range": 3,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        512,
+        201201,
+        201202
+      ],
+      "MonsterTag": [
+        9,
+        4
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 11,
+      "Name": "望",
+      "Info": "望的分身",
+      "SrcId": 2034,
+      "Intensity": 3,
+      "Career": 4,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 120,
+      "EnemySkill": [
+        522,
+        202202
+      ],
+      "MonsterTag": [
+        11,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 12,
+      "Name": "鸟",
+      "SrcId": 2027,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        527
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 13,
+      "Name": "蛇",
+      "SrcId": 2028,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        528
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 14,
+      "Name": "骨龙",
+      "SrcId": 2033,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 2,
+      "Range": 2,
+      "MoveSpd": 200,
+      "EnemySkill": [
+        533
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 15,
+      "Name": "法杖",
+      "SrcId": 2037,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        537
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true
+    },
+    {
+      "Id": 16,
+      "Name": "贝欧尼斯-蛋糕",
+      "SrcId": 3007,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 10,
+      "EnemySkill": [
+        20052
+      ],
+      "MonsterTag": [
+        1
+      ]
+    },
+    {
+      "Id": 17,
+      "Name": "薇洛儿-照片",
+      "Info": "每次只会受到1点伤害，无法受到治疗",
+      "SrcId": 2037,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        541
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true
+    },
+    {
+      "Id": 18,
+      "Name": "席摩",
+      "Info": "席摩本摩",
+      "SrcId": 2041,
+      "Intensity": 3,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        100400
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 19,
+      "Name": "慷慨",
+      "Info": "慷慨是中位净化者中的执行者，进入狂暴状态后，即可通过拍击手段来对敌人造成无视一切防御的致命伤害，一旦被它盯上，就自求多福吧。",
+      "SrcId": 2025,
+      "Intensity": 2,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        525,
+        202501,
+        202502
+      ],
+      "MonsterTag": [
+        6
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20,
+      "Name": "熵化-肃清者",
+      "Info": "熵化后的肃清者安装了额外的发射装置，能同时对多个单位进行轰炸，作战时请留意防御较低的友方单位。",
+      "SrcId": 2039,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 2,
+      "Range": 5,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        502,
+        200203
+      ],
+      "MonsterTag": [
+        2,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 21,
+      "Name": "缠绕者",
+      "Info": "缠绕者是“熵”的基础单位之一，通过触手对周围敌人进行攻击，并且附带木马效果，可以让敌人瘫痪一段时间，请尽力避免围攻它。",
+      "SrcId": 2029,
+      "Intensity": 1,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        529,
+        202901
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        13
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 22,
+      "Name": "撞击者",
+      "Info": "撞击者是“熵”的基础单位之一，作为守卫单位，其本身的耐久并不出色，但可以将针对自身的伤害反弹到敌方单位身上，击破它需要一定的策略。",
+      "SrcId": 2030,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 2,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        530,
+        203001
+      ],
+      "MonsterTag": [
+        1,
+        8
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 23,
+      "Name": "熵化-忍耐",
+      "Info": "熵化后的忍耐闪避能力降低，但可使场上的其他“熵”单位变得更具攻击性，对敌人造成更高的技能伤害。",
+      "SrcId": 2031,
+      "Intensity": 2,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        531,
+        203101,
+        203102
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 24,
+      "Name": "晨星",
+      "Info": "熵化后的忍耐闪避能力降低，但可使场上的其他“熵”单位变得更具攻击性，对敌人造成更高的技能伤害。",
+      "SrcId": 2047,
+      "Intensity": 1,
+      "Career": 4,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        204701
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 25,
+      "Name": "喷溅者",
+      "Info": "喷溅者是下位净化者，具有较强的攻击性，拥有爆发性的远程连发伤害，建议优先将其击杀。",
+      "SrcId": 2044,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 2,
+      "Range": 3,
+      "MoveSpd": 120,
+      "EnemySkill": [
+        204400,
+        204401,
+        999001
+      ],
+      "MonsterTag": [
+        2,
+        5
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 26,
+      "Name": "悔恨",
+      "Info": "悔恨是下位净化者中较为强力的单位，进入守备状态时能够反弹普通攻击伤害。请尽快打断悔恨的守备状态。",
+      "SrcId": 2045,
+      "Intensity": 2,
+      "Career": 1,
+      "Camp": 2,
+      "Range": 1,
+      "MoveSpd": 120,
+      "EnemySkill": [
+        204500,
+        204501,
+        204502,
+        999001
+      ],
+      "MonsterTag": [
+        1,
+        8
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 27,
+      "Name": "悲叹",
+      "Info": "节制是下位净化者中较为强力的单位，使用电磁炮对区域敌人进行轰炸。长时间暴露在节制的电磁效果中非常危险，建议对付节制时分散阵型。",
+      "SrcId": 2042,
+      "Intensity": 2,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 2,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        542,
+        204203,
+        204201,
+        204202,
+        999001
+      ],
+      "MonsterTag": [
+        2,
+        3
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 28,
+      "Name": "窥探者",
+      "Info": "进阶后的突击者会因队友阵亡而大幅提升自身的攻击速度，建议优先将其击杀。",
+      "SrcId": 2043,
+      "Intensity": 1,
+      "Career": 5,
+      "Camp": 2,
+      "Range": 10,
+      "MoveSpd": 90,
+      "EnemySkill": [
+        543,
+        204301,
+        999001
+      ],
+      "MonsterTag": [
+        1,
+        4,
+        14
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 29,
+      "Name": "德菈赛",
+      "Info": "临时名称",
+      "SrcId": 1041,
+      "Intensity": 1,
+      "Career": 5,
+      "Camp": 1,
+      "Range": 3,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        104100,
+        104110,
+        104102
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 30,
+      "Name": "缠绕触手",
+      "Info": "每次只会受到1点伤害，无法受到治疗",
+      "SrcId": 2058,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 2,
+      "Range": 1,
+      "EnemySkill": [
+        205801
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 31,
+      "Name": "触手-β",
+      "Info": "夏活主脑技能3召唤的触手",
+      "SrcId": 2062,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        545,
+        204805
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 32,
+      "Name": "苏尔",
+      "Info": "末宵单人关",
+      "SrcId": 100300,
+      "Intensity": 2,
+      "Career": 3,
+      "Camp": 2,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        100300
+      ],
+      "MonsterTag": [
+        7
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 33,
+      "Name": "帕斯卡",
+      "Info": "末宵单人关",
+      "SrcId": 100100,
+      "Intensity": 2,
+      "Career": 5,
+      "Camp": 2,
+      "Range": 4,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        100100
+      ],
+      "MonsterTag": [
+        7
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 34,
+      "Name": "伪神",
+      "Info": "末宵单人关，木桩伪神",
+      "SrcId": 2067,
+      "Intensity": 3,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 1,
+      "EnemySkill": [
+        301104
+      ],
+      "MonsterTag": [
+        26
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 35,
+      "Name": "一团光",
+      "Info": "光呆本光",
+      "SrcId": 3011,
+      "Intensity": 3,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 1,
+      "EnemySkill": [
+        301104
+      ],
+      "MonsterTag": [
+        26
+      ]
+    },
+    {
+      "Id": 36,
+      "Name": "审判",
+      "Info": "审判（暂代）",
+      "SrcId": 2068,
+      "Intensity": 4,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        206800,
+        206801,
+        206802,
+        206803
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 37,
+      "Name": "咩冬尼娜",
+      "Info": "安东妮娜",
+      "SrcId": 2069,
+      "Intensity": 1,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 3,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        300101,
+        100201,
+        70028
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        20
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 38,
+      "Name": "重构者",
+      "Info": "重构者是下位净化者，也是最常见的医疗单位，它们会治疗场上所有的友方单位。",
+      "SrcId": 2006,
+      "Intensity": 1,
+      "Career": 5,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        506,
+        200602,
+        200604
+      ],
+      "MonsterTag": [
+        2,
+        11
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 39,
+      "Name": "安咩妮娜",
+      "Info": "安咩妮娜",
+      "SrcId": 2069,
+      "Intensity": 1,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 3,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        300101,
+        300103,
+        100201,
+        70028
+      ],
+      "MonsterTag": [
+        2
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 40,
+      "Name": "咩蒂",
+      "Info": "咩蒂",
+      "SrcId": 2070,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 5,
+      "Range": 1,
+      "MoveSpd": 100,
+      "EnemySkill": [
+        101300,
+        101301,
+        101302,
+        70033
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 41,
+      "Name": "波咩",
+      "Info": "波咩",
+      "SrcId": 2071,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 3,
+      "Range": 1,
+      "MoveSpd": 200,
+      "EnemySkill": [
+        102300,
+        102302,
+        102301,
+        70029
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 42,
+      "Name": "更生者",
+      "SrcId": 2076,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 3,
+      "Range": 1,
+      "MoveSpd": 200,
+      "EnemySkill": [
+        207600,
+        207602
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 43,
+      "Name": "忠贞之种",
+      "SrcId": 2082,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 3,
+      "Range": 1,
+      "MoveSpd": 200,
+      "EnemySkill": [
+        207704,
+        207703
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 44,
+      "Name": "熵化雕像怪-鸮",
+      "Info": "开场苏醒，沉默周围一格的敌人并每秒造成一定数额的伤害，对周围一格的友军进行持续充能",
+      "SrcId": 3026,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 10,
+      "EnemySkill": [
+        301502
+      ],
+      "MonsterTag": [
+        19
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 45,
+      "Name": "熵化雕像怪-鸮",
+      "Info": "开场苏醒，沉默周围一格的敌人并每秒造成一定数额的伤害，对周围一格的友军进行持续充能",
+      "SrcId": 3026,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 10,
+      "EnemySkill": [
+        301502
+      ],
+      "MonsterTag": [
+        19
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 46,
+      "Name": "雕像守卫-鸮",
+      "Info": "雕像-踩开关后启动，沉默周围敌人并使其持续掉血，未启动时使周围敌人充能持续增加",
+      "SrcId": 3025,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 10,
+      "EnemySkill": [
+        301502
+      ],
+      "MonsterTag": [
+        19
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 47,
+      "Name": "异傀*蟾",
+      "SrcId": 2081,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        208100,
+        208101
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 48,
+      "Name": "咩良",
+      "SrcId": 2085,
+      "Intensity": 1,
+      "Career": 4,
+      "Camp": 4,
+      "Range": 3,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        310701,
+        310702,
+        310703
+      ],
+      "MonsterTag": [
+        2
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 49,
+      "Name": "咩姆",
+      "SrcId": 2083,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 5,
+      "Range": 4,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        300501,
+        300502,
+        300503
+      ],
+      "MonsterTag": [
+        2
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 50,
+      "Name": "咩吉希尔达",
+      "SrcId": 2084,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        310601,
+        310602,
+        310603
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 51,
+      "Name": "幻妖罗斯巴特",
+      "SrcId": 2093,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 5,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        209300
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 52,
+      "Name": "噬地者-尾巴",
+      "SrcId": 3028,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 53,
+      "Name": "暗隐者",
+      "SrcId": 2086,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        208200,
+        208201
+      ],
+      "MonsterTag": [
+        1,
+        13
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 54,
+      "Name": "吐秽者",
+      "SrcId": 2087,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 75,
+      "EnemySkill": [
+        208300,
+        208301
+      ],
+      "MonsterTag": [
+        1,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 55,
+      "Name": "播孽者",
+      "SrcId": 2088,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 75,
+      "EnemySkill": [
+        208400,
+        208401
+      ],
+      "MonsterTag": [
+        1,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 56,
+      "Name": "噬地者",
+      "SrcId": 2089,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        208500,
+        208501
+      ],
+      "MonsterTag": [
+        2,
+        13
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 57,
+      "Name": "聚能激光台",
+      "SrcId": 2096,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        302901
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 58,
+      "Name": "机动犬",
+      "SrcId": 2095,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 5,
+      "MoveSpd": 200,
+      "EnemySkill": [
+        209500,
+        209501
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 59,
+      "Name": "鼓乐僚机",
+      "SrcId": 2105,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 200,
+      "EnemySkill": [
+        210000
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 60,
+      "Name": "管乐僚机",
+      "SrcId": 2104,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 5,
+      "MoveSpd": 200,
+      "EnemySkill": [
+        209900
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 61,
+      "Name": "机动犬",
+      "SrcId": 2095,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 5,
+      "MoveSpd": 200,
+      "EnemySkill": [
+        209500,
+        209502
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 62,
+      "Name": "绛雨*影",
+      "SrcId": 2107,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        106209
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 63,
+      "Name": "渊海随侍",
+      "SrcId": 2108,
+      "Intensity": 3,
+      "Career": 5,
+      "Camp": 2,
+      "Range": 4,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        210800,
+        210801,
+        210802
+      ],
+      "MonsterTag": [
+        2
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true,
+      "BreakId": 10102
+    },
+    {
+      "Id": 64,
+      "Name": "绛雨*影",
+      "SrcId": 2117,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        106209
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 141,
+      "Name": "骨龙-进阶",
+      "SrcId": 2033,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 2,
+      "Range": 2,
+      "MoveSpd": 200,
+      "EnemySkill": [
+        533,
+        101907
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 142,
+      "Name": "骨龙-进阶",
+      "SrcId": 2033,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 2,
+      "Range": 2,
+      "MoveSpd": 200,
+      "EnemySkill": [
+        533,
+        101907,
+        101908
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000,
+      "Name": "中枢·回环",
+      "Info": "每{0}秒治疗宿主{1}%算力的生命值，每{2}秒嘲讽周围2格敌人{3}秒。",
+      "SrcId": 3022,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        50018
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1001,
+      "Name": "中枢·聚合",
+      "Info": "开战时提升{0}%攻击和{1}%算力。",
+      "SrcId": 3023,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        50019
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1002,
+      "Name": "机臂·震荡",
+      "Info": "每{0}秒对周围1格敌人造成{1}%算力的算量伤害，并击退周围敌人1格及眩晕{2}秒",
+      "SrcId": 3019,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        50020
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1003,
+      "Name": "机臂·冲撞",
+      "Info": "每{0}秒选择距离宿主最远的敌人，带着宿主向敌人冲锋，对敌人造成{1}%算力的算量伤害并将其击飞至周围的空格",
+      "SrcId": 3020,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        50021
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1004,
+      "Name": "机臂·翻腾",
+      "Info": "每{0}秒将当前目标击飞至最远的空格",
+      "SrcId": 3021,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        50022
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1011,
+      "Name": "回环构装体·震荡",
+      "Info": "回环构装体·震荡",
+      "SrcId": 3024,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        1,
+        50018
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1012,
+      "Name": "回环构装体·冲撞",
+      "Info": "回环构装体·冲撞",
+      "SrcId": 3024,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        1,
+        50018
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1013,
+      "Name": "回环构装体·翻腾",
+      "Info": "回环构装体·翻腾",
+      "SrcId": 3024,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        1,
+        50018
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1014,
+      "Name": "聚合构装体·震荡",
+      "Info": "聚合构装体·震荡",
+      "SrcId": 3024,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        1,
+        50019
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1015,
+      "Name": "聚合构装体·冲撞",
+      "Info": "聚合构装体·冲撞",
+      "SrcId": 3024,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        1,
+        50019
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1016,
+      "Name": "聚合构装体·翻腾",
+      "Info": "聚合构装体·翻腾",
+      "SrcId": 3024,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        1,
+        50019
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1017,
+      "Name": "素体小人",
+      "Info": "素体小人",
+      "SrcId": 3024,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        1
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1018,
+      "Name": "brotato金币",
+      "SrcId": 3007,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        606
+      ],
+      "MonsterTag": [
+        1
+      ]
+    },
+    {
+      "Id": 1019,
+      "Name": "构装体",
+      "Info": "构装体",
+      "SrcId": 3024,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        1
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1020,
+      "Name": "守护节点诱饵",
+      "Info": "守护节点诱饵",
+      "SrcId": 3012,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true
+    },
+    {
+      "Id": 1021,
+      "Name": "琳德",
+      "Info": "琳德本琳",
+      "SrcId": 1065,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 3,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        106500,
+        106501,
+        106502
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 10014,
+      "Name": "骨龙-塔",
+      "SrcId": 203300,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 2,
+      "Range": 2,
+      "MoveSpd": 200,
+      "EnemySkill": [
+        533
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20000,
+      "Name": "刚毅",
+      "Info": "刚毅是下位净化者中较为强力的单位，其防御会随战斗的推进逐步升高，除此之外，它还拥有伤害不高却无视防御的飞刺技能。请尽力避免与刚毅的消耗战。",
+      "SrcId": 2008,
+      "Intensity": 2,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        508,
+        200802
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        8
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20001,
+      "Name": "刚毅",
+      "Info": "刚毅是下位净化者中较为强力的单位，其防御会随战斗的推进逐步升高，除此之外，它还拥有伤害不高却无视防御的飞刺技能。请尽力避免与刚毅的消耗战。",
+      "SrcId": 2008,
+      "Intensity": 2,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        508,
+        200801,
+        200802
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        8
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20002,
+      "Name": "信",
+      "Info": "中位净化者·信，坚定的信仰是其强大防御力的来源，如果不能击破信的防御，一切攻击都是徒劳。",
+      "SrcId": 2005,
+      "Intensity": 3,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        505,
+        200501,
+        200502,
+        200503
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        8
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20003,
+      "Name": "守护者",
+      "Info": "守护者是下位净化者，负责保护队友的安全。自身受到损伤时会激活硬化程序，需要更加强力的输出来应对。",
+      "SrcId": 2011,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        511,
+        201102,
+        201103
+      ],
+      "MonsterTag": [
+        1,
+        15
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20004,
+      "Name": "肃清者",
+      "Info": "肃清者是下位净化者，他们会瞄准目标的弱点。当目标生命降低时，他们的伤害会随之增加，作战时请注意及时治疗。",
+      "SrcId": 2002,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 3,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        502,
+        200202,
+        200205
+      ],
+      "MonsterTag": [
+        2,
+        5,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20005,
+      "Name": "捍卫者",
+      "Info": "捍卫者是下位净化者，在受到多个敌人包围时会激发自身潜力，将造成的伤害转化为自身生命。请尽力避免围攻捍卫者。",
+      "SrcId": 2007,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        507,
+        200701,
+        200702
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20006,
+      "Name": "守护者·进阶型",
+      "Info": "进阶后的守护者会自主修复自身受损的机体，比之前更为耐久，建议提升输出来突破进阶守护者的铜墙铁壁。",
+      "SrcId": 2016,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        511,
+        201101,
+        201102
+      ],
+      "MonsterTag": [
+        1,
+        15
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20007,
+      "Name": "肃清者·进阶型",
+      "Info": "进阶后的肃清者进一步强化了针对弱点进攻的能力。当目标生命降低时，他们的伤害会大幅度增加，作战时请注意及时治疗。",
+      "SrcId": 2002,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 3,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        502,
+        200201,
+        200202
+      ],
+      "MonsterTag": [
+        2,
+        5,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20008,
+      "Name": "节制",
+      "Info": "节制是下位净化者中较为强力的单位，使用电磁炮对区域敌人进行轰炸。长时间暴露在节制的电磁效果中非常危险，建议对付节制时分散阵型。",
+      "SrcId": 2012,
+      "Intensity": 2,
+      "Career": 2,
+      "Camp": 3,
+      "Range": 3,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        512,
+        201201,
+        201202
+      ],
+      "MonsterTag": [
+        2,
+        3
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20009,
+      "Name": "节制",
+      "Info": "节制是下位净化者中较为强力的单位，使用电磁炮对区域敌人进行轰炸。长时间暴露在节制的电磁效果中非常危险，建议对付节制时分散阵型。",
+      "SrcId": 2012,
+      "Intensity": 2,
+      "Career": 2,
+      "Camp": 3,
+      "Range": 3,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        512,
+        201201,
+        201202
+      ],
+      "MonsterTag": [
+        2,
+        3
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20010,
+      "Name": "捍卫者·进阶型",
+      "Info": "进阶后的捍卫者会挥舞镰刀对周围敌人造成大量伤害，是净化者中破除围攻的急先锋，建议分散站位将其击破。",
+      "SrcId": 2015,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        507,
+        200302,
+        200701
+      ],
+      "MonsterTag": [
+        1,
+        3
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20011,
+      "Name": "崇",
+      "Info": "中位净化者·崇，具有较强的攻击性。一旦接受了上位净化者下达的指令，她绝不会允许自己的任务失败。",
+      "SrcId": 2004,
+      "Intensity": 3,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        504,
+        200401,
+        200402,
+        200403
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20012,
+      "Name": "忍耐",
+      "Info": "忍耐是下位净化者中较为强力的单位，主要使用近战手段，但也很擅长使用刀波对远距离单位进行攻击。我方每阵亡一个单位都会使忍耐的作战能力增加，请务必注意。",
+      "SrcId": 2003,
+      "Intensity": 2,
+      "Career": 4,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        503,
+        200301
+      ],
+      "MonsterTag": [
+        1,
+        10
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20013,
+      "Name": "忍耐",
+      "Info": "忍耐是下位净化者中较为强力的单位，主要使用近战手段，但也很擅长使用刀波对远距离单位进行攻击。我方每阵亡一个单位都会使忍耐的作战能力增加，请务必注意。",
+      "SrcId": 2003,
+      "Intensity": 2,
+      "Career": 4,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        503,
+        200301,
+        200303
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        10
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20014,
+      "Name": "突击者",
+      "Info": "突击者是下位净化者，一旦发现敌方单位，会不顾一切地接近并进行自杀式袭击。请尽力避免突击者靠近我方血量薄弱的单位。",
+      "SrcId": 2001,
+      "Intensity": 1,
+      "Career": 4,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        501,
+        200102,
+        200103
+      ],
+      "MonsterTag": [
+        1,
+        4,
+        14
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20015,
+      "Name": "突击者·进阶型",
+      "Info": "进阶后的突击者会因队友阵亡而大幅提升自身的攻击速度，建议优先将其击杀。",
+      "SrcId": 2013,
+      "Intensity": 1,
+      "Career": 4,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        501,
+        200101,
+        200102
+      ],
+      "MonsterTag": [
+        1,
+        4,
+        14
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20016,
+      "Name": "重构者",
+      "Info": "重构者是下位净化者，也是最常见的医疗单位，它们会治疗场上所有的友方单位。",
+      "SrcId": 2006,
+      "Intensity": 1,
+      "Career": 5,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        506,
+        200602,
+        200603
+      ],
+      "MonsterTag": [
+        2,
+        11
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20017,
+      "Name": "重构者·进阶型",
+      "Info": "进阶后的重构者安装了强化程序，在治疗的时候还会激励队友，提升其攻击能力。如果不能优先解决，逐个击破它的队友也是一种选择。",
+      "SrcId": 2017,
+      "Intensity": 1,
+      "Career": 5,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        506,
+        200601,
+        200602
+      ],
+      "MonsterTag": [
+        2,
+        11
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20018,
+      "Name": "忍耐首领",
+      "Info": "忍耐是下位净化者中较为强力的单位，主要使用近战手段，但也很擅长使用刀波对远距离单位进行攻击。我方每阵亡一个单位都会使忍耐的作战能力增加，请务必注意。",
+      "SrcId": 2003,
+      "Intensity": 4,
+      "Career": 4,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        503,
+        200301,
+        200302,
+        200303
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        10
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20019,
+      "Name": "捍卫者",
+      "Info": "捍卫者是下位净化者，在受到多个敌人包围时会激发自身潜力，将造成的伤害转化为自身生命。请尽力避免围攻捍卫者。",
+      "SrcId": 2007,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        507
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20020,
+      "Name": "刚毅",
+      "Info": "刚毅是下位净化者中较为强力的单位，其防御会随战斗的推进逐步升高，除此之外，它还拥有伤害不高却无视防御的飞刺技能。请尽力避免与刚毅的消耗战。",
+      "SrcId": 2008,
+      "Intensity": 4,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        508,
+        200801,
+        200803
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        8
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20021,
+      "Name": "肃清者·进阶型",
+      "Info": "进阶后的肃清者进一步强化了针对弱点进攻的能力。当目标生命降低时，他们的伤害会大幅度增加，作战时请注意及时治疗。",
+      "SrcId": 2014,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 3,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        502,
+        200201,
+        200202
+      ],
+      "MonsterTag": [
+        2,
+        5,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20022,
+      "Name": "守护者",
+      "Info": "守护者是下位净化者，负责保护队友的安全。自身受到损伤时会激活硬化程序，需要更加强力的输出来应对。",
+      "SrcId": 2011,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        511
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20023,
+      "Name": "节制",
+      "Info": "节制是下位净化者中较为强力的单位，使用电磁炮对区域敌人进行轰炸。长时间暴露在节制的电磁效果中非常危险，建议对付节制时分散阵型。",
+      "SrcId": 2012,
+      "Intensity": 2,
+      "Career": 2,
+      "Camp": 3,
+      "Range": 3,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        512
+      ],
+      "MonsterTag": [
+        2
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20024,
+      "Name": "忍耐",
+      "Info": "忍耐是下位净化者中较为强力的单位，主要使用近战手段，但也很擅长使用刀波对远距离单位进行攻击。我方每阵亡一个单位都会使忍耐的作战能力增加，请务必注意。",
+      "SrcId": 2003,
+      "Intensity": 2,
+      "Career": 4,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        503
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20025,
+      "Name": "突击者",
+      "Info": "突击者是下位净化者，一旦发现敌方单位，会不顾一切地接近并进行自杀式袭击。请尽力避免突击者靠近我方血量薄弱的单位。",
+      "SrcId": 2001,
+      "Intensity": 1,
+      "Career": 4,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        501
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20026,
+      "Name": "刚毅",
+      "Info": "刚毅是下位净化者中较为强力的单位，其防御会随战斗的推进逐步升高，除此之外，它还拥有伤害不高却无视防御的飞刺技能。请尽力避免与刚毅的消耗战。",
+      "SrcId": 2008,
+      "Intensity": 2,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        508
+      ],
+      "MonsterTag": [
+        1
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20027,
+      "Name": "捍卫者",
+      "Info": "捍卫者是下位净化者，部分常驻各扇区，部分于逆巴比伦塔待命。其较为出色的清除能力往往使它们成为异常程序清除行动中的主力。",
+      "SrcId": 2007,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        507,
+        200701
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20028,
+      "Name": "渡鸦",
+      "Info": "渡鸦，将维护秩序视为唯一使命的上位净化者。此外，她还对战斗有着某种近乎狂热的偏好，极具攻击性。",
+      "SrcId": 2009,
+      "Intensity": 4,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        509,
+        200901,
+        200902,
+        200903
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        4
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20029,
+      "Name": "渡鸦·战争形态",
+      "Info": "被不明源头的力量所操控的渡鸦背离了她的初衷与使命，沉溺于战斗、破坏和杀戮所带来的愉悦之中，变得更加危险且无情。",
+      "SrcId": 2010,
+      "Intensity": 4,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        510,
+        200901,
+        201002,
+        201001,
+        200903
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        4
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20030,
+      "Name": "渡鸦·崩坏",
+      "Info": "被不明力量操纵心智，获得了压倒性力量的“渡鸦”。强大的力量在摧毁她的同时也带给她摧毁对手的力量，小心，不要被她带入毁灭的深渊……",
+      "SrcId": 2010,
+      "Intensity": 4,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        510,
+        200901,
+        201002,
+        201001,
+        201003
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        4
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20031,
+      "Name": "渡鸦·重组",
+      "Info": "毁坏的渡鸦被不明力量重组，用濒临崩溃的身体殊死一搏，和完全体相比各项能力急剧下降，弱点也变得明显，但仍是不可忽视的劲敌。",
+      "SrcId": 2010,
+      "Intensity": 4,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        509,
+        201001,
+        201003
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        4
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20032,
+      "Name": "谦逊",
+      "Info": "指引者是下位净化者，本身没有任何攻击与防卫能力。但它的特殊之处在于，可以将其他类型的净化者传送到战场上，为作战提供有力支持。",
+      "SrcId": 2018,
+      "Intensity": 2,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        201801
+      ],
+      "MonsterTag": [
+        7
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20033,
+      "Name": "圣餐",
+      "Info": "圣餐，使人捉摸不透的上位净化者。随心所欲的外表只是伪装，她比任何净化者都清楚自己想要什么，一旦疏忽，就会被她玩弄于股掌之间。",
+      "SrcId": 2019,
+      "Intensity": 4,
+      "Career": 4,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 180,
+      "EnemySkill": [
+        519,
+        201901,
+        201902,
+        201903,
+        201904
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        25
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20034,
+      "Name": "信使",
+      "Info": "信使，颇具正义感和使命感的上位净化者。她的温柔只留给正直之人，面对威胁扇区的异常程序，她会毫不留情地将其击杀。",
+      "SrcId": 2020,
+      "Intensity": 4,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 120,
+      "EnemySkill": [
+        520,
+        202001,
+        202002,
+        202003
+      ],
+      "MonsterTag": [
+        2,
+        4,
+        10
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20035,
+      "Name": "赫希佩勒斯",
+      "Info": "龙男",
+      "SrcId": 2021,
+      "Intensity": 4,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        521,
+        202101,
+        202102,
+        202103
+      ],
+      "MonsterTag": [
+        1,
+        6,
+        8
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20036,
+      "Name": "望",
+      "Info": "中位净化者·望，战斗时可以制造多个复制体，并借助这些复制体对异常程序造成毁灭打击。",
+      "SrcId": 2022,
+      "Intensity": 3,
+      "Career": 4,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        522,
+        202201,
+        202202,
+        202203
+      ],
+      "MonsterTag": [
+        1,
+        7,
+        13
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20037,
+      "Name": "爱",
+      "Info": "中位净化者·爱，能够快速修复周围受伤的净化者单位，是净化者方的坚实后盾。",
+      "SrcId": 2023,
+      "Intensity": 3,
+      "Career": 5,
+      "Camp": 1,
+      "Range": 2,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        523,
+        202301,
+        202302,
+        202303
+      ],
+      "MonsterTag": [
+        2,
+        11,
+        13
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20038,
+      "Name": "勤勉",
+      "Info": "勤勉是下位净化者中较为强力的单位，勤勉通常不会单兵作战，队友越多其攻击力越高。它会使用触手对接近的敌人进行多次攻击，请尽力避免单独面对勤勉。",
+      "SrcId": 2024,
+      "Intensity": 2,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        524,
+        202401,
+        202402
+      ],
+      "MonsterTag": [
+        1,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20039,
+      "Name": "慷慨",
+      "Info": "慷慨是中位净化者中的执行者，进入狂暴状态后，即可通过拍击手段来对敌人造成无视一切防御的致命伤害，一旦被它盯上，就自求多福吧。",
+      "SrcId": 2025,
+      "Intensity": 2,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        525,
+        202501,
+        202502
+      ],
+      "MonsterTag": [
+        1,
+        18
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20040,
+      "Name": "智",
+      "Info": "中位净化者·智，强大的对点输出可以轻易突破薄弱的防御，请务必留意她的狙击枪线。",
+      "SrcId": 2026,
+      "Intensity": 3,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 90,
+      "EnemySkill": [
+        526,
+        202601,
+        202602,
+        202603
+      ],
+      "MonsterTag": [
+        2,
+        4,
+        14
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20041,
+      "Name": "缠绕者",
+      "Info": "缠绕者是“熵”的基础单位之一，通过触手对周围敌人进行攻击，并且附带木马效果，可以让敌人瘫痪一段时间，请尽力避免围攻它。",
+      "SrcId": 2029,
+      "Intensity": 1,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        529,
+        202901
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        20
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20042,
+      "Name": "撞击者",
+      "Info": "撞击者是“熵”的基础单位之一，作为守卫单位，其本身的耐久并不出色，但可以将针对自身的伤害反弹到敌方单位身上，击破它需要一定的策略。",
+      "SrcId": 2030,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 2,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        530,
+        203001
+      ],
+      "MonsterTag": [
+        1,
+        8,
+        20
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20043,
+      "Name": "熵化-忍耐",
+      "Info": "熵化后的忍耐闪避能力降低，但可使场上的其他“熵”单位变得更具攻击性，对敌人造成更高的技能伤害。",
+      "SrcId": 2031,
+      "Intensity": 2,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        531,
+        203101,
+        203102
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20044,
+      "Name": "熵化-智",
+      "Info": "熵化后的智变得黑暗而怪异，同时也更加强大、危险和难以预测。她能更为熟练地操纵狙击步枪，摧毁挡在她面前的所有事物。",
+      "SrcId": 2032,
+      "Intensity": 3,
+      "Career": 2,
+      "Camp": 2,
+      "Range": 10,
+      "MoveSpd": 90,
+      "EnemySkill": [
+        532,
+        203201,
+        203202,
+        203203
+      ],
+      "MonsterTag": [
+        2,
+        4,
+        14
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20045,
+      "Name": "信使",
+      "Info": "信使，颇具正义感和使命感的上位净化者。她的温柔只留给正直之人，面对威胁扇区的异常程序，她会毫不留情地将其击杀。",
+      "SrcId": 2020,
+      "Intensity": 4,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 120,
+      "EnemySkill": [
+        520,
+        202001,
+        202002,
+        202003,
+        202004
+      ],
+      "MonsterTag": [
+        2,
+        4,
+        10
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20046,
+      "Name": "投掷者",
+      "Info": "投掷者是下位净化者，能从较远位置对敌方发动高伤害的投掷攻击，若不及时处理会造成很大的麻烦。",
+      "SrcId": 2036,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 75,
+      "EnemySkill": [
+        536,
+        203601,
+        203603
+      ],
+      "MonsterTag": [
+        2,
+        3,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20047,
+      "Name": "仁慈",
+      "Info": "谦逊是下位净化者中的特殊单位，本身没有任何攻击与防卫能力。但它可以将其他类型的净化者传送到战场上，为作战提供有力支持。",
+      "SrcId": 2035,
+      "Intensity": 2,
+      "Career": 5,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        535,
+        203501,
+        203502
+      ],
+      "MonsterTag": [
+        2,
+        11
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20048,
+      "Name": "投掷者·进阶型",
+      "Info": "进阶后的投掷者在保留了了远程攻击特性的同时，还将主武器换成了拥有燃烧效果的弹头，更加危险且致命。",
+      "SrcId": 2038,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 75,
+      "EnemySkill": [
+        536,
+        203601,
+        203602
+      ],
+      "MonsterTag": [
+        2,
+        3,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20049,
+      "Name": "熵化-肃清者",
+      "Info": "熵化后的肃清者安装了额外的发射装置，能同时对多个单位进行轰炸，作战时请留意防御较低的友方单位。",
+      "SrcId": 2039,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 2,
+      "Range": 5,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        502,
+        200203
+      ],
+      "MonsterTag": [
+        2,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20050,
+      "Name": "熵化-谦逊",
+      "SrcId": 2046,
+      "Intensity": 2,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        539
+      ],
+      "MonsterTag": [
+        7
+      ],
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20051,
+      "Name": "教谕者",
+      "Info": "私语者",
+      "SrcId": 2073,
+      "Intensity": 1,
+      "Career": 4,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 75,
+      "EnemySkill": [
+        207300,
+        207301,
+        207302
+      ],
+      "MonsterTag": [
+        2,
+        13
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20052,
+      "Name": "传道者",
+      "Info": "追风者",
+      "SrcId": 2074,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "EnemySkill": [
+        207400,
+        207401,
+        207402
+      ],
+      "MonsterTag": [
+        1,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20054,
+      "Name": "更生者",
+      "Info": "分裂者",
+      "SrcId": 2076,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        207600,
+        207601,
+        207602
+      ],
+      "MonsterTag": [
+        1,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20055,
+      "Name": "忠贞",
+      "Info": "平静",
+      "SrcId": 2077,
+      "Intensity": 1,
+      "Career": 4,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 225,
+      "EnemySkill": [
+        207704,
+        207701,
+        207702
+      ],
+      "MonsterTag": [
+        2,
+        7
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20056,
+      "Name": "福佑者",
+      "Info": "福佑者",
+      "SrcId": 2078,
+      "Intensity": 1,
+      "Career": 5,
+      "Camp": 1,
+      "Range": 6,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        207800,
+        207801,
+        207802
+      ],
+      "MonsterTag": [
+        11
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20057,
+      "Name": "熵化-乱子",
+      "Info": "乱子·熵化",
+      "SrcId": 2079,
+      "Intensity": 3,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        207900,
+        207901,
+        207902,
+        207903,
+        207904
+      ],
+      "MonsterTag": [
+        26
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20058,
+      "Name": "熵化-异相战士Ω",
+      "Info": "异相战士666",
+      "SrcId": 2080,
+      "Intensity": 4,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 3,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        208000,
+        208001,
+        208002,
+        208003,
+        208004
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20059,
+      "Name": "熵化-异相战士Ω-二阶段",
+      "Info": "异相战士666",
+      "SrcId": 2080,
+      "Intensity": 4,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 3,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        208000,
+        208001,
+        208003,
+        208004,
+        2080022,
+        2080032,
+        2080042
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20066,
+      "Name": "奥吉里",
+      "Info": "奥基里P1",
+      "SrcId": 2092,
+      "Intensity": 4,
+      "Career": 2,
+      "Camp": 2,
+      "Range": 10,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        209200,
+        209201,
+        209203,
+        209204,
+        209205
+      ],
+      "MonsterTag": [
+        2,
+        7,
+        13
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20067,
+      "Name": "奥吉里",
+      "Info": "奥基里P2",
+      "SrcId": 2092,
+      "Intensity": 4,
+      "Career": 2,
+      "Camp": 2,
+      "Range": 10,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        209200,
+        209201,
+        209203,
+        209206,
+        209204,
+        209205
+      ],
+      "MonsterTag": [
+        2,
+        7,
+        13
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20068,
+      "Name": "奥吉里",
+      "Info": "奥基里P3",
+      "SrcId": 2092,
+      "Intensity": 4,
+      "Career": 2,
+      "Camp": 2,
+      "Range": 10,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        209200,
+        209201,
+        209202,
+        209203,
+        209206,
+        209204,
+        209205
+      ],
+      "MonsterTag": [
+        2,
+        7,
+        13
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20069,
+      "Name": "奥吉塔",
+      "Info": "奥基塔",
+      "SrcId": 2094,
+      "Intensity": 4,
+      "Career": 2,
+      "Camp": 2,
+      "Range": 10,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        209400,
+        209401,
+        209402,
+        209403,
+        209404
+      ],
+      "MonsterTag": [
+        2,
+        3,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20070,
+      "Name": "守护者·进阶型",
+      "Info": "进阶后的守护者会自主修复自身受损的机体，比之前更为耐久，建议提升输出来突破进阶守护者的铜墙铁壁。",
+      "SrcId": 2016,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        511,
+        201104,
+        201102
+      ],
+      "MonsterTag": [
+        1,
+        15
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 20071,
+      "Name": "奥吉里",
+      "Info": "奥基里P1",
+      "SrcId": 2092,
+      "Intensity": 4,
+      "Career": 2,
+      "Camp": 2,
+      "Range": 10,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        209200,
+        209201,
+        209203,
+        209204,
+        209205
+      ],
+      "MonsterTag": [
+        2,
+        7,
+        13
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 55555,
+      "Name": "塔防路径隐形怪",
+      "SrcId": 3011,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 200,
+      "EnemySkill": [
+        70005
+      ],
+      "MonsterTag": [
+        1
+      ]
+    },
+    {
+      "Id": 200360,
+      "Name": "望",
+      "Info": "中位净化者·望，战斗时可以制造多个复制体，并借助这些复制体对异常程序造成毁灭打击。",
+      "SrcId": 2022,
+      "Intensity": 3,
+      "Career": 4,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        522,
+        202201,
+        202202,
+        202203
+      ],
+      "MonsterTag": [
+        1,
+        7,
+        13
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 200370,
+      "Name": "爱",
+      "Info": "中位净化者·爱，能够快速修复周围受伤的净化者单位，是净化者方的坚实后盾。",
+      "SrcId": 2023,
+      "Intensity": 3,
+      "Career": 5,
+      "Camp": 1,
+      "Range": 2,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        523,
+        202301,
+        202302,
+        202303
+      ],
+      "MonsterTag": [
+        2,
+        11,
+        13
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 920011,
+      "Name": "崇",
+      "Info": "中位净化者·崇，具有较强的攻击性。一旦接受了上位净化者下达的指令，她绝不会允许自己的任务失败。",
+      "SrcId": 2004,
+      "Intensity": 3,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        504,
+        2004010,
+        200402,
+        2004030
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 920040,
+      "Name": "智",
+      "Info": "中位净化者·智，强大的对点输出可以轻易突破薄弱的防御，请务必留意她的狙击枪线。",
+      "SrcId": 2026,
+      "Intensity": 3,
+      "Career": 2,
+      "Camp": 1,
+      "Range": 10,
+      "MoveSpd": 90,
+      "EnemySkill": [
+        526,
+        202603
+      ],
+      "MonsterTag": [
+        2,
+        4,
+        14
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000001,
+      "Name": "悲叹",
+      "Info": "节制是下位净化者中较为强力的单位，使用电磁炮对区域敌人进行轰炸。长时间暴露在节制的电磁效果中非常危险，建议对付节制时分散阵型。",
+      "SrcId": 2042,
+      "Intensity": 2,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 2,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        542,
+        204203,
+        204201,
+        204202,
+        999001
+      ],
+      "MonsterTag": [
+        2,
+        3,
+        21
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000002,
+      "Name": "窥探者",
+      "Info": "进阶后的突击者会因队友阵亡而大幅提升自身的攻击速度，建议优先将其击杀。",
+      "SrcId": 2043,
+      "Intensity": 1,
+      "Career": 5,
+      "Camp": 2,
+      "Range": 10,
+      "MoveSpd": 90,
+      "EnemySkill": [
+        543,
+        204301,
+        999001
+      ],
+      "MonsterTag": [
+        9,
+        11,
+        20
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000003,
+      "Name": "喷溅者",
+      "Info": "喷溅者是下位净化者，具有较强的攻击性，拥有爆发性的远程连发伤害，建议优先将其击杀。",
+      "SrcId": 2044,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 2,
+      "Range": 3,
+      "MoveSpd": 120,
+      "EnemySkill": [
+        204400,
+        204401,
+        999001
+      ],
+      "MonsterTag": [
+        2,
+        5,
+        20
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000004,
+      "Name": "悔恨",
+      "Info": "悔恨是下位净化者中较为强力的单位，进入守备状态时能够反弹普通攻击伤害。请尽快打断悔恨的守备状态。",
+      "SrcId": 2045,
+      "Intensity": 2,
+      "Career": 1,
+      "Camp": 2,
+      "Range": 1,
+      "MoveSpd": 120,
+      "EnemySkill": [
+        204500,
+        204501,
+        204502,
+        999001
+      ],
+      "MonsterTag": [
+        1,
+        8,
+        21
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000006,
+      "Name": "???",
+      "Info": "主脑本脑",
+      "SrcId": 2048,
+      "Intensity": 4,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 10,
+      "EnemySkill": [
+        204810
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000007,
+      "Name": "喷溅者",
+      "Info": "喷溅者是下位净化者，具有较强的攻击性，拥有爆发性的远程连发伤害，建议优先将其击杀。",
+      "SrcId": 2055,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 2,
+      "Range": 3,
+      "MoveSpd": 120,
+      "EnemySkill": [
+        204400,
+        204401,
+        999001
+      ],
+      "MonsterTag": [
+        2,
+        5,
+        20
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000008,
+      "Name": "悔恨",
+      "Info": "悔恨是下位净化者中较为强力的单位，进入守备状态时能够反弹普通攻击伤害。请尽快打断悔恨的守备状态。",
+      "SrcId": 2056,
+      "Intensity": 2,
+      "Career": 1,
+      "Camp": 2,
+      "Range": 1,
+      "MoveSpd": 120,
+      "EnemySkill": [
+        204500,
+        204501,
+        204502,
+        999001
+      ],
+      "MonsterTag": [
+        1,
+        8,
+        21
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000009,
+      "Name": "悲叹",
+      "Info": "节制是下位净化者中较为强力的单位，使用电磁炮对区域敌人进行轰炸。长时间暴露在节制的电磁效果中非常危险，建议对付节制时分散阵型。",
+      "SrcId": 2053,
+      "Intensity": 2,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 2,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        542,
+        204203,
+        204201,
+        204202,
+        999001
+      ],
+      "MonsterTag": [
+        2,
+        3,
+        21
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000010,
+      "Name": "窥探者",
+      "Info": "进阶后的突击者会因队友阵亡而大幅提升自身的攻击速度，建议优先将其击杀。",
+      "SrcId": 2054,
+      "Intensity": 1,
+      "Career": 5,
+      "Camp": 2,
+      "Range": 10,
+      "MoveSpd": 90,
+      "EnemySkill": [
+        543,
+        204301,
+        999001
+      ],
+      "MonsterTag": [
+        9,
+        11,
+        20
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000011,
+      "Name": "熵化-忍耐",
+      "Info": "熵化后的忍耐闪避能力降低，但可使场上的其他“熵”单位变得更具攻击性，对敌人造成更高的技能伤害。",
+      "SrcId": 2050,
+      "Intensity": 2,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 1,
+      "MoveSpd": 30,
+      "EnemySkill": [
+        531,
+        203101,
+        203102
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000012,
+      "Name": "熵化-肃清者",
+      "Info": "熵化后的肃清者安装了额外的发射装置，能同时对多个单位进行轰炸，作战时请留意防御较低的友方单位。",
+      "SrcId": 2052,
+      "Intensity": 1,
+      "Career": 2,
+      "Camp": 2,
+      "Range": 5,
+      "MoveSpd": 30,
+      "EnemySkill": [
+        502,
+        200203
+      ],
+      "MonsterTag": [
+        2,
+        12
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000013,
+      "Name": "撞击者",
+      "Info": "撞击者是“熵”的基础单位之一，作为守卫单位，其本身的耐久并不出色，但可以将针对自身的伤害反弹到敌方单位身上，击破它需要一定的策略。",
+      "SrcId": 2049,
+      "Intensity": 1,
+      "Career": 1,
+      "Camp": 2,
+      "Range": 1,
+      "MoveSpd": 10,
+      "EnemySkill": [
+        530,
+        203001
+      ],
+      "MonsterTag": [
+        1,
+        8
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000014,
+      "Name": "熵化-谦逊",
+      "Info": "指引者是下位净化者，本身没有任何攻击与防卫能力。但它的特殊之处在于，可以将其他类型的净化者传送到战场上，为作战提供有力支持。",
+      "SrcId": 2051,
+      "Intensity": 2,
+      "Career": 3,
+      "Camp": 2,
+      "Range": 1,
+      "EnemySkill": [
+        204601
+      ],
+      "MonsterTag": [
+        7
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000015,
+      "Name": "熵化-谦逊",
+      "Info": "指引者是下位净化者，本身没有任何攻击与防卫能力。但它的特殊之处在于，可以将其他类型的净化者传送到战场上，为作战提供有力支持。",
+      "SrcId": 2051,
+      "Intensity": 2,
+      "Career": 3,
+      "Camp": 2,
+      "Range": 1,
+      "EnemySkill": [
+        204602
+      ],
+      "MonsterTag": [
+        7
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000016,
+      "Name": "熵化-谦逊",
+      "Info": "指引者是下位净化者，本身没有任何攻击与防卫能力。但它的特殊之处在于，可以将其他类型的净化者传送到战场上，为作战提供有力支持。",
+      "SrcId": 2051,
+      "Intensity": 2,
+      "Career": 3,
+      "Camp": 2,
+      "Range": 1,
+      "EnemySkill": [
+        204603
+      ],
+      "MonsterTag": [
+        7
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000017,
+      "Name": "缠绕者",
+      "Info": "缠绕者是“熵”的基础单位之一，通过触手对周围敌人进行攻击，并且附带木马效果，可以让敌人瘫痪一段时间，请尽力避免围攻它。",
+      "SrcId": 2057,
+      "Intensity": 1,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 1,
+      "MoveSpd": 30,
+      "EnemySkill": [
+        529,
+        202901
+      ],
+      "MonsterTag": [
+        1,
+        3,
+        20
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000018,
+      "Name": "黛米乌尔",
+      "Info": "黛米乌尔",
+      "SrcId": 2048,
+      "Intensity": 4,
+      "Career": 4,
+      "Camp": 2,
+      "Range": 10,
+      "EnemySkill": [
+        600,
+        204800,
+        204801,
+        204802,
+        204803,
+        204804
+      ],
+      "MonsterTag": [
+        3,
+        7,
+        23
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000019,
+      "Name": "罪",
+      "Info": "罪（暂代）",
+      "SrcId": 2065,
+      "Intensity": 4,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        206500,
+        206501,
+        206502,
+        206503
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000020,
+      "Name": "罚",
+      "Info": "罚（暂代）",
+      "SrcId": 2066,
+      "Intensity": 4,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        206600,
+        206601,
+        206602,
+        206603
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000021,
+      "Name": "审判",
+      "Info": "审判（暂代）",
+      "SrcId": 2068,
+      "Intensity": 4,
+      "Career": 3,
+      "Camp": 1,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        206800,
+        206801,
+        206802,
+        206803
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
+      "Id": 1000022,
+      "Name": "伪神",
+      "Info": "伪神",
+      "SrcId": 2067,
+      "Intensity": 4,
+      "Career": 3,
+      "Camp": 2,
+      "Range": 1,
+      "MoveSpd": 150,
+      "EnemySkill": [
+        206700,
+        206701,
+        206702,
+        206703,
+        206704,
+        206706
+      ],
+      "MonsterTag": [
+        1,
+        5,
+        18
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "Data": [
+    {
+      "Id": 1,
+      "PreSign": "low_monster_"
+    },
+    {
+      "Id": 2,
+      "PreSign": "ew_",
+      "HasQuality": true
+    }
+  ]
+}

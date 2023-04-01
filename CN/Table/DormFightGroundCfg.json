@@ -1,0 +1,32 @@
+{
+  "Data": [
+    {
+      "GroundId": 5,
+      "Name": "test",
+      "OnFootCharacterSeId": [
+        56
+      ]
+    },
+    {
+      "GroundId": 6,
+      "Name": "test",
+      "OnFootCharacterSeId": [
+        56
+      ]
+    },
+    {
+      "GroundId": 7,
+      "Name": "test",
+      "OnFootCharacterSeId": [
+        56
+      ]
+    },
+    {
+      "GroundId": 8,
+      "Name": "test",
+      "OnFootCharacterSeId": [
+        57
+      ]
+    }
+  ]
+}

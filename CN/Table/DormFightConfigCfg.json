@@ -1,0 +1,68 @@
+{
+  "Data": [
+    {
+      "Id": 1,
+      "Config": "84DE68"
+    },
+    {
+      "Id": 2,
+      "Config": "E5FFDD"
+    },
+    {
+      "Id": 3,
+      "Config": "FF872D"
+    },
+    {
+      "Id": 4,
+      "Config": "FFE4D1"
+    },
+    {
+      "Id": 5,
+      "Config": "C34444"
+    },
+    {
+      "Id": 6,
+      "Config": "FFC5CA"
+    },
+    {
+      "Id": 7,
+      "Config": "6288D7"
+    },
+    {
+      "Id": 8,
+      "Config": "D8E5FF"
+    },
+    {
+      "Id": 9,
+      "Config": "6288D7"
+    },
+    {
+      "Id": 10,
+      "Config": "D8E5FF"
+    },
+    {
+      "Id": 11,
+      "Config": "6288D7"
+    },
+    {
+      "Id": 12,
+      "Config": "D8E5FF"
+    },
+    {
+      "Id": 13,
+      "Config": "0.6"
+    },
+    {
+      "Id": 14,
+      "Config": "1"
+    },
+    {
+      "Id": 15,
+      "Config": "2"
+    },
+    {
+      "Id": 16,
+      "Config": "3"
+    }
+  ]
+}

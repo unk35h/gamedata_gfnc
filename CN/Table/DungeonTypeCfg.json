@@ -1,0 +1,354 @@
+{
+  "Data": [
+    {
+      "Id": 1,
+      "Multiplier": 100,
+      "HpRecover": 1000,
+      "BenchRecover": 2000
+    },
+    {
+      "Id": 2,
+      "Multiplier": 400,
+      "HpRecover": 1000,
+      "BenchRecover": 2000
+    },
+    {
+      "Id": 3,
+      "Multiplier": 500,
+      "HpRecover": 1000,
+      "BenchRecover": 2000
+    },
+    {
+      "Id": 4,
+      "Multiplier": 500,
+      "HpRecover": 9999999,
+      "BenchRecover": 9999999
+    },
+    {
+      "Id": 6,
+      "Multiplier": 1000
+    },
+    {
+      "Id": 7,
+      "Multiplier": 1000
+    },
+    {
+      "Id": 8,
+      "Multiplier": 1000
+    },
+    {
+      "Id": 9,
+      "Multiplier": 1400
+    },
+    {
+      "Id": 10,
+      "Multiplier": 8000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1701,
+      "SectorMentionId": 11
+    },
+    {
+      "Id": 11,
+      "Multiplier": 8000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1702,
+      "SectorMentionId": 11
+    },
+    {
+      "Id": 12,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1703,
+      "SectorMentionId": 22
+    },
+    {
+      "Id": 14,
+      "Multiplier": 500,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1705,
+      "SectorMentionId": 11
+    },
+    {
+      "Id": 15,
+      "Multiplier": 500,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1706,
+      "SectorMentionId": 11
+    },
+    {
+      "Id": 16,
+      "Multiplier": 500,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1707,
+      "SectorMentionId": 11
+    },
+    {
+      "Id": 17,
+      "Multiplier": 500,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1708,
+      "SectorMentionId": 11
+    },
+    {
+      "Id": 18,
+      "Multiplier": 500,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1709,
+      "SectorMentionId": 11
+    },
+    {
+      "Id": 19,
+      "Multiplier": 500,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1710,
+      "SectorMentionId": 11
+    },
+    {
+      "Id": 20,
+      "Multiplier": 500,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1711,
+      "SectorMentionId": 11
+    },
+    {
+      "Id": 21,
+      "Multiplier": 500,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1712,
+      "SectorMentionId": 11
+    },
+    {
+      "Id": 22,
+      "Multiplier": 500,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1713,
+      "SectorMentionId": 11
+    },
+    {
+      "Id": 23,
+      "Multiplier": 500,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1714,
+      "SectorMentionId": 11
+    },
+    {
+      "Id": 24,
+      "Multiplier": 200,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 2200,
+      "SectorMentionId": 23
+    },
+    {
+      "Id": 25,
+      "Multiplier": 200,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 2300,
+      "SectorMentionId": 24
+    },
+    {
+      "Id": 26,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 2900,
+      "SectorMentionId": 26
+    },
+    {
+      "Id": 27,
+      "Multiplier": 600,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 3100,
+      "SectorMentionId": 27
+    },
+    {
+      "Id": 28,
+      "Multiplier": 200,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 3200,
+      "SectorMentionId": 28
+    },
+    {
+      "Id": 29,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1716,
+      "SectorMentionId": 29
+    },
+    {
+      "Id": 30,
+      "Multiplier": 200,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 3202,
+      "SectorMentionId": 30
+    },
+    {
+      "Id": 31,
+      "Multiplier": 500,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1717,
+      "SectorMentionId": 11
+    },
+    {
+      "Id": 32,
+      "Multiplier": 1200,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 3400
+    },
+    {
+      "Id": 33,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 3700,
+      "SectorMentionId": 31
+    },
+    {
+      "Id": 34,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 3900
+    },
+    {
+      "Id": 35,
+      "Multiplier": 200,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 4001
+    },
+    {
+      "Id": 36,
+      "Multiplier": 200,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 3001
+    },
+    {
+      "Id": 37,
+      "Multiplier": 500,
+      "HpRecover": 1000,
+      "BenchRecover": 1000
+    },
+    {
+      "Id": 38,
+      "Multiplier": 200,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 4300
+    },
+    {
+      "Id": 39,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 4500
+    },
+    {
+      "Id": 40,
+      "Multiplier": 200,
+      "HpRecover": 9999999,
+      "BenchRecover": 9999999
+    },
+    {
+      "Id": 41,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1720,
+      "SectorMentionId": 29
+    },
+    {
+      "Id": 42,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1721,
+      "SectorMentionId": 29
+    },
+    {
+      "Id": 43,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1722,
+      "SectorMentionId": 29
+    },
+    {
+      "Id": 44,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1723,
+      "SectorMentionId": 29
+    },
+    {
+      "Id": 500,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1400,
+      "SectorMentionId": 12
+    },
+    {
+      "Id": 501,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1400,
+      "SectorMentionId": 12
+    },
+    {
+      "Id": 502,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1400,
+      "SectorMentionId": 12
+    },
+    {
+      "Id": 503,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1400,
+      "SectorMentionId": 12
+    },
+    {
+      "Id": 504,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1400,
+      "SectorMentionId": 12
+    },
+    {
+      "Id": 505,
+      "Multiplier": 1000,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 1400,
+      "SectorMentionId": 12
+    }
+  ]
+}

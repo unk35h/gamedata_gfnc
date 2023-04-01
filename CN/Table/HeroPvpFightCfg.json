@@ -1,0 +1,49 @@
+{
+  "Data": [
+    {
+      "HeroTypeId": 300200,
+      "HeroModelId": 300200,
+      "Hp": 80000,
+      "MaxHp": 100000,
+      "Ep": 30000,
+      "MaxEp": 100000,
+      "EpRecoverPerSecond": 10000,
+      "EpRecoverCdMileSec": 2000,
+      "AttackPower": 30000,
+      "EpReduceByAttack": 25000,
+      "WalkSpeedMultiple": 1000,
+      "RunSpeedMultiple": 1000,
+      "EpReduceByRunPerSecond": 20000
+    },
+    {
+      "HeroTypeId": 301303,
+      "HeroModelId": 301303,
+      "Hp": 80000,
+      "MaxHp": 100000,
+      "Ep": 30000,
+      "MaxEp": 100000,
+      "EpRecoverPerSecond": 10000,
+      "EpRecoverCdMileSec": 2000,
+      "AttackPower": 30000,
+      "EpReduceByAttack": 25000,
+      "WalkSpeedMultiple": 1000,
+      "RunSpeedMultiple": 1000,
+      "EpReduceByRunPerSecond": 20000
+    },
+    {
+      "HeroTypeId": 302200,
+      "HeroModelId": 302200,
+      "Hp": 80000,
+      "MaxHp": 100000,
+      "Ep": 30000,
+      "MaxEp": 100000,
+      "EpRecoverPerSecond": 10000,
+      "EpRecoverCdMileSec": 2000,
+      "AttackPower": 30000,
+      "EpReduceByAttack": 25000,
+      "WalkSpeedMultiple": 1000,
+      "RunSpeedMultiple": 1000,
+      "EpReduceByRunPerSecond": 20000
+    }
+  ]
+}

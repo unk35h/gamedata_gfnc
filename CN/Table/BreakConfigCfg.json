@@ -1,0 +1,217 @@
+{
+  "Data": [
+    {
+      "BreakId": 10101,
+      "BreakNum": 200,
+      "DamageReduce": 500,
+      "DamageIncrease": 500,
+      "BreakTime": 150,
+      "IntervalTime": 150,
+      "Feature": [
+        1,
+        7,
+        13
+      ],
+      "IncreaseNum": [
+        1000,
+        1000,
+        4000
+      ],
+      "BreakEffect": 139,
+      "DesIcon": "break_skill",
+      "Description": "受到伤害降低并霸体，破防后，增益消失并且受到伤害增加。眩晕和击退可以额外降低破防值。",
+      "DescriptionLv": "获得200点破防值；处于防御状态时，受到的伤害降低50%；破防后，受到伤害额外增加50%，持续10秒；并破防的10秒后，会再次恢复防御性能；眩晕效果会造成2倍破防值降低，击退效果会造成5倍破防值降低",
+      "DesName": "防御性能"
+    },
+    {
+      "BreakId": 10102,
+      "BreakNum": 600,
+      "DamageReduce": 500,
+      "DamageIncrease": 500,
+      "BreakTime": 150,
+      "IntervalTime": 150,
+      "Feature": [
+        1,
+        7,
+        13
+      ],
+      "IncreaseNum": [
+        1000,
+        1000,
+        4000
+      ],
+      "BreakEffect": 139,
+      "DesIcon": "break_skill",
+      "Description": "受到伤害降低并霸体，破防后，增益消失并且受到伤害增加。眩晕和击退可以额外降低破防值。",
+      "DescriptionLv": "获得600点破防值；处于防御状态时，受到的伤害降低50%；破防后，受到伤害额外增加50%，持续10秒；并破防的10秒后，会再次恢复防御性能；眩晕效果会造成2倍破防值降低，击退效果会造成5倍破防值降低",
+      "DesName": "防御性能"
+    },
+    {
+      "BreakId": 10103,
+      "BreakNum": 1200,
+      "DamageReduce": 500,
+      "DamageIncrease": 500,
+      "BreakTime": 150,
+      "IntervalTime": 150,
+      "Feature": [
+        1,
+        7,
+        13
+      ],
+      "IncreaseNum": [
+        1000,
+        1000,
+        4000
+      ],
+      "BreakEffect": 139,
+      "DesIcon": "break_skill",
+      "Description": "受到伤害降低并霸体，破防后，增益消失并且受到伤害增加。眩晕和击退可以额外降低破防值。",
+      "DescriptionLv": "获得1200点破防值；处于防御状态时，受到的伤害降低50%；破防后，受到伤害额外增加50%，持续10秒；并破防的10秒后，会再次恢复防御性能；眩晕效果会造成2倍破防值降低，击退效果会造成5倍破防值降低",
+      "DesName": "防御性能"
+    },
+    {
+      "BreakId": 10104,
+      "BreakNum": 2100,
+      "DamageReduce": 500,
+      "DamageIncrease": 500,
+      "BreakTime": 150,
+      "IntervalTime": 150,
+      "Feature": [
+        1,
+        7,
+        13
+      ],
+      "IncreaseNum": [
+        1000,
+        1000,
+        4000
+      ],
+      "BreakEffect": 139,
+      "DesIcon": "break_skill",
+      "Description": "受到伤害降低并霸体，破防后，增益消失并且受到伤害增加。眩晕和击退可以额外降低破防值。",
+      "DescriptionLv": "获得2100点破防值；处于防御状态时，受到的伤害降低50%；破防后，受到伤害额外增加50%，持续10秒；并破防的10秒后，会再次恢复防御性能；眩晕效果会造成2倍破防值降低，击退效果会造成5倍破防值降低",
+      "DesName": "防御性能"
+    },
+    {
+      "BreakId": 10201,
+      "BreakNum": 200,
+      "DamageReduce": 200,
+      "DamageIncrease": 200,
+      "BreakTime": 150,
+      "IntervalTime": 150,
+      "Feature": [
+        1,
+        7,
+        13
+      ],
+      "IncreaseNum": [
+        1000,
+        1000,
+        4000
+      ],
+      "BreakEffect": 139,
+      "DesIcon": "break_skill",
+      "Description": "受到伤害降低并霸体，破防后，增益消失并且受到伤害增加。眩晕和击退可以额外降低破防值。",
+      "DescriptionLv": "获得200点破防值；处于防御状态时，受到的伤害降低20%；破防后，受到伤害额外增加20%，持续10秒；并破防的10秒后，会再次恢复防御性能；眩晕效果会造成2倍破防值降低，击退效果会造成5倍破防值降低",
+      "DesName": "防御性能"
+    },
+    {
+      "BreakId": 10202,
+      "BreakNum": 600,
+      "DamageReduce": 200,
+      "DamageIncrease": 200,
+      "BreakTime": 150,
+      "IntervalTime": 150,
+      "Feature": [
+        1,
+        7,
+        13
+      ],
+      "IncreaseNum": [
+        1000,
+        1000,
+        4000
+      ],
+      "BreakEffect": 139,
+      "DesIcon": "break_skill",
+      "Description": "受到伤害降低并霸体，破防后，增益消失并且受到伤害增加。眩晕和击退可以额外降低破防值。",
+      "DescriptionLv": "获得600点破防值；处于防御状态时，受到的伤害降低20%；破防后，受到伤害额外增加20%，持续10秒；并破防的10秒后，会再次恢复防御性能；眩晕效果会造成2倍破防值降低，击退效果会造成5倍破防值降低",
+      "DesName": "防御性能"
+    },
+    {
+      "BreakId": 10304,
+      "BreakNum": 2700,
+      "DamageReduce": 750,
+      "DamageIncrease": 750,
+      "BreakTime": 150,
+      "IntervalTime": 150,
+      "Feature": [
+        1,
+        7,
+        13
+      ],
+      "IncreaseNum": [
+        1000,
+        1000,
+        4000
+      ],
+      "BreakEffect": 139,
+      "DesIcon": "break_skill",
+      "Description": "受到伤害降低并霸体，破防后，增益消失并且受到伤害增加。眩晕和击退可以额外降低破防值。",
+      "DescriptionLv": "获得2700点破防值；处于防御状态时，受到的伤害降低75%；破防后，受到伤害额外增加75%，持续10秒；并破防的10秒后，会再次恢复防御性能；眩晕效果会造成2倍破防值降低，击退效果会造成5倍破防值降低",
+      "DesName": "防御性能"
+    },
+    {
+      "BreakId": 10401,
+      "BreakNum": 200,
+      "DamageReduce": 150,
+      "DamageIncrease": 100,
+      "BreakTime": 150,
+      "IntervalTime": 150,
+      "BreakEffect": 139,
+      "DesIcon": "break_skill",
+      "Description": "受到伤害降低并霸体，破防后，增益消失并且受到伤害增加。",
+      "DescriptionLv": "获得200点破防值；处于防御状态时，受到的伤害降低15%；破防后，受到伤害额外增加10%，持续10秒；并破防的10秒后，会再次恢复防御性能",
+      "DesName": "防御性能"
+    },
+    {
+      "BreakId": 10402,
+      "BreakNum": 600,
+      "DamageReduce": 150,
+      "DamageIncrease": 100,
+      "BreakTime": 150,
+      "IntervalTime": 150,
+      "BreakEffect": 139,
+      "DesIcon": "break_skill",
+      "Description": "受到伤害降低并霸体，破防后，增益消失并且受到伤害增加。",
+      "DescriptionLv": "获得600点破防值；处于防御状态时，受到的伤害降低15%；破防后，受到伤害额外增加10%，持续10秒；并破防的10秒后，会再次恢复防御性能",
+      "DesName": "防御性能"
+    },
+    {
+      "BreakId": 10403,
+      "BreakNum": 1200,
+      "DamageReduce": 150,
+      "DamageIncrease": 100,
+      "BreakTime": 150,
+      "IntervalTime": 150,
+      "BreakEffect": 139,
+      "DesIcon": "break_skill",
+      "Description": "受到伤害降低并霸体，破防后，增益消失并且受到伤害增加。",
+      "DescriptionLv": "获得1200点破防值；处于防御状态时，受到的伤害降低15%；破防后，受到伤害额外增加10%，持续10秒；并破防的10秒后，会再次恢复防御性能",
+      "DesName": "防御性能"
+    },
+    {
+      "BreakId": 10404,
+      "BreakNum": 2100,
+      "DamageReduce": 150,
+      "DamageIncrease": 100,
+      "BreakTime": 150,
+      "IntervalTime": 150,
+      "BreakEffect": 139,
+      "DesIcon": "break_skill",
+      "Description": "受到伤害降低并霸体，破防后，增益消失并且受到伤害增加。",
+      "DescriptionLv": "获得2100点破防值；处于防御状态时，受到的伤害降低15%；破防后，受到伤害额外增加10%，持续10秒；并破防的10秒后，会再次恢复防御性能",
+      "DesName": "防御性能"
+    }
+  ]
+}

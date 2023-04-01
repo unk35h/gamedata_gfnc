@@ -1,0 +1,22 @@
+{
+  "Data": [
+    {
+      "WeaponId": 3001,
+      "Type": 3,
+      "AttackValue": 10000,
+      "ThrowForce": 15.0,
+      "PickEpCost": 10000,
+      "HoldEpCost": 10000,
+      "ThrowEpCost": 10000
+    },
+    {
+      "WeaponId": 3002,
+      "Type": 3,
+      "AttackValue": 30000,
+      "ThrowForce": 20.0,
+      "PickEpCost": 10000,
+      "HoldEpCost": 10000,
+      "ThrowEpCost": 10000
+    }
+  ]
+}
