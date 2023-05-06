@@ -100,7 +100,7 @@ New_UIQuickPurchaseBox.SlideOut = function(self, isHome, popBackStack)
   -- function num : 0_3 , upvalues : _ENV
   if not self.slideInOver then
     if popBackStack then
-      (UIUtil.PopFromBackStack)()
+      (UIUtil.PopFromBackStackByUiTab)(self)
     end
     ;
     ((self.ui).tween_side):DOComplete()
@@ -117,11 +117,11 @@ New_UIQuickPurchaseBox.SlideOut = function(self, isHome, popBackStack)
   ((self.ui).tween_side):DOPlayBackwards()
   if popBackStack then
     if not self.isJumpIn then
-      (UIUtil.PopFromBackStack)()
+      (UIUtil.PopFromBackStackByUiTab)(self)
       self.isJumpIn = nil
     else
       ;
-      (UIUtil.PopFromBackStack)()
+      (UIUtil.PopFromBackStackByUiTab)(self)
     end
   end
 end
@@ -134,7 +134,7 @@ New_UIQuickPurchaseBox.SlideOutImmediately = function(self)
   ;
   ((self.ui).tween_side):DORewind(false)
   if (UIUtil.CheckTopIsWindow)(self:GetUIWindowTypeId()) then
-    (UIUtil.PopFromBackStack)()
+    (UIUtil.PopFromBackStackByUiTab)(self)
   end
 end
 
@@ -902,6 +902,8 @@ New_UIQuickPurchaseBox.TryClosePurchaseBox = function(self)
   else
     if (UIUtil.CheckTopIsWindow)(UIWindowTypeID.QuickBuy) then
       (UIUtil.ReturnUntil2Marker)(UIWindowTypeID.QuickBuy, true)
+    else
+      self:SlideOut(false, true)
     end
   end
 end

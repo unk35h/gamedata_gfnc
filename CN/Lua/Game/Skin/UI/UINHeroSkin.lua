@@ -38,6 +38,7 @@ UINHeroSkin.InitSkinItem = function(self, heroId, skinCfg, resLoader, clickFunc,
   ;
   (((self.ui).img_Skin).gameObject):SetActive(false)
   local picResPath = PathConsts:GetCharacterPicPath((self.resModelCfg).src_id_pic)
+  self.lastResPath = picResPath
   resLoader:LoadABAssetAsync(picResPath, function(texture)
     -- function num : 0_1_0 , upvalues : _ENV, self
     if not IsNull((self.ui).img_Skin) then
@@ -49,13 +50,13 @@ UINHeroSkin.InitSkinItem = function(self, heroId, skinCfg, resLoader, clickFunc,
     end
   end
 )
-  -- DECOMPILER ERROR at PC68: Confused about usage of register: R10 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC69: Confused about usage of register: R10 in 'UnsetPending'
 
   ;
   ((self.ui).tex_HeroName).text = self.skinCfg ~= nil and (LanguageUtil.GetLocaleText)((self.skinCfg).name) or ""
   if self.skinCfg == nil or not (self.skinCfg).theme then
     local skinTheme = (ConfigData.skinTheme)[(ConfigData.game_config).defaultSkinThemId]
-    -- DECOMPILER ERROR at PC93: Confused about usage of register: R11 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC94: Confused about usage of register: R11 in 'UnsetPending'
 
     ;
     ((self.ui).tex_SkinName).text = skinTheme ~= nil and (LanguageUtil.GetLocaleText)(skinTheme.name) or ""
@@ -211,8 +212,27 @@ UINHeroSkin.OnClickSkinItem = function(self)
   end
 end
 
+UINHeroSkin.TryReloadCtify = function(self, resLoader)
+  -- function num : 0_11 , upvalues : _ENV
+  local picResPath = PathConsts:GetCharacterPicPath((self.resModelCfg).src_id_pic)
+  if self.lastResPath ~= picResPath then
+    self.lastResPath = picResPath
+    resLoader:LoadABAssetAsync(picResPath, function(texture)
+    -- function num : 0_11_0 , upvalues : _ENV, self
+    if not IsNull((self.ui).img_Skin) then
+      (((self.ui).img_Skin).gameObject):SetActive(true)
+      -- DECOMPILER ERROR at PC14: Confused about usage of register: R1 in 'UnsetPending'
+
+      ;
+      ((self.ui).img_Skin).texture = texture
+    end
+  end
+)
+  end
+end
+
 UINHeroSkin.OnDelete = function(self)
-  -- function num : 0_11 , upvalues : _ENV, base
+  -- function num : 0_12 , upvalues : _ENV, base
   if self.cutDownTimer ~= nil then
     TimerManager:StopTimer(self.cutDownTimer)
     self.cutDownTimer = nil
@@ -222,7 +242,7 @@ UINHeroSkin.OnDelete = function(self)
 end
 
 UINHeroSkin.TryGetShopGoodsId = function(self)
-  -- function num : 0_12
+  -- function num : 0_13
   if self.shopGoodsData == nil then
     return nil, nil
   end

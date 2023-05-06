@@ -75,7 +75,7 @@ end
 
 UIWhiteDay2048Rank._HideAndBack = function(self)
   -- function num : 0_6 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIWhiteDay2048Rank.OnDelete = function(self)

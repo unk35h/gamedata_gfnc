@@ -6,6 +6,7 @@ local cs_Animations = (CS.UnityEngine).Animations
 local cs_ResLoader = CS.ResLoader
 local util = require("XLua.Common.xlua_util")
 local Stack = require("Framework.Lib.Stack")
+local WarChessGridData = require("Game.WarChess.Data.WarChessGridData")
 local WarChessHelper = require("Game.WarChess.WarChessHelper")
 local eWarChessEnum = require("Game.WarChess.eWarChessEnum")
 local eUnitCat = eWarChessEnum.eUnitCat
@@ -365,20 +366,17 @@ WarChessAnimationCtrl.UpdateWCFXs = function(self, unitFxes)
                   fxDic[fxId] = fxData
                   local showPos = entityData:GetEntityShowPos()
                   RunFunc = function()
-    -- function num : 0_9_1 , upvalues : isBind, _ENV, isOnce, self, fxData, showPos, fxDic, fxId
-    if isBind then
-      warn("bind effect not support yet")
-    else
-      if isOnce then
-        local effectGo = self:ShowWCEffect(fxData:GetWCFxResName(), showPos)
-        do
-          (self.PlayEffSound)(fxData:GetWCFxAudioId())
-          -- DECOMPILER ERROR at PC24: Confused about usage of register: R1 in 'UnsetPending'
+    -- function num : 0_9_1 , upvalues : isOnce, self, fxData, showPos, _ENV, fxDic, fxId
+    if isOnce then
+      local effectGo = self:ShowWCEffect(fxData:GetWCFxResName(), showPos)
+      do
+        (self.PlayEffSound)(fxData:GetWCFxAudioId())
+        -- DECOMPILER ERROR at PC17: Confused about usage of register: R1 in 'UnsetPending'
 
-          ;
-          (self.__commonFxDic)[fxData] = effectGo
-          self:UpdateWCEffect(fxData)
-          TimerManager:StartTimer(5, function()
+        ;
+        (self.__commonFxDic)[fxData] = effectGo
+        self:UpdateWCEffect(fxData)
+        TimerManager:StartTimer(5, function()
       -- function num : 0_9_1_0 , upvalues : self, fxData, effectGo, fxDic, fxId
       self:RecycleWCEffect(fxData:GetWCFxResName(), effectGo)
       -- DECOMPILER ERROR at PC9: Confused about usage of register: R0 in 'UnsetPending'
@@ -388,7 +386,6 @@ WarChessAnimationCtrl.UpdateWCFXs = function(self, unitFxes)
       fxDic[fxId] = nil
     end
 , self, true)
-        end
       end
     end
   end
@@ -507,8 +504,28 @@ WarChessAnimationCtrl.UpdateWCFXs = function(self, unitFxes)
   end
 end
 
+WarChessAnimationCtrl.UpdateClientFxData = function(self, data, fxId, isAdd, isOnce, isBind, groupId)
+  -- function num : 0_10 , upvalues : _ENV, WarChessGridData, eUnitCat, WarChessHelper
+  local entityCat, pos, gid = nil, nil, nil
+  if IsInstanceOfClass(data, WarChessGridData) then
+    entityCat = eUnitCat.grid
+    gid = data:GetWCGridBFId()
+    pos = (WarChessHelper.Pos2Coordination)(data:GetGridLogicPos())
+  else
+    entityCat = eUnitCat.entity
+    gid = data:GetWCEntityBFId()
+    pos = (WarChessHelper.Pos2Coordination)(data:GetEntityLogicPos())
+  end
+  local clinetUnitFxes = {
+{
+pos = {gid = gid, pos = pos}
+, entityCat = entityCat, id = fxId, isDelete = not isAdd, isOnce = isOnce, isBind = isBind, groupId = groupId or 0}
+}
+  self:UpdateWCFXs(clinetUnitFxes)
+end
+
 WarChessAnimationCtrl.PlayEffSound = function(audioId)
-  -- function num : 0_10 , upvalues : _ENV
+  -- function num : 0_11 , upvalues : _ENV
   if audioId == nil then
     return 
   end
@@ -518,7 +535,7 @@ WarChessAnimationCtrl.PlayEffSound = function(audioId)
 end
 
 WarChessAnimationCtrl.ShowWCEffect = function(self, effectName, showPos, bindGo)
-  -- function num : 0_11 , upvalues : _ENV
+  -- function num : 0_12 , upvalues : _ENV
   if (string.IsNullOrEmpty)(effectName) then
     error("fx name is nill pos:" .. tostring(showPos))
     return nil
@@ -559,7 +576,7 @@ WarChessAnimationCtrl.ShowWCEffect = function(self, effectName, showPos, bindGo)
 end
 
 WarChessAnimationCtrl.RecycleWCEffect = function(self, effectName, effectGo)
-  -- function num : 0_12 , upvalues : _ENV, Stack
+  -- function num : 0_13 , upvalues : _ENV, Stack
   if IsNull(effectGo) then
     return 
   end
@@ -572,14 +589,24 @@ WarChessAnimationCtrl.RecycleWCEffect = function(self, effectName, effectGo)
     ;
     (self.__effectPoolDic)[effectName] = stack
   end
-  stack:Push(effectGo)
-  ;
-  (effectGo.transform):SetParent(recycleRoot)
-  effectGo:SetActive(false)
+  if isGameDev then
+    for _,data in pairs(stack.data) do
+      if effectGo == data then
+        warn("recycle repeat warchess fx, pls check it!!!")
+        return 
+      end
+    end
+  end
+  do
+    stack:Push(effectGo)
+    ;
+    (effectGo.transform):SetParent(recycleRoot)
+    effectGo:SetActive(false)
+  end
 end
 
 WarChessAnimationCtrl.UpdateWCEffect = function(self, fxData)
-  -- function num : 0_13 , upvalues : _ENV
+  -- function num : 0_14 , upvalues : _ENV
   local effectGo = (self.__commonFxDic)[fxData]
   if effectGo == nil then
     return 
@@ -594,7 +621,7 @@ WarChessAnimationCtrl.UpdateWCEffect = function(self, fxData)
 end
 
 WarChessAnimationCtrl.RefreshAllWCBornFX = function(self, curView)
-  -- function num : 0_14 , upvalues : _ENV, WarChessHelper
+  -- function num : 0_15 , upvalues : _ENV, WarChessHelper
   local wait2RemoveList = {}
   for gridData,BornLoopFX in pairs(self.__bornFxDic) do
     local gridPos = gridData:GetGridLogicPos()
@@ -633,7 +660,7 @@ WarChessAnimationCtrl.RefreshAllWCBornFX = function(self, curView)
           (self.__bornFxDic)[gridData] = nil
           local BornEbdFX = self:ShowWCEffect("FXP_BornPositionEnd", gridData:GetGridShowPos())
           TimerManager:StartTimer(2, function()
-    -- function num : 0_14_0 , upvalues : _ENV, BornEbdFX, self
+    -- function num : 0_15_0 , upvalues : _ENV, BornEbdFX, self
     if IsNull(BornEbdFX) then
       return 
     end
@@ -650,8 +677,36 @@ WarChessAnimationCtrl.RefreshAllWCBornFX = function(self, curView)
   end
 end
 
+WarChessAnimationCtrl.PlayWcHeroQuickMoveFx = function(self, fromPosV3, toPosV3)
+  -- function num : 0_16 , upvalues : _ENV
+  if self._quickMoveFx == nil then
+    local leapEffectPath = "FX/Commander/RTS_Xuanzeyidong/FXP_pick-in" .. PathConsts.PrefabExtension
+    self._quickMoveFx = ((self.resloader):LoadABAsset(leapEffectPath)):Instantiate(((self.wcCtrl).bind).trans_effectRoot)
+    local leapEffectPathgo = "FX/Commander/RTS_Xuanzeyidong/FXP_pick-go" .. PathConsts.PrefabExtension
+    self._quickMoveFromFx = ((self.resloader):LoadABAsset(leapEffectPathgo)):Instantiate(((self.wcCtrl).bind).trans_effectRoot)
+  end
+  do
+    ;
+    (self._quickMoveFx):SetActive(false)
+    ;
+    (self._quickMoveFx):SetActive(true)
+    -- DECOMPILER ERROR at PC41: Confused about usage of register: R3 in 'UnsetPending'
+
+    ;
+    ((self._quickMoveFx).transform).position = toPosV3
+    ;
+    (self._quickMoveFromFx):SetActive(false)
+    ;
+    (self._quickMoveFromFx):SetActive(true)
+    -- DECOMPILER ERROR at PC52: Confused about usage of register: R3 in 'UnsetPending'
+
+    ;
+    ((self._quickMoveFromFx).transform).position = fromPosV3
+  end
+end
+
 WarChessAnimationCtrl.RefreshWCMoveableFX = function(self, curView)
-  -- function num : 0_15 , upvalues : _ENV, WarChessHelper
+  -- function num : 0_17 , upvalues : _ENV, WarChessHelper
   if self.__curMoveableGridDic == nil or not self.__couldShowMoveableFX then
     for gridData,moveableFX in pairs(self.__moveableFxDic) do
       self:RecycleWCEffect("FXP_MovableRange", moveableFX)
@@ -706,12 +761,12 @@ WarChessAnimationCtrl.RefreshWCMoveableFX = function(self, curView)
 end
 
 WarChessAnimationCtrl.WCSetMoveableFXVisiabel = function(self, teamData)
-  -- function num : 0_16
+  -- function num : 0_18
   self:__OnSelectTeam(teamData)
 end
 
 WarChessAnimationCtrl.RefreshWCMonsterMoveableFX = function(self, curView)
-  -- function num : 0_17 , upvalues : _ENV, WarChessHelper
+  -- function num : 0_19 , upvalues : _ENV, WarChessHelper
   if self.monsterMoveableGridDic == nil then
     for gridData,moveableFX in pairs(self.__monsterMoveableFxDic) do
       self:RecycleWCEffect("FXP_MovableRange_monster", moveableFX)
@@ -766,7 +821,7 @@ WarChessAnimationCtrl.RefreshWCMonsterMoveableFX = function(self, curView)
 end
 
 WarChessAnimationCtrl.SetMonsterMoveableGridDic = function(self, monsterMoveableGridDic, levelNubDic)
-  -- function num : 0_18 , upvalues : _ENV
+  -- function num : 0_20 , upvalues : _ENV
   if self.__monsterMoveableSpreadTimer then
     TimerManager:StopTimer(self.__monsterMoveableSpreadTimer)
     self.__monsterMoveableSpreadTimer = nil
@@ -786,7 +841,7 @@ WarChessAnimationCtrl.SetMonsterMoveableGridDic = function(self, monsterMoveable
       end
       self.monsterMoveableGridDic = {}
       self.__monsterMoveableSpreadTimer = TimerManager:StartTimer(intervalSeconds, function()
-    -- function num : 0_18_0 , upvalues : nubIdxSet, self, _ENV, levelNubDic
+    -- function num : 0_20_0 , upvalues : nubIdxSet, self, _ENV, levelNubDic
     if #nubIdxSet < 1 or not self.monsterMoveableGridDic then
       TimerManager:StopTimer(self.__monsterMoveableSpreadTimer)
       self.__monsterMoveableSpreadTimer = nil
@@ -818,7 +873,7 @@ WarChessAnimationCtrl.SetMonsterMoveableGridDic = function(self, monsterMoveable
 end
 
 WarChessAnimationCtrl.RefreshWCMonsterAlarmFX = function(self, entityData)
-  -- function num : 0_19 , upvalues : _ENV
+  -- function num : 0_21 , upvalues : _ENV
   -- DECOMPILER ERROR at PC13: Confused about usage of register: R2 in 'UnsetPending'
 
   if self.monsterAlarmGridDic == nil or (self.monsterAlarmGridDic)[entityData] == nil then
@@ -856,7 +911,7 @@ WarChessAnimationCtrl.RefreshWCMonsterAlarmFX = function(self, entityData)
 end
 
 WarChessAnimationCtrl.SetMonsterAlarmGridDic = function(self, monsterAlarmGridDic, levelNubDic, entityData, distance)
-  -- function num : 0_20 , upvalues : _ENV
+  -- function num : 0_22 , upvalues : _ENV
   if monsterAlarmGridDic and levelNubDic then
     local nubIdxSet = {}
     for idx,_ in pairs(levelNubDic) do
@@ -891,7 +946,7 @@ WarChessAnimationCtrl.SetMonsterAlarmGridDic = function(self, monsterAlarmGridDi
 end
 
 WarChessAnimationCtrl.RefeshAllEntityLinkFx = function(self)
-  -- function num : 0_21 , upvalues : _ENV
+  -- function num : 0_23 , upvalues : _ENV
   local groupListDic = ((self.wcCtrl).mapCtrl):GetAllLinkedEntityGroupData()
   for groupId,groupList in pairs(groupListDic) do
     if #groupList < 2 then
@@ -940,7 +995,7 @@ WarChessAnimationCtrl.RefeshAllEntityLinkFx = function(self)
 end
 
 WarChessAnimationCtrl.__OnEntityUpdate = function(self, entityData, isDelete)
-  -- function num : 0_22 , upvalues : _ENV
+  -- function num : 0_24 , upvalues : _ENV
   if not isDelete then
     return 
   end
@@ -971,18 +1026,18 @@ WarChessAnimationCtrl.__OnEntityUpdate = function(self, entityData, isDelete)
 end
 
 WarChessAnimationCtrl.RefreshVisableFX = function(self, curView)
-  -- function num : 0_23 , upvalues : _ENV, WarChessHelper
+  -- function num : 0_25 , upvalues : _ENV, WarChessHelper
   local wait2RemoveList = {}
   for fxData,moveableFX in pairs(self.__commonFxDic) do
     local gridPos = fxData:GetWCFxLogicPos()
-    if fxData:GetWCFXIsNotOnce() and (gridPos == nil or not (WarChessHelper.IsPointInRect)(curView, gridPos.x, gridPos.y)) then
+    if fxData:GetWCFXIsNotOnce() and not fxData:GetWCFXIsBound() and (gridPos == nil or not (WarChessHelper.IsPointInRect)(curView, gridPos.x, gridPos.y)) then
       self:RecycleWCEffect(fxData:GetWCFxResName(), moveableFX)
       ;
       (table.insert)(wait2RemoveList, fxData)
     end
   end
   for _,fxData in pairs(wait2RemoveList) do
-    -- DECOMPILER ERROR at PC37: Confused about usage of register: R8 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC41: Confused about usage of register: R8 in 'UnsetPending'
 
     (self.__commonFxDic)[fxData] = nil
   end
@@ -996,7 +1051,7 @@ WarChessAnimationCtrl.RefreshVisableFX = function(self, curView)
           if fxData:GetWCFXIsNotOnce() and (self.__commonFxDic)[fxData] == nil then
             local effectName = fxData:GetWCFxResName()
             local fx = self:ShowWCEffect(effectName, gridData:GetGridShowPos())
-            -- DECOMPILER ERROR at PC86: Confused about usage of register: R21 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC90: Confused about usage of register: R21 in 'UnsetPending'
 
             ;
             (self.__commonFxDic)[fxData] = fx
@@ -1005,23 +1060,37 @@ WarChessAnimationCtrl.RefreshVisableFX = function(self, curView)
         end
       end
       do
-        if entityData ~= nil then
-          local fxDic = entityData:GetFxDataDic()
-          for _,fxData in pairs(fxDic) do
-            if fxData:GetWCFXIsNotOnce() and (self.__commonFxDic)[fxData] == nil then
-              local effectName = fxData:GetWCFxResName()
-              local fx = self:ShowWCEffect(effectName, entityData:GetEntityShowPos())
-              entityData:SetEntityEffect(effectName, fx)
-              -- DECOMPILER ERROR at PC120: Confused about usage of register: R21 in 'UnsetPending'
+        do
+          if entityData ~= nil then
+            local fxDic = entityData:GetFxDataDic()
+            for _,fxData in pairs(fxDic) do
+              if fxData:GetWCFXIsNotOnce() and (self.__commonFxDic)[fxData] == nil then
+                local effectName = fxData:GetWCFxResName()
+                local fx = self:ShowWCEffect(effectName, entityData:GetEntityShowPos())
+                do
+                  do
+                    if fxData:GetWCFXIsBound() then
+                      local parentGo = entityData:WCEntityGetParentGO()
+                      ;
+                      (fx.transform):SetParent(parentGo.transform)
+                    end
+                    -- DECOMPILER ERROR at PC130: Confused about usage of register: R21 in 'UnsetPending'
 
-              ;
-              (self.__commonFxDic)[fxData] = fx
-              self:UpdateWCEffect(fxData)
+                    ;
+                    (self.__commonFxDic)[fxData] = fx
+                    self:UpdateWCEffect(fxData)
+                    -- DECOMPILER ERROR at PC134: LeaveBlock: unexpected jumping out DO_STMT
+
+                    -- DECOMPILER ERROR at PC134: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                    -- DECOMPILER ERROR at PC134: LeaveBlock: unexpected jumping out IF_STMT
+
+                  end
+                end
+              end
             end
           end
-        end
-        do
-          -- DECOMPILER ERROR at PC126: LeaveBlock: unexpected jumping out DO_STMT
+          -- DECOMPILER ERROR at PC136: LeaveBlock: unexpected jumping out DO_STMT
 
         end
       end
@@ -1030,7 +1099,7 @@ WarChessAnimationCtrl.RefreshVisableFX = function(self, curView)
 end
 
 WarChessAnimationCtrl.RefreshSingleCommonFX = function(self, data, savedFxes, isGrid)
-  -- function num : 0_24 , upvalues : _ENV, WarChessFXData
+  -- function num : 0_26 , upvalues : _ENV, WarChessFXData
   local fxDic = data:GetFxDataDic()
   for _,fx in pairs(savedFxes) do
     local fxId = fx.id
@@ -1047,7 +1116,7 @@ WarChessAnimationCtrl.RefreshSingleCommonFX = function(self, data, savedFxes, is
             self.__needRefreshFxNum = self.__needRefreshFxNum + 1
           else
             TimerManager:AddLateCommand(function()
-    -- function num : 0_24_0 , upvalues : self
+    -- function num : 0_26_0 , upvalues : self
     self.__NeedRefreshFxDataList = 0
     local ok, camView = ((self.wcCtrl).wcCamCtrl):GetCameraViewOnPlaneRect()
     if ok then
@@ -1066,7 +1135,7 @@ WarChessAnimationCtrl.RefreshSingleCommonFX = function(self, data, savedFxes, is
 end
 
 WarChessAnimationCtrl.UpdateSingleWCFX = function(self, data)
-  -- function num : 0_25 , upvalues : _ENV
+  -- function num : 0_27 , upvalues : _ENV
   local fxDic = data:GetFxDataDic()
   for _,fxData in pairs(fxDic) do
     self:UpdateWCEffect(fxData)
@@ -1074,7 +1143,7 @@ WarChessAnimationCtrl.UpdateSingleWCFX = function(self, data)
 end
 
 WarChessAnimationCtrl.RemoveSingleWCFX = function(self, data)
-  -- function num : 0_26 , upvalues : _ENV
+  -- function num : 0_28 , upvalues : _ENV
   local fxDic = data:GetFxDataDic()
   if fxDic == nil then
     return 
@@ -1093,7 +1162,7 @@ WarChessAnimationCtrl.RemoveSingleWCFX = function(self, data)
 end
 
 WarChessAnimationCtrl.__OnCameraMove = function(self, ok, curView, lastView)
-  -- function num : 0_27
+  -- function num : 0_29
   if ok then
     self:RefreshAllWCBornFX(curView)
     self:RefreshWCMoveableFX(curView)
@@ -1103,7 +1172,7 @@ WarChessAnimationCtrl.__OnCameraMove = function(self, ok, curView, lastView)
 end
 
 WarChessAnimationCtrl.__OnDeployTeamChange = function(self)
-  -- function num : 0_28
+  -- function num : 0_30
   local ok, camView = ((self.wcCtrl).wcCamCtrl):GetCameraViewOnPlaneRect()
   if ok then
     local curView = {xMin = camView[0], yMin = camView[1], xMax = camView[2], yMax = camView[3]}
@@ -1112,7 +1181,7 @@ WarChessAnimationCtrl.__OnDeployTeamChange = function(self)
 end
 
 WarChessAnimationCtrl.__OnSelectTeam = function(self, teamData)
-  -- function num : 0_29 , upvalues : _ENV
+  -- function num : 0_31 , upvalues : _ENV
   if self.__moveableSpreadTimer then
     TimerManager:StopTimer(self.__moveableSpreadTimer)
     self.__moveableSpreadTimer = nil
@@ -1135,7 +1204,7 @@ WarChessAnimationCtrl.__OnSelectTeam = function(self, teamData)
       end
       self.__curMoveableGridDic = {}
       self.__moveableSpreadTimer = TimerManager:StartTimer(intervalSeconds, function()
-    -- function num : 0_29_0 , upvalues : nubIdxSet, self, _ENV, levelNubDic
+    -- function num : 0_31_0 , upvalues : nubIdxSet, self, _ENV, levelNubDic
     if #nubIdxSet < 1 or not self.__curMoveableGridDic then
       TimerManager:StopTimer(self.__moveableSpreadTimer)
       self.__moveableSpreadTimer = nil
@@ -1166,7 +1235,7 @@ WarChessAnimationCtrl.__OnSelectTeam = function(self, teamData)
 end
 
 WarChessAnimationCtrl.SetCouldShowMoveableFX = function(self, isShow)
-  -- function num : 0_30 , upvalues : _ENV
+  -- function num : 0_32 , upvalues : _ENV
   if self.__couldShowMoveableFX == isShow then
     return 
   end
@@ -1188,7 +1257,7 @@ WarChessAnimationCtrl.SetCouldShowMoveableFX = function(self, isShow)
 end
 
 WarChessAnimationCtrl.UpdateWCSelectedFX = function(self, isShow, logicPos)
-  -- function num : 0_31 , upvalues : _ENV
+  -- function num : 0_33 , upvalues : _ENV
   if isShow then
     local showPos = (Vector3.New)(logicPos.x, 0, logicPos.y)
     if self.__selectFX == nil then
@@ -1211,7 +1280,7 @@ WarChessAnimationCtrl.UpdateWCSelectedFX = function(self, isShow, logicPos)
 end
 
 WarChessAnimationCtrl.AddBindFx4Team = function(self, teamData, eHeroBindFxType, fxResName)
-  -- function num : 0_32
+  -- function num : 0_34
   local teamIndex = teamData:GetWCTeamIndex()
   local key = teamIndex << 8 | eHeroBindFxType
   -- DECOMPILER ERROR at PC16: Unhandled construct in 'MakeBoolean' P1
@@ -1238,7 +1307,7 @@ WarChessAnimationCtrl.AddBindFx4Team = function(self, teamData, eHeroBindFxType,
 end
 
 WarChessAnimationCtrl.RemoveBindFxFromTeam = function(self, teamData, eHeroBindFxType)
-  -- function num : 0_33
+  -- function num : 0_35
   local teamIndex = teamData:GetWCTeamIndex()
   local key = teamIndex << 8 | eHeroBindFxType
   local fxResName = (self.__teamBindFxResDic)[key]
@@ -1259,7 +1328,7 @@ WarChessAnimationCtrl.RemoveBindFxFromTeam = function(self, teamData, eHeroBindF
 end
 
 WarChessAnimationCtrl.OnSceneLoadOver = function(self)
-  -- function num : 0_34
+  -- function num : 0_36
   local ok, camView = ((self.wcCtrl).wcCamCtrl):GetCameraViewOnPlaneRect()
   do
     if ok then
@@ -1274,7 +1343,7 @@ WarChessAnimationCtrl.OnSceneLoadOver = function(self)
 end
 
 WarChessAnimationCtrl.OnSceneUnload = function(self)
-  -- function num : 0_35 , upvalues : _ENV
+  -- function num : 0_37 , upvalues : _ENV
   self.__isLoadOver = false
   self.__isPlayingAnimationOfFX = false
   self.__effectPoolDic = {}
@@ -1288,6 +1357,8 @@ WarChessAnimationCtrl.OnSceneUnload = function(self)
   self.__commonFxDic = {}
   self.__teamBindFxDic = {}
   self.__selectFX = nil
+  self._quickMoveFx = nil
+  self._quickMoveFromFx = nil
   if self.__playAllShowCo ~= nil then
     (GR.StopCoroutine)(self.__playAllShowCo)
     ;
@@ -1297,7 +1368,7 @@ WarChessAnimationCtrl.OnSceneUnload = function(self)
 end
 
 WarChessAnimationCtrl.CleanAllFx = function(self)
-  -- function num : 0_36 , upvalues : _ENV
+  -- function num : 0_38 , upvalues : _ENV
   if self.__playAllShowCo ~= nil then
     (GR.StopCoroutine)(self.__playAllShowCo)
     ;
@@ -1339,7 +1410,7 @@ WarChessAnimationCtrl.CleanAllFx = function(self)
 end
 
 WarChessAnimationCtrl.Delete = function(self)
-  -- function num : 0_37 , upvalues : _ENV
+  -- function num : 0_39 , upvalues : _ENV
   self:CleanAllFx()
   if self.resloader ~= nil then
     (self.resloader):Put2Pool()

@@ -664,6 +664,10 @@ local data_name_list = {
 {"pay_gift_pop_des", "pay_gift_pop_des"}
 , 
 {"activity_angela_main", "activity_angela_main"}
+, 
+{"official_assist", "official_assist"}
+, 
+{"banner_mail_npic", "banner_mail_npic"}
 }
 ConfigDataLoader.LoadConfigHead = "LuaConfigs."
 ConfigDataLoader.GetConfigNameList = function()

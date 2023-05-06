@@ -111,8 +111,8 @@ UINWhiteDayTaskItem.__OnClickJump = function(self)
     local jumpArgs = (self.taskCfg).jumpArgs
     if jumpId ~= nil and jumpId > 0 then
       JumpManager:Jump(jumpId, function(jumpCallback)
-      -- function num : 0_2_0_0 , upvalues : _ENV
-      (UIUtil.OnClickBack)()
+      -- function num : 0_2_0_0 , upvalues : _ENV, self
+      (UIUtil.OnClickBackByUiTab)(self)
       if jumpCallback ~= nil then
         jumpCallback()
       end

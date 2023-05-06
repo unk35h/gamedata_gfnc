@@ -39,31 +39,31 @@ pre_para1 = {110011109}
 , 
 [1009] = {bg = "techTree_1", intro = 467986, line_id = 1009, name = 60806, name_en = "TECH09", num = 9, pre_condition = __rt_5, pre_para1 = __rt_6, pre_para2 = __rt_7}
 , 
-[2001] = {line_id = 2001, pre_para1 = __rt_8}
+[2001] = {line_id = 2001}
 , 
-[2002] = {line_id = 2002, num = 2, pre_para1 = __rt_8}
+[2002] = {line_id = 2002, num = 2}
 , 
-[2003] = {line_id = 2003, num = 3, pre_para1 = __rt_8}
+[2003] = {line_id = 2003, num = 3}
 , 
-[2004] = {line_id = 2004, num = 4, pre_para1 = __rt_8}
+[2004] = {line_id = 2004, num = 4}
 , 
-[2005] = {line_id = 2005, num = 5, pre_para1 = __rt_8}
+[2005] = {line_id = 2005, num = 5}
 , 
-[2006] = {line_id = 2006, num = 6, pre_para1 = __rt_8}
+[2006] = {line_id = 2006, num = 6}
 , 
-[2007] = {line_id = 2007, num = 7, pre_para1 = __rt_8}
+[2007] = {line_id = 2007, num = 7}
 , 
-[2008] = {line_id = 2008, num = 8, pre_para1 = __rt_8}
+[2008] = {line_id = 2008, num = 8}
 , 
-[2009] = {line_id = 2009, num = 9, pre_para1 = __rt_8}
+[2009] = {line_id = 2009, num = 9}
 , 
-[2010] = {line_id = 2010, num = 10, pre_para1 = __rt_8}
+[2010] = {line_id = 2010, num = 10}
 , 
-[2011] = {line_id = 2011, num = 11, pre_para1 = __rt_8}
+[2011] = {line_id = 2011, num = 11}
 , 
-[2012] = {line_id = 2012, num = 12, pre_para1 = __rt_8}
+[2012] = {line_id = 2012, num = 12}
 , 
-[2013] = {line_id = 2013, num = 13, pre_para1 = __rt_8}
+[2013] = {line_id = 2013, num = 13}
 , 
 [2014] = {line_id = 2014, num = 14, pre_condition = __rt_9, pre_para1 = __rt_10, pre_para2 = __rt_11}
 , 
@@ -73,19 +73,19 @@ pre_para1 = {110011109}
 , 
 [2017] = {line_id = 2017, num = 17, pre_condition = __rt_9, pre_para1 = __rt_10, pre_para2 = __rt_11}
 , 
-[3001] = {line_id = 3001}
+[3001] = {line_id = 3001, pre_para1 = __rt_12}
 , 
-[3002] = {line_id = 3002, num = 2}
+[3002] = {line_id = 3002, num = 2, pre_para1 = __rt_12}
 , 
-[3003] = {line_id = 3003, num = 3}
+[3003] = {line_id = 3003, num = 3, pre_para1 = __rt_12}
 , 
-[3004] = {line_id = 3004, num = 4}
+[3004] = {line_id = 3004, num = 4, pre_para1 = __rt_12}
 , 
-[3005] = {line_id = 3005, num = 5}
+[3005] = {line_id = 3005, num = 5, pre_para1 = __rt_12}
 , 
-[3006] = {line_id = 3006, num = 6}
+[3006] = {line_id = 3006, num = 6, pre_para1 = __rt_12}
 , 
-[3007] = {line_id = 3007, num = 7}
+[3007] = {line_id = 3007, num = 7, pre_para1 = __rt_12}
 , 
 [4001] = {bg = "techTree_1", intro = 440693, line_id = 4001, name = 440693, name_en = "TECH01", pre_para1 = __rt_2, story_id = 1101201}
 , 
@@ -111,113 +111,147 @@ pre_para1 = {110012109}
 , 
 [4009] = {bg = "techTree_1", intro = 467986, line_id = 4009, name = 60806, name_en = "TECH09", num = 9, pre_condition = __rt_5, pre_para1 = __rt_14, pre_para2 = __rt_7}
 , 
-[5001] = {line_id = 5001}
+[5001] = {line_id = 5001, pre_para1 = __rt_12}
 , 
-[5002] = {line_id = 5002, num = 2}
+[5002] = {line_id = 5002, num = 2, pre_para1 = __rt_12}
 , 
-[5003] = {line_id = 5003, num = 3}
+[5003] = {line_id = 5003, num = 3, pre_para1 = __rt_12}
 , 
-[5004] = {line_id = 5004, num = 4}
+[5004] = {line_id = 5004, num = 4, pre_para1 = __rt_12}
 , 
-[5005] = {line_id = 5005, num = 5}
+[5005] = {line_id = 5005, num = 5, pre_para1 = __rt_12}
 , 
-[5006] = {line_id = 5006, num = 6}
+[5006] = {line_id = 5006, num = 6, pre_para1 = __rt_12}
 , 
-[5007] = {line_id = 5007, num = 7}
+[5007] = {line_id = 5007, num = 7, pre_para1 = __rt_12}
 , 
-[5008] = {line_id = 5008, num = 8}
+[5008] = {line_id = 5008, num = 8, pre_para1 = __rt_12}
 , 
-[5009] = {line_id = 5009, num = 9}
+[5009] = {line_id = 5009, num = 9, pre_para1 = __rt_12}
 , 
-[5010] = {line_id = 5010, num = 10}
+[5010] = {line_id = 5010, num = 10, pre_para1 = __rt_12}
 , 
-[5011] = {line_id = 5011, num = 11}
+[5011] = {line_id = 5011, num = 11, pre_para1 = __rt_12}
 , 
-[5012] = {line_id = 5012, num = 12}
+[5012] = {line_id = 5012, num = 12, pre_para1 = __rt_12}
 , 
-[6001] = {line_id = 6001}
+[6001] = {line_id = 6001, pre_para1 = __rt_12}
 , 
-[6002] = {line_id = 6002, num = 2}
+[6002] = {line_id = 6002, num = 2, pre_para1 = __rt_12}
 , 
-[6003] = {line_id = 6003, num = 3}
+[6003] = {line_id = 6003, num = 3, pre_para1 = __rt_12}
 , 
-[6004] = {line_id = 6004, num = 4}
+[6004] = {line_id = 6004, num = 4, pre_para1 = __rt_12}
 , 
-[6005] = {line_id = 6005, num = 5}
+[6005] = {line_id = 6005, num = 5, pre_para1 = __rt_12}
 , 
-[6006] = {line_id = 6006, num = 6}
+[6006] = {line_id = 6006, num = 6, pre_para1 = __rt_12}
 , 
-[6007] = {line_id = 6007, num = 7}
+[6007] = {line_id = 6007, num = 7, pre_para1 = __rt_12}
 , 
-[6008] = {line_id = 6008, num = 8}
+[6008] = {line_id = 6008, num = 8, pre_para1 = __rt_12}
 , 
-[6009] = {line_id = 6009, num = 9}
+[6009] = {line_id = 6009, num = 9, pre_para1 = __rt_12}
 , 
-[6010] = {line_id = 6010, num = 10}
+[6010] = {line_id = 6010, num = 10, pre_para1 = __rt_12}
 , 
-[6011] = {line_id = 6011, num = 11}
+[6011] = {line_id = 6011, num = 11, pre_para1 = __rt_12}
 , 
-[6012] = {line_id = 6012, num = 12}
+[6012] = {line_id = 6012, num = 12, pre_para1 = __rt_12}
 , 
-[7001] = {line_id = 7001}
+[7001] = {line_id = 7001, pre_para1 = __rt_12}
 , 
-[7002] = {line_id = 7002, num = 2}
+[7002] = {line_id = 7002, num = 2, pre_para1 = __rt_12}
 , 
-[7003] = {line_id = 7003, num = 3}
+[7003] = {line_id = 7003, num = 3, pre_para1 = __rt_12}
 , 
-[7004] = {line_id = 7004, num = 4}
+[7004] = {line_id = 7004, num = 4, pre_para1 = __rt_12}
 , 
-[7005] = {line_id = 7005, num = 5}
+[7005] = {line_id = 7005, num = 5, pre_para1 = __rt_12}
 , 
-[7006] = {line_id = 7006, num = 6}
+[7006] = {line_id = 7006, num = 6, pre_para1 = __rt_12}
 , 
-[7007] = {line_id = 7007, num = 7}
+[7007] = {line_id = 7007, num = 7, pre_para1 = __rt_12}
 , 
-[7008] = {line_id = 7008, num = 8}
+[7008] = {line_id = 7008, num = 8, pre_para1 = __rt_12}
 , 
-[7009] = {line_id = 7009, num = 9}
+[7009] = {line_id = 7009, num = 9, pre_para1 = __rt_12}
 , 
-[7010] = {line_id = 7010, num = 10}
+[7010] = {line_id = 7010, num = 10, pre_para1 = __rt_12}
 , 
-[7011] = {line_id = 7011, num = 11}
+[7011] = {line_id = 7011, num = 11, pre_para1 = __rt_12}
 , 
-[7012] = {line_id = 7012, num = 12}
+[7012] = {line_id = 7012, num = 12, pre_para1 = __rt_12}
 , 
-[8001] = {line_id = 8001, pre_para1 = __rt_8}
+[8001] = {line_id = 8001}
 , 
-[8002] = {line_id = 8002, num = 2, pre_para1 = __rt_8}
+[8002] = {line_id = 8002, num = 2}
 , 
-[8003] = {line_id = 8003, num = 3, pre_para1 = __rt_8}
+[8003] = {line_id = 8003, num = 3}
 , 
-[8004] = {line_id = 8004, num = 4, pre_para1 = __rt_8}
+[8004] = {line_id = 8004, num = 4}
 , 
-[8005] = {line_id = 8005, num = 5, pre_para1 = __rt_8}
+[8005] = {line_id = 8005, num = 5}
 , 
-[8006] = {line_id = 8006, num = 6, pre_para1 = __rt_8}
+[8006] = {line_id = 8006, num = 6}
 , 
-[8007] = {line_id = 8007, num = 7, pre_para1 = __rt_8}
+[8007] = {line_id = 8007, num = 7}
 , 
-[8008] = {line_id = 8008, num = 8, pre_para1 = __rt_8}
+[8008] = {line_id = 8008, num = 8}
 , 
-[8009] = {line_id = 8009, num = 9, pre_para1 = __rt_8}
+[8009] = {line_id = 8009, num = 9}
 , 
-[8010] = {line_id = 8010, num = 10, pre_para1 = __rt_8}
+[8010] = {line_id = 8010, num = 10}
 , 
-[8011] = {line_id = 8011, num = 11, pre_para1 = __rt_8}
+[8011] = {line_id = 8011, num = 11}
 , 
-[8012] = {line_id = 8012, num = 12, pre_para1 = __rt_8}
+[8012] = {line_id = 8012, num = 12}
 , 
-[8013] = {line_id = 8013, num = 13, pre_para1 = __rt_8}
+[8013] = {line_id = 8013, num = 13}
 , 
-[8014] = {line_id = 8014, num = 14, pre_para1 = __rt_8}
+[8014] = {line_id = 8014, num = 14}
 , 
-[8015] = {line_id = 8015, num = 15, pre_para1 = __rt_8}
+[8015] = {line_id = 8015, num = 15}
 , 
-[8016] = {line_id = 8016, num = 16, pre_para1 = __rt_8}
+[8016] = {line_id = 8016, num = 16}
 , 
-[8017] = {bg_prefab = "Obj_FinalTech", intro = 379820, line_id = 8017, name_en = 385447, num = 17, pre_para1 = __rt_8}
+[8017] = {bg_prefab = "Obj_FinalTech", intro = 379820, line_id = 8017, name_en = 385447, num = 17}
+, 
+[9001] = {line_id = 9001}
+, 
+[9002] = {line_id = 9002, num = 2}
+, 
+[9003] = {line_id = 9003, num = 3}
+, 
+[9004] = {line_id = 9004, num = 4}
+, 
+[9005] = {line_id = 9005, num = 5}
+, 
+[9006] = {line_id = 9006, num = 6}
+, 
+[9007] = {line_id = 9007, num = 7}
+, 
+[9008] = {line_id = 9008, num = 8}
+, 
+[9009] = {line_id = 9009, num = 9}
+, 
+[9010] = {line_id = 9010, num = 10}
+, 
+[9011] = {line_id = 9011, num = 11}
+, 
+[9012] = {line_id = 9012, num = 12}
+, 
+[9013] = {line_id = 9013, num = 13}
+, 
+[9014] = {line_id = 9014, num = 14}
+, 
+[9015] = {line_id = 9015, num = 15}
+, 
+[9016] = {line_id = 9016, num = 16}
+, 
+[9017] = {bg_prefab = "Obj_FinalTech", intro = 379820, line_id = 9017, name_en = 385447, num = 17}
 }
-local __default_values = {bg = "", bg_prefab = "", intro = "", line_id = 1001, name = "", name_en = "", num = 1, pre_condition = __rt_1, pre_para1 = __rt_12, pre_para2 = __rt_3, story_id = 0}
+local __default_values = {bg = "", bg_prefab = "", intro = "", line_id = 1001, name = "", name_en = "", num = 1, pre_condition = __rt_1, pre_para1 = __rt_8, pre_para2 = __rt_3, story_id = 0}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")

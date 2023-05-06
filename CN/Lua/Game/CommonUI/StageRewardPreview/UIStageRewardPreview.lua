@@ -50,7 +50,7 @@ end
 
 UIStageRewardPreview._OnClickClose = function(self)
   -- function num : 0_2 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIStageRewardPreview.OnDelete = function(self)

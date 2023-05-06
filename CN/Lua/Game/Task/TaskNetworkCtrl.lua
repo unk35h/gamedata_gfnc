@@ -160,9 +160,9 @@ TaskNetworkCtrl.OnRecvSyncUpdateDiff = function(self, msg)
         (PlayerDataCenter.sectorAchievementDatas):UpdateCompleteTaskData(sectorId, (lastData.taskStcData).id)
       end
       ;
-      (PlayerDataCenter.activityStarUpData):UpdateStage((lastData.taskStcData).id)
-      ;
       (PlayerDataCenter.allTaskData):AllTaskOnTaskCommit(lastData.taskStcData)
+      ;
+      (PlayerDataCenter.activityStarUpData):UpdateStage((lastData.taskStcData).id)
       MsgCenter:Broadcast(eMsgEventId.TaskCommitComplete, lastData.taskStcData)
     end
     if newTaskDataList ~= nil then

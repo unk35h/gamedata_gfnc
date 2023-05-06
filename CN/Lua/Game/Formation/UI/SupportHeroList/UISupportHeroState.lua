@@ -234,6 +234,54 @@ UISupportHeroState.RefreshHeroDetail = function(self)
       item:InitAthSuitMainItem(data, self.resloader)
     end
   end
+  do
+    local weaponId, weaponData = (self.supportHeroData):GetSpecWeaponData()
+    if weaponId then
+      ((self.ui).obj_SpecWeapon):SetActive(true)
+      local heroId = (self.supportHeroData).dataId
+      ;
+      (self.resloader):LoadABAssetAsync(PathConsts:GetSpecWeaponPicPath(heroId), function(texture)
+    -- function num : 0_3_1 , upvalues : _ENV, self
+    if IsNull(self.transform) then
+      return 
+    end
+    if not texture then
+      error("specWeapon icon texture not exit")
+      return 
+    end
+    -- DECOMPILER ERROR at PC14: Confused about usage of register: R1 in 'UnsetPending'
+
+    ;
+    ((self.ui).img_SpecWeapon).texture = texture
+  end
+)
+      ;
+      ((self.ui).obj_WeaponUnlock):SetActive(false)
+      if weaponData then
+        ((self.ui).img_ArmaLvbg):SetActive(true)
+        local step = weaponData:GetSpecWeaponCurStep()
+        -- DECOMPILER ERROR at PC248: Confused about usage of register: R11 in 'UnsetPending'
+
+        ;
+        ((self.ui).tex_SpecWeaponState).text = (LanguageUtil.GetRomanNumber)(step)
+        -- DECOMPILER ERROR at PC257: Confused about usage of register: R11 in 'UnsetPending'
+
+        ;
+        ((self.ui).tex_SpecWeaponLv).text = "LV." .. tostring(weaponData:GetSpecWeaponCurLevel())
+      else
+        do
+          do
+            ;
+            ((self.ui).img_ArmaLvbg):SetActive(false)
+            ;
+            ((self.ui).obj_WeaponUnlock):SetActive(true)
+            ;
+            ((self.ui).obj_SpecWeapon):SetActive(false)
+          end
+        end
+      end
+    end
+  end
 end
 
 UISupportHeroState.RefreshHeroSkill = function(self)

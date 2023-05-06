@@ -237,7 +237,7 @@ UIPeriodicDebuffSelect.OnClickConfirm = function(self)
       (self.closeCallback)(self.permillageLayer)
     end
     ;
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 end
 

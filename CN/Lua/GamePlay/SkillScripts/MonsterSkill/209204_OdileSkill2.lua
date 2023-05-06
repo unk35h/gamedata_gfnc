@@ -51,7 +51,7 @@ bs_209204.Summon = function(self, num)
       summoner = LuaSkillCtrl:CreateSummoner(self, (self.config).monsterId, Grid.x, Grid.y)
     else
       local length = #self.SummonerTable
-      local id = (math.random)(1, length)
+      local id = LuaSkillCtrl:CallRange(1, length)
       summoner = LuaSkillCtrl:CreateSummoner(self, (self.SummonerTable)[id], Grid.x, Grid.y)
     end
     do

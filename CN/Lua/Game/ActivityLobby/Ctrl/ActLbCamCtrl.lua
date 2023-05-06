@@ -6,9 +6,15 @@ local CS_RenderManager = CS.RenderManager
 local CS_LeanGesture = ((CS.Lean).Touch).LeanGesture
 local CS_CmCoreState = ((CS.Cinemachine).CinemachineCore).Stage
 local util = require("XLua.Common.xlua_util")
+local MoviePlayer = require("Game.ActivityLobby.UI.Main.UIMoviePlayer")
 ActLbCamCtrl.ctor = function(self, actLbCtrl)
-  -- function num : 0_0
+  -- function num : 0_0 , upvalues : _ENV
   self._hideableEnttDic = {}
+  if self.resloader ~= nil then
+    (self.resloader):Put2Pool()
+    self.resloader = nil
+  end
+  self.resloader = ((CS.ResLoader).Create)()
 end
 
 ActLbCamCtrl.OnActLbSceneEnter = function(self, bind)
@@ -180,8 +186,30 @@ ActLbCamCtrl.ActLbPlayStartShowTimeLine = function(self, skipTlImediate)
 , false, true)
 end
 
+ActLbCamCtrl.PlayOpeningMovie = function(self, moviePath, fadeStartTime, fadeKeepTime)
+  -- function num : 0_11 , upvalues : _ENV, MoviePlayer
+  if not (string.IsNullOrEmpty)(moviePath) then
+    local moviePath = PathConsts:GetActivityOpenVedio(moviePath)
+    if self.moviePlayer == nil then
+      local movieObj = (self.resloader):LoadABAsset(PathConsts:GetUIPrefabPath("UI_MoviePlayer"))
+      if not IsNull(movieObj) then
+        local movieGO = movieObj:Instantiate()
+        self.moviePlayer = MoviePlayer:New()
+        ;
+        (self.moviePlayer):Init(movieGO)
+      end
+    end
+    do
+      ;
+      (self.moviePlayer):PlayMovie(moviePath, nil, 1, false, nil)
+      ;
+      (self.moviePlayer):SetMovieFade(fadeStartTime, fadeKeepTime)
+    end
+  end
+end
+
 ActLbCamCtrl._SkipStartShowTl = function(self)
-  -- function num : 0_11
+  -- function num : 0_12
   if self._startTlCo then
     self._startTlCo = nil
     self:_EndStartShowTl()
@@ -191,7 +219,7 @@ ActLbCamCtrl._SkipStartShowTl = function(self)
 end
 
 ActLbCamCtrl._EndStartShowTl = function(self)
-  -- function num : 0_12 , upvalues : _ENV
+  -- function num : 0_13 , upvalues : _ENV
   if IsNull((self._sceneBind).tl_Start) then
     return 
   end
@@ -201,15 +229,19 @@ ActLbCamCtrl._EndStartShowTl = function(self)
   ((self._sceneBind).tl_Start).time = ((self._sceneBind).tl_Start).duration
   ;
   ((self._sceneBind).tl_Start):Evaluate()
+  if self.moviePlayer ~= nil then
+    (self.moviePlayer):CloseMoviePlayer()
+    self.moviePlayer = nil
+  end
 end
 
 ActLbCamCtrl._OnStartShowEnd = function(self)
-  -- function num : 0_13 , upvalues : _ENV, util
+  -- function num : 0_14 , upvalues : _ENV, util
   self._startShowCo = (GR.StartCoroutine)((util.cs_generator)(BindCallback(self, self._CoOnStartShowEnd)))
 end
 
 ActLbCamCtrl._CoOnStartShowEnd = function(self)
-  -- function num : 0_14 , upvalues : _ENV
+  -- function num : 0_15 , upvalues : _ENV
   self._startShowCo = nil
   local mainWin = UIManager:GetWindow(UIWindowTypeID.ActLobbyMain)
   while mainWin == nil do
@@ -217,7 +249,7 @@ ActLbCamCtrl._CoOnStartShowEnd = function(self)
     mainWin = UIManager:GetWindow(UIWindowTypeID.ActLobbyMain)
   end
   mainWin:TryActLbGuide(function()
-    -- function num : 0_14_0 , upvalues : _ENV
+    -- function num : 0_15_0 , upvalues : _ENV
     GuideManager:TryTriggerGuide(eGuideCondition.InActLobby)
   end
 )
@@ -227,14 +259,14 @@ ActLbCamCtrl._CoOnStartShowEnd = function(self)
 end
 
 ActLbCamCtrl.AddLbCamHideableEntt = function(self, gameObject, entt)
-  -- function num : 0_15
+  -- function num : 0_16
   -- DECOMPILER ERROR at PC1: Confused about usage of register: R3 in 'UnsetPending'
 
   (self._hideableEnttDic)[gameObject] = entt
 end
 
 ActLbCamCtrl._OnTriggerEnter = function(self, collider)
-  -- function num : 0_16
+  -- function num : 0_17
   local entt = (self._hideableEnttDic)[collider.gameObject]
   if entt == nil then
     return 
@@ -243,7 +275,7 @@ ActLbCamCtrl._OnTriggerEnter = function(self, collider)
 end
 
 ActLbCamCtrl._OnTriggerExit = function(self, collider)
-  -- function num : 0_17
+  -- function num : 0_18
   local entt = (self._hideableEnttDic)[collider.gameObject]
   if entt == nil then
     return 
@@ -252,12 +284,20 @@ ActLbCamCtrl._OnTriggerExit = function(self, collider)
 end
 
 ActLbCamCtrl.Delete = function(self)
-  -- function num : 0_18 , upvalues : _ENV
+  -- function num : 0_19 , upvalues : _ENV
   if self._startTlCo then
     (TimelineUtil.StopTlCo)(self._startTlCo)
     self._startTlCo = nil
     ;
     (self._uiRootFadeTween):Kill()
+  end
+  if self.resloader ~= nil then
+    (self.resloader):Put2Pool()
+    self.resloader = nil
+  end
+  if self.moviePlayer ~= nil then
+    (self.moviePlayer):CloseMoviePlayer()
+    self.moviePlayer = nil
   end
   if self._startShowCo ~= nil then
     (GR.StopCoroutine)(self._startShowCo)

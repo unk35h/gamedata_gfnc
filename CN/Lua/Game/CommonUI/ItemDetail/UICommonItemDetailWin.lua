@@ -23,6 +23,8 @@ UICommonItemDetailWin.OnInit = function(self)
   (UIUtil.AddButtonListener)((self.ui).btn_Right, self, self.OnClickSwitchRight)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_UseGift, self, self.OnClickUse)
+  ;
+  (UIUtil.AddButtonListener)((self.ui).btn_detail, self, self.OnBtnRandomItemDetail)
   self.resloader = ((CS.ResLoader).Create)()
   self.baseItem = (UINBaseItem.New)()
   ;
@@ -373,6 +375,12 @@ UICommonItemDetailWin.__UpdateJumpList = function(self, itemCfg)
   self.isCoulduseGift = false
   self.useGiftList = nil
   self.jumpuseGiftItem = nil
+  local isShowRandomItemBtn = false
+  if itemCfg.giftIdList ~= nil and (table.count)(itemCfg.giftIdList) > 0 and not self.notNeedAnyJump then
+    isShowRandomItemBtn = true
+  end
+  ;
+  ((self.ui).obj_randomItem):SetActive(isShowRandomItemBtn)
   if not BattleDungeonManager:InBattleDungeon() then
     local inDungeonOrEp = ExplorationManager:IsInExploration()
   end
@@ -381,7 +389,7 @@ UICommonItemDetailWin.__UpdateJumpList = function(self, itemCfg)
       ((self.ui).obj_jumpList):SetActive(false)
       ;
       (((self.ui).tex_achieveText).gameObject):SetActive(true)
-      -- DECOMPILER ERROR at PC71: Confused about usage of register: R6 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC90: Confused about usage of register: R7 in 'UnsetPending'
 
       ;
       ((self.ui).tex_achieveText).text = tostring((LanguageUtil.GetLocaleText)(itemCfg.achieve_des))
@@ -441,7 +449,7 @@ UICommonItemDetailWin.__UpdateJumpList = function(self, itemCfg)
     ((self.ui).obj_jumpList):SetActive(false)
     ;
     (((self.ui).tex_achieveText).gameObject):SetActive(true)
-    -- DECOMPILER ERROR at PC208: Confused about usage of register: R8 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC227: Confused about usage of register: R9 in 'UnsetPending'
 
     ;
     ((self.ui).tex_achieveText).text = tostring((LanguageUtil.GetLocaleText)(itemCfg.achieve_des))
@@ -450,12 +458,12 @@ UICommonItemDetailWin.__UpdateJumpList = function(self, itemCfg)
     ;
     (((self.ui).tex_achieveText).gameObject):SetActive(false)
   end
-  -- DECOMPILER ERROR: 20 unprocessed JMP targets
+  -- DECOMPILER ERROR: 21 unprocessed JMP targets
 end
 
 UICommonItemDetailWin.OnBtnReturnClick = function(self)
   -- function num : 0_15 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UICommonItemDetailWin.TryShowGiftJump = function(self, flag)
@@ -616,7 +624,7 @@ end
 
 UICommonItemDetailWin.OnClickUse = function(self)
   -- function num : 0_26 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
   local itemCfg = (ConfigData.item)[self.itemId]
   if self.isTimeOut then
     ((CS.MessageCommon).ShowMessageTips)(ConfigData:GetTipContent(6041))
@@ -631,14 +639,28 @@ UICommonItemDetailWin.OnClickUse = function(self)
   end
 end
 
-UICommonItemDetailWin.UseChangeNameCard = function(self, itemCfg)
+UICommonItemDetailWin.OnBtnRandomItemDetail = function(self)
   -- function num : 0_27 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+  local itemCfg = (ConfigData.item)[self.itemId]
+  UIManager:ShowWindowAsync(UIWindowTypeID.RewardPreview, function(window)
+    -- function num : 0_27_0 , upvalues : self, itemCfg
+    if window == nil then
+      return 
+    end
+    window:InitRewardPreview(self.itemId, itemCfg.giftIdList, itemCfg.giftCountList)
+  end
+)
+end
+
+UICommonItemDetailWin.UseChangeNameCard = function(self, itemCfg)
+  -- function num : 0_28 , upvalues : _ENV
   if CloseCustomBename then
     ((CS.MessageCommon).ShowMessageTips)(ConfigData:GetTipContent(393))
     return 
   end
   UIManager:ShowWindowAsync(UIWindowTypeID.UserInfoDialog, function(window)
-    -- function num : 0_27_0
+    -- function num : 0_28_0
     if window ~= nil then
       window:OpenChangeNameDialogFromStore()
     end
@@ -647,7 +669,7 @@ UICommonItemDetailWin.UseChangeNameCard = function(self, itemCfg)
 end
 
 UICommonItemDetailWin.UseGift = function(self, itemCfg)
-  -- function num : 0_28 , upvalues : _ENV, cs_MessageCommon, CommonRewardData
+  -- function num : 0_29 , upvalues : _ENV, cs_MessageCommon, CommonRewardData
   local count = PlayerDataCenter:GetItemCount(itemCfg.id)
   if (itemCfg.action_type == proto_csmsg_ItemActionType.ItemActionTypeFixedItem or itemCfg.action_type == proto_csmsg_ItemActionType.ItemActionTypeRandomReward) and count == 1 then
     local athMaxCoulHaveNum = ((ConfigData.item).athGiftDic)[itemCfg.id]
@@ -659,7 +681,7 @@ UICommonItemDetailWin.UseGift = function(self, itemCfg)
       local heroIdSnapShoot = PlayerDataCenter:TakeHeroIdSnapShoot()
       local warehouseNetwork = NetworkManager:GetNetwork(NetworkTypeID.Warehouse)
       warehouseNetwork:CS_BACKPACK_UseItem(itemCfg.id, count, function(dataList)
-    -- function num : 0_28_0 , upvalues : _ENV, CommonRewardData, heroIdSnapShoot
+    -- function num : 0_29_0 , upvalues : _ENV, CommonRewardData, heroIdSnapShoot
     if dataList.Count <= 0 then
       return 
     end
@@ -672,7 +694,7 @@ UICommonItemDetailWin.UseGift = function(self, itemCfg)
       (table.insert)(rewardCounts, num)
     end
     UIManager:ShowWindowAsync(UIWindowTypeID.CommonReward, function(window)
-      -- function num : 0_28_0_0 , upvalues : CommonRewardData, rewardIds, rewardCounts, heroIdSnapShoot
+      -- function num : 0_29_0_0 , upvalues : CommonRewardData, rewardIds, rewardCounts, heroIdSnapShoot
       if window == nil then
         return 
       end
@@ -686,7 +708,7 @@ UICommonItemDetailWin.UseGift = function(self, itemCfg)
   else
     do
       UIManager:ShowWindowAsync(UIWindowTypeID.CommonUseGift, function(win)
-    -- function num : 0_28_1 , upvalues : itemCfg
+    -- function num : 0_29_1 , upvalues : itemCfg
     if win == nil then
       return 
     end
@@ -698,7 +720,7 @@ UICommonItemDetailWin.UseGift = function(self, itemCfg)
 end
 
 UICommonItemDetailWin.ShowUseGiftBtn = function(self, itemCfg)
-  -- function num : 0_29 , upvalues : _ENV
+  -- function num : 0_30 , upvalues : _ENV
   if itemCfg == nil then
     return 
   end
@@ -712,8 +734,13 @@ UICommonItemDetailWin.ShowUseGiftBtn = function(self, itemCfg)
   end
 end
 
+UICommonItemDetailWin.HideUseGiftBtn = function(self)
+  -- function num : 0_31
+  (((self.ui).btn_UseGift).gameObject):SetActive(false)
+end
+
 UICommonItemDetailWin.OnHide = function(self)
-  -- function num : 0_30 , upvalues : _ENV
+  -- function num : 0_32 , upvalues : _ENV
   (self.poolInfoItem):DeleteAll()
   self.notNeedAnyJump = false
   MsgCenter:RemoveListener(eMsgEventId.UpdateItem, self.__OnItemRefresh)
@@ -722,7 +749,7 @@ UICommonItemDetailWin.OnHide = function(self)
 end
 
 UICommonItemDetailWin.OnDelete = function(self)
-  -- function num : 0_31 , upvalues : _ENV, base
+  -- function num : 0_33 , upvalues : _ENV, base
   if self.resloader ~= nil then
     (self.resloader):Put2Pool()
     self.resloader = nil

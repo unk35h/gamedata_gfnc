@@ -10,139 +10,147 @@ local __rt_7 = {12, 12, 12}
 local sector = {
 {achievement = 301, 
 building = {2011, 2012, 2014}
-, endless_pic = "big_1", hard_pic = "big_1", is_special = false, name = 304585, order_type = 0, pic_big = "big_1", pic_small = "small_1", pic_stratery_overview = "techTree_1", scene_icon = "sector_icon_1", sector_level_perform = true, task_is_open = true}
+, endless_pic = "big_1", hard_pic = "big_1", is_special = false, name = 304585, order_type = 0, pic_big = "big_1", pic_small = "small_1", pic_stratery_overview = "techTree_1", scene_icon = "sector_icon_1", sector_level_perform = true}
 , 
 {achievement = 302, 
 building = {2021, 2022, 2023}
-, endless_pic = "big_2", hard_pic = "big_2", id = 2, is_special = false, name = 448601, name_en = "CYCLOPES", order_type = 0, pic_big = "big_2", pic_small = "small_2", pic_stratery_overview = "techTree_2", scene_icon = "sector_icon_2", sector_level_perform = true, sector_movie = true, task_is_open = true, type_name = 443872}
+, endless_pic = "big_2", hard_pic = "big_2", id = 2, is_special = false, name = 448601, name_en = "CYCLOPES", order_type = 0, pic_big = "big_2", pic_small = "small_2", pic_stratery_overview = "techTree_2", scene_icon = "sector_icon_2", sector_level_perform = true, sector_movie = true, type_name = 443872}
 , 
 {achievement = 303, 
 building = {2031, 2033, 2035}
-, endless_pic = "big_3", hard_pic = "big_3", id = 3, is_special = false, name = 98834, name_en = "HELIOS", order_type = 0, pic_big = "big_3", pic_small = "small_3", pic_stratery_overview = "techTree_3", scene_icon = "sector_icon_3", sector_level_perform = true, sector_movie = true, type_name = 177105}
+, endless_pic = "big_3", hard_pic = "big_3", id = 3, is_special = false, name = 98834, name_en = "HELIOS", order_type = 0, pic_big = "big_3", pic_small = "small_3", pic_stratery_overview = "techTree_3", scene_icon = "sector_icon_3", sector_level_perform = true, sector_movie = true, task_is_open = false, type_name = 177105}
 , 
 {achievement = 304, 
 building = {2042, 2044, 2045}
-, endless_pic = "big_4", hard_pic = "big_4", id = 4, is_special = false, name = 342588, name_en = "ENIGMA", order_type = 0, pic_big = "big_4", pic_small = "small_4", pic_stratery_overview = "techTree_4", scene_icon = "sector_icon_4", sector_level_perform = true, sector_movie = true, type_name = 177026}
+, endless_pic = "big_4", hard_pic = "big_4", id = 4, is_special = false, name = 342588, name_en = "ENIGMA", order_type = 0, pic_big = "big_4", pic_small = "small_4", pic_stratery_overview = "techTree_4", scene_icon = "sector_icon_4", sector_level_perform = true, sector_movie = true, task_is_open = false, type_name = 177026}
 , 
 {achievement = 305, 
 building = {2051, 2052, 2054}
-, endless_pic = "big_5", hard_pic = "big_5", id = 5, is_special = false, name = 231791, name_en = "PIERIDES", order_type = 0, pic_big = "big_5", pic_small = "small_5", pic_stratery_overview = "techTree_5", scene_icon = "sector_icon_5", sector_level_perform = true, sector_movie = true, type_name = 449871}
+, endless_pic = "big_5", hard_pic = "big_5", id = 5, is_special = false, name = 231791, name_en = "PIERIDES", order_type = 0, pic_big = "big_5", pic_small = "small_5", pic_stratery_overview = "techTree_5", scene_icon = "sector_icon_5", sector_level_perform = true, sector_movie = true, task_is_open = false, type_name = 449871}
 , 
 {
 building = {2063, 2065}
 , endless_pic = "big_6", hard_pic = "big_6", id = 6, is_special = false, 
 level_arrange = {7, 7, 4}
-, name = 247873, name_en = "COPLEY", order_type = 0, pic_small = "small_6", pic_stratery_overview = "techTree_6", scene_icon = "sector_icon_6", sector_level_perform = true, sector_movie = true, sector_type = 2, show_typeDic = __rt_3, type_name = 337040}
+, name = 247873, name_en = "COPLEY", order_type = 0, pic_small = "small_6", pic_stratery_overview = "techTree_6", scene_icon = "sector_icon_6", sector_level_perform = true, sector_movie = true, sector_type = 2, show_typeDic = __rt_3, task_is_open = false, type_name = 337040}
 ; 
-[100] = {endless_pic = "big_0", hard_pic = "big_0", id = 100, level_arrange = __rt_4, name = 295006, name_en = "The Oasis Defense", order_type = 0, pic_big = "big_0", pic_small = "small_0", scene_icon = "sector_icon_100", type_name = 295006}
+[100] = {endless_pic = "big_0", hard_pic = "big_0", id = 100, level_arrange = __rt_4, name = 295006, name_en = "The Oasis Defense", order_type = 0, pic_big = "big_0", pic_small = "small_0", scene_icon = "sector_icon_100", task_is_open = false, type_name = 295006}
 , 
-[101] = {course_des = 210808, description = 331285, endless_pic = "big_0", hard_pic = "big_0", id = 101, level_arrange = __rt_4, name = 357180, name_en = "WeeklyChallenge", order_type = 0, pic_big = "big_0", pic_small = "small_0", scene_icon = "sector_icon_100", type_name = 357180}
+[101] = {course_des = 210808, description = 331285, endless_pic = "big_0", hard_pic = "big_0", id = 101, level_arrange = __rt_4, name = 357180, name_en = "WeeklyChallenge", order_type = 0, pic_big = "big_0", pic_small = "small_0", scene_icon = "sector_icon_100", task_is_open = false, type_name = 357180}
 , 
-[90011] = {endless_pic = "ActSum21_0", hard_pic = "ActSum21_0", id = 90011, level_arrange = __rt_5, name = 115699, name_en = "COPLEY", order_type = 0, pic_small = "small_6", scene_icon = "sector_icon_empty", sector_type = 2, show_typeDic = __rt_3, type_name = 337040}
+[90011] = {endless_pic = "ActSum21_0", hard_pic = "ActSum21_0", id = 90011, level_arrange = __rt_5, name = 115699, name_en = "COPLEY", order_type = 0, pic_small = "small_6", scene_icon = "sector_icon_empty", sector_type = 2, show_typeDic = __rt_3, task_is_open = false, type_name = 337040}
 , 
 [90012] = {endless_pic = "ActSum21_2", hard_pic = "ActSum21_2", id = 90012, 
 level_arrange = {10}
 , name = 399011, name_en = "COPLEY", pic_big = "ActSum21_2", pic_small = "small_6_1", reward_show_type = 1, scene_icon = "sector_icon_empty", sector_type = 2, 
 show_typeDic = {[10] = 3}
-, type_name = 337040}
+, task_is_open = false, type_name = 337040}
 , 
-[100011] = {id = 100011, name = 237346, pic_big = "big_CharDun_Python", pic_small = "small_CharDun_Python"}
+[100011] = {id = 100011, name = 237346, pic_big = "big_CharDun_Python", pic_small = "small_CharDun_Python", task_is_open = false}
 , 
-[100012] = {id = 100012, level_arrange = __rt_6, name = 467484, pic_big = "big_CharDun_Python", pic_small = "small_CharDun_Python", reward_show_type = 1, sector_type = 3}
+[100012] = {id = 100012, level_arrange = __rt_6, name = 467484, pic_big = "big_CharDun_Python", pic_small = "small_CharDun_Python", reward_show_type = 1, sector_type = 3, task_is_open = false}
 , 
-[100021] = {id = 100021, name = 464096, pic_big = "big_CharDun_Kuro", pic_small = "small_CharDun_Kuro"}
+[100021] = {id = 100021, name = 464096, pic_big = "big_CharDun_Kuro", pic_small = "small_CharDun_Kuro", task_is_open = false}
 , 
-[100022] = {id = 100022, level_arrange = __rt_6, name = 472348, pic_big = "big_CharDun_Kuro", pic_small = "small_CharDun_Kuro", reward_show_type = 1, sector_type = 3}
+[100022] = {id = 100022, level_arrange = __rt_6, name = 472348, pic_big = "big_CharDun_Kuro", pic_small = "small_CharDun_Kuro", reward_show_type = 1, sector_type = 3, task_is_open = false}
 , 
-[100031] = {id = 100031, name = 312014, pic_big = "big_CharDun_Haze", pic_small = "small_CharDun_Haze", task_is_open = true}
+[100031] = {id = 100031, name = 312014, pic_big = "big_CharDun_Haze", pic_small = "small_CharDun_Haze"}
 , 
-[100032] = {id = 100032, level_arrange = __rt_6, name = 366964, pic_big = "big_CharDun_Haze", pic_small = "small_CharDun_Haze", reward_show_type = 1, sector_type = 3}
+[100032] = {id = 100032, level_arrange = __rt_6, name = 366964, pic_big = "big_CharDun_Haze", pic_small = "small_CharDun_Haze", reward_show_type = 1, sector_type = 3, task_is_open = false}
 , 
-[100041] = {id = 100041, name = 463364, pic_big = "big_CharDun_Nora", pic_small = "small_CharDun_Nora", task_is_open = true}
+[100041] = {id = 100041, name = 463364, pic_big = "big_CharDun_Nora", pic_small = "small_CharDun_Nora"}
 , 
-[100042] = {id = 100042, level_arrange = __rt_6, name = 224767, pic_big = "big_CharDun_Nora", pic_small = "small_CharDun_Nora", reward_show_type = 1, sector_type = 3}
+[100042] = {id = 100042, level_arrange = __rt_6, name = 224767, pic_big = "big_CharDun_Nora", pic_small = "small_CharDun_Nora", reward_show_type = 1, sector_type = 3, task_is_open = false}
 , 
-[100051] = {id = 100051, name = 41981, pic_big = "big_CharDun_Magnhilda", pic_small = "small_CharDun_Magnhilda", task_is_open = true}
+[100051] = {id = 100051, name = 41981, pic_big = "big_CharDun_Magnhilda", pic_small = "small_CharDun_Magnhilda"}
 , 
-[100052] = {id = 100052, level_arrange = __rt_6, name = 390287, pic_big = "big_CharDun_Magnhilda", pic_small = "small_CharDun_Magnhilda", reward_show_type = 1, sector_type = 3}
+[100052] = {id = 100052, level_arrange = __rt_6, name = 390287, pic_big = "big_CharDun_Magnhilda", pic_small = "small_CharDun_Magnhilda", reward_show_type = 1, sector_type = 3, task_is_open = false}
 , 
-[100061] = {id = 100061, name = 194631, pic_big = "big_CharDun_Helix", pic_small = "small_CharDun_Helix", task_is_open = true}
+[100061] = {id = 100061, name = 194631, pic_big = "big_CharDun_Helix", pic_small = "small_CharDun_Helix"}
 , 
-[100062] = {id = 100062, level_arrange = __rt_6, name = 263265, pic_big = "big_CharDun_Helix", pic_small = "small_CharDun_Helix", reward_show_type = 1, sector_type = 3}
+[100062] = {id = 100062, level_arrange = __rt_6, name = 263265, pic_big = "big_CharDun_Helix", pic_small = "small_CharDun_Helix", reward_show_type = 1, sector_type = 3, task_is_open = false}
 , 
-[100071] = {id = 100071, name = 157823, pic_big = "big_CharDun_Zangyin", pic_small = "small_CharDun_Zangyin", task_is_open = true}
+[100071] = {id = 100071, name = 157823, pic_big = "big_CharDun_Zangyin", pic_small = "small_CharDun_Zangyin"}
 , 
-[100072] = {id = 100072, level_arrange = __rt_6, name = 168196, pic_big = "big_CharDun_Zangyin", pic_small = "small_CharDun_Zangyin", reward_show_type = 1, sector_type = 3}
+[100072] = {id = 100072, level_arrange = __rt_6, name = 168196, pic_big = "big_CharDun_Zangyin", pic_small = "small_CharDun_Zangyin", reward_show_type = 1, sector_type = 3, task_is_open = false}
 , 
-[100081] = {id = 100081, name = 448345, pic_big = "big_CharDun_Millau", pic_small = "small_CharDun_Millau", task_is_open = true}
+[100081] = {id = 100081, name = 448345, pic_big = "big_CharDun_Millau", pic_small = "small_CharDun_Millau"}
 , 
-[100082] = {id = 100082, level_arrange = __rt_6, name = 96917, pic_big = "big_CharDun_Millau", pic_small = "small_CharDun_Millau", reward_show_type = 1, sector_type = 3}
+[100082] = {id = 100082, level_arrange = __rt_6, name = 96917, pic_big = "big_CharDun_Millau", pic_small = "small_CharDun_Millau", reward_show_type = 1, sector_type = 3, task_is_open = false}
 , 
-[100091] = {id = 100091, level_arrange = __rt_7, name = 440100, pic_big = "big_CharDun_Clukay", pic_small = "small_CharDun_Clukay", task_is_open = true}
+[100091] = {id = 100091, level_arrange = __rt_7, name = 440100, pic_big = "big_CharDun_Clukay", pic_small = "small_CharDun_Clukay"}
 , 
-[100092] = {id = 100092, name = 285650, pic_big = "big_CharDun_Clukay", pic_small = "small_CharDun_Clukay", reward_show_type = 1, sector_type = 4, task_is_open = true}
+[100092] = {id = 100092, name = 285650, pic_big = "big_CharDun_Clukay", pic_small = "small_CharDun_Clukay", reward_show_type = 1, sector_type = 4}
 , 
-[100101] = {id = 100101, level_arrange = __rt_7, name = 20071, pic_big = "big_CharDun_Clotho", pic_small = "small_CharDun_Clotho", task_is_open = true}
+[100101] = {id = 100101, level_arrange = __rt_7, name = 20071, pic_big = "big_CharDun_Clotho", pic_small = "small_CharDun_Clotho"}
 , 
-[100102] = {id = 100102, name = 190156, pic_big = "big_CharDun_Clotho", pic_small = "small_CharDun_Clotho", reward_show_type = 1, sector_type = 4, task_is_open = true}
+[100102] = {id = 100102, name = 190156, pic_big = "big_CharDun_Clotho", pic_small = "small_CharDun_Clotho", reward_show_type = 1, sector_type = 4}
 , 
-[100111] = {id = 100111, level_arrange = __rt_7, name = 468085, pic_big = "big_CharDun_Dupin", pic_small = "small_CharDun_Dupin", task_is_open = true}
+[100111] = {id = 100111, level_arrange = __rt_7, name = 468085, pic_big = "big_CharDun_Dupin", pic_small = "small_CharDun_Dupin"}
 , 
-[100112] = {id = 100112, name = 441196, pic_big = "big_CharDun_Dupin", pic_small = "small_CharDun_Dupin", reward_show_type = 1, sector_type = 4, task_is_open = true}
+[100112] = {id = 100112, name = 441196, pic_big = "big_CharDun_Dupin", pic_small = "small_CharDun_Dupin", reward_show_type = 1, sector_type = 4}
 , 
-[100121] = {id = 100121, level_arrange = __rt_7, name = 450812, pic_big = "big_CharDun_Undline", pic_small = "small_CharDun_Undline", task_is_open = true}
+[100121] = {id = 100121, level_arrange = __rt_7, name = 450812, pic_big = "big_CharDun_Undline", pic_small = "small_CharDun_Undline"}
 , 
-[100122] = {id = 100122, name = 517667, pic_big = "big_CharDun_Undline", pic_small = "small_CharDun_Undline", reward_show_type = 1, sector_type = 4, task_is_open = true}
+[100122] = {id = 100122, name = 517667, pic_big = "big_CharDun_Undline", pic_small = "small_CharDun_Undline", reward_show_type = 1, sector_type = 4}
 , 
-[100131] = {id = 100131, level_arrange = __rt_7, name = 434803, pic_big = "big_CharDun_Jiangyu", pic_small = "small_CharDun_Jiangyu", task_is_open = true}
+[100131] = {id = 100131, level_arrange = __rt_7, name = 434803, pic_big = "big_CharDun_Jiangyu", pic_small = "small_CharDun_Jiangyu"}
 , 
-[100132] = {id = 100132, name = 469321, pic_big = "big_CharDun_Jiangyu", pic_small = "small_CharDun_Jiangyu", reward_show_type = 1, sector_type = 4, task_is_open = true}
+[100132] = {id = 100132, name = 469321, pic_big = "big_CharDun_Jiangyu", pic_small = "small_CharDun_Jiangyu", reward_show_type = 1, sector_type = 4}
 , 
-[100141] = {id = 100141, level_arrange = __rt_7, name = 390699, pic_big = "big_CharDun_Yelena", pic_small = "small_CharDun_Yelena", task_is_open = true}
+[100141] = {id = 100141, level_arrange = __rt_7, name = 390699, pic_big = "big_CharDun_Yelena", pic_small = "small_CharDun_Yelena"}
 , 
-[100142] = {id = 100142, name = 70097, pic_big = "big_CharDun_Yelena", pic_small = "small_CharDun_Yelena", reward_show_type = 1, sector_type = 4, task_is_open = true}
+[100142] = {id = 100142, name = 70097, pic_big = "big_CharDun_Yelena", pic_small = "small_CharDun_Yelena", reward_show_type = 1, sector_type = 4}
 , 
-[100151] = {id = 100151, level_arrange = __rt_7, name = 471997, pic_big = "big_CharDun_Erika", pic_small = "small_CharDun_Erika", task_is_open = true}
+[100151] = {id = 100151, level_arrange = __rt_7, name = 471997, pic_big = "big_CharDun_Erika", pic_small = "small_CharDun_Erika"}
 , 
-[100152] = {id = 100152, name = 439802, pic_big = "big_CharDun_Erika", pic_small = "small_CharDun_Erika", reward_show_type = 1, sector_type = 4, task_is_open = true}
+[100152] = {id = 100152, name = 439802, pic_big = "big_CharDun_Erika", pic_small = "small_CharDun_Erika", reward_show_type = 1, sector_type = 4}
 , 
-[110011] = {endless_pic = "ActSum21_0", hard_pic = "ActSum21_0", id = 110011, level_arrange = __rt_4, name = 475525, name_en = "ACTIVITY WINTER", pic_small = "ActWin21", scene_icon = "sector_icon_empty", sector_type = 2, task_is_open = true}
+[100161] = {id = 100161, level_arrange = __rt_7, name = 152031, pic_big = "big_CharDun_Cascadia", pic_small = "small_CharDun_Cascadia"}
 , 
-[110012] = {endless_pic = "ActSum21_0", hard_pic = "ActSum21_0", id = 110012, level_arrange = __rt_4, name = 172962, name_en = "ACTIVITY WINTER", pic_small = "ActWin21", scene_icon = "sector_icon_empty", sector_type = 2, task_is_open = true}
+[100162] = {id = 100162, name = 215781, pic_big = "big_CharDun_Cascadia", pic_small = "small_CharDun_Cascadia", reward_show_type = 1, sector_type = 4}
 , 
-[120011] = {endless_pic = "ActWhite22_0", hard_pic = "ActWhite22_0", id = 120011, name = 408075, name_en = "ACTIVITY WHITE", pic_big = "ActWhite22_0", pic_small = "ActWhite22", scene_icon = "sector_icon_empty", task_is_open = true}
+[110011] = {endless_pic = "ActSum21_0", hard_pic = "ActSum21_0", id = 110011, level_arrange = __rt_4, name = 475525, name_en = "ACTIVITY WINTER", pic_small = "ActWin21", scene_icon = "sector_icon_empty", sector_type = 2}
 , 
-[120021] = {endless_pic = "ActWhite22_2_big", hard_pic = "ActWhite22_2_big", id = 120021, name = 72359, name_en = "ACTIVITY WHITE", pic_big = "ActWhite22_2_big", pic_small = "ActWhite22_2_small", scene_icon = "sector_icon_empty", task_is_open = true}
+[110012] = {endless_pic = "ActSum21_0", hard_pic = "ActSum21_0", id = 110012, level_arrange = __rt_4, name = 172962, name_en = "ACTIVITY WINTER", pic_small = "ActWin21", scene_icon = "sector_icon_empty", sector_type = 2}
 , 
-[120031] = {endless_pic = "ActWhite22_0", hard_pic = "ActWhite22_0", id = 120031, name = 408075, name_en = "ACTIVITY WHITE", pic_big = "ActWhite22_0", pic_small = "ActWhite22", scene_icon = "sector_icon_empty", task_is_open = true}
+[120011] = {endless_pic = "ActWhite22_0", hard_pic = "ActWhite22_0", id = 120011, name = 408075, name_en = "ACTIVITY WHITE", pic_big = "ActWhite22_0", pic_small = "ActWhite22", scene_icon = "sector_icon_empty"}
 , 
-[130011] = {endless_pic = "ActCarnival22_big", hard_pic = "ActCarnival22_big", id = 130011, level_arrange = __rt_4, name_en = "BURBANK", pic_big = "ActCarnival22_big", pic_small = "ActCarnival22_small", scene_icon = "sector_icon_empty", type_name = 28859}
+[120021] = {endless_pic = "ActWhite22_2_big", hard_pic = "ActWhite22_2_big", id = 120021, name = 72359, name_en = "ACTIVITY WHITE", pic_big = "ActWhite22_2_big", pic_small = "ActWhite22_2_small", scene_icon = "sector_icon_empty"}
 , 
-[130012] = {endless_pic = "ActCarnival22Rouge_big", hard_pic = "ActCarnival22Rouge_big", id = 130012, level_arrange = __rt_4, name = 350328, name_en = "BURBANK ROUGE", pic_big = "ActCarnival22Rouge_big", pic_small = "ActCarnival22Rouge_small", scene_icon = "sector_icon_empty", type_name = 28859}
+[120031] = {endless_pic = "ActWhite22_0", hard_pic = "ActWhite22_0", id = 120031, name = 408075, name_en = "ACTIVITY WHITE", pic_big = "ActWhite22_0", pic_small = "ActWhite22", scene_icon = "sector_icon_empty"}
 , 
-[130021] = {endless_pic = "ActCarnival22_big", hard_pic = "ActCarnival22_big", id = 130021, level_arrange = __rt_4, name_en = "BURBANK", pic_big = "ActCarnival22_big", pic_small = "ActCarnival22_small", scene_icon = "sector_icon_empty", type_name = 28859}
+[130011] = {endless_pic = "ActCarnival22_big", hard_pic = "ActCarnival22_big", id = 130011, level_arrange = __rt_4, name_en = "BURBANK", pic_big = "ActCarnival22_big", pic_small = "ActCarnival22_small", scene_icon = "sector_icon_empty", task_is_open = false, type_name = 28859}
 , 
-[130022] = {endless_pic = "ActCarnival22Rouge_big", hard_pic = "ActCarnival22Rouge_big", id = 130022, level_arrange = __rt_4, name = 350328, name_en = "BURBANK ROUGE", pic_big = "ActCarnival22Rouge_big", pic_small = "ActCarnival22Rouge_small", scene_icon = "sector_icon_empty", type_name = 28859}
+[130012] = {endless_pic = "ActCarnival22Rouge_big", hard_pic = "ActCarnival22Rouge_big", id = 130012, level_arrange = __rt_4, name = 350328, name_en = "BURBANK ROUGE", pic_big = "ActCarnival22Rouge_big", pic_small = "ActCarnival22Rouge_small", scene_icon = "sector_icon_empty", task_is_open = false, type_name = 28859}
 , 
-[140011] = {endless_pic = "ActSum21_0", hard_pic = "ActSum21_0", id = 140011, level_arrange = __rt_2, name = 138097, name_en = "CRITICAL CASCADE", scene_icon = "sector_icon_empty", sector_type = 4, task_is_open = true, type_name = 352961}
+[130021] = {endless_pic = "ActCarnival22_big", hard_pic = "ActCarnival22_big", id = 130021, level_arrange = __rt_4, name_en = "BURBANK", pic_big = "ActCarnival22_big", pic_small = "ActCarnival22_small", scene_icon = "sector_icon_empty", task_is_open = false, type_name = 28859}
 , 
-[140012] = {endless_pic = "ActSum21_0", hard_pic = "ActSum21_0", id = 140012, level_arrange = __rt_2, name = 304585, scene_icon = "sector_icon_empty"}
+[130022] = {endless_pic = "ActCarnival22Rouge_big", hard_pic = "ActCarnival22Rouge_big", id = 130022, level_arrange = __rt_4, name = 350328, name_en = "BURBANK ROUGE", pic_big = "ActCarnival22Rouge_big", pic_small = "ActCarnival22Rouge_small", scene_icon = "sector_icon_empty", task_is_open = false, type_name = 28859}
 , 
-[220011] = {endless_pic = "ActHallowmas_big", hard_pic = "ActHallowmas_big", id = 220011, level_arrange = __rt_4, name = 28095, name_en = 198968, pic_big = "ActHallowmas_big", pic_small = "ActHallowmas_small", scene_icon = "sector_icon_empty", type_name = 288100}
+[140011] = {endless_pic = "ActSum21_0", hard_pic = "ActSum21_0", id = 140011, level_arrange = __rt_2, name = 138097, name_en = "CRITICAL CASCADE", scene_icon = "sector_icon_empty", sector_type = 4, type_name = 352961}
 , 
-[220012] = {endless_pic = "MatrixTutorial_big", hard_pic = "MatrixTutorial_big", id = 220012, level_arrange = __rt_4, name = 485509, name_en = 26221, pic_big = "MatrixTutorial_big", scene_icon = "sector_icon_empty", sector_type = 4, type_name = 288100}
+[140012] = {endless_pic = "ActSum21_0", hard_pic = "ActSum21_0", id = 140012, level_arrange = __rt_2, name = 304585, scene_icon = "sector_icon_empty", task_is_open = false}
 , 
-[220013] = {endless_pic = "ActChristmas22_big", hard_pic = "ActChristmas22_big", id = 220013, level_arrange = __rt_4, name = 280757, name_en = "Starchasers\' Concerto", pic_big = "ActChristmas22_big", pic_small = "ActChristmas22_small", scene_icon = "sector_icon_empty", type_name = 339977}
+[220011] = {endless_pic = "ActHallowmas_big", hard_pic = "ActHallowmas_big", id = 220011, level_arrange = __rt_4, name = 28095, name_en = 198968, pic_big = "ActHallowmas_big", pic_small = "ActHallowmas_small", scene_icon = "sector_icon_empty", task_is_open = false, type_name = 288100}
 , 
-[220014] = {endless_pic = "MatrixTutorial_big", hard_pic = "MatrixTutorial_big", id = 220014, level_arrange = __rt_4, name = 485509, name_en = 26221, pic_big = "MatrixTutorial_big", scene_icon = "sector_icon_empty", sector_type = 4, type_name = 522997}
+[220012] = {endless_pic = "MatrixTutorial_big", hard_pic = "MatrixTutorial_big", id = 220012, level_arrange = __rt_4, name = 485509, name_en = 26221, pic_big = "MatrixTutorial_big", scene_icon = "sector_icon_empty", sector_type = 4, task_is_open = false, type_name = 288100}
 , 
-[240011] = {endless_pic = "ActCarnival22Rouge_big", hard_pic = "ActCarnival22Rouge_big", id = 240011, level_arrange = __rt_4, name = 48640, name_en = "spring", pic_big = "ActCarnival22Rouge_big", pic_small = "ActCarnival22Rouge_small", scene_icon = "sector_icon_empty", type_name = 228981}
+[220013] = {endless_pic = "ActChristmas22_big", hard_pic = "ActChristmas22_big", id = 220013, level_arrange = __rt_4, name = 280757, name_en = "Starchasers\' Concerto", pic_big = "ActChristmas22_big", pic_small = "ActChristmas22_small", scene_icon = "sector_icon_empty", task_is_open = false, type_name = 339977}
 , 
-[250011] = {endless_pic = "big_6", hard_pic = "big_6", id = 250011, level_arrange = __rt_5, name = 353773, name_en = "23winter", pic_big = "ActWin23_1", pic_small = "ActWin23", scene_icon = "sector_icon_6", sector_type = 5, task_is_open = true, type_name = 85472}
+[220014] = {endless_pic = "MatrixTutorial_big", hard_pic = "MatrixTutorial_big", id = 220014, level_arrange = __rt_4, name = 485509, name_en = 26221, pic_big = "MatrixTutorial_big", scene_icon = "sector_icon_empty", sector_type = 4, task_is_open = false, type_name = 522997}
 , 
-[250012] = {endless_pic = "big_6", hard_pic = "big_6", id = 250012, level_arrange = __rt_5, name = 347485, name_en = "23winter", pic_big = "ActWin23_2", pic_small = "ActWin23", scene_icon = "sector_icon_6", sector_type = 5, type_name = 85472}
+[240011] = {endless_pic = "ActCarnival22Rouge_big", hard_pic = "ActCarnival22Rouge_big", id = 240011, level_arrange = __rt_4, name = 48640, name_en = "spring", pic_big = "ActCarnival22Rouge_big", pic_small = "ActCarnival22Rouge_small", scene_icon = "sector_icon_empty", task_is_open = false, type_name = 228981}
+, 
+[250011] = {endless_pic = "big_6", hard_pic = "big_6", id = 250011, level_arrange = __rt_5, name = 353773, name_en = "23winter", pic_big = "ActWin23_1", pic_small = "ActWin23", scene_icon = "sector_icon_6", sector_type = 5, type_name = 85472}
+, 
+[250012] = {endless_pic = "big_6", hard_pic = "big_6", id = 250012, level_arrange = __rt_5, name = 347485, name_en = "23winter", pic_big = "ActWin23_2", pic_small = "ActWin23", scene_icon = "sector_icon_6", sector_type = 5, task_is_open = false, type_name = 85472}
+, 
+[310001] = {description = 4608, endless_pic = "big_6", hard_pic = "big_6", id = 310001, 
+level_arrange = {4}
+, name = 4608, name_en = "Magrasean Nights", pic_big = "big_6", pic_small = "ActWin23_1", scene_icon = "sector_icon_empty", task_is_open = false, type_name = 4608}
 }
-local __default_values = {achievement = 0, building = __rt_2, course_des = "", description = 189565, endless_pic = "", hard_pic = "", id = 1, is_special = true, level_arrange = __rt_1, name = 285909, name_en = "ROSSUM", order_type = 1, pic_big = "ActSum21_0", pic_small = "ActSum22", pic_stratery_overview = "", reward_show_type = 0, scene_icon = "", sector_level_perform = false, sector_movie = false, sector_type = 1, show_typeDic = __rt_2, task_is_open = false, type_name = 171897}
+local __default_values = {achievement = 0, building = __rt_2, course_des = "", description = 189565, endless_pic = "", hard_pic = "", id = 1, is_special = true, level_arrange = __rt_1, name = 285909, name_en = "ROSSUM", order_type = 1, pic_big = "ActSum21_0", pic_small = "ActSum22", pic_stratery_overview = "", reward_show_type = 0, scene_icon = "", sector_level_perform = false, sector_movie = false, sector_type = 1, show_typeDic = __rt_2, task_is_open = true, type_name = 171897}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")
@@ -187,6 +195,8 @@ actMainSector = {
 {actId = 14, mainSector = 100141, type = 10}
 , 
 {actId = 15, mainSector = 100151, type = 10}
+, 
+{actId = 16, mainSector = 100161, type = 10}
 }
 , 
 [11] = {
@@ -226,6 +236,10 @@ actMainSector = {
 [25] = {
 {actId = 1, mainSector = 250011, type = 25}
 }
+, 
+[31] = {
+{actId = 1, type = 31, warchessSeason = 4}
+}
 }
 , 
 avgUnlockDic = {
@@ -244,7 +258,7 @@ avgUnlockDic = {
 , 
 id_sort_list = {1, 2, 3, 4, 5, 6}
 , maxSectorId = 6, 
-onlyShowStageIdSectorDic = {[90012] = true, [100011] = true, [100012] = true, [100021] = true, [100022] = true, [100031] = true, [100032] = true, [100041] = true, [100042] = true, [100051] = true, [100052] = true, [100061] = true, [100062] = true, [100071] = true, [100072] = true, [100081] = true, [100082] = true, [100091] = true, [100092] = true, [100101] = true, [100102] = true, [100111] = true, [100112] = true, [100121] = true, [100122] = true, [100131] = true, [100132] = true, [100141] = true, [100142] = true, [100151] = true, [100152] = true, [110011] = true, [110012] = true, [120011] = true, [120021] = true, [120031] = true, [130011] = true, [130012] = true, [130021] = true, [130022] = true, [140011] = true, [140012] = true, [220011] = true, [220012] = true, [220013] = true, [220014] = true, [240011] = true, [250011] = true, [250012] = true}
+onlyShowStageIdSectorDic = {[90012] = true, [100011] = true, [100012] = true, [100021] = true, [100022] = true, [100031] = true, [100032] = true, [100041] = true, [100042] = true, [100051] = true, [100052] = true, [100061] = true, [100062] = true, [100071] = true, [100072] = true, [100081] = true, [100082] = true, [100091] = true, [100092] = true, [100101] = true, [100102] = true, [100111] = true, [100112] = true, [100121] = true, [100122] = true, [100131] = true, [100132] = true, [100141] = true, [100142] = true, [100151] = true, [100152] = true, [100161] = true, [100162] = true, [110011] = true, [110012] = true, [120011] = true, [120021] = true, [120031] = true, [130011] = true, [130012] = true, [130021] = true, [130022] = true, [140011] = true, [140012] = true, [220011] = true, [220012] = true, [220013] = true, [220014] = true, [240011] = true, [250011] = true, [250012] = true, [310001] = true}
 , 
 sectorActivityDic = {
 [6] = {actId = 1, mainSector = 6, type = 9}
@@ -313,6 +327,10 @@ sectorActivityDic = {
 , 
 [100152] = {actId = 15, mainSector = 100151, type = 10}
 , 
+[100161] = {actId = 16, mainSector = 100161, type = 10}
+, 
+[100162] = {actId = 16, mainSector = 100161, type = 10}
+, 
 [110011] = {actId = 1, mainSector = 110011, type = 11}
 , 
 [110012] = {actId = 2, mainSector = 110012, type = 11}
@@ -355,12 +373,14 @@ sectorActivityPluralDic = {
 {actId = 2, type = 22, warchessSeason = 2}
 , 
 {actId = 1, type = 22, warchessSeason = 1}
+, 
+{actId = 1, type = 31, warchessSeason = 4}
 }
 }
 , 
 sector_show_convert = {[90011] = 6, [110011] = 6, [110012] = 6}
 , 
-special_id_list = {100, 101, 90011, 90012, 100011, 100012, 100021, 100022, 100031, 100032, 100041, 100042, 100051, 100052, 100061, 100062, 100071, 100072, 100081, 100082, 100091, 100092, 100101, 100102, 100111, 100112, 100121, 100122, 100131, 100132, 100141, 100142, 100151, 100152, 110011, 110012, 120011, 120021, 120031, 130011, 130012, 130021, 130022, 140011, 140012, 220011, 220012, 220013, 220014, 240011, 250011, 250012}
+special_id_list = {100, 101, 90011, 90012, 100011, 100012, 100021, 100022, 100031, 100032, 100041, 100042, 100051, 100052, 100061, 100062, 100071, 100072, 100081, 100082, 100091, 100092, 100101, 100102, 100111, 100112, 100121, 100122, 100131, 100132, 100141, 100142, 100151, 100152, 100161, 100162, 110011, 110012, 120011, 120021, 120031, 130011, 130012, 130021, 130022, 140011, 140012, 220011, 220012, 220013, 220014, 240011, 250011, 250012, 310001}
 , 
 stageUnlockDic = {
 [1101] = {[1101] = 8, [1102] = 3}
@@ -425,7 +445,7 @@ stageUnlockDic = {
 , 
 [2114] = {[2110] = 8, [2115] = 3}
 , 
-[2115] = {[2111] = 8, [3101] = 8, [1000001] = 8, [1010001] = 8, [1058001] = 8, [1059001] = 8, [1060001] = 8, [1061001] = 8, [1062001] = 8, [1063001] = 8, [1064001] = 8, [1100101] = 8, [1100201] = 8, [1101101] = 8, [1101201] = 8, [1900101] = 8, [1900102] = 8, [2500101] = 8, [2500201] = 8, [90011101] = 8, [90012101] = 3, [100011101] = 3, [100021101] = 3, [100031101] = 3, [100041101] = 3, [100051101] = 3, [100061101] = 3, [100071101] = 3, [100081101] = 3, [100091101] = 3, [100092101] = 3, [100101101] = 3, [100102101] = 3, [100111101] = 3, [100112101] = 3, [100121101] = 3, [100122101] = 3, [100131101] = 3, [100132101] = 3, [100141101] = 3, [100142101] = 3, [100151101] = 3, [100152101] = 3, [110012101] = 3, [120011101] = 3, [140011101] = 3, [220012101] = 3, [220012102] = 3, [220012103] = 3, [220012104] = 3, [220014101] = 3, [220014102] = 3, [220014103] = 3, [220014104] = 3, [250011101] = 3, [250012101] = 3}
+[2115] = {[2111] = 8, [3101] = 8, [1000001] = 8, [1010001] = 8, [1058001] = 8, [1059001] = 8, [1060001] = 8, [1061001] = 8, [1062001] = 8, [1063001] = 8, [1064001] = 8, [1067001] = 8, [1100101] = 8, [1100201] = 8, [1101101] = 8, [1101201] = 8, [1900101] = 8, [1900102] = 8, [2500101] = 8, [2500201] = 8, [90011101] = 8, [90012101] = 3, [100011101] = 3, [100021101] = 3, [100031101] = 3, [100041101] = 3, [100051101] = 3, [100061101] = 3, [100071101] = 3, [100081101] = 3, [100091101] = 3, [100092101] = 3, [100101101] = 3, [100102101] = 3, [100111101] = 3, [100112101] = 3, [100121101] = 3, [100122101] = 3, [100131101] = 3, [100132101] = 3, [100141101] = 3, [100142101] = 3, [100151101] = 3, [100152101] = 3, [100161101] = 3, [100162101] = 3, [110012101] = 3, [120011101] = 3, [140011101] = 3, [220012101] = 3, [220012102] = 3, [220012103] = 3, [220012104] = 3, [220014101] = 3, [220014102] = 3, [220014103] = 3, [220014104] = 3, [250011101] = 3, [250012101] = 3}
 , 
 [2201] = {[2202] = 8}
 , 
@@ -892,6 +912,22 @@ stageUnlockDic = {
 [100152101] = {[100152102] = 3}
 , 
 [100152102] = {[100152103] = 3}
+, 
+[100161101] = {[100161102] = 3}
+, 
+[100161102] = {[100161103] = 3}
+, 
+[100161103] = {[1067002] = 8, [100161104] = 3}
+, 
+[100161104] = {[100161105] = 3}
+, 
+[100161105] = {[100161106] = 3}
+, 
+[100161106] = {[100161107] = 3}
+, 
+[100162101] = {[100162102] = 3}
+, 
+[100162102] = {[100162103] = 3}
 , 
 [110011101] = {[1100102] = 8, [110011102] = 3}
 , 

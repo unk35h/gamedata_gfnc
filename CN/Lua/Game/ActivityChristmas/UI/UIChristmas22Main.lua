@@ -7,6 +7,10 @@ local UINChristmasBtn = require("Game.ActivityChristmas.UI.UINChristmasBtn")
 local SectorStageDetailHelper = require("Game.Sector.SectorStageDetailHelper")
 local ActivityFrameUtil = require("Game.ActivityFrame.ActivityFrameUtil")
 local cs_MessageCommon = CS.MessageCommon
+local cs_Material = (CS.UnityEngine).Material
+local cs_UIParticle = ((CS.Coffee).UIExtensions).UIParticle
+local cs_ParticleSystemRenderer = (CS.UnityEngine).ParticleSystemRenderer
+local CS_LanguageGlobal = CS.LanguageGlobal
 local BtnEnum = {StorySector = 1, Tech = 2, Bonus = 3, GuideSector = 4, Task = 5, Dungeon = 6}
 local BtnFuncEnum = {[BtnEnum.StorySector] = "OnClickStorySector", [BtnEnum.Tech] = "OnClickTech", [BtnEnum.Bonus] = "OnClickBonus", [BtnEnum.GuideSector] = "OnClickGuideSector", [BtnEnum.Task] = "OnClickTask", [BtnEnum.Dungeon] = "OnClickDungeon"}
 UIChristmas22Main.OnInit = function(self)
@@ -14,6 +18,7 @@ UIChristmas22Main.OnInit = function(self)
   (UIUtil.SetTopStatus)(self, self.OnCloseChristmas)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_StartListen, self, self.OnClickSeason)
+  self:_InitTitleTex()
   if (table.count)(BtnEnum) ~= #(self.ui).array_btnNode then
     if isGameDev then
       error(" btn count error")
@@ -27,7 +32,7 @@ UIChristmas22Main.OnInit = function(self)
     btnNode:Init(go)
     local funcName = BtnFuncEnum[index]
     btnNode:InitChristmasBtn(BindCallback(self, self[funcName]))
-    -- DECOMPILER ERROR at PC50: Confused about usage of register: R9 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC52: Confused about usage of register: R9 in 'UnsetPending'
 
     ;
     (self._btnNodeDic)[index] = btnNode
@@ -89,12 +94,46 @@ UIChristmas22Main.InitChristmas22Main = function(self, hallowmasData, enterFunc,
   end
 end
 
+UIChristmas22Main._InitTitleTex = function(self)
+  -- function num : 0_2 , upvalues : CS_LanguageGlobal, _ENV, cs_ParticleSystemRenderer, cs_Material
+  local languageInt = (CS_LanguageGlobal.GetLanguageInt)()
+  local texture = ((self.ui).titleTexList)[languageInt + 1]
+  if IsNull(texture) then
+    error((string.format)("christmas22Main title texture %s is null", (CS_LanguageGlobal.GetLanguageStr)()))
+    return 
+  end
+  if self.titleMats ~= nil then
+    self:_DestroyMats()
+  end
+  self.titleMats = {}
+  local particleSystemRenderers = (((self.ui).obj_titleFxp).transform):GetComponentsInChildren(typeof(cs_ParticleSystemRenderer))
+  for i = 0, particleSystemRenderers.Length - 1 do
+    local render = particleSystemRenderers[i]
+    local mat = cs_Material(render.material)
+    render.material = mat
+    ;
+    (table.insert)(self.titleMats, mat)
+    mat:SetTexture("_MainTex", texture)
+  end
+end
+
+UIChristmas22Main._DestroyMats = function(self)
+  -- function num : 0_3 , upvalues : _ENV
+  if self.titleMats == nil then
+    return 
+  end
+  for _,mat in ipairs(self.titleMats) do
+    DestroyUnityObject(mat)
+  end
+  self.titleMats = nil
+end
+
 UIChristmas22Main.__TryOpenNewUnlock = function(self)
-  -- function num : 0_2 , upvalues : _ENV
+  -- function num : 0_4 , upvalues : _ENV
   local actUnlockInfo = (self._data):GetActHallowmasUnlockInfo()
   if actUnlockInfo:IsExistActUnlockInfo() then
     UIManager:ShowWindowAsync(UIWindowTypeID.Christmas22Unlock, function(window)
-    -- function num : 0_2_0 , upvalues : _ENV, self, actUnlockInfo
+    -- function num : 0_4_0 , upvalues : _ENV, self, actUnlockInfo
     if window == nil then
       return 
     end
@@ -106,7 +145,7 @@ UIChristmas22Main.__TryOpenNewUnlock = function(self)
 end
 
 UIChristmas22Main.EnterChristmas22Sector = function(self, selectSector)
-  -- function num : 0_3
+  -- function num : 0_5
   if selectSector == (self._cfg).story_stage then
     self:OnClickStorySector()
   else
@@ -117,7 +156,7 @@ UIChristmas22Main.EnterChristmas22Sector = function(self, selectSector)
 end
 
 UIChristmas22Main.__OnTimeDown = function(self)
-  -- function num : 0_4 , upvalues : _ENV, ActivityFrameUtil
+  -- function num : 0_6 , upvalues : _ENV, ActivityFrameUtil
   do
     if self._expireTime == nil or PlayerDataCenter.timestamp < self._expireTime then
       local title, timeStr, expireTime = (ActivityFrameUtil.GetShowEndTimeStr)(self._data)
@@ -144,7 +183,7 @@ UIChristmas22Main.__OnTimeDown = function(self)
 end
 
 UIChristmas22Main.__Refresh = function(self)
-  -- function num : 0_5 , upvalues : _ENV
+  -- function num : 0_7 , upvalues : _ENV
   ((self.ui).tex_bound_Progress):SetIndex(0, tostring((self._data):GetHallowmasLv()), tostring((self._data):GetHallowmasCurExp()), tostring((self._data):GetHallowmasCurExpLimit()))
   local taskCount = (table.count)((self._data):GetHallowmasDailyTaskIdDic())
   -- DECOMPILER ERROR at PC37: Confused about usage of register: R2 in 'UnsetPending'
@@ -157,7 +196,7 @@ UIChristmas22Main.__Refresh = function(self)
 end
 
 UIChristmas22Main.__RefreshReddot = function(self, reddot)
-  -- function num : 0_6 , upvalues : ActivityHallowmasEnum, BtnEnum
+  -- function num : 0_8 , upvalues : ActivityHallowmasEnum, BtnEnum
   local taskRed = reddot:GetChild((ActivityHallowmasEnum.reddotType).DailyTask)
   local expRed = reddot:GetChild((ActivityHallowmasEnum.reddotType).Exp)
   local achievementRed = reddot:GetChild((ActivityHallowmasEnum.reddotType).Achievement)
@@ -184,7 +223,7 @@ UIChristmas22Main.__RefreshReddot = function(self, reddot)
 end
 
 UIChristmas22Main.OnClickStorySector = function(self)
-  -- function num : 0_7 , upvalues : SectorStageDetailHelper, _ENV
+  -- function num : 0_9 , upvalues : SectorStageDetailHelper, _ENV
   if not (SectorStageDetailHelper.IsSectorNoCollide)((self._cfg).story_stage, true) then
     return 
   end
@@ -193,13 +232,13 @@ UIChristmas22Main.OnClickStorySector = function(self)
   end
   ;
   (self._enterFunc)((self._cfg).story_stage, 1, nil, function()
-    -- function num : 0_7_0 , upvalues : _ENV, self
+    -- function num : 0_9_0 , upvalues : _ENV, self
     if not IsNull(self.transform) then
       self:Show()
     end
   end
 , function()
-    -- function num : 0_7_1 , upvalues : _ENV, self
+    -- function num : 0_9_1 , upvalues : _ENV, self
     if not IsNull(self.transform) then
       self:Hide()
     end
@@ -208,14 +247,14 @@ UIChristmas22Main.OnClickStorySector = function(self)
 end
 
 UIChristmas22Main.OnClickTech = function(self)
-  -- function num : 0_8 , upvalues : _ENV
+  -- function num : 0_10 , upvalues : _ENV
   UIManager:ShowWindowAsync(UIWindowTypeID.Christmas22StrategyOverview, function(win)
-    -- function num : 0_8_0 , upvalues : self, _ENV
+    -- function num : 0_10_0 , upvalues : self, _ENV
     if win == nil then
       return 
     end
     win:InitChristmas22StrategyOverview((self._data):GetHallowmasTechTree(), (self._cfg).tech_special_branch, function()
-      -- function num : 0_8_0_0 , upvalues : _ENV, self
+      -- function num : 0_10_0_0 , upvalues : _ENV, self
       if not IsNull(self.transform) then
         self:Hide()
         self:Show()
@@ -227,15 +266,15 @@ UIChristmas22Main.OnClickTech = function(self)
 end
 
 UIChristmas22Main.OnClickBonus = function(self)
-  -- function num : 0_9 , upvalues : _ENV
+  -- function num : 0_11 , upvalues : _ENV
   UIManager:ShowWindowAsync(UIWindowTypeID.Christmas22Bonus, function(win)
-    -- function num : 0_9_0 , upvalues : self, _ENV
+    -- function num : 0_11_0 , upvalues : self, _ENV
     if win == nil then
       return 
     end
     self:Hide()
     win:InitHalloween22Bouns(self._data, function(tohome)
-      -- function num : 0_9_0_0 , upvalues : _ENV, self
+      -- function num : 0_11_0_0 , upvalues : _ENV, self
       if tohome then
         return 
       end
@@ -250,7 +289,7 @@ UIChristmas22Main.OnClickBonus = function(self)
 end
 
 UIChristmas22Main.OnClickGuideSector = function(self)
-  -- function num : 0_10 , upvalues : SectorStageDetailHelper, _ENV, cs_MessageCommon
+  -- function num : 0_12 , upvalues : SectorStageDetailHelper, _ENV, cs_MessageCommon
   if not (SectorStageDetailHelper.IsSectorNoCollide)((self._cfg).guide_stage, true) then
     return 
   end
@@ -267,13 +306,13 @@ UIChristmas22Main.OnClickGuideSector = function(self)
     end
     ;
     (self._enterFunc)((self._cfg).guide_stage, 1, nil, function()
-    -- function num : 0_10_0 , upvalues : _ENV, self
+    -- function num : 0_12_0 , upvalues : _ENV, self
     if not IsNull(self.transform) then
       self:Show()
     end
   end
 , function()
-    -- function num : 0_10_1 , upvalues : _ENV, self
+    -- function num : 0_12_1 , upvalues : _ENV, self
     if not IsNull(self.transform) then
       self:Hide()
     end
@@ -283,15 +322,15 @@ UIChristmas22Main.OnClickGuideSector = function(self)
 end
 
 UIChristmas22Main.OnClickTask = function(self)
-  -- function num : 0_11 , upvalues : _ENV
+  -- function num : 0_13 , upvalues : _ENV
   UIManager:ShowWindowAsync(UIWindowTypeID.Christmas22Task, function(win)
-    -- function num : 0_11_0 , upvalues : self, _ENV
+    -- function num : 0_13_0 , upvalues : self, _ENV
     if win == nil then
       return 
     end
     self:Hide()
     win:InitChristmas22Task(self._data, function(tohome)
-      -- function num : 0_11_0_0 , upvalues : _ENV, self
+      -- function num : 0_13_0_0 , upvalues : _ENV, self
       if tohome then
         return 
       end
@@ -306,9 +345,9 @@ UIChristmas22Main.OnClickTask = function(self)
 end
 
 UIChristmas22Main.OnClickDungeon = function(self)
-  -- function num : 0_12 , upvalues : _ENV
+  -- function num : 0_14 , upvalues : _ENV
   UIManager:ShowWindowAsync(UIWindowTypeID.Christmas22Repeat, function(win)
-    -- function num : 0_12_0 , upvalues : self, _ENV
+    -- function num : 0_14_0 , upvalues : self, _ENV
     if win == nil then
       return 
     end
@@ -317,13 +356,13 @@ UIChristmas22Main.OnClickDungeon = function(self)
       self.xMasDunCallback = nil
     end
     win:InitXMas22DunRepeat(self._data, function()
-      -- function num : 0_12_0_0 , upvalues : _ENV, self
+      -- function num : 0_14_0_0 , upvalues : _ENV, self
       if not IsNull(self.transform) then
         self:Show()
       end
     end
 , function()
-      -- function num : 0_12_0_1 , upvalues : _ENV, self
+      -- function num : 0_14_0_1 , upvalues : _ENV, self
       if not IsNull(self.transform) then
         self:Hide()
       end
@@ -334,12 +373,12 @@ UIChristmas22Main.OnClickDungeon = function(self)
 end
 
 UIChristmas22Main.SetXMasDunSectorCallback = function(self, callback)
-  -- function num : 0_13
+  -- function num : 0_15
   self.xMasDunCallback = callback
 end
 
 UIChristmas22Main.OnClickSeason = function(self)
-  -- function num : 0_14 , upvalues : _ENV, SectorStageDetailHelper
+  -- function num : 0_16 , upvalues : _ENV, SectorStageDetailHelper
   local isUnComplete = WarChessSeasonManager:GetUncompleteWCSData()
   do
     if isUnComplete then
@@ -351,7 +390,7 @@ UIChristmas22Main.OnClickSeason = function(self)
       return 
     end
     UIManager:ShowWindowAsync(UIWindowTypeID.Christmas22ModeSelect, function(window)
-    -- function num : 0_14_0 , upvalues : self
+    -- function num : 0_16_0 , upvalues : self
     if window == nil then
       return 
     end
@@ -362,7 +401,7 @@ UIChristmas22Main.OnClickSeason = function(self)
 end
 
 UIChristmas22Main.OnCloseChristmas = function(self)
-  -- function num : 0_15 , upvalues : _ENV
+  -- function num : 0_17 , upvalues : _ENV
   local sectorCtrl = ControllerManager:GetController(ControllerTypeId.SectorController)
   if sectorCtrl ~= nil then
     sectorCtrl:PlaySectorBgm()
@@ -374,7 +413,7 @@ UIChristmas22Main.OnCloseChristmas = function(self)
 end
 
 UIChristmas22Main.OnDelete = function(self)
-  -- function num : 0_16 , upvalues : _ENV, base
+  -- function num : 0_18 , upvalues : _ENV, base
   if self._timerId ~= nil then
     TimerManager:StopTimer(self._timerId)
     self._timerId = nil
@@ -383,6 +422,7 @@ UIChristmas22Main.OnDelete = function(self)
     RedDotController:RemoveListener((self._reddot).nodePath, self._reddotFunc)
     self._reddot = nil
   end
+  self:_DestroyMats()
   MsgCenter:RemoveListener(eMsgEventId.ActivityHallowmas, self.__RefreshCallback)
   MsgCenter:RemoveListener(eMsgEventId.WCS_ExitAndClear, self.__RefreshCallback)
   ;

@@ -234,9 +234,6 @@ end
                   end
                 end
                 heroGrowCtrl:RemoveHeroGrow(activityFrameData.actId)
-                if not heroGrowCtrl:IsHaveHeroGrow() then
-                  ControllerManager:DeleteController(ControllerTypeId.ActivityHeroGrow)
-                end
               end
             end
           end
@@ -690,14 +687,38 @@ end
         do
           reddot:SetRedDotCount(reddoutCount)
           local actCtrl = ControllerManager:GetController(ControllerTypeId.ActivityFrame)
-          if not actCtrl:IsExistOpenActByActType() then
-            local eDynConfigData = require("Game.ConfigData.eDynConfigData")
-            ConfigData:ReleaseDynCfg(eDynConfigData.activity_gift)
+          do
+            if not actCtrl:IsExistOpenActByActType() then
+              local eDynConfigData = require("Game.ConfigData.eDynConfigData")
+              ConfigData:ReleaseDynCfg(eDynConfigData.activity_gift)
+            end
+            if UIManager:GetWindow(UIWindowTypeID.EventOptionalGift) ~= nil then
+              (UIUtil.ReturnHome)()
+            end
           end
         end
       end
     end
   end
+end
+, [(ActivityFrameEnum.eActivityType).Season] = function(activityFrameData)
+  -- function num : 0_26 , upvalues : _ENV
+  local isOpen = activityFrameData:IsActivityOpen()
+  if isOpen then
+    return 
+  end
+  local seasonCtrl = ControllerManager:GetController(ControllerTypeId.ActivitySeason)
+  if seasonCtrl == nil then
+    return 
+  end
+  local actId = activityFrameData.actId
+  seasonCtrl:RemoveSeason(actId)
+  if not seasonCtrl:IsHaveSeason() then
+    ControllerManager:DeleteController(ControllerTypeId.ActivitySeason)
+  end
+  local ActLbUtil = require("Game.ActivityLobby.ActLbUtil")
+  ;
+  (ActLbUtil.ActLbActivityFinish)(activityFrameData:GetActivityFrameId())
 end
 }
 return ActivityFrameChangeFunc

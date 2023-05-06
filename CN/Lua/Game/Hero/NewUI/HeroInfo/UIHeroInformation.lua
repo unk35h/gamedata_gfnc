@@ -399,7 +399,7 @@ UIHeroInformation._OnfriendShipClick = function(self)
       return 
     end
     UIManager:ShowWindowAsync(UIWindowTypeID.FriendShip, function(win)
-    -- function num : 0_19_0 , upvalues : _ENV
+    -- function num : 0_19_0 , upvalues : _ENV, self
     if win == nil then
       return 
     end
@@ -410,12 +410,12 @@ UIHeroInformation._OnfriendShipClick = function(self)
     end
     heroInfoWin:Hide()
     win:InitFriendshipSkillUpgrade(heroInfoWin.heroData, nil, function(heroData, switchFunc)
-      -- function num : 0_19_0_0 , upvalues : _ENV
+      -- function num : 0_19_0_0 , upvalues : _ENV, self
       if not heroData:GetIsNotShowInfo() then
         (UIManager:ShowWindow(UIWindowTypeID.HeroInfomation)):RefreshHeroInformation(heroData, switchFunc)
       else
         ;
-        (UIUtil.OnClickBack)()
+        (UIUtil.OnClickBackByUiTab)(self)
       end
     end
 , heroInfoWin.switchHeroFunc)

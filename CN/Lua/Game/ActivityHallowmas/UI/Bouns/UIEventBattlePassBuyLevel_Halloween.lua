@@ -78,7 +78,7 @@ UIEventBattlePassBuyLevel_Halloween.OnClickBuy = function(self)
   -- function num : 0_2 , upvalues : _ENV
   local buyFunc = function()
     -- function num : 0_2_0 , upvalues : _ENV, self
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
     if self._callback ~= nil then
       (self._callback)(self._levelCount)
     end
@@ -99,7 +99,7 @@ end
 
 UIEventBattlePassBuyLevel_Halloween.OnClickCloseBattlePass = function(self)
   -- function num : 0_3 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIEventBattlePassBuyLevel_Halloween.OnCloseBattlePass = function(self)

@@ -22,7 +22,7 @@ eWarChessEnum.eTriggerConditionType = {openSubSystem = 3, turnStart = 6, turnEnd
 eWarChessEnum.IntroInterActType = {[eWCInteractType.gridIntr] = true, [eWCInteractType.rougeDoorIntr] = true, [eWCInteractType.wcsSave] = true, [eWCInteractType.infoWithoutTeam] = true}
 eWarChessEnum.WCSpecialTriggerType = {chessJump = 1}
 eWarChessEnum.WCSpecialItemType = {pumpkin = 1, start = 2, greenBox = 3}
-eWarChessEnum.WCSpecialItemId2Type = {[1] = (eWarChessEnum.WCSpecialItemType).pumpkin, [2] = (eWarChessEnum.WCSpecialItemType).start, [3] = (eWarChessEnum.WCSpecialItemType).greenBox}
+eWarChessEnum.WCSpecialItemLogicType = {healing}
 eWarChessEnum.eItemId = {Pumpkin = 1208}
 eWarChessEnum.eWcEventId = {EatPumpkin = 110}
 eWarChessEnum.WCEnviromentType = {None = 0, Rain = 1, Snow = 2}

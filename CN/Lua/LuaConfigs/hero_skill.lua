@@ -101,6 +101,12 @@ local hero_skill = {
 , 
 [100803] = {consume_id = 5, id = 100803, lv = 5, open_star = 6, type = 3}
 , 
+[100804] = {consume_id = 5, id = 100804, skill_adaption = 1}
+, 
+[100805] = {consume_id = 5, id = 100805, skill_adaption = 1}
+, 
+[100806] = {consume_id = 5, id = 100806, skill_adaption = 1}
+, 
 [100900] = {consume_id = 1, id = 100900, lv = 1}
 , 
 [100901] = {consume_id = 2, id = 100901}
@@ -648,6 +654,14 @@ local hero_skill = {
 [106602] = {id = 106602}
 , 
 [106603] = {id = 106603, lv = 5, open_star = 6, type = 3}
+, 
+[106700] = {id = 106700, lv = 1}
+, 
+[106701] = {id = 106701}
+, 
+[106702] = {id = 106702}
+, 
+[106703] = {id = 106703, lv = 5, open_star = 6, type = 3}
 }
 local __default_values = {advanced_open_star = 1, consume_id = 3, id = 100100, lv = 10, open_star = 1, skill_adaption = 0, type = 1}
 local base = {__index = __default_values, __newindex = function()

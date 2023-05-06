@@ -8,7 +8,7 @@ DormUnBindActiveTime = {20, 40}
 FactoryEnterArgs = {30, 120, 10}
 , FormationDefaultCommanderSkillTree = 1, 
 FormationDetailAttr = {2, 3, 26, 5, 4}
-, FriendshipDungeonDefaultHeroIndex = 1001, FriendshipPerBattle = 200, HouseFloorHeight = 0.2, HouseGridWidth = 0.2, MailNumLimit = 100, OasisHexSize = 8.1, OverclockLimtNum = 3, RandomBeforeBatteleFocusPointLimit = 5, RandomBeforeBatteleProbabilityBase = 300, RandomBeforeBatteleProbabilityEachOne = 80, RandomBeforeBatteleRejudgeItem = 5004, RandomBeforeBatteleRejudgeItemNum = 1, 
+, FriendshipDungeonDefaultHeroIndex = 1001, FriendshipPerBattle = 200, HouseFloorHeight = 0.2, HouseGridWidth = 0.2, MailNumLimit = 500, MailTreasureCount = 300, OasisHexSize = 8.1, OverclockLimtNum = 3, RandomBeforeBatteleFocusPointLimit = 5, RandomBeforeBatteleProbabilityBase = 300, RandomBeforeBatteleProbabilityEachOne = 80, RandomBeforeBatteleRejudgeItem = 5004, RandomBeforeBatteleRejudgeItemNum = 1, 
 STOCareerCostDic = {[1601] = true, [1602] = true, [1603] = true, [1604] = true, [1605] = true, [1606] = true}
 , 
 STOCareerCostIds = {1601, 1603, 1602, 1604, 1605, 1606}
@@ -118,7 +118,7 @@ taskTabSort = {
 }
 , towerEpTypeCfgId = 2202, towerLastUpdate = 30, towerMoneyMax = 999, towerRecommendNum = 10, 
 trainingTimeCfg = {1, 2, 60}
-, ultMpCost = 50000, ultMpEfficent = 50000, ultMpMaxEfficent = 100000, unityOasisCoordinateRatio = 1, userInfoRefreshTime = 600, userInfoUIBG = 410001, waitNetworkTime = 0.5, warfarEndEpl = 1112, warfarStartEpl = 100105, wcEnemyPowerRatePerLevel = 0.1784, weeklyChallengeDailyUnlockScore = 3500, 
+, ultMpCost = 50000, ultMpEfficent = 50000, ultMpMaxEfficent = 100000, unityOasisCoordinateRatio = 1, userInfoRefreshTime = 600, userInfoUIBG = 410001, waitNetworkTime = 0.5, warfarEndEpl = 1112, warfarStartEpl = 100105, wcEnemyPowerRatePerLevel = 0.1784, wcWantedMonsterId = 30079, wcWarnHoPer = 30, weeklyChallengeDailyUnlockScore = 3500, 
 weeklyChallengeSectorIds = {101}
 , 
 weeklyRecommandPower = {[1501] = 15000, [1502] = 45000, [1503] = 45000}

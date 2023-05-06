@@ -710,6 +710,38 @@ local lottery = {
 , 
 [9103] = {lottery_id = 91, reward_type = 9103}
 }
+, 
+[92] = {
+[9201] = {lottery_id = 92, reward_type = 9201}
+, 
+[9202] = {lottery_id = 92, reward_type = 9202}
+, 
+[9203] = {lottery_id = 92, reward_type = 9203}
+}
+, 
+[93] = {
+[9301] = {lottery_id = 93, reward_type = 9301}
+, 
+[9302] = {lottery_id = 93, reward_type = 9302}
+, 
+[9303] = {lottery_id = 93, reward_type = 9303}
+}
+, 
+[94] = {
+[9401] = {lottery_id = 94, reward_type = 9401}
+, 
+[9402] = {lottery_id = 94, reward_type = 9402}
+, 
+[9403] = {lottery_id = 94, reward_type = 9403}
+}
+, 
+[95] = {
+[9501] = {lottery_id = 95, reward_type = 9501}
+, 
+[9502] = {lottery_id = 95, reward_type = 9502}
+, 
+[9503] = {lottery_id = 95, reward_type = 9503}
+}
 }
 local __default_values = {lottery_id = 2, reward_type = 0}
 local base = {__index = __default_values, __newindex = function()

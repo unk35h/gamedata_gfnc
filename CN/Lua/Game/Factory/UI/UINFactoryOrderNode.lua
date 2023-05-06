@@ -533,9 +533,9 @@ rewardNums = {orderCfg.outPutItemNum * Order4SendData.curOrderNum}
     self:closeQuickProduceNode()
   end
   ;
-  (UIUtil.OnClickBack)()
+  (UIUtil.ForceOnClickBack)()
   ;
-  (UIUtil.OnClickBack)()
+  (UIUtil.ForceOnClickBack)()
 end
 
 UINFactoryOrderNode.SetCloseCommonRewardCallback = function(self, closeCommonRewardCallback)

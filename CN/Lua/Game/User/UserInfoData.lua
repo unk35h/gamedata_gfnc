@@ -19,7 +19,6 @@ UserInfoData.ctor = function(self)
   self.backgroudPlateId = nil
   self.supportHeroInfoList = {}
   self.createRelativeTm = nil
-  self.returnTm = nil
   self.title = nil
   self.hasHeroNum = nil
   self.epProgress = {}
@@ -53,7 +52,6 @@ UserInfoData.CreateDataWithAvatarMsg = function(avatarMsg)
   data.__lastOffLineTm = biref.offlineTs or 0
   data.__lastOnLineTm = biref.loginTm or 0
   data.__lastRefreshTs = PlayerDataCenter.timestamp
-  data.returnTm = biref.returnTm
   data.title = biref.title
   if stc ~= nil then
     data.hasHeroNum = stc.heroNum
@@ -74,12 +72,12 @@ UserInfoData.CreateDataWithAvatarMsg = function(avatarMsg)
         data.__damieData = (stc.extra).damie
         if (stc.extra).tinyGames ~= nil then
           for _,tinyGame in ipairs((stc.extra).tinyGames) do
-            -- DECOMPILER ERROR at PC100: Confused about usage of register: R11 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC98: Confused about usage of register: R11 in 'UnsetPending'
 
             if (data.__tinyGameDic)[tinyGame.gameCat] == nil then
               (data.__tinyGameDic)[tinyGame.gameCat] = {}
             end
-            -- DECOMPILER ERROR at PC105: Confused about usage of register: R11 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC103: Confused about usage of register: R11 in 'UnsetPending'
 
             ;
             ((data.__tinyGameDic)[tinyGame.gameCat])[tinyGame.gameId] = tinyGame
@@ -88,12 +86,12 @@ UserInfoData.CreateDataWithAvatarMsg = function(avatarMsg)
       end
       do
         for i = 1, 3 do
-          -- DECOMPILER ERROR at PC119: Confused about usage of register: R9 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC117: Confused about usage of register: R9 in 'UnsetPending'
 
           if dyc == nil or (dyc.assistsBrief)[i] == nil then
             (data.supportHeroInfoList)[i] = false
           else
-            -- DECOMPILER ERROR at PC129: Confused about usage of register: R9 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC127: Confused about usage of register: R9 in 'UnsetPending'
 
             ;
             (data.supportHeroInfoList)[i] = {assistsBrief = (dyc.assistsBrief)[i], assistsRandom = (dyc.assistsRandom)[i]}
@@ -161,7 +159,6 @@ UserInfoData.UpdateByAvatarMsg = function(self, avatarMsg)
   self.__lastOffLineTm = biref.offlineTs or 0
   self.__lastOnLineTm = biref.loginTm or 0
   self.title = biref.title
-  self.returnTm = biref.returnTm
   if stc ~= nil then
     self.hasHeroNum = stc.heroNum
     self:SetEpProgress(stc.maxStageId)
@@ -173,12 +170,12 @@ UserInfoData.UpdateByAvatarMsg = function(self, avatarMsg)
       self.__damieData = (stc.extra).damie
       if (stc.extra).tinyGames ~= nil then
         for _,tinyGame in ipairs((stc.extra).tinyGames) do
-          -- DECOMPILER ERROR at PC80: Confused about usage of register: R10 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC78: Confused about usage of register: R10 in 'UnsetPending'
 
           if (self.__tinyGameDic)[tinyGame.gameCat] == nil then
             (self.__tinyGameDic)[tinyGame.gameCat] = {}
           end
-          -- DECOMPILER ERROR at PC85: Confused about usage of register: R10 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC83: Confused about usage of register: R10 in 'UnsetPending'
 
           ;
           ((self.__tinyGameDic)[tinyGame.gameCat])[tinyGame.gameId] = tinyGame
@@ -188,12 +185,12 @@ UserInfoData.UpdateByAvatarMsg = function(self, avatarMsg)
   end
   do
     for i = 1, 3 do
-      -- DECOMPILER ERROR at PC99: Confused about usage of register: R9 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC97: Confused about usage of register: R9 in 'UnsetPending'
 
       if dyc == nil or (dyc.assistsBrief)[i] == nil then
         (self.supportHeroInfoList)[i] = false
       else
-        -- DECOMPILER ERROR at PC109: Confused about usage of register: R9 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC107: Confused about usage of register: R9 in 'UnsetPending'
 
         ;
         (self.supportHeroInfoList)[i] = {assistsBrief = (dyc.assistsBrief)[i], assistsRandom = (dyc.assistsRandom)[i]}
@@ -535,28 +532,23 @@ UserInfoData.GetIsNewFriend = function(self)
   return self.__isNewFriend
 end
 
-UserInfoData.GetReturnTime = function(self)
-  -- function num : 0_43
-  return self.returnTm or 0
-end
-
 UserInfoData.GetFriendBirdData = function(self)
-  -- function num : 0_44
+  -- function num : 0_43
   return self.__birdData
 end
 
 UserInfoData.GetFriend2048Data = function(self)
-  -- function num : 0_45
+  -- function num : 0_44
   return self.__game2048
 end
 
 UserInfoData.GetFriendDamieData = function(self)
-  -- function num : 0_46
+  -- function num : 0_45
   return self.__damieData
 end
 
 UserInfoData.GetFriendPenguinsData = function(self, birdId)
-  -- function num : 0_47 , upvalues : tinyGameEnum
+  -- function num : 0_46 , upvalues : tinyGameEnum
   if (self.__tinyGameDic)[(tinyGameEnum.eType).penguins] == nil then
     return nil
   end
@@ -564,7 +556,7 @@ UserInfoData.GetFriendPenguinsData = function(self, birdId)
 end
 
 UserInfoData.GetTinyGameData = function(self, gameCat, gameId)
-  -- function num : 0_48
+  -- function num : 0_47
   if (self.__tinyGameDic)[gameCat] == nil then
     return nil
   end

@@ -36,7 +36,7 @@ end
 
 UIHeroPotentialSuccess.OnClickClose = function(self)
   -- function num : 0_3 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIHeroPotentialSuccess.OnBtnCloseClick = function(self)

@@ -44,30 +44,32 @@ local __rt_41 = {[9910015] = 1, [9910022] = 1, [9910061] = 2, [9910066] = 2, [99
 local __rt_42 = {[20011] = 50, [20014] = 50, [20015] = 100, [20021] = 100, [20026] = 100, [20061] = 50, [20098] = 200, [20104] = 150, [20131] = 200}
 local __rt_43 = {[20011] = 50, [20014] = 50, [20019] = 100, [20021] = 100, [20044] = 100, [20045] = 100, [20046] = 100, [20126] = 150, [20131] = 200, [20154] = 100}
 local __rt_44 = {[20011] = 50, [20014] = 50, [20018] = 100, [20019] = 100, [20021] = 100, [20098] = 200, [20126] = 150, [20173] = 50, [20174] = 50, [20175] = 50, [20176] = 150}
-local __rt_45 = {[10015] = 1, [10022] = 1, [10061] = 2, [10066] = 2, [10074] = 3, [10076] = 3, [10120] = 1, [10123] = 1, [10124] = 1, [10137] = 1, [10138] = 1, [10139] = 1, [10140] = 1, [10152] = 1, [10154] = 2, [10193] = 1, [10206] = 3, [10207] = 1, [10209] = 1, [10211] = 1, [10212] = 3, [10213] = 2, [10215] = 3, [10221] = 2, [10222] = 1, [10223] = 1, [10226] = 3, [10232] = 3, [10238] = 2, [10239] = 1, [10240] = 1, [10254] = 1, [10266] = 1, [10267] = 3, [10268] = 2, [10269] = 1, [10270] = 1, [10271] = 2, [10272] = 1, [10273] = 3, [10274] = 2, [10279] = 3, [10280] = 2, [10281] = 3, [10282] = 1, [10283] = 2, [10284] = 1, [10285] = 3, [10286] = 3, [10288] = 2, [10289] = 2, [10290] = 3, [10291] = 3, [10295] = 1, [10304] = 2, [10305] = 2, [10306] = 3, [10307] = 3, [10308] = 1, [10309] = 1, [10310] = 1}
-local __rt_46 = {[20013] = 100, [20014] = 100, [20015] = 150, [20017] = 200, [20018] = 100, [20020] = 200, [20145] = 100}
-local __rt_47 = {[20019] = 100, [20098] = 200, [20104] = 150, [20126] = 150, [20150] = 150, [20151] = 100, [20154] = 100}
-local __rt_48 = {[20028] = 3, [20029] = 4, [20030] = 5, [20117] = 1, [20156] = 3, [20157] = 4, [20158] = 5, [20170] = 2, [20171] = 2, [20182] = 2, [20183] = 2, [20184] = 2}
-local __rt_49 = {[20014] = 50, [20015] = 100, [20016] = 100, [20018] = 100, [20019] = 100, [20021] = 100, [20048] = 100, [20049] = 100, [20126] = 150, [20151] = 100, [20154] = 100}
-local __rt_50 = {1113, 1115, 1110, 1111, 1112}
-local __rt_51 = {[20013] = 100, [20014] = 50, [20021] = 100, [20126] = 150, [20131] = 200, [20151] = 100, [20177] = 50, [20178] = 50, [20179] = 100, [20180] = 100}
-local __rt_52 = {[20008] = 50, [20020] = 200, [20021] = 100, [20098] = 200, [20104] = 150, [20177] = 50, [20178] = 50, [20179] = 100, [20180] = 100}
-local __rt_53 = {[20098] = 6, [20113] = 6, [20117] = 1, [21011] = 2, [21012] = 3, [21020] = 2, [21021] = 3, [21028] = 2, [21029] = 3, [22103] = 5, [22104] = 5, [22106] = 4, [22107] = 4}
-local __rt_54 = {[20013] = 100, [20015] = 100, [20018] = 100, [20021] = 100, [20048] = 100, [20049] = 100, [20050] = 100, [20051] = 100, [20131] = 200, [20155] = 100}
-local __rt_55 = {1, 2, 3, 4, 5, 6}
-local __rt_56 = {1113, 1117, 1118, 1120, 1121, 1122}
-local __rt_57 = {[20098] = 6, [20113] = 6, [20117] = 1, [20182] = 2, [21037] = 3, [21039] = 2, [21040] = 3, [21050] = 3, [21103] = 2, [22103] = 5, [22104] = 5, [22106] = 4, [22107] = 4}
-local __rt_58 = {[20098] = 6, [20113] = 6, [20117] = 1, [21012] = 3, [21021] = 3, [21029] = 3, [21050] = 2, [22103] = 5, [22104] = 5, [22106] = 4, [22107] = 4, [22108] = 2, [22109] = 2}
-local __rt_59 = {[20098] = 6, [20113] = 6, [20117] = 1, [21012] = 3, [21021] = 3, [21029] = 3, [21101] = 2, [22103] = 5, [22104] = 5, [22106] = 4, [22107] = 4, [22108] = 2, [22109] = 2}
-local __rt_60 = {[20011] = 50, [20014] = 50, [20020] = 200, [20021] = 100, [20025] = 100, [20026] = 100, [20061] = 50, [20104] = 150, [20131] = 200}
-local __rt_61 = {[20018] = 100, [20019] = 100, [20020] = 200, [20021] = 100, [20048] = 100, [20049] = 100, [20050] = 100, [20051] = 100, [20155] = 100}
-local __rt_62 = {[20011] = 50, [20015] = 100, [20018] = 100, [20019] = 100, [20021] = 100, [20131] = 200, [20154] = 100, [20177] = 50, [20178] = 50, [20179] = 100, [20180] = 100}
-local __rt_63 = {[20098] = 6, [20113] = 6, [20117] = 1, [21011] = 2, [21012] = 3, [21020] = 2, [21021] = 3, [21028] = 2, [21029] = 3, [21060] = 5, [21062] = 4, [21065] = 4, [21067] = 5}
-local __rt_64 = {[20011] = 50, [20014] = 50, [20018] = 100, [20020] = 200, [20025] = 100, [20061] = 50, [20126] = 150, [20131] = 200, [20154] = 100}
-local __rt_65 = {[20008] = 50, [20015] = 100, [20018] = 100, [20019] = 100, [20021] = 100, [20044] = 100, [20045] = 100, [20046] = 100, [20131] = 200, [20154] = 100}
-local __rt_66 = {[20011] = 50, [20013] = 100, [20015] = 100, [20019] = 100, [20021] = 100, [20131] = 200, [20154] = 100, [20177] = 50, [20178] = 50, [20179] = 100, [20180] = 100}
-local __rt_67 = {[20013] = 100, [20015] = 100, [20018] = 100, [20019] = 100, [20020] = 200, [20021] = 100, [20126] = 150, [20173] = 50, [20175] = 50, [20176] = 150}
-local __rt_68 = {[20008] = 50, [20015] = 100, [20019] = 100, [20020] = 200, [20021] = 100, [20022] = 100, [20147] = 100, [20151] = 100, [20154] = 100, [20155] = 100}
+local __rt_45 = {[20013] = 100, [20014] = 50, [20017] = 100, [20019] = 100, [20020] = 200, [20044] = 100, [20045] = 100, [20046] = 150, [20126] = 150, [20155] = 100}
+local __rt_46 = {[10015] = 1, [10022] = 1, [10061] = 2, [10066] = 2, [10074] = 3, [10076] = 3, [10120] = 1, [10123] = 1, [10124] = 1, [10137] = 1, [10138] = 1, [10139] = 1, [10140] = 1, [10152] = 1, [10154] = 2, [10193] = 1, [10206] = 3, [10207] = 1, [10209] = 1, [10211] = 1, [10212] = 3, [10213] = 2, [10215] = 3, [10221] = 2, [10222] = 1, [10223] = 1, [10226] = 3, [10232] = 3, [10238] = 2, [10239] = 1, [10240] = 1, [10254] = 1, [10266] = 1, [10267] = 3, [10268] = 2, [10269] = 1, [10270] = 1, [10271] = 2, [10272] = 1, [10273] = 3, [10274] = 2, [10279] = 3, [10280] = 2, [10281] = 3, [10282] = 1, [10283] = 2, [10284] = 1, [10285] = 3, [10286] = 3, [10288] = 2, [10289] = 2, [10290] = 3, [10291] = 3, [10295] = 1, [10304] = 2, [10305] = 2, [10306] = 3, [10307] = 3, [10308] = 1, [10309] = 1, [10310] = 1}
+local __rt_47 = {[20013] = 100, [20014] = 100, [20015] = 150, [20017] = 200, [20018] = 100, [20020] = 200, [20145] = 100}
+local __rt_48 = {[20019] = 100, [20098] = 200, [20104] = 150, [20126] = 150, [20150] = 150, [20151] = 100, [20154] = 100}
+local __rt_49 = {[20028] = 3, [20029] = 4, [20030] = 5, [20117] = 1, [20156] = 3, [20157] = 4, [20158] = 5, [20170] = 2, [20171] = 2, [20182] = 2, [20183] = 2, [20184] = 2}
+local __rt_50 = {[20014] = 50, [20015] = 100, [20016] = 100, [20018] = 100, [20019] = 100, [20021] = 100, [20048] = 100, [20049] = 100, [20126] = 150, [20151] = 100, [20154] = 100}
+local __rt_51 = {1113, 1115, 1110, 1111, 1112}
+local __rt_52 = {[20013] = 100, [20014] = 50, [20021] = 100, [20126] = 150, [20131] = 200, [20151] = 100, [20177] = 50, [20178] = 50, [20179] = 100, [20180] = 100}
+local __rt_53 = {[20008] = 50, [20020] = 200, [20021] = 100, [20098] = 200, [20104] = 150, [20177] = 50, [20178] = 50, [20179] = 100, [20180] = 100}
+local __rt_54 = {[20098] = 6, [20113] = 6, [20117] = 1, [21011] = 2, [21012] = 3, [21020] = 2, [21021] = 3, [21028] = 2, [21029] = 3, [22103] = 5, [22104] = 5, [22106] = 4, [22107] = 4}
+local __rt_55 = {[20013] = 100, [20015] = 100, [20018] = 100, [20021] = 100, [20048] = 100, [20049] = 100, [20050] = 100, [20051] = 100, [20131] = 200, [20155] = 100}
+local __rt_56 = {1, 2, 3, 4, 5, 6}
+local __rt_57 = {1113, 1117, 1118, 1120, 1121, 1122}
+local __rt_58 = {[20098] = 6, [20113] = 6, [20117] = 1, [20182] = 2, [21037] = 3, [21039] = 2, [21040] = 3, [21050] = 3, [21103] = 2, [22103] = 5, [22104] = 5, [22106] = 4, [22107] = 4}
+local __rt_59 = {[20098] = 6, [20113] = 6, [20117] = 1, [21012] = 3, [21021] = 3, [21029] = 3, [21050] = 2, [22103] = 5, [22104] = 5, [22106] = 4, [22107] = 4, [22108] = 2, [22109] = 2}
+local __rt_60 = {[20098] = 6, [20113] = 6, [20117] = 1, [21012] = 3, [21021] = 3, [21029] = 3, [21101] = 2, [22103] = 5, [22104] = 5, [22106] = 4, [22107] = 4, [22108] = 2, [22109] = 2}
+local __rt_61 = {[20011] = 50, [20014] = 50, [20020] = 200, [20021] = 100, [20025] = 100, [20026] = 100, [20061] = 50, [20104] = 150, [20131] = 200}
+local __rt_62 = {[20018] = 100, [20019] = 100, [20020] = 200, [20021] = 100, [20048] = 100, [20049] = 100, [20050] = 100, [20051] = 100, [20155] = 100}
+local __rt_63 = {[20011] = 50, [20015] = 100, [20018] = 100, [20019] = 100, [20021] = 100, [20131] = 200, [20154] = 100, [20177] = 50, [20178] = 50, [20179] = 100, [20180] = 100}
+local __rt_64 = {[20098] = 6, [20113] = 6, [20117] = 1, [21011] = 2, [21012] = 3, [21020] = 2, [21021] = 3, [21028] = 2, [21029] = 3, [21060] = 5, [21062] = 4, [21065] = 4, [21067] = 5}
+local __rt_65 = {[20011] = 50, [20014] = 50, [20018] = 100, [20020] = 200, [20025] = 100, [20061] = 50, [20126] = 150, [20131] = 200, [20154] = 100}
+local __rt_66 = {[20008] = 50, [20015] = 100, [20018] = 100, [20019] = 100, [20021] = 100, [20044] = 100, [20045] = 100, [20046] = 100, [20131] = 200, [20154] = 100}
+local __rt_67 = {[20011] = 50, [20013] = 100, [20015] = 100, [20019] = 100, [20021] = 100, [20131] = 200, [20154] = 100, [20177] = 50, [20178] = 50, [20179] = 100, [20180] = 100}
+local __rt_68 = {[20013] = 100, [20015] = 100, [20018] = 100, [20019] = 100, [20020] = 200, [20021] = 100, [20126] = 150, [20173] = 50, [20175] = 50, [20176] = 150}
+local __rt_69 = {[20008] = 50, [20015] = 100, [20019] = 100, [20020] = 200, [20021] = 100, [20022] = 100, [20147] = 100, [20151] = 100, [20154] = 100, [20155] = 100}
+local __rt_70 = {[20008] = 50, [20015] = 100, [20017] = 100, [20018] = 100, [20019] = 100, [20021] = 100, [20044] = 100, [20045] = 100, [20046] = 100, [20154] = 100}
 local weekly_challenge_config = {
 [101] = {
 [1624222800] = {buffGroup = __rt_1, const_shop_poolDic = __rt_2, groupOrder = __rt_1, group_name = __rt_1, time_end = 1624222800}
@@ -261,6 +263,14 @@ local weekly_challenge_config = {
 [1681074000] = {time_end = 1681074000}
 , 
 [1681678800] = {time_end = 1681678800}
+, 
+[1682283600] = {time_end = 1682283600}
+, 
+[1682888400] = {time_end = 1682888400}
+, 
+[1683493200] = {time_end = 1683493200}
+, 
+[1684098000] = {time_end = 1684098000}
 }
 , 
 [102] = {
@@ -455,112 +465,128 @@ local weekly_challenge_config = {
 [1681074000] = {explore_buff_id = __rt_44, id = 102, time_end = 1681074000}
 , 
 [1681678800] = {explore_buff_id = __rt_44, id = 102, time_end = 1681678800}
+, 
+[1682283600] = {explore_buff_id = __rt_45, id = 102, time_end = 1682283600}
+, 
+[1682888400] = {explore_buff_id = __rt_45, id = 102, time_end = 1682888400}
+, 
+[1683493200] = {explore_buff_id = __rt_42, id = 102, time_end = 1683493200}
+, 
+[1684098000] = {explore_buff_id = __rt_42, id = 102, time_end = 1684098000}
 }
 , 
 [103] = {
-[1639947600] = {buffGroup = __rt_1, const_shop_poolDic = __rt_45, explore_buff_id = __rt_46, groupOrder = __rt_1, group_name = __rt_1, id = 103, map_logic = 3}
+[1639947600] = {buffGroup = __rt_1, const_shop_poolDic = __rt_46, explore_buff_id = __rt_47, groupOrder = __rt_1, group_name = __rt_1, id = 103, map_logic = 3}
 , 
-[1640552400] = {buffGroup = __rt_1, const_shop_poolDic = __rt_45, explore_buff_id = __rt_46, groupOrder = __rt_1, group_name = __rt_1, id = 103, map_logic = 3, time_end = 1640552400}
+[1640552400] = {buffGroup = __rt_1, const_shop_poolDic = __rt_46, explore_buff_id = __rt_47, groupOrder = __rt_1, group_name = __rt_1, id = 103, map_logic = 3, time_end = 1640552400}
 , 
-[1641157200] = {buffGroup = __rt_1, const_shop_poolDic = __rt_4, explore_buff_id = __rt_47, groupOrder = __rt_1, group_name = __rt_1, id = 103, time_end = 1641157200}
+[1641157200] = {buffGroup = __rt_1, const_shop_poolDic = __rt_4, explore_buff_id = __rt_48, groupOrder = __rt_1, group_name = __rt_1, id = 103, time_end = 1641157200}
 , 
-[1641762000] = {buffGroup = __rt_1, const_shop_poolDic = __rt_4, explore_buff_id = __rt_47, groupOrder = __rt_1, group_name = __rt_1, id = 103, time_end = 1641762000}
+[1641762000] = {buffGroup = __rt_1, const_shop_poolDic = __rt_4, explore_buff_id = __rt_48, groupOrder = __rt_1, group_name = __rt_1, id = 103, time_end = 1641762000}
 , 
-[1643576400] = {buffGroup = __rt_48, const_shop_poolDic = __rt_4, explore_buff_id = __rt_49, groupOrder = __rt_6, group_name = __rt_50, id = 103, time_end = 1643576400}
+[1643576400] = {buffGroup = __rt_49, const_shop_poolDic = __rt_4, explore_buff_id = __rt_50, groupOrder = __rt_6, group_name = __rt_51, id = 103, time_end = 1643576400}
 , 
-[1644181200] = {buffGroup = __rt_48, const_shop_poolDic = __rt_4, explore_buff_id = __rt_49, groupOrder = __rt_6, group_name = __rt_50, id = 103, time_end = 1644181200}
+[1644181200] = {buffGroup = __rt_49, const_shop_poolDic = __rt_4, explore_buff_id = __rt_50, groupOrder = __rt_6, group_name = __rt_51, id = 103, time_end = 1644181200}
 , 
-[1647205200] = {buffGroup = __rt_48, explore_buff_id = __rt_51, groupOrder = __rt_6, group_name = __rt_50, id = 103, time_end = 1647205200}
+[1647205200] = {buffGroup = __rt_49, explore_buff_id = __rt_52, groupOrder = __rt_6, group_name = __rt_51, id = 103, time_end = 1647205200}
 , 
-[1647810000] = {buffGroup = __rt_48, explore_buff_id = __rt_51, groupOrder = __rt_6, group_name = __rt_50, id = 103, time_end = 1647810000}
+[1647810000] = {buffGroup = __rt_49, explore_buff_id = __rt_52, groupOrder = __rt_6, group_name = __rt_51, id = 103, time_end = 1647810000}
 , 
-[1648414800] = {buffGroup = __rt_48, explore_buff_id = __rt_52, groupOrder = __rt_6, group_name = __rt_50, id = 103, time_end = 1648414800}
+[1648414800] = {buffGroup = __rt_49, explore_buff_id = __rt_53, groupOrder = __rt_6, group_name = __rt_51, id = 103, time_end = 1648414800}
 , 
-[1649019600] = {buffGroup = __rt_48, explore_buff_id = __rt_52, groupOrder = __rt_6, group_name = __rt_50, id = 103, time_end = 1649019600}
+[1649019600] = {buffGroup = __rt_49, explore_buff_id = __rt_53, groupOrder = __rt_6, group_name = __rt_51, id = 103, time_end = 1649019600}
 , 
-[1653253200] = {buffGroup = __rt_48, explore_buff_id = __rt_35, groupOrder = __rt_6, group_name = __rt_50, id = 103, time_end = 1653253200}
+[1653253200] = {buffGroup = __rt_49, explore_buff_id = __rt_35, groupOrder = __rt_6, group_name = __rt_51, id = 103, time_end = 1653253200}
 , 
-[1653858000] = {buffGroup = __rt_48, explore_buff_id = __rt_35, groupOrder = __rt_6, group_name = __rt_50, id = 103, time_end = 1653858000}
+[1653858000] = {buffGroup = __rt_49, explore_buff_id = __rt_35, groupOrder = __rt_6, group_name = __rt_51, id = 103, time_end = 1653858000}
 , 
-[1656882000] = {buffGroup = __rt_53, explore_buff_id = __rt_54, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1656882000}
+[1656882000] = {buffGroup = __rt_54, explore_buff_id = __rt_55, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1656882000}
 , 
-[1657486800] = {buffGroup = __rt_53, explore_buff_id = __rt_54, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1657486800}
+[1657486800] = {buffGroup = __rt_54, explore_buff_id = __rt_55, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1657486800}
 , 
-[1658091600] = {buffGroup = __rt_57, explore_buff_id = __rt_35, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1658091600}
+[1658091600] = {buffGroup = __rt_58, explore_buff_id = __rt_35, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1658091600}
 , 
-[1658696400] = {buffGroup = __rt_57, explore_buff_id = __rt_35, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1658696400}
+[1658696400] = {buffGroup = __rt_58, explore_buff_id = __rt_35, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1658696400}
 , 
-[1659301200] = {buffGroup = __rt_58, explore_buff_id = __rt_36, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1659301200}
+[1659301200] = {buffGroup = __rt_59, explore_buff_id = __rt_36, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1659301200}
 , 
-[1659906000] = {buffGroup = __rt_58, explore_buff_id = __rt_36, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1659906000}
+[1659906000] = {buffGroup = __rt_59, explore_buff_id = __rt_36, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1659906000}
 , 
-[1660510800] = {buffGroup = __rt_53, explore_buff_id = __rt_40, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1660510800}
+[1660510800] = {buffGroup = __rt_54, explore_buff_id = __rt_40, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1660510800}
 , 
-[1661115600] = {buffGroup = __rt_53, explore_buff_id = __rt_40, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1661115600}
+[1661115600] = {buffGroup = __rt_54, explore_buff_id = __rt_40, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1661115600}
 , 
-[1661720400] = {buffGroup = __rt_59, explore_buff_id = __rt_60, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1661720400}
+[1661720400] = {buffGroup = __rt_60, explore_buff_id = __rt_61, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1661720400}
 , 
-[1662325200] = {buffGroup = __rt_59, explore_buff_id = __rt_60, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1662325200}
+[1662325200] = {buffGroup = __rt_60, explore_buff_id = __rt_61, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1662325200}
 , 
-[1664139600] = {buffGroup = __rt_58, explore_buff_id = __rt_61, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1664139600}
+[1664139600] = {buffGroup = __rt_59, explore_buff_id = __rt_62, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1664139600}
 , 
-[1664744400] = {buffGroup = __rt_58, explore_buff_id = __rt_61, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1664744400}
+[1664744400] = {buffGroup = __rt_59, explore_buff_id = __rt_62, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1664744400}
 , 
-[1665349200] = {buffGroup = __rt_53, explore_buff_id = __rt_40, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1665349200}
+[1665349200] = {buffGroup = __rt_54, explore_buff_id = __rt_40, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1665349200}
 , 
-[1665954000] = {buffGroup = __rt_53, explore_buff_id = __rt_40, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1665954000}
+[1665954000] = {buffGroup = __rt_54, explore_buff_id = __rt_40, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1665954000}
 , 
-[1666558800] = {buffGroup = __rt_57, explore_buff_id = __rt_62, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1666558800}
+[1666558800] = {buffGroup = __rt_58, explore_buff_id = __rt_63, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1666558800}
 , 
-[1667163600] = {buffGroup = __rt_57, explore_buff_id = __rt_62, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1667163600}
+[1667163600] = {buffGroup = __rt_58, explore_buff_id = __rt_63, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1667163600}
 , 
-[1667768400] = {buffGroup = __rt_63, explore_buff_id = __rt_61, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1667768400}
+[1667768400] = {buffGroup = __rt_64, explore_buff_id = __rt_62, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1667768400}
 , 
-[1668373200] = {buffGroup = __rt_63, const_shop_poolDic = __rt_41, explore_buff_id = __rt_61, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1668373200}
+[1668373200] = {buffGroup = __rt_64, const_shop_poolDic = __rt_41, explore_buff_id = __rt_62, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1668373200}
 , 
-[1668978000] = {buffGroup = __rt_59, explore_buff_id = __rt_64, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1668978000}
+[1668978000] = {buffGroup = __rt_60, explore_buff_id = __rt_65, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1668978000}
 , 
-[1669582800] = {buffGroup = __rt_59, explore_buff_id = __rt_64, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1669582800}
+[1669582800] = {buffGroup = __rt_60, explore_buff_id = __rt_65, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1669582800}
 , 
-[1670187600] = {buffGroup = __rt_57, explore_buff_id = __rt_65, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1670187600}
+[1670187600] = {buffGroup = __rt_58, explore_buff_id = __rt_66, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1670187600}
 , 
-[1670792400] = {buffGroup = __rt_57, explore_buff_id = __rt_65, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1670792400}
+[1670792400] = {buffGroup = __rt_58, explore_buff_id = __rt_66, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1670792400}
 , 
-[1671397200] = {buffGroup = __rt_57, explore_buff_id = __rt_66, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1671397200}
+[1671397200] = {buffGroup = __rt_58, explore_buff_id = __rt_67, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1671397200}
 , 
-[1672002000] = {buffGroup = __rt_57, explore_buff_id = __rt_66, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1672002000}
+[1672002000] = {buffGroup = __rt_58, explore_buff_id = __rt_67, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1672002000}
 , 
-[1672606800] = {buffGroup = __rt_58, explore_buff_id = __rt_36, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1672606800}
+[1672606800] = {buffGroup = __rt_59, explore_buff_id = __rt_36, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1672606800}
 , 
-[1673211600] = {buffGroup = __rt_58, explore_buff_id = __rt_36, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1673211600}
+[1673211600] = {buffGroup = __rt_59, explore_buff_id = __rt_36, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1673211600}
 , 
-[1673816400] = {buffGroup = __rt_53, explore_buff_id = __rt_40, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1673816400}
+[1673816400] = {buffGroup = __rt_54, explore_buff_id = __rt_40, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1673816400}
 , 
-[1674421200] = {buffGroup = __rt_53, explore_buff_id = __rt_40, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1674421200}
+[1674421200] = {buffGroup = __rt_54, explore_buff_id = __rt_40, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1674421200}
 , 
-[1675026000] = {buffGroup = __rt_57, explore_buff_id = __rt_62, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1675026000}
+[1675026000] = {buffGroup = __rt_58, explore_buff_id = __rt_63, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1675026000}
 , 
-[1675630800] = {buffGroup = __rt_57, explore_buff_id = __rt_62, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1675630800}
+[1675630800] = {buffGroup = __rt_58, explore_buff_id = __rt_63, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1675630800}
 , 
-[1676235600] = {buffGroup = __rt_59, explore_buff_id = __rt_64, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1676235600}
+[1676235600] = {buffGroup = __rt_60, explore_buff_id = __rt_65, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1676235600}
 , 
-[1676840400] = {buffGroup = __rt_59, explore_buff_id = __rt_64, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1676840400}
+[1676840400] = {buffGroup = __rt_60, explore_buff_id = __rt_65, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1676840400}
 , 
-[1677445200] = {buffGroup = __rt_59, explore_buff_id = __rt_40, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1677445200}
+[1677445200] = {buffGroup = __rt_60, explore_buff_id = __rt_40, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1677445200}
 , 
-[1678050000] = {buffGroup = __rt_59, explore_buff_id = __rt_40, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1678050000}
+[1678050000] = {buffGroup = __rt_60, explore_buff_id = __rt_40, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1678050000}
 , 
-[1678654800] = {buffGroup = __rt_59, explore_buff_id = __rt_67, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1678654800}
+[1678654800] = {buffGroup = __rt_60, explore_buff_id = __rt_68, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1678654800}
 , 
-[1679259600] = {buffGroup = __rt_59, explore_buff_id = __rt_67, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1679259600}
+[1679259600] = {buffGroup = __rt_60, explore_buff_id = __rt_68, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1679259600}
 , 
-[1679864400] = {buffGroup = __rt_57, explore_buff_id = __rt_62, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1679864400}
+[1679864400] = {buffGroup = __rt_58, explore_buff_id = __rt_63, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1679864400}
 , 
-[1680469200] = {buffGroup = __rt_57, explore_buff_id = __rt_62, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1680469200}
+[1680469200] = {buffGroup = __rt_58, explore_buff_id = __rt_63, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1680469200}
 , 
-[1681074000] = {buffGroup = __rt_59, explore_buff_id = __rt_68, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1681074000}
+[1681074000] = {buffGroup = __rt_60, explore_buff_id = __rt_69, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1681074000}
 , 
-[1681678800] = {buffGroup = __rt_59, explore_buff_id = __rt_68, groupOrder = __rt_55, group_name = __rt_56, id = 103, time_end = 1681678800}
+[1681678800] = {buffGroup = __rt_60, explore_buff_id = __rt_69, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1681678800}
+, 
+[1682283600] = {buffGroup = __rt_60, explore_buff_id = __rt_70, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1682283600}
+, 
+[1682888400] = {buffGroup = __rt_60, explore_buff_id = __rt_70, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1682888400}
+, 
+[1683493200] = {buffGroup = __rt_60, explore_buff_id = __rt_68, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1683493200}
+, 
+[1684098000] = {buffGroup = __rt_60, explore_buff_id = __rt_68, groupOrder = __rt_56, group_name = __rt_57, id = 103, time_end = 1684098000}
 }
 }
 local __default_values = {buffGroup = __rt_8, const_shop_poolDic = __rt_11, explore_buff_id = __rt_1, groupOrder = __rt_9, group_name = __rt_10, id = 101, map_logic = 1, rank_id = 1, time_end = 1639947600}

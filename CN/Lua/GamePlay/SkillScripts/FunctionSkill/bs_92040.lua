@@ -20,7 +20,7 @@ bs_92040.OnAfterHurt = function(self, sender, target, skill, hurt, isMiss, isCri
   if isMiss then
     self:PlayChipEffect()
     local skillResult = LuaSkillCtrl:CallSkillResultNoEffect(self, target)
-    LuaSkillCtrl:HealResult(skillResult, (self.config).heal_config, {(self.arglist)[1]})
+    LuaSkillCtrl:HealResult(skillResult, (self.config).heal_config, {(self.arglist)[1]}, true)
     skillResult:EndResult()
   end
 end

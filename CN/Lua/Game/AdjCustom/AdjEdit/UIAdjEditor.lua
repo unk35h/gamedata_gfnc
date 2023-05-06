@@ -993,7 +993,7 @@ UIAdjEditor.SaveAdjEdit = function(self)
   local network = NetworkManager:GetNetwork(NetworkTypeID.AdjCustom)
   network:CS_MainInterface_PresetUpdate(data, function()
     -- function num : 0_46_0 , upvalues : _ENV, self
-    (UIUtil.PopFromBackStack)()
+    (UIUtil.PopFromBackStackByUiTab)(self)
     self:__QuickUI()
   end
 )

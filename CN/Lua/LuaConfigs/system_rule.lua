@@ -33,7 +33,7 @@ local system_rule = {
 , 
 {maintitle = 172769, rule_id = 16, rule_text = 438737}
 , 
-{maintitle = 474848, rule_id = 17, rule_text = 337285, subtitle = 10960, text_en = "RULES"}
+{maintitle = 474848, rule_id = 17, rule_text = 477489, subtitle = 10960, text_en = "RULES"}
 }
 local __default_values = {maintitle = 167381, rule_id = 1, rule_text = 187300, subtitle = "", text_en = "", title = ""}
 local base = {__index = __default_values, __newindex = function()

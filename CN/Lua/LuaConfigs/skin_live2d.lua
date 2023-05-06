@@ -18,27 +18,28 @@ local __rt_15 = {[3] = 0}
 local __rt_16 = {3, 3, 4, 4, 4, 4, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3}
 local __rt_17 = {145}
 local __rt_18 = {0; [4] = 0}
-local __rt_19 = {wait_0 = __rt_4}
-local __rt_20 = {[2] = 0}
-local __rt_21 = {wait_0 = __rt_5}
-local __rt_22 = {idle_1 = __rt_14, touch_1 = __rt_1, touch_2 = __rt_2, touch_3 = __rt_3, wait_1 = __rt_4, wait_2 = __rt_5, wait_3 = __rt_6}
-local __rt_23 = {5, 6, 9}
-local __rt_24 = {[3] = 0, [4] = 0}
-local __rt_25 = {1}
-local __rt_26 = {2}
-local __rt_27 = {3}
-local __rt_28 = {4}
-local __rt_29 = {110}
-local __rt_30 = {144}
-local __rt_31 = {4, 4, 4, 4, 4, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4}
-local __rt_32 = {idle_1 = __rt_14, touch_1 = __rt_1, touch_2 = __rt_2, touch_3 = __rt_3, wait_1 = __rt_10, wait_2 = __rt_6}
-local __rt_33 = {touch_1 = __rt_9, wait_1 = __rt_10, wait_2 = __rt_6}
-local __rt_34 = {5, 6, 8}
-local __rt_35 = {idle_1 = __rt_10, touch_0 = __rt_9}
-local __rt_36 = {146}
-local __rt_37 = {0}
-local __rt_38 = {102}
-local __rt_39 = {[4] = 0}
+local __rt_19 = {touch_1 = __rt_9, wait_0 = __rt_10}
+local __rt_20 = {wait_0 = __rt_4}
+local __rt_21 = {[2] = 0}
+local __rt_22 = {wait_0 = __rt_5}
+local __rt_23 = {idle_1 = __rt_14, touch_1 = __rt_1, touch_2 = __rt_2, touch_3 = __rt_3, wait_1 = __rt_4, wait_2 = __rt_5, wait_3 = __rt_6}
+local __rt_24 = {5, 6, 9}
+local __rt_25 = {[3] = 0, [4] = 0}
+local __rt_26 = {1}
+local __rt_27 = {2}
+local __rt_28 = {3}
+local __rt_29 = {4}
+local __rt_30 = {110}
+local __rt_31 = {144}
+local __rt_32 = {4, 4, 4, 4, 4, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4}
+local __rt_33 = {idle_1 = __rt_14, touch_1 = __rt_1, touch_2 = __rt_2, touch_3 = __rt_3, wait_1 = __rt_10, wait_2 = __rt_6}
+local __rt_34 = {touch_1 = __rt_9, wait_1 = __rt_10, wait_2 = __rt_6}
+local __rt_35 = {5, 6, 8}
+local __rt_36 = {idle_1 = __rt_10, touch_0 = __rt_9}
+local __rt_37 = {146}
+local __rt_38 = {0}
+local __rt_39 = {102}
+local __rt_40 = {[4] = 0}
 local skin_live2d = {
 [300100] = {aniCvDic = __rt_7}
 , 
@@ -80,43 +81,41 @@ aniCvDic = {wait_1 = __rt_5}
 , 
 [300802] = {delay_seconds = __rt_13, id = 300802}
 , 
-[301003] = {
-aniCvDic = {touch_1 = __rt_9, wait_0 = __rt_10}
-, id = 301003, level = 1}
+[301003] = {aniCvDic = __rt_19, id = 301003, level = 1}
 , 
-[301004] = {aniCvDic = __rt_19, delay_seconds = __rt_20, id = 301004}
+[301004] = {aniCvDic = __rt_20, delay_seconds = __rt_21, id = 301004}
 , 
 [301101] = {
 aniCvDic = {idle_1 = __rt_14, touch_1 = __rt_9, wait_1 = __rt_10, wait_2 = __rt_6}
 , id = 301101, level = 2}
 , 
-[301301] = {aniCvDic = __rt_21, delay_seconds = __rt_13, id = 301301}
+[301301] = {aniCvDic = __rt_22, delay_seconds = __rt_13, id = 301301}
 , 
-[301302] = {aniCvDic = __rt_22, id = 301302}
+[301302] = {aniCvDic = __rt_23, id = 301302}
 , 
 [301501] = {
-aniCvDic = {touch_1 = __rt_9, wait_1 = __rt_23}
+aniCvDic = {touch_1 = __rt_9, wait_1 = __rt_24}
 , id = 301501, level = 2}
 , 
-[301502] = {aniCvDic = __rt_22, id = 301502}
+[301502] = {aniCvDic = __rt_23, id = 301502}
 , 
-[301601] = {aniCvDic = __rt_22, id = 301601}
+[301601] = {aniCvDic = __rt_23, id = 301601}
 , 
 [301602] = {aniCvDic = __rt_8, delay_seconds = __rt_13, id = 301602}
 , 
-[301604] = {delay_seconds = __rt_24, id = 301604}
+[301604] = {delay_seconds = __rt_25, id = 301604}
 , 
 [301703] = {
-aniCvDic = {login_1 = __rt_25, login_2 = __rt_26, login_3 = __rt_27, login_4 = __rt_28, touch_1 = __rt_2, 
+aniCvDic = {login_1 = __rt_26, login_2 = __rt_27, login_3 = __rt_28, login_4 = __rt_29, touch_1 = __rt_2, 
 touch_2 = {143}
-, touch_3 = __rt_1, touch_4 = __rt_1, touch_5 = __rt_29, touch_6 = __rt_30, wait_0 = __rt_4, wait_1 = __rt_5}
+, touch_3 = __rt_1, touch_4 = __rt_1, touch_5 = __rt_30, touch_6 = __rt_31, wait_0 = __rt_4, wait_1 = __rt_5}
 , 
 delay_seconds = {0.93}
-, id = 301703, login_time_range = __rt_31}
+, id = 301703, login_time_range = __rt_32}
 , 
-[301801] = {aniCvDic = __rt_22, id = 301801}
+[301801] = {aniCvDic = __rt_23, id = 301801}
 , 
-[301806] = {delay_seconds = __rt_24, id = 301806, is_open_hide_bg = true, 
+[301806] = {delay_seconds = __rt_25, id = 301806, is_open_hide_bg = true, 
 login_time_range = {4, 4, 4, 4, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4}
 }
 , 
@@ -136,15 +135,17 @@ delay_seconds = {[2] = 0.53, [8] = 0.13, [11] = 1.03}
 , 
 [302204] = {aniCvDic = __rt_11, id = 302204, level = 1}
 , 
-[302302] = {aniCvDic = __rt_32, id = 302302, level = 2}
+[302302] = {aniCvDic = __rt_33, id = 302302, level = 2}
 , 
-[302401] = {aniCvDic = __rt_33, id = 302401, level = 2}
+[302401] = {aniCvDic = __rt_34, id = 302401, level = 2}
 , 
 [302404] = {aniCvDic = __rt_11, id = 302404, level = 1}
 , 
 [302501] = {aniCvDic = __rt_7, id = 302501}
 , 
-[302503] = {aniCvDic = __rt_33, id = 302503, level = 2}
+[302503] = {aniCvDic = __rt_34, id = 302503, level = 2}
+, 
+[302505] = {aniCvDic = __rt_11, id = 302505, level = 1}
 , 
 [302602] = {
 aniCvDic = {touch_1 = __rt_1, touch_2 = __rt_5, touch_3 = __rt_3, wait_0 = __rt_4, wait_1 = __rt_6}
@@ -156,32 +157,32 @@ aniCvDic = {touch_1 = __rt_1, touch_2 = __rt_3, wait_0 = __rt_10, wait_1 = __rt_
 , 
 [302604] = {aniCvDic = __rt_11, id = 302604, level = 1}
 , 
-[302801] = {aniCvDic = __rt_19, delay_seconds = __rt_15, id = 302801}
+[302801] = {aniCvDic = __rt_20, delay_seconds = __rt_15, id = 302801}
 , 
 [303101] = {
-aniCvDic = {touch_1 = __rt_1, touch_2 = __rt_2, touch_3 = __rt_3, wait_1 = __rt_34, wait_2 = __rt_6}
+aniCvDic = {touch_1 = __rt_1, touch_2 = __rt_2, touch_3 = __rt_3, wait_1 = __rt_35, wait_2 = __rt_6}
 , id = 303101, level = 2}
 , 
-[303201] = {aniCvDic = __rt_33, id = 303201, level = 2}
+[303201] = {aniCvDic = __rt_34, id = 303201, level = 2}
 , 
 [303203] = {aniCvDic = __rt_11, id = 303203, level = 1}
 , 
-[303401] = {aniCvDic = __rt_35, id = 303401, level = 1}
+[303401] = {aniCvDic = __rt_36, id = 303401, level = 1}
 , 
-[303402] = {aniCvDic = __rt_32, id = 303402, level = 2}
+[303402] = {aniCvDic = __rt_33, id = 303402, level = 2}
 , 
-[303501] = {aniCvDic = __rt_35, id = 303501, level = 1}
+[303501] = {aniCvDic = __rt_36, id = 303501, level = 1}
 , 
-[303502] = {aniCvDic = __rt_33, id = 303502, level = 2}
+[303502] = {aniCvDic = __rt_34, id = 303502, level = 2}
 , 
-[303601] = {aniCvDic = __rt_35, id = 303601, level = 1}
+[303601] = {aniCvDic = __rt_36, id = 303601, level = 1}
 , 
-[303602] = {aniCvDic = __rt_33, id = 303602, level = 2}
+[303602] = {aniCvDic = __rt_34, id = 303602, level = 2}
 , 
 [303703] = {
 aniCvDic = {["3"] = __rt_6, ["4"] = __rt_6, touch_1 = __rt_1, touch_2 = __rt_17, 
 touch_3 = {105}
-, touch_4 = __rt_14, touch_5 = __rt_36, touch_6 = __rt_2, wait_0 = __rt_10, 
+, touch_4 = __rt_14, touch_5 = __rt_37, touch_6 = __rt_2, wait_0 = __rt_10, 
 wait_1 = {13}
 }
 , 
@@ -191,7 +192,7 @@ delay_seconds = {[9] = 6.43}
 [303706] = {delay_seconds = __rt_13, id = 303706, is_open_hide_bg = true}
 , 
 [303801] = {
-aniCvDic = {touch_1 = __rt_9, wait_1 = __rt_34, wait_2 = __rt_6}
+aniCvDic = {touch_1 = __rt_9, wait_1 = __rt_35, wait_2 = __rt_6}
 , id = 303801, level = 2}
 , 
 [303803] = {
@@ -200,7 +201,7 @@ aniCvDic = {touch_1 = __rt_2, touch_2 = __rt_3, wait_0 = __rt_10, wait_1 = __rt_
 , 
 [303804] = {id = 303804, is_open_hide_bg = true, level = 1}
 , 
-[303902] = {aniCvDic = __rt_19, delay_seconds = __rt_37, id = 303902}
+[303902] = {aniCvDic = __rt_20, delay_seconds = __rt_38, id = 303902}
 , 
 [303905] = {aniCvDic = __rt_11, id = 303905, level = 1}
 , 
@@ -209,7 +210,7 @@ aniCvDic = {touch_1 = __rt_2, touch_2 = __rt_3, wait_0 = __rt_10, wait_1 = __rt_
 [304102] = {aniCvDic = __rt_8, delay_seconds = __rt_13, id = 304102}
 , 
 [304103] = {
-aniCvDic = {touch_2 = __rt_30, touch_5 = __rt_3, wait_0 = __rt_10}
+aniCvDic = {touch_2 = __rt_31, touch_5 = __rt_3, wait_0 = __rt_10}
 , 
 delay_seconds = {0.47; [8] = 2.67, [14] = 0.27, [105] = 0.43, [109] = 0.27}
 , id = 304103}
@@ -223,10 +224,10 @@ aniCvDic = {touch_1 = __rt_1, touch_2 = __rt_2, wait_1 = __rt_10, wait_2 = __rt_
 [304204] = {aniCvDic = __rt_11, id = 304204, level = 1}
 , 
 [304301] = {
-aniCvDic = {touch_1 = __rt_9, wait_0 = __rt_23}
+aniCvDic = {touch_1 = __rt_9, wait_0 = __rt_24}
 , id = 304301, level = 1}
 , 
-[304304] = {aniCvDic = __rt_21, delay_seconds = __rt_37, id = 304304}
+[304304] = {aniCvDic = __rt_22, delay_seconds = __rt_38, id = 304304}
 , 
 [304402] = {
 aniCvDic = {touch_1 = __rt_1, touch_2 = __rt_2, wait_0 = __rt_4, wait_1 = __rt_5}
@@ -239,7 +240,7 @@ aniCvDic = {touch_1 = __rt_1, touch_2 = __rt_2, wait_0 = __rt_4, wait_1 = __rt_5
 [304501] = {
 aniCvDic = {touch_1 = __rt_1, 
 touch_2 = {141}
-, touch_3 = __rt_2, touch_4 = __rt_36, touch_5 = __rt_3, 
+, touch_3 = __rt_2, touch_4 = __rt_37, touch_5 = __rt_3, 
 touch_6 = {7}
 , wait_0 = __rt_5, wait_1 = __rt_4}
 , id = 304501}
@@ -247,7 +248,7 @@ touch_6 = {7}
 [304504] = {aniCvDic = __rt_11, id = 304504, level = 1}
 , 
 [304602] = {
-aniCvDic = {touch_1 = __rt_1, touch_4 = __rt_38, wait_0 = __rt_4, wait_1 = __rt_5}
+aniCvDic = {touch_1 = __rt_1, touch_4 = __rt_39, wait_0 = __rt_4, wait_1 = __rt_5}
 , 
 delay_seconds = {[11] = 0.53, [12] = 0.33, [146] = 0.55}
 , id = 304602}
@@ -259,44 +260,44 @@ login_time_range = {3, 3, 3, 3, 4, 4, 4, 4, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 
 [304607] = {delay_seconds = __rt_13, id = 304607}
 , 
 [304801] = {
-aniCvDic = {touch_1 = __rt_1, touch_3 = __rt_14, touch_4 = __rt_38, wait_0 = __rt_10}
+aniCvDic = {touch_1 = __rt_1, touch_3 = __rt_14, touch_4 = __rt_39, wait_0 = __rt_10}
 , 
 delay_seconds = {[3] = 0.33, [11] = 1.43, [107] = 0.33}
 , id = 304801}
 , 
-[304804] = {delay_seconds = __rt_39, id = 304804}
+[304804] = {delay_seconds = __rt_40, id = 304804}
 , 
 [304901] = {
-aniCvDic = {touch_1 = __rt_1, touch_2 = __rt_2, touch_3 = __rt_3, wait_0 = __rt_23}
+aniCvDic = {touch_1 = __rt_1, touch_2 = __rt_2, touch_3 = __rt_3, wait_0 = __rt_24}
 , id = 304901, level = 1}
 , 
 [304905] = {aniCvDic = __rt_11, id = 304905, level = 1}
 , 
 [305002] = {
-aniCvDic = {login_1 = __rt_25, login_2 = __rt_28, touch_1 = __rt_17, touch_2 = __rt_36, touch_3 = __rt_2, touch_4 = __rt_6, touch_5 = __rt_3, wait_0 = __rt_10}
+aniCvDic = {login_1 = __rt_26, login_2 = __rt_29, touch_1 = __rt_17, touch_2 = __rt_37, touch_3 = __rt_2, touch_4 = __rt_6, touch_5 = __rt_3, wait_0 = __rt_10}
 , delay_seconds = __rt_18, id = 305002}
 , 
 [305102] = {
-aniCvDic = {touch_1 = __rt_1, touch_2 = __rt_29, touch_3 = __rt_3, wait_0 = __rt_10}
+aniCvDic = {touch_1 = __rt_1, touch_2 = __rt_30, touch_3 = __rt_3, wait_0 = __rt_10}
 , 
 delay_seconds = {0, 0}
 , id = 305102}
 , 
 [305202] = {
-aniCvDic = {login_1 = __rt_25, login_2 = __rt_26, login_3 = __rt_27, login_4 = __rt_28, touch_1 = __rt_17, 
+aniCvDic = {login_1 = __rt_26, login_2 = __rt_27, login_3 = __rt_28, login_4 = __rt_29, touch_1 = __rt_17, 
 touch_2 = {140}
 , touch_3 = __rt_5, touch_4 = __rt_4, touch_5 = __rt_3, wait_0 = __rt_10}
 , 
 delay_seconds = {[4] = 0.47, [6] = 0.33, [12] = 0.33, [140] = 0.37, [145] = 0.63}
-, id = 305202, login_time_range = __rt_31}
+, id = 305202, login_time_range = __rt_32}
 , 
 [305205] = {delay_seconds = __rt_13, id = 305205}
 , 
-[305301] = {delay_seconds = __rt_39, id = 305301}
+[305301] = {delay_seconds = __rt_40, id = 305301}
 , 
 [305303] = {aniCvDic = __rt_11, id = 305303, level = 1}
 , 
-[305402] = {aniCvDic = __rt_21, 
+[305402] = {aniCvDic = __rt_22, 
 delay_seconds = {[2] = 0, [4] = 0}
 , id = 305402}
 , 
@@ -306,23 +307,23 @@ login_time_range = {4, 4, 4, 4, 4, 4, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 
 , 
 [305503] = {aniCvDic = __rt_11, id = 305503, level = 2}
 , 
-[305701] = {delay_seconds = __rt_20, id = 305701}
+[305701] = {delay_seconds = __rt_21, id = 305701}
 , 
 [305703] = {delay_seconds = __rt_13, id = 305703, is_open_hide_bg = true}
 , 
 [305801] = {id = 305801}
 , 
-[305901] = {delay_seconds = __rt_20, id = 305901, 
+[305901] = {delay_seconds = __rt_21, id = 305901, 
 login_time_range = {3, 3, 3, 3, 4, 4, 4, 4, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3}
 }
 , 
-[306002] = {delay_seconds = __rt_20, id = 306002}
+[306002] = {delay_seconds = __rt_21, id = 306002}
 , 
-[306101] = {delay_seconds = __rt_37, id = 306101, 
+[306101] = {delay_seconds = __rt_38, id = 306101, 
 login_time_range = {4, 4, 4, 4, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3}
 }
 , 
-[306103] = {delay_seconds = __rt_24, id = 306103, is_open_hide_bg = true, 
+[306103] = {delay_seconds = __rt_25, id = 306103, is_open_hide_bg = true, 
 login_time_range = {4, 4, 4, 4, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4}
 }
 , 
@@ -330,15 +331,17 @@ login_time_range = {4, 4, 4, 4, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 
 aniCvDic = {wait_0_1 = __rt_10, wait_0_2 = __rt_10}
 , delay_seconds = __rt_13, id = 306201, is_open_hide_bg = true}
 , 
-[306203] = {delay_seconds = __rt_37, id = 306203, is_open_hide_bg = true}
+[306203] = {delay_seconds = __rt_38, id = 306203, is_open_hide_bg = true}
 , 
-[306302] = {delay_seconds = __rt_20, id = 306302, is_open_hide_bg = true}
+[306302] = {delay_seconds = __rt_21, id = 306302, is_open_hide_bg = true}
 , 
 [306402] = {aniCvDic = __rt_11, id = 306402, level = 2}
 , 
 [306502] = {id = 306502}
 , 
 [306602] = {id = 306602, is_open_hide_bg = true, level = 1}
+, 
+[306702] = {aniCvDic = __rt_19, id = 306702, is_open_hide_bg = true, level = 1}
 }
 local __default_values = {aniCvDic = __rt_12, delay_seconds = __rt_8, id = 300100, is_open_hide_bg = false, level = 3, login_time_range = "", mouth_shape = 1, rectify_l2d = true}
 local base = {__index = __default_values, __newindex = function()

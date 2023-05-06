@@ -3,12 +3,18 @@
 local __rt_1 = {9, 25, 6}
 local __rt_2 = {8, 60, 15}
 local spec_weapon_basic_config = {
-[10021] = {avg_enter = "anna", describe = 517401, name = 479398}
+[10021] = {audio_id = 4206, avg_enter = "anna", describe = 517401, name = 479398}
 , 
-[10071] = {audio_id = 4209, avg_enter = "chelsea", 
+[10071] = {avg_enter = "chelsea", 
 costIdDic = {[1003] = true, [1503] = true, [1505] = true, [2507] = true}
 , describe = 180918, hero_id = 1007, id = 10071, name = 197584, 
 pre_para1 = {1007, 1007, 1007}
+}
+, 
+[10081] = {avg_enter = "gin", 
+costIdDic = {[1003] = true, [1503] = true, [1505] = true, [2508] = true}
+, describe = 18783, hero_id = 1008, id = 10081, 
+pre_para1 = {1008, 1008, 1008}
 }
 , 
 [10101] = {audio_id = 4200, avg_enter = "evelyn", 
@@ -17,7 +23,7 @@ costIdDic = {[1003] = true, [1503] = true, [1505] = true, [2510] = true}
 pre_para1 = {1010, 1010, 1010}
 }
 , 
-[10111] = {avg_enter = "camellia", 
+[10111] = {audio_id = 4206, avg_enter = "camellia", 
 costIdDic = {[1003] = true, [1503] = true, [1505] = true, [2511] = true}
 , describe = 36550, hero_id = 1011, id = 10111, name = 178134, 
 pre_para1 = {1011, 1011, 1011}
@@ -49,7 +55,7 @@ pre_para1 = {1021, 1021, 1021}
 , 
 [10221] = {audio_id = 4212, avg_enter = "aki", 
 costIdDic = {[1003] = true, [1503] = true, [1505] = true, [2522] = true}
-, describe = 23222, hero_id = 1022, id = 10221, 
+, describe = 23222, hero_id = 1022, id = 10221, name = 135449, 
 pre_para1 = {1022, 1022, 1022}
 }
 , 
@@ -89,15 +95,15 @@ costIdDic = {[1003] = true, [1503] = true, [1505] = true, [2546] = true}
 pre_para1 = {1046, 1046, 1046}
 }
 , 
-[10571] = {audio_id = 4209, avg_enter = "turing", 
+[10571] = {avg_enter = "turing", 
 costIdDic = {[1003] = true, [1503] = true, [1505] = true, [2557] = true}
 , describe = 303486, hero_id = 1057, id = 10571, name = 417349, 
 pre_para1 = {1057, 1057, 1057}
 }
 }
-local __default_values = {audio_id = 4206, avg_enter = "Centaureissi", 
+local __default_values = {audio_id = 4209, avg_enter = "Centaureissi", 
 costIdDic = {[1003] = true, [1503] = true, [1505] = true, [2502] = true}
-, describe = 168187, fragTotal = 220, hero_id = 1002, id = 10021, name = 135449, pre_condition = __rt_1, 
+, describe = 168187, fragTotal = 220, hero_id = 1002, id = 10021, name = 117363, pre_condition = __rt_1, 
 pre_para1 = {1002, 1002, 1002}
 , pre_para2 = __rt_2, weapon_lock = false}
 local base = {__index = __default_values, __newindex = function()
@@ -113,6 +119,8 @@ heroWeaponMapping = {
 [1002] = {10021}
 , 
 [1007] = {10071}
+, 
+[1008] = {10081}
 , 
 [1010] = {10101}
 , 
@@ -143,7 +151,7 @@ heroWeaponMapping = {
 [1057] = {10571}
 }
 , 
-totalCostIdDic = {[1003] = true, [1503] = true, [1505] = true, [2502] = true, [2507] = true, [2510] = true, [2511] = true, [2516] = true, [2518] = true, [2519] = true, [2521] = true, [2522] = true, [2525] = true, [2531] = true, [2534] = true, [2539] = true, [2541] = true, [2546] = true, [2557] = true}
+totalCostIdDic = {[1003] = true, [1503] = true, [1505] = true, [2502] = true, [2507] = true, [2508] = true, [2510] = true, [2511] = true, [2516] = true, [2518] = true, [2519] = true, [2521] = true, [2522] = true, [2525] = true, [2531] = true, [2534] = true, [2539] = true, [2541] = true, [2546] = true, [2557] = true}
 }
 setmetatable(spec_weapon_basic_config, {__index = __rawdata})
 return spec_weapon_basic_config

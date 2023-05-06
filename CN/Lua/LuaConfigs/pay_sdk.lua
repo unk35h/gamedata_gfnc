@@ -37,7 +37,7 @@ local pay_sdk = {
 , 
 {description = 322273, id = 18, name = 322273, price_EN_US = 99, price_JA_JP = 12000, price_KO_KR = 120000, price_ZH_CN = 600, price_ZH_TW = 3300}
 , 
-{description = 283230, id = 19, name = 283230, price_EN_US = 99, price_JA_JP = 12000, price_KO_KR = 120000, price_ZH_CN = 600, price_ZH_TW = 3300}
+{description = 294296, id = 19, name = 294296, price_EN_US = 99, price_JA_JP = 12000, price_KO_KR = 120000, price_ZH_CN = 600, price_ZH_TW = 3300}
 , 
 {description = 128580, id = 20, name = 128580, price_EN_US = 299, price_JA_JP = 37000, price_KO_KR = 390000, price_ZH_CN = 1800, price_ZH_TW = 10000}
 , 
@@ -51,9 +51,9 @@ local pay_sdk = {
 , 
 {description = 412190, id = 25, name = 412190, price_EN_US = 499, price_JA_JP = 61000, price_KO_KR = 590000, price_ZH_CN = 3000, price_ZH_TW = 17000}
 , 
-{description = 230599, id = 26, name = 230599}
+{description = 455594, id = 26, name = 455594}
 , 
-{description = 484041, id = 27, name = 484041, price_EN_US = 1499, price_JA_JP = 184000, price_KO_KR = 1900000, price_ZH_CN = 9800, price_ZH_TW = 49000}
+{description = 87360, id = 27, name = 87360, price_EN_US = 99, price_JA_JP = 12000, price_KO_KR = 120000, price_ZH_CN = 600, price_ZH_TW = 3300}
 , 
 {description = 169813, id = 28, name = 169813, price_EN_US = 699, price_JA_JP = 86000, price_KO_KR = 890000, price_ZH_CN = 4500, price_ZH_TW = 23000}
 , 
@@ -75,17 +75,17 @@ local pay_sdk = {
 , 
 {description = 365805, id = 37, name = 365805, price_EN_US = 2199, price_JA_JP = 270000, price_KO_KR = 2700000, price_ZH_CN = 14800, price_ZH_TW = 73000}
 , 
-{description = 282469, id = 38, name = 282469, price_EN_US = 499, price_JA_JP = 61000, price_KO_KR = 590000, price_ZH_CN = 3000, price_ZH_TW = 17000}
+{description = 513587, id = 38, name = 513587, price_EN_US = 499, price_JA_JP = 61000, price_KO_KR = 590000, price_ZH_CN = 3000, price_ZH_TW = 17000}
 , 
 {description = 364411, id = 39, name = 364411, price_EN_US = 1999, price_JA_JP = 244000, price_KO_KR = 2500000, price_ZH_CN = 12800, price_ZH_TW = 67000}
 , 
-{description = 376885, id = 40, name = 376885, price_EN_US = 2599, price_JA_JP = 318000, price_KO_KR = 3200000, price_ZH_CN = 16800, price_ZH_TW = 87000}
+{description = 89260, id = 40, name = 89260, price_EN_US = 2599, price_JA_JP = 318000, price_KO_KR = 3200000, price_ZH_CN = 16800, price_ZH_TW = 87000}
 , 
 {description = 488998, id = 41, name = 488998, price_EN_US = 2599, price_JA_JP = 318000, price_KO_KR = 3200000, price_ZH_CN = 16800, price_ZH_TW = 87000}
 , 
 {description = 505623, id = 42, name = 505623, price_EN_US = 2999, price_JA_JP = 368000, price_KO_KR = 3700000, price_ZH_CN = 19800, price_ZH_TW = 99000}
 , 
-{description = 88873, id = 43, name = 88873, price_EN_US = 2999, price_JA_JP = 368000, price_KO_KR = 3700000, price_ZH_CN = 19800, price_ZH_TW = 99000}
+{description = 113687, id = 43, name = 113687, price_EN_US = 2999, price_JA_JP = 368000, price_KO_KR = 3700000, price_ZH_CN = 19800, price_ZH_TW = 99000}
 , 
 {description = 285250, id = 44, name = 285250, price_EN_US = 4999, price_JA_JP = 610000, price_KO_KR = 6500000, price_ZH_CN = 32800, price_ZH_TW = 169000}
 , 
@@ -113,7 +113,7 @@ local pay_sdk = {
 , 
 {description = 479882, id = 56, name = 479882, price_EN_US = 1499, price_JA_JP = 184000, price_KO_KR = 1900000, price_ZH_CN = 9800, price_ZH_TW = 49000}
 , 
-{description = 430497, id = 57, name = 430497, price_EN_US = 2599, price_JA_JP = 318000, price_KO_KR = 3200000, price_ZH_CN = 16800, price_ZH_TW = 87000}
+{description = 363420, id = 57, name = 363420, price_EN_US = 2599, price_JA_JP = 318000, price_KO_KR = 3200000, price_ZH_CN = 16800, price_ZH_TW = 87000}
 , 
 {description = 472289, id = 58, name = 472289, price_EN_US = 4999, price_JA_JP = 610000, price_KO_KR = 6500000, price_ZH_CN = 32800, price_ZH_TW = 169000}
 , 
@@ -129,7 +129,7 @@ local pay_sdk = {
 , 
 {description = 330345, id = 64, name = 330345, price_EN_US = 2999, price_JA_JP = 368000, price_KO_KR = 3700000, price_ZH_CN = 19800, price_ZH_TW = 99000}
 , 
-{description = 263237, id = 65, name = 263237}
+{description = 324112, id = 65, name = 324112}
 , 
 {description = 458541, id = 66, name = 458541}
 , 

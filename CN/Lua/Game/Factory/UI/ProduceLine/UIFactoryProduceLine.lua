@@ -7,11 +7,11 @@ UIFactoryProduceLine.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, UINFactoryProduceLineItem
   self.factoryController = ControllerManager:GetController(ControllerTypeId.Factory, false)
   ;
-  (UIUtil.SetTopStatus)(self, self.OnClickReturn, nil, nil, nil, nil)
+  ((((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):SetTopStatusVisible(true)):PushTopStatusDataToBackStack()
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_background, self, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_background, self, self.OnClickReturn)
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Close, self, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Close, self, self.OnClickReturn)
   self.lineItemPool = (UIItemPool.New)(UINFactoryProduceLineItem, (self.ui).obj_productItem)
   ;
   (((self.ui).obj_productItem).gameObject):SetActive(false)
@@ -45,13 +45,18 @@ UIFactoryProduceLine.OnTimeRefresh = function(self)
   end
 end
 
-UIFactoryProduceLine.OnClickReturn = function(self)
+UIFactoryProduceLine.BackAction = function(self)
   -- function num : 0_4
   self:Delete()
 end
 
+UIFactoryProduceLine.OnClickReturn = function(self)
+  -- function num : 0_5 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIFactoryProduceLine.OnDelete = function(self)
-  -- function num : 0_5 , upvalues : base
+  -- function num : 0_6 , upvalues : base
   if self.lineItemPool ~= nil then
     (self.lineItemPool):DeleteAll()
     self.lineItemPool = nil

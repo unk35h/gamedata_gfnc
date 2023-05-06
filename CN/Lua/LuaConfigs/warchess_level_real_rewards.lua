@@ -135,6 +135,18 @@ reward_ids = {721270}
 {id = 803, reward_ids = __rt_4, reward_nums = __rt_7, sort = 1}
 }
 , 
+[804] = {
+{id = 804, reward_ids = __rt_4, reward_nums = __rt_6, sort = 1}
+}
+, 
+[805] = {
+{id = 805, reward_ids = __rt_4, reward_nums = __rt_6, sort = 1}
+}
+, 
+[806] = {
+{id = 806, reward_ids = __rt_4, reward_nums = __rt_7, sort = 1}
+}
+, 
 [1201] = {
 {id = 1201, reward_ids = __rt_2, reward_nums = __rt_8, sort = 1}
 , 

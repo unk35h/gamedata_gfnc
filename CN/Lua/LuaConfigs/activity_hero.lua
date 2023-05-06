@@ -81,7 +81,7 @@ friendship_heroList = {1058}
 dungeon_list = {37001, 37002, 37003, 37004, 37005}
 , 
 friendship_heroList = {1059}
-, hero_id = 1059, id = 10, main_stage = 100101, rechallenge_stage = 100102, rule_content = 7053, rule_title = 7052, token = 1051}
+, hero_id = 1059, id = 10, main_stage = 100101, rechallenge_stage = 100102, rule_content = 7053, rule_title = 7052, story_review_bg = "clotho_p3", token = 1051}
 , 
 {add_content = 7055, add_title = 7054, 
 dungeon_list = {38001, 38002, 38003, 38004, 38005}
@@ -112,10 +112,16 @@ dungeon_list = {42001, 42002, 42003, 42004, 42005}
 , 
 friendship_heroList = {1066}
 , hero_id = 1066, id = 15, main_stage = 100151, rechallenge_stage = 100152, rule_content = 7073, rule_title = 7072, shop_bg = "Ver2/CharDunErikaBG", story_review_bg = "erika_p3", token = 1063}
+, 
+{add_content = 7075, add_title = 7074, color_shop = __rt_8, color_shoplist = __rt_8, 
+dungeon_list = {43001, 43002, 43003, 43004, 43005}
+, 
+friendship_heroList = {1067}
+, hero_id = 1067, id = 16, main_stage = 100161, rechallenge_stage = 100162, rule_content = 7077, rule_title = 7076, shop_bg = "Ver2/CharDunCascadiaBG", token = 1065}
 }
 local __default_values = {add_content = 7013, add_title = 7012, color_shop = __rt_1, color_shoplist = __rt_2, dungeon_list = __rt_3, free_times = 3, friendship_display = 50, 
 friendship_heroList = {1043, 1010}
-, guide_sector = 0, hero_id = 1043, id = 1, main_stage = 100011, max_time = 15, preview_pic = "", preview_start = 2069146799, preview_text = "", rechallenge_stage = 100012, rule_content = 7015, rule_title = 7014, shop_bg = "Millau/CharDunMillauBG", shop_list = __rt_3, shop_name = "", story_review_bg = "clotho_p3", task_list = __rt_3, token = 1022, token_drop = ""}
+, guide_sector = 0, hero_id = 1043, id = 1, main_stage = 100011, max_time = 15, preview_pic = "", preview_start = 2069146799, preview_text = "", rechallenge_stage = 100012, rule_content = 7015, rule_title = 7014, shop_bg = "Millau/CharDunMillauBG", shop_list = __rt_3, shop_name = "", story_review_bg = "cascadia_p3", task_list = __rt_3, token = 1022, token_drop = ""}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")
@@ -139,11 +145,13 @@ allTaskCollect = {
 [14] = {[8900] = true, [8901] = true, [8902] = true, [8903] = true, [8904] = true, [8905] = true, [8906] = true, [8907] = true, [8908] = true, [8909] = true, [8910] = true, [8911] = true, [8912] = true, [8913] = true, [8914] = true, [8915] = true, [8916] = true, [8917] = true, [8918] = true, [8919] = true, [8920] = true, [8921] = true, [8922] = true}
 , 
 [15] = {[5100] = true, [5101] = true, [5102] = true, [5103] = true, [5104] = true, [5105] = true, [5106] = true, [5107] = true, [5108] = true, [5109] = true, [5110] = true, [5111] = true, [5112] = true, [5113] = true, [5114] = true, [5115] = true, [5116] = true, [5117] = true, [5118] = true, [5119] = true, [5120] = true, [5121] = true, [5122] = true}
+, 
+[16] = {[5200] = true, [5201] = true, [5202] = true, [5203] = true, [5204] = true, [5205] = true, [5206] = true, [5207] = true, [5208] = true, [5209] = true, [5210] = true, [5211] = true, [5212] = true, [5213] = true, [5214] = true, [5215] = true, [5216] = true, [5217] = true, [5218] = true, [5219] = true, [5220] = true, [5221] = true, [5222] = true}
 }
 , 
-heroMappping = {[1043] = 1, [1044] = 2, [1046] = 3, [1048] = 4, [1049] = 5, [1052] = 6, [1053] = 7, [1054] = 8, [1058] = 9, [1059] = 10, [1060] = 11, [1061] = 12, [1062] = 13, [1063] = 14, [1066] = 15}
+heroMappping = {[1043] = 1, [1044] = 2, [1046] = 3, [1048] = 4, [1049] = 5, [1052] = 6, [1053] = 7, [1054] = 8, [1058] = 9, [1059] = 10, [1060] = 11, [1061] = 12, [1062] = 13, [1063] = 14, [1066] = 15, [1067] = 16}
 , 
-sectorMapping = {[100011] = 1, [100012] = 1, [100021] = 2, [100022] = 2, [100031] = 3, [100032] = 3, [100041] = 4, [100042] = 4, [100051] = 5, [100052] = 5, [100061] = 6, [100062] = 6, [100071] = 7, [100072] = 7, [100081] = 8, [100082] = 8, [100091] = 9, [100092] = 9, [100101] = 10, [100102] = 10, [100111] = 11, [100112] = 11, [100121] = 12, [100122] = 12, [100131] = 13, [100132] = 13, [100141] = 14, [100142] = 14, [100151] = 15, [100152] = 15}
+sectorMapping = {[100011] = 1, [100012] = 1, [100021] = 2, [100022] = 2, [100031] = 3, [100032] = 3, [100041] = 4, [100042] = 4, [100051] = 5, [100052] = 5, [100061] = 6, [100062] = 6, [100071] = 7, [100072] = 7, [100081] = 8, [100082] = 8, [100091] = 9, [100092] = 9, [100101] = 10, [100102] = 10, [100111] = 11, [100112] = 11, [100121] = 12, [100122] = 12, [100131] = 13, [100132] = 13, [100141] = 14, [100142] = 14, [100151] = 15, [100152] = 15, [100161] = 16, [100162] = 16}
 }
 ;
 (_ENV.setmetatable)(activity_hero, {__index = __rawdata})

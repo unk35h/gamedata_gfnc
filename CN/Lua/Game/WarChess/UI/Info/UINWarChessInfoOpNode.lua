@@ -22,20 +22,44 @@ UINWarChessInfoOpNode.CleanWCOPRoot = function(self)
   (self.btnPool):HideAll()
 end
 
-UINWarChessInfoOpNode.SetWCAct = function(self, actCallback, interactCfg, costAP, isMonster)
+UINWarChessInfoOpNode.SetWCAct = function(self, actCallback, interactCfg, costAP, isMonster, getIsSecKill)
   -- function num : 0_2
-  local interActBtn = (self.btnPool):GetOne()
-  local index = isMonster and 1 or 2
-  interActBtn:SetInterActionType(index, costAP)
-  interActBtn:SetClickCallback(function()
-    -- function num : 0_2_0 , upvalues : actCallback, interactCfg, self
-    if actCallback ~= nil then
-      actCallback(interactCfg)
+  local SetInterAct = function(isSecKill)
+    -- function num : 0_2_0 , upvalues : self, isMonster, costAP, actCallback, interactCfg
+    self.__isWaitingCouldSecKill = false
+    local interActBtn = (self.btnPool):GetOne()
+    local index = isMonster and 1 or 2
+    if isMonster then
+      if isSecKill then
+        index = 5
+      else
+        index = 1
+      end
+    else
+      index = 2
     end
-    self:Hide()
-  end
+    interActBtn:SetInterActionType(index, costAP)
+    interActBtn:SetClickCallback(function()
+      -- function num : 0_2_0_0 , upvalues : actCallback, interactCfg, self
+      if actCallback ~= nil then
+        actCallback(interactCfg)
+      end
+      self:Hide()
+    end
 )
-  self.__interActBtn = interActBtn
+    self.__interActBtn = interActBtn
+    if self.__whenWaitOverClkik then
+      self:WCOpDoubleClick()
+      self.__whenWaitOverClkik = false
+    end
+  end
+
+  if isMonster and getIsSecKill ~= nil then
+    self.__isWaitingCouldSecKill = true
+    getIsSecKill(SetInterAct)
+  else
+    SetInterAct(false)
+  end
 end
 
 UINWarChessInfoOpNode.SetWCShowDynDeployTeam = function(self)
@@ -84,8 +108,12 @@ UINWarChessInfoOpNode.WCOpDoubleClick = function(self)
   if self.__interActBtn ~= nil then
     (self.__interActBtn):__OnClick()
   else
-    if self.__infoActBtn ~= nil then
-      (self.__infoActBtn):__OnClick()
+    if self.__isWaitingCouldSecKill then
+      self.__whenWaitOverClkik = true
+    else
+      if self.__infoActBtn ~= nil then
+        (self.__infoActBtn):__OnClick()
+      end
     end
   end
 end

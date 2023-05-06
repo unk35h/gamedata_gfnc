@@ -2,8 +2,8 @@
 -- function num : 0 , upvalues : _ENV
 local CheckerActivityLevel = {}
 local ActivityFrameEnum = require("Game.ActivityFrame.ActivityFrameEnum")
-local LockedDesId = {[(ActivityFrameEnum.eActivityType).Carnival] = 7122, [(ActivityFrameEnum.eActivityType).WhiteDay] = 7212, [(ActivityFrameEnum.eActivityType).Hallowmas] = 8702}
-local JustShowLevel = {[(ActivityFrameEnum.eActivityType).Carnival] = true, [(ActivityFrameEnum.eActivityType).Hallowmas] = true}
+local LockedDesId = {[(ActivityFrameEnum.eActivityType).Carnival] = 7122, [(ActivityFrameEnum.eActivityType).WhiteDay] = 7212, [(ActivityFrameEnum.eActivityType).Hallowmas] = 8702, [(ActivityFrameEnum.eActivityType).Season] = 9310}
+local JustShowLevel = {[(ActivityFrameEnum.eActivityType).Carnival] = true, [(ActivityFrameEnum.eActivityType).Hallowmas] = true, [(ActivityFrameEnum.eActivityType).Season] = true}
 CheckerActivityLevel.LengthCheck = function(param)
   -- function num : 0_0
   do return #param >= 2 end
@@ -58,8 +58,21 @@ CheckerActivityLevel.ParamsCheck = function(param)
     local actlevel = hallowmasData:GetHallowmasLv()
     return level <= actlevel
   end
+  if actFrameData:GetActivityFrameCat() == (ActivityFrameEnum.eActivityType).Season then
+    local seasonCtrl = ControllerManager:GetController(ControllerTypeId.ActivitySeason)
+    if seasonCtrl == nil then
+      return false
+    end
+    local actId = actFrameData:GetActId()
+    local seasonData = seasonCtrl:GetSeasonDataByActId(actId)
+    if seasonData == nil then
+      return false
+    end
+    local actlevel = seasonData:GetSeasonRewardCurLv()
+    return level <= actlevel
+  end
   do return false end
-  -- DECOMPILER ERROR: 10 unprocessed JMP targets
+  -- DECOMPILER ERROR: 14 unprocessed JMP targets
 end
 
 CheckerActivityLevel.GetUnlockInfo = function(param)

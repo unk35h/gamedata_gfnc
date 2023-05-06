@@ -14,6 +14,7 @@ local DeployTeamUtil = require("Game.Exploration.Util.DeployTeamUtil")
 local FormationUtil = require("Game.Formation.FormationUtil")
 local FmtEnum = require("Game.Formation.FmtEnum")
 local util = require("XLua.Common.xlua_util")
+local CS_BattleManager = (CS.BattleManager).Instance
 local TEAM_MOVE_SPEED_PER_SECOND = 6
 local MAX_MOVE_COST_TIME = 1.5
 local ACC_TIME = 0.3
@@ -344,6 +345,7 @@ WarChessTeamCtrl._CoOnInitTeamComplete = function(self, msg, callback)
   while not self.__startAniOk do
     (coroutine.yield)(nil)
   end
+  WarChessSeasonManager:TryWcSsBuffSelect()
   self._InitTeamCo = nil
 end
 
@@ -537,7 +539,7 @@ basic = {id = stc.dataId, level = stc.level, exp = 0, star = stc.rank, potential
 end
 
 WarChessTeamCtrl.UpdateHeroDynDataByMsg = function(self, rolesDynDiff)
-  -- function num : 0_20 , upvalues : _ENV
+  -- function num : 0_20 , upvalues : _ENV, CS_BattleManager
   for heroId,dyc in pairs(rolesDynDiff.update) do
     if (self.__AllUsedHeroDic)[heroId] == nil then
       error("UpdateHeroDynDataByMsg:hero not exit heroId:" .. tostring(heroId))
@@ -559,7 +561,23 @@ WarChessTeamCtrl.UpdateHeroDynDataByMsg = function(self, rolesDynDiff)
   if hpIsAdd then
     AudioManager:PlayAudioById(1238)
   end
-  MsgCenter:Broadcast(eMsgEventId.WC_HeroDynUpdate)
+  if CS_BattleManager.IsInBattle then
+    CS_BattleManager:UpdateBattleRoleData()
+    local csBattlePlayCtrl = CS_BattleManager:GetBattlePlayerController()
+    if csBattlePlayCtrl ~= nil and csBattlePlayCtrl.UltSkillHandle ~= nil then
+      local battleRoleList = ((CS_BattleManager.CurBattleController).PlayerTeamController).battleOriginRoleList
+      for i = 0, battleRoleList.Count - 1 do
+        local role = battleRoleList[i]
+        ;
+        (csBattlePlayCtrl.UltSkillHandle):RefreshSideHeadHpRate(role)
+      end
+      ;
+      (csBattlePlayCtrl.UltSkillHandle):RefreshSideHeadHpUI()
+    end
+  end
+  do
+    MsgCenter:Broadcast(eMsgEventId.WC_HeroDynUpdate)
+  end
 end
 
 WarChessTeamCtrl.UpdateWCTeamByHeroFormDiff = function(self, formDiffDic)
@@ -1064,7 +1082,7 @@ WarChessTeamCtrl.MoveWCTeam2Grid = function(self, teamIndex, gridData)
       local vMax = wayLength / (MAX_MOVE_COST_TIME - ACC_TIME)
       local totalPassedTime = 0
       local MoveEntity_Update = function()
-    -- function num : 0_50_1 , upvalues : index, _ENV, self, teamIndex, teamData, eWarChessEnum, totalPassedTime, TEAM_MOVE_SPEED_PER_SECOND, isNeedAccMove, MAX_MOVE_COST_TIME, vMax, ACC_TIME, pathList, WarChessHelper, needCalRotate, targetRotate, rotatePassedTime, ROTATE_COST_TIME
+    -- function num : 0_50_1 , upvalues : index, _ENV, self, teamIndex, teamData, eWarChessEnum, pathList, totalPassedTime, TEAM_MOVE_SPEED_PER_SECOND, isNeedAccMove, MAX_MOVE_COST_TIME, vMax, ACC_TIME, WarChessHelper, needCalRotate, targetRotate, rotatePassedTime, ROTATE_COST_TIME
     if index == 0 then
       warn("0 step move, pls check")
       return true
@@ -1099,66 +1117,81 @@ WarChessTeamCtrl.MoveWCTeam2Grid = function(self, teamIndex, gridData)
       StopMoveFun()
       return true
     end
-    local heroGo = moveHeroEntity:GetWCHeroEntityGo()
-    if IsNull(heroGo) then
-      return false
+    if (CommonUtil.GetIsWarChessQuickMove)() then
+      local targeShowPos = (pathList[1]):GetGridShowPos()
+      local entityCurPos = moveHeroEntity:WCHeroEntityGetShowPos()
+      local lastShowPos = pathList[2] and (pathList[2]):GetGridShowPos() or entityCurPos
+      local newRotate = (Quaternion.LookRotation)(targeShowPos - lastShowPos, Vector3.up)
+      moveHeroEntity:WCHeroEntitySetRotate(newRotate)
+      moveHeroEntity:WCHeroEntitySetPos(targeShowPos)
+      ;
+      ((self.wcCtrl).animaCtrl):PlayWcHeroQuickMoveFx(entityCurPos, targeShowPos)
+      MsgCenter:Broadcast(eMsgEventId.WC_TeamInfoUpdate, teamData)
+      StopMoveFun(true)
+      return true
     end
-    local deltaTime = Time.deltaTime
-    totalPassedTime = totalPassedTime + deltaTime
-    local maxMoveDis = TEAM_MOVE_SPEED_PER_SECOND * deltaTime
     do
-      if isNeedAccMove then
-        local speed = TEAM_MOVE_SPEED_PER_SECOND
-        if totalPassedTime <= MAX_MOVE_COST_TIME then
-          speed = vMax * (totalPassedTime / MAX_MOVE_COST_TIME)
-          speed = (math.max)(speed, TEAM_MOVE_SPEED_PER_SECOND)
-        else
-          if MAX_MOVE_COST_TIME - ACC_TIME < totalPassedTime then
-            speed = vMax * ((MAX_MOVE_COST_TIME - totalPassedTime) / ACC_TIME)
+      local heroGo = moveHeroEntity:GetWCHeroEntityGo()
+      if IsNull(heroGo) then
+        return false
+      end
+      local deltaTime = Time.deltaTime
+      totalPassedTime = totalPassedTime + deltaTime
+      local maxMoveDis = TEAM_MOVE_SPEED_PER_SECOND * deltaTime
+      do
+        if isNeedAccMove then
+          local speed = TEAM_MOVE_SPEED_PER_SECOND
+          if totalPassedTime <= MAX_MOVE_COST_TIME then
+            speed = vMax * (totalPassedTime / MAX_MOVE_COST_TIME)
             speed = (math.max)(speed, TEAM_MOVE_SPEED_PER_SECOND)
           else
-            speed = vMax
+            if MAX_MOVE_COST_TIME - ACC_TIME < totalPassedTime then
+              speed = vMax * ((MAX_MOVE_COST_TIME - totalPassedTime) / ACC_TIME)
+              speed = (math.max)(speed, TEAM_MOVE_SPEED_PER_SECOND)
+            else
+              speed = vMax
+            end
           end
+          maxMoveDis = speed * deltaTime
+          moveHeroEntity:WCAnimatorSetFloat("WarChess_WalkSpeed", speed / TEAM_MOVE_SPEED_PER_SECOND)
         end
-        maxMoveDis = speed * deltaTime
-        moveHeroEntity:WCAnimatorSetFloat("WarChess_WalkSpeed", speed / TEAM_MOVE_SPEED_PER_SECOND)
-      end
-      local targeGrid = pathList[index]
-      local targeShowPos = targeGrid:GetGridShowPos()
-      local entityCurPos = moveHeroEntity:WCHeroEntityGetShowPos()
-      local pos = (WarChessHelper.Vector3MoveToward)(entityCurPos, targeShowPos, maxMoveDis)
-      moveHeroEntity:WCHeroEntitySetPos(pos)
-      MsgCenter:Broadcast(eMsgEventId.WC_TeamInfoUpdate, teamData)
-      if needCalRotate then
-        local moveToward = (Vector3.Normalize)(targeShowPos - entityCurPos)
-        do
+        local targeGrid = pathList[index]
+        local targeShowPos = targeGrid:GetGridShowPos()
+        local entityCurPos = moveHeroEntity:WCHeroEntityGetShowPos()
+        local pos = (WarChessHelper.Vector3MoveToward)(entityCurPos, targeShowPos, maxMoveDis)
+        moveHeroEntity:WCHeroEntitySetPos(pos)
+        MsgCenter:Broadcast(eMsgEventId.WC_TeamInfoUpdate, teamData)
+        if needCalRotate then
+          local moveToward = (Vector3.Normalize)(targeShowPos - entityCurPos)
           do
-            if moveToward:SqrMagnitude() > 0.001 and moveHeroEntity:WCHeroEntityGetForward() ~= moveToward then
-              local newRotate = (Quaternion.LookRotation)(moveToward, Vector3.up)
-              targetRotate = newRotate
-              rotatePassedTime = 0
-            end
-            needCalRotate = false
-            if targetRotate ~= nil then
-              rotatePassedTime = rotatePassedTime + deltaTime
-              local rate = rotatePassedTime / ROTATE_COST_TIME
-              local curRotate = moveHeroEntity:WCHeroEntityGetRotate()
-              local rotate = (Quaternion.Slerp)(curRotate, targetRotate, rate)
-              moveHeroEntity:WCHeroEntitySetRotate(rotate)
-              if rate >= 1 then
-                targetRotate = nil
-              end
-            end
             do
-              if pos == targeShowPos then
-                index = index - 1
-                needCalRotate = true
+              if moveToward:SqrMagnitude() > 0.001 and moveHeroEntity:WCHeroEntityGetForward() ~= moveToward then
+                local newRotate = (Quaternion.LookRotation)(moveToward, Vector3.up)
+                targetRotate = newRotate
+                rotatePassedTime = 0
               end
-              if index == 0 then
-                StopMoveFun(true)
-                return true
+              needCalRotate = false
+              if targetRotate ~= nil then
+                rotatePassedTime = rotatePassedTime + deltaTime
+                local rate = rotatePassedTime / ROTATE_COST_TIME
+                local curRotate = moveHeroEntity:WCHeroEntityGetRotate()
+                local rotate = (Quaternion.Slerp)(curRotate, targetRotate, rate)
+                moveHeroEntity:WCHeroEntitySetRotate(rotate)
+                if rate >= 1 then
+                  targetRotate = nil
+                end
               end
-              return false
+              do
+                if pos == targeShowPos then
+                  index = index - 1
+                  needCalRotate = true
+                end
+                if index == 0 then
+                  StopMoveFun(true)
+                  return true
+                end
+                return false
+              end
             end
           end
         end

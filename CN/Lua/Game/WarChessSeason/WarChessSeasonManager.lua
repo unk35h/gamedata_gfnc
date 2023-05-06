@@ -102,6 +102,8 @@ WarChessSeasonManager.ExitWarChessClean = function(self)
     (self.__wcSeasonCtrl):Delete()
     self.__wcSeasonCtrl = nil
   end
+  self._techOpenFunc = nil
+  self._techRedShowFunc = nil
   MsgCenter:Broadcast(eMsgEventId.WCS_ExitAndClear)
 end
 
@@ -743,8 +745,39 @@ end
 
 -- DECOMPILER ERROR at PC138: Confused about usage of register: R4 in 'UnsetPending'
 
-WarChessSeasonManager.GetWCSEnvIdByTowerId = function(self, seasonId, towerId)
+WarChessSeasonManager.TryWcSsBuffSelect = function(self)
   -- function num : 0_41 , upvalues : _ENV
+  if not self:IsInWCS() then
+    return 
+  end
+  local towerId = (self.__wcSeasonCtrl):GetWCSTowerId()
+  local seasonId = (self.__wcSeasonCtrl):GetWCSSeasonId()
+  local stageInfoCfg = self:GetWCSStageInfoByTowerId(seasonId, towerId)
+  if stageInfoCfg == nil then
+    return 
+  end
+  local unlockBuffIdDic = (self.__wcSeasonCtrl):GetWCSInitUnlockDic()
+  if (table.IsEmptyTable)(unlockBuffIdDic) then
+    return 
+  end
+  local buffList = {}
+  local WarChessBuffData = require("Game.WarChess.Data.WarChessBuffData")
+  for _,buffId in pairs(stageInfoCfg.initial_protocol_all) do
+    local wcsBuffData = (WarChessBuffData.CrearteBuffById)(buffId)
+    ;
+    (table.insert)(buffList, wcsBuffData)
+  end
+  UIManager:ShowWindowAsync(UIWindowTypeID.EpBuffDesc, function(win)
+    -- function num : 0_41_0 , upvalues : buffList, unlockBuffIdDic
+    win:InitEpBuffSelect(buffList, unlockBuffIdDic)
+  end
+)
+end
+
+-- DECOMPILER ERROR at PC141: Confused about usage of register: R4 in 'UnsetPending'
+
+WarChessSeasonManager.GetWCSEnvIdByTowerId = function(self, seasonId, towerId)
+  -- function num : 0_42 , upvalues : _ENV
   local stageInfoCfg = WarChessSeasonManager:GetWCSStageInfoByTowerId(seasonId, towerId)
   if stageInfoCfg == nil then
     return nil
@@ -754,10 +787,10 @@ WarChessSeasonManager.GetWCSEnvIdByTowerId = function(self, seasonId, towerId)
   return envCfg
 end
 
--- DECOMPILER ERROR at PC141: Confused about usage of register: R4 in 'UnsetPending'
+-- DECOMPILER ERROR at PC144: Confused about usage of register: R4 in 'UnsetPending'
 
 WarChessSeasonManager.GetWCSTowerIsUnlock = function(self, seasonId, diffId)
-  -- function num : 0_42 , upvalues : _ENV
+  -- function num : 0_43 , upvalues : _ENV
   local stageInfoCfgs = WarChessSeasonManager:GetWCSTowerList(seasonId)
   local stageInfoCfg = stageInfoCfgs[diffId]
   if stageInfoCfg == nil then
@@ -774,10 +807,10 @@ WarChessSeasonManager.GetWCSTowerIsUnlock = function(self, seasonId, diffId)
   return false
 end
 
--- DECOMPILER ERROR at PC144: Confused about usage of register: R4 in 'UnsetPending'
+-- DECOMPILER ERROR at PC147: Confused about usage of register: R4 in 'UnsetPending'
 
 WarChessSeasonManager.GetWCSSaveNum = function(self, seasonId)
-  -- function num : 0_43 , upvalues : _ENV
+  -- function num : 0_44 , upvalues : _ENV
   local wcsCfg = (ConfigData.warchess_season)[seasonId]
   if wcsCfg == nil then
     error("wcsCfg not exist,seasonId:" .. tostring(seasonId))
@@ -786,20 +819,20 @@ WarChessSeasonManager.GetWCSSaveNum = function(self, seasonId)
   return wcsCfg.max_save
 end
 
--- DECOMPILER ERROR at PC147: Confused about usage of register: R4 in 'UnsetPending'
+-- DECOMPILER ERROR at PC150: Confused about usage of register: R4 in 'UnsetPending'
 
 WarChessSeasonManager.GetWCSPassedTower = function(self)
-  -- function num : 0_44
+  -- function num : 0_45
   if self.__passedWarChessSeasonDic == nil then
     self.__passedWarChessSeasonDic = {}
   end
   return self.__passedWarChessSeasonDic
 end
 
--- DECOMPILER ERROR at PC150: Confused about usage of register: R4 in 'UnsetPending'
+-- DECOMPILER ERROR at PC153: Confused about usage of register: R4 in 'UnsetPending'
 
 WarChessSeasonManager.GetWCSPassedEnvMaxNum = function(self, seasonId, envId)
-  -- function num : 0_45
+  -- function num : 0_46
   local towerRecord = self:GetWCSPassedTower()
   if not towerRecord or not towerRecord[seasonId] then
     local seasonRecord = {}
@@ -808,12 +841,12 @@ WarChessSeasonManager.GetWCSPassedEnvMaxNum = function(self, seasonId, envId)
   return maxNum
 end
 
--- DECOMPILER ERROR at PC153: Confused about usage of register: R4 in 'UnsetPending'
+-- DECOMPILER ERROR at PC156: Confused about usage of register: R4 in 'UnsetPending'
 
 WarChessSeasonManager.RefreshWCSPassedTowerData = function(self, seasonId)
-  -- function num : 0_46 , upvalues : _ENV
+  -- function num : 0_47 , upvalues : _ENV
   (self.__wcNetworkCtrl):CS_WarChessSeasonRecord(seasonId, function(args)
-    -- function num : 0_46_0 , upvalues : _ENV, self
+    -- function num : 0_47_0 , upvalues : _ENV, self
     if args.Count == 0 then
       error("RefreshWCSPassedTowerData error")
       return 
@@ -825,9 +858,57 @@ WarChessSeasonManager.RefreshWCSPassedTowerData = function(self, seasonId)
 
     if seasonRecord ~= nil then
       (self.__passedWarChessSeasonDic)[seasonRecord.seasonId] = seasonRecord
+      MsgCenter:Broadcast(eMsgEventId.WCS_WarChessSeasonRecord, seasonRecord.seasonId)
     end
   end
 )
+end
+
+-- DECOMPILER ERROR at PC159: Confused about usage of register: R4 in 'UnsetPending'
+
+WarChessSeasonManager.GetWcSSpItemByLogicType = function(self, spcialLogicType)
+  -- function num : 0_48 , upvalues : _ENV
+  local wcSSpItemCfg = self:GetWcSSpItemConfigByLogicType()
+  if wcSSpItemCfg == nil then
+    return nil, nil
+  end
+  if spcialLogicType ~= nil and wcSSpItemCfg.logic_type ~= spcialLogicType then
+    return nil, nil
+  end
+  local wcCtrl = WarChessManager:GetWarChessCtrl()
+  local itemId = (wcSSpItemCfg.param)[4]
+  local parm = (wcSSpItemCfg.param)[3]
+  local itemCount = (wcCtrl.backPackCtrl):GetWCItemNum(itemId)
+  return itemId, itemCount, parm
+end
+
+-- DECOMPILER ERROR at PC162: Confused about usage of register: R4 in 'UnsetPending'
+
+WarChessSeasonManager.GetWcSSpItemConfigByLogicType = function(self, spcialLogicType)
+  -- function num : 0_49 , upvalues : _ENV
+  if not self:IsInWCS() then
+    return nil, nil
+  end
+  local wcSeasonCfg = (self.__wcSeasonCtrl):GetWCSSeasonCfg()
+  if wcSeasonCfg.warchess_item == nil then
+    return nil, nil
+  end
+  return (ConfigData.warchess_season_item)[wcSeasonCfg.warchess_item]
+end
+
+-- DECOMPILER ERROR at PC165: Confused about usage of register: R4 in 'UnsetPending'
+
+WarChessSeasonManager.SetSeasonTechJumpFunc = function(self, func, redShowFunc)
+  -- function num : 0_50
+  self._techOpenFunc = func
+  self._techRedShowFunc = redShowFunc
+end
+
+-- DECOMPILER ERROR at PC168: Confused about usage of register: R4 in 'UnsetPending'
+
+WarChessSeasonManager.GetSeasonTechJumpFunc = function(self)
+  -- function num : 0_51
+  return self._techOpenFunc, self._techRedShowFunc
 end
 
 return WarChessSeasonManager

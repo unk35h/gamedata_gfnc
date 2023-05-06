@@ -17,8 +17,11 @@ local __rt_10 = {
 {__rt_2, __rt_3, __rt_9}
 , __rt_7}
 local __rt_11 = {8}
-local __rt_12 = {25001}
-local __rt_13 = {7}
+local __rt_12 = {4020001}
+local __rt_13 = {4020001, 4020002}
+local __rt_14 = {4020001, 4020002, 4020003}
+local __rt_15 = {25001}
+local __rt_16 = {7}
 local warchess_season_stage_info = {
 {
 {difficulty_name = 356375, forecast_des = 316638, id = 1}
@@ -31,25 +34,25 @@ local warchess_season_stage_info = {
 }
 , 
 {
-{difficulty_name = 329796, difficulty_name_en = "TUTORIAL MODE", floor_id = 5, forecast_des = 440660, season_id = 5}
+{difficulty_name = 329796, difficulty_name_en = "TUTORIAL MODE", floor_id = 5, forecast_des = 440660, id = 2, season_id = 5}
 , 
-{difficulty_id = 2, difficulty_name = 248204, floor_id = 8, forecast_des = 468467, pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_4, preConditions = __rt_5, preConditionsNum = 1, season_id = 6}
+{difficulty_id = 2, difficulty_name = 248204, floor_id = 8, forecast_des = 468467, id = 2, pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_4, preConditions = __rt_5, preConditionsNum = 1, season_id = 6}
 , 
-{combat = 25000, difficulty_color = 1, difficulty_id = 3, difficulty_name_en = "NORMAL MODE", forecast_des = 176204, pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_4, preConditions = __rt_5, preConditionsNum = 1, season_id = 7}
+{combat = 25000, difficulty_color = 1, difficulty_id = 3, difficulty_name_en = "NORMAL MODE", forecast_des = 176204, id = 2, pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_4, preConditions = __rt_5, preConditionsNum = 1, season_id = 7}
 , 
-{combat = 45000, difficulty_color = 2, difficulty_id = 4, difficulty_name = 360027, difficulty_name_en = "HARD MODE", forecast_des = 159063, pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_4, preConditions = __rt_5, preConditionsNum = 1, season_id = 8}
+{combat = 45000, difficulty_color = 2, difficulty_id = 4, difficulty_name = 360027, difficulty_name_en = "HARD MODE", forecast_des = 159063, id = 2, pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_4, preConditions = __rt_5, preConditionsNum = 1, season_id = 8}
 , 
-{combat = 60000, difficulty_color = 3, difficulty_id = 5, difficulty_name = 94840, difficulty_name_en = "EXTREME MODE", pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_6, 
+{combat = 60000, difficulty_color = 3, difficulty_id = 5, difficulty_name = 94840, difficulty_name_en = "EXTREME MODE", id = 2, pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_6, 
 preConditions = {__rt_7}
 , preConditionsNum = 1, season_id = 9}
 , 
-{difficulty_id = 6, difficulty_name = 248204, floor_id = 8, forecast_des = 468467, pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_8, pre2_condition = __rt_2, pre2_para1 = __rt_3, pre2_para2 = __rt_9, pre3_condition = __rt_2, pre3_para1 = __rt_3, pre3_para2 = __rt_6, preConditions = __rt_10, preConditionsNum = 3, season_id = 10}
+{difficulty_id = 6, difficulty_name = 248204, floor_id = 8, forecast_des = 468467, id = 2, pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_8, pre2_condition = __rt_2, pre2_para1 = __rt_3, pre2_para2 = __rt_9, pre3_condition = __rt_2, pre3_para1 = __rt_3, pre3_para2 = __rt_6, preConditions = __rt_10, preConditionsNum = 3, season_id = 10}
 , 
-{combat = 25000, difficulty_color = 1, difficulty_id = 7, difficulty_name_en = "NORMAL MODE", forecast_des = 176204, pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_8, pre2_condition = __rt_2, pre2_para1 = __rt_3, pre2_para2 = __rt_9, pre3_condition = __rt_2, pre3_para1 = __rt_3, pre3_para2 = __rt_6, preConditions = __rt_10, preConditionsNum = 3, season_id = 11}
+{combat = 25000, difficulty_color = 1, difficulty_id = 7, difficulty_name_en = "NORMAL MODE", forecast_des = 176204, id = 2, pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_8, pre2_condition = __rt_2, pre2_para1 = __rt_3, pre2_para2 = __rt_9, pre3_condition = __rt_2, pre3_para1 = __rt_3, pre3_para2 = __rt_6, preConditions = __rt_10, preConditionsNum = 3, season_id = 11}
 , 
-{combat = 45000, difficulty_color = 2, difficulty_id = 8, difficulty_name = 360027, difficulty_name_en = "HARD MODE", forecast_des = 159063, pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_8, pre2_condition = __rt_2, pre2_para1 = __rt_3, pre2_para2 = __rt_9, pre3_condition = __rt_2, pre3_para1 = __rt_3, pre3_para2 = __rt_6, preConditions = __rt_10, preConditionsNum = 3, season_id = 12}
+{combat = 45000, difficulty_color = 2, difficulty_id = 8, difficulty_name = 360027, difficulty_name_en = "HARD MODE", forecast_des = 159063, id = 2, pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_8, pre2_condition = __rt_2, pre2_para1 = __rt_3, pre2_para2 = __rt_9, pre3_condition = __rt_2, pre3_para1 = __rt_3, pre3_para2 = __rt_6, preConditions = __rt_10, preConditionsNum = 3, season_id = 12}
 , 
-{combat = 60000, difficulty_color = 3, difficulty_id = 9, difficulty_name = 94840, difficulty_name_en = "EXTREME MODE", pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_11, 
+{combat = 60000, difficulty_color = 3, difficulty_id = 9, difficulty_name = 94840, difficulty_name_en = "EXTREME MODE", id = 2, pre1_condition = __rt_2, pre1_para1 = __rt_3, pre1_para2 = __rt_11, 
 preConditions = {
 {__rt_2, __rt_3, __rt_11}
 }
@@ -57,32 +60,58 @@ preConditions = {
 }
 , 
 {
-{combat = 15000, difficulty_name = 248204, floor_id = 8, forecast_des = 410528, id = 3, season_id = 14}
+{combat = 15000, difficulty_name = 248204, floor_id = 8, forecast_des = 410528, id = 3, initial_protocol_all = __rt_12, season_id = 14}
 , 
-{combat = 35000, difficulty_color = 1, difficulty_id = 2, difficulty_name_en = "NORMAL MODE", forecast_des = 176204, id = 3, season_id = 15}
+{combat = 35000, difficulty_color = 1, difficulty_id = 2, difficulty_name_en = "NORMAL MODE", forecast_des = 176204, id = 3, initial_protocol_all = __rt_13, season_id = 15}
 , 
-{combat = 55000, difficulty_color = 2, difficulty_id = 3, difficulty_name = 360027, difficulty_name_en = "HARD MODE", forecast_des = 159063, id = 3, season_id = 16}
+{combat = 55000, difficulty_color = 2, difficulty_id = 3, difficulty_name = 360027, difficulty_name_en = "HARD MODE", forecast_des = 159063, id = 3, initial_protocol_all = __rt_13, season_id = 16}
 , 
-{combat = 75000, difficulty_color = 3, difficulty_id = 4, difficulty_name = 94840, difficulty_name_en = "EXTREME MODE", id = 3, pre1_condition = __rt_2, pre1_para1 = __rt_12, pre1_para2 = __rt_9, 
+{combat = 75000, difficulty_color = 3, difficulty_id = 4, difficulty_name = 94840, difficulty_name_en = "EXTREME MODE", id = 3, initial_protocol_all = __rt_14, pre1_condition = __rt_2, pre1_para1 = __rt_15, pre1_para2 = __rt_9, 
 preConditions = {
-{__rt_2, __rt_12, __rt_9}
+{__rt_2, __rt_15, __rt_9}
 }
 , preConditionsNum = 1, season_id = 17}
 , 
-{combat = 20000, difficulty_id = 5, difficulty_name = 248204, floor_id = 8, forecast_des = 410528, id = 3, season_id = 18}
+{combat = 20000, difficulty_id = 5, difficulty_name = 248204, floor_id = 8, forecast_des = 410528, id = 3, initial_protocol_all = __rt_12, season_id = 18}
 , 
-{combat = 40000, difficulty_color = 1, difficulty_id = 6, difficulty_name_en = "NORMAL MODE", forecast_des = 176204, id = 3, season_id = 19}
+{combat = 40000, difficulty_color = 1, difficulty_id = 6, difficulty_name_en = "NORMAL MODE", forecast_des = 176204, id = 3, initial_protocol_all = __rt_13, season_id = 19}
 , 
-{combat = 60000, difficulty_color = 2, difficulty_id = 7, difficulty_name = 360027, difficulty_name_en = "HARD MODE", forecast_des = 159063, id = 3, season_id = 20}
+{combat = 60000, difficulty_color = 2, difficulty_id = 7, difficulty_name = 360027, difficulty_name_en = "HARD MODE", forecast_des = 159063, id = 3, initial_protocol_all = __rt_13, season_id = 20}
 , 
-{combat = 80000, difficulty_color = 3, difficulty_id = 8, difficulty_name = 94840, difficulty_name_en = "EXTREME MODE", id = 3, pre1_condition = __rt_2, pre1_para1 = __rt_12, pre1_para2 = __rt_13, 
+{combat = 80000, difficulty_color = 3, difficulty_id = 8, difficulty_name = 94840, difficulty_name_en = "EXTREME MODE", id = 3, initial_protocol_all = __rt_14, pre1_condition = __rt_2, pre1_para1 = __rt_15, pre1_para2 = __rt_16, 
 preConditions = {
-{__rt_2, __rt_12, __rt_13}
+{__rt_2, __rt_15, __rt_16}
 }
 , preConditionsNum = 1, season_id = 21}
 }
+, 
+{
+{difficulty_name = 248204, floor_id = 8, forecast_des = 410528, initial_protocol_all = __rt_12, season_id = 22}
+, 
+{combat = 25000, difficulty_color = 1, difficulty_id = 2, difficulty_name_en = "NORMAL MODE", forecast_des = 176204, initial_protocol_all = __rt_13, season_id = 23}
+, 
+{combat = 45000, difficulty_color = 2, difficulty_id = 3, difficulty_name = 360027, difficulty_name_en = "HARD MODE", forecast_des = 159063, initial_protocol_all = __rt_13, season_id = 24}
+, 
+{combat = 60000, difficulty_color = 3, difficulty_id = 4, difficulty_name = 94840, difficulty_name_en = "EXTREME MODE", initial_protocol_all = __rt_14, season_id = 25}
+, 
+{difficulty_id = 5, difficulty_name = 248204, floor_id = 8, forecast_des = 410528, initial_protocol_all = __rt_12, season_id = 26}
+, 
+{combat = 25000, difficulty_color = 1, difficulty_id = 6, difficulty_name_en = "NORMAL MODE", forecast_des = 176204, initial_protocol_all = __rt_13, season_id = 27}
+, 
+{combat = 45000, difficulty_color = 2, difficulty_id = 7, difficulty_name = 360027, difficulty_name_en = "HARD MODE", forecast_des = 159063, initial_protocol_all = __rt_13, season_id = 28}
+, 
+{combat = 60000, difficulty_color = 3, difficulty_id = 8, difficulty_name = 94840, difficulty_name_en = "EXTREME MODE", initial_protocol_all = __rt_14, season_id = 29}
+, 
+{combat = 10000, difficulty_id = 9, difficulty_name = 248204, floor_id = 8, forecast_des = 410528, initial_protocol_all = __rt_12, season_id = 30}
+, 
+{combat = 27000, difficulty_color = 1, difficulty_id = 10, difficulty_name_en = "NORMAL MODE", forecast_des = 176204, initial_protocol_all = __rt_13, season_id = 31}
+, 
+{combat = 48000, difficulty_color = 2, difficulty_id = 11, difficulty_name = 360027, difficulty_name_en = "HARD MODE", forecast_des = 159063, initial_protocol_all = __rt_13, season_id = 32}
+, 
+{combat = 63000, difficulty_color = 3, difficulty_id = 12, difficulty_name = 94840, difficulty_name_en = "EXTREME MODE", initial_protocol_all = __rt_14, season_id = 33}
 }
-local __default_values = {combat = 8000, difficulty_color = 0, difficulty_id = 1, difficulty_name = 215360, difficulty_name_en = "EASY MODE", floor_id = 12, forecast_des = 103405, id = 2, pre1_condition = __rt_1, pre1_para1 = __rt_1, pre1_para2 = __rt_1, pre2_condition = __rt_1, pre2_para1 = __rt_1, pre2_para2 = __rt_1, pre3_condition = __rt_1, pre3_para1 = __rt_1, pre3_para2 = __rt_1, preConditions = __rt_1, preConditionsNum = 0, season_id = 1}
+}
+local __default_values = {combat = 8000, difficulty_color = 0, difficulty_id = 1, difficulty_name = 215360, difficulty_name_en = "EASY MODE", floor_id = 12, forecast_des = 103405, id = 4, initial_protocol_all = __rt_1, pre1_condition = __rt_1, pre1_para1 = __rt_1, pre1_para2 = __rt_1, pre2_condition = __rt_1, pre2_para1 = __rt_1, pre2_para2 = __rt_1, pre3_condition = __rt_1, pre3_para1 = __rt_1, pre3_para2 = __rt_1, preConditions = __rt_1, preConditionsNum = 0, season_id = 1}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")

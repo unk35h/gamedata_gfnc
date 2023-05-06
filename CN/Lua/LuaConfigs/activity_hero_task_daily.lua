@@ -12,6 +12,8 @@ local __rt_9 = {1504, 1823, 1503, 1003}
 local __rt_10 = {5, 5, 100, 2000}
 local __rt_11 = {8128, 1822, 6003, 1003}
 local __rt_12 = {1504, 1822, 1503, 1003}
+local __rt_13 = {1504, 1825, 1503, 1003}
+local __rt_14 = {1018, 1503, 8231, 1003}
 local activity_hero_task_daily = {
 [9] = {
 {activity_id = 9, day = 1, full_reward = "2558=5|1823=5|1502=1|1003=2000", 
@@ -164,9 +166,7 @@ wait_task_list = {8812}
 open_task_list = {8814, 8815, 8816, 8817}
 , wait_task_list = __rt_8}
 , 
-{activity_id = 13, day = 5, full_reward = "1504=5|1825=5|1503=100|1003=2000", 
-full_reward_ids = {1504, 1825, 1503, 1003}
-, full_reward_nums = __rt_10, 
+{activity_id = 13, day = 5, full_reward = "1504=5|1825=5|1503=100|1003=2000", full_reward_ids = __rt_13, full_reward_nums = __rt_10, 
 open_task_list = {8818, 8819, 8820, 8821}
 , wait_task_list = __rt_8}
 }
@@ -208,9 +208,7 @@ full_reward_ids = {2566, 1823, 1502, 1003}
 open_task_list = {5100, 5101, 5102, 5103, 5104, 5105}
 , wait_task_list = __rt_8}
 , 
-{activity_id = 15, day = 2, full_reward = "1018=150|1503=100|8231=1|1003=2000", 
-full_reward_ids = {1018, 1503, 8231, 1003}
-, full_reward_nums = __rt_3, 
+{activity_id = 15, day = 2, full_reward = "1018=150|1503=100|8231=1|1003=2000", full_reward_ids = __rt_14, full_reward_nums = __rt_3, 
 open_task_list = {5106, 5107, 5108, 5109, 5110}
 , wait_task_list = __rt_8}
 , 
@@ -232,6 +230,38 @@ wait_task_list = {5115}
 open_task_list = {5120, 5121, 5122}
 , 
 wait_task_list = {5119}
+}
+}
+, 
+[16] = {
+{activity_id = 16, day = 1, full_reward = "2567=5|1825=5|1502=1|1003=2000", 
+full_reward_ids = {2567, 1825, 1502, 1003}
+, full_reward_nums = __rt_1, 
+open_task_list = {5200, 5201, 5202, 5203, 5204, 5205}
+, wait_task_list = __rt_8}
+, 
+{activity_id = 16, day = 2, full_reward = "1018=150|1503=100|8231=1|1003=2000", full_reward_ids = __rt_14, full_reward_nums = __rt_3, 
+open_task_list = {5206, 5207, 5208, 5209, 5210}
+, wait_task_list = __rt_8}
+, 
+{activity_id = 16, day = 3, full_reward = "8231=3|1825=5|6003=1|1003=2000", 
+full_reward_ids = {8231, 1825, 6003, 1003}
+, full_reward_nums = __rt_5, 
+open_task_list = {5212, 5214}
+, 
+wait_task_list = {5211, 5213}
+}
+, 
+{activity_id = 16, day = 4, full_reward = "1502=5|1503=100|6003=2|1003=2000", full_reward_ids = __rt_6, full_reward_nums = __rt_7, 
+open_task_list = {5216, 5217, 5218}
+, 
+wait_task_list = {5215}
+}
+, 
+{activity_id = 16, day = 5, full_reward = "1504=5|1825=5|1503=100|1003=2000", full_reward_ids = __rt_13, full_reward_nums = __rt_10, 
+open_task_list = {5220, 5221, 5222}
+, 
+wait_task_list = {5219}
 }
 }
 }

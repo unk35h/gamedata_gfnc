@@ -191,7 +191,7 @@ local dungeon_buff = {
 , 
 [22205] = {buff_id = 22205, buff_type = 2, describe = 166517, icon = "ICON_xy_74", name = 35460}
 , 
-[25008] = {buff_id = 25008, buff_type = 2, describe = 217229, icon = "ICON_CJ_XY17", name = 474252}
+[25008] = {buff_id = 25008, buff_type = 0, describe = 217229, icon = "ICON_CJ_XY17", name = 474252}
 , 
 [40033] = {buff_id = 40033, describe = 345401, icon = "ICON_root_34", name = 11768}
 }

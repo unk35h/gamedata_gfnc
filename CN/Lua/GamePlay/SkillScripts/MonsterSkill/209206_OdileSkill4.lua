@@ -145,8 +145,50 @@ bs_209206.EndSkillAndCallNext = function(self)
   LuaSkillCtrl:StopShowSkillDurationTime(self)
 end
 
+bs_209206.OnBreakSkill = function(self)
+  -- function num : 0_8 , upvalues : base, _ENV
+  (base.OnBreakSkill)(self)
+  if self.loopAttack == nil then
+    return 
+  end
+  if self.boom ~= nil then
+    (self.boom):Stop()
+    self.boom = nil
+  end
+  local SelfShieldValue = LuaSkillCtrl:GetShield(self.caster, 3)
+  if SelfShieldValue ~= 0 then
+    LuaSkillCtrl:ClearShield(self.caster, 3)
+  end
+  LuaSkillCtrl:CallEffect(self.caster, (self.config).effectId_interrupt, self)
+  if self.loopAttack ~= nil then
+    (self.loopAttack):Stop()
+    self.loopAttack = nil
+  end
+  if self.finishAttack ~= nil then
+    (self.finishAttack):Stop()
+    self.finishAttack = nil
+  end
+  if self.onLoopAttack ~= nil then
+    (self.onLoopAttack):Stop()
+    self.onLoopAttack = nil
+  end
+  if self.loop ~= nil then
+    (self.loop):Die()
+    self.loop = nil
+  end
+  if self.aim ~= nil then
+    (self.aim):Die()
+    self.aim = nil
+  end
+  local OnDropTrigger = BindCallback(self, self.OnDropTrigger)
+  self:RemoveSkillTrigger(eSkillTriggerType.OnBreakShield)
+  local time = (self.config).actionId_end1_time
+  self:CallCasterWait(time)
+  LuaSkillCtrl:CallRoleActionWithTrigger(self, self.caster, (self.config).actionId_end1, (self.config).action_speed, (self.config).actionId_end1_time, OnDropTrigger)
+end
+
 bs_209206.OnCasterDie = function(self)
-  -- function num : 0_8 , upvalues : base
+  -- function num : 0_9 , upvalues : base
   (base.OnCasterDie)(self)
   if self.loopAttack ~= nil then
     (self.loopAttack):Stop()

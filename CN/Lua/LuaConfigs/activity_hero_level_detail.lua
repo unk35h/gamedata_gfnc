@@ -26,23 +26,23 @@ drop_show = {[1049] = __rt_5}
 , 
 [37001] = {
 drop_show = {[1051] = __rt_1}
-, id = 37001, level_des = 140559}
+, id = 37001, level_des = 140559, level_pic = "small_CharDun_Clotho"}
 , 
 [37002] = {
 drop_show = {[1051] = __rt_2}
-, id = 37002, level_des = 438183, level_num = 2}
+, id = 37002, level_des = 438183, level_num = 2, level_pic = "small_CharDun_Clotho"}
 , 
 [37003] = {
 drop_show = {[1051] = __rt_3}
-, id = 37003, level_des = 301602, level_num = 3}
+, id = 37003, level_des = 301602, level_num = 3, level_pic = "small_CharDun_Clotho"}
 , 
 [37004] = {
 drop_show = {[1051] = __rt_4}
-, id = 37004, level_des = 32824, level_num = 4}
+, id = 37004, level_des = 32824, level_num = 4, level_pic = "small_CharDun_Clotho"}
 , 
 [37005] = {
 drop_show = {[1051] = __rt_5}
-, id = 37005, level_des = 30087, level_num = 5}
+, id = 37005, level_des = 30087, level_num = 5, level_pic = "small_CharDun_Clotho"}
 , 
 [38001] = {
 drop_show = {[1052] = __rt_1}
@@ -143,10 +143,30 @@ drop_show = {[1063] = __rt_4}
 [42005] = {
 drop_show = {[1063] = __rt_5}
 , id = 42005, level_des = 449578, level_num = 5, level_pic = "small_CharDun_Erika"}
+, 
+[43001] = {
+drop_show = {[1065] = __rt_1}
+, id = 43001, level_des = 286516}
+, 
+[43002] = {
+drop_show = {[1065] = __rt_2}
+, id = 43002, level_des = 472237, level_num = 2}
+, 
+[43003] = {
+drop_show = {[1065] = __rt_3}
+, id = 43003, level_des = 20502, level_num = 3}
+, 
+[43004] = {
+drop_show = {[1065] = __rt_4}
+, id = 43004, level_des = 222852, level_num = 4}
+, 
+[43005] = {
+drop_show = {[1065] = __rt_5}
+, id = 43005, level_des = 19017, level_num = 5}
 }
 local __default_values = {
 drop_show = {[1049] = __rt_2}
-, id = 36001, level_des = 110096, level_num = 1, level_pic = "small_CharDun_Clotho"}
+, id = 36001, level_des = 110096, level_num = 1, level_pic = "small_CharDun_Cascadia"}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")
@@ -156,7 +176,7 @@ for k,v in pairs(activity_hero_level_detail) do
   setmetatable(v, base)
 end
 local __rawdata = {__basemetatable = base, 
-level_list = {40001, 37001, 42001, 41001, 38001, 39001, 36001, 42002, 36002, 41002, 37002, 40002, 39002, 38002, 36003, 41003, 38003, 39003, 37003, 42003, 40003, 39004, 41004, 40004, 38004, 37004, 42004, 36004, 39005, 36005, 42005, 40005, 41005, 37005, 38005}
+level_list = {40001, 36001, 39001, 43001, 42001, 37001, 41001, 38001, 36002, 41002, 38002, 42002, 39002, 37002, 43002, 40002, 42003, 40003, 41003, 43003, 38003, 36003, 37003, 39003, 41004, 38004, 37004, 43004, 39004, 42004, 40004, 36004, 38005, 39005, 36005, 40005, 41005, 37005, 42005, 43005}
 }
 setmetatable(activity_hero_level_detail, {__index = __rawdata})
 return activity_hero_level_detail

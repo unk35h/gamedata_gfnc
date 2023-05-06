@@ -93,7 +93,7 @@ UIEventFestivalSignIn.FestivalSignOutOfDate = function(self)
         self:OnClickClose()
       else
         ;
-        (UIUtil.OnClickBack)()
+        (UIUtil.OnClickBackByUiTab)(self)
       end
     end
 )
@@ -144,7 +144,7 @@ end
 
 UIEventFestivalSignIn.OnClickClose = function(self)
   -- function num : 0_8 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIEventFestivalSignIn.OnDelete = function(self)

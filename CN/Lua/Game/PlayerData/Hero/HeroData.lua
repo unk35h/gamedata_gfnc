@@ -1054,8 +1054,19 @@ HeroData.GetHeroDataSpecWeaponAll = function(self)
   return self._specWeaponDic
 end
 
+HeroData.GetSpecWeaponData = function(self)
+  -- function num : 0_76 , upvalues : _ENV
+  local heroId = self.dataId
+  local weaponId = (PlayerDataCenter.allSpecWeaponData):GetHeroSpecWeaponId(heroId)
+  if not weaponId then
+    return nil, nil
+  end
+  local weaponData = self:GetHeroDataSpecWeapon(weaponId)
+  return weaponId, weaponData
+end
+
 HeroData.ReplaceHeroSkill = function(self)
-  -- function num : 0_76 , upvalues : _ENV, HeroSkillData
+  -- function num : 0_77 , upvalues : _ENV, HeroSkillData
   if self._specWeaponDic == nil then
     return 
   end
@@ -1110,7 +1121,7 @@ HeroData.ReplaceHeroSkill = function(self)
 end
 
 HeroData.IsHaveCouldGetRewardArchive = function(self)
-  -- function num : 0_77 , upvalues : _ENV
+  -- function num : 0_78 , upvalues : _ENV
   local friendShipLevel = (PlayerDataCenter.allFriendshipData):GetLevel(self.dataId)
   local friendship_awardCfg = (ConfigData.friendship_award)[self.dataId]
   if friendship_awardCfg == nil then
@@ -1128,7 +1139,7 @@ HeroData.IsHaveCouldGetRewardArchive = function(self)
 end
 
 HeroData.IsAudioListed = function(self, audioId)
-  -- function num : 0_78 , upvalues : _ENV
+  -- function num : 0_79 , upvalues : _ENV
   if self.audio == nil then
     return false
   end
@@ -1139,7 +1150,7 @@ HeroData.IsAudioListed = function(self, audioId)
 end
 
 HeroData.SetAudioListed = function(self, audioId)
-  -- function num : 0_79 , upvalues : _ENV
+  -- function num : 0_80 , upvalues : _ENV
   if self.audio == nil then
     self.audio = {}
   end
@@ -1163,7 +1174,7 @@ HeroData.SetAudioListed = function(self, audioId)
 end
 
 HeroData.GetRepeatExtraItemList = function(self)
-  -- function num : 0_80 , upvalues : _ENV
+  -- function num : 0_81 , upvalues : _ENV
   local ids = (self.rankCfg).repeat_extra_trans_id
   local nums = (self.rankCfg).repeat_extra_trans_num
   local itemList = {}
@@ -1180,35 +1191,35 @@ HeroData.GetRepeatExtraItemList = function(self)
 end
 
 HeroData.GetRepeatFragTrans = function(self)
-  -- function num : 0_81 , upvalues : _ENV
+  -- function num : 0_82 , upvalues : _ENV
   local itemCfg = (ConfigData.item)[self.fragId]
   local num = (self.rankCfg).repeat_frag_trans
   return itemCfg, num
 end
 
 HeroData.IsHeroRecommendAttr = function(self, attrId)
-  -- function num : 0_82
+  -- function num : 0_83
   do return ((self.heroCfg).attribute_recommend)[attrId] == true end
   -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
 
 HeroData.SetIsFavouriteHero = function(self, bool)
-  -- function num : 0_83
+  -- function num : 0_84
   self.__isFavouriteHero = bool
 end
 
 HeroData.IsFavouriteHero = function(self)
-  -- function num : 0_84
+  -- function num : 0_85
   return self.__isFavouriteHero
 end
 
 HeroData.GetIsNotShowInfo = function(self)
-  -- function num : 0_85
+  -- function num : 0_86
   return (self.heroCfg).lock_heroinfo
 end
 
 HeroData.GetHeroHeadResName = function(self)
-  -- function num : 0_86 , upvalues : _ENV
+  -- function num : 0_87 , upvalues : _ENV
   local resName = nil
   do
     if self.skinId or 0 ~= 0 then
@@ -1230,7 +1241,7 @@ HeroData.GetHeroHeadResName = function(self)
 end
 
 HeroData.GetReplaceSkill = function(self, oriSkill)
-  -- function num : 0_87
+  -- function num : 0_88
   if self._replaceSkillDic == nil then
     return nil
   end
@@ -1238,7 +1249,7 @@ HeroData.GetReplaceSkill = function(self, oriSkill)
 end
 
 HeroData.GetHeroSkill = function(self, skillId)
-  -- function num : 0_88
+  -- function num : 0_89
   return (self.skillDic)[skillId]
 end
 

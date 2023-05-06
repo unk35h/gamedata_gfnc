@@ -79,11 +79,8 @@ UINOasisBuildDetail.InitOasisBuildDetail = function(self, buildingData, isInfo)
   ;
   (((self.ui).tex_Intro).gameObject):SetActive(isInfo)
   self:RefreshOasisBuildDetailState()
-  if not self.__isAdded2Top then
-    self.__isAdded2Top = true
-    ;
-    (UIUtil.SetTopStatus)(self, self.Hide, nil, nil, nil, true)
-  end
+  ;
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack(true)
 end
 
 UINOasisBuildDetail._RefreshNum = function(self)
@@ -227,28 +224,31 @@ UINOasisBuildDetail._OnClickUpgrade = function(self)
   end
 end
 
+UINOasisBuildDetail.BackAction = function(self)
+  -- function num : 0_10
+  self:Hide()
+end
+
 UINOasisBuildDetail.HideOasisBuildDetail = function(self)
-  -- function num : 0_10 , upvalues : _ENV
-  self.__isAdded2Top = false
-  ;
-  (UIUtil.OnClickBack)()
+  -- function num : 0_11 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UINOasisBuildDetail.OnShow = function(self)
-  -- function num : 0_11 , upvalues : base, _ENV
+  -- function num : 0_12 , upvalues : base, _ENV
   (base.OnShow)(self)
   AudioManager:PlayAudioById(1067)
 end
 
 UINOasisBuildDetail.OnHide = function(self)
-  -- function num : 0_12 , upvalues : _ENV, base
+  -- function num : 0_13 , upvalues : _ENV, base
   AudioManager:PlayAudioById(1068)
   ;
   (base.OnHide)(self)
 end
 
 UINOasisBuildDetail.OnDelete = function(self)
-  -- function num : 0_13 , upvalues : base
+  -- function num : 0_14 , upvalues : base
   (self.upItemPool):DeleteAll()
   ;
   (self.consumeItemPool):DeleteAll()

@@ -10,9 +10,9 @@ UIUserInfoView.OnInit = function(self)
   -- function num : 0_0 , upvalues : cs_ResLoader, _ENV, UINUserInfoNode
   self.resLoader = (cs_ResLoader.Create)()
   ;
-  (UIUtil.SetTopStatus)(self, self.Delete)
+  ((((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.Delete)):SetTopStatusVisible(true)):PushTopStatusDataToBackStack()
   ;
-  (UIUtil.AddButtonListener)((self.ui).background, self, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).background, self, self.OnClickBack)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Require, self, self.AddStrangerAsFriend)
   ;
@@ -102,8 +102,13 @@ UIUserInfoView.OnClickDeleteFriend = function(self)
 , nil)
 end
 
+UIUserInfoView.OnClickBack = function(self)
+  -- function num : 0_5 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIUserInfoView.OnDelete = function(self)
-  -- function num : 0_5 , upvalues : _ENV, base
+  -- function num : 0_6 , upvalues : _ENV, base
   MsgCenter:RemoveListener(eMsgEventId.OnUserFriendListChange, self._OnFriendListChange)
   if self.resLoader ~= nil then
     (self.resLoader):Put2Pool()

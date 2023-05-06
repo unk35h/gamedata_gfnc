@@ -284,7 +284,7 @@ end
 
 UIEpUpgradeRoom.OnRoomSkipClicked = function(self)
   -- function num : 0_17 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIEpUpgradeRoom.OnMapClicked = function(self)

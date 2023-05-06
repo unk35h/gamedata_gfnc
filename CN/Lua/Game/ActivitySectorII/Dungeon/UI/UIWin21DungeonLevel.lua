@@ -244,7 +244,7 @@ end
 UIWin21DungeonLevel.__OnClickBackGround = function(self)
   -- function num : 0_12 , upvalues : _ENV
   if self.__selectDunData ~= nil then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
   self.__selectDunData = nil
 end

@@ -65,8 +65,11 @@ UIHeroSkin.__UpdateHero = function(self, heroUpdate, hasNew)
 end
 
 UIHeroSkin.__UpdateHeroSkin = function(self)
-  -- function num : 0_2
-  self:RefreshState()
+  -- function num : 0_2 , upvalues : _ENV
+  self:Refresh()
+  for i,skinItem in ipairs((self.skinPool).listItem) do
+    skinItem:TryReloadCtify(self.resLoader)
+  end
 end
 
 UIHeroSkin.OnShow = function(self)
@@ -903,7 +906,7 @@ UIHeroSkin.OnClickOpenSkinVoice = function(self)
   local item = ((self.skinPool).listItem)[self.curIndex]
   local skinCfg = item.skinCfg
   if skinCfg.has_voice then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
     local heroStateWindow = UIManager:GetWindow(UIWindowTypeID.HeroState)
     heroStateWindow:OpenHeroInformation(function(window)
     -- function num : 0_33_0 , upvalues : skinCfg

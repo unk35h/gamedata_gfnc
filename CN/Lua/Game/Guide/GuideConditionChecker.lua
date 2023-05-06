@@ -343,6 +343,9 @@ end
   if not WarChessManager:GetIsInWarChess() then
     return false
   end
+  if #condition_arg == 0 or condition_arg[1] == 0 then
+    return true
+  end
   local levelId = WarChessManager:GetWCLevelId()
   if #condition_arg > 0 then
     for _,id in pairs(condition_arg) do

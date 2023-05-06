@@ -100,7 +100,7 @@ end
 
 UINMonsterLevelPreview._OnClickClose = function(self)
   -- function num : 0_5 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UINMonsterLevelPreview.OnDelete = function(self)

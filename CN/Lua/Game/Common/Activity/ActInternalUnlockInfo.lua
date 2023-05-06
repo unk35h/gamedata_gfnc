@@ -157,6 +157,14 @@ ActInternalUnlockInfo.__AddNewUnlockInfo = function(self, unlockType, unlockId, 
   local data = {unlockType = unlockType, unlockId = unlockId, unlockPara = unlockPara}
   ;
   (table.insert)(self._newUnlockInfoList, data)
+  if type(data.unlockId) == "number" then
+    (table.sort)(self._newUnlockInfoList, function(a, b)
+    -- function num : 0_13_0
+    do return a.unlockId < b.unlockId end
+    -- DECOMPILER ERROR: 1 unprocessed JMP targets
+  end
+)
+  end
 end
 
 ActInternalUnlockInfo.ClearActUnlockInfo = function(self)

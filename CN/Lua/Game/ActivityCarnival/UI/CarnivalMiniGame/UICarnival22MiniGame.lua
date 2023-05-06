@@ -439,7 +439,7 @@ end
 UICarnival22MiniGame.OnClickGameBack = function(self)
   -- function num : 0_22 , upvalues : _ENV, cs_MessageCommon
   if not self._isPlaying then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
     return 
   end
   self._isPause = true
@@ -448,7 +448,7 @@ UICarnival22MiniGame.OnClickGameBack = function(self)
     -- function num : 0_22_0 , upvalues : self, _ENV
     (self._gameData):UploadWatermelonScore(self._score)
     ;
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 , function()
     -- function num : 0_22_1 , upvalues : self

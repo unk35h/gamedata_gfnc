@@ -303,6 +303,13 @@
       "SectorMentionId": 29
     },
     {
+      "Id": 45,
+      "Multiplier": 200,
+      "HpRecover": 1000,
+      "BenchRecover": 2000,
+      "FunctionId": 4300
+    },
+    {
       "Id": 500,
       "Multiplier": 1000,
       "HpRecover": 1000,

@@ -334,19 +334,35 @@ local event_assist = {
 , 
 {describe = 313119, id = 166, replace_txt = 500166}
 , 
-{describe = 294800, id = 167, replace_txt = 500167}
+{describe = 408046, id = 167, replace_txt = 500167}
 , 
-{describe = 341307, id = 168, replace_txt = 500168}
+{describe = 470972, id = 168, replace_txt = 500168}
 , 
-{describe = 157201, id = 169, replace_txt = 500169}
+{describe = 315713, id = 169, replace_txt = 500169}
 , 
-{describe = 104336, id = 170, replace_txt = 500170}
+{describe = 366507, id = 170, replace_txt = 500170}
 , 
-{describe = 59322, id = 171, replace_txt = 500171}
+{describe = 485247, id = 171, replace_txt = 500171}
 , 
-{describe = 509708, id = 172, replace_txt = 500172}
+{describe = 45758, id = 172, replace_txt = 500172}
 , 
-{describe = 102620, id = 173, replace_txt = 500173}
+{describe = 347464, id = 173, replace_txt = 500173}
+, 
+{describe = 379564, id = 174, replace_txt = 500174}
+, 
+{describe = 457326, id = 175, replace_txt = 500175}
+, 
+{describe = 119311, id = 176, replace_txt = 500176}
+, 
+{describe = 417787, id = 177, replace_txt = 500177}
+, 
+{describe = 149330, id = 178, replace_txt = 500178}
+, 
+{describe = 113513, id = 179, replace_txt = 500179}
+, 
+{describe = 59151, id = 180, replace_txt = 500180}
+, 
+{describe = 181528, id = 181, replace_txt = 500181}
 }
 local __default_values = {auto_choice_arg = __rt_1, auto_choice_type = 0, auto_priority = 0, choice_color = false, describe = 204406, icon = "event_icon_close", id = 1, replace_txt = 500001, show_tips = true}
 local base = {__index = __default_values, __newindex = function()

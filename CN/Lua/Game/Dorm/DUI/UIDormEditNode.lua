@@ -142,7 +142,7 @@ UIDormEditNode.OnDressUpClicked = function(self)
     return 
   end
   ;
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByWinId)(UIWindowTypeID.DormMain)
   local dormCtrl = ControllerManager:GetController(ControllerTypeId.Dorm)
   ;
   (dormCtrl.houseCtrl):OnHouseClicked(roomEntity, true)

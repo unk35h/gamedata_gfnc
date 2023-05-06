@@ -43,11 +43,19 @@ UINGameSetTypeItem.InitGameSetTypeItem = function(self, setCtrl, groupCfg)
     ((item.ui).tex_Name).text = (LanguageUtil.GetLocaleText)(cfg.setting_name)
     ;
     (item.gameObject):SetActive(true)
+    -- DECOMPILER ERROR at PC98: Confused about usage of register: R14 in 'UnsetPending'
+
+    ;
+    (item.gameObject).name = "option_" .. tostring(id)
     local itemGo = ((self.ui).tog_DisplayGroup):Instantiate(item.transform)
     itemGo:SetActive(true)
     local multiSwitchTogItem = (UIMultiSwitchTogItem.New)()
     multiSwitchTogItem:Init(itemGo)
     multiSwitchTogItem:InitUIMultiSwitchTogItem(curValue, strList, false, bindEvent, self)
+    -- DECOMPILER ERROR at PC125: Confused about usage of register: R16 in 'UnsetPending'
+
+    ;
+    (multiSwitchTogItem.gameObject).name = "togGroup_" .. tostring(id)
   end
 end
 

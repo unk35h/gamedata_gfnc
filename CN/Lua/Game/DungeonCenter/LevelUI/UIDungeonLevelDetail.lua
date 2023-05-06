@@ -21,7 +21,7 @@ UIDungeonLevelDetail.InitDungeonLevelDetail = function(self, dunLevelData, isLoc
   -- function num : 0_1 , upvalues : _ENV
   self.__dunLevelData = dunLevelData
   if self.isPushBack2Stack then
-    (UIUtil.PopFromBackStack)()
+    (UIUtil.PopFromBackStackByUiTab)(self)
   end
   ;
   (UIUtil.SetTopStatus)(self, self.OnClickDungeonLevelDetailBack, {dunLevelData:GetLevelResourceGroup()})
@@ -78,7 +78,7 @@ end
 
 UIDungeonLevelDetail.OnClickBg = function(self)
   -- function num : 0_9 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIDungeonLevelDetail.OnShow = function(self)

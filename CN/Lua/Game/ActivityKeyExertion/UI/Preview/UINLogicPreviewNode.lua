@@ -2,11 +2,11 @@
 -- function num : 0 , upvalues : _ENV
 local UINLogicPreviewNode = class("UINLogicPreviewNode", UIBaseNode)
 local base = UIBaseNode
-local UINBaseItemWithReceived = require("Game.CommonUI.Item.UINBaseItemWithReceived")
+local UINKeyExertionRewardItem = require("Game.ActivityKeyExertion.UI.UINKeyExertionRewardItem")
 UINLogicPreviewNode.OnInit = function(self)
-  -- function num : 0_0 , upvalues : _ENV, UINBaseItemWithReceived
+  -- function num : 0_0 , upvalues : _ENV, UINKeyExertionRewardItem
   (UIUtil.LuaUIBindingTable)(self.transform, self.ui)
-  self.__itemPool = (UIItemPool.New)(UINBaseItemWithReceived, (self.ui).rewardItem)
+  self.__itemPool = (UIItemPool.New)(UINKeyExertionRewardItem, (self.ui).rewardItem)
   ;
   ((self.ui).rewardItem):SetActive(false)
   ;
@@ -15,37 +15,50 @@ UINLogicPreviewNode.OnInit = function(self)
   (UIUtil.AddButtonListener)((self.ui).btn_Bg, self, self.OnClickClose)
 end
 
-UINLogicPreviewNode.InitLogicPreviewNode = function(self, itemIds, itemNums, title)
+UINLogicPreviewNode.InitLogicPreviewNode = function(self, keyExertionData)
   -- function num : 0_1 , upvalues : _ENV
-  if not self.settedTopStatus then
-    (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
-    self.settedTopStatus = true
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack(true)
+  self._data = keyExertionData
+  self:UpdateCurrentNode()
+end
+
+UINLogicPreviewNode.UpdateCurrentNode = function(self)
+  -- function num : 0_2 , upvalues : _ENV
+  if self._data == nil then
+    return 
   end
+  local allrewardIds, allrewardNums = (self._data):GetKeyExertionAllReward()
   ;
   (self.__itemPool):HideAll()
-  -- DECOMPILER ERROR at PC16: Confused about usage of register: R4 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC15: Confused about usage of register: R3 in 'UnsetPending'
 
   ;
-  ((self.ui).tex_Name).text = title
-  for iIndex,vRewardId in ipairs(itemIds) do
-    local rewardNum = itemNums[iIndex]
+  ((self.ui).tex_Name).text = (self._data):GetKeyExertionAllRewardDes()
+  for iIndex,vRewardId in ipairs(allrewardIds) do
+    local rewardNum = allrewardNums[iIndex]
     local item = (self.__itemPool):GetOne()
-    item:InitItemWithCount((ConfigData.item)[vRewardId], rewardNum)
+    local isShowAllPicked = ((self._data):GetBigRewardId() == vRewardId and (self._data):GetIsBigRewardAllPicked())
+    item:InitKeyExertionRewardItem((ConfigData.item)[vRewardId], rewardNum, isShowAllPicked)
     item:Show()
   end
+  -- DECOMPILER ERROR: 3 unprocessed JMP targets
 end
 
 UINLogicPreviewNode.OnClickClose = function(self)
-  -- function num : 0_2 , upvalues : _ENV
-  if self.settedTopStatus then
-    (UIUtil.OnClickBack)()
-  end
+  -- function num : 0_3 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UINLogicPreviewNode.BackAction = function(self)
-  -- function num : 0_3
-  self.settedTopStatus = false
+  -- function num : 0_4
   self:Hide()
+end
+
+UINLogicPreviewNode.OnDelete = function(self)
+  -- function num : 0_5 , upvalues : base
+  (self.__itemPool):DeleteAll()
+  ;
+  (base.OnDelete)(self)
 end
 
 return UINLogicPreviewNode

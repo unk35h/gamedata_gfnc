@@ -6,6 +6,8 @@ local UINStgClgInfoTaskItem = require("Game.StageChallenge.UI.ChallengeInfo.UINS
 local UIHeroUtil = require("Game.CommonUI.Hero.UIHeroUtil")
 UIFmtChallengeInfo.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, UINStgClgInfoTaskItem
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self._BackAction)):PushTopStatusDataToBackStack()
+  ;
   (UIUtil.AddButtonListener)((self.ui).btn_bg, self, self._OnClickClose)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Close, self, self._OnClickClose)
@@ -106,13 +108,18 @@ UIFmtChallengeInfo._OnClickConfirm = function(self)
   self:Delete()
 end
 
-UIFmtChallengeInfo._OnClickClose = function(self)
+UIFmtChallengeInfo._BackAction = function(self)
   -- function num : 0_6
   self:Delete()
 end
 
+UIFmtChallengeInfo._OnClickClose = function(self)
+  -- function num : 0_7 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIFmtChallengeInfo.OnDelete = function(self)
-  -- function num : 0_7 , upvalues : base
+  -- function num : 0_8 , upvalues : base
   (self.fixedTaskItem):Delete()
   ;
   (self.optTaskItemPool):DeleteAll()

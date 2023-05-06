@@ -20,6 +20,9 @@ end
 
 bs_15106.OnSetHurt = function(self, context)
   -- function num : 0_3 , upvalues : _ENV
+  if context.isTriggerSet then
+    return 
+  end
   local distance = 0
   if (context.target).belongNum == eBattleRoleBelong.enemy and context.sender == self.caster then
     distance = LuaSkillCtrl:GetGridsDistance((self.caster).x, (self.caster).y, (context.target).x, (context.target).y)

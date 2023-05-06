@@ -9,6 +9,7 @@ local HomeEnum = require("Game.Home.HomeEnum")
 local CheckerTypeId, _ = (table.unpack)(require("Game.Common.CheckCondition.CheckerGlobalConfig"))
 local ConditionListener = require("Game.Common.CheckCondition.ConditonListener.ConditionListener")
 local JumpManager = require("Game.Jump.JumpManager")
+local CS_MessageCommon = CS.MessageCommon
 local PopFuncDic = {[1] = function(giftInfo, callback)
   -- function num : 0_0 , upvalues : _ENV
   UIManager:ShowWindowAsync(UIWindowTypeID.ChipGift, function(window)
@@ -211,27 +212,29 @@ PayGiftController.InitPayGift = function(self)
               else
                 do
                   do
-                    local reddot = self:__GetPayGiftReddot(payGiftInfo)
-                    reddot:SetRedDotCount(1)
-                    -- DECOMPILER ERROR at PC139: LeaveBlock: unexpected jumping out DO_STMT
+                    if payGiftInfo:IsGiftInfoInShop() then
+                      local reddot = self:__GetPayGiftReddot(payGiftInfo)
+                      reddot:SetRedDotCount(1)
+                    end
+                    -- DECOMPILER ERROR at PC143: LeaveBlock: unexpected jumping out DO_STMT
 
-                    -- DECOMPILER ERROR at PC139: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                    -- DECOMPILER ERROR at PC143: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                    -- DECOMPILER ERROR at PC139: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC143: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC139: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC143: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC139: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC143: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC139: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                    -- DECOMPILER ERROR at PC143: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                    -- DECOMPILER ERROR at PC139: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC143: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC139: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC143: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC139: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC143: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC139: LeaveBlock: unexpected jumping out DO_STMT
+                    -- DECOMPILER ERROR at PC143: LeaveBlock: unexpected jumping out DO_STMT
 
                   end
                 end
@@ -274,12 +277,12 @@ PayGiftController.UpdatePayGift = function(self, giftInfo)
   giftInfo:UpdatePayGiftInfo()
   if giftInfo:IsSoldOut() then
     do
-      if self:__IsFreeGift(giftInfo) then
+      if self:__IsFreeGift(giftInfo) and giftInfo:IsGiftInfoInShop() then
         local reddot = self:__GetPayGiftReddot(giftInfo)
         reddot:SetRedDotCount(0)
       end
       local nextRefreshTime = giftInfo:GetPayGiftNextTime()
-      -- DECOMPILER ERROR at PC24: Confused about usage of register: R3 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC28: Confused about usage of register: R3 in 'UnsetPending'
 
       if PlayerDataCenter.timestamp < nextRefreshTime then
         (self._timePara1)[1] = nextRefreshTime
@@ -307,13 +310,13 @@ PayGiftController.__OnConditionStateChange = function(self, listenId)
 
   if newState then
     (self._lockedDic)[giftId] = nil
-    if isFree then
+    if isFree and payGiftInfo:IsGiftInfoInShop() then
       local reddot = self:__GetPayGiftReddot(payGiftInfo)
       local redCount = payGiftInfo:IsSoldOut() and 0 or 1
       reddot:SetRedDotCount(redCount)
     end
     do
-      -- DECOMPILER ERROR at PC53: Confused about usage of register: R7 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC57: Confused about usage of register: R7 in 'UnsetPending'
 
       if self:CheckPayGiftCanPop(payGiftInfo) then
         (self._homeMainPopDic)[giftId] = true
@@ -324,16 +327,16 @@ PayGiftController.__OnConditionStateChange = function(self, listenId)
         end
       end
       do
-        -- DECOMPILER ERROR at PC68: Confused about usage of register: R7 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC72: Confused about usage of register: R7 in 'UnsetPending'
 
         ;
         (self._lockedDic)[giftId] = payGiftInfo
         do
-          if isFree then
+          if isFree and payGiftInfo:IsGiftInfoInShop() then
             local reddot = self:__GetPayGiftReddot(payGiftInfo)
             reddot:SetRedDotCount(0)
           end
-          -- DECOMPILER ERROR at PC78: Confused about usage of register: R7 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC86: Confused about usage of register: R7 in 'UnsetPending'
 
           ;
           (self._homeMainPopDic)[giftId] = nil
@@ -353,7 +356,7 @@ PayGiftController.__SoldoutStateChange = function(self, listenId, isUnlock)
   (self._conditionListener):RemoveConditionChangeListener(listenId)
   local giftInfo = (self.dataDic)[listenId]
   do
-    if self:__IsFreeGift(giftInfo) then
+    if self:__IsFreeGift(giftInfo) and giftInfo:IsGiftInfoInShop() then
       local reddot = self:__GetPayGiftReddot(giftInfo)
       reddot:SetRedDotCount(1)
     end
@@ -377,7 +380,7 @@ PayGiftController.ListenPreCondtion = function(self, conditionId)
 
       ;
       (self._lockedDic)[(giftInfo.groupCfg).id] = nil
-      if self:__IsFreeGift(giftInfo) then
+      if self:__IsFreeGift(giftInfo) and giftInfo:IsGiftInfoInShop() then
         local reddot = self:__GetPayGiftReddot(giftInfo)
         local redcount = giftInfo:IsSoldOut() and 0 or 1
         reddot:SetRedDotCount(redcount)
@@ -390,7 +393,7 @@ PayGiftController.ListenPreCondtion = function(self, conditionId)
             end
             collectDic[(giftInfo.groupCfg).id] = true
           end
-          -- DECOMPILER ERROR at PC79: Confused about usage of register: R11 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC83: Confused about usage of register: R11 in 'UnsetPending'
 
           if giftInfo:IsUnlock() and self:CheckPayGiftCanPop(giftInfo) and (self._lockedPopDic)[(giftInfo.groupCfg).id] ~= nil then
             (self._lockedPopDic)[(giftInfo.groupCfg).id] = nil
@@ -399,11 +402,11 @@ PayGiftController.ListenPreCondtion = function(self, conditionId)
             end
             collectDic[(giftInfo.groupCfg).id] = true
           end
-          -- DECOMPILER ERROR at PC87: LeaveBlock: unexpected jumping out DO_STMT
+          -- DECOMPILER ERROR at PC91: LeaveBlock: unexpected jumping out DO_STMT
 
-          -- DECOMPILER ERROR at PC87: LeaveBlock: unexpected jumping out IF_THEN_STMT
+          -- DECOMPILER ERROR at PC91: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-          -- DECOMPILER ERROR at PC87: LeaveBlock: unexpected jumping out IF_STMT
+          -- DECOMPILER ERROR at PC91: LeaveBlock: unexpected jumping out IF_STMT
 
         end
       end
@@ -413,7 +416,7 @@ PayGiftController.ListenPreCondtion = function(self, conditionId)
     local homeController = ControllerManager:GetController(ControllerTypeId.HomeController)
     if homeController ~= nil then
       for giftId,_ in pairs(collectDic) do
-        -- DECOMPILER ERROR at PC107: Confused about usage of register: R12 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC111: Confused about usage of register: R12 in 'UnsetPending'
 
         if not (self._homeMainPopDic)[giftId] then
           (self._homeMainPopDic)[giftId] = true
@@ -546,16 +549,25 @@ PayGiftController.SeekNextLinearSellGift = function(self, giftGroup)
   return list
 end
 
+PayGiftController.SendBuyGifitInfo = function(self, giftInfo, params, successFunc)
+  -- function num : 0_19 , upvalues : CS_MessageCommon, _ENV
+  if not giftInfo:IsUnlock() then
+    (CS_MessageCommon.ShowMessageTipsWithErrorSound)(ConfigData:GetTipContent(7208))
+    return 
+  end
+  self:SendBuyGifit(giftInfo.defaultCfg, params, successFunc)
+end
+
 PayGiftController.SendBuyGifit = function(self, giftCfg, params, successFunc)
-  -- function num : 0_19 , upvalues : _ENV
+  -- function num : 0_20 , upvalues : _ENV
   local payCtrl = ControllerManager:GetController(ControllerTypeId.Pay)
   local giftId = giftCfg.id
   local giftInfo = self:__GetGiftInfoByChildId(giftId)
   local buyLogicFunc = function()
-    -- function num : 0_19_0 , upvalues : _ENV, giftId, params, giftInfo, self, successFunc, giftCfg, payCtrl
+    -- function num : 0_20_0 , upvalues : _ENV, giftId, params, giftInfo, self, successFunc, giftCfg, payCtrl
     local network = NetworkManager:GetNetwork(NetworkTypeID.PayGift)
     network:CS_Gift_Buy(giftId, params, function()
-      -- function num : 0_19_0_0 , upvalues : giftInfo, self, _ENV, successFunc, giftCfg, payCtrl
+      -- function num : 0_20_0_0 , upvalues : giftInfo, self, _ENV, successFunc, giftCfg, payCtrl
       if giftInfo:IsUseItemPay() then
         self:UpdatePayGift(giftInfo)
         MsgCenter:Broadcast(eMsgEventId.PayGiftChange, (giftInfo.groupCfg).id)
@@ -566,7 +578,7 @@ PayGiftController.SendBuyGifit = function(self, giftCfg, params, successFunc)
         local payId = giftCfg.payId
         if payId ~= nil then
           payCtrl:ReqPay(payId, 1, function()
-        -- function num : 0_19_0_0_0 , upvalues : self, giftInfo, _ENV, successFunc
+        -- function num : 0_20_0_0_0 , upvalues : self, giftInfo, _ENV, successFunc
         self:UpdatePayGift(giftInfo)
         MsgCenter:Broadcast(eMsgEventId.PayGiftChange, (giftInfo.groupCfg).id)
         if successFunc ~= nil then
@@ -586,7 +598,7 @@ PayGiftController.SendBuyGifit = function(self, giftCfg, params, successFunc)
       if haveCost < giftCfg.costCount then
         if payCtrl:IsPayItem(giftCfg.costId) then
           payCtrl:TryConvertPayItem(giftCfg.costId, giftCfg.costCount - haveCost, nil, nil, function()
-    -- function num : 0_19_1 , upvalues : buyLogicFunc
+    -- function num : 0_20_1 , upvalues : buyLogicFunc
     buyLogicFunc()
   end
 , false)
@@ -602,7 +614,7 @@ PayGiftController.SendBuyGifit = function(self, giftCfg, params, successFunc)
 end
 
 PayGiftController.SelfSelectGift = function(self, giftCfg, payGiftInfo, successFunc)
-  -- function num : 0_20 , upvalues : _ENV
+  -- function num : 0_21 , upvalues : _ENV
   local payCtrl = ControllerManager:GetController(ControllerTypeId.Pay)
   local giftId = giftCfg.id
   local giftInfo = self:__GetGiftInfoByChildId(giftId)
@@ -624,7 +636,7 @@ PayGiftController.SelfSelectGift = function(self, giftCfg, payGiftInfo, successF
 end
 
 PayGiftController.GetIsGiftSouldOut = function(self, giftGroupId)
-  -- function num : 0_21
+  -- function num : 0_22
   local giftInfo = (self.dataDic)[giftGroupId]
   if giftInfo ~= nil then
     return giftInfo:IsSoldOut()
@@ -633,7 +645,7 @@ PayGiftController.GetIsGiftSouldOut = function(self, giftGroupId)
 end
 
 PayGiftController.IsHaveNewGiftInShop = function(self, pageId)
-  -- function num : 0_22 , upvalues : _ENV
+  -- function num : 0_23 , upvalues : _ENV
   for giftId,paygiftInfo in pairs(self.dataDic) do
     if (pageId == nil or (paygiftInfo.groupCfg).inPage == pageId) and paygiftInfo:IsUnlock() and paygiftInfo:IsNewGiftInShop() then
       return true
@@ -643,7 +655,7 @@ PayGiftController.IsHaveNewGiftInShop = function(self, pageId)
 end
 
 PayGiftController.SetAllNewBeLooked = function(self, pageId)
-  -- function num : 0_23 , upvalues : _ENV
+  -- function num : 0_24 , upvalues : _ENV
   for giftId,paygiftInfo in pairs(self.dataDic) do
     if (pageId == nil or (paygiftInfo.groupCfg).inPage == pageId) and paygiftInfo:IsUnlock() then
       paygiftInfo:SetNewGiftLooked()
@@ -652,12 +664,12 @@ PayGiftController.SetAllNewBeLooked = function(self, pageId)
 end
 
 PayGiftController.GetHomePopGiftDic = function(self)
-  -- function num : 0_24
+  -- function num : 0_25
   return self._homeMainPopDic
 end
 
 PayGiftController.GetHomePopGiftOne = function(self, needDelete)
-  -- function num : 0_25
+  -- function num : 0_26
   if self._homeMainPopList == nil then
     return nil
   end
@@ -676,7 +688,7 @@ PayGiftController.GetHomePopGiftOne = function(self, needDelete)
 end
 
 PayGiftController.CheckPayGiftCanPop = function(self, giftInfo)
-  -- function num : 0_26 , upvalues : _ENV
+  -- function num : 0_27 , upvalues : _ENV
   if giftInfo:IsUnclockPopGift() then
     local flag = not giftInfo:IsSoldOut()
   end
@@ -696,12 +708,12 @@ PayGiftController.CheckPayGiftCanPop = function(self, giftInfo)
 end
 
 PayGiftController.GetPopGiftType = function(self, giftInfo)
-  -- function num : 0_27
+  -- function num : 0_28
   return giftInfo:GetPopGiftType()
 end
 
 PayGiftController.ShowPayGiftWin = function(self, giftInfo, callback)
-  -- function num : 0_28 , upvalues : Local_GroupPopFunc, PopFuncDic, _ENV
+  -- function num : 0_29 , upvalues : Local_GroupPopFunc, PopFuncDic, _ENV
   local groupPopId = giftInfo:GeyGiftGroupPopId()
   if groupPopId > 0 then
     Local_GroupPopFunc(groupPopId, callback, self)
@@ -716,9 +728,9 @@ PayGiftController.ShowPayGiftWin = function(self, giftInfo, callback)
 end
 
 PayGiftController.ShowHeroGiftWin = function(self, giftInfo, callback)
-  -- function num : 0_29 , upvalues : _ENV
+  -- function num : 0_30 , upvalues : _ENV
   UIManager:ShowWindowAsync(UIWindowTypeID.CustomHeroGift, function(window)
-    -- function num : 0_29_0 , upvalues : _ENV, giftInfo, callback
+    -- function num : 0_30_0 , upvalues : _ENV, giftInfo, callback
     if IsNull(window) then
       return 
     end
@@ -728,7 +740,7 @@ PayGiftController.ShowHeroGiftWin = function(self, giftInfo, callback)
 end
 
 PayGiftController.OnDelete = function(self)
-  -- function num : 0_30 , upvalues : _ENV, base
+  -- function num : 0_31 , upvalues : _ENV, base
   (self._conditionListener):Delete()
   MsgCenter:RemoveListener(eMsgEventId.PreCondition, self.__ListenPreCondtion)
   ;

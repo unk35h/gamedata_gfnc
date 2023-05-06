@@ -40,6 +40,10 @@ identify = {}
 identifyEnd = {}
 }
   self.rescueMsg = {identify = nil, heroes = nil, fromFormationIdx = nil, powerNum = nil}
+  self.backBeforeBattle = {identify = nil}
+  self.updateHpData = {identify = nil, monster = nil}
+  self._Choice_ProtocolTab = {}
+  self.getMonsterPower = {}
 end
 
 WarChessNetworkCtrl.InitNetwork = function(self)
@@ -101,6 +105,12 @@ WarChessNetworkCtrl.InitNetwork = function(self)
   self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_WarChess_OverReward_SelectAlg, self, proto_csmsg.SC_WarChess_OverReward_SelectAlg, self.SC_WarChess_OverReward_SelectAlg)
   self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_WarChess_OverReward_DropAlg, self, proto_csmsg.SC_WarChess_OverReward_DropAlg, self.SC_WarChess_OverReward_DropAlg)
   self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_WarChess_OverReward_RefreshAlg, self, proto_csmsg.SC_WarChess_OverReward_RefreshAlg, self.SC_WarChess_OverReward_RefreshAlg)
+  self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_WarChess_Choice_Protocol, self, proto_csmsg.SC_WarChess_Choice_Protocol, self.SC_WarChess_Choice_Protocol)
+  self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_WarChess_MonsterPower, self, proto_csmsg.SC_WarChess_MonsterPower, self.SC_WarChess_MonsterPower)
+  self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_WarChess_BattleSystem_BackBeforeBattle, self, proto_csmsg.SC_WarChess_BattleSystem_BackBeforeBattle, self.SC_WarChess_BattleSystem_BackBeforeBattle)
+  self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_WarChess_BattleSystem_UpdateData, self, proto_csmsg.SC_WarChess_BattleSystem_UpdateData, self.SC_WarChess_BattleSystem_UpdateData)
+  self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_WarChess_EventInBattle, self, proto_csmsg.SC_WarChess_EventInBattle, self.SC_WarChess_EventInBattle)
+  self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_WarChess_BattleSystem_ChoiceEvent, self, proto_csmsg.SC_WarChess_BattleSystem_ChoiceEvent, self.SC_WarChess_BattleSystem_ChoiceEvent)
 end
 
 WarChessNetworkCtrl.CS_WarChess_SingleStart = function(self, stageId, challengeMode, challengeQuests, warChessType, callback)
@@ -267,27 +277,31 @@ WarChessNetworkCtrl.SC_WarChess_MoveTo = function(self, msg)
   end
 end
 
-WarChessNetworkCtrl.CS_WarChess_Interact = function(self, wid, tid, wcPos, entityCat, interactionId, callback)
+WarChessNetworkCtrl.CS_WarChess_Interact = function(self, wid, tid, wcPos, entityCat, interactionId, callback, battleInteract)
   -- function num : 0_12 , upvalues : _ENV, cs_WaitNetworkResponse
-  -- DECOMPILER ERROR at PC2: Confused about usage of register: R7 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC2: Confused about usage of register: R8 in 'UnsetPending'
 
   ((self.teamInteractMsg).identify).wid = wid
-  -- DECOMPILER ERROR at PC5: Confused about usage of register: R7 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC5: Confused about usage of register: R8 in 'UnsetPending'
 
   ;
   ((self.teamInteractMsg).identify).tid = tid
-  -- DECOMPILER ERROR at PC7: Confused about usage of register: R7 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC7: Confused about usage of register: R8 in 'UnsetPending'
 
   ;
   (self.teamInteractMsg).wcPos = wcPos
-  -- DECOMPILER ERROR at PC9: Confused about usage of register: R7 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC9: Confused about usage of register: R8 in 'UnsetPending'
 
   ;
   (self.teamInteractMsg).entityCat = entityCat
-  -- DECOMPILER ERROR at PC11: Confused about usage of register: R7 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC11: Confused about usage of register: R8 in 'UnsetPending'
 
   ;
   (self.teamInteractMsg).interactionId = interactionId
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R8 in 'UnsetPending'
+
+  ;
+  (self.teamInteractMsg).battleInteract = battleInteract
   self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_WarChess_Interact, proto_csmsg.CS_WarChess_Interact, self.teamInteractMsg)
   cs_WaitNetworkResponse:StartWait(proto_csmsg_MSG_ID.MSG_CS_WarChess_Interact, callback, proto_csmsg_MSG_ID.MSG_SC_WarChess_Interact)
 end
@@ -1350,8 +1364,144 @@ WarChessNetworkCtrl.SC_WarChess_OverReward_RefreshAlg = function(self, msg)
   end
 end
 
+WarChessNetworkCtrl.CS_WarChess_Choice_Protocol = function(self, wid, buffId, callback)
+  -- function num : 0_111 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- DECOMPILER ERROR at PC1: Confused about usage of register: R4 in 'UnsetPending'
+
+  (self._Choice_ProtocolTab).wid = wid
+  -- DECOMPILER ERROR at PC3: Confused about usage of register: R4 in 'UnsetPending'
+
+  ;
+  (self._Choice_ProtocolTab).buffId = buffId
+  self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_WarChess_Choice_Protocol, proto_csmsg.CS_WarChess_Choice_Protocol, self._Choice_ProtocolTab)
+  cs_WaitNetworkResponse:StartWait(proto_csmsg_MSG_ID.MSG_CS_WarChess_Choice_Protocol, callback, proto_csmsg_MSG_ID.MSG_SC_WarChess_Choice_Protocol)
+end
+
+WarChessNetworkCtrl.SC_WarChess_Choice_Protocol = function(self, msg)
+  -- function num : 0_112 , upvalues : _ENV, cs_WaitNetworkResponse
+  if msg.ret ~= proto_csmsg_ErrorCode.None then
+    local err = "SC_WarChess_Choice_Protocol error:" .. tostring(msg.ret)
+    self:ShowSCErrorMsg(err)
+    cs_WaitNetworkResponse:RemoveWait(proto_csmsg_MSG_ID.MSG_CS_WarChess_Choice_Protocol)
+    return 
+  end
+end
+
+WarChessNetworkCtrl.CS_WarChess_MonsterPower = function(self, identify, wcPos, callback)
+  -- function num : 0_113 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- DECOMPILER ERROR at PC1: Confused about usage of register: R4 in 'UnsetPending'
+
+  (self.getMonsterPower).identify = identify
+  -- DECOMPILER ERROR at PC3: Confused about usage of register: R4 in 'UnsetPending'
+
+  ;
+  (self.getMonsterPower).wcPos = wcPos
+  self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_WarChess_MonsterPower, proto_csmsg.CS_WarChess_MonsterPower, self.getMonsterPower)
+  cs_WaitNetworkResponse:StartWait(proto_csmsg_MSG_ID.MSG_CS_WarChess_MonsterPower, callback, proto_csmsg_MSG_ID.MSG_SC_WarChess_MonsterPower)
+end
+
+WarChessNetworkCtrl.SC_WarChess_MonsterPower = function(self, msg)
+  -- function num : 0_114 , upvalues : _ENV, cs_WaitNetworkResponse
+  do
+    if msg.ret ~= proto_csmsg_ErrorCode.None then
+      local err = "SC_WarChess_MonsterPower error:" .. tostring(msg.ret)
+      self:ShowSCErrorMsg(err)
+      cs_WaitNetworkResponse:AddWaitData(proto_csmsg_MSG_ID.MSG_CS_WarChess_MonsterPower, false)
+      return 
+    end
+    cs_WaitNetworkResponse:AddWaitData(proto_csmsg_MSG_ID.MSG_CS_WarChess_MonsterPower, msg)
+  end
+end
+
+WarChessNetworkCtrl.CS_WarChess_BattleSystem_BackBeforeBattle = function(self, identify, callback)
+  -- function num : 0_115 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- DECOMPILER ERROR at PC1: Confused about usage of register: R3 in 'UnsetPending'
+
+  (self.backBeforeBattle).identify = identify
+  self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_WarChess_BattleSystem_BackBeforeBattle, proto_csmsg.CS_WarChess_BattleSystem_BackBeforeBattle, self.backBeforeBattle)
+  cs_WaitNetworkResponse:StartWait(proto_csmsg_MSG_ID.MSG_CS_WarChess_BattleSystem_BackBeforeBattle, callback, proto_csmsg_MSG_ID.MSG_SC_WarChess_BattleSystem_BackBeforeBattle)
+end
+
+WarChessNetworkCtrl.SC_WarChess_BattleSystem_BackBeforeBattle = function(self, msg)
+  -- function num : 0_116 , upvalues : _ENV, cs_WaitNetworkResponse
+  do
+    if msg.ret ~= proto_csmsg_ErrorCode.None then
+      local err = "SC_WarChess_BattleSystem_BackBeforeBattle error:" .. tostring(msg.ret)
+      self:ShowSCErrorMsg(err)
+      cs_WaitNetworkResponse:AddWaitData(proto_csmsg_MSG_ID.MSG_CS_WarChess_BattleSystem_BackBeforeBattle, false)
+      return 
+    end
+    cs_WaitNetworkResponse:AddWaitData(proto_csmsg_MSG_ID.MSG_CS_WarChess_BattleSystem_BackBeforeBattle, msg.warChess)
+  end
+end
+
+WarChessNetworkCtrl.CS_WarChess_BattleSystem_UpdateData = function(self, identify, monsterDic)
+  -- function num : 0_117 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- DECOMPILER ERROR at PC1: Confused about usage of register: R3 in 'UnsetPending'
+
+  (self.updateHpData).identify = identify
+  -- DECOMPILER ERROR at PC3: Confused about usage of register: R3 in 'UnsetPending'
+
+  ;
+  (self.updateHpData).monster = monsterDic
+  self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_WarChess_BattleSystem_UpdateData, proto_csmsg.CS_WarChess_BattleSystem_UpdateData, self.updateHpData)
+  cs_WaitNetworkResponse:StartWait(proto_csmsg_MSG_ID.MSG_CS_WarChess_BattleSystem_UpdateData, proto_csmsg_MSG_ID.MSG_SC_WarChess_BattleSystem_UpdateData)
+end
+
+WarChessNetworkCtrl.SC_WarChess_BattleSystem_UpdateData = function(self, msg)
+  -- function num : 0_118 , upvalues : _ENV, cs_WaitNetworkResponse
+  if msg.ret ~= proto_csmsg_ErrorCode.None then
+    local err = "CS_WarChess_BattleSystem_UpdateData error:" .. tostring(msg.ret)
+    self:ShowSCErrorMsg(err)
+    cs_WaitNetworkResponse:RemoveWait(proto_csmsg_MSG_ID.MSG_CS_WarChess_BattleSystem_UpdateData)
+    return 
+  end
+end
+
+WarChessNetworkCtrl.CS_WarChess_EventInBattle = function(self, identify, eventPoolId, beforeEventInBattle, callback)
+  -- function num : 0_119 , upvalues : _ENV, cs_WaitNetworkResponse
+  local msg = {}
+  msg.identify = identify
+  msg.eventPoolId = eventPoolId
+  msg.beforeEventInBattle = beforeEventInBattle
+  self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_WarChess_EventInBattle, proto_csmsg.CS_WarChess_EventInBattle, msg)
+  cs_WaitNetworkResponse:StartWait(proto_csmsg_MSG_ID.MSG_CS_WarChess_EventInBattle, callback, proto_csmsg_MSG_ID.MSG_SC_WarChess_EventInBattle)
+end
+
+WarChessNetworkCtrl.SC_WarChess_EventInBattle = function(self, msg)
+  -- function num : 0_120 , upvalues : _ENV, cs_WaitNetworkResponse
+  do
+    if msg.ret ~= proto_csmsg_ErrorCode.None then
+      local err = "MSG_WarChess_EventInBattle error:" .. tostring(msg.ret)
+      self:ShowSCErrorMsg(err)
+      cs_WaitNetworkResponse:RemoveWait(proto_csmsg_MSG_ID.MSG_CS_WarChess_EventInBattle)
+      return 
+    end
+    cs_WaitNetworkResponse:AddWaitData(proto_csmsg_MSG_ID.MSG_CS_WarChess_EventInBattle, msg.eventSystemData)
+  end
+end
+
+WarChessNetworkCtrl.CS_WarChess_BattleSystem_ChoiceEvent = function(self, identify, index, callback)
+  -- function num : 0_121 , upvalues : _ENV, cs_WaitNetworkResponse
+  local msg = {}
+  msg.identify = identify
+  msg.index = index
+  self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_WarChess_BattleSystem_ChoiceEvent, proto_csmsg.CS_WarChess_BattleSystem_ChoiceEvent, msg)
+  cs_WaitNetworkResponse:StartWait(proto_csmsg_MSG_ID.MSG_CS_WarChess_BattleSystem_ChoiceEvent, callback, proto_csmsg_MSG_ID.MSG_SC_WarChess_BattleSystem_ChoiceEvent)
+end
+
+WarChessNetworkCtrl.SC_WarChess_BattleSystem_ChoiceEvent = function(self, msg)
+  -- function num : 0_122 , upvalues : _ENV, cs_WaitNetworkResponse
+  if msg.ret ~= proto_csmsg_ErrorCode.None then
+    local err = "MSG_WarChess_BattleSystem_ChoiceEvent error:" .. tostring(msg.ret)
+    self:ShowSCErrorMsg(err)
+    cs_WaitNetworkResponse:RemoveWait(proto_csmsg_MSG_ID.MSG_CS_WarChess_BattleSystem_ChoiceEvent)
+    return 
+  end
+end
+
 WarChessNetworkCtrl.Reset = function(self)
-  -- function num : 0_111
+  -- function num : 0_123
 end
 
 return WarChessNetworkCtrl

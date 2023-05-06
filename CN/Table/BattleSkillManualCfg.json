@@ -1236,6 +1236,24 @@
       ]
     },
     {
+      "Id": 106703,
+      "ManualSelectAi": 9,
+      "ManualSelectType": [
+        3,
+        180,
+        60
+      ],
+      "CastTip1": "请选择方向释放技能",
+      "SelectDisplayType": 201,
+      "SkillUnavailableTip": "请选择方向释放技能",
+      "DefaultSelectType": [
+        2,
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "Id": 1010031,
       "ManualSelectAi": 6,
       "ManualSelectType": [

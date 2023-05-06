@@ -8,7 +8,7 @@ UISetFriendAlias.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV
   self.friendNetworkCtrl = NetworkManager:GetNetwork(NetworkTypeID.Friend)
   ;
-  (UIUtil.HideTopStatus)()
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self._BackAction)):PushTopStatusDataToBackStack()
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Cancle, self, self._OnClickCancle)
   ;
@@ -42,13 +42,18 @@ UISetFriendAlias.InitSetFriendAlias = function(self, userInfoData)
   end
 end
 
-UISetFriendAlias._OnClickCancle = function(self)
+UISetFriendAlias._BackAction = function(self)
   -- function num : 0_2
   self:Delete()
 end
 
+UISetFriendAlias._OnClickCancle = function(self)
+  -- function num : 0_3 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UISetFriendAlias._OnClickConfirm = function(self)
-  -- function num : 0_3 , upvalues : RenameHelper, _ENV
+  -- function num : 0_4 , upvalues : RenameHelper, _ENV
   local inputUserName = ((self.ui).inputField).text
   if inputUserName == nil then
     return 
@@ -64,7 +69,7 @@ UISetFriendAlias._OnClickConfirm = function(self)
   end
   ;
   (self.friendNetworkCtrl):CS_FRIEND_Alias((self.userInfoData):GetUserUID(), inputUserName, function()
-    -- function num : 0_3_0 , upvalues : self, inputUserName, _ENV
+    -- function num : 0_4_0 , upvalues : self, inputUserName, _ENV
     (self.userInfoData):SetAlias(inputUserName)
     self:_OnClickCancle()
     ;
@@ -74,9 +79,7 @@ UISetFriendAlias._OnClickConfirm = function(self)
 end
 
 UISetFriendAlias.OnDelete = function(self)
-  -- function num : 0_4 , upvalues : _ENV, base
-  (UIUtil.ReShowTopStatus)()
-  ;
+  -- function num : 0_5 , upvalues : base
   (base.OnDelete)(self)
 end
 

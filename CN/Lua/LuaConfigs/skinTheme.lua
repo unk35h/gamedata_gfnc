@@ -52,6 +52,10 @@ local skinTheme = {
 {id = 25, name = 489642, pic = "SkinTheme25", theme_info = 156654}
 , 
 {id = 26, name = 413950, pic = "SkinTheme26", theme_info = 256716}
+, 
+{id = 27, name = 453520, pic = "SkinTheme27", theme_info = 87064}
+, 
+{id = 28, name = 185591, pic = "SkinTheme28", theme_info = 433425}
 ; 
 [0] = {lock_theme = true, name = 57791, theme_info = 207363}
 }

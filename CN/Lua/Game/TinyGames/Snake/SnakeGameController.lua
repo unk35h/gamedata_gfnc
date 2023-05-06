@@ -304,7 +304,7 @@ end
 SnakeGameController.OnUpdate = function(self)
   -- function num : 0_14 , upvalues : CS_Input, _ENV, SnakeGameState
   if (CS_Input.GetKeyUp)("escape") then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
   if self._state ~= SnakeGameState.Play then
     return 

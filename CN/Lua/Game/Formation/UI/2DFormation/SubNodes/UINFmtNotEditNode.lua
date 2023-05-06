@@ -338,7 +338,7 @@ UINFmtNotEditNode.__OnClickContinue = function(self)
       end
     end
     ;
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByWinId)(UIWindowTypeID.Formation)
   end
 end
 

@@ -48,54 +48,55 @@ local __rt_45 = {1054}
 local __rt_46 = {1056}
 local __rt_47 = {1061}
 local __rt_48 = {1063}
-local __rt_49 = {2545}
-local __rt_50 = {110011115}
-local __rt_51 = {110012115}
-local __rt_52 = {2105}
-local __rt_53 = {2556}
-local __rt_54 = {140011107}
-local __rt_55 = {140011112}
-local __rt_56 = {1043}
-local __rt_57 = {23}
-local __rt_58 = {17001}
-local __rt_59 = {721203}
-local __rt_60 = {3, 23}
-local __rt_61 = {130011101, 17001}
-local __rt_62 = {0, 6}
-local __rt_63 = {721205}
-local __rt_64 = {300}
-local __rt_65 = {130011102, 17001}
-local __rt_66 = {410029}
-local __rt_67 = {0, 10}
-local __rt_68 = {1040}
-local __rt_69 = {0, 11}
-local __rt_70 = {0, 13}
-local __rt_71 = {400021}
-local __rt_72 = {130011103, 17001}
-local __rt_73 = {0, 17}
-local __rt_74 = {0, 19}
-local __rt_75 = {130011104, 17001}
-local __rt_76 = {0, 21}
-local __rt_77 = {420017}
-local __rt_78 = {17002}
-local __rt_79 = {130021101, 17002}
-local __rt_80 = {0, 7}
-local __rt_81 = {130021102, 17002}
-local __rt_82 = {0, 14}
-local __rt_83 = {130021103, 17002}
-local __rt_84 = {130021104, 17002}
-local __rt_85 = {0, 23}
-local __rt_86 = {3, 8}
-local __rt_87 = {22001}
-local __rt_88 = {1206}
-local __rt_89 = {600}
-local __rt_90 = {8}
-local __rt_91 = {1211}
-local __rt_92 = {500}
-local __rt_93 = {22002}
-local __rt_94 = {2564}
-local __rt_95 = {90011103}
-local __rt_96 = {90011128}
+local __rt_49 = {1065}
+local __rt_50 = {2545}
+local __rt_51 = {110011115}
+local __rt_52 = {110012115}
+local __rt_53 = {2105}
+local __rt_54 = {2556}
+local __rt_55 = {140011107}
+local __rt_56 = {140011112}
+local __rt_57 = {1043}
+local __rt_58 = {23}
+local __rt_59 = {17001}
+local __rt_60 = {721203}
+local __rt_61 = {3, 23}
+local __rt_62 = {130011101, 17001}
+local __rt_63 = {0, 6}
+local __rt_64 = {721205}
+local __rt_65 = {300}
+local __rt_66 = {130011102, 17001}
+local __rt_67 = {410029}
+local __rt_68 = {0, 10}
+local __rt_69 = {1040}
+local __rt_70 = {0, 11}
+local __rt_71 = {0, 13}
+local __rt_72 = {400021}
+local __rt_73 = {130011103, 17001}
+local __rt_74 = {0, 17}
+local __rt_75 = {0, 19}
+local __rt_76 = {130011104, 17001}
+local __rt_77 = {0, 21}
+local __rt_78 = {420017}
+local __rt_79 = {17002}
+local __rt_80 = {130021101, 17002}
+local __rt_81 = {0, 7}
+local __rt_82 = {130021102, 17002}
+local __rt_83 = {0, 14}
+local __rt_84 = {130021103, 17002}
+local __rt_85 = {130021104, 17002}
+local __rt_86 = {0, 23}
+local __rt_87 = {3, 8}
+local __rt_88 = {22001}
+local __rt_89 = {1206}
+local __rt_90 = {600}
+local __rt_91 = {8}
+local __rt_92 = {1211}
+local __rt_93 = {500}
+local __rt_94 = {22002}
+local __rt_95 = {2564}
+local __rt_96 = {90011103}
+local __rt_97 = {90011128}
 local story_avg = {
 [4] = {group_id = 4, id = 4, name = 238537, number = 0, set_place = 30001, type = 4}
 , 
@@ -1313,7 +1314,7 @@ pre_para1 = {100131104}
 , 
 [1062102] = {group_id = 1062102, id = 1062102, name = 291443, pic = "PlotIcon13", script_id = "cpt_jiangyu_01_02", set_place = 100131101}
 , 
-[1062103] = {group_id = 1062103, id = 1062103, name = 96672, pic = "PlotIcon13", script_id = "cpt_jiangyu_01_03", set_place = 100131101}
+[1062103] = {group_id = 1062103, id = 1062103, name = 96673, pic = "PlotIcon13", script_id = "cpt_jiangyu_01_03", set_place = 100131101}
 , 
 [1062104] = {group_id = 1062104, id = 1062104, name = 426189, pic = "PlotIcon13", script_id = "cpt_jiangyu_01_04", set_place = 100131101}
 , 
@@ -1403,55 +1404,83 @@ pre_para1 = {100151104}
 , 
 [1064305] = {group_id = 1064305, id = 1064305, name = 473756, pic = "PlotIcon15", script_id = "cpt_erika_03_05", set_place = 100151104}
 , 
-[1100101] = {describe = 215962, difficulty = 1, id = 1100101, name = 299204, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_12, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s01", sectorId = 110011, set_place = 110011101, set_place_para1 = 1, story_review_describe = 215962, type = 1}
+[1067001] = {activityRewardIds = __rt_49, activityRewardNums = __rt_42, activity_id = 10016, describe = 379197, difficulty = 1, group_id = 1067001, id = 1067001, name = 175414, pic = "PlotIcon16", pre_condition = __rt_2, pre_para1 = __rt_12, script_id = "cpt_cascadia_00_01", sectorId = 100161, set_place = 100161101, set_place_para1 = 1, story_review_describe = 379197, type = 1}
+, 
+[1067002] = {activityRewardIds = __rt_49, activityRewardNums = __rt_42, activity_id = 10016, describe = 234411, difficulty = 1, group_id = 1067002, id = 1067002, name = 402549, number = 2, pic = "PlotIcon16", pre_condition = __rt_2, 
+pre_para1 = {100161103}
+, script_id = "cpt_cascadia_04_01", sectorId = 100161, set_place = 100161104, set_place_para1 = 1, story_review_describe = 234411, type = 1}
+, 
+[1067101] = {group_id = 1067101, id = 1067101, name = 425719, pic = "PlotIcon16", script_id = "cpt_cascadia_01_01", set_place = 100161101}
+, 
+[1067102] = {group_id = 1067102, id = 1067102, name = 230948, pic = "PlotIcon16", script_id = "cpt_cascadia_01_02", set_place = 100161101}
+, 
+[1067103] = {group_id = 1067103, id = 1067103, name = 36177, pic = "PlotIcon16", script_id = "cpt_cascadia_01_03", set_place = 100161101}
+, 
+[1067104] = {group_id = 1067104, id = 1067104, name = 365694, pic = "PlotIcon16", script_id = "cpt_cascadia_01_04", set_place = 100161101}
+, 
+[1067201] = {group_id = 1067201, id = 1067201, name = 520982, pic = "PlotIcon16", script_id = "cpt_cascadia_02_01", set_place = 100161102}
+, 
+[1067202] = {group_id = 1067202, id = 1067202, name = 326211, pic = "PlotIcon16", script_id = "cpt_cascadia_02_02", set_place = 100161102}
+, 
+[1067203] = {group_id = 1067203, id = 1067203, name = 131440, pic = "PlotIcon16", script_id = "cpt_cascadia_02_03", set_place = 100161102}
+, 
+[1067301] = {group_id = 1067301, id = 1067301, name = 293025, pic = "PlotIcon16", script_id = "cpt_cascadia_03_01", set_place = 100161103}
+, 
+[1067302] = {group_id = 1067302, id = 1067302, name = 98254, pic = "PlotIcon16", script_id = "cpt_cascadia_03_02", set_place = 100161103}
+, 
+[1067303] = {group_id = 1067303, id = 1067303, name = 427771, pic = "PlotIcon16", script_id = "cpt_cascadia_03_03", set_place = 100161103}
+, 
+[1067304] = {group_id = 1067304, id = 1067304, name = 233000, pic = "PlotIcon16", script_id = "cpt_cascadia_03_04", set_place = 100161103}
+, 
+[1100101] = {describe = 215962, difficulty = 1, id = 1100101, name = 299204, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_12, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s01", sectorId = 110011, set_place = 110011101, set_place_para1 = 1, story_review_describe = 215962, type = 1}
 , 
 [1100102] = {describe = 340400, difficulty = 1, group_id = 1100102, id = 1100102, name = 99028, number = 2, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110011101}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s02", sectorId = 110011, set_place = 110011101, set_place_para1 = 2, story_review_describe = 340400, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s02", sectorId = 110011, set_place = 110011101, set_place_para1 = 2, story_review_describe = 340400, type = 1}
 , 
 [1100103] = {describe = 278866, difficulty = 1, group_id = 1100103, id = 1100103, name = 14198, number = 3, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110011102}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s03", sectorId = 110011, set_place = 110011102, set_place_para1 = 2, story_review_describe = 278866, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s03", sectorId = 110011, set_place = 110011102, set_place_para1 = 2, story_review_describe = 278866, type = 1}
 , 
 [1100104] = {describe = 492491, difficulty = 1, group_id = 1100104, id = 1100104, name = 117434, number = 4, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110011104}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s04", sectorId = 110011, set_place = 110011104, set_place_para1 = 2, story_review_describe = 492491, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s04", sectorId = 110011, set_place = 110011104, set_place_para1 = 2, story_review_describe = 492491, type = 1}
 , 
 [1100105] = {describe = 178298, difficulty = 1, group_id = 1100105, id = 1100105, name = 242420, number = 5, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110011105}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s05", sectorId = 110011, set_place = 110011105, set_place_para1 = 2, story_review_describe = 178298, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s05", sectorId = 110011, set_place = 110011105, set_place_para1 = 2, story_review_describe = 178298, type = 1}
 , 
 [1100106] = {describe = 407228, difficulty = 1, group_id = 1100106, id = 1100106, name = 42590, number = 6, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110011107}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s06", sectorId = 110011, set_place = 110011107, set_place_para1 = 2, story_review_describe = 407228, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s06", sectorId = 110011, set_place = 110011107, set_place_para1 = 2, story_review_describe = 407228, type = 1}
 , 
 [1100107] = {describe = 119425, difficulty = 1, group_id = 1100107, id = 1100107, name = 383152, number = 7, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110011108}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s07", sectorId = 110011, set_place = 110011108, set_place_para1 = 2, story_review_describe = 119425, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s07", sectorId = 110011, set_place = 110011108, set_place_para1 = 2, story_review_describe = 119425, type = 1}
 , 
 [1100108] = {describe = 253810, difficulty = 1, group_id = 1100108, id = 1100108, name = 28118, number = 8, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110011110}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s08", sectorId = 110011, set_place = 110011110, set_place_para1 = 2, story_review_describe = 253810, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s08", sectorId = 110011, set_place = 110011110, set_place_para1 = 2, story_review_describe = 253810, type = 1}
 , 
 [1100109] = {describe = 340073, difficulty = 1, group_id = 1100109, id = 1100109, name = 419596, number = 9, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110011111}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s09", sectorId = 110011, set_place = 110011111, set_place_para1 = 2, story_review_describe = 340073, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s09", sectorId = 110011, set_place = 110011111, set_place_para1 = 2, story_review_describe = 340073, type = 1}
 , 
 [1100110] = {describe = 150217, difficulty = 1, group_id = 1100110, id = 1100110, name = 396981, number = 10, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110011112}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s10", sectorId = 110011, set_place = 110011112, set_place_para1 = 2, story_review_describe = 150217, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s10", sectorId = 110011, set_place = 110011112, set_place_para1 = 2, story_review_describe = 150217, type = 1}
 , 
 [1100111] = {describe = 417811, difficulty = 1, group_id = 1100111, id = 1100111, name = 162548, number = 11, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110011113}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s11", sectorId = 110011, set_place = 110011113, set_place_para1 = 2, story_review_describe = 417811, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s11", sectorId = 110011, set_place = 110011113, set_place_para1 = 2, story_review_describe = 417811, type = 1}
 , 
 [1100112] = {describe = 307477, difficulty = 1, group_id = 1100112, id = 1100112, name = 309799, number = 12, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110011114}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s12", sectorId = 110011, set_place = 110011114, set_place_para1 = 2, story_review_describe = 307477, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s12", sectorId = 110011, set_place = 110011114, set_place_para1 = 2, story_review_describe = 307477, type = 1}
 , 
-[1100113] = {describe = 339623, difficulty = 1, group_id = 1100113, id = 1100113, name = 114132, number = 13, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_50, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s13", sectorId = 110011, set_place = 110011115, set_place_para1 = 2, story_review_describe = 339623, type = 1}
+[1100113] = {describe = 339623, difficulty = 1, group_id = 1100113, id = 1100113, name = 114132, number = 13, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_51, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s13", sectorId = 110011, set_place = 110011115, set_place_para1 = 2, story_review_describe = 339623, type = 1}
 , 
-[1100114] = {describe = 467079, group_id = 1100114, id = 1100114, name = 472490, number = 14, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_50, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s14", story_review_describe = 467079, type = 0}
+[1100114] = {describe = 467079, group_id = 1100114, id = 1100114, name = 472490, number = 14, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_51, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s14", story_review_describe = 467079, type = 0}
 , 
 [1100115] = {group_id = 1100115, id = 1100115, name = 10237, script_id = "cpt_hb_tutorial_11", set_place = 110011111}
 , 
@@ -1469,11 +1498,11 @@ pre_para1 = {110011106}
 pre_para1 = {110011109}
 , script_id = "cpt_hb_h03", type = 0}
 , 
-[1100205] = {describe = 251389, group_id = 1100205, id = 1100205, name = 111304, number = 5, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_50, script_id = "cpt_hb_h04", type = 0}
+[1100205] = {describe = 251389, group_id = 1100205, id = 1100205, name = 111304, number = 5, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_51, script_id = "cpt_hb_h04", type = 0}
 , 
-[1100206] = {describe = 56618, group_id = 1100206, id = 1100206, name = 440820, number = 6, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_50, script_id = "cpt_hb_h05", type = 0}
+[1100206] = {describe = 56618, group_id = 1100206, id = 1100206, name = 440820, number = 6, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_51, script_id = "cpt_hb_h05", type = 0}
 , 
-[1100207] = {describe = 386135, group_id = 1100207, id = 1100207, name = 246049, number = 7, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_50, script_id = "cpt_hb_h06", type = 0}
+[1100207] = {describe = 386135, group_id = 1100207, id = 1100207, name = 246049, number = 7, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_51, script_id = "cpt_hb_h06", type = 0}
 , 
 [1100208] = {describe = 191364, group_id = 1100208, id = 1100208, name = 51278, number = 8, pic = "PlotIcon6", 
 pre_condition = {3, 12}
@@ -1483,55 +1512,55 @@ pre_para1 = {110011115, 1643270400}
 pre_para2 = {0, -1}
 , script_id = "cpt_hb_h07", type = 0}
 , 
-[1101101] = {describe = 215962, difficulty = 1, id = 1101101, name = 299204, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_12, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s01", sectorId = 110012, set_place = 110012101, set_place_para1 = 1, story_review_describe = 215962, type = 1}
+[1101101] = {describe = 215962, difficulty = 1, id = 1101101, name = 299204, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_12, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s01", sectorId = 110012, set_place = 110012101, set_place_para1 = 1, story_review_describe = 215962, type = 1}
 , 
 [1101102] = {describe = 340400, difficulty = 1, group_id = 1100102, id = 1101102, name = 99028, number = 2, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110012101}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s02", sectorId = 110012, set_place = 110012101, set_place_para1 = 2, story_review_describe = 340400, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s02", sectorId = 110012, set_place = 110012101, set_place_para1 = 2, story_review_describe = 340400, type = 1}
 , 
 [1101103] = {describe = 278866, difficulty = 1, group_id = 1100103, id = 1101103, name = 14198, number = 3, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110012102}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s03", sectorId = 110012, set_place = 110012102, set_place_para1 = 2, story_review_describe = 278866, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s03", sectorId = 110012, set_place = 110012102, set_place_para1 = 2, story_review_describe = 278866, type = 1}
 , 
 [1101104] = {describe = 492491, difficulty = 1, group_id = 1100104, id = 1101104, name = 117434, number = 4, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110012104}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s04", sectorId = 110012, set_place = 110012104, set_place_para1 = 2, story_review_describe = 492491, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s04", sectorId = 110012, set_place = 110012104, set_place_para1 = 2, story_review_describe = 492491, type = 1}
 , 
 [1101105] = {describe = 178298, difficulty = 1, group_id = 1100105, id = 1101105, name = 242420, number = 5, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110012105}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s05", sectorId = 110012, set_place = 110012105, set_place_para1 = 2, story_review_describe = 178298, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s05", sectorId = 110012, set_place = 110012105, set_place_para1 = 2, story_review_describe = 178298, type = 1}
 , 
 [1101106] = {describe = 407228, difficulty = 1, group_id = 1100106, id = 1101106, name = 42590, number = 6, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110012107}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s06", sectorId = 110012, set_place = 110012107, set_place_para1 = 2, story_review_describe = 407228, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s06", sectorId = 110012, set_place = 110012107, set_place_para1 = 2, story_review_describe = 407228, type = 1}
 , 
 [1101107] = {describe = 119425, difficulty = 1, group_id = 1100107, id = 1101107, name = 383152, number = 7, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110012108}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s07", sectorId = 110012, set_place = 110012108, set_place_para1 = 2, story_review_describe = 119425, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s07", sectorId = 110012, set_place = 110012108, set_place_para1 = 2, story_review_describe = 119425, type = 1}
 , 
 [1101108] = {describe = 253810, difficulty = 1, group_id = 1100108, id = 1101108, name = 28118, number = 8, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110012110}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s08", sectorId = 110012, set_place = 110012110, set_place_para1 = 2, story_review_describe = 253810, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s08", sectorId = 110012, set_place = 110012110, set_place_para1 = 2, story_review_describe = 253810, type = 1}
 , 
 [1101109] = {describe = 340073, difficulty = 1, group_id = 1100109, id = 1101109, name = 419596, number = 9, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110012111}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s09", sectorId = 110012, set_place = 110012111, set_place_para1 = 2, story_review_describe = 340073, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s09", sectorId = 110012, set_place = 110012111, set_place_para1 = 2, story_review_describe = 340073, type = 1}
 , 
 [1101110] = {describe = 150217, difficulty = 1, group_id = 1100110, id = 1101110, name = 396981, number = 10, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110012112}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s10", sectorId = 110012, set_place = 110012112, set_place_para1 = 2, story_review_describe = 150217, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s10", sectorId = 110012, set_place = 110012112, set_place_para1 = 2, story_review_describe = 150217, type = 1}
 , 
 [1101111] = {describe = 417811, difficulty = 1, group_id = 1100111, id = 1101111, name = 162548, number = 11, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110012113}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s11", sectorId = 110012, set_place = 110012113, set_place_para1 = 2, story_review_describe = 417811, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s11", sectorId = 110012, set_place = 110012113, set_place_para1 = 2, story_review_describe = 417811, type = 1}
 , 
 [1101112] = {describe = 307477, difficulty = 1, group_id = 1100112, id = 1101112, name = 309799, number = 12, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {110012114}
-, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s12", sectorId = 110012, set_place = 110012114, set_place_para1 = 2, story_review_describe = 307477, type = 1}
+, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s12", sectorId = 110012, set_place = 110012114, set_place_para1 = 2, story_review_describe = 307477, type = 1}
 , 
-[1101113] = {describe = 339623, difficulty = 1, group_id = 1100113, id = 1101113, name = 114132, number = 13, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_51, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s13", sectorId = 110012, set_place = 110012115, set_place_para1 = 2, story_review_describe = 339623, type = 1}
+[1101113] = {describe = 339623, difficulty = 1, group_id = 1100113, id = 1101113, name = 114132, number = 13, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s13", sectorId = 110012, set_place = 110012115, set_place_para1 = 2, story_review_describe = 339623, type = 1}
 , 
-[1101114] = {describe = 467079, group_id = 1100114, id = 1101114, name = 472490, number = 14, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_51, rewardIds = __rt_49, rewardNums = __rt_30, script_id = "cpt_hb_s14", story_review_describe = 467079, type = 0}
+[1101114] = {describe = 467079, group_id = 1100114, id = 1101114, name = 472490, number = 14, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, rewardIds = __rt_50, rewardNums = __rt_30, script_id = "cpt_hb_s14", story_review_describe = 467079, type = 0}
 , 
 [1101115] = {group_id = 1100115, id = 1101115, name = 10237, script_id = "cpt_hb_tutorial_11", set_place = 110012111}
 , 
@@ -1549,13 +1578,13 @@ pre_para1 = {110012106}
 pre_para1 = {110012109}
 , script_id = "cpt_hb_h03", type = 0}
 , 
-[1101205] = {describe = 251389, group_id = 1100205, id = 1101205, name = 111304, number = 5, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_51, script_id = "cpt_hb_h04", type = 0}
+[1101205] = {describe = 251389, group_id = 1100205, id = 1101205, name = 111304, number = 5, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "cpt_hb_h04", type = 0}
 , 
-[1101206] = {describe = 56618, group_id = 1100206, id = 1101206, name = 440820, number = 6, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_51, script_id = "cpt_hb_h05", type = 0}
+[1101206] = {describe = 56618, group_id = 1100206, id = 1101206, name = 440820, number = 6, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "cpt_hb_h05", type = 0}
 , 
-[1101207] = {describe = 386135, group_id = 1100207, id = 1101207, name = 246049, number = 7, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_51, script_id = "cpt_hb_h06", type = 0}
+[1101207] = {describe = 386135, group_id = 1100207, id = 1101207, name = 246049, number = 7, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "cpt_hb_h06", type = 0}
 , 
-[1101208] = {describe = 191364, group_id = 1100208, id = 1101208, name = 51278, number = 8, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_51, script_id = "cpt_hb_h07", type = 0}
+[1101208] = {describe = 191364, group_id = 1100208, id = 1101208, name = 51278, number = 8, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "cpt_hb_h07", type = 0}
 , 
 [1200101] = {describe = 196843, group_id = 1200101, id = 1200101, name = 142663, pic = "PlotWhite1", script_id = "22white_prologue", type = 0}
 , 
@@ -1639,59 +1668,59 @@ pre_para1 = {110012109}
 , 
 [1200217] = {describe = 34165, group_id = 1200217, id = 1200217, name = 186208, number = 16, pic = "PlotIcon6", script_id = "22tana_helix", type = 0}
 , 
-[1300101] = {describe = 198732, group_id = 1300101, id = 1300101, name = 315354, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_prologue", story_review_describe = 198732, type = 0}
+[1300101] = {describe = 198732, group_id = 1300101, id = 1300101, name = 315354, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_prologue", story_review_describe = 198732, type = 0}
 , 
-[1300102] = {describe = 32702, group_id = 1300102, id = 1300102, name = 96454, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_persicaria", type = 0}
+[1300102] = {describe = 32702, group_id = 1300102, id = 1300102, name = 96454, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_persicaria", type = 0}
 , 
-[1300103] = {describe = 458872, group_id = 1300103, id = 1300103, name = 319769, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_sol", type = 0}
+[1300103] = {describe = 458872, group_id = 1300103, id = 1300103, name = 319769, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_sol", type = 0}
 , 
-[1300104] = {describe = 173048, group_id = 1300104, id = 1300104, name = 187439, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_croque", type = 0}
+[1300104] = {describe = 173048, group_id = 1300104, id = 1300104, name = 187439, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_croque", type = 0}
 , 
-[1300105] = {describe = 79602, group_id = 1300105, id = 1300105, name = 22879, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_anna", type = 0}
+[1300105] = {describe = 79602, group_id = 1300105, id = 1300105, name = 22879, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_anna", type = 0}
 , 
-[1300106] = {describe = 518815, group_id = 1300106, id = 1300106, name = 80166, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_kuro", type = 0}
+[1300106] = {describe = 518815, group_id = 1300106, id = 1300106, name = 80166, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_kuro", type = 0}
 , 
-[1300107] = {describe = 332667, group_id = 1300107, id = 1300107, name = 476186, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_simo", type = 0}
+[1300107] = {describe = 332667, group_id = 1300107, id = 1300107, name = 476186, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_simo", type = 0}
 , 
-[1300108] = {describe = 149166, group_id = 1300108, id = 1300108, name = 468779, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_hubble", type = 0}
+[1300108] = {describe = 149166, group_id = 1300108, id = 1300108, name = 468779, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_hubble", type = 0}
 , 
-[1300109] = {describe = 421714, group_id = 1300109, id = 1300109, name = 167095, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_hatsuchiri", type = 0}
+[1300109] = {describe = 421714, group_id = 1300109, id = 1300109, name = 167095, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_hatsuchiri", type = 0}
 , 
-[1300110] = {describe = 267130, group_id = 1300110, id = 1300110, name = 373615, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_sueyoi", type = 0}
+[1300110] = {describe = 267130, group_id = 1300110, id = 1300110, name = 373615, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_sueyoi", type = 0}
 , 
-[1300111] = {describe = 60876, group_id = 1300111, id = 1300111, name = 343667, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_aki", type = 0}
+[1300111] = {describe = 60876, group_id = 1300111, id = 1300111, name = 343667, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_aki", type = 0}
 , 
-[1300112] = {describe = 140844, group_id = 1300112, id = 1300112, name = 282709, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_python", type = 0}
+[1300112] = {describe = 140844, group_id = 1300112, id = 1300112, name = 282709, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_python", type = 0}
 , 
-[1300113] = {describe = 17572, group_id = 1300113, id = 1300113, name = 388883, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_delacey", type = 0}
+[1300113] = {describe = 17572, group_id = 1300113, id = 1300113, name = 388883, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_delacey", type = 0}
 , 
-[1300114] = {describe = 381174, group_id = 1300114, id = 1300114, name = 358923, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_centaureissi", type = 0}
+[1300114] = {describe = 381174, group_id = 1300114, id = 1300114, name = 358923, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_centaureissi", type = 0}
 , 
-[1300115] = {describe = 189029, group_id = 1300115, id = 1300115, name = 515838, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_florence", type = 0}
+[1300115] = {describe = 189029, group_id = 1300115, id = 1300115, name = 515838, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_florence", type = 0}
 , 
-[1300116] = {describe = 307280, group_id = 1300116, id = 1300116, name = 158879, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_gin", type = 0}
+[1300116] = {describe = 307280, group_id = 1300116, id = 1300116, name = 158879, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_gin", type = 0}
 , 
-[1300117] = {describe = 56345, group_id = 1300117, id = 1300117, name = 206244, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_nora", type = 0}
+[1300117] = {describe = 56345, group_id = 1300117, id = 1300117, name = 206244, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_nora", type = 0}
 , 
-[1300118] = {describe = 447601, group_id = 1300118, id = 1300118, name = 100460, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_haze", type = 0}
+[1300118] = {describe = 447601, group_id = 1300118, id = 1300118, name = 100460, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_haze", type = 0}
 , 
-[1300119] = {describe = 58306, group_id = 1300119, id = 1300119, name = 315354, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_52, script_id = "22fool_end", story_review_describe = 58306, type = 0}
+[1300119] = {describe = 58306, group_id = 1300119, id = 1300119, name = 315354, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_53, script_id = "22fool_end", story_review_describe = 58306, type = 0}
 , 
 [1400101] = {describe = 333122, difficulty = 1, group_id = 1400101, id = 1400101, name = 248244, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {140011104}
-, rewardIds = __rt_53, rewardNums = __rt_4, script_id = "22summer_p_2_1_1", sectorId = 140011, set_place = 140011104, set_place_para1 = 2, story_review_describe = 333122, type = 1}
+, rewardIds = __rt_54, rewardNums = __rt_4, script_id = "22summer_p_2_1_1", sectorId = 140011, set_place = 140011104, set_place_para1 = 2, story_review_describe = 333122, type = 1}
 , 
 [1400102] = {describe = 508372, difficulty = 1, group_id = 1400102, id = 1400102, name = 479829, number = 2, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {140011106}
-, rewardIds = __rt_53, rewardNums = __rt_4, script_id = "22summer_p_3_1_1", sectorId = 140011, set_place = 140011106, set_place_para1 = 2, story_review_describe = 508372, type = 1}
+, rewardIds = __rt_54, rewardNums = __rt_4, script_id = "22summer_p_3_1_1", sectorId = 140011, set_place = 140011106, set_place_para1 = 2, story_review_describe = 508372, type = 1}
 , 
-[1400103] = {describe = 195013, difficulty = 1, group_id = 1400103, id = 1400103, name = 403179, number = 3, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_54, rewardIds = __rt_53, rewardNums = __rt_4, script_id = "22summer_p_3_3_1", sectorId = 140011, set_place = 140011107, set_place_para1 = 2, story_review_describe = 195013, type = 1}
+[1400103] = {describe = 195013, difficulty = 1, group_id = 1400103, id = 1400103, name = 403179, number = 3, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_55, rewardIds = __rt_54, rewardNums = __rt_4, script_id = "22summer_p_3_3_1", sectorId = 140011, set_place = 140011107, set_place_para1 = 2, story_review_describe = 195013, type = 1}
 , 
-[1400104] = {describe = 282928, difficulty = 1, group_id = 1400104, id = 1400104, name = 112619, number = 4, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_54, rewardIds = __rt_53, rewardNums = __rt_30, script_id = "22summer_s01", sectorId = 140011, set_place = 140011108, set_place_para1 = 1, story_review_describe = 282928, type = 1}
+[1400104] = {describe = 282928, difficulty = 1, group_id = 1400104, id = 1400104, name = 112619, number = 4, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_55, rewardIds = __rt_54, rewardNums = __rt_30, script_id = "22summer_s01", sectorId = 140011, set_place = 140011108, set_place_para1 = 1, story_review_describe = 282928, type = 1}
 , 
 [1400105] = {describe = 46724, difficulty = 1, group_id = 1400105, id = 1400105, name = 25402, number = 5, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {140011108}
-, rewardIds = __rt_53, rewardNums = __rt_30, script_id = "22summer_s02", sectorId = 140011, set_place = 140011108, set_place_para1 = 2, story_review_describe = 46724, type = 1}
+, rewardIds = __rt_54, rewardNums = __rt_30, script_id = "22summer_s02", sectorId = 140011, set_place = 140011108, set_place_para1 = 2, story_review_describe = 46724, type = 1}
 , 
 [1400106] = {describe = 409220, difficulty = 1, group_id = 1400106, id = 1400106, name = 179206, number = 6, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {140011109}
@@ -1701,25 +1730,25 @@ rewardIds = {721271}
 , 
 [1400107] = {describe = 443109, difficulty = 1, group_id = 1400107, id = 1400107, name = 83978, number = 7, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {140011110}
-, rewardIds = __rt_53, rewardNums = __rt_30, script_id = "22summer_s04", sectorId = 140011, set_place = 140011110, set_place_para1 = 2, story_review_describe = 443109, type = 1}
+, rewardIds = __rt_54, rewardNums = __rt_30, script_id = "22summer_s04", sectorId = 140011, set_place = 140011110, set_place_para1 = 2, story_review_describe = 443109, type = 1}
 , 
 [1400108] = {describe = 218324, difficulty = 1, group_id = 1400108, id = 1400108, name = 302555, number = 8, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {140011111}
-, rewardIds = __rt_53, rewardNums = __rt_30, script_id = "22summer_s05", sectorId = 140011, set_place = 140011111, set_place_para1 = 2, story_review_describe = 218324, type = 1}
+, rewardIds = __rt_54, rewardNums = __rt_30, script_id = "22summer_s05", sectorId = 140011, set_place = 140011111, set_place_para1 = 2, story_review_describe = 218324, type = 1}
 , 
-[1400109] = {describe = 418023, difficulty = 1, group_id = 1400109, id = 1400109, name = 220221, number = 9, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_55, rewardIds = __rt_53, rewardNums = __rt_30, script_id = "22summer_s06", sectorId = 140011, set_place = 140011112, set_place_para1 = 2, story_review_describe = 418023, type = 1}
+[1400109] = {describe = 418023, difficulty = 1, group_id = 1400109, id = 1400109, name = 220221, number = 9, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_56, rewardIds = __rt_54, rewardNums = __rt_30, script_id = "22summer_s06", sectorId = 140011, set_place = 140011112, set_place_para1 = 2, story_review_describe = 418023, type = 1}
 , 
-[1400110] = {describe = 486463, difficulty = 1, group_id = 1400110, id = 1400110, name = 194023, number = 10, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_55, 
+[1400110] = {describe = 486463, difficulty = 1, group_id = 1400110, id = 1400110, name = 194023, number = 10, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_56, 
 rewardIds = {721272}
 , rewardNums = __rt_30, script_id = "22summer_s07", sectorId = 140011, set_place = 140011113, set_place_para1 = 1, story_review_describe = 486463, type = 1}
 , 
 [1400111] = {describe = 178535, difficulty = 1, group_id = 1400111, id = 1400111, name = 410581, number = 11, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {140011113}
-, rewardIds = __rt_53, rewardNums = __rt_30, script_id = "22summer_s08", sectorId = 140011, set_place = 140011113, set_place_para1 = 2, story_review_describe = 178535, type = 1}
+, rewardIds = __rt_54, rewardNums = __rt_30, script_id = "22summer_s08", sectorId = 140011, set_place = 140011113, set_place_para1 = 2, story_review_describe = 178535, type = 1}
 , 
 [1400112] = {describe = 324294, difficulty = 1, group_id = 1400112, id = 1400112, name = 402345, number = 12, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {140011114}
-, rewardIds = __rt_53, rewardNums = __rt_30, script_id = "22summer_s09", sectorId = 140011, set_place = 140011114, set_place_para1 = 2, story_review_describe = 324294, type = 1}
+, rewardIds = __rt_54, rewardNums = __rt_30, script_id = "22summer_s09", sectorId = 140011, set_place = 140011114, set_place_para1 = 2, story_review_describe = 324294, type = 1}
 , 
 [1400113] = {describe = 102335, difficulty = 1, group_id = 1400113, id = 1400113, name = 300802, number = 13, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {140011115}
@@ -1729,15 +1758,15 @@ rewardIds = {721273}
 , 
 [1400114] = {describe = 283360, difficulty = 1, group_id = 1400114, id = 1400114, name = 420499, number = 14, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {140011116}
-, rewardIds = __rt_53, rewardNums = __rt_30, script_id = "22summer_s11", sectorId = 140011, set_place = 140011116, set_place_para1 = 2, story_review_describe = 283360, type = 1}
+, rewardIds = __rt_54, rewardNums = __rt_30, script_id = "22summer_s11", sectorId = 140011, set_place = 140011116, set_place_para1 = 2, story_review_describe = 283360, type = 1}
 , 
 [1400115] = {describe = 82999, difficulty = 1, group_id = 1400115, id = 1400115, name = 263611, number = 15, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {140011117}
-, rewardIds = __rt_53, rewardNums = __rt_30, script_id = "22summer_s12", sectorId = 140011, set_place = 140011117, set_place_para1 = 2, story_review_describe = 82999, type = 1}
+, rewardIds = __rt_54, rewardNums = __rt_30, script_id = "22summer_s12", sectorId = 140011, set_place = 140011117, set_place_para1 = 2, story_review_describe = 82999, type = 1}
 , 
 [1400116] = {describe = 224322, difficulty = 1, group_id = 1400116, id = 1400116, name = 481513, number = 16, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {140011118}
-, rewardIds = __rt_53, rewardNums = __rt_30, script_id = "22summer_s13", sectorId = 140011, set_place = 140011118, set_place_para1 = 2, story_review_describe = 224322, type = 1}
+, rewardIds = __rt_54, rewardNums = __rt_30, script_id = "22summer_s13", sectorId = 140011, set_place = 140011118, set_place_para1 = 2, story_review_describe = 224322, type = 1}
 , 
 [1400117] = {describe = 114384, difficulty = 1, group_id = 1400117, id = 1400117, name = 456175, number = 17, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {140011122}
@@ -1823,93 +1852,93 @@ rewardIds = {721274}
 , 
 [1410139] = {group_id = 1410139, id = 1410139, name = 328979, script_id = "22summer_p_1_7_1", set_place = 140011104}
 , 
-[1700101] = {describe = 121756, difficulty = 1, group_id = 1700101, id = 1700101, name = 215393, pic = "PlotIcon_Carnival22", pre_condition = __rt_2, pre_para1 = __rt_7, rewardIds = __rt_56, rewardNums = __rt_42, script_id = "cpt_imr_s01", sectorId = 130011, set_place = 130011101, set_place_para1 = 1, story_review_describe = 121756, type = 1}
+[1700101] = {describe = 121756, difficulty = 1, group_id = 1700101, id = 1700101, name = 215393, pic = "PlotIcon_Carnival22", pre_condition = __rt_2, pre_para1 = __rt_7, rewardIds = __rt_57, rewardNums = __rt_42, script_id = "cpt_imr_s01", sectorId = 130011, set_place = 130011101, set_place_para1 = 1, story_review_describe = 121756, type = 1}
 , 
-[1700102] = {describe = 319596, difficulty = 1, group_id = 1700102, id = 1700102, name = 115314, number = 2, pic = "PlotIcon_Carnival22", pre_condition = __rt_57, pre_para1 = __rt_58, pre_para2 = __rt_4, rewardIds = __rt_59, rewardNums = __rt_30, script_id = "cpt_imr_s02", sectorId = 130011, set_place = 130011101, set_place_para1 = 1, set_place_para2 = 1, story_review_describe = 319596, type = 1}
+[1700102] = {describe = 319596, difficulty = 1, group_id = 1700102, id = 1700102, name = 115314, number = 2, pic = "PlotIcon_Carnival22", pre_condition = __rt_58, pre_para1 = __rt_59, pre_para2 = __rt_4, rewardIds = __rt_60, rewardNums = __rt_30, script_id = "cpt_imr_s02", sectorId = 130011, set_place = 130011101, set_place_para1 = 1, set_place_para2 = 1, story_review_describe = 319596, type = 1}
 , 
-[1700103] = {describe = 26615, difficulty = 1, group_id = 1700103, id = 1700103, name = 259711, number = 3, pic = "PlotIcon_Carnival22", pre_condition = __rt_57, pre_para1 = __rt_58, pre_para2 = __rt_4, rewardIds = __rt_56, rewardNums = __rt_42, script_id = "cpt_imr_s03", sectorId = 130011, set_place = 130011101, set_place_para1 = 1, set_place_para2 = 2, story_review_describe = 26615, type = 1}
+[1700103] = {describe = 26615, difficulty = 1, group_id = 1700103, id = 1700103, name = 259711, number = 3, pic = "PlotIcon_Carnival22", pre_condition = __rt_58, pre_para1 = __rt_59, pre_para2 = __rt_4, rewardIds = __rt_57, rewardNums = __rt_42, script_id = "cpt_imr_s03", sectorId = 130011, set_place = 130011101, set_place_para1 = 1, set_place_para2 = 2, story_review_describe = 26615, type = 1}
 , 
-[1700104] = {describe = 218603, difficulty = 1, group_id = 1700104, id = 1700104, name = 140877, number = 4, pic = "PlotIcon_Carnival22", pre_condition = __rt_57, pre_para1 = __rt_58, pre_para2 = __rt_2, rewardIds = __rt_56, rewardNums = __rt_42, script_id = "cpt_imr_s04", sectorId = 130011, set_place = 130011101, set_place_para1 = 1, set_place_para2 = 3, story_review_describe = 218603, type = 1}
+[1700104] = {describe = 218603, difficulty = 1, group_id = 1700104, id = 1700104, name = 140877, number = 4, pic = "PlotIcon_Carnival22", pre_condition = __rt_58, pre_para1 = __rt_59, pre_para2 = __rt_2, rewardIds = __rt_57, rewardNums = __rt_42, script_id = "cpt_imr_s04", sectorId = 130011, set_place = 130011101, set_place_para1 = 1, set_place_para2 = 3, story_review_describe = 218603, type = 1}
 , 
-[1700105] = {describe = 151447, difficulty = 1, group_id = 1700105, id = 1700105, name = 429971, number = 5, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_61, pre_para2 = __rt_62, rewardIds = __rt_63, rewardNums = __rt_30, script_id = "cpt_imr_s05", sectorId = 130011, set_place = 130011101, set_place_para1 = 2, story_review_describe = 151447, type = 1}
+[1700105] = {describe = 151447, difficulty = 1, group_id = 1700105, id = 1700105, name = 429971, number = 5, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_62, pre_para2 = __rt_63, rewardIds = __rt_64, rewardNums = __rt_30, script_id = "cpt_imr_s05", sectorId = 130011, set_place = 130011101, set_place_para1 = 2, story_review_describe = 151447, type = 1}
 , 
-[1700106] = {describe = 288001, difficulty = 1, group_id = 1700106, id = 1700106, name = 53477, number = 6, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_61, pre_para2 = __rt_62, rewardIds = __rt_56, rewardNums = __rt_64, script_id = "cpt_imr_s06", sectorId = 130011, set_place = 130011101, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 288001, type = 1}
+[1700106] = {describe = 288001, difficulty = 1, group_id = 1700106, id = 1700106, name = 53477, number = 6, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_62, pre_para2 = __rt_63, rewardIds = __rt_57, rewardNums = __rt_65, script_id = "cpt_imr_s06", sectorId = 130011, set_place = 130011101, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 288001, type = 1}
 , 
-[1700107] = {describe = 151920, difficulty = 1, group_id = 1700107, id = 1700107, name = 328409, number = 7, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_65, 
+[1700107] = {describe = 151920, difficulty = 1, group_id = 1700107, id = 1700107, name = 328409, number = 7, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_66, 
 pre_para2 = {0, 9}
-, rewardIds = __rt_66, rewardNums = __rt_30, script_id = "cpt_imr_s07", sectorId = 130011, set_place = 130011102, set_place_para1 = 2, story_review_describe = 151920, type = 1}
+, rewardIds = __rt_67, rewardNums = __rt_30, script_id = "cpt_imr_s07", sectorId = 130011, set_place = 130011102, set_place_para1 = 2, story_review_describe = 151920, type = 1}
 , 
-[1700108] = {describe = 479648, difficulty = 1, group_id = 1700108, id = 1700108, name = 387497, number = 8, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_65, pre_para2 = __rt_67, rewardIds = __rt_68, rewardNums = __rt_42, script_id = "cpt_imr_s08", sectorId = 130011, set_place = 130011102, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 479648, type = 1}
+[1700108] = {describe = 479648, difficulty = 1, group_id = 1700108, id = 1700108, name = 387497, number = 8, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_66, pre_para2 = __rt_68, rewardIds = __rt_69, rewardNums = __rt_42, script_id = "cpt_imr_s08", sectorId = 130011, set_place = 130011102, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 479648, type = 1}
 , 
-[1700109] = {describe = 201559, difficulty = 1, group_id = 1700109, id = 1700109, name = 73400, number = 9, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_65, pre_para2 = __rt_67, rewardIds = __rt_63, rewardNums = __rt_30, script_id = "cpt_imr_s09", sectorId = 130011, set_place = 130011102, set_place_para1 = 2, set_place_para2 = 2, story_review_describe = 201559, type = 1}
+[1700109] = {describe = 201559, difficulty = 1, group_id = 1700109, id = 1700109, name = 73400, number = 9, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_66, pre_para2 = __rt_68, rewardIds = __rt_64, rewardNums = __rt_30, script_id = "cpt_imr_s09", sectorId = 130011, set_place = 130011102, set_place_para1 = 2, set_place_para2 = 2, story_review_describe = 201559, type = 1}
 , 
-[1700110] = {describe = 172615, difficulty = 1, group_id = 1700110, id = 1700110, name = 464099, number = 10, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_65, pre_para2 = __rt_69, rewardIds = __rt_68, rewardNums = __rt_42, script_id = "cpt_imr_s10", sectorId = 130011, set_place = 130011102, set_place_para1 = 2, set_place_para2 = 3, story_review_describe = 172615, type = 1}
+[1700110] = {describe = 172615, difficulty = 1, group_id = 1700110, id = 1700110, name = 464099, number = 10, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_66, pre_para2 = __rt_70, rewardIds = __rt_69, rewardNums = __rt_42, script_id = "cpt_imr_s10", sectorId = 130011, set_place = 130011102, set_place_para1 = 2, set_place_para2 = 3, story_review_describe = 172615, type = 1}
 , 
-[1700111] = {describe = 286950, difficulty = 1, group_id = 1700111, id = 1700111, name = 451683, number = 11, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_65, pre_para2 = __rt_70, rewardIds = __rt_59, rewardNums = __rt_30, script_id = "cpt_imr_s11", sectorId = 130011, set_place = 130011102, set_place_para1 = 2, set_place_para2 = 4, story_review_describe = 286950, type = 1}
+[1700111] = {describe = 286950, difficulty = 1, group_id = 1700111, id = 1700111, name = 451683, number = 11, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_66, pre_para2 = __rt_71, rewardIds = __rt_60, rewardNums = __rt_30, script_id = "cpt_imr_s11", sectorId = 130011, set_place = 130011102, set_place_para1 = 2, set_place_para2 = 4, story_review_describe = 286950, type = 1}
 , 
-[1700112] = {describe = 377979, difficulty = 1, group_id = 1700112, id = 1700112, name = 69864, number = 12, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_65, pre_para2 = __rt_70, rewardIds = __rt_71, rewardNums = __rt_30, script_id = "cpt_imr_s12", sectorId = 130011, set_place = 130011102, set_place_para1 = 2, set_place_para2 = 5, story_review_describe = 377979, type = 1}
+[1700112] = {describe = 377979, difficulty = 1, group_id = 1700112, id = 1700112, name = 69864, number = 12, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_66, pre_para2 = __rt_71, rewardIds = __rt_72, rewardNums = __rt_30, script_id = "cpt_imr_s12", sectorId = 130011, set_place = 130011102, set_place_para1 = 2, set_place_para2 = 5, story_review_describe = 377979, type = 1}
 , 
-[1700113] = {describe = 128095, difficulty = 1, group_id = 1700113, id = 1700113, name = 227056, number = 13, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_72, 
+[1700113] = {describe = 128095, difficulty = 1, group_id = 1700113, id = 1700113, name = 227056, number = 13, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_73, 
 pre_para2 = {0, 15}
-, rewardIds = __rt_68, rewardNums = __rt_42, script_id = "cpt_imr_s13", sectorId = 130011, set_place = 130011103, set_place_para1 = 2, story_review_describe = 128095, type = 1}
+, rewardIds = __rt_69, rewardNums = __rt_42, script_id = "cpt_imr_s13", sectorId = 130011, set_place = 130011103, set_place_para1 = 2, story_review_describe = 128095, type = 1}
 , 
-[1700114] = {describe = 195672, difficulty = 1, group_id = 1700114, id = 1700114, name = 138876, number = 14, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_72, 
+[1700114] = {describe = 195672, difficulty = 1, group_id = 1700114, id = 1700114, name = 138876, number = 14, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_73, 
 pre_para2 = {0, 16}
-, rewardIds = __rt_59, rewardNums = __rt_30, script_id = "cpt_imr_s14", sectorId = 130011, set_place = 130011103, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 195672, type = 1}
+, rewardIds = __rt_60, rewardNums = __rt_30, script_id = "cpt_imr_s14", sectorId = 130011, set_place = 130011103, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 195672, type = 1}
 , 
-[1700115] = {describe = 285035, difficulty = 1, group_id = 1700115, id = 1700115, name = 199008, number = 15, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_72, pre_para2 = __rt_73, rewardIds = __rt_68, rewardNums = __rt_42, script_id = "cpt_imr_s15", sectorId = 130011, set_place = 130011103, set_place_para1 = 2, set_place_para2 = 2, story_review_describe = 285035, type = 1}
+[1700115] = {describe = 285035, difficulty = 1, group_id = 1700115, id = 1700115, name = 199008, number = 15, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_73, pre_para2 = __rt_74, rewardIds = __rt_69, rewardNums = __rt_42, script_id = "cpt_imr_s15", sectorId = 130011, set_place = 130011103, set_place_para1 = 2, set_place_para2 = 2, story_review_describe = 285035, type = 1}
 , 
-[1700116] = {describe = 51150, difficulty = 1, group_id = 1700116, id = 1700116, name = 472646, number = 16, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_72, pre_para2 = __rt_74, rewardIds = __rt_63, rewardNums = __rt_30, script_id = "cpt_imr_s16", sectorId = 130011, set_place = 130011103, set_place_para1 = 2, set_place_para2 = 3, story_review_describe = 51150, type = 1}
+[1700116] = {describe = 51150, difficulty = 1, group_id = 1700116, id = 1700116, name = 472646, number = 16, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_73, pre_para2 = __rt_75, rewardIds = __rt_64, rewardNums = __rt_30, script_id = "cpt_imr_s16", sectorId = 130011, set_place = 130011103, set_place_para1 = 2, set_place_para2 = 3, story_review_describe = 51150, type = 1}
 , 
-[1700117] = {describe = 175892, difficulty = 1, group_id = 1700117, id = 1700117, name = 120418, number = 17, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_75, pre_para2 = __rt_76, rewardIds = __rt_68, rewardNums = __rt_42, script_id = "cpt_imr_s17", sectorId = 130011, set_place = 130011104, set_place_para1 = 2, story_review_describe = 175892, type = 1}
+[1700117] = {describe = 175892, difficulty = 1, group_id = 1700117, id = 1700117, name = 120418, number = 17, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_76, pre_para2 = __rt_77, rewardIds = __rt_69, rewardNums = __rt_42, script_id = "cpt_imr_s17", sectorId = 130011, set_place = 130011104, set_place_para1 = 2, story_review_describe = 175892, type = 1}
 , 
-[1700118] = {describe = 429995, difficulty = 1, group_id = 1700118, id = 1700118, name = 46129, number = 18, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_75, pre_para2 = __rt_76, rewardIds = __rt_68, rewardNums = __rt_42, script_id = "cpt_imr_s18", sectorId = 130011, set_place = 130011104, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 429995, type = 1}
+[1700118] = {describe = 429995, difficulty = 1, group_id = 1700118, id = 1700118, name = 46129, number = 18, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_76, pre_para2 = __rt_77, rewardIds = __rt_69, rewardNums = __rt_42, script_id = "cpt_imr_s18", sectorId = 130011, set_place = 130011104, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 429995, type = 1}
 , 
-[1700119] = {describe = 228865, difficulty = 1, group_id = 1700119, id = 1700119, name = 371201, number = 19, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_75, 
+[1700119] = {describe = 228865, difficulty = 1, group_id = 1700119, id = 1700119, name = 371201, number = 19, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_76, 
 pre_para2 = {0, 22}
-, rewardIds = __rt_77, rewardNums = __rt_30, script_id = "cpt_imr_s19", sectorId = 130011, set_place = 130011104, set_place_para1 = 2, set_place_para2 = 2, story_review_describe = 228865, type = 1}
+, rewardIds = __rt_78, rewardNums = __rt_30, script_id = "cpt_imr_s19", sectorId = 130011, set_place = 130011104, set_place_para1 = 2, set_place_para2 = 2, story_review_describe = 228865, type = 1}
 , 
-[1700201] = {describe = 121756, difficulty = 1, group_id = 1700201, id = 1700201, name = 215393, pic = "PlotIcon_Carnival22", pre_condition = __rt_2, pre_para1 = __rt_7, rewardIds = __rt_56, rewardNums = __rt_42, script_id = "cpt_imr_s01", sectorId = 130021, set_place = 130021101, set_place_para1 = 1, story_review_describe = 121756, type = 1}
+[1700201] = {describe = 121756, difficulty = 1, group_id = 1700201, id = 1700201, name = 215393, pic = "PlotIcon_Carnival22", pre_condition = __rt_2, pre_para1 = __rt_7, rewardIds = __rt_57, rewardNums = __rt_42, script_id = "cpt_imr_s01", sectorId = 130021, set_place = 130021101, set_place_para1 = 1, story_review_describe = 121756, type = 1}
 , 
-[1700202] = {describe = 319596, difficulty = 1, group_id = 1700202, id = 1700202, name = 115314, number = 2, pic = "PlotIcon_Carnival22", pre_condition = __rt_57, pre_para1 = __rt_78, pre_para2 = __rt_4, rewardIds = __rt_59, rewardNums = __rt_30, script_id = "cpt_imr_s02", sectorId = 130021, set_place = 130021101, set_place_para1 = 1, set_place_para2 = 1, story_review_describe = 319596, type = 1}
+[1700202] = {describe = 319596, difficulty = 1, group_id = 1700202, id = 1700202, name = 115314, number = 2, pic = "PlotIcon_Carnival22", pre_condition = __rt_58, pre_para1 = __rt_79, pre_para2 = __rt_4, rewardIds = __rt_60, rewardNums = __rt_30, script_id = "cpt_imr_s02", sectorId = 130021, set_place = 130021101, set_place_para1 = 1, set_place_para2 = 1, story_review_describe = 319596, type = 1}
 , 
-[1700203] = {describe = 26615, difficulty = 1, group_id = 1700203, id = 1700203, name = 259711, number = 3, pic = "PlotIcon_Carnival22", pre_condition = __rt_57, pre_para1 = __rt_78, pre_para2 = __rt_4, rewardIds = __rt_56, rewardNums = __rt_42, script_id = "cpt_imr_s03", sectorId = 130021, set_place = 130021101, set_place_para1 = 1, set_place_para2 = 2, story_review_describe = 26615, type = 1}
+[1700203] = {describe = 26615, difficulty = 1, group_id = 1700203, id = 1700203, name = 259711, number = 3, pic = "PlotIcon_Carnival22", pre_condition = __rt_58, pre_para1 = __rt_79, pre_para2 = __rt_4, rewardIds = __rt_57, rewardNums = __rt_42, script_id = "cpt_imr_s03", sectorId = 130021, set_place = 130021101, set_place_para1 = 1, set_place_para2 = 2, story_review_describe = 26615, type = 1}
 , 
-[1700204] = {describe = 218603, difficulty = 1, group_id = 1700204, id = 1700204, name = 140877, number = 4, pic = "PlotIcon_Carnival22", pre_condition = __rt_57, pre_para1 = __rt_78, pre_para2 = __rt_8, rewardIds = __rt_56, rewardNums = __rt_42, script_id = "cpt_imr_s04", sectorId = 130021, set_place = 130021101, set_place_para1 = 1, set_place_para2 = 3, story_review_describe = 218603, type = 1}
+[1700204] = {describe = 218603, difficulty = 1, group_id = 1700204, id = 1700204, name = 140877, number = 4, pic = "PlotIcon_Carnival22", pre_condition = __rt_58, pre_para1 = __rt_79, pre_para2 = __rt_8, rewardIds = __rt_57, rewardNums = __rt_42, script_id = "cpt_imr_s04", sectorId = 130021, set_place = 130021101, set_place_para1 = 1, set_place_para2 = 3, story_review_describe = 218603, type = 1}
 , 
-[1700205] = {describe = 151447, difficulty = 1, group_id = 1700205, id = 1700205, name = 429971, number = 5, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_79, pre_para2 = __rt_80, rewardIds = __rt_63, rewardNums = __rt_30, script_id = "cpt_imr_s05", sectorId = 130021, set_place = 130021101, set_place_para1 = 2, story_review_describe = 151447, type = 1}
+[1700205] = {describe = 151447, difficulty = 1, group_id = 1700205, id = 1700205, name = 429971, number = 5, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_80, pre_para2 = __rt_81, rewardIds = __rt_64, rewardNums = __rt_30, script_id = "cpt_imr_s05", sectorId = 130021, set_place = 130021101, set_place_para1 = 2, story_review_describe = 151447, type = 1}
 , 
-[1700206] = {describe = 288001, difficulty = 1, group_id = 1700206, id = 1700206, name = 53477, number = 6, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_79, pre_para2 = __rt_80, rewardIds = __rt_56, rewardNums = __rt_64, script_id = "cpt_imr_s06", sectorId = 130021, set_place = 130021101, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 288001, type = 1}
+[1700206] = {describe = 288001, difficulty = 1, group_id = 1700206, id = 1700206, name = 53477, number = 6, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_80, pre_para2 = __rt_81, rewardIds = __rt_57, rewardNums = __rt_65, script_id = "cpt_imr_s06", sectorId = 130021, set_place = 130021101, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 288001, type = 1}
 , 
-[1700207] = {describe = 151920, difficulty = 1, group_id = 1700207, id = 1700207, name = 328409, number = 7, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_81, pre_para2 = __rt_67, rewardIds = __rt_66, rewardNums = __rt_30, script_id = "cpt_imr_s07", sectorId = 130021, set_place = 130021102, set_place_para1 = 2, story_review_describe = 151920, type = 1}
+[1700207] = {describe = 151920, difficulty = 1, group_id = 1700207, id = 1700207, name = 328409, number = 7, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_82, pre_para2 = __rt_68, rewardIds = __rt_67, rewardNums = __rt_30, script_id = "cpt_imr_s07", sectorId = 130021, set_place = 130021102, set_place_para1 = 2, story_review_describe = 151920, type = 1}
 , 
-[1700208] = {describe = 479648, difficulty = 1, group_id = 1700208, id = 1700208, name = 387497, number = 8, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_81, pre_para2 = __rt_69, rewardIds = __rt_68, rewardNums = __rt_42, script_id = "cpt_imr_s08", sectorId = 130021, set_place = 130021102, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 479648, type = 1}
+[1700208] = {describe = 479648, difficulty = 1, group_id = 1700208, id = 1700208, name = 387497, number = 8, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_82, pre_para2 = __rt_70, rewardIds = __rt_69, rewardNums = __rt_42, script_id = "cpt_imr_s08", sectorId = 130021, set_place = 130021102, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 479648, type = 1}
 , 
-[1700209] = {describe = 201559, difficulty = 1, group_id = 1700209, id = 1700209, name = 73400, number = 9, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_81, pre_para2 = __rt_69, rewardIds = __rt_63, rewardNums = __rt_30, script_id = "cpt_imr_s09", sectorId = 130021, set_place = 130021102, set_place_para1 = 2, set_place_para2 = 2, story_review_describe = 201559, type = 1}
+[1700209] = {describe = 201559, difficulty = 1, group_id = 1700209, id = 1700209, name = 73400, number = 9, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_82, pre_para2 = __rt_70, rewardIds = __rt_64, rewardNums = __rt_30, script_id = "cpt_imr_s09", sectorId = 130021, set_place = 130021102, set_place_para1 = 2, set_place_para2 = 2, story_review_describe = 201559, type = 1}
 , 
-[1700210] = {describe = 172615, difficulty = 1, group_id = 1700210, id = 1700210, name = 464099, number = 10, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_81, pre_para2 = __rt_70, rewardIds = __rt_68, rewardNums = __rt_42, script_id = "cpt_imr_s10", sectorId = 130021, set_place = 130021102, set_place_para1 = 2, set_place_para2 = 3, story_review_describe = 172615, type = 1}
+[1700210] = {describe = 172615, difficulty = 1, group_id = 1700210, id = 1700210, name = 464099, number = 10, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_82, pre_para2 = __rt_71, rewardIds = __rt_69, rewardNums = __rt_42, script_id = "cpt_imr_s10", sectorId = 130021, set_place = 130021102, set_place_para1 = 2, set_place_para2 = 3, story_review_describe = 172615, type = 1}
 , 
-[1700211] = {describe = 286950, difficulty = 1, group_id = 1700211, id = 1700211, name = 451683, number = 11, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_81, pre_para2 = __rt_82, rewardIds = __rt_59, rewardNums = __rt_30, script_id = "cpt_imr_s11", sectorId = 130021, set_place = 130021102, set_place_para1 = 2, set_place_para2 = 4, story_review_describe = 286950, type = 1}
+[1700211] = {describe = 286950, difficulty = 1, group_id = 1700211, id = 1700211, name = 451683, number = 11, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_82, pre_para2 = __rt_83, rewardIds = __rt_60, rewardNums = __rt_30, script_id = "cpt_imr_s11", sectorId = 130021, set_place = 130021102, set_place_para1 = 2, set_place_para2 = 4, story_review_describe = 286950, type = 1}
 , 
-[1700212] = {describe = 377979, difficulty = 1, group_id = 1700212, id = 1700212, name = 69864, number = 12, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_81, pre_para2 = __rt_82, rewardIds = __rt_71, rewardNums = __rt_30, script_id = "cpt_imr_s12", sectorId = 130021, set_place = 130021102, set_place_para1 = 2, set_place_para2 = 5, story_review_describe = 377979, type = 1}
+[1700212] = {describe = 377979, difficulty = 1, group_id = 1700212, id = 1700212, name = 69864, number = 12, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_82, pre_para2 = __rt_83, rewardIds = __rt_72, rewardNums = __rt_30, script_id = "cpt_imr_s12", sectorId = 130021, set_place = 130021102, set_place_para1 = 2, set_place_para2 = 5, story_review_describe = 377979, type = 1}
 , 
-[1700213] = {describe = 128095, difficulty = 1, group_id = 1700213, id = 1700213, name = 227056, number = 13, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_83, pre_para2 = __rt_73, rewardIds = __rt_68, rewardNums = __rt_42, script_id = "cpt_imr_s13", sectorId = 130021, set_place = 130021103, set_place_para1 = 2, story_review_describe = 128095, type = 1}
+[1700213] = {describe = 128095, difficulty = 1, group_id = 1700213, id = 1700213, name = 227056, number = 13, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_84, pre_para2 = __rt_74, rewardIds = __rt_69, rewardNums = __rt_42, script_id = "cpt_imr_s13", sectorId = 130021, set_place = 130021103, set_place_para1 = 2, story_review_describe = 128095, type = 1}
 , 
-[1700214] = {describe = 195672, difficulty = 1, group_id = 1700214, id = 1700214, name = 138876, number = 14, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_83, 
+[1700214] = {describe = 195672, difficulty = 1, group_id = 1700214, id = 1700214, name = 138876, number = 14, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_84, 
 pre_para2 = {0, 18}
-, rewardIds = __rt_59, rewardNums = __rt_30, script_id = "cpt_imr_s14", sectorId = 130021, set_place = 130021103, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 195672, type = 1}
+, rewardIds = __rt_60, rewardNums = __rt_30, script_id = "cpt_imr_s14", sectorId = 130021, set_place = 130021103, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 195672, type = 1}
 , 
-[1700215] = {describe = 285035, difficulty = 1, group_id = 1700215, id = 1700215, name = 199008, number = 15, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_83, pre_para2 = __rt_74, rewardIds = __rt_68, rewardNums = __rt_42, script_id = "cpt_imr_s15", sectorId = 130021, set_place = 130021103, set_place_para1 = 2, set_place_para2 = 2, story_review_describe = 285035, type = 1}
+[1700215] = {describe = 285035, difficulty = 1, group_id = 1700215, id = 1700215, name = 199008, number = 15, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_84, pre_para2 = __rt_75, rewardIds = __rt_69, rewardNums = __rt_42, script_id = "cpt_imr_s15", sectorId = 130021, set_place = 130021103, set_place_para1 = 2, set_place_para2 = 2, story_review_describe = 285035, type = 1}
 , 
-[1700216] = {describe = 51150, difficulty = 1, group_id = 1700216, id = 1700216, name = 472646, number = 16, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_83, pre_para2 = __rt_76, rewardIds = __rt_63, rewardNums = __rt_30, script_id = "cpt_imr_s16", sectorId = 130021, set_place = 130021103, set_place_para1 = 2, set_place_para2 = 3, story_review_describe = 51150, type = 1}
+[1700216] = {describe = 51150, difficulty = 1, group_id = 1700216, id = 1700216, name = 472646, number = 16, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_84, pre_para2 = __rt_77, rewardIds = __rt_64, rewardNums = __rt_30, script_id = "cpt_imr_s16", sectorId = 130021, set_place = 130021103, set_place_para1 = 2, set_place_para2 = 3, story_review_describe = 51150, type = 1}
 , 
-[1700217] = {describe = 175892, difficulty = 1, group_id = 1700217, id = 1700217, name = 120418, number = 17, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_84, pre_para2 = __rt_85, rewardIds = __rt_68, rewardNums = __rt_42, script_id = "cpt_imr_s17", sectorId = 130021, set_place = 130021104, set_place_para1 = 2, story_review_describe = 175892, type = 1}
+[1700217] = {describe = 175892, difficulty = 1, group_id = 1700217, id = 1700217, name = 120418, number = 17, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_85, pre_para2 = __rt_86, rewardIds = __rt_69, rewardNums = __rt_42, script_id = "cpt_imr_s17", sectorId = 130021, set_place = 130021104, set_place_para1 = 2, story_review_describe = 175892, type = 1}
 , 
-[1700218] = {describe = 429995, difficulty = 1, group_id = 1700218, id = 1700218, name = 46129, number = 18, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_84, pre_para2 = __rt_85, rewardIds = __rt_68, rewardNums = __rt_42, script_id = "cpt_imr_s18", sectorId = 130021, set_place = 130021104, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 429995, type = 1}
+[1700218] = {describe = 429995, difficulty = 1, group_id = 1700218, id = 1700218, name = 46129, number = 18, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_85, pre_para2 = __rt_86, rewardIds = __rt_69, rewardNums = __rt_42, script_id = "cpt_imr_s18", sectorId = 130021, set_place = 130021104, set_place_para1 = 2, set_place_para2 = 1, story_review_describe = 429995, type = 1}
 , 
-[1700219] = {describe = 228865, difficulty = 1, group_id = 1700219, id = 1700219, name = 371201, number = 19, pic = "PlotIcon_Carnival22", pre_condition = __rt_60, pre_para1 = __rt_84, 
+[1700219] = {describe = 228865, difficulty = 1, group_id = 1700219, id = 1700219, name = 371201, number = 19, pic = "PlotIcon_Carnival22", pre_condition = __rt_61, pre_para1 = __rt_85, 
 pre_para2 = {0, 24}
-, rewardIds = __rt_77, rewardNums = __rt_30, script_id = "cpt_imr_s19", sectorId = 130021, set_place = 130021104, set_place_para1 = 2, set_place_para2 = 2, story_review_describe = 228865, type = 1}
+, rewardIds = __rt_78, rewardNums = __rt_30, script_id = "cpt_imr_s19", sectorId = 130021, set_place = 130021104, set_place_para1 = 2, set_place_para2 = 2, story_review_describe = 228865, type = 1}
 , 
 [1800101] = {describe = 192966, group_id = 1800101, id = 1800101, name = 195134, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_7, script_id = "22child_01", story_review_describe = 476879, type = 0}
 , 
@@ -1917,27 +1946,27 @@ pre_para2 = {0, 24}
 , 
 [1800103] = {describe = 192966, group_id = 1800103, id = 1800103, name = 329880, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_7, script_id = "22child_01_03", story_review_describe = 476879, type = 0}
 , 
-[1800104] = {describe = 110123, group_id = 1800104, id = 1800104, name = 110123, pic = "PlotIcon6", pre_condition = __rt_86, 
+[1800104] = {describe = 110123, group_id = 1800104, id = 1800104, name = 110123, pic = "PlotIcon6", pre_condition = __rt_87, 
 pre_para1 = {1112, 1800103}
 , script_id = "22child_02", story_review_describe = 269052, type = 0}
 , 
-[1800105] = {describe = 107987, group_id = 1800105, id = 1800105, name = 107987, pic = "PlotIcon6", pre_condition = __rt_86, 
+[1800105] = {describe = 107987, group_id = 1800105, id = 1800105, name = 107987, pic = "PlotIcon6", pre_condition = __rt_87, 
 pre_para1 = {1112, 1800104}
 , script_id = "22child_03", story_review_describe = 445058, type = 0}
 , 
-[1800106] = {describe = 306332, group_id = 1800106, id = 1800106, name = 306332, pic = "PlotIcon6", pre_condition = __rt_86, 
+[1800106] = {describe = 306332, group_id = 1800106, id = 1800106, name = 306332, pic = "PlotIcon6", pre_condition = __rt_87, 
 pre_para1 = {1112, 1800105}
 , script_id = "22child_04", story_review_describe = 360806, type = 0}
 , 
-[1800107] = {describe = 372816, group_id = 1800107, id = 1800107, name = 372816, pic = "PlotIcon6", pre_condition = __rt_86, 
+[1800107] = {describe = 372816, group_id = 1800107, id = 1800107, name = 372816, pic = "PlotIcon6", pre_condition = __rt_87, 
 pre_para1 = {1112, 1800106}
 , script_id = "22child_05", story_review_describe = 511632, type = 0}
 , 
-[1800108] = {describe = 63947, group_id = 1800108, id = 1800108, name = 63947, pic = "PlotIcon6", pre_condition = __rt_86, 
+[1800108] = {describe = 63947, group_id = 1800108, id = 1800108, name = 63947, pic = "PlotIcon6", pre_condition = __rt_87, 
 pre_para1 = {1112, 1800107}
 , script_id = "22child_06", story_review_describe = 159766, type = 0}
 , 
-[1800109] = {describe = 364519, group_id = 1800109, id = 1800109, name = 364519, pic = "PlotIcon6", pre_condition = __rt_86, 
+[1800109] = {describe = 364519, group_id = 1800109, id = 1800109, name = 364519, pic = "PlotIcon6", pre_condition = __rt_87, 
 pre_para1 = {1112, 1800108}
 , script_id = "22child_07", story_review_describe = 116337, type = 0}
 , 
@@ -1951,17 +1980,17 @@ pre_para1 = {1112, 1800108}
 , 
 [2200101] = {describe = 295973, group_id = 2200101, id = 2200101, name = 203270, pic = "PlotIcon_Hallowmas22", script_id = "22hallo_s_prologue", set_place = 220011, story_review_describe = 295973, type = 7}
 , 
-[2200102] = {describe = 470494, group_id = 2200102, id = 2200102, name = 357616, number = 2, pic = "PlotIcon_Hallowmas22", pre_condition = __rt_57, pre_para1 = __rt_87, pre_para2 = __rt_2, rewardIds = __rt_88, rewardNums = __rt_89, script_id = "22hallo_s01", set_place = 220011, story_review_describe = 470494, type = 7}
+[2200102] = {describe = 470494, group_id = 2200102, id = 2200102, name = 357616, number = 2, pic = "PlotIcon_Hallowmas22", pre_condition = __rt_58, pre_para1 = __rt_88, pre_para2 = __rt_2, rewardIds = __rt_89, rewardNums = __rt_90, script_id = "22hallo_s01", set_place = 220011, story_review_describe = 470494, type = 7}
 , 
-[2200103] = {describe = 305541, group_id = 2200103, id = 2200103, name = 74529, number = 3, pic = "PlotIcon_Hallowmas22", pre_condition = __rt_57, pre_para1 = __rt_87, pre_para2 = __rt_8, rewardIds = __rt_88, rewardNums = __rt_89, script_id = "22hallo_s02", set_place = 220011, story_review_describe = 305541, type = 7}
+[2200103] = {describe = 305541, group_id = 2200103, id = 2200103, name = 74529, number = 3, pic = "PlotIcon_Hallowmas22", pre_condition = __rt_58, pre_para1 = __rt_88, pre_para2 = __rt_8, rewardIds = __rt_89, rewardNums = __rt_90, script_id = "22hallo_s02", set_place = 220011, story_review_describe = 305541, type = 7}
 , 
-[2200104] = {describe = 15259, group_id = 2200104, id = 2200104, name = 182118, number = 4, pic = "PlotIcon_Hallowmas22", pre_condition = __rt_57, pre_para1 = __rt_87, 
+[2200104] = {describe = 15259, group_id = 2200104, id = 2200104, name = 182118, number = 4, pic = "PlotIcon_Hallowmas22", pre_condition = __rt_58, pre_para1 = __rt_88, 
 pre_para2 = {5}
-, rewardIds = __rt_88, rewardNums = __rt_89, script_id = "22hallo_s03", set_place = 220011, story_review_describe = 15259, type = 7}
+, rewardIds = __rt_89, rewardNums = __rt_90, script_id = "22hallo_s03", set_place = 220011, story_review_describe = 15259, type = 7}
 , 
-[2200105] = {describe = 389804, group_id = 2200105, id = 2200105, name = 200768, number = 5, pic = "PlotIcon_Hallowmas22", pre_condition = __rt_57, pre_para1 = __rt_87, pre_para2 = __rt_28, rewardIds = __rt_88, rewardNums = __rt_89, script_id = "22hallo_s04", set_place = 220011, story_review_describe = 389804, type = 7}
+[2200105] = {describe = 389804, group_id = 2200105, id = 2200105, name = 200768, number = 5, pic = "PlotIcon_Hallowmas22", pre_condition = __rt_58, pre_para1 = __rt_88, pre_para2 = __rt_28, rewardIds = __rt_89, rewardNums = __rt_90, script_id = "22hallo_s04", set_place = 220011, story_review_describe = 389804, type = 7}
 , 
-[2200106] = {describe = 337763, group_id = 2200106, id = 2200106, name = 265465, number = 6, pic = "PlotIcon_Hallowmas22", pre_condition = __rt_57, pre_para1 = __rt_87, pre_para2 = __rt_90, rewardIds = __rt_88, rewardNums = __rt_89, script_id = "22hallo_s_end", set_place = 220011, story_review_describe = 337763, type = 7}
+[2200106] = {describe = 337763, group_id = 2200106, id = 2200106, name = 265465, number = 6, pic = "PlotIcon_Hallowmas22", pre_condition = __rt_58, pre_para1 = __rt_88, pre_para2 = __rt_91, rewardIds = __rt_89, rewardNums = __rt_90, script_id = "22hallo_s_end", set_place = 220011, story_review_describe = 337763, type = 7}
 , 
 [2200107] = {group_id = 2200107, id = 2200107, name = 85365, script_id = "22christ_biggun"}
 , 
@@ -1991,23 +2020,23 @@ pre_para2 = {5}
 , 
 [2200120] = {group_id = 2200120, id = 2200120, name = 418939, script_id = "22christ_undline_wing"}
 , 
-[2200131] = {describe = 243867, group_id = 2200131, id = 2200131, name = 452087, pic = "PlotIcon_Christmas22", rewardIds = __rt_91, rewardNums = __rt_92, script_id = "22christ_prologue", set_place = 220013, story_review_describe = 243867, type = 7}
+[2200131] = {describe = 243867, group_id = 2200131, id = 2200131, name = 452087, pic = "PlotIcon_Christmas22", rewardIds = __rt_92, rewardNums = __rt_93, script_id = "22christ_prologue", set_place = 220013, story_review_describe = 243867, type = 7}
 , 
-[2200132] = {describe = 86945, group_id = 2200132, id = 2200132, name = 368308, number = 2, pic = "PlotIcon_Christmas22", pre_condition = __rt_57, pre_para1 = __rt_93, pre_para2 = __rt_8, rewardIds = __rt_91, rewardNums = __rt_92, script_id = "22christ_01", set_place = 220013, story_review_describe = 86945, type = 7}
+[2200132] = {describe = 86945, group_id = 2200132, id = 2200132, name = 368308, number = 2, pic = "PlotIcon_Christmas22", pre_condition = __rt_58, pre_para1 = __rt_94, pre_para2 = __rt_8, rewardIds = __rt_92, rewardNums = __rt_93, script_id = "22christ_01", set_place = 220013, story_review_describe = 86945, type = 7}
 , 
-[2200133] = {describe = 91167, group_id = 2200133, id = 2200133, name = 10574, number = 3, pic = "PlotIcon_Christmas22", pre_condition = __rt_57, pre_para1 = __rt_93, pre_para2 = __rt_90, rewardIds = __rt_91, rewardNums = __rt_92, script_id = "22christ_02", set_place = 220013, story_review_describe = 91167, type = 7}
+[2200133] = {describe = 91167, group_id = 2200133, id = 2200133, name = 10574, number = 3, pic = "PlotIcon_Christmas22", pre_condition = __rt_58, pre_para1 = __rt_94, pre_para2 = __rt_91, rewardIds = __rt_92, rewardNums = __rt_93, script_id = "22christ_02", set_place = 220013, story_review_describe = 91167, type = 7}
 , 
-[2200134] = {describe = 3233, group_id = 2200134, id = 2200134, name = 149540, number = 4, pic = "PlotIcon_Christmas22", pre_condition = __rt_57, pre_para1 = __rt_93, 
+[2200134] = {describe = 3233, group_id = 2200134, id = 2200134, name = 149540, number = 4, pic = "PlotIcon_Christmas22", pre_condition = __rt_58, pre_para1 = __rt_94, 
 pre_para2 = {12}
-, rewardIds = __rt_91, rewardNums = __rt_92, script_id = "22christ_03", set_place = 220013, story_review_describe = 3233, type = 7}
+, rewardIds = __rt_92, rewardNums = __rt_93, script_id = "22christ_03", set_place = 220013, story_review_describe = 3233, type = 7}
 , 
-[2200135] = {describe = 306229, group_id = 2200135, id = 2200135, name = 210224, number = 5, pic = "PlotIcon_Christmas22", pre_condition = __rt_57, pre_para1 = __rt_93, 
+[2200135] = {describe = 306229, group_id = 2200135, id = 2200135, name = 210224, number = 5, pic = "PlotIcon_Christmas22", pre_condition = __rt_58, pre_para1 = __rt_94, 
 pre_para2 = {18}
-, rewardIds = __rt_91, rewardNums = __rt_92, script_id = "22christ_04", set_place = 220013, story_review_describe = 306229, type = 7}
+, rewardIds = __rt_92, rewardNums = __rt_93, script_id = "22christ_04", set_place = 220013, story_review_describe = 306229, type = 7}
 , 
-[2200136] = {describe = 486981, group_id = 2200136, id = 2200136, name = 398040, number = 6, pic = "PlotIcon_Christmas22", pre_condition = __rt_57, pre_para1 = __rt_93, 
+[2200136] = {describe = 486981, group_id = 2200136, id = 2200136, name = 398040, number = 6, pic = "PlotIcon_Christmas22", pre_condition = __rt_58, pre_para1 = __rt_94, 
 pre_para2 = {25}
-, rewardIds = __rt_91, rewardNums = __rt_92, script_id = "22christ_end", set_place = 220013, story_review_describe = 486981, type = 7}
+, rewardIds = __rt_92, rewardNums = __rt_93, script_id = "22christ_end", set_place = 220013, story_review_describe = 486981, type = 7}
 , 
 [2200140] = {describe = 152986, group_id = 2200140, id = 2200140, name = 272883, pic = "PlotIcon6", script_id = "23spring_prologue", story_review_describe = 152986, type = 0}
 , 
@@ -2105,177 +2134,179 @@ pre_para2 = {25}
 , 
 [2200187] = {group_id = 2200187, id = 2200187, name = 138333, script_id = "cpt_erika_chess_hard"}
 , 
+[2200188] = {group_id = 2200188, id = 2200188, name = 254892, script_id = "cpt_undline_chess_end"}
+, 
 [2500101] = {describe = 321970, difficulty = 1, group_id = 2500101, id = 2500101, name = 204496, pic = "PlotIcon_Win23", pre_condition = __rt_2, pre_para1 = __rt_12, script_id = "23winter_s00", sectorId = 250011, set_place = 250011101, set_place_para1 = 1, story_review_describe = 321970, type = 1}
 , 
 [2500102] = {describe = 8974, difficulty = 1, group_id = 2500102, id = 2500102, name = 267197, number = 2, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011101}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s01", sectorId = 250011, set_place = 250011101, set_place_para1 = 2, story_review_describe = 8974, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s01", sectorId = 250011, set_place = 250011101, set_place_para1 = 2, story_review_describe = 8974, type = 1}
 , 
 [2500103] = {describe = 400810, difficulty = 1, group_id = 2500103, id = 2500103, name = 165105, number = 3, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011102}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s02", sectorId = 250011, set_place = 250011102, set_place_para1 = 2, story_review_describe = 400810, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s02", sectorId = 250011, set_place = 250011102, set_place_para1 = 2, story_review_describe = 400810, type = 1}
 , 
 [2500104] = {describe = 419623, difficulty = 1, group_id = 2500104, id = 2500104, name = 101217, number = 4, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011103}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s03", sectorId = 250011, set_place = 250011105, set_place_para1 = 1, story_review_describe = 419623, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s03", sectorId = 250011, set_place = 250011105, set_place_para1 = 1, story_review_describe = 419623, type = 1}
 , 
 [2500105] = {describe = 300633, difficulty = 1, group_id = 2500105, id = 2500105, name = 260145, number = 5, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011105}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s04", sectorId = 250011, set_place = 250011105, set_place_para1 = 2, story_review_describe = 300633, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s04", sectorId = 250011, set_place = 250011105, set_place_para1 = 2, story_review_describe = 300633, type = 1}
 , 
 [2500106] = {describe = 308630, difficulty = 1, group_id = 2500106, id = 2500106, name = 320117, number = 6, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011108}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s05", sectorId = 250011, set_place = 250011108, set_place_para1 = 2, story_review_describe = 308630, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s05", sectorId = 250011, set_place = 250011108, set_place_para1 = 2, story_review_describe = 308630, type = 1}
 , 
 [2500107] = {describe = 262502, difficulty = 1, group_id = 2500107, id = 2500107, name = 177560, number = 7, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011110}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s06", sectorId = 250011, set_place = 250011110, set_place_para1 = 2, story_review_describe = 262502, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s06", sectorId = 250011, set_place = 250011110, set_place_para1 = 2, story_review_describe = 262502, type = 1}
 , 
 [2500108] = {describe = 67087, difficulty = 1, group_id = 2500108, id = 2500108, name = 371723, number = 8, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011112}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s07", sectorId = 250011, set_place = 250011112, set_place_para1 = 2, story_review_describe = 67087, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s07", sectorId = 250011, set_place = 250011112, set_place_para1 = 2, story_review_describe = 67087, type = 1}
 , 
 [2500109] = {describe = 47297, difficulty = 1, group_id = 2500109, id = 2500109, name = 449122, number = 9, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011113}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s08", sectorId = 250011, set_place = 250011113, set_place_para1 = 2, story_review_describe = 47297, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s08", sectorId = 250011, set_place = 250011113, set_place_para1 = 2, story_review_describe = 47297, type = 1}
 , 
 [2500110] = {describe = 78095, difficulty = 1, group_id = 2500110, id = 2500110, name = 249597, number = 10, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011114}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s09", sectorId = 250011, set_place = 250011114, set_place_para1 = 2, story_review_describe = 78095, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s09", sectorId = 250011, set_place = 250011114, set_place_para1 = 2, story_review_describe = 78095, type = 1}
 , 
 [2500111] = {describe = 173210, difficulty = 1, group_id = 2500111, id = 2500111, name = 494111, number = 11, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011115}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s10", sectorId = 250011, set_place = 250011116, set_place_para1 = 1, story_review_describe = 173210, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s10", sectorId = 250011, set_place = 250011116, set_place_para1 = 1, story_review_describe = 173210, type = 1}
 , 
 [2500112] = {describe = 414966, difficulty = 1, group_id = 2500112, id = 2500112, name = 18339, number = 12, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011116}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s11", sectorId = 250011, set_place = 250011116, set_place_para1 = 2, story_review_describe = 414966, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s11", sectorId = 250011, set_place = 250011116, set_place_para1 = 2, story_review_describe = 414966, type = 1}
 , 
 [2500113] = {describe = 231558, difficulty = 1, group_id = 2500113, id = 2500113, name = 309276, number = 13, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011117}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s12", sectorId = 250011, set_place = 250011118, set_place_para1 = 1, story_review_describe = 231558, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s12", sectorId = 250011, set_place = 250011118, set_place_para1 = 1, story_review_describe = 231558, type = 1}
 , 
 [2500114] = {describe = 51855, difficulty = 1, group_id = 2500114, id = 2500114, name = 465266, number = 14, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011119}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s13", sectorId = 250011, set_place = 250011119, set_place_para1 = 2, story_review_describe = 51855, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s13", sectorId = 250011, set_place = 250011119, set_place_para1 = 2, story_review_describe = 51855, type = 1}
 , 
 [2500115] = {describe = 497212, difficulty = 1, group_id = 2500115, id = 2500115, name = 134448, number = 15, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011120}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s14", sectorId = 250011, set_place = 250011120, set_place_para1 = 2, story_review_describe = 497212, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s14", sectorId = 250011, set_place = 250011120, set_place_para1 = 2, story_review_describe = 497212, type = 1}
 , 
 [2500116] = {describe = 45521, difficulty = 1, group_id = 2500116, id = 2500116, name = 447325, number = 16, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011121}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s15", sectorId = 250011, set_place = 250011121, set_place_para1 = 2, story_review_describe = 45521, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s15", sectorId = 250011, set_place = 250011121, set_place_para1 = 2, story_review_describe = 45521, type = 1}
 , 
 [2500117] = {describe = 245669, difficulty = 1, group_id = 2500117, id = 2500117, name = 309672, number = 17, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011123}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s16", sectorId = 250011, set_place = 250011123, set_place_para1 = 2, story_review_describe = 245669, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s16", sectorId = 250011, set_place = 250011123, set_place_para1 = 2, story_review_describe = 245669, type = 1}
 , 
 [2500118] = {describe = 387623, difficulty = 1, group_id = 2500118, id = 2500118, name = 194418, number = 18, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011125}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s17", sectorId = 250011, set_place = 250011125, set_place_para1 = 2, story_review_describe = 387623, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s17", sectorId = 250011, set_place = 250011125, set_place_para1 = 2, story_review_describe = 387623, type = 1}
 , 
 [2500119] = {describe = 78775, difficulty = 1, group_id = 2500119, id = 2500119, name = 296295, number = 19, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011126}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s18", sectorId = 250011, set_place = 250011126, set_place_para1 = 2, story_review_describe = 78775, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s18", sectorId = 250011, set_place = 250011126, set_place_para1 = 2, story_review_describe = 78775, type = 1}
 , 
 [2500120] = {describe = 290150, difficulty = 1, group_id = 2500120, id = 2500120, name = 130555, number = 20, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011127}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s19", sectorId = 250011, set_place = 250011128, set_place_para1 = 1, story_review_describe = 290150, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s19", sectorId = 250011, set_place = 250011128, set_place_para1 = 1, story_review_describe = 290150, type = 1}
 , 
 [2500121] = {describe = 332215, difficulty = 1, group_id = 2500121, id = 2500121, name = 371519, number = 21, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011128}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s20", sectorId = 250011, set_place = 250011128, set_place_para1 = 2, story_review_describe = 332215, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s20", sectorId = 250011, set_place = 250011128, set_place_para1 = 2, story_review_describe = 332215, type = 1}
 , 
 [2500122] = {describe = 188918, difficulty = 1, group_id = 2500122, id = 2500122, name = 215464, number = 22, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250011129}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s21", sectorId = 250011, set_place = 250011129, set_place_para1 = 2, story_review_describe = 188918, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s21", sectorId = 250011, set_place = 250011129, set_place_para1 = 2, story_review_describe = 188918, type = 1}
 , 
 [2500201] = {describe = 321970, difficulty = 1, group_id = 2500101, id = 2500201, name = 204496, pic = "PlotIcon_Win23", pre_condition = __rt_2, pre_para1 = __rt_12, script_id = "23winter_s00", sectorId = 250012, set_place = 250012101, set_place_para1 = 1, story_review_describe = 321970, type = 1}
 , 
 [2500202] = {describe = 8974, difficulty = 1, group_id = 2500102, id = 2500202, name = 267197, number = 2, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012101}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s01", sectorId = 250012, set_place = 250012101, set_place_para1 = 2, story_review_describe = 8974, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s01", sectorId = 250012, set_place = 250012101, set_place_para1 = 2, story_review_describe = 8974, type = 1}
 , 
 [2500203] = {describe = 400810, difficulty = 1, group_id = 2500103, id = 2500203, name = 165105, number = 3, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012102}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s02", sectorId = 250012, set_place = 250012102, set_place_para1 = 2, story_review_describe = 400810, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s02", sectorId = 250012, set_place = 250012102, set_place_para1 = 2, story_review_describe = 400810, type = 1}
 , 
 [2500204] = {describe = 419623, difficulty = 1, group_id = 2500104, id = 2500204, name = 101217, number = 4, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012103}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s03", sectorId = 250012, set_place = 250012105, set_place_para1 = 1, story_review_describe = 419623, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s03", sectorId = 250012, set_place = 250012105, set_place_para1 = 1, story_review_describe = 419623, type = 1}
 , 
 [2500205] = {describe = 300633, difficulty = 1, group_id = 2500105, id = 2500205, name = 260145, number = 5, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012105}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s04", sectorId = 250012, set_place = 250012105, set_place_para1 = 2, story_review_describe = 300633, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s04", sectorId = 250012, set_place = 250012105, set_place_para1 = 2, story_review_describe = 300633, type = 1}
 , 
 [2500206] = {describe = 308630, difficulty = 1, group_id = 2500106, id = 2500206, name = 320117, number = 6, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012108}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s05", sectorId = 250012, set_place = 250012108, set_place_para1 = 2, story_review_describe = 308630, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s05", sectorId = 250012, set_place = 250012108, set_place_para1 = 2, story_review_describe = 308630, type = 1}
 , 
 [2500207] = {describe = 262502, difficulty = 1, group_id = 2500107, id = 2500207, name = 177560, number = 7, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012110}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s06", sectorId = 250012, set_place = 250012110, set_place_para1 = 2, story_review_describe = 262502, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s06", sectorId = 250012, set_place = 250012110, set_place_para1 = 2, story_review_describe = 262502, type = 1}
 , 
 [2500208] = {describe = 67087, difficulty = 1, group_id = 2500108, id = 2500208, name = 371723, number = 8, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012112}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s07", sectorId = 250012, set_place = 250012112, set_place_para1 = 2, story_review_describe = 67087, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s07", sectorId = 250012, set_place = 250012112, set_place_para1 = 2, story_review_describe = 67087, type = 1}
 , 
 [2500209] = {describe = 47297, difficulty = 1, group_id = 2500109, id = 2500209, name = 449122, number = 9, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012113}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s08", sectorId = 250012, set_place = 250012113, set_place_para1 = 2, story_review_describe = 47297, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s08", sectorId = 250012, set_place = 250012113, set_place_para1 = 2, story_review_describe = 47297, type = 1}
 , 
 [2500210] = {describe = 78095, difficulty = 1, group_id = 2500110, id = 2500210, name = 249597, number = 10, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012114}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s09", sectorId = 250012, set_place = 250012114, set_place_para1 = 2, story_review_describe = 78095, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s09", sectorId = 250012, set_place = 250012114, set_place_para1 = 2, story_review_describe = 78095, type = 1}
 , 
 [2500211] = {describe = 173210, difficulty = 1, group_id = 2500111, id = 2500211, name = 494111, number = 11, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012115}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s10", sectorId = 250012, set_place = 250012116, set_place_para1 = 1, story_review_describe = 173210, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s10", sectorId = 250012, set_place = 250012116, set_place_para1 = 1, story_review_describe = 173210, type = 1}
 , 
 [2500212] = {describe = 414966, difficulty = 1, group_id = 2500112, id = 2500212, name = 18339, number = 12, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012116}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s11", sectorId = 250012, set_place = 250012116, set_place_para1 = 2, story_review_describe = 414966, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s11", sectorId = 250012, set_place = 250012116, set_place_para1 = 2, story_review_describe = 414966, type = 1}
 , 
 [2500213] = {describe = 231558, difficulty = 1, group_id = 2500113, id = 2500213, name = 309276, number = 13, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012117}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s12", sectorId = 250012, set_place = 250012118, set_place_para1 = 1, story_review_describe = 231558, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s12", sectorId = 250012, set_place = 250012118, set_place_para1 = 1, story_review_describe = 231558, type = 1}
 , 
 [2500214] = {describe = 51855, difficulty = 1, group_id = 2500114, id = 2500214, name = 465266, number = 14, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012119}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s13", sectorId = 250012, set_place = 250012119, set_place_para1 = 2, story_review_describe = 51855, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s13", sectorId = 250012, set_place = 250012119, set_place_para1 = 2, story_review_describe = 51855, type = 1}
 , 
 [2500215] = {describe = 497212, difficulty = 1, group_id = 2500115, id = 2500215, name = 134448, number = 15, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012120}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s14", sectorId = 250012, set_place = 250012120, set_place_para1 = 2, story_review_describe = 497212, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s14", sectorId = 250012, set_place = 250012120, set_place_para1 = 2, story_review_describe = 497212, type = 1}
 , 
 [2500216] = {describe = 45521, difficulty = 1, group_id = 2500116, id = 2500216, name = 447325, number = 16, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012121}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s15", sectorId = 250012, set_place = 250012121, set_place_para1 = 2, story_review_describe = 45521, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s15", sectorId = 250012, set_place = 250012121, set_place_para1 = 2, story_review_describe = 45521, type = 1}
 , 
 [2500217] = {describe = 245669, difficulty = 1, group_id = 2500117, id = 2500217, name = 309672, number = 17, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012123}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s16", sectorId = 250012, set_place = 250012123, set_place_para1 = 2, story_review_describe = 245669, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s16", sectorId = 250012, set_place = 250012123, set_place_para1 = 2, story_review_describe = 245669, type = 1}
 , 
 [2500218] = {describe = 387623, difficulty = 1, group_id = 2500118, id = 2500218, name = 194418, number = 18, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012125}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s17", sectorId = 250012, set_place = 250012125, set_place_para1 = 2, story_review_describe = 387623, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s17", sectorId = 250012, set_place = 250012125, set_place_para1 = 2, story_review_describe = 387623, type = 1}
 , 
 [2500219] = {describe = 78775, difficulty = 1, group_id = 2500119, id = 2500219, name = 296295, number = 19, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012126}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s18", sectorId = 250012, set_place = 250012126, set_place_para1 = 2, story_review_describe = 78775, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s18", sectorId = 250012, set_place = 250012126, set_place_para1 = 2, story_review_describe = 78775, type = 1}
 , 
 [2500220] = {describe = 290150, difficulty = 1, group_id = 2500120, id = 2500220, name = 130555, number = 20, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012127}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s19", sectorId = 250012, set_place = 250012128, set_place_para1 = 1, story_review_describe = 290150, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s19", sectorId = 250012, set_place = 250012128, set_place_para1 = 1, story_review_describe = 290150, type = 1}
 , 
 [2500221] = {describe = 332215, difficulty = 1, group_id = 2500121, id = 2500221, name = 371519, number = 21, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012128}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s20", sectorId = 250012, set_place = 250012128, set_place_para1 = 2, story_review_describe = 332215, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s20", sectorId = 250012, set_place = 250012128, set_place_para1 = 2, story_review_describe = 332215, type = 1}
 , 
 [2500222] = {describe = 188918, difficulty = 1, group_id = 2500122, id = 2500222, name = 215464, number = 22, pic = "PlotIcon_Win23", pre_condition = __rt_2, 
 pre_para1 = {250012129}
-, rewardIds = __rt_94, rewardNums = __rt_30, script_id = "23winter_s21", sectorId = 250012, set_place = 250012129, set_place_para1 = 2, story_review_describe = 188918, type = 1}
+, rewardIds = __rt_95, rewardNums = __rt_30, script_id = "23winter_s21", sectorId = 250012, set_place = 250012129, set_place_para1 = 2, story_review_describe = 188918, type = 1}
 , 
 [2500501] = {group_id = 2500501, id = 2500501, name = 387373, pic = "PlotIcon_Win23", script_id = "23winter_s03_1"}
 , 
@@ -2323,15 +2354,31 @@ pre_para1 = {250012129}
 , 
 [2500523] = {group_id = 2500523, id = 2500523, name = 306722, pic = "PlotIcon_Win23", script_id = "23winter_s20_3"}
 , 
+[3100011] = {describe = 138846, group_id = 3100011, id = 3100011, name = 214891, pic = "PlotIcon6_1", script_id = "23april_prologue", set_place = 310001, story_review_describe = 138846, type = 7}
+, 
+[3100012] = {describe = 334976, group_id = 3100012, id = 3100012, name = 294295, number = 2, pic = "PlotIcon6_1", pre_condition = __rt_58, 
+pre_para1 = {31001}
+, 
+pre_para2 = {7}
+, script_id = "23april_end", set_place = 310001, story_review_describe = 334976, type = 7}
+, 
+[3100013] = {group_id = 3100013, id = 3100013, name = 303937, script_id = "23april_cascadia"}
+, 
+[3100014] = {group_id = 3100014, id = 3100014, name = 109166, script_id = "23april_fern"}
+, 
+[3100015] = {group_id = 3100015, id = 3100015, name = 438683, script_id = "23april_sockdolager"}
+, 
+[3100016] = {group_id = 3100016, id = 3100016, name = 243912, script_id = "23april_twigs"}
+, 
 [90011101] = {describe = 319287, difficulty = 1, group_id = 6101, id = 90011101, name = 360729, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_12, rewardIds = __rt_29, rewardNums = __rt_30, script_id = "cpt06_e_01", sectorId = 90011, set_place = 90011101, set_place_para1 = 1, story_review_describe = 319287, type = 1}
 , 
 [90011102] = {describe = 400822, difficulty = 1, group_id = 6102, id = 90011102, name = 193999, number = 2, pic = "PlotIcon6", pre_condition = __rt_2, 
 pre_para1 = {90011102}
 , rewardIds = __rt_29, rewardNums = __rt_30, script_id = "cpt06_e_02", sectorId = 90011, set_place = 90011102, set_place_para1 = 2, story_review_describe = 400822, type = 1}
 , 
-[90011103] = {describe = 95934, difficulty = 1, group_id = 6103, id = 90011103, name = 177800, number = 3, pic = "PlotIcon6_1", pre_condition = __rt_2, pre_para1 = __rt_95, rewardIds = __rt_29, rewardNums = __rt_30, script_id = "cpt06_down_03", sectorId = 90011, set_place = 90011104, set_place_para1 = 1, special_pic = "small_6_1", story_review_describe = 95934, type = 1}
+[90011103] = {describe = 95934, difficulty = 1, group_id = 6103, id = 90011103, name = 177800, number = 3, pic = "PlotIcon6_1", pre_condition = __rt_2, pre_para1 = __rt_96, rewardIds = __rt_29, rewardNums = __rt_30, script_id = "cpt06_down_03", sectorId = 90011, set_place = 90011104, set_place_para1 = 1, special_pic = "small_6_1", story_review_describe = 95934, type = 1}
 , 
-[90011104] = {describe = 382850, difficulty = 1, group_id = 6104, id = 90011104, name = 453561, number = 4, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_95, rewardIds = __rt_29, rewardNums = __rt_30, script_id = "cpt06_up_03", sectorId = 90011, set_place = 90011106, set_place_para1 = 1, story_review_describe = 382850, type = 1}
+[90011104] = {describe = 382850, difficulty = 1, group_id = 6104, id = 90011104, name = 453561, number = 4, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_96, rewardIds = __rt_29, rewardNums = __rt_30, script_id = "cpt06_up_03", sectorId = 90011, set_place = 90011106, set_place_para1 = 1, story_review_describe = 382850, type = 1}
 , 
 [90011105] = {describe = 477519, difficulty = 1, group_id = 6105, id = 90011105, name = 311911, number = 5, pic = "PlotIcon6_1", pre_condition = __rt_2, 
 pre_para1 = {90011105}
@@ -2405,9 +2452,9 @@ pre_para1 = {90011126}
 pre_para1 = {90011127}
 , rewardIds = __rt_29, rewardNums = __rt_30, script_id = "cpt06_e_17", sectorId = 90011, set_place = 90011127, set_place_para1 = 2, show_type = 2, story_review_describe = 150835, type = 1}
 , 
-[90011123] = {describe = 372009, difficulty = 1, group_id = 6123, id = 90011123, name = 40823, number = 23, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_96, rewardIds = __rt_29, rewardNums = __rt_30, script_id = "cpt06_e_18", sectorId = 90011, set_place = 90011128, set_place_para1 = 2, show_type = 2, story_review_describe = 372009, type = 1}
+[90011123] = {describe = 372009, difficulty = 1, group_id = 6123, id = 90011123, name = 40823, number = 23, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_97, rewardIds = __rt_29, rewardNums = __rt_30, script_id = "cpt06_e_18", sectorId = 90011, set_place = 90011128, set_place_para1 = 2, show_type = 2, story_review_describe = 372009, type = 1}
 , 
-[90011124] = {describe = 88146, difficulty = 1, group_id = 6124, id = 90011124, name = 439282, number = 24, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_96, rewardIds = __rt_29, rewardNums = __rt_30, script_id = "cpt06_e_19", sectorId = 90011, set_place = 90011128, set_place_para1 = 2, set_place_para2 = 1, show_type = 2, story_review_describe = 88146, type = 1}
+[90011124] = {describe = 88146, difficulty = 1, group_id = 6124, id = 90011124, name = 439282, number = 24, pic = "PlotIcon6", pre_condition = __rt_2, pre_para1 = __rt_97, rewardIds = __rt_29, rewardNums = __rt_30, script_id = "cpt06_e_19", sectorId = 90011, set_place = 90011128, set_place_para1 = 2, set_place_para2 = 1, show_type = 2, story_review_describe = 88146, type = 1}
 }
 local __default_values = {activityRewardIds = __rt_1, activityRewardNums = __rt_1, activity_id = 0, describe = "", difficulty = 0, group_id = 1100101, id = 10, name = 33796, no_send = false, number = 1, pic = "PlotIcon1", pre_condition = __rt_1, pre_para1 = __rt_1, pre_para2 = __rt_1, rewardIds = __rt_1, rewardNums = __rt_1, script_id = "cpt00_e_01_01", sectorId = 0, set_place = 0, set_place_para1 = 0, set_place_para2 = 0, show_type = 0, special_pic = "", story_review_describe = "", type = 6}
 local base = {__index = __default_values, __newindex = function()
@@ -3494,6 +3541,32 @@ avgGroupDic = {
 , 
 [1064305] = {1064305}
 , 
+[1067001] = {1067001}
+, 
+[1067002] = {1067002}
+, 
+[1067101] = {1067101}
+, 
+[1067102] = {1067102}
+, 
+[1067103] = {1067103}
+, 
+[1067104] = {1067104}
+, 
+[1067201] = {1067201}
+, 
+[1067202] = {1067202}
+, 
+[1067203] = {1067203}
+, 
+[1067301] = {1067301}
+, 
+[1067302] = {1067302}
+, 
+[1067303] = {1067303}
+, 
+[1067304] = {1067304}
+, 
 [1100101] = {1101101, 1100101}
 , 
 [1100102] = {1101102, 1100102}
@@ -4022,6 +4095,8 @@ avgGroupDic = {
 , 
 [2200187] = {2200187}
 , 
+[2200188] = {2200188}
+, 
 [2500101] = {2500101, 2500201}
 , 
 [2500102] = {2500102, 2500202}
@@ -4056,11 +4131,11 @@ avgGroupDic = {
 , 
 [2500117] = {2500117, 2500217}
 , 
-[2500118] = {2500118, 2500218}
+[2500118] = {2500218, 2500118}
 , 
-[2500119] = {2500119, 2500219}
+[2500119] = {2500219, 2500119}
 , 
-[2500120] = {2500120, 2500220}
+[2500120] = {2500220, 2500120}
 , 
 [2500121] = {2500221, 2500121}
 , 
@@ -4111,6 +4186,18 @@ avgGroupDic = {
 [2500522] = {2500522}
 , 
 [2500523] = {2500523}
+, 
+[3100011] = {3100011}
+, 
+[3100012] = {3100012}
+, 
+[3100013] = {3100013}
+, 
+[3100014] = {3100014}
+, 
+[3100015] = {3100015}
+, 
+[3100016] = {3100016}
 }
 , 
 avgTaskParamDic = {
@@ -4224,6 +4311,10 @@ mainAvgDic = {
 , 
 [100151] = {
 {1064001, 1064002}
+}
+, 
+[100161] = {
+{1067001, 1067002}
 }
 , 
 [110011] = {
@@ -4578,6 +4669,10 @@ mainLineAvgPara2NumDic = {
 , 
 [100151105] = {1}
 , 
+[100161101] = {1}
+, 
+[100161104] = {1}
+, 
 [110011101] = {1, 1}
 , 
 [110011102] = {[2] = 1}
@@ -4749,6 +4844,8 @@ sectorAvgDic = {
 [220011] = {2200101, 2200102, 2200103, 2200104, 2200105, 2200106}
 , 
 [220013] = {2200131, 2200132, 2200133, 2200134, 2200135, 2200136}
+, 
+[310001] = {3100011, 3100012}
 }
 , 
 stageAvgDic = {
@@ -4869,6 +4966,12 @@ stageAvgDic = {
 [100151103] = {1064201, 1064202, 1064203, 1064204}
 , 
 [100151104] = {1064301, 1064302, 1064303, 1064304, 1064305}
+, 
+[100161101] = {1067101, 1067102, 1067103, 1067104}
+, 
+[100161102] = {1067201, 1067202, 1067203}
+, 
+[100161103] = {1067301, 1067302, 1067303, 1067304}
 , 
 [110011111] = {1100115}
 , 
@@ -5559,6 +5662,14 @@ triggerTypeDic = {
 {[0] = 1064002}
 }
 , 
+[100161101] = {
+{[0] = 1067001}
+}
+, 
+[100161104] = {
+{[0] = 1067002}
+}
+, 
 [110011101] = {
 {[0] = 1100101}
 , 
@@ -6046,7 +6157,7 @@ triggerTypeDic = {
 }
 , 
 [100051105] = {
-[0] = {[0] = 1050503}
+[0] = {[0] = 1050504}
 }
 , 
 [100061102] = {
@@ -6134,7 +6245,7 @@ triggerTypeDic = {
 }
 , 
 [100111101] = {
-[0] = {[0] = 1060201}
+[0] = {[0] = 1060205}
 }
 , 
 [100111102] = {
@@ -6205,6 +6316,18 @@ triggerTypeDic = {
 [0] = {[0] = 1064301}
 }
 , 
+[100161101] = {
+[0] = {[0] = 1067104}
+}
+, 
+[100161102] = {
+[0] = {[0] = 1067203}
+}
+, 
+[100161103] = {
+[0] = {[0] = 1067304}
+}
+, 
 [110011111] = {
 [0] = {[0] = 1100115}
 }
@@ -6265,6 +6388,10 @@ triggerTypeDic = {
 , 
 [220013] = {
 [0] = {[0] = 2200131}
+}
+, 
+[310001] = {
+[0] = {[0] = 3100011}
 }
 }
 }

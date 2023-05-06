@@ -192,31 +192,18 @@ UIActivityFrameMain.__ListerShowActivity = function(self, ids, flag)
     end
   else
     do
-      do
-        local curShowOutTime = false
-        for _,id in ipairs(ids) do
-          if (self._swithItemDic)[id] ~= nil then
-            local item = (self._swithItemDic)[id]
-            ;
-            (self.swithItemPool):HideOne(item)
-            -- DECOMPILER ERROR at PC55: Confused about usage of register: R10 in 'UnsetPending'
+      for _,id in ipairs(ids) do
+        if id ~= self.selectedId and (self._swithItemDic)[id] ~= nil then
+          local item = (self._swithItemDic)[id]
+          ;
+          (self.swithItemPool):HideOne(item)
+          -- DECOMPILER ERROR at PC57: Confused about usage of register: R9 in 'UnsetPending'
 
-            ;
-            (self._swithItemDic)[id] = nil
-            if id == self.selectedId then
-              curShowOutTime = true
-            end
-          end
+          ;
+          (self._swithItemDic)[id] = nil
         end
-        if ((self.swithItemPool).listItem)[1] == nil then
-          (UIUtil.ReturnUntil2Marker)(UIWindowTypeID.ActivityFrameMain, true)
-        else
-          if curShowOutTime then
-            (UIUtil.ReturnUntil2Marker)(UIWindowTypeID.ActivityFrameMain, false)
-            ;
-            (((self.swithItemPool).listItem)[1]):SelectActivityTag()
-          end
-        end
+      end
+      do
         for i,item in ipairs((self.swithItemPool).listItem) do
           item:SetActivitySwitchLineState(((self.swithItemPool).listItem)[i + 1] ~= nil)
         end
@@ -239,22 +226,40 @@ UIActivityFrameMain.OnSelectActivityItem = function(self, tag, flag)
       end
       local openParam = openActivityPanelParam[(self.activityTypeDic)[self.selectedId]]
       if self.selectedId ~= nil and (self.activityTypeDic)[id] ~= (self.activityTypeDic)[self.selectedId] then
-        UIManager:DeleteWindow(openParam.UIType, true)
-      end
-      self.selectedId = id
-      openParam = openActivityPanelParam[(self.activityTypeDic)[self.selectedId]]
-      UIManager:ShowWindowAsync(openParam.UIType, function(window)
+        do
+          UIManager:DeleteWindow(openParam.UIType, true)
+          local activityFrameDate = (self.frameCtrl):GetActivityFrameData(self.selectedId)
+          do
+            if activityFrameDate == nil then
+              local item = (self._swithItemDic)[self.selectedId]
+              ;
+              (self.swithItemPool):HideOne(item)
+              -- DECOMPILER ERROR at PC47: Confused about usage of register: R7 in 'UnsetPending'
+
+              ;
+              (self._swithItemDic)[self.selectedId] = nil
+            end
+            for i,item in ipairs((self.swithItemPool).listItem) do
+              item:SetActivitySwitchLineState(((self.swithItemPool).listItem)[i + 1] ~= nil)
+            end
+            self.selectedId = id
+            openParam = openActivityPanelParam[(self.activityTypeDic)[self.selectedId]]
+            UIManager:ShowWindowAsync(openParam.UIType, function(window)
     -- function num : 0_4_0 , upvalues : self, openParam, tag, _ENV
     (window.transform):SetParent((self.ui).pageNode)
     ;
     (window[openParam.InitFunction])(window, (tag.activityFrameData).actId)
     if (UIUtil.CheckTopIsWindow)(openParam.UIType) then
-      (UIUtil.PopFromBackStack)()
+      (UIUtil.PopFromBackStackByWinId)(openParam.UIType)
       ;
       (UIUtil.ReShowTopStatus)()
     end
   end
 )
+          end
+          -- DECOMPILER ERROR: 4 unprocessed JMP targets
+        end
+      end
     end
   end
 end

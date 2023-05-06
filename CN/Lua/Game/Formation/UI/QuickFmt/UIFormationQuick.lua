@@ -535,7 +535,7 @@ UIFormationQuick.OnClickConfirm = function(self)
       end
       do
         ;
-        (UIUtil.PopFromBackStack)()
+        (UIUtil.PopFromBackStackByUiTab)(self)
         ;
         (self.fmtCtrl):ExitQuickFormation(changed)
       end

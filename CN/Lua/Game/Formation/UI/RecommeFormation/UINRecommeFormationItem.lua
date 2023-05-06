@@ -133,7 +133,7 @@ UINRecommeFormationItem.OnClickCopy = function(self)
     local showingWindow = UIManager:ShowWindow(UIWindowTypeID.MessageCommon)
     showingWindow:ShowTextBoxWithYesAndNo(ConfigData:GetTipContent(TipContent.Recomme_Confirm), function()
     -- function num : 0_3_0 , upvalues : _ENV, self
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
     ;
     (self.recommeCtr):ExitRecommeFormation(self.data)
   end

@@ -4,6 +4,7 @@ local MailNetworkCtrl = class("MailNetworkCtrl", NetworkCtrlBase)
 local cs_WaitNetworkResponse = (CS.WaitNetworkResponse).Instance
 MailNetworkCtrl.ctor = function(self)
   -- function num : 0_0
+  self.favoriteDic = {}
 end
 
 MailNetworkCtrl.InitNetwork = function(self)
@@ -11,6 +12,7 @@ MailNetworkCtrl.InitNetwork = function(self)
   self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_MAIL_Notify, self, proto_csmsg.SC_MAIL_Notify, self.SC_MAIL_Notify)
   self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_MAIL_Fetch, self, proto_csmsg.SC_MAIL_Fetch, self.SC_MAIL_Fetch)
   self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_MAIL_Read, self, proto_csmsg.SC_MAIL_Read, self.SC_MAIL_Read)
+  self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_MAIL_Favorite, self, proto_csmsg.SC_MAIL_Favorite, self.SC_MAIL_Favorite)
   self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_MAIL_ReceiveAttachment, self, proto_csmsg.SC_MAIL_ReceiveAttachment, self.SC_MAIL_ReceiveAttachment)
   self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_MAIL_Delete, self, proto_csmsg.SC_MAIL_Delete, self.SC_MAIL_Delete)
   self:RegisterNetwork(proto_csmsg_MSG_ID.MSG_SC_MAIL_OneClickPickUp, self, proto_csmsg.SC_MAIL_OneClickPickUp, self.SC_MAIL_OneClickPickUp)
@@ -60,8 +62,37 @@ MailNetworkCtrl.SC_MAIL_Fetch = function(self, msg)
   end
 end
 
-MailNetworkCtrl.CS_MAIL_Read = function(self, uid, callback)
+MailNetworkCtrl.CS_MAIL_Favorite = function(self, uid, favorite, callback)
   -- function num : 0_6 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- DECOMPILER ERROR at PC1: Confused about usage of register: R4 in 'UnsetPending'
+
+  (self.favoriteDic).mailUid = uid
+  -- DECOMPILER ERROR at PC3: Confused about usage of register: R4 in 'UnsetPending'
+
+  ;
+  (self.favoriteDic).favorite = favorite
+  self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_MAIL_Favorite, proto_csmsg.CS_MAIL_Favorite, self.favoriteDic)
+  cs_WaitNetworkResponse:StartWait(proto_csmsg_MSG_ID.MSG_CS_MAIL_Favorite, callback, proto_csmsg_MSG_ID.MSG_SC_MAIL_Favorite)
+end
+
+MailNetworkCtrl.SC_MAIL_Favorite = function(self, msg)
+  -- function num : 0_7 , upvalues : _ENV, cs_WaitNetworkResponse
+  if msg.ret ~= proto_csmsg_ErrorCode.None then
+    local err = "SC_MAIL_Favorite error,code:" .. tostring(msg.ret)
+    if isGameDev then
+      ((CS.MessageCommon).ShowMessageTips)(err)
+    end
+    error(err)
+    cs_WaitNetworkResponse:RemoveWait(proto_csmsg_MSG_ID.MSG_CS_MAIL_Favorite)
+  else
+    do
+      NetworkManager:HandleDiff(msg.syncUpdateDiff)
+    end
+  end
+end
+
+MailNetworkCtrl.CS_MAIL_Read = function(self, uid, callback)
+  -- function num : 0_8 , upvalues : _ENV, cs_WaitNetworkResponse
   local msg = {}
   msg.uid = uid
   self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_MAIL_Read, proto_csmsg.CS_MAIL_Read, msg)
@@ -69,7 +100,7 @@ MailNetworkCtrl.CS_MAIL_Read = function(self, uid, callback)
 end
 
 MailNetworkCtrl.SC_MAIL_Read = function(self, msg)
-  -- function num : 0_7 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- function num : 0_9 , upvalues : _ENV, cs_WaitNetworkResponse
   if msg.ret ~= proto_csmsg_ErrorCode.None then
     local err = "SC_MAIL_Read error,code:" .. tostring(msg.ret)
     if isGameDev then
@@ -85,7 +116,7 @@ MailNetworkCtrl.SC_MAIL_Read = function(self, msg)
 end
 
 MailNetworkCtrl.CS_MAIL_ReceiveAttachment = function(self, uid, callback)
-  -- function num : 0_8 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- function num : 0_10 , upvalues : _ENV, cs_WaitNetworkResponse
   local msg = {}
   msg.uid = uid
   self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_MAIL_ReceiveAttachment, proto_csmsg.CS_MAIL_ReceiveAttachment, msg)
@@ -93,7 +124,7 @@ MailNetworkCtrl.CS_MAIL_ReceiveAttachment = function(self, uid, callback)
 end
 
 MailNetworkCtrl.SC_MAIL_ReceiveAttachment = function(self, msg)
-  -- function num : 0_9 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- function num : 0_11 , upvalues : _ENV, cs_WaitNetworkResponse
   if msg.ret ~= proto_csmsg_ErrorCode.None then
     if msg.ret == proto_csmsg_ErrorCode.BACKPACK_ITEM_OVERFLOW then
       ((CS.MessageCommon).ShowMessageTipsWithErrorSound)(ConfigData:GetTipContent(TipContent.ResourceOverflow))
@@ -115,7 +146,7 @@ MailNetworkCtrl.SC_MAIL_ReceiveAttachment = function(self, msg)
 end
 
 MailNetworkCtrl.CS_MAIL_Delete = function(self, uid, callback)
-  -- function num : 0_10 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- function num : 0_12 , upvalues : _ENV, cs_WaitNetworkResponse
   local msg = {}
   msg.uid = uid
   self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_MAIL_Delete, proto_csmsg.CS_MAIL_Delete, msg)
@@ -123,7 +154,7 @@ MailNetworkCtrl.CS_MAIL_Delete = function(self, uid, callback)
 end
 
 MailNetworkCtrl.SC_MAIL_Delete = function(self, msg)
-  -- function num : 0_11 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- function num : 0_13 , upvalues : _ENV, cs_WaitNetworkResponse
   if msg.ret ~= proto_csmsg_ErrorCode.None then
     self.currUid = nil
     local err = "SC_MAIL_ReceiveAttachment error,code:" .. tostring(msg.ret)
@@ -140,14 +171,14 @@ MailNetworkCtrl.SC_MAIL_Delete = function(self, msg)
 end
 
 MailNetworkCtrl.CS_MAIL_OneClickPickUp = function(self, callback)
-  -- function num : 0_12 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- function num : 0_14 , upvalues : _ENV, cs_WaitNetworkResponse
   local msg = {}
   self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_MAIL_OneClickPickUp, proto_csmsg.CS_MAIL_OneClickPickUp, msg)
   cs_WaitNetworkResponse:StartWait(proto_csmsg_MSG_ID.MSG_CS_MAIL_OneClickPickUp, callback, proto_csmsg_MSG_ID.MSG_SC_MAIL_OneClickPickUp)
 end
 
 MailNetworkCtrl.SC_MAIL_OneClickPickUp = function(self, msg)
-  -- function num : 0_13 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- function num : 0_15 , upvalues : _ENV, cs_WaitNetworkResponse
   if msg.ret ~= proto_csmsg_ErrorCode.None then
     local err = "SC_MAIL_OneClickPickUp error,code:" .. tostring(msg.ret)
     if isGameDev then
@@ -167,14 +198,14 @@ MailNetworkCtrl.SC_MAIL_OneClickPickUp = function(self, msg)
 end
 
 MailNetworkCtrl.CS_MAIL_OneKeyDelete = function(self, callback)
-  -- function num : 0_14 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- function num : 0_16 , upvalues : _ENV, cs_WaitNetworkResponse
   local msg = {}
   self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_MAIL_OneKeyDelete, proto_csmsg.CS_MAIL_OneKeyDelete, msg)
   cs_WaitNetworkResponse:StartWait(proto_csmsg_MSG_ID.MSG_CS_MAIL_OneKeyDelete, callback, proto_csmsg_MSG_ID.MSG_SC_MAIL_OneKeyDelete)
 end
 
 MailNetworkCtrl.SC_MAIL_OneKeyDelete = function(self, msg)
-  -- function num : 0_15 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- function num : 0_17 , upvalues : _ENV, cs_WaitNetworkResponse
   if msg.ret ~= proto_csmsg_ErrorCode.None then
     local err = "SC_MAIL_OneKeyDelete error,code:" .. tostring(msg.ret)
     if isGameDev then
@@ -190,18 +221,18 @@ MailNetworkCtrl.SC_MAIL_OneKeyDelete = function(self, msg)
 end
 
 MailNetworkCtrl.CS_MAIL_Detail = function(self, callback)
-  -- function num : 0_16 , upvalues : _ENV, cs_WaitNetworkResponse
+  -- function num : 0_18 , upvalues : _ENV, cs_WaitNetworkResponse
   self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_MAIL_Detail, proto_csmsg.CS_MAIL_Detail, table.emptytable)
   cs_WaitNetworkResponse:StartWait(proto_csmsg_MSG_ID.MSG_CS_MAIL_Detail, callback, proto_csmsg_MSG_ID.MSG_SC_MAIL_Detail)
 end
 
 MailNetworkCtrl.SC_MAIL_Detail = function(self, msg)
-  -- function num : 0_17 , upvalues : cs_WaitNetworkResponse, _ENV
+  -- function num : 0_19 , upvalues : cs_WaitNetworkResponse, _ENV
   cs_WaitNetworkResponse:AddWaitData(proto_csmsg_MSG_ID.MSG_CS_MAIL_Detail, msg.data)
 end
 
 MailNetworkCtrl.Reset = function(self)
-  -- function num : 0_18
+  -- function num : 0_20
   self.currUid = 0
 end
 

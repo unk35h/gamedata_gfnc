@@ -509,6 +509,12 @@ dislikeGifts = {[3105] = true, [3107] = true, [3109] = true}
 , dungeon_img = "1", foster_id = __rt_11, id = 1066, likeGifts = __rt_32, 
 plot_stage = {5661, 5662, 5663, 5664, 5665, 5666}
 }
+, 
+[1067] = {des_info = 220948, des_name = 54750, 
+dislikeGifts = {[3113] = true, [3115] = true, [3116] = true}
+, dungeon_img = "2", foster_id = __rt_11, id = 1067, likeGifts = __rt_24, 
+plot_stage = {5671, 5672, 5673, 5674, 5675, 5676}
+}
 }
 local __default_values = {des_info = 111084, des_name = 106489, dislikeGifts = __rt_12, dungeon_img = "4", foster_id = __rt_2, id = 1001, likeGifts = __rt_1, plot_stage = __rt_28, story_id = __rt_25, task_id = __rt_4}
 local base = {__index = __default_values, __newindex = function()

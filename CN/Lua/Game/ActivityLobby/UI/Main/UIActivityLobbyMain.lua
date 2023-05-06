@@ -112,25 +112,30 @@ UIActivityLobbyMain._OnJoyStickUp = function(self)
   end
 end
 
-UIActivityLobbyMain._OnClickQuickEntrance = function(self)
+UIActivityLobbyMain.ShowQuickEntranceBlueDot = function(self, isShow)
   -- function num : 0_7
+  ((self.ui).obj_QuickEntranceBlueDot):SetActive(isShow)
+end
+
+UIActivityLobbyMain._OnClickQuickEntrance = function(self)
+  -- function num : 0_8
   local actionList = ((self._actLbCtrl).actLbIntrctCtrl):GetActLbQuickEntranceActionList()
   ;
   (self.quickEntranceNode):InitLbQuickEntrance(actionList)
 end
 
 UIActivityLobbyMain._OnClickHideUI = function(self)
-  -- function num : 0_8
+  -- function num : 0_9
   (self._actLbCtrl):ShowActLbUI(false)
 end
 
 UIActivityLobbyMain._OnClickReturn = function(self, toHome)
-  -- function num : 0_9 , upvalues : ActLbUtil
+  -- function num : 0_10 , upvalues : ActLbUtil
   (ActLbUtil.ExitActivityLobby)(toHome)
 end
 
 UIActivityLobbyMain.OnDelete = function(self)
-  -- function num : 0_10 , upvalues : _ENV, base
+  -- function num : 0_11 , upvalues : _ENV, base
   TimerManager:StopTimer(self._timerId)
   ;
   (self.actLbIntrctNode):Delete()

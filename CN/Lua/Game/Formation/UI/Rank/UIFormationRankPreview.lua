@@ -24,7 +24,7 @@ end
 
 UIFormationRankPreview._OnBtnClose = function(self)
   -- function num : 0_2 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIFormationRankPreview.OnDelete = function(self)

@@ -130,7 +130,7 @@ end
 
 UIEpOverclock.OnBtnCloseClicked = function(self)
   -- function num : 0_6 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIEpOverclock.OnClickReturn = function(self)

@@ -27,6 +27,7 @@ WarChessMapCtrl.ctor = function(self, wcCtrl)
   self.__fogSightDic = nil
   self.__couldDeployGridDic = nil
   self.__cacheLinkdeGroupListDic = nil
+  self.__cacheMonsterPowerDic = nil
 end
 
 WarChessMapCtrl.SetWCMapData = function(self, battleFieldList)
@@ -262,7 +263,7 @@ WarChessMapCtrl.__GenEntity = function(self, BFId, unitCfg, notWait, bind)
 
   ;
   (self.__entityDataUIDDic)[unitCfg.id] = entityData
-  entityData:SetEntityFxData(entityData:GetResEffectID(), (self.wcCtrl).animaCtrl)
+  entityData:AutoAddFx()
   if not notWait then
     return asyncWait, loadOverFunc
   end
@@ -367,7 +368,7 @@ end
 
 WarChessMapCtrl.AfterAnimationCtrlLoadOver = function(self)
   -- function num : 0_15
-  self:RefreshAllAlarmEntity()
+  self:RefreshAllEntityFx()
   ;
   ((self.wcCtrl).animaCtrl):RefeshAllEntityLinkFx()
 end
@@ -475,7 +476,7 @@ WarChessMapCtrl.UpdateMapUnits = function(self, unitUpdates)
     ;
     ((self.wcCtrl).animaCtrl):RefeshAllEntityLinkFx()
   end
-  self:RefreshAllAlarmEntity()
+  self:RefreshAllEntityFx()
   -- DECOMPILER ERROR: 4 unprocessed JMP targets
 end
 
@@ -560,7 +561,7 @@ WarChessMapCtrl.UpdateWCFogData = function(self, sightDiff)
       end
     end
   end
-  self:RefreshAllAlarmEntity()
+  self:RefreshAllEntityFx()
 end
 
 WarChessMapCtrl.GetGridDataDic = function(self, BFId)
@@ -760,12 +761,13 @@ WarChessMapCtrl.GetAllLinkedEntityGroupData = function(self)
   return groupListDic
 end
 
-WarChessMapCtrl.RefreshAllAlarmEntity = function(self)
+WarChessMapCtrl.RefreshAllEntityFx = function(self)
   -- function num : 0_37 , upvalues : _ENV
   for BFId,entityDataXYDic in pairs(self.__entityDataDic) do
     for x,entityDataYDic in pairs(entityDataXYDic) do
       for y,entityData in pairs(entityDataYDic) do
         self:RefreshAlarmEntity(entityData)
+        entityData:UpdateEntityWantedMonsterFX()
       end
     end
   end
@@ -785,8 +787,78 @@ WarChessMapCtrl.RefreshAlarmEntity = function(self, entityData)
   end
 end
 
+WarChessMapCtrl.GetMonsterCouldSecKill = function(self, entityData, teamData, callback)
+  -- function num : 0_39 , upvalues : _ENV, WarChessHelper
+  if not entityData:GetEntityIsMonster() then
+    return 
+  end
+  local battleRoomId = entityData:GetBattleRoomID()
+  if battleRoomId == nil then
+    if callback ~= nil then
+      callback(false)
+    end
+    return 
+  end
+  local monsterGroupCfg = (ConfigData.warchess_room_monster)[battleRoomId]
+  local rate = monsterGroupCfg.quick_kill
+  if rate == nil or rate == 0 then
+    if callback ~= nil then
+      callback(false)
+    end
+    return 
+  end
+  local teamPower = (teamData:GetWCTeamPower())
+  local power = nil
+  local uid = entityData:GetEntityUnitId()
+  local wid, tid = ((self.wcCtrl).teamCtrl):GetWCTeamIdentify(teamData)
+  local pointPos = entityData:GetEntityLogicPos()
+  local identify = {wid = wid, tid = tid}
+  local WCPos = {gid = entityData:GetWCEntityBFId(), pos = (WarChessHelper.Pos2Coordination)(pointPos)}
+  if self.__cacheMonsterPowerDic == nil then
+    self.__cacheMonsterPowerDic = {}
+  end
+  if (self.__cacheMonsterPowerDic)[uid] ~= nil then
+    power = (self.__cacheMonsterPowerDic)[uid]
+    if rate > teamPower / power then
+      callback(callback == nil)
+      do return  end
+      ;
+      ((self.wcCtrl).wcNetworkCtrl):CS_WarChess_MonsterPower(identify, WCPos, function(args)
+    -- function num : 0_39_0 , upvalues : _ENV, callback, power, WarChessHelper, teamData, self, uid, teamPower, rate
+    if args.Count == 0 then
+      error("args.Count == 0")
+      return 
+    end
+    local msg = args[0]
+    -- DECOMPILER ERROR at PC15: Unhandled construct in 'MakeBoolean' P1
+
+    if not msg and callback ~= nil then
+      callback(false)
+    end
+    do return  end
+    power = (WarChessHelper.CalWCRoomBattlePower)(msg.monsters, teamData)
+    -- DECOMPILER ERROR at PC25: Confused about usage of register: R2 in 'UnsetPending'
+
+    ;
+    (self.__cacheMonsterPowerDic)[uid] = power
+    if rate > teamPower / power then
+      callback(callback == nil)
+      -- DECOMPILER ERROR: 2 unprocessed JMP targets
+    end
+  end
+)
+      -- DECOMPILER ERROR: 3 unprocessed JMP targets
+    end
+  end
+end
+
+WarChessMapCtrl.CleanCacheMonsterPower = function(self)
+  -- function num : 0_40
+  self.__cacheMonsterPowerDic = {}
+end
+
 WarChessMapCtrl.OnSceneUnload = function(self)
-  -- function num : 0_39 , upvalues : _ENV
+  -- function num : 0_41 , upvalues : _ENV
   for gearId,entityData in pairs(self.__entityDataUIDDic) do
     entityData:WCEntityDataOnSceneUnload()
     entityData:WCDeleteEntityGo()

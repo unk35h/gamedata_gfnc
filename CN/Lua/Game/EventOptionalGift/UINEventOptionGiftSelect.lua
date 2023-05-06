@@ -3,9 +3,10 @@
 local UINEventOptionGiftSelect = class("UINEventOptionGiftSelect", UIBaseNode)
 local base = UIBaseNode
 local UINBaseItemWithCount = require("Game.CommonUI.Item.UINBaseItemWithCount")
+local UINCmUseGiftItem = require("Game.CommonUI.UseGift.UINCmUseGiftItem")
 local cs_MessageCommon = CS.MessageCommon
 UINEventOptionGiftSelect.OnInit = function(self)
-  -- function num : 0_0 , upvalues : _ENV, UINBaseItemWithCount
+  -- function num : 0_0 , upvalues : _ENV, UINCmUseGiftItem, UINBaseItemWithCount
   (UIUtil.LuaUIBindingTable)(self.transform, self.ui)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Confirm, self, self.OnClickConfitm)
@@ -14,7 +15,7 @@ UINEventOptionGiftSelect.OnInit = function(self)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Close, self, self.Hide)
   self.__OnSelectItemCallback = BindCallback(self, self.__OnSelectItem)
-  self._waitSelectItemPool = (UIItemPool.New)(UINBaseItemWithCount, (self.ui).uINBaseItemWithCount)
+  self._waitSelectItemPool = (UIItemPool.New)(UINCmUseGiftItem, (self.ui).uINBaseItemWithCount)
   ;
   ((self.ui).uINBaseItemWithCount):SetActive(false)
   self._showSelectItemPool = (UIItemPool.New)(UINBaseItemWithCount, (self.ui).uINBaseItemWithCount_1)
@@ -42,7 +43,7 @@ UINEventOptionGiftSelect.InitEventOptionGiftSelect = function(self, payGiftInfo,
     local itemCfg = (ConfigData.item)[itemId]
     local itemCount = ((self._customCfg).param2)[i]
     local item = (self._waitSelectItemPool):GetOne()
-    item:InitItemWithCount(itemCfg, itemCount, self.__OnSelectItemCallback)
+    item:InitCmUseGiftItem(itemCfg, itemCount, self.__OnSelectItemCallback)
     -- DECOMPILER ERROR at PC35: Confused about usage of register: R11 in 'UnsetPending'
 
     ;

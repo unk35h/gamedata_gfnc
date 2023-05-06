@@ -8,8 +8,13 @@ local UINWinter23DailyTask = require("Game.ActivityWinter23.UI.Task.UINWinter23D
 local UINWinter23TermTask = require("Game.ActivityWinter23.UI.Task.UINWinter23TermTask")
 local cs_ResLoader = CS.ResLoader
 local UINCommonActivityBG = require("Game.ActivityFrame.UI.UINCommonActivityBG")
-local DailyTaskTitle = 4
-local TermTaskTitles = {3, 5}
+local ActivityFrameEnum = require("Game.ActivityFrame.ActivityFrameEnum")
+local DefaultDailyTaskTitle = 6
+local DefaultTermTaskTitles = {7}
+local DailyTaskTitle = {[(ActivityFrameEnum.eActivityType).Winter23] = 4}
+local TermTaskTitles = {
+[(ActivityFrameEnum.eActivityType).Winter23] = {3, 5}
+}
 UIWinter23Task.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, UINSpring23TaskPageItem, UINCommonActivityBG, cs_ResLoader
   (UIUtil.SetTopStatus)(self, self.OnCloseTaskUI)
@@ -34,6 +39,7 @@ UIWinter23Task.InitWinter23Task = function(self, actFrameId, dailyTaskData, term
   self._dailyTaskData = dailyTaskData
   self._termTaskData = termTaskData
   self._closeEvent = closeEvent
+  self.actFrameId = actFrameId
   local frameCtrl = ControllerManager:GetController(ControllerTypeId.ActivityFrame)
   self._frameData = frameCtrl:GetActivityFrameData(actFrameId)
   self._pageOpenFuncMap = {}
@@ -70,7 +76,7 @@ UIWinter23Task.InitWinter23Task = function(self, actFrameId, dailyTaskData, term
 end
 
 UIWinter23Task.__CreateTermPage = function(self, index, isAddModel)
-  -- function num : 0_2 , upvalues : _ENV, TermTaskTitles
+  -- function num : 0_2 , upvalues : _ENV, TermTaskTitles, DefaultTermTaskTitles
   local item = (self._pageItemPool):GetOne()
   local func = BindCallback(self, self.__OpenTermTask, index)
   -- DECOMPILER ERROR at PC9: Confused about usage of register: R5 in 'UnsetPending'
@@ -82,7 +88,11 @@ UIWinter23Task.__CreateTermPage = function(self, index, isAddModel)
 
   ;
   (self._pageRedFuncMap)[item] = redFunc
-  item:InitChristmasTaskPageItemParam2(TermTaskTitles[index] or 0, 1, self.__SetPageCallback)
+  local actFrameCtrl = ControllerManager:GetController(ControllerTypeId.ActivityFrame)
+  local actFrameData = actFrameCtrl:GetActivityFrameData(self.actFrameId)
+  local actType = actFrameData:GetActivityFrameCat()
+  local termTaskTitle = TermTaskTitles[actType] or DefaultTermTaskTitles
+  item:InitChristmasTaskPageItemParam2(termTaskTitle[index] or 0, 1, self.__SetPageCallback)
   item:ShowChristmasTaskPageLine(true)
   if isAddModel then
     (item.transform):SetSiblingIndex(index)
@@ -91,7 +101,7 @@ UIWinter23Task.__CreateTermPage = function(self, index, isAddModel)
 end
 
 UIWinter23Task.__CreateDailyPage = function(self)
-  -- function num : 0_3 , upvalues : _ENV, DailyTaskTitle
+  -- function num : 0_3 , upvalues : _ENV, DailyTaskTitle, DefaultDailyTaskTitle
   local item = (self._pageItemPool):GetOne()
   local func = BindCallback(self, self.__OpenDailyTask)
   -- DECOMPILER ERROR at PC8: Confused about usage of register: R3 in 'UnsetPending'
@@ -103,7 +113,11 @@ UIWinter23Task.__CreateDailyPage = function(self)
 
   ;
   (self._pageRedFuncMap)[item] = redFunc
-  item:InitChristmasTaskPageItemParam2(DailyTaskTitle, 2, self.__SetPageCallback)
+  local actFrameCtrl = ControllerManager:GetController(ControllerTypeId.ActivityFrame)
+  local actFrameData = actFrameCtrl:GetActivityFrameData(self.actFrameId)
+  local actType = actFrameData:GetActivityFrameCat()
+  local dailyTaskTitle = DailyTaskTitle[actType] or DefaultDailyTaskTitle
+  item:InitChristmasTaskPageItemParam2(dailyTaskTitle, 2, self.__SetPageCallback)
   item:ShowChristmasTaskPageLine(false)
   return item
 end

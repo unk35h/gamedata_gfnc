@@ -75,7 +75,7 @@ UIActWinter23LvSwitch.OnClickWinter23LvConfirm = function(self)
   ;
   (self.lvBtnPool):DeleteAll()
   ;
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
   ;
   (self.callback)(((self.difficultCfgList)[self._selectIndex]).sector_id)
 end

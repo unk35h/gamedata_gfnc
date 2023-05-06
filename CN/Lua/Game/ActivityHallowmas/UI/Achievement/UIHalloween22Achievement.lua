@@ -184,7 +184,7 @@ end
 
 UIHalloween22Achievement.OnClickCloseBtn = function(self)
   -- function num : 0_8 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIHalloween22Achievement.OnCloseAchievement = function(self)

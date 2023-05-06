@@ -1617,6 +1617,30 @@ attrDic = {[2] = 27742, [3] = 1069, [4] = 347, [7] = 50, [8] = 105, [9] = 902, [
 [1191] = {attrDic = __rt_28, hero_skill_level = 7, level = 1191}
 , 
 [1192] = {attrDic = __rt_28, hero_level = 70, hero_skill_level = 10, level = 1192}
+, 
+[1193] = {hero_level = 30, hero_potential = 3, hero_rank = 2, level = 1193}
+, 
+[1194] = {hero_level = 30, hero_potential = 3, hero_rank = 4, level = 1194}
+, 
+[1195] = {hero_level = 30, hero_potential = 3, hero_rank = 6, level = 1195}
+, 
+[1196] = {hero_level = 40, hero_potential = 4, hero_rank = 8, level = 1196}
+, 
+[1197] = {hero_rank = 8, level = 1197}
+, 
+[1198] = {hero_rank = 8, hero_skill_level = 7, level = 1198}
+, 
+[1199] = {attrDic = __rt_28, hero_skill_level = 7, level = 1199}
+, 
+[1200] = {attrDic = __rt_28, hero_level = 70, hero_skill_level = 10, level = 1200}
+, 
+[1201] = {attrDic = __rt_15, hero_level = 40, hero_potential = 4, hero_rank = 6, level = 1201}
+, 
+[1202] = {attrDic = __rt_23, hero_level = 50, hero_rank = 8, hero_skill_level = 5, level = 1202}
+, 
+[1203] = {
+attrDic = {[2] = 9797, [3] = 381, [4] = 339, [7] = 171, [9] = 401, [10] = 812, [12] = 258, [26] = 381, [202] = 36, [203] = 36, [204] = 10, [212] = 10, [226] = 36}
+, hero_rank = 8, hero_skill_level = 7, level = 1203}
 }
 local __default_values = {attrDic = __rt_8, attribute_type = false, hero_level = 60, hero_potential = 5, hero_rank = 10, hero_skill_level = 1, level = 1, spec_weapon_level = __rt_1}
 local base = {__index = __default_values, __newindex = function()

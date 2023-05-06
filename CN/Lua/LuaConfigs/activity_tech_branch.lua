@@ -3,6 +3,7 @@
 local __rt_1 = {1044}
 local __rt_2 = {1}
 local __rt_3 = {}
+local __rt_4 = {1228}
 local activity_tech_branch = {
 [2] = {
 {branch_name_en = "Stable Strategy", revertCostIds = __rt_1, revertCostNums = __rt_2, tech_type = 2}
@@ -57,6 +58,16 @@ local activity_tech_branch = {
 , 
 [21] = {branch_id = 21, branch_name = 224677, branch_name_en = "Special Strategy", revertCostIds = __rt_1, revertCostNums = __rt_2, tech_type = 8}
 }
+, 
+[9] = {
+[23] = {branch_id = 23, branch_name = 125520, revertCostIds = __rt_4, revertCostNums = __rt_2, tech_type = 9}
+, 
+[24] = {branch_id = 24, branch_name = 483426, revertCostIds = __rt_4, revertCostNums = __rt_2, tech_type = 9}
+, 
+[25] = {branch_id = 25, revertCostIds = __rt_4, revertCostNums = __rt_2, tech_type = 9}
+, 
+[26] = {branch_id = 26, branch_name = 448296, revertCostIds = __rt_4, revertCostNums = __rt_2, tech_type = 9}
+}
 }
 local __default_values = {branch_id = 1, branch_name = 152556, branch_name_en = "Strategy", revertCostIds = __rt_3, revertCostNums = __rt_3, tech_type = 3}
 local base = {__index = __default_values, __newindex = function()
@@ -70,7 +81,7 @@ for k,v in pairs(activity_tech_branch) do
   end
 end
 local __rawdata = {__basemetatable = base, 
-branchToTypeMapping = {2, 2, 2, 3, 3, 3, 3, 3, 5, 5, 5, 5, 6, 6, 6, 7, 7, 7, 8, 8, 8}
+branchToTypeMapping = {2, 2, 2, 3, 3, 3, 3, 3, 5, 5, 5, 5, 6, 6, 6, 7, 7, 7, 8, 8, 8; [23] = 9, [24] = 9, [25] = 9, [26] = 9}
 , 
 techBranchTypeList = {
 [2] = {1, 2, 3}
@@ -84,6 +95,8 @@ techBranchTypeList = {
 [7] = {16, 17, 18}
 , 
 [8] = {19, 20, 21}
+, 
+[9] = {23, 24, 25, 26}
 }
 , 
 techTypeToActMapping = {

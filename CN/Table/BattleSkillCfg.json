@@ -997,6 +997,1558 @@
       "SkillRange": 6
     },
     {
+      "Id": 1000,
+      "Name": "骨甲硬化Ⅰ",
+      "Describe": "物理防御力提升{0}点",
+      "DescribeLv": "物理防御力提升{0}点",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        1000
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1000"
+    },
+    {
+      "Id": 1001,
+      "Name": "骨甲硬化Ⅱ",
+      "Describe": "物理防御力提升{0}点",
+      "DescribeLv": "物理防御力提升{0}点",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        2000
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1000"
+    },
+    {
+      "Id": 1002,
+      "Name": "骨甲硬化Ⅲ",
+      "Describe": "物理防御力提升{0}点",
+      "DescribeLv": "物理防御力提升{0}点",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        4000
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1000"
+    },
+    {
+      "Id": 1003,
+      "Name": "痛觉耐受Ⅰ",
+      "Describe": "受到物理伤害减少{0}%，受到算量伤害提升{1}%",
+      "DescribeLv": "受到物理伤害减少{0}%，受到算量伤害提升{1}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        200,
+        300
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1001"
+    },
+    {
+      "Id": 1004,
+      "Name": "痛觉耐受Ⅱ",
+      "Describe": "受到物理伤害减少{0}%，受到算量伤害提升{1}%",
+      "DescribeLv": "受到物理伤害减少{0}%，受到算量伤害提升{1}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        400,
+        150
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1001"
+    },
+    {
+      "Id": 1005,
+      "Name": "痛觉耐受Ⅲ",
+      "Describe": "受到物理伤害减少{0}%",
+      "DescribeLv": "受到物理伤害减少{0}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        600,
+        0
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1001"
+    },
+    {
+      "Id": 1006,
+      "Name": "动能衰减Ⅰ",
+      "Describe": "受到伤害有{0}%概率使攻击者的攻击力降低{2}%，持续{1}秒",
+      "DescribeLv": "受到伤害有{0}%概率使攻击者的攻击力降低{2}%，持续{1}秒",
+      "Formula": [
+        507,
+        506,
+        507
+      ],
+      "FormulaArg": [
+        100,
+        90,
+        200
+      ],
+      "FormulaArg2": [
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1002"
+    },
+    {
+      "Id": 1007,
+      "Name": "动能衰减Ⅱ",
+      "Describe": "受到伤害有{0}%概率使攻击者的攻击力降低{2}%，持续{1}秒",
+      "DescribeLv": "受到伤害有{0}%概率使攻击者的攻击力降低{2}%，持续{1}秒",
+      "Formula": [
+        507,
+        506,
+        507
+      ],
+      "FormulaArg": [
+        150,
+        90,
+        300
+      ],
+      "FormulaArg2": [
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1002"
+    },
+    {
+      "Id": 1008,
+      "Name": "动能衰减Ⅲ",
+      "Describe": "受到伤害有{0}%概率使攻击者的攻击力降低{2}%，持续{1}秒",
+      "DescribeLv": "受到伤害有{0}%概率使攻击者的攻击力降低{2}%，持续{1}秒",
+      "Formula": [
+        507,
+        506,
+        507
+      ],
+      "FormulaArg": [
+        200,
+        90,
+        500
+      ],
+      "FormulaArg2": [
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1002"
+    },
+    {
+      "Id": 1009,
+      "Name": "灰暗反射Ⅰ",
+      "Describe": "受到物理伤害时，将其中{0}%伤害反馈给攻击者",
+      "DescribeLv": "受到物理伤害时，将其中{0}%伤害反馈给攻击者",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        100
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1003"
+    },
+    {
+      "Id": 1010,
+      "Name": "灰暗反射Ⅱ",
+      "Describe": "受到物理伤害时，将其中{0}%伤害反馈给攻击者",
+      "DescribeLv": "受到物理伤害时，将其中{0}%伤害反馈给攻击者",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        200
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1003"
+    },
+    {
+      "Id": 1011,
+      "Name": "灰暗反射Ⅲ",
+      "Describe": "受到物理伤害时，将其中{0}%伤害反馈给攻击者",
+      "DescribeLv": "受到物理伤害时，将其中{0}%伤害反馈给攻击者",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        300
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1003"
+    },
+    {
+      "Id": 1012,
+      "Name": "混沌防壁Ⅰ",
+      "Describe": "算量防御力提升{0}点",
+      "DescribeLv": "算量防御力提升{0}点",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        1000
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1004"
+    },
+    {
+      "Id": 1013,
+      "Name": "混沌防壁Ⅱ",
+      "Describe": "算量防御力提升{0}点",
+      "DescribeLv": "算量防御力提升{0}点",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        2000
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1004"
+    },
+    {
+      "Id": 1014,
+      "Name": "混沌防壁Ⅲ",
+      "Describe": "算量防御力提升{0}点",
+      "DescribeLv": "算量防御力提升{0}点",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        4000
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1004"
+    },
+    {
+      "Id": 1015,
+      "Name": "抗性倒错Ⅰ",
+      "Describe": "受到算量伤害减少{0}%，受到物理伤害提升{1}%",
+      "DescribeLv": "受到算量伤害减少{0}%，受到物理伤害提升{1}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        200,
+        300
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1005"
+    },
+    {
+      "Id": 1016,
+      "Name": "抗性倒错Ⅱ",
+      "Describe": "受到算量伤害减少{0}%，受到物理伤害提升{1}%",
+      "DescribeLv": "受到算量伤害减少{0}%，受到物理伤害提升{1}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        400,
+        150
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1005"
+    },
+    {
+      "Id": 1017,
+      "Name": "抗性倒错Ⅲ",
+      "Describe": "受到算量伤害减少{0}%",
+      "DescribeLv": "受到算量伤害减少{0}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        600,
+        0
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1005"
+    },
+    {
+      "Id": 1018,
+      "Name": "愚钝咒文Ⅰ",
+      "Describe": "受到伤害有{0}%概率使攻击者的算力降低{2}%，持续{1}秒",
+      "DescribeLv": "受到伤害有{0}%概率使攻击者的算力降低{2}%，持续{1}秒",
+      "Formula": [
+        507,
+        506,
+        507
+      ],
+      "FormulaArg": [
+        100,
+        90,
+        200
+      ],
+      "FormulaArg2": [
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1006"
+    },
+    {
+      "Id": 1019,
+      "Name": "愚钝咒文Ⅱ",
+      "Describe": "受到伤害有{0}%概率使攻击者的算力降低{2}%，持续{1}秒",
+      "DescribeLv": "受到伤害有{0}%概率使攻击者的算力降低{2}%，持续{1}秒",
+      "Formula": [
+        507,
+        506,
+        507
+      ],
+      "FormulaArg": [
+        150,
+        90,
+        300
+      ],
+      "FormulaArg2": [
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1006"
+    },
+    {
+      "Id": 1020,
+      "Name": "愚钝咒文Ⅲ",
+      "Describe": "受到伤害有{0}%概率使攻击者的算力降低{2}%，持续{1}秒",
+      "DescribeLv": "受到伤害有{0}%概率使攻击者的算力降低{2}%，持续{1}秒",
+      "Formula": [
+        507,
+        506,
+        507
+      ],
+      "FormulaArg": [
+        200,
+        90,
+        500
+      ],
+      "FormulaArg2": [
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1006"
+    },
+    {
+      "Id": 1021,
+      "Name": "恶性回馈Ⅰ",
+      "Describe": "受到算量伤害时，将其中{0}%伤害反馈给攻击者",
+      "DescribeLv": "受到算量伤害时，将其中{0}%伤害反馈给攻击者",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        100
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1007"
+    },
+    {
+      "Id": 1022,
+      "Name": "恶性回馈Ⅱ",
+      "Describe": "受到算量伤害时，将其中{0}%伤害反馈给攻击者",
+      "DescribeLv": "受到算量伤害时，将其中{0}%伤害反馈给攻击者",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        200
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1007"
+    },
+    {
+      "Id": 1023,
+      "Name": "恶性回馈Ⅲ",
+      "Describe": "受到算量伤害时，将其中{0}%伤害反馈给攻击者",
+      "DescribeLv": "受到算量伤害时，将其中{0}%伤害反馈给攻击者",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        300
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1007"
+    },
+    {
+      "Id": 1024,
+      "Name": "远伤抗性Ⅰ",
+      "Describe": "受到远程伤害减少{0}%，受到近程伤害提升{1}%",
+      "DescribeLv": "受到远程伤害减少{0}%，受到近程伤害提升{1}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        200,
+        300
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1008"
+    },
+    {
+      "Id": 1025,
+      "Name": "远伤抗性Ⅱ",
+      "Describe": "受到远程伤害减少{0}%，受到近程伤害提升{1}%",
+      "DescribeLv": "受到远程伤害减少{0}%，受到近程伤害提升{1}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        400,
+        150
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1008"
+    },
+    {
+      "Id": 1026,
+      "Name": "远伤抗性Ⅲ",
+      "Describe": "受到远程伤害减少{0}%",
+      "DescribeLv": "受到远程伤害减少{0}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        600,
+        0
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1008"
+    },
+    {
+      "Id": 1027,
+      "Name": "近伤抗性Ⅰ",
+      "Describe": "受到近程伤害减少{0}%，受到远程伤害提升{1}%",
+      "DescribeLv": "受到近程伤害减少{0}%，受到远程伤害提升{1}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        200,
+        300
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1009"
+    },
+    {
+      "Id": 1028,
+      "Name": "近伤抗性Ⅱ",
+      "Describe": "受到近程伤害减少{0}%，受到远程伤害提升{1}%",
+      "DescribeLv": "受到近程伤害减少{0}%，受到远程伤害提升{1}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        400,
+        150
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1009"
+    },
+    {
+      "Id": 1029,
+      "Name": "近伤抗性Ⅲ",
+      "Describe": "受到近程伤害减少{0}%",
+      "DescribeLv": "受到近程伤害减少{0}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        600,
+        0
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1009"
+    },
+    {
+      "Id": 1030,
+      "Name": "武装剥取Ⅰ",
+      "Describe": "受到普攻伤害时，有{0}%概率使攻击者被缴械，持续{1}秒",
+      "DescribeLv": "受到普攻伤害时，有{0}%概率使攻击者被缴械，持续{1}秒",
+      "Formula": [
+        507,
+        506
+      ],
+      "FormulaArg": [
+        300,
+        30
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1010"
+    },
+    {
+      "Id": 1031,
+      "Name": "武装剥取Ⅱ",
+      "Describe": "受到普攻伤害时，有{0}%概率使攻击者被缴械，持续{1}秒",
+      "DescribeLv": "受到普攻伤害时，有{0}%概率使攻击者被缴械，持续{1}秒",
+      "Formula": [
+        507,
+        506
+      ],
+      "FormulaArg": [
+        600,
+        30
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1010"
+    },
+    {
+      "Id": 1032,
+      "Name": "晦影疾驱Ⅰ",
+      "Describe": "闪避率提升{0}%",
+      "DescribeLv": "闪避率提升{0}%",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        200
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1011"
+    },
+    {
+      "Id": 1033,
+      "Name": "晦影疾驱Ⅱ",
+      "Describe": "闪避率提升{0}%",
+      "DescribeLv": "闪避率提升{0}%",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        350
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1011"
+    },
+    {
+      "Id": 1034,
+      "Name": "晦影疾驱Ⅲ",
+      "Describe": "闪避率提升{0}%",
+      "DescribeLv": "闪避率提升{0}%",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        500
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1011"
+    },
+    {
+      "Id": 1035,
+      "Name": "混沌缄默Ⅰ",
+      "Describe": "受到普攻伤害时，有{0}%概率使攻击者被沉默，持续{1}秒",
+      "DescribeLv": "受到普攻伤害时，有{0}%概率使攻击者被沉默，持续{1}秒",
+      "Formula": [
+        507,
+        506
+      ],
+      "FormulaArg": [
+        200,
+        30
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1012"
+    },
+    {
+      "Id": 1036,
+      "Name": "混沌缄默Ⅱ",
+      "Describe": "受到普攻伤害时，有{0}%概率使攻击者被沉默，持续{1}秒",
+      "DescribeLv": "受到普攻伤害时，有{0}%概率使攻击者被沉默，持续{1}秒",
+      "Formula": [
+        507,
+        506
+      ],
+      "FormulaArg": [
+        400,
+        30
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1012"
+    },
+    {
+      "Id": 1037,
+      "Name": "耐痛冲击Ⅰ",
+      "Describe": "减伤率提升{1}%，受到{0}次普攻伤害后，增益消失",
+      "DescribeLv": "减伤率提升{1}%，受到{0}次普攻伤害后，增益消失",
+      "Formula": [
+        504,
+        507
+      ],
+      "FormulaArg": [
+        10,
+        200
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1013"
+    },
+    {
+      "Id": 1038,
+      "Name": "耐痛冲击Ⅱ",
+      "Describe": "减伤率提升{1}%，受到{0}次普攻伤害后，增益消失",
+      "DescribeLv": "减伤率提升{1}%，受到{0}次普攻伤害后，增益消失",
+      "Formula": [
+        504,
+        507
+      ],
+      "FormulaArg": [
+        20,
+        400
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1013"
+    },
+    {
+      "Id": 1039,
+      "Name": "耐痛冲击Ⅲ",
+      "Describe": "减伤率提升{1}%，受到{0}次普攻伤害后，增益消失",
+      "DescribeLv": "减伤率提升{1}%，受到{0}次普攻伤害后，增益消失",
+      "Formula": [
+        504,
+        507
+      ],
+      "FormulaArg": [
+        30,
+        600
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1013"
+    },
+    {
+      "Id": 1040,
+      "Name": "毁伤钝化Ⅰ",
+      "Describe": "受到暴击时，使造成的暴击伤害倍率减少{0}%",
+      "DescribeLv": "受到暴击时，使造成的暴击伤害倍率减少{0}%",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        200
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1014"
+    },
+    {
+      "Id": 1041,
+      "Name": "毁伤钝化Ⅱ",
+      "Describe": "受到暴击时，使造成的暴击伤害倍率减少{0}%",
+      "DescribeLv": "受到暴击时，使造成的暴击伤害倍率减少{0}%",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        500
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1014"
+    },
+    {
+      "Id": 1042,
+      "Name": "毁伤钝化Ⅲ",
+      "Describe": "受到暴击时，使造成的暴击伤害倍率减少{0}%",
+      "DescribeLv": "受到暴击时，使造成的暴击伤害倍率减少{0}%",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        1000
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1014"
+    },
+    {
+      "Id": 1043,
+      "Name": "殉爆溅射Ⅰ",
+      "Describe": "被击杀时，对击杀者造成{0}%自身最大生命值伤害",
+      "DescribeLv": "被击杀时，对击杀者造成{0}%自身最大生命值伤害",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        400
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1015"
+    },
+    {
+      "Id": 1044,
+      "Name": "殉爆溅射Ⅱ",
+      "Describe": "被击杀时，对击杀者造成{0}%自身最大生命值伤害",
+      "DescribeLv": "被击杀时，对击杀者造成{0}%自身最大生命值伤害",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        700
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1015"
+    },
+    {
+      "Id": 1045,
+      "Name": "殒骸献祭Ⅰ",
+      "Describe": "死亡后，使己方其他单位恢复{0}%最大生命值",
+      "DescribeLv": "死亡后，使己方其他单位恢复{0}%最大生命值",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        500
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1016"
+    },
+    {
+      "Id": 1046,
+      "Name": "殒骸献祭Ⅱ",
+      "Describe": "死亡后，使己方其他单位恢复{0}%最大生命值",
+      "DescribeLv": "死亡后，使己方其他单位恢复{0}%最大生命值",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        1000
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1016"
+    },
+    {
+      "Id": 1047,
+      "Name": "暗质力场",
+      "Describe": "持续霸体",
+      "DescribeLv": "持续霸体",
+      "Icon": "ICON_210604",
+      "TypeColor": 3,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "MonsterFeature.Feature_1017"
+    },
+    {
       "Id": 5011,
       "Name": "位域跃迁",
       "DescribeLv": "将1个友方人形行为打断并移动到指定的空地格",
@@ -17669,6 +19221,26 @@
       "SkillRange": 10
     },
     {
+      "Id": 20229,
+      "Name": "巨人化",
+      "Describe": "单位体型按buff层数增大，每层巨人化提供20%算力加成和攻击力加成。",
+      "DescribeLv": "单位体型按buff层数增大，每层巨人化提供20%算力加成和攻击力加成。",
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 100,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.20229_Giant",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
       "Id": 20253,
       "Name": "新手引导0-1修正",
       "Describe": "赫波播放大招之后，给己方全员增加攻击增加修正BUFF",
@@ -27420,8 +28992,8 @@
     {
       "Id": 92007,
       "Name": "护刃增进",
-      "Describe": "我方护盾值越高，造成的伤害越高，最高提升{0}%伤害",
-      "DescribeLv": "我方护盾值越高，造成的伤害越高，护盾值等同于最大生命值{1}%时达到最高{0}%伤害",
+      "Describe": "我方护盾值越高，造成的伤害越高，护盾值等同于最大生命值{0}%时达到最高{1}%伤害",
+      "DescribeLv": "我方护盾值越高，造成的伤害越高，护盾值等同于最大生命值{0}%时达到最高{1}%伤害",
       "Formula": [
         512,
         512
@@ -29472,6 +31044,473 @@
       "SkillRange": 10
     },
     {
+      "Id": 92079,
+      "Name": "聚智巨像",
+      "Describe": "战斗开始时，场上算力最高的人形添加一层<color=#00D3FF> 巨像化</color>，周围的单位提升{0}%的算力",
+      "DescribeLv": "战斗开始时，场上算力最高的人形添加一层<color=#00D3FF> 巨像化</color>，周围的单位提升{0}%的算力",
+      "Formula": [
+        512
+      ],
+      "FormulaArg": [
+        200
+      ],
+      "FormulaArg2": [
+        200
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_92079",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 92080,
+      "Name": "怪力巨像",
+      "Describe": "战斗开始时，场上攻击力最高的人形添加一层<color=#00D3FF> 巨像化</color>，周围的单位提升该{0}%的攻击力",
+      "DescribeLv": "战斗开始时，场上攻击力最高的人形添加一层<color=#00D3FF> 巨像化</color>，周围的单位提升该{0}%的攻击力",
+      "Formula": [
+        512
+      ],
+      "FormulaArg": [
+        200
+      ],
+      "FormulaArg2": [
+        200
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_92080",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 92081,
+      "Name": "零焰灼烧",
+      "Describe": "我方算力提升{0}%,敌人每受到{1}次非衍生算量伤害，添加1层<Color=#ed372e>零焰</color>，触发间隔1秒",
+      "DescribeLv": "我方算力提升{0}%,敌人每受到{1}次非衍生算量伤害，添加1层<Color=#ed372e>零焰</color>，触发间隔1秒",
+      "Formula": [
+        512,
+        504,
+        504
+      ],
+      "FormulaArg": [
+        200,
+        2,
+        1
+      ],
+      "FormulaArg2": [
+        100,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_92081",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 92082,
+      "Name": "血脉贯刺",
+      "Describe": "我方攻击力提升{0}%，敌人每受到{1}次非衍生物理伤害，添加1层<Color=#ed372e>失血</color>，触发间隔1秒",
+      "DescribeLv": "我方攻击力提升{0}%，敌人每受到{1}次非衍生物理伤害，添加1层<Color=#ed372e>失血</color>，触发间隔1秒",
+      "Formula": [
+        512,
+        504,
+        504
+      ],
+      "FormulaArg": [
+        200,
+        3,
+        1
+      ],
+      "FormulaArg2": [
+        100,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_92082",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 92083,
+      "Name": "血髓溃坏",
+      "Describe": "开场时为敌方所有单位添加{0}层<Color=#ed372e>失血</color>。敌人<Color=#ed372e>失血</color>层数如果大于{1}层，扣除{2}层<Color=#ed372e>失血</color>，并造成{3}%场上最高攻击力的物理衍生伤害",
+      "DescribeLv": "开场时为敌方所有单位添加{0}层<Color=#ed372e>失血</color>。敌人<Color=#ed372e>失血</color>层数如果大于{1}层，扣除{2}层<Color=#ed372e>失血</color>，并造成{3}%场上最高攻击力的物理衍生伤害",
+      "Formula": [
+        504,
+        504,
+        504,
+        512
+      ],
+      "FormulaArg": [
+        3,
+        8,
+        2,
+        1500
+      ],
+      "FormulaArg2": [
+        0,
+        0,
+        0,
+        750
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_92083",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 92084,
+      "Name": "零焰黏附",
+      "Describe": "开场时为敌方所有单位添加{0}层<Color=#ed372e>零焰</color>。敌人<Color=#ed372e>零焰</color>层数如果大于{1}层，扣除{2}层<Color=#ed372e>零焰</color>，并造成{3}%场上最高算力的算量衍生伤害",
+      "DescribeLv": "开场时为敌方所有单位添加{0}层<Color=#ed372e>零焰</color>。敌人<Color=#ed372e>零焰</color>层数如果大于{1}层，扣除{2}层<Color=#ed372e>零焰</color>，并造成{3}%场上最高算力的算量衍生伤害",
+      "Formula": [
+        504,
+        504,
+        504,
+        512
+      ],
+      "FormulaArg": [
+        3,
+        8,
+        2,
+        1500
+      ],
+      "FormulaArg2": [
+        0,
+        0,
+        0,
+        750
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_92084",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 92085,
+      "Name": "抗性减损",
+      "Describe": "每层<Color=#ed372e>零焰</color>削弱敌方{0}%算量防御，每层<Color=#ed372e>失血</color>削弱敌方{1}%物理防御",
+      "DescribeLv": "每层<Color=#ed372e>零焰</color>削弱敌方{0}%算量防御，每层<Color=#ed372e>失血</color>削弱敌方{1}%物理防御",
+      "Formula": [
+        512,
+        512
+      ],
+      "FormulaArg": [
+        10,
+        10
+      ],
+      "FormulaArg2": [
+        10,
+        10
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_92085",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 92086,
+      "Name": "弱体侵食",
+      "Describe": "人形技能吸血增加{0}%，目标身上每层<Color=#ed372e>失血</color>/<Color=#ed372e>零焰</color>额外提供{1}%的技能吸血效果",
+      "DescribeLv": "人形技能吸血增加{0}%，目标身上每层<Color=#ed372e>失血</color>/<Color=#ed372e>零焰</color>额外提供{1}%的技能吸血效果",
+      "Formula": [
+        512,
+        512
+      ],
+      "FormulaArg": [
+        80,
+        4
+      ],
+      "FormulaArg2": [
+        40,
+        3
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_92086",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 92087,
+      "Name": "零焰溅灼",
+      "Describe": "人形受到伤害时，有{0}%概率为伤害来源增加1层<Color=#ed372e>零焰</color>，触发间隔1秒。人形受到拥有来自<Color=#ed372e>零焰</color>的敌方伤害下降{1}%",
+      "DescribeLv": "人形受到伤害时，有{0}%概率为伤害来源增加1层<Color=#ed372e>零焰</color>，触发间隔1秒。人形受到拥有来自<Color=#ed372e>零焰</color>的敌方伤害下降{1}%",
+      "Formula": [
+        512,
+        512
+      ],
+      "FormulaArg": [
+        300,
+        150
+      ],
+      "FormulaArg2": [
+        0,
+        75
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_92087",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 92088,
+      "Name": "亡者染厄",
+      "Describe": "敌方死亡时，将身上的debuff转移给其他所有敌人",
+      "DescribeLv": "敌方死亡时，将身上的debuff转移给其他所有敌人",
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_92088",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 92089,
+      "Name": "速袭战术",
+      "Describe": "人形每次移动结束时，下{0}次普攻伤害提升{1}%",
+      "DescribeLv": "人形每次移动结束时，下{0}次普攻伤害提升{1}%",
+      "Formula": [
+        504,
+        512
+      ],
+      "FormulaArg": [
+        3,
+        500
+      ],
+      "FormulaArg2": [
+        1,
+        250
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_92089",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 92090,
+      "Name": "迅闪霰射",
+      "Describe": "我方闪避后，攻速上升{1}%\\n闪避近战人形获得二连击效果，远程人形获得分裂箭效果。",
+      "DescribeLv": "我方闪避后，攻速上升{1}%\\n闪避近战人形获得二连击效果，远程人形获得分裂箭效果。",
+      "Formula": [
+        506,
+        512
+      ],
+      "FormulaArg": [
+        75,
+        500
+      ],
+      "FormulaArg2": [
+        0,
+        500
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_92090",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 92091,
+      "Name": "巨像重振",
+      "Describe": "终结技释放后，如果释放人形是巨人，立即返还层数X{0}%的终结技充能",
+      "DescribeLv": "终结技释放后，如果释放人形是巨人，立即返还层数X{0}%的终结技充能",
+      "Formula": [
+        512
+      ],
+      "FormulaArg": [
+        30
+      ],
+      "FormulaArg2": [
+        15
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_92091",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
       "Id": 93002,
       "Name": "防卫特化",
       "Describe": "全体最大生命值提升{2}%，受到伤害降低{3}%，每{1}秒获得{0}%最大生命值护盾",
@@ -30455,6 +32494,174 @@
         0
       ],
       "LuaScript": "FunctionSkill.bs_15109",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 93040,
+      "Name": "神化仪典",
+      "Describe": "战斗开始时，根据缓存币数量为玩家算力最高、攻击最高的人形添加<color=#00D3FF> 巨像化</color>，每{0}缓存币添加{1}层<color=#00D3FF> 巨像化</color>。",
+      "DescribeLv": "战斗开始时，根据缓存币数量为玩家算力最高、攻击最高的人形添加<color=#00D3FF> 巨像化</color>，每{0}缓存币添加{1}层<color=#00D3FF> 巨像化</color>。",
+      "Formula": [
+        504,
+        504
+      ],
+      "FormulaArg": [
+        50,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_93040",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 93041,
+      "Name": "残虐振激",
+      "Describe": "敌方单位死亡时，如果有<Color=#ed372e>失血</color>，则击杀者攻速上升{0}%,持续{1}s；如果有<Color=#ed372e>零焰</color>，则击杀者自动技能充能{2}%",
+      "DescribeLv": "敌方单位死亡时，如果有<Color=#ed372e>失血</color>，则击杀者攻速上升{0}%,持续{1}秒；如果有<Color=#ed372e>零焰</color>，则击杀者自动技能充能{2}%",
+      "Formula": [
+        512,
+        506,
+        512
+      ],
+      "FormulaArg": [
+        1200,
+        120,
+        750
+      ],
+      "FormulaArg2": [
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_93041",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 93042,
+      "Name": "挫折应激",
+      "Describe": "敌方的攻击被闪避{0}次后，敌方所有的debuff效果都增加{1}层。",
+      "DescribeLv": "敌方的攻击被闪避{0}次后，敌方所有的debuff效果都增加{1}层。",
+      "Formula": [
+        504,
+        504
+      ],
+      "FormulaArg": [
+        2,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_93042",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 93043,
+      "Name": "怨魂化身",
+      "Describe": "友方单位死亡时，召唤一个友军南瓜怪（弱化版，按算力来或者生命）。（该效果对南瓜怪自身不生效）",
+      "DescribeLv": "友方单位死亡时，召唤一个友军南瓜怪（弱化版，按算力来或者生命）。（该效果对南瓜怪自身不生效）",
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_93043",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 93044,
+      "Name": "巨像赐力",
+      "Describe": "终结技如果击杀了一名敌人，立即为终结技释放人形增加{0}层<color=#00D3FF> 巨像化</color>，返还{1}%终结技充能",
+      "DescribeLv": "终结技如果击杀了一名敌人，立即为终结技释放人形增加{0}层<color=#00D3FF> 巨像化</color>，返还{1}%终结技充能",
+      "Formula": [
+        504,
+        512
+      ],
+      "FormulaArg": [
+        1,
+        400
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_93044",
       "MoveTargetAi": 1001,
       "SkillRange": 10
     },
@@ -32824,6 +35031,157 @@
       "MoveTargetAi": 10001,
       "SkillRange": 10,
       "FuncHeroid": 1008
+    },
+    {
+      "Id": 100804,
+      "Name": "云端特调+",
+      "Describe": "普攻会<Color=#44b164>治疗</color>其他友方并添加<Color=#44b163>防御</color>\n<Color=#FA8072>「武装印记Ⅰ」</color>普攻能够以自己为目标；普攻有概率使自身攻速提升",
+      "DescribeLv": "普攻将为生命值百分比最低的其他友方<Color=#44b164>治疗</color>{0}%算力的生命值，并添加<Color=#44b163>防御</color>，持续{1}秒\n<Color=#FA8072>「武装印记Ⅰ」</color>普攻能够以自己为目标；普攻有{2}%概率使自身攻速提升{4}%，持续{3}秒",
+      "Formula": [
+        507,
+        506,
+        507,
+        506,
+        507
+      ],
+      "FormulaArg": [
+        500,
+        45,
+        500,
+        60,
+        300
+      ],
+      "FormulaArg2": [
+        40,
+        0,
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "Icon": "gin_passive",
+      "TypeColor": 2,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "RoleSkill.100804_GinPassive"
+    },
+    {
+      "Id": 100805,
+      "Name": "云端特调++",
+      "Describe": "普攻会<Color=#44b164>治疗</color>其他友方并添加<Color=#44b163>防御</color>\n<Color=#FA8072>「武装印记Ⅰ」</color>普攻能够以自己为目标；普攻有概率使自身攻速提升\n<Color=#FA8072>「武装印记Ⅱ」</color>普攻治疗倍率额外提升，目标在50%生命值以下时，治疗量额外提升",
+      "DescribeLv": "普攻将为生命值百分比最低的其他友方<Color=#44b164>治疗</color>{0}%算力的生命值，并添加<Color=#44b163>防御</color>，持续{1}秒\n<Color=#FA8072>「武装印记Ⅰ」</color>普攻能够以自己为目标；普攻有{2}%概率使自身攻速提升{4}%，持续{3}秒\n<Color=#FA8072>「武装印记Ⅱ」</color>普攻治疗基础倍率提升{5}%，目标在50%生命值以下时，治疗量提升{6}%",
+      "Formula": [
+        507,
+        506,
+        507,
+        506,
+        507,
+        507,
+        507
+      ],
+      "FormulaArg": [
+        500,
+        45,
+        500,
+        60,
+        300,
+        150,
+        350
+      ],
+      "FormulaArg2": [
+        40,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "Icon": "gin_passive",
+      "TypeColor": 2,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "RoleSkill.100805_GinPassive"
+    },
+    {
+      "Id": 100806,
+      "Name": "微醺夜宴+",
+      "AudioSkillId": 100804,
+      "Describe": "普攻目标数将扩大至除自己外的其他友方，且自身暴击率提升\n<Color=#FA8072>「武装印记Ⅲ」</color>使所有友方人形单位提升大量攻击力",
+      "DescribeLv": "普攻所有其他友方，且自身暴击率提升{1}%，持续{0}秒\n<Color=#FA8072>「武装印记Ⅲ」</color>使所有友方人形单位提升{3}%攻击力，持续{2}秒",
+      "Formula": [
+        506,
+        507,
+        506,
+        507
+      ],
+      "FormulaArg": [
+        57,
+        300,
+        120,
+        400
+      ],
+      "FormulaArg2": [
+        7,
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "Icon": "gin_skill",
+      "TypeColor": 4,
+      "Priority": 500,
+      "SkillTag": 1,
+      "IsBreakComAtk": true,
+      "CdTime": 180,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1,
+        6,
+        10
+      ],
+      "StartCdRankNum": [
+        75,
+        90,
+        105
+      ],
+      "LuaScript": "RoleSkill.100806_GinSkill",
+      "MoveTargetAi": 8,
+      "SkillRange": 1
     },
     {
       "Id": 100900,
@@ -44253,6 +46611,167 @@
       "MoveTargetAi": 10001,
       "SkillRange": 10,
       "ManualMode": true
+    },
+    {
+      "Id": 106700,
+      "Name": "卡斯卡迪娅-普攻",
+      "Icon": "HeroSkillAttack1",
+      "Priority": 10,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "CommonAttackSkill.106700_CascadiaAttack",
+      "MoveTargetAi": 10001,
+      "BreakNum": 3
+    },
+    {
+      "Id": 106701,
+      "Name": "碎砾螺钻",
+      "Describe": "造成伤害无视目标一定比例的防御；每当自身进行数次普攻，机械狗“慢慢”就会攻击一次当前目标，对目标额外造成<Color=#ed362e>物理伤害</color>，并且对其附加一层「崩解」\n「崩解」：每秒造成基于卡斯卡迪娅攻击力的<Color=#ed362e>物理伤害「衍生」</color>，可叠加{5}层，持续一段时间，持续期间目标受到「减疗」效果\n「减疗」：受到治疗效果降低。不可叠加",
+      "DescribeLv": "造成伤害无视目标{0}%防御；每当自身进行{1}次普攻，机械狗“慢慢”就会攻击一次当前目标，对目标造成额外<Color=#ed362e>{2}%攻击力的物理伤害</color>，并且对其附加一层「崩解」\n「崩解」：每秒造成<Color=#ed362e>卡斯卡迪娅{3}%攻击力的物理伤害「衍生」</color>，可叠加{5}层，持续{6}秒，持续期间目标受到「减疗」效果\n「减疗」：受到治疗效果降低{4}%。不可叠加",
+      "Formula": [
+        507,
+        504,
+        507,
+        507,
+        507,
+        504,
+        506
+      ],
+      "FormulaArg": [
+        100,
+        2,
+        250,
+        225,
+        500,
+        3,
+        120
+      ],
+      "FormulaArg2": [
+        12,
+        0,
+        20,
+        18,
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "Icon": "cascadia_passive",
+      "TypeColor": 1,
+      "Priority": 500,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "RoleSkill.106701_CascadiaPassive"
+    },
+    {
+      "Id": 106702,
+      "Name": "链锯钢犬",
+      "Describe": "拿起机械狗“慢慢”，使其对目标持续进行切割，期间造成数次<Color=#ed362e>物理伤害</color>，目标身上每有一层【崩解】，造成伤害额外增加，首次及末次伤害分别对目标附加{3}层【崩解】，释放期间卡斯卡迪娅持续霸体状态",
+      "DescribeLv": "拿起机械狗“慢慢”，使其对目标持续进行切割，期间造成{0}次<Color=#ed362e>{1}%攻击力的物理伤害</color>，目标身上每有一层【崩解】，每次伤害额外附加<Color=#ed362e>{2}%攻击力的物理伤害</color>，首次及末次伤害分别对目标附加{3}层【崩解】，释放期间卡斯卡迪娅持续霸体状态",
+      "Formula": [
+        504,
+        507,
+        507,
+        504
+      ],
+      "FormulaArg": [
+        4,
+        625,
+        200,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        50,
+        16,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "Icon": "cascadia_skill",
+      "TypeColor": 1,
+      "Priority": 500,
+      "SkillTag": 1,
+      "IsBreakComAtk": true,
+      "CdTime": 180,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1,
+        6,
+        10
+      ],
+      "StartCdRankNum": [
+        75,
+        90,
+        105
+      ],
+      "LuaScript": "RoleSkill.106702_CascadiaSkill",
+      "MoveTargetAi": 10001,
+      "SkillRange": 1
+    },
+    {
+      "Id": 106703,
+      "Name": "撼岩惊震",
+      "Describe": "电钻伸长，对前方3格距离中的单位造成<Color=#ed362e>物理伤害</color>，并附加{1}层【崩解】",
+      "DescribeLv": "电钻伸长，对前方3格距离中的单位造成<Color=#ed362e>{0}%攻击力的物理伤害</color>，并附加{1}层【崩解】",
+      "Formula": [
+        512,
+        504
+      ],
+      "FormulaArg": [
+        9000,
+        3
+      ],
+      "FormulaArg2": [
+        2250,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "cascadia_ultimate",
+      "TypeColor": 1,
+      "SkillMovie": "ultskill1067",
+      "Priority": 500,
+      "SkillTag": 3,
+      "IsBreakComAtk": true,
+      "CdTime": 450,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        450
+      ],
+      "LuaScript": "RoleUltSkill.106703_CascadiaUlt",
+      "MoveTargetAi": 10001,
+      "SkillRange": 3,
+      "ManualMode": true,
+      "FuncHeroid": 1067
     },
     {
       "Id": 200001,
@@ -63405,6 +65924,108 @@
       "SkillRange": 10
     },
     {
+      "Id": 4001038,
+      "Name": "巨像·增辉",
+      "Describe": "所有<color=#00D3FF> 巨像化</color>的人形在击杀敌人时，额外添加一层<color=#00D3FF> 巨像化</color>",
+      "DescribeLv": "所有<color=#00D3FF> 巨像化</color>的人形在击杀敌人时，额外添加{0}层<color=#00D3FF> 巨像化</color>",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        1
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        0
+      ],
+      "TypeColor": 1,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4001038",
+      "MoveTargetAi": 10001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4001039,
+      "Name": "增速场域",
+      "Describe": "站在快攻地格上的单位，攻击上升{0}%，同时为全体添加持续{1}秒的攻速上升{2}%",
+      "DescribeLv": "站在快攻地格上的单位，攻击上升{0}%，同时为全体添加持续{1}秒的攻速上升{2}%",
+      "Formula": [
+        512,
+        506,
+        512
+      ],
+      "FormulaArg": [
+        300,
+        75,
+        300
+      ],
+      "FormulaArg2": [
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        0,
+        0,
+        0
+      ],
+      "TypeColor": 1,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4001039",
+      "MoveTargetAi": 10001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4001040,
+      "Name": "巨像·惩戒",
+      "Describe": "巨人人形的物理伤害为目标造成一层<Color=#ed372e>失血</color>，算力伤害造成一层<Color=#ed372e>零焰</color>",
+      "DescribeLv": "巨人人形的物理伤害为目标造成{0}层<Color=#ed372e>失血</color>，算力伤害造成{1}层<Color=#ed372e>零焰</color>",
+      "Formula": [
+        504,
+        504
+      ],
+      "FormulaArg": [
+        1,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        0,
+        0
+      ],
+      "TypeColor": 1,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4001040",
+      "MoveTargetAi": 10001,
+      "SkillRange": 10
+    },
+    {
       "Id": 4001101,
       "Name": "振作",
       "Describe": "开战时我方生命值百分比最少的单位恢复{0}%最大生命值",
@@ -63925,6 +66546,70 @@
         0
       ],
       "LuaScript": "FunctionSkill.94115_WarChessBuff7",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4001133,
+      "Name": "巨像国度",
+      "Describe": "战斗开始时，所有单位添加{0}层巨人化",
+      "DescribeLv": "战斗开始时，所有单位添加{0}层巨人化",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        1
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        0
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 100,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4001133",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4001134,
+      "Name": "矮人绝罚",
+      "Describe": "使用终结技的时候，敌人双防下降20%，并且体型缩小，可叠加4层",
+      "DescribeLv": "使用终结技的时候，敌人双防下降{0}%，并且体型缩小，可叠加4层",
+      "Formula": [
+        512
+      ],
+      "FormulaArg": [
+        200
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 100,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4001134",
       "MoveTargetAi": 1001,
       "SkillRange": 10
     },
@@ -64572,6 +67257,74 @@
       "SkillRange": 10
     },
     {
+      "Id": 4001243,
+      "Name": "巨像·恐慑",
+      "Describe": "<color=#00D3FF> 巨像化</color>人形在攻击敌方的时，敌方物理防御和算量防御下降{0}%，并且减小对方体型，持续{1}秒",
+      "DescribeLv": "<color=#00D3FF> 巨像化</color>人形在攻击敌方的时，敌方物理防御和算量防御下降{0}%，并且减小对方体型，持续{1}秒",
+      "Formula": [
+        512,
+        506
+      ],
+      "FormulaArg": [
+        200,
+        75
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        0,
+        0
+      ],
+      "TypeColor": 1,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4001224",
+      "MoveTargetAi": 10001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4001244,
+      "Name": "侵毁重奏",
+      "Describe": "每次对敌人施加<Color=#ed372e>失血</color>时，额外施加{0}层<Color=#ed372e>零焰</color>；每次施加<Color=#ed372e>零焰</color>时，额外施加{1}层<Color=#ed372e>失血</color>",
+      "DescribeLv": "每次对敌人施加<Color=#ed372e>失血</color>时，额外施加{0}层<Color=#ed372e>零焰</color>；每次施加<Color=#ed372e>零焰</color>时，额外施加{1}层<Color=#ed372e>失血</color>",
+      "Formula": [
+        504,
+        504
+      ],
+      "FormulaArg": [
+        1,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        0,
+        0
+      ],
+      "TypeColor": 1,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        1
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4001225",
+      "MoveTargetAi": 10001,
+      "SkillRange": 10
+    },
+    {
       "Id": 4001405,
       "Name": "添加护盾地格效果",
       "Describe": "开场全体我方/敌人添加最大生命值{0}%的护盾值",
@@ -65139,6 +67892,1429 @@
       ],
       "LuaScript": "FunctionSkill.4010416_XmasTech16",
       "MoveTargetAi": 10001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010443,
+      "Name": "巨像进击",
+      "Describe": "人形如果击杀了一名非召唤物敌人，施加{0}层<color=#00D3FF> 巨像化</color>",
+      "DescribeLv": "人形如果击杀了一名非召唤物敌人，施加{0}层<color=#00D3FF> 巨像化</color>",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        2
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4010417",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010444,
+      "Name": "数序杀戮",
+      "Describe": "玩家队伍作战效能如果高于敌方{0}%，直接击杀敌人",
+      "DescribeLv": "玩家队伍作战效能如果高于敌方{0}%，直接击杀敌人",
+      "Formula": [
+        512
+      ],
+      "FormulaArg": [
+        50
+      ],
+      "FormulaArg2": [
+        50
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4010418",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010445,
+      "Name": "失血策略",
+      "Describe": "人形的物理攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>失血</color>，触发间隔1秒",
+      "DescribeLv": "人形的物理攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>失血</color>，触发间隔1秒",
+      "Formula": [
+        512,
+        504
+      ],
+      "FormulaArg": [
+        40,
+        1
+      ],
+      "FormulaArg2": [
+        40,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_4010419",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010446,
+      "Name": "易燃装药",
+      "Describe": "人形的算量攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>零焰</color>，触发间隔1秒",
+      "DescribeLv": "人形的算量攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>零焰</color>，触发间隔1秒",
+      "Formula": [
+        512,
+        504
+      ],
+      "FormulaArg": [
+        50,
+        1
+      ],
+      "FormulaArg2": [
+        50,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_4010420",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010447,
+      "Name": "零焰进击",
+      "Describe": "我方人形触发闪避时，对伤害来源造成自身算力{0}%的衍生算力伤害，并添加{1}层<Color=#ed372e>零焰</color>",
+      "DescribeLv": "我方人形触发闪避时，对伤害来源造成自身算力{0}%的衍生算力伤害，并添加{1}层<Color=#ed372e>零焰</color>",
+      "HurtType": 1,
+      "Formula": [
+        512,
+        504
+      ],
+      "FormulaArg": [
+        300,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4010421",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010448,
+      "Name": "唤魔强化",
+      "Describe": "我方召唤物上场时，所有召唤物伤害提高{0}%（上限4层），召唤物的攻击有{1}%概率为敌人添加{2}层<Color=#ed372e>失血</color>",
+      "DescribeLv": "我方召唤物上场时，所有召唤物伤害提高{0}%（上限4层），召唤物的攻击有{1}%概率为敌人添加{2}层<Color=#ed372e>失血</color>",
+      "Formula": [
+        512,
+        512,
+        504
+      ],
+      "FormulaArg": [
+        200,
+        400,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4010422",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010449,
+      "Name": "避难策略",
+      "Describe": "我方人形首次生命值低于{0}%时，闪避率提升{1}%",
+      "DescribeLv": "我方人形首次生命值低于{0}%时，闪避率提升{1}%",
+      "Formula": [
+        512,
+        512
+      ],
+      "FormulaArg": [
+        800,
+        100
+      ],
+      "FormulaArg2": [
+        0,
+        50
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4010423",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010450,
+      "Name": "零焰闪避",
+      "Describe": "我方触发闪避时为来源添加{0}层<Color=#ed372e>零焰</color>，每5秒触发一次",
+      "DescribeLv": "我方触发闪避时为来源添加{0}层<Color=#ed372e>零焰</color>，每5秒触发一次",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        1
+      ],
+      "FormulaArg2": [
+        1
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 75,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        75
+      ],
+      "LuaScript": "FunctionSkill.bs_4010424",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010451,
+      "Name": "零焰闪避·回溅",
+      "Describe": "人形闪避{0}次后，下{1}次普攻伤害提升{2}%，对存在<Color=#ed372e>零焰</color>的敌人普攻额外提升{3}%",
+      "DescribeLv": "人形闪避{0}次后，下{1}次普攻伤害提升{2}%，对存在<Color=#ed372e>零焰</color>的敌人普攻额外提升{3}%",
+      "Formula": [
+        504,
+        504,
+        512,
+        512
+      ],
+      "FormulaArg": [
+        3,
+        5,
+        500,
+        500
+      ],
+      "FormulaArg2": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4010425",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010452,
+      "Name": "唤魔亢奋",
+      "Describe": "我方召唤物被召唤的前{0}秒伤害提升{1}%并且每次攻击都添加{2}层<Color=#ed372e>失血</color>",
+      "DescribeLv": "我方召唤物被召唤的前{0}秒伤害提升{1}%并且每次攻击都添加{2}层<Color=#ed372e>失血</color>",
+      "Formula": [
+        506,
+        512,
+        504
+      ],
+      "FormulaArg": [
+        150,
+        400,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4010426",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010453,
+      "Name": "龙狩",
+      "Describe": "我方人形对boss和精英伤害↑{0}%",
+      "DescribeLv": "我方人形对boss和精英伤害↑{0}%",
+      "Formula": [
+        512
+      ],
+      "FormulaArg": [
+        100
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.20006_DragonHunt",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010457,
+      "Name": "失血策略",
+      "Describe": "人形的物理攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>失血</color>，触发间隔1秒",
+      "DescribeLv": "人形的物理攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>失血</color>，触发间隔1秒",
+      "Formula": [
+        512,
+        504
+      ],
+      "FormulaArg": [
+        40,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_4010419",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010458,
+      "Name": "失血策略",
+      "Describe": "人形的物理攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>失血</color>，触发间隔1秒",
+      "DescribeLv": "人形的物理攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>失血</color>，触发间隔1秒",
+      "Formula": [
+        512,
+        504
+      ],
+      "FormulaArg": [
+        80,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_4010419",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010459,
+      "Name": "失血策略",
+      "Describe": "人形的物理攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>失血</color>，触发间隔1秒",
+      "DescribeLv": "人形的物理攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>失血</color>，触发间隔1秒",
+      "Formula": [
+        512,
+        504
+      ],
+      "FormulaArg": [
+        120,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_4010419",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010460,
+      "Name": "失血策略",
+      "Describe": "人形的物理攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>失血</color>，触发间隔1秒",
+      "DescribeLv": "人形的物理攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>失血</color>，触发间隔1秒",
+      "Formula": [
+        512,
+        504
+      ],
+      "FormulaArg": [
+        160,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_4010419",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010461,
+      "Name": "失血策略",
+      "Describe": "人形的物理攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>失血</color>，触发间隔1秒",
+      "DescribeLv": "人形的物理攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>失血</color>，触发间隔1秒",
+      "Formula": [
+        512,
+        504
+      ],
+      "FormulaArg": [
+        200,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_4010419",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010462,
+      "Name": "易燃装药",
+      "Describe": "人形的算量攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>零焰</color>，触发间隔1秒",
+      "DescribeLv": "人形的算量攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>零焰</color>，触发间隔1秒",
+      "Formula": [
+        512,
+        504
+      ],
+      "FormulaArg": [
+        50,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_4010420",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010463,
+      "Name": "易燃装药",
+      "Describe": "人形的算量攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>零焰</color>，触发间隔1秒",
+      "DescribeLv": "人形的算量攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>零焰</color>，触发间隔1秒",
+      "Formula": [
+        512,
+        504
+      ],
+      "FormulaArg": [
+        100,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_4010420",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010464,
+      "Name": "易燃装药",
+      "Describe": "人形的算量攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>零焰</color>，触发间隔1秒",
+      "DescribeLv": "人形的算量攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>零焰</color>，触发间隔1秒",
+      "Formula": [
+        512,
+        504
+      ],
+      "FormulaArg": [
+        150,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_4010420",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010465,
+      "Name": "易燃装药",
+      "Describe": "人形的算量攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>零焰</color>，触发间隔1秒",
+      "DescribeLv": "人形的算量攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>零焰</color>，触发间隔1秒",
+      "Formula": [
+        512,
+        504
+      ],
+      "FormulaArg": [
+        200,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_4010420",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010466,
+      "Name": "易燃装药",
+      "Describe": "人形的算量攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>零焰</color>，触发间隔1秒",
+      "DescribeLv": "人形的算量攻击有{0}%概率为攻击目标添加{1}层<Color=#ed372e>零焰</color>，触发间隔1秒",
+      "Formula": [
+        512,
+        504
+      ],
+      "FormulaArg": [
+        250,
+        1
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 15,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        15
+      ],
+      "LuaScript": "FunctionSkill.bs_4010420",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010467,
+      "Name": "避难策略",
+      "Describe": "我方人形首次生命值低于{0}%时，闪避率提升{1}%",
+      "DescribeLv": "我方人形首次生命值低于{0}%时，闪避率提升{1}%",
+      "Formula": [
+        512,
+        512
+      ],
+      "FormulaArg": [
+        800,
+        100
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4010423",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010468,
+      "Name": "避难策略",
+      "Describe": "我方人形首次生命值低于{0}%时，闪避率提升{1}%",
+      "DescribeLv": "我方人形首次生命值低于{0}%时，闪避率提升{1}%",
+      "Formula": [
+        512,
+        512
+      ],
+      "FormulaArg": [
+        800,
+        150
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4010423",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010469,
+      "Name": "避难策略",
+      "Describe": "我方人形首次生命值低于{0}%时，闪避率提升{1}%",
+      "DescribeLv": "我方人形首次生命值低于{0}%时，闪避率提升{1}%",
+      "Formula": [
+        512,
+        512
+      ],
+      "FormulaArg": [
+        800,
+        200
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4010423",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010470,
+      "Name": "零焰闪避",
+      "Describe": "我方触发闪避时为来源添加{0}层<Color=#ed372e>零焰</color>，每5秒触发一次",
+      "DescribeLv": "我方触发闪避时为来源添加{0}层<Color=#ed372e>零焰</color>，每5秒触发一次",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        1
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 75,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        75
+      ],
+      "LuaScript": "FunctionSkill.bs_4010424",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010471,
+      "Name": "零焰闪避",
+      "Describe": "我方触发闪避时为来源添加{0}层<Color=#ed372e>零焰</color>，每5秒触发一次",
+      "DescribeLv": "我方触发闪避时为来源添加{0}层<Color=#ed372e>零焰</color>，每5秒触发一次",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        2
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 75,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        75
+      ],
+      "LuaScript": "FunctionSkill.bs_4010424",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010472,
+      "Name": "零焰闪避",
+      "Describe": "我方触发闪避时为来源添加{0}层<Color=#ed372e>零焰</color>，每5秒触发一次",
+      "DescribeLv": "我方触发闪避时为来源添加{0}层<Color=#ed372e>零焰</color>，每5秒触发一次",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        3
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 75,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        75
+      ],
+      "LuaScript": "FunctionSkill.bs_4010424",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010473,
+      "Name": "零焰闪避",
+      "Describe": "我方触发闪避时为来源添加{0}层<Color=#ed372e>零焰</color>，每5秒触发一次",
+      "DescribeLv": "我方触发闪避时为来源添加{0}层<Color=#ed372e>零焰</color>，每5秒触发一次",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        4
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 75,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        75
+      ],
+      "LuaScript": "FunctionSkill.bs_4010424",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010474,
+      "Name": "零焰闪避",
+      "Describe": "我方触发闪避时为来源添加{0}层<Color=#ed372e>零焰</color>，每5秒触发一次",
+      "DescribeLv": "我方触发闪避时为来源添加{0}层<Color=#ed372e>零焰</color>，每5秒触发一次",
+      "Formula": [
+        504
+      ],
+      "FormulaArg": [
+        5
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "CdTime": 75,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        75
+      ],
+      "LuaScript": "FunctionSkill.bs_4010424",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010475,
+      "Name": "召唤物强化",
+      "Describe": "召唤物攻速提升{0}%",
+      "DescribeLv": "召唤物攻速提升{0}%",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        200
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.4010408_XmasTech8",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010476,
+      "Name": "召唤物强化",
+      "Describe": "召唤物攻速提升{0}%",
+      "DescribeLv": "召唤物攻速提升{0}%",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        300
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.4010408_XmasTech8",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010477,
+      "Name": "召唤物强化",
+      "Describe": "召唤物攻速提升{0}%",
+      "DescribeLv": "召唤物攻速提升{0}%",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        400
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.4010408_XmasTech8",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010478,
+      "Name": "召唤物强化",
+      "Describe": "召唤物攻速提升{0}%",
+      "DescribeLv": "召唤物攻速提升{0}%",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        500
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.4010408_XmasTech8",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010479,
+      "Name": "召唤物强化",
+      "Describe": "召唤物攻速提升{0}%",
+      "DescribeLv": "召唤物攻速提升{0}%",
+      "Formula": [
+        507
+      ],
+      "FormulaArg": [
+        600
+      ],
+      "FormulaArg2": [
+        0
+      ],
+      "FormulaArg3": [
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.4010408_XmasTech8",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010480,
+      "Name": "杀伤增效-除弱",
+      "Describe": "我方全体角色对敌方生命值低于{0}%的角色伤害增加{1}%",
+      "DescribeLv": "我方全体角色对敌方生命值低于{0}%的角色伤害增加{1}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        300,
+        100
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.4010406_XmasTech6",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010481,
+      "Name": "杀伤增效-除弱",
+      "Describe": "我方全体角色对敌方生命值低于{0}%的角色伤害增加{1}%",
+      "DescribeLv": "我方全体角色对敌方生命值低于{0}%的角色伤害增加{1}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        300,
+        200
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.4010406_XmasTech6",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4010482,
+      "Name": "杀伤增效-除弱",
+      "Describe": "我方全体角色对敌方生命值低于{0}%的角色伤害增加{1}%",
+      "DescribeLv": "我方全体角色对敌方生命值低于{0}%的角色伤害增加{1}%",
+      "Formula": [
+        507,
+        507
+      ],
+      "FormulaArg": [
+        300,
+        300
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.4010406_XmasTech6",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4020001,
+      "Name": "永恒守护之剑",
+      "Describe": "每隔{0}秒，在战场敌方最密集的区域召唤一把胜利之剑，对区域内敌人造成{1}真实伤害和眩晕{2}秒",
+      "DescribeLv": "每隔{0}秒，在战场敌方最密集的区域召唤一把胜利之剑，对区域内敌人造成{1}真实伤害和眩晕{2}秒",
+      "Formula": [
+        506,
+        504,
+        506
+      ],
+      "FormulaArg": [
+        225,
+        10000,
+        75
+      ],
+      "FormulaArg2": [
+        0,
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4020001",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4020002,
+      "Name": "风暴潮汐之唤",
+      "Describe": "每隔{0}秒，召唤浪潮，将敌方强制位移并击晕{1}秒",
+      "DescribeLv": "每隔{0}秒，召唤浪潮，将敌方强制位移并击晕{1}秒",
+      "Formula": [
+        506,
+        506
+      ],
+      "FormulaArg": [
+        225,
+        75
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4020002",
+      "MoveTargetAi": 1001,
+      "SkillRange": 10
+    },
+    {
+      "Id": 4020003,
+      "Name": "黄金朝阳之佑",
+      "Describe": "我方的回能速度提高{1}%，我方释放自动技能有{0}%概率触发2次施法",
+      "DescribeLv": "我方的回能速度提高{1}%，我方释放自动技能有{0}%概率触发2次施法",
+      "Formula": [
+        512,
+        512
+      ],
+      "FormulaArg": [
+        200,
+        400
+      ],
+      "FormulaArg2": [
+        0,
+        0
+      ],
+      "FormulaArg3": [
+        1,
+        1
+      ],
+      "Icon": "CommanderSkill_2",
+      "TypeColor": 1,
+      "Priority": 300,
+      "SkillTag": 2,
+      "TotalCdFormula": 521,
+      "StartCdRank": [
+        0
+      ],
+      "StartCdRankNum": [
+        0
+      ],
+      "LuaScript": "FunctionSkill.bs_4020003",
+      "MoveTargetAi": 1001,
       "SkillRange": 10
     }
   ]

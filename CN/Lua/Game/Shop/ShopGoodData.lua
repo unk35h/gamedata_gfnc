@@ -293,7 +293,7 @@ ShopGoodData.GetWareHouseLeftCapacity = function(self)
   -- function num : 0_10 , upvalues : _ENV
   local num = (PlayerDataCenter.playerBonus):GetWarehouseCapcity(self.itemId)
   if num == 0 then
-    return -1
+    num = ((ConfigData.item)[self.itemId]).holdlimit
   end
   local specialNum = 0
   if (self.itemCfg).type == eItemType.DormFurniture then

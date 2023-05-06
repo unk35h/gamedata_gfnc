@@ -116,6 +116,12 @@ local mail = {
 [166] = {entry = 166}
 , 
 [167] = {entry = 167}
+, 
+[168] = {entry = 168}
+, 
+[169] = {entry = 169}
+, 
+[170] = {entry = 170}
 }
 local __default_values = {entry = 102, type = 0}
 local base = {__index = __default_values, __newindex = function()

@@ -10,7 +10,7 @@ end
 bs_4001031.InitSkill = function(self, isMidwaySkill)
   -- function num : 0_1 , upvalues : base, _ENV
   (base.InitSkill)(self, isMidwaySkill)
-  self:AddAfterHurtTrigger("bs_4001031_1", 1, self.OnAfterHurt, nil, nil, nil, eBattleRoleBelong.player)
+  self:AddAfterHurtTrigger("bs_4001031_1", 1, self.OnAfterHurt, nil, nil, nil, eBattleRoleBelong.player, nil, nil, nil, nil, false)
 end
 
 bs_4001031.OnAfterHurt = function(self, sender, target, skill, hurt, isMiss, isCrit, hurtType, isTriggerSet)

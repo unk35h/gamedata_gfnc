@@ -94,7 +94,7 @@ UICommonGiftSelect.__OnClickNoBtn = function(self)
     (self.__noCallback)()
   end
   ;
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UICommonGiftSelect.__OnClickBack = function(self)

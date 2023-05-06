@@ -13,7 +13,7 @@ UIWhiteDayFactoryLevelUp.OnInit = function(self)
   ;
   ((self.ui).obj_unlockItem):SetActive(false)
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_background, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_background, self, self.__OnClickClose)
 end
 
 UIWhiteDayFactoryLevelUp.InitWDFactoryLevelUp = function(self, AWDData, beforeLevelUpLevel, closeCallback)
@@ -23,7 +23,7 @@ UIWhiteDayFactoryLevelUp.InitWDFactoryLevelUp = function(self, AWDData, beforeLe
   self.beforeLevelUpLevel = beforeLevelUpLevel
   self.closeCallback = closeCallback
   if self.curLevel <= beforeLevelUpLevel then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
   self:__RefreshLevelUpUI()
 end
@@ -72,7 +72,7 @@ UIWhiteDayFactoryLevelUp.__RefreshLevelUpUI = function(self)
   end
 end
 
-UIWhiteDayFactoryLevelUp.__OnClickClose = function(self)
+UIWhiteDayFactoryLevelUp.BackAction = function(self)
   -- function num : 0_3
   if self.beforeLevelUpLevel + 1 < self.curLevel then
     self.beforeLevelUpLevel = self.beforeLevelUpLevel + 1
@@ -85,15 +85,20 @@ UIWhiteDayFactoryLevelUp.__OnClickClose = function(self)
   self:Hide()
 end
 
+UIWhiteDayFactoryLevelUp.__OnClickClose = function(self)
+  -- function num : 0_4 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIWhiteDayFactoryLevelUp.OnShow = function(self)
-  -- function num : 0_4 , upvalues : _ENV, base
-  (UIUtil.SetTopStatus)(self, self.__OnClickClose, nil, nil, nil, true)
+  -- function num : 0_5 , upvalues : _ENV, base
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack()
   ;
   (base.OnShow)(self)
 end
 
 UIWhiteDayFactoryLevelUp.OnDelete = function(self)
-  -- function num : 0_5 , upvalues : base
+  -- function num : 0_6 , upvalues : base
   (base.OnDelete)(self)
 end
 

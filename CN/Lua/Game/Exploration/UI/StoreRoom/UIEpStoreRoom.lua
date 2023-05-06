@@ -392,7 +392,7 @@ UIEpStoreRoom.OnStoreSkipClicked = function(self)
     end
     win:ShowTextBoxWithYesAndNo(ConfigData:GetTipContent(TipContent.exploration_Store_Exit), function()
       -- function num : 0_19_0_0 , upvalues : _ENV, self
-      (UIUtil.PopFromBackStack)()
+      (UIUtil.PopFromBackStackByUiTab)(self)
       ;
       (self.storeCtrl):SendStoreQuit()
     end

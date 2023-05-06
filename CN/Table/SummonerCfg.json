@@ -1717,6 +1717,28 @@
       "ContainFacadeComp": true
     },
     {
+      "Id": 1022,
+      "Name": "杰克怨灵",
+      "Info": "杰克怨灵",
+      "SrcId": 2098,
+      "Intensity": 1,
+      "Career": 3,
+      "Camp": 3,
+      "Range": 1,
+      "MoveSpd": 300,
+      "EnemySkill": [
+        209601,
+        209602
+      ],
+      "MonsterTag": [
+        5
+      ],
+      "IsShowStateBar": true,
+      "IsShowInfoBar": true,
+      "ContainAction": true,
+      "ContainFacadeComp": true
+    },
+    {
       "Id": 10014,
       "Name": "骨龙-塔",
       "SrcId": 203300,

@@ -10,7 +10,7 @@ local activity_hero_ui_config = {
 frame_color = {207, 46, 107}
 , mission_panel_name = 72082, quest_skin_type = 2, reward_panel_name = 305923}
 , 
-[10] = {background_skin = 305902, challenge_icon = "UI_CharDunClothoChallengeIcon", 
+[10] = {background_res = "CharDunClothoBG", background_skin = 305902, challenge_icon = "UI_CharDunClothoChallengeIcon", 
 frame_color = {147, 21, 22}
 , main_stage_icon = "UI_CharDunClothoMianStoryIcon", mission_panel_name = 129536, quest_skin = 305901, reward_panel_name = 355762, skin_type = 1}
 , 
@@ -50,11 +50,23 @@ main_top_size = {2600, 128}
 background_text_point = {729.8, 188.5}
 , 
 background_text_size = {272.6, 136.3}
-, challenge_icon = "UI_CharDunErikaChallengeIcon", main_stage_icon = "UI_CharDunErikaMianStoryIcon", mission_panel_name = 88715, quest_skin = 306601}
+, challenge_icon = "UI_CharDunErikaChallengeIcon", main_stage_icon = "UI_CharDunErikaMianStoryIcon", mission_panel_name = 88715, quest_skin = 306601, reward_panel_name = 228152}
+, 
+[16] = {activity_id = 16, animation_prefab = "UI_CharDunAnimationCascadia", background_skin = 306701, background_text = "CharDunCascadiaName", 
+background_text_point = {660, 297}
+, 
+background_text_size = {501.5, 128}
+, challenge_icon = "UI_CharDunCascadiaChallengeIcon", 
+frame_color = {241, 85, 2}
+, main_down_res = "CharDunCascadiaDown", 
+main_down_size = {2600, 40}
+, main_stage_icon = "UI_CharDunCascadiaMianStoryIcon", main_top_res = "CharDunCascadiaUp", 
+main_top_size = {2600, 104}
+, mission_panel_name = 121110, quest_skin = 306701, skin_type = 1}
 }
-local __default_values = {activity_id = 10, background_res = "CharDunClothoBG", background_skin = 305801, background_text = "CharDunClothoName", background_text_point = __rt_3, background_text_size = __rt_4, challenge_icon = "UI_CharDun416ChallengeIcon", 
+local __default_values = {activity_id = 10, animation_prefab = "", background_res = "CharDunCascadiaBG", background_skin = 305801, background_text = "CharDunClothoName", background_text_point = __rt_3, background_text_size = __rt_4, challenge_icon = "UI_CharDun416ChallengeIcon", 
 frame_color = {112, 51, 139}
-, main_down_res = "", main_down_size = __rt_1, main_stage_icon = "UI_CharDun416MianStoryIcon", main_title_color = __rt_2, main_top_res = "", main_top_size = __rt_1, mission_panel_name = 108758, quest_skin = 305801, quest_skin_type = 1, reward_panel_name = 228152, rule_icon_color = __rt_2, shop_title_color = __rt_2, skin_type = 2}
+, main_down_res = "", main_down_size = __rt_1, main_stage_icon = "UI_CharDun416MianStoryIcon", main_title_color = __rt_2, main_top_res = "", main_top_size = __rt_1, mission_panel_name = 108758, quest_skin = 305801, quest_skin_type = 1, reward_panel_name = 182515, rule_icon_color = __rt_2, shop_title_color = __rt_2, skin_type = 2}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")

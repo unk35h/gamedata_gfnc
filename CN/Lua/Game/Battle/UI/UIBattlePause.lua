@@ -244,7 +244,7 @@ UIBattlePause.__OnClickRestart = function(self)
     win:StopUseChipEffect()
   end
   ;
-  (UIUtil.PopFromBackStack)()
+  (UIUtil.PopFromBackStackByUiTab)(self)
 end
 
 UIBattlePause.__OnClickRestartEp = function(self)
@@ -254,13 +254,13 @@ UIBattlePause.__OnClickRestartEp = function(self)
     return 
   end
   UIManager:ShowWindowAsync(UIWindowTypeID.MessageCommon, function(win)
-    -- function num : 0_7_0 , upvalues : _ENV
+    -- function num : 0_7_0 , upvalues : _ENV, self
     if win == nil then
       return 
     end
     win:ShowTextBoxWithYesAndNo(ConfigData:GetTipContent(198), function()
-      -- function num : 0_7_0_0 , upvalues : _ENV
-      (UIUtil.PopFromBackStack)()
+      -- function num : 0_7_0_0 , upvalues : _ENV, self
+      (UIUtil.PopFromBackStackByUiTab)(self)
       ExplorationManager:ReqRestartEpFloor()
     end
 )
@@ -279,7 +279,7 @@ end
 
 UIBattlePause.__OnClickContinue = function(self)
   -- function num : 0_9 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIBattlePause.__OnClickSetting = function(self)
@@ -311,15 +311,15 @@ UIBattlePause.__OnClickInterrupt = function(self)
     return 
   end
   UIManager:ShowWindowAsync(UIWindowTypeID.MessageCommon, function(win)
-    -- function num : 0_12_0 , upvalues : _ENV
+    -- function num : 0_12_0 , upvalues : _ENV, self
     if win == nil then
       return 
     end
     win:ShowTextBoxWithYesAndNo(ConfigData:GetTipContent(197), function()
-      -- function num : 0_12_0_0 , upvalues : _ENV
-      (UIUtil.PopFromBackStack)()
+      -- function num : 0_12_0_0 , upvalues : _ENV, self
+      (UIUtil.PopFromBackStackByUiTab)(self)
       ExplorationManager:ExitExploration((Consts.SceneName).Main)
-      -- DECOMPILER ERROR at PC16: Confused about usage of register: R0 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
 
       if (Time.unity_time).timeScale ~= 1 then
         (Time.unity_time).timeScale = 1

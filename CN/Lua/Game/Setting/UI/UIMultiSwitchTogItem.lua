@@ -41,7 +41,11 @@ UIMultiSwitchTogItem.InitUIMultiSwitchTogItem = function(self, currentValueeEven
     local dTogItem = (UINDisplayTogItem.New)()
     dTogItem:Init(toggleItemObj)
     dTogItem:InitDisplayTogItem(index, index == selectIndex, (self.ui).toggleGroup, ((LanguageUtil.GetLocaleText)(nameList[i])), nil, self.ui)
-    -- DECOMPILER ERROR at PC51: Confused about usage of register: R17 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC55: Confused about usage of register: R17 in 'UnsetPending'
+
+    ;
+    (dTogItem.gameObject).name = "tog_" .. tostring(i)
+    -- DECOMPILER ERROR at PC58: Confused about usage of register: R17 in 'UnsetPending'
 
     ;
     ((self.ui).togItemList)[index] = dTogItem

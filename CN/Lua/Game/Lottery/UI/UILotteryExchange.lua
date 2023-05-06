@@ -70,7 +70,11 @@ end
 
 UILotteryExchange.Close = function(self)
   -- function num : 0_6 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self.ltrPtNode)
+  ;
+  (UIUtil.OnClickBackByUiTab)(self.ltrSHNode)
+  ;
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UILotteryExchange.OnDelete = function(self)

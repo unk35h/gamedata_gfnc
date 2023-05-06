@@ -61,7 +61,7 @@ end
 
 UINSkyPreset._OnClickClose = function(self)
   -- function num : 0_4 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UINSkyPreset.OnDelete = function(self)

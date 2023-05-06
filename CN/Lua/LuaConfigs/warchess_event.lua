@@ -31,7 +31,11 @@ local warchess_event = {
 , 
 [112] = {event_tag = 4, event_txt = 266666, id = 112, pic = 18, ref_item = 1215}
 , 
-[113] = {event_tag = 4, event_txt = 429155, id = 113, pic = 9, ref_item = 1225}
+[113] = {event_tag = 4, id = 113, pic = 9, ref_item = 1225}
+, 
+[114] = {event_tag = 4, id = 114, pic = 9, ref_item = 1225}
+, 
+[115] = {event_tag = 4, event_txt = 357848, id = 115, pic = 9, ref_item = 1225}
 , 
 [201] = {event_txt = 97399, id = 201}
 , 
@@ -99,7 +103,7 @@ local warchess_event = {
 , 
 [301] = {event_txt = 460418, id = 301}
 , 
-[302] = {id = 302}
+[302] = {event_txt = 104654, id = 302}
 , 
 [303] = {event_txt = 394977, id = 303}
 , 
@@ -226,17 +230,36 @@ local warchess_event = {
 [393] = {event_txt = 161522, id = 393}
 , 
 [394] = {event_txt = 289145, id = 394}
+, 
+[396] = {event_txt = 488213, id = 396}
+, 
+[400] = {event_txt = 91750, id = 400}
+, 
+[401] = {event_txt = 351918, id = 401}
+, 
+[402] = {event_txt = 76363, id = 402}
+, 
+[403] = {event_txt = 279413, id = 403}
+, 
+[404] = {event_txt = 141175, id = 404}
+, 
+[405] = {event_txt = 517037, id = 405}
+, 
+[406] = {event_txt = 438344, id = 406}
+, 
+[407] = {event_txt = 396751, id = 407}
 }
-local __default_values = {event_tag = 2, event_txt = 104654, id = 1, pic = 8, ref_item = 0}
+local __default_values = {event_tag = 2, event_txt = 429155, id = 1, pic = 8, ref_item = 0}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")
 end
 }
-for k,v in pairs(warchess_event) do
-  setmetatable(v, base)
+for k,v in (_ENV.pairs)(warchess_event) do
+  (_ENV.setmetatable)(v, base)
 end
 local __rawdata = {__basemetatable = base}
-setmetatable(warchess_event, {__index = __rawdata})
+;
+(_ENV.setmetatable)(warchess_event, {__index = __rawdata})
 return warchess_event
 

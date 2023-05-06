@@ -83,7 +83,6 @@ WarChessCtrl.ctor = function(self)
   ConfigData:LoadDynCfg(eDynConfigData.warchess_strategy_effect)
   ConfigData:LoadDynCfg(eDynConfigData.warchess_level_trigger)
   ConfigData:LoadDynCfg(eDynConfigData.warchess_icon_res)
-  ConfigData:LoadDynCfg(eDynConfigData.warchess_assist)
   self.wcNetworkCtrl = NetworkManager:GetNetwork(NetworkTypeID.WarChess)
   self.inputCtrl = (WarChessInputCtrl.New)(self)
   self.wcCamCtrl = (WarChessCamCtrl.New)(self)
@@ -320,6 +319,8 @@ WarChessCtrl.__OnReLoadSceneOver = function(self)
     self:_OnEnterWcScene()
     self:RunAllDiff()
     self:RunAllSystemChange()
+    ;
+    (self.palySquCtrl):ApplayReLoadSceneOver()
   end
 end
 
@@ -411,6 +412,8 @@ WarChessCtrl.WarChessApplyTimeRewind = function(self, warChessMsg)
     (self.animaCtrl):CleanAllFx()
     ;
     (self.animaCtrl):OnSceneLoadOver()
+    ;
+    (self.animaCtrl):PlayWCAllShow()
     UIManager:ShowWindowAsync(UIWindowTypeID.WarChessInfo, function(win)
       -- function num : 0_10_0_0 , upvalues : self
       if win ~= nil then
@@ -442,6 +445,19 @@ end
 
 WarChessCtrl.OnWCSync = function(self, warChessSync)
   -- function num : 0_12 , upvalues : _ENV, eWarChessEnum
+  if warChessSync.roleItemDiff ~= nil and (table.count)(warChessSync.roleItemDiff) > 0 then
+    (self.backPackCtrl):UpdateBackPack(warChessSync.roleItemDiff)
+    warChessSync.roleItemDiff = nil
+  end
+  if warChessSync.rolesDiff ~= nil and (table.count)(warChessSync.rolesDiff) > 0 then
+    (self.teamCtrl):UpdateHeroDataByMsg((warChessSync.rolesDiff).update)
+  end
+  if warChessSync.rolesDynDiff ~= nil and (table.count)(warChessSync.rolesDynDiff) > 0 then
+    (self.teamCtrl):UpdateHeroDynDataByMsg(warChessSync.rolesDynDiff)
+  end
+  if warChessSync.battlePlayerDiff ~= nil and (table.count)(warChessSync.battlePlayerDiff) > 0 then
+    (self.teamCtrl):UpdateWCCommander(warChessSync.battlePlayerDiff)
+  end
   if not self.__isInWarChessScene then
     (table.insert)(self.__wcDiffBuff, warChessSync)
     return 
@@ -459,6 +475,7 @@ WarChessCtrl.OnWCSync = function(self, warChessSync)
   if warChessSync.unitUpdate ~= nil and (table.count)(warChessSync.unitUpdate) > 0 then
     (self.mapCtrl):UpdateMapUnits(warChessSync.unitUpdate)
     isNeedUpdateMoveable = true
+    isNeedPlayAnimationFXTip = true
   end
   if warChessSync.unitFx ~= nil and #warChessSync.unitFx > 0 then
     (self.animaCtrl):UpdateWCFXs(warChessSync.unitFx)
@@ -474,18 +491,6 @@ WarChessCtrl.OnWCSync = function(self, warChessSync)
   end
   if warChessSync.formDiff ~= nil and (table.count)(warChessSync.formDiff) > 0 then
     needRefreshLeadTeamList = (self.teamCtrl):UpdateWCTeamByHeroFormDiff(warChessSync.formDiff)
-  end
-  if warChessSync.rolesDiff ~= nil and (table.count)(warChessSync.rolesDiff) > 0 then
-    (self.teamCtrl):UpdateHeroDataByMsg((warChessSync.rolesDiff).update)
-  end
-  if warChessSync.rolesDynDiff ~= nil and (table.count)(warChessSync.rolesDynDiff) > 0 then
-    (self.teamCtrl):UpdateHeroDynDataByMsg(warChessSync.rolesDynDiff)
-  end
-  if warChessSync.roleItemDiff ~= nil and (table.count)(warChessSync.roleItemDiff) > 0 then
-    (self.backPackCtrl):UpdateBackPack(warChessSync.roleItemDiff)
-  end
-  if warChessSync.battlePlayerDiff ~= nil and (table.count)(warChessSync.battlePlayerDiff) > 0 then
-    (self.teamCtrl):UpdateWCCommander(warChessSync.battlePlayerDiff)
   end
   if warChessSync.unitAnimationClip ~= nil and #warChessSync.unitAnimationClip > 0 then
     (self.animaCtrl):UpdateAnimations(warChessSync.unitAnimationClip)
@@ -713,7 +718,6 @@ WarChessCtrl.Delete = function(self)
   ConfigData:ReleaseDynCfg(eDynConfigData.warchess_strategy_effect)
   ConfigData:ReleaseDynCfg(eDynConfigData.warchess_level_trigger)
   ConfigData:ReleaseDynCfg(eDynConfigData.warchess_icon_res)
-  ConfigData:ReleaseDynCfg(eDynConfigData.warchess_assist)
 end
 
 return WarChessCtrl

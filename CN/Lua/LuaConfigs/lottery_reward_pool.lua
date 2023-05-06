@@ -6941,6 +6941,314 @@ pre_para1 = {4101}
 , 
 [1928] = {id = 1928, item_reward = 2036, type = 9103}
 }
+, 
+[9201] = {
+[1965] = {id = 1965, item_reward = 2050, type = 9201}
+, 
+[1966] = {id = 1966, item_reward = 2051, type = 9201}
+, 
+[1967] = {id = 1967, item_reward = 2042, type = 9201}
+, 
+[1968] = {id = 1968, item_reward = 2037, type = 9201}
+, 
+[1969] = {id = 1969, item_reward = 2010, type = 9201}
+, 
+[1970] = {id = 1970, item_reward = 2018, type = 9201}
+, 
+[1971] = {id = 1971, item_reward = 2025, type = 9201}
+, 
+[1972] = {id = 1972, item_reward = 2026, type = 9201}
+}
+, 
+[9202] = {
+[1939] = {id = 1939, item_reward = 2002, type = 9202}
+, 
+[1941] = {id = 1941, item_reward = 2006, type = 9202}
+, 
+[1944] = {id = 1944, item_reward = 2011, type = 9202}
+, 
+[1946] = {id = 1946, item_reward = 2013, type = 9202}
+, 
+[1948] = {id = 1948, item_reward = 2015, type = 9202}
+, 
+[1949] = {id = 1949, item_reward = 2017, type = 9202}
+, 
+[1950] = {id = 1950, item_reward = 2019, type = 9202}
+, 
+[1954] = {id = 1954, item_reward = 2024, type = 9202}
+, 
+[1956] = {id = 1956, item_reward = 2030, type = 9202}
+, 
+[1957] = {id = 1957, item_reward = 2031, type = 9202}
+, 
+[1958] = {id = 1958, item_reward = 2032, type = 9202}
+, 
+[1959] = {id = 1959, item_reward = 2033, type = 9202}
+, 
+[1963] = {id = 1963, item_reward = 2038, type = 9202}
+, 
+[1964] = {id = 1964, item_reward = 2040, type = 9202}
+}
+, 
+[9203] = {
+[1940] = {id = 1940, item_reward = 2004, type = 9203}
+, 
+[1942] = {id = 1942, item_reward = 2007, type = 9203}
+, 
+[1943] = {id = 1943, type = 9203}
+, 
+[1945] = {id = 1945, item_reward = 2012, type = 9203}
+, 
+[1947] = {id = 1947, item_reward = 2014, type = 9203}
+, 
+[1951] = {id = 1951, item_reward = 2020, type = 9203}
+, 
+[1952] = {id = 1952, item_reward = 2021, type = 9203}
+, 
+[1953] = {id = 1953, item_reward = 2023, type = 9203}
+, 
+[1955] = {id = 1955, item_reward = 2027, type = 9203}
+, 
+[1960] = {id = 1960, item_reward = 2034, type = 9203}
+, 
+[1961] = {id = 1961, item_reward = 2035, type = 9203}
+, 
+[1962] = {id = 1962, item_reward = 2036, type = 9203}
+}
+, 
+[9301] = {
+[1999] = {id = 1999, item_reward = 2067, type = 9301}
+, 
+[2000] = {id = 2000, item_reward = 2061, type = 9301}
+, 
+[2001] = {id = 2001, item_reward = 2055, type = 9301}
+, 
+[2002] = {id = 2002, item_reward = 2025, type = 9301}
+, 
+[2003] = {id = 2003, item_reward = 2039, type = 9301}
+, 
+[2004] = {id = 2004, item_reward = 2010, type = 9301}
+, 
+[2005] = {id = 2005, item_reward = 2018, type = 9301}
+, 
+[2006] = {id = 2006, item_reward = 2028, type = 9301}
+}
+, 
+[9302] = {
+[1973] = {id = 1973, item_reward = 2002, type = 9302}
+, 
+[1975] = {id = 1975, item_reward = 2006, type = 9302}
+, 
+[1978] = {id = 1978, item_reward = 2011, type = 9302}
+, 
+[1980] = {id = 1980, item_reward = 2013, type = 9302}
+, 
+[1982] = {id = 1982, item_reward = 2015, type = 9302}
+, 
+[1983] = {id = 1983, item_reward = 2017, type = 9302}
+, 
+[1984] = {id = 1984, item_reward = 2019, type = 9302}
+, 
+[1988] = {id = 1988, item_reward = 2024, type = 9302}
+, 
+[1990] = {id = 1990, item_reward = 2030, type = 9302}
+, 
+[1991] = {id = 1991, item_reward = 2031, type = 9302}
+, 
+[1992] = {id = 1992, item_reward = 2032, type = 9302}
+, 
+[1993] = {id = 1993, item_reward = 2033, type = 9302}
+, 
+[1997] = {id = 1997, item_reward = 2038, type = 9302}
+, 
+[1998] = {id = 1998, item_reward = 2040, type = 9302}
+}
+, 
+[9303] = {
+[1974] = {id = 1974, item_reward = 2004, type = 9303}
+, 
+[1976] = {id = 1976, item_reward = 2007, type = 9303}
+, 
+[1977] = {id = 1977, type = 9303}
+, 
+[1979] = {id = 1979, item_reward = 2012, type = 9303}
+, 
+[1981] = {id = 1981, item_reward = 2014, type = 9303}
+, 
+[1985] = {id = 1985, item_reward = 2020, type = 9303}
+, 
+[1986] = {id = 1986, item_reward = 2021, type = 9303}
+, 
+[1987] = {id = 1987, item_reward = 2023, type = 9303}
+, 
+[1989] = {id = 1989, item_reward = 2027, type = 9303}
+, 
+[1994] = {id = 1994, item_reward = 2034, type = 9303}
+, 
+[1995] = {id = 1995, item_reward = 2035, type = 9303}
+, 
+[1996] = {id = 1996, item_reward = 2036, type = 9303}
+}
+, 
+[9401] = {
+[735] = {id = 735, item_reward = 2067, type = 9401}
+, 
+[736] = {id = 736, item_reward = 2052, type = 9401}
+, 
+[737] = {id = 737, item_reward = 2061, type = 9401}
+, 
+[738] = {id = 738, item_reward = 2055, type = 9401}
+, 
+[739] = {id = 739, item_reward = 2053, type = 9401}
+, 
+[740] = {id = 740, item_reward = 2026, type = 9401}
+, 
+[741] = {id = 741, item_reward = 2043, type = 9401}
+, 
+[742] = {id = 742, item_reward = 2022, type = 9401}
+, 
+[743] = {id = 743, item_reward = 2018, type = 9401}
+, 
+[744] = {id = 744, item_reward = 2008, type = 9401}
+, 
+[745] = {id = 745, item_reward = 2039, type = 9401}
+, 
+[746] = {id = 746, item_reward = 2016, type = 9401}
+, 
+[747] = {id = 747, item_reward = 2037, type = 9401}
+, 
+[748] = {id = 748, item_reward = 2010, type = 9401}
+}
+, 
+[9402] = {
+[709] = {id = 709, item_reward = 2002, type = 9402}
+, 
+[711] = {id = 711, item_reward = 2006, type = 9402}
+, 
+[714] = {id = 714, item_reward = 2011, type = 9402}
+, 
+[716] = {id = 716, item_reward = 2013, type = 9402}
+, 
+[718] = {id = 718, item_reward = 2015, type = 9402}
+, 
+[719] = {id = 719, item_reward = 2017, type = 9402}
+, 
+[720] = {id = 720, item_reward = 2019, type = 9402}
+, 
+[724] = {id = 724, item_reward = 2024, type = 9402}
+, 
+[726] = {id = 726, item_reward = 2030, type = 9402}
+, 
+[727] = {id = 727, item_reward = 2031, type = 9402}
+, 
+[728] = {id = 728, item_reward = 2032, type = 9402}
+, 
+[729] = {id = 729, item_reward = 2033, type = 9402}
+, 
+[733] = {id = 733, item_reward = 2038, type = 9402}
+, 
+[734] = {id = 734, item_reward = 2040, type = 9402}
+}
+, 
+[9403] = {
+[710] = {id = 710, item_reward = 2004, type = 9403}
+, 
+[712] = {id = 712, item_reward = 2007, type = 9403}
+, 
+[713] = {id = 713, type = 9403}
+, 
+[715] = {id = 715, item_reward = 2012, type = 9403}
+, 
+[717] = {id = 717, item_reward = 2014, type = 9403}
+, 
+[721] = {id = 721, item_reward = 2020, type = 9403}
+, 
+[722] = {id = 722, item_reward = 2021, type = 9403}
+, 
+[723] = {id = 723, item_reward = 2023, type = 9403}
+, 
+[725] = {id = 725, item_reward = 2027, type = 9403}
+, 
+[730] = {id = 730, item_reward = 2034, type = 9403}
+, 
+[731] = {id = 731, item_reward = 2035, type = 9403}
+, 
+[732] = {id = 732, item_reward = 2036, type = 9403}
+}
+, 
+[9501] = {
+[2033] = {id = 2033, item_reward = 2052, type = 9501}
+, 
+[2034] = {id = 2034, item_reward = 2053, type = 9501}
+, 
+[2035] = {id = 2035, item_reward = 2055, type = 9501}
+, 
+[2036] = {id = 2036, item_reward = 2025, type = 9501}
+, 
+[2037] = {id = 2037, item_reward = 2039, type = 9501}
+, 
+[2038] = {id = 2038, item_reward = 2010, type = 9501}
+, 
+[2039] = {id = 2039, item_reward = 2026, type = 9501}
+, 
+[2040] = {id = 2040, item_reward = 2016, type = 9501}
+}
+, 
+[9502] = {
+[2007] = {id = 2007, item_reward = 2002, type = 9502}
+, 
+[2009] = {id = 2009, item_reward = 2006, type = 9502}
+, 
+[2012] = {id = 2012, item_reward = 2011, type = 9502}
+, 
+[2014] = {id = 2014, item_reward = 2013, type = 9502}
+, 
+[2016] = {id = 2016, item_reward = 2015, type = 9502}
+, 
+[2017] = {id = 2017, item_reward = 2017, type = 9502}
+, 
+[2018] = {id = 2018, item_reward = 2019, type = 9502}
+, 
+[2022] = {id = 2022, item_reward = 2024, type = 9502}
+, 
+[2024] = {id = 2024, item_reward = 2030, type = 9502}
+, 
+[2025] = {id = 2025, item_reward = 2031, type = 9502}
+, 
+[2026] = {id = 2026, item_reward = 2032, type = 9502}
+, 
+[2027] = {id = 2027, item_reward = 2033, type = 9502}
+, 
+[2031] = {id = 2031, item_reward = 2038, type = 9502}
+, 
+[2032] = {id = 2032, item_reward = 2040, type = 9502}
+}
+, 
+[9503] = {
+[2008] = {id = 2008, item_reward = 2004, type = 9503}
+, 
+[2010] = {id = 2010, item_reward = 2007, type = 9503}
+, 
+[2011] = {id = 2011, type = 9503}
+, 
+[2013] = {id = 2013, item_reward = 2012, type = 9503}
+, 
+[2015] = {id = 2015, item_reward = 2014, type = 9503}
+, 
+[2019] = {id = 2019, item_reward = 2020, type = 9503}
+, 
+[2020] = {id = 2020, item_reward = 2021, type = 9503}
+, 
+[2021] = {id = 2021, item_reward = 2023, type = 9503}
+, 
+[2023] = {id = 2023, item_reward = 2027, type = 9503}
+, 
+[2028] = {id = 2028, item_reward = 2034, type = 9503}
+, 
+[2029] = {id = 2029, item_reward = 2035, type = 9503}
+, 
+[2030] = {id = 2030, item_reward = 2036, type = 9503}
+}
 }
 local __default_values = {id = 10, item_reward = 2009, pre_condition = __rt_1, pre_para1 = __rt_1, pre_para2 = __rt_1, type = 202}
 local base = {__index = __default_values, __newindex = function()

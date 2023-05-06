@@ -339,7 +339,7 @@ UIActSum22Map.OnClickExitDetail = function(self)
   if not self._isDraging then
     local detailWin = UIManager:GetWindow(UIWindowTypeID.SectorLevelDetail)
     if detailWin ~= nil and detailWin.active and self._selectLevelItem ~= nil then
-      (UIUtil.OnClickBack)()
+      (UIUtil.OnClickBackByUiTab)(self)
     end
   end
 end

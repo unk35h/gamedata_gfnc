@@ -5059,6 +5059,254 @@ local warchess_monster_team_data = {
 {battle_id = 3062104, enemy_pos = __rt_20, enemy_type = 17, id = 65386, monster_id = 1000, num = 6}
 }
 , 
+[3063101] = {
+{battle_id = 3063101, enemy_pos = __rt_1, enemy_type = 6, id = 65881, monster_id = 20005, num = 1}
+, 
+{battle_id = 3063101, enemy_pos = __rt_16, enemy_type = 6, id = 65882, monster_id = 20005, num = 2}
+, 
+{battle_id = 3063101, enemy_pos = __rt_4, enemy_type = 8, id = 65883, monster_id = 20004, num = 3}
+, 
+{battle_id = 3063101, enemy_pos = __rt_5, enemy_type = 8, id = 65884, monster_id = 20004, num = 4}
+, 
+{battle_id = 3063101, enemy_pos = __rt_30, enemy_type = 8, id = 65885, monster_id = 20004, num = 5}
+, 
+{battle_id = 3063101, enemy_pos = __rt_33, enemy_type = 17, id = 65886, monster_id = 1000, num = 6}
+, 
+{battle_id = 3063101, enemy_pos = __rt_31, enemy_type = 17, id = 65887, monster_id = 1000, num = 7}
+, 
+{battle_id = 3063101, enemy_pos = __rt_32, enemy_type = 17, id = 65888, monster_id = 1000, num = 8}
+, 
+{battle_id = 3063101, enemy_pos = __rt_12, enemy_type = 17, id = 65889, monster_id = 1000, num = 9}
+, 
+{battle_id = 3063101, enemy_pos = __rt_27, enemy_type = 17, id = 65890, monster_id = 1000, num = 10}
+}
+, 
+[3063102] = {
+{battle_id = 3063102, enemy_pos = __rt_1, enemy_type = 6, id = 65891, monster_id = 20039, num = 1}
+, 
+{battle_id = 3063102, enemy_pos = __rt_16, enemy_type = 6, id = 65892, monster_id = 20039, num = 2}
+, 
+{battle_id = 3063102, enemy_pos = __rt_4, enemy_type = 8, id = 65893, monster_id = 20004, num = 3}
+, 
+{battle_id = 3063102, enemy_pos = __rt_5, enemy_type = 8, id = 65894, monster_id = 20004, num = 4}
+, 
+{battle_id = 3063102, enemy_pos = __rt_30, enemy_type = 8, id = 65895, monster_id = 20004, num = 5}
+, 
+{battle_id = 3063102, enemy_pos = __rt_33, enemy_type = 17, id = 65896, monster_id = 1000, num = 6}
+, 
+{battle_id = 3063102, enemy_pos = __rt_31, enemy_type = 17, id = 65897, monster_id = 1000, num = 7}
+, 
+{battle_id = 3063102, enemy_pos = __rt_32, enemy_type = 17, id = 65898, monster_id = 1000, num = 8}
+, 
+{battle_id = 3063102, enemy_pos = __rt_12, enemy_type = 17, id = 65899, monster_id = 1000, num = 9}
+, 
+{battle_id = 3063102, enemy_pos = __rt_27, enemy_type = 17, id = 65900, monster_id = 1000, num = 10}
+}
+, 
+[3063103] = {
+{battle_id = 3063103, enemy_pos = __rt_1, enemy_type = 6, id = 65901, monster_id = 20039, num = 1}
+, 
+{battle_id = 3063103, enemy_pos = __rt_16, enemy_type = 6, id = 65902, monster_id = 20039, num = 2}
+, 
+{battle_id = 3063103, enemy_pos = __rt_4, enemy_type = 8, id = 65903, monster_id = 20004, num = 3}
+, 
+{battle_id = 3063103, enemy_pos = __rt_5, enemy_type = 9, id = 65904, monster_id = 20009, num = 4}
+, 
+{battle_id = 3063103, enemy_pos = __rt_30, enemy_type = 8, id = 65905, monster_id = 20004, num = 5}
+, 
+{battle_id = 3063103, enemy_pos = __rt_33, enemy_type = 17, id = 65906, monster_id = 1000, num = 6}
+, 
+{battle_id = 3063103, enemy_pos = __rt_31, enemy_type = 17, id = 65907, monster_id = 1000, num = 7}
+, 
+{battle_id = 3063103, enemy_pos = __rt_32, enemy_type = 17, id = 65908, monster_id = 1000, num = 8}
+, 
+{battle_id = 3063103, enemy_pos = __rt_12, enemy_type = 17, id = 65909, monster_id = 1000, num = 9}
+, 
+{battle_id = 3063103, enemy_pos = __rt_27, enemy_type = 17, id = 65910, monster_id = 1000, num = 10}
+}
+, 
+[3063104] = {
+{battle_id = 3063104, enemy_pos = __rt_1, enemy_type = 4, id = 65911, monster_id = 20011, num = 1}
+, 
+{battle_id = 3063104, enemy_pos = __rt_16, enemy_type = 6, id = 65912, monster_id = 20039, num = 2}
+, 
+{battle_id = 3063104, enemy_pos = __rt_4, enemy_type = 9, id = 65913, monster_id = 20009, num = 3}
+, 
+{battle_id = 3063104, enemy_pos = __rt_5, enemy_type = 9, id = 65914, monster_id = 20009, num = 4}
+, 
+{battle_id = 3063104, enemy_pos = __rt_30, enemy_type = 9, id = 65915, monster_id = 20009, num = 5}
+, 
+{battle_id = 3063104, enemy_pos = __rt_33, enemy_type = 17, id = 65916, monster_id = 1000, num = 6}
+, 
+{battle_id = 3063104, enemy_pos = __rt_31, enemy_type = 17, id = 65917, monster_id = 1000, num = 7}
+, 
+{battle_id = 3063104, enemy_pos = __rt_32, enemy_type = 17, id = 65918, monster_id = 1000, num = 8}
+, 
+{battle_id = 3063104, enemy_pos = __rt_12, enemy_type = 17, id = 65919, monster_id = 1000, num = 9}
+, 
+{battle_id = 3063104, enemy_pos = __rt_27, enemy_type = 17, id = 65920, monster_id = 1000, num = 10}
+}
+, 
+[3063201] = {
+{battle_id = 3063201, enemy_pos = __rt_20, enemy_type = 1, id = 65921, monster_id = 20006, num = 1}
+, 
+{battle_id = 3063201, enemy_pos = __rt_4, enemy_type = 8, id = 65922, monster_id = 20004, num = 2}
+, 
+{battle_id = 3063201, enemy_pos = __rt_30, enemy_type = 8, id = 65923, monster_id = 20004, num = 3}
+, 
+{battle_id = 3063201, enemy_pos = __rt_13, enemy_type = 8, id = 65924, monster_id = 20048, num = 4}
+, 
+{battle_id = 3063201, enemy_pos = __rt_28, enemy_type = 8, id = 65925, monster_id = 20046, num = 5}
+, 
+{battle_id = 3063201, enemy_pos = __rt_21, enemy_type = 17, id = 65926, monster_id = 1000, num = 6}
+, 
+{battle_id = 3063201, enemy_pos = __rt_22, enemy_type = 17, id = 65927, monster_id = 1000, num = 7}
+, 
+{battle_id = 3063201, enemy_pos = __rt_11, enemy_type = 17, id = 65928, monster_id = 1000, num = 8}
+, 
+{battle_id = 3063201, enemy_pos = __rt_15, enemy_type = 17, id = 65929, monster_id = 1000, num = 9}
+, 
+{battle_id = 3063201, enemy_pos = __rt_26, enemy_type = 17, id = 65930, monster_id = 1000, num = 10}
+, 
+{battle_id = 3063201, enemy_pos = __rt_8, enemy_type = 17, id = 65931, monster_id = 1000, num = 11}
+, 
+{battle_id = 3063201, enemy_pos = __rt_9, enemy_type = 17, id = 65932, monster_id = 1000, num = 12}
+, 
+{battle_id = 3063201, enemy_pos = __rt_10, enemy_type = 17, id = 65933, monster_id = 1000, num = 13}
+, 
+{battle_id = 3063201, enemy_pos = __rt_14, enemy_type = 17, id = 65934, monster_id = 1000, num = 14}
+, 
+{battle_id = 3063201, enemy_pos = __rt_17, enemy_type = 17, id = 65935, monster_id = 1000, num = 15}
+, 
+{battle_id = 3063201, enemy_pos = __rt_18, enemy_type = 17, id = 65936, monster_id = 1000, num = 16}
+, 
+{battle_id = 3063201, enemy_pos = __rt_3, enemy_type = 17, id = 65937, monster_id = 1000, num = 17}
+, 
+{battle_id = 3063201, enemy_pos = __rt_29, enemy_type = 17, id = 65938, monster_id = 1000, num = 18}
+, 
+{battle_id = 3063201, enemy_pos = __rt_23, enemy_type = 17, id = 65939, monster_id = 1000, num = 19}
+}
+, 
+[3063202] = {
+{battle_id = 3063202, enemy_pos = __rt_20, enemy_type = 2, id = 65940, monster_id = 20001, num = 1}
+, 
+{battle_id = 3063202, enemy_pos = __rt_4, enemy_type = 8, id = 65941, monster_id = 20021, num = 2}
+, 
+{battle_id = 3063202, enemy_pos = __rt_30, enemy_type = 8, id = 65942, monster_id = 20021, num = 3}
+, 
+{battle_id = 3063202, enemy_pos = __rt_13, enemy_type = 8, id = 65943, monster_id = 20048, num = 4}
+, 
+{battle_id = 3063202, enemy_pos = __rt_28, enemy_type = 8, id = 65944, monster_id = 20048, num = 5}
+, 
+{battle_id = 3063202, enemy_pos = __rt_21, enemy_type = 17, id = 65945, monster_id = 1000, num = 6}
+, 
+{battle_id = 3063202, enemy_pos = __rt_22, enemy_type = 17, id = 65946, monster_id = 1000, num = 7}
+, 
+{battle_id = 3063202, enemy_pos = __rt_11, enemy_type = 17, id = 65947, monster_id = 1000, num = 8}
+, 
+{battle_id = 3063202, enemy_pos = __rt_15, enemy_type = 17, id = 65948, monster_id = 1000, num = 9}
+, 
+{battle_id = 3063202, enemy_pos = __rt_26, enemy_type = 17, id = 65949, monster_id = 1000, num = 10}
+, 
+{battle_id = 3063202, enemy_pos = __rt_8, enemy_type = 17, id = 65950, monster_id = 1000, num = 11}
+, 
+{battle_id = 3063202, enemy_pos = __rt_9, enemy_type = 17, id = 65951, monster_id = 1000, num = 12}
+, 
+{battle_id = 3063202, enemy_pos = __rt_10, enemy_type = 17, id = 65952, monster_id = 1000, num = 13}
+, 
+{battle_id = 3063202, enemy_pos = __rt_14, enemy_type = 17, id = 65953, monster_id = 1000, num = 14}
+, 
+{battle_id = 3063202, enemy_pos = __rt_17, enemy_type = 17, id = 65954, monster_id = 1000, num = 15}
+, 
+{battle_id = 3063202, enemy_pos = __rt_18, enemy_type = 17, id = 65955, monster_id = 1000, num = 16}
+, 
+{battle_id = 3063202, enemy_pos = __rt_3, enemy_type = 17, id = 65956, monster_id = 1000, num = 17}
+, 
+{battle_id = 3063202, enemy_pos = __rt_29, enemy_type = 17, id = 65957, monster_id = 1000, num = 18}
+, 
+{battle_id = 3063202, enemy_pos = __rt_23, enemy_type = 17, id = 65958, monster_id = 1000, num = 19}
+}
+, 
+[3063203] = {
+{battle_id = 3063203, enemy_pos = __rt_20, enemy_type = 2, id = 65959, monster_id = 20001, num = 1}
+, 
+{battle_id = 3063203, enemy_pos = __rt_4, enemy_type = 9, id = 65960, monster_id = 20009, num = 2}
+, 
+{battle_id = 3063203, enemy_pos = __rt_30, enemy_type = 9, id = 65961, monster_id = 20009, num = 3}
+, 
+{battle_id = 3063203, enemy_pos = __rt_13, enemy_type = 8, id = 65962, monster_id = 20048, num = 4}
+, 
+{battle_id = 3063203, enemy_pos = __rt_28, enemy_type = 8, id = 65963, monster_id = 20048, num = 5}
+, 
+{battle_id = 3063203, enemy_pos = __rt_21, enemy_type = 17, id = 65964, monster_id = 1000, num = 6}
+, 
+{battle_id = 3063203, enemy_pos = __rt_22, enemy_type = 17, id = 65965, monster_id = 1000, num = 7}
+, 
+{battle_id = 3063203, enemy_pos = __rt_11, enemy_type = 17, id = 65966, monster_id = 1000, num = 8}
+, 
+{battle_id = 3063203, enemy_pos = __rt_15, enemy_type = 17, id = 65967, monster_id = 1000, num = 9}
+, 
+{battle_id = 3063203, enemy_pos = __rt_26, enemy_type = 17, id = 65968, monster_id = 1000, num = 10}
+, 
+{battle_id = 3063203, enemy_pos = __rt_8, enemy_type = 17, id = 65969, monster_id = 1000, num = 11}
+, 
+{battle_id = 3063203, enemy_pos = __rt_9, enemy_type = 17, id = 65970, monster_id = 1000, num = 12}
+, 
+{battle_id = 3063203, enemy_pos = __rt_10, enemy_type = 17, id = 65971, monster_id = 1000, num = 13}
+, 
+{battle_id = 3063203, enemy_pos = __rt_14, enemy_type = 17, id = 65972, monster_id = 1000, num = 14}
+, 
+{battle_id = 3063203, enemy_pos = __rt_17, enemy_type = 17, id = 65973, monster_id = 1000, num = 15}
+, 
+{battle_id = 3063203, enemy_pos = __rt_18, enemy_type = 17, id = 65974, monster_id = 1000, num = 16}
+, 
+{battle_id = 3063203, enemy_pos = __rt_3, enemy_type = 17, id = 65975, monster_id = 1000, num = 17}
+, 
+{battle_id = 3063203, enemy_pos = __rt_29, enemy_type = 17, id = 65976, monster_id = 1000, num = 18}
+, 
+{battle_id = 3063203, enemy_pos = __rt_23, enemy_type = 17, id = 65977, monster_id = 1000, num = 19}
+}
+, 
+[3063204] = {
+{battle_id = 3063204, enemy_pos = __rt_20, enemy_type = 2, id = 65978, monster_id = 20001, num = 1}
+, 
+{battle_id = 3063204, enemy_pos = __rt_4, enemy_type = 9, id = 65979, monster_id = 20009, num = 2}
+, 
+{battle_id = 3063204, enemy_pos = __rt_30, enemy_type = 9, id = 65980, monster_id = 20009, num = 3}
+, 
+{battle_id = 3063204, enemy_pos = __rt_13, enemy_type = 8, id = 65981, monster_id = 20048, num = 4}
+, 
+{battle_id = 3063204, enemy_pos = __rt_28, enemy_type = 8, id = 65982, monster_id = 20048, num = 5}
+, 
+{battle_id = 3063204, enemy_pos = __rt_21, enemy_type = 17, id = 65983, monster_id = 1000, num = 6}
+, 
+{battle_id = 3063204, enemy_pos = __rt_22, enemy_type = 17, id = 65984, monster_id = 1000, num = 7}
+, 
+{battle_id = 3063204, enemy_pos = __rt_11, enemy_type = 17, id = 65985, monster_id = 1000, num = 8}
+, 
+{battle_id = 3063204, enemy_pos = __rt_15, enemy_type = 17, id = 65986, monster_id = 1000, num = 9}
+, 
+{battle_id = 3063204, enemy_pos = __rt_26, enemy_type = 17, id = 65987, monster_id = 1000, num = 10}
+, 
+{battle_id = 3063204, enemy_pos = __rt_8, enemy_type = 17, id = 65988, monster_id = 1000, num = 11}
+, 
+{battle_id = 3063204, enemy_pos = __rt_9, enemy_type = 17, id = 65989, monster_id = 1000, num = 12}
+, 
+{battle_id = 3063204, enemy_pos = __rt_10, enemy_type = 17, id = 65990, monster_id = 1000, num = 13}
+, 
+{battle_id = 3063204, enemy_pos = __rt_14, enemy_type = 17, id = 65991, monster_id = 1000, num = 14}
+, 
+{battle_id = 3063204, enemy_pos = __rt_17, enemy_type = 17, id = 65992, monster_id = 1000, num = 15}
+, 
+{battle_id = 3063204, enemy_pos = __rt_18, enemy_type = 17, id = 65993, monster_id = 1000, num = 16}
+, 
+{battle_id = 3063204, enemy_pos = __rt_3, enemy_type = 17, id = 65994, monster_id = 1000, num = 17}
+, 
+{battle_id = 3063204, enemy_pos = __rt_29, enemy_type = 17, id = 65995, monster_id = 1000, num = 18}
+, 
+{battle_id = 3063204, enemy_pos = __rt_23, enemy_type = 17, id = 65996, monster_id = 1000, num = 19}
+}
+, 
 [3110011] = {
 {battle_id = 3110011, enemy_pos = __rt_29, enemy_type = 241, id = 51878, monster_id = 20072, num = 1}
 , 
@@ -12115,6 +12363,2570 @@ local warchess_monster_team_data = {
 {battle_id = 3140999, enemy_pos = __rt_26, enemy_type = 221, id = 60914, monster_id = 20103, num = 5}
 , 
 {battle_id = 3140999, enemy_pos = __rt_20, enemy_type = 17, id = 60915, monster_id = 1000, num = 6}
+}
+, 
+[3150001] = {
+{battle_id = 3150001, enemy_pos = __rt_20, enemy_type = 234, id = 66258, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150001, enemy_pos = __rt_1, enemy_type = 231, id = 66259, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150001, enemy_pos = __rt_27, enemy_type = 251, id = 66260, monster_id = 20107, num = 3}
+, 
+{battle_id = 3150001, enemy_pos = __rt_30, enemy_type = 221, id = 66261, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150001, enemy_pos = __rt_3, enemy_type = 221, id = 66262, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150001, enemy_pos = __rt_12, enemy_type = 17, id = 66263, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150001, enemy_pos = __rt_13, enemy_type = 17, id = 66264, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150001, enemy_pos = __rt_14, enemy_type = 17, id = 66265, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150001, enemy_pos = __rt_29, enemy_type = 17, id = 66266, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150001, enemy_pos = __rt_16, enemy_type = 17, id = 66267, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150001, enemy_pos = __rt_17, enemy_type = 17, id = 66268, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150001, enemy_pos = __rt_4, enemy_type = 17, id = 66269, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150001, enemy_pos = __rt_19, enemy_type = 17, id = 66270, monster_id = 1000, num = 13}
+, 
+{battle_id = 3150001, enemy_pos = __rt_5, enemy_type = 17, id = 66271, monster_id = 1000, num = 14}
+, 
+{battle_id = 3150001, enemy_pos = __rt_33, enemy_type = 17, id = 66272, monster_id = 1000, num = 15}
+, 
+{battle_id = 3150001, enemy_pos = __rt_6, enemy_type = 17, id = 66273, monster_id = 1000, num = 16}
+, 
+{battle_id = 3150001, enemy_pos = __rt_8, enemy_type = 17, id = 66274, monster_id = 1000, num = 17}
+, 
+{battle_id = 3150001, enemy_pos = __rt_9, enemy_type = 17, id = 66275, monster_id = 1000, num = 18}
+, 
+{battle_id = 3150001, enemy_pos = __rt_10, enemy_type = 17, id = 66276, monster_id = 1000, num = 19}
+}
+, 
+[3150002] = {
+{battle_id = 3150002, enemy_pos = __rt_16, enemy_type = 231, id = 66315, monster_id = 8000101, num = 1}
+, 
+{battle_id = 3150002, enemy_pos = __rt_1, enemy_type = 231, id = 66316, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150002, enemy_pos = __rt_17, enemy_type = 221, id = 66317, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150002, enemy_pos = __rt_18, enemy_type = 221, id = 66318, monster_id = 20080, num = 4}
+, 
+{battle_id = 3150002, enemy_pos = __rt_19, enemy_type = 221, id = 66319, monster_id = 80002, num = 5}
+, 
+{battle_id = 3150002, enemy_pos = __rt_22, enemy_type = 17, id = 66320, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150002, enemy_pos = __rt_11, enemy_type = 17, id = 66321, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150002, enemy_pos = __rt_12, enemy_type = 17, id = 66322, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150002, enemy_pos = __rt_13, enemy_type = 17, id = 66323, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150002, enemy_pos = __rt_14, enemy_type = 17, id = 66324, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150002, enemy_pos = __rt_4, enemy_type = 17, id = 66325, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150002, enemy_pos = __rt_5, enemy_type = 17, id = 66326, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150002, enemy_pos = __rt_33, enemy_type = 17, id = 66327, monster_id = 1000, num = 13}
+, 
+{battle_id = 3150002, enemy_pos = __rt_6, enemy_type = 17, id = 66328, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150002, enemy_pos = __rt_9, enemy_type = 17, id = 66329, monster_id = 1000, num = 15}
+, 
+{battle_id = 3150002, enemy_pos = __rt_10, enemy_type = 17, id = 66330, monster_id = 1000, num = 16}
+, 
+{battle_id = 3150002, enemy_pos = __rt_27, enemy_type = 17, id = 66331, monster_id = 1000, num = 17}
+, 
+{battle_id = 3150002, enemy_pos = __rt_28, enemy_type = 17, id = 66332, monster_id = 1000, num = 18}
+, 
+{battle_id = 3150002, enemy_pos = __rt_3, enemy_type = 17, id = 66333, monster_id = 1000, num = 19}
+}
+, 
+[3150003] = {
+{battle_id = 3150003, enemy_pos = __rt_16, enemy_type = 231, id = 66372, monster_id = 8000101, num = 1}
+, 
+{battle_id = 3150003, enemy_pos = __rt_1, enemy_type = 231, id = 66373, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150003, enemy_pos = __rt_4, enemy_type = 221, id = 66374, monster_id = 20078, num = 3}
+, 
+{battle_id = 3150003, enemy_pos = __rt_19, enemy_type = 232, id = 66375, monster_id = 80004, num = 4}
+, 
+{battle_id = 3150003, enemy_pos = __rt_30, enemy_type = 221, id = 66376, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150003, enemy_pos = __rt_21, enemy_type = 17, id = 66377, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150003, enemy_pos = __rt_22, enemy_type = 17, id = 66378, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150003, enemy_pos = __rt_11, enemy_type = 17, id = 66379, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150003, enemy_pos = __rt_12, enemy_type = 17, id = 66380, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150003, enemy_pos = __rt_13, enemy_type = 17, id = 66381, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150003, enemy_pos = __rt_14, enemy_type = 17, id = 66382, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150003, enemy_pos = __rt_29, enemy_type = 17, id = 66383, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150003, enemy_pos = __rt_8, enemy_type = 17, id = 66384, monster_id = 1000, num = 13}
+, 
+{battle_id = 3150003, enemy_pos = __rt_9, enemy_type = 17, id = 66385, monster_id = 1000, num = 14}
+, 
+{battle_id = 3150003, enemy_pos = __rt_10, enemy_type = 17, id = 66386, monster_id = 1000, num = 15}
+, 
+{battle_id = 3150003, enemy_pos = __rt_27, enemy_type = 17, id = 66387, monster_id = 1000, num = 16}
+, 
+{battle_id = 3150003, enemy_pos = __rt_28, enemy_type = 17, id = 66388, monster_id = 1000, num = 17}
+, 
+{battle_id = 3150003, enemy_pos = __rt_3, enemy_type = 17, id = 66389, monster_id = 1000, num = 18}
+, 
+{battle_id = 3150003, enemy_pos = __rt_23, enemy_type = 17, id = 66390, monster_id = 1000, num = 19}
+}
+, 
+[3150004] = {
+{battle_id = 3150004, enemy_pos = __rt_13, enemy_type = 231, id = 66429, monster_id = 8000101, num = 1}
+, 
+{battle_id = 3150004, enemy_pos = __rt_2, enemy_type = 231, id = 66430, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150004, enemy_pos = __rt_28, enemy_type = 231, id = 66431, monster_id = 8000101, num = 3}
+, 
+{battle_id = 3150004, enemy_pos = __rt_4, enemy_type = 221, id = 66432, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150004, enemy_pos = __rt_30, enemy_type = 221, id = 66433, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150004, enemy_pos = __rt_21, enemy_type = 17, id = 66434, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150004, enemy_pos = __rt_22, enemy_type = 17, id = 66435, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150004, enemy_pos = __rt_25, enemy_type = 17, id = 66436, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150004, enemy_pos = __rt_18, enemy_type = 17, id = 66437, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150004, enemy_pos = __rt_3, enemy_type = 17, id = 66438, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150004, enemy_pos = __rt_23, enemy_type = 17, id = 66439, monster_id = 1000, num = 11}
+}
+, 
+[3150005] = {
+{battle_id = 3150005, enemy_pos = __rt_16, enemy_type = 231, id = 66462, monster_id = 8000101, num = 1}
+, 
+{battle_id = 3150005, enemy_pos = __rt_1, enemy_type = 231, id = 66463, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150005, enemy_pos = __rt_19, enemy_type = 221, id = 66464, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150005, enemy_pos = __rt_30, enemy_type = 221, id = 66465, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150005, enemy_pos = __rt_3, enemy_type = 221, id = 66466, monster_id = 20080, num = 5}
+, 
+{battle_id = 3150005, enemy_pos = __rt_11, enemy_type = 17, id = 66467, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150005, enemy_pos = __rt_12, enemy_type = 17, id = 66468, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150005, enemy_pos = __rt_13, enemy_type = 17, id = 66469, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150005, enemy_pos = __rt_17, enemy_type = 17, id = 66470, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150005, enemy_pos = __rt_7, enemy_type = 17, id = 66471, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150005, enemy_pos = __rt_10, enemy_type = 17, id = 66472, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150005, enemy_pos = __rt_27, enemy_type = 17, id = 66473, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150005, enemy_pos = __rt_28, enemy_type = 17, id = 66474, monster_id = 1000, num = 13}
+}
+, 
+[3150006] = {
+{battle_id = 3150006, enemy_pos = __rt_13, enemy_type = 231, id = 66501, monster_id = 8000101, num = 1}
+, 
+{battle_id = 3150006, enemy_pos = __rt_2, enemy_type = 231, id = 66502, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150006, enemy_pos = __rt_28, enemy_type = 231, id = 66503, monster_id = 8000101, num = 3}
+, 
+{battle_id = 3150006, enemy_pos = __rt_29, enemy_type = 221, id = 66504, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150006, enemy_pos = __rt_5, enemy_type = 221, id = 66505, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150006, enemy_pos = __rt_24, enemy_type = 17, id = 66506, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150006, enemy_pos = __rt_25, enemy_type = 17, id = 66507, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150006, enemy_pos = __rt_16, enemy_type = 17, id = 66508, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150006, enemy_pos = __rt_17, enemy_type = 17, id = 66509, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150006, enemy_pos = __rt_4, enemy_type = 17, id = 66510, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150006, enemy_pos = __rt_6, enemy_type = 17, id = 66511, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150006, enemy_pos = __rt_7, enemy_type = 17, id = 66512, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150006, enemy_pos = __rt_26, enemy_type = 17, id = 66513, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150006, enemy_pos = __rt_18, enemy_type = 17, id = 66514, monster_id = 1000, num = 14}
+, 
+{battle_id = 3150006, enemy_pos = __rt_30, enemy_type = 17, id = 66515, monster_id = 1000, num = 15}
+}
+, 
+[3150007] = {
+{battle_id = 3150007, enemy_pos = __rt_13, enemy_type = 231, id = 66546, monster_id = 8000101, num = 1}
+, 
+{battle_id = 3150007, enemy_pos = __rt_2, enemy_type = 231, id = 66547, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150007, enemy_pos = __rt_28, enemy_type = 231, id = 66548, monster_id = 8000101, num = 3}
+, 
+{battle_id = 3150007, enemy_pos = __rt_4, enemy_type = 221, id = 66549, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150007, enemy_pos = __rt_23, enemy_type = 221, id = 66550, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150007, enemy_pos = __rt_24, enemy_type = 17, id = 66551, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150007, enemy_pos = __rt_25, enemy_type = 17, id = 66552, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150007, enemy_pos = __rt_15, enemy_type = 17, id = 66553, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150007, enemy_pos = __rt_20, enemy_type = 17, id = 66554, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150007, enemy_pos = __rt_1, enemy_type = 17, id = 66555, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150007, enemy_pos = __rt_18, enemy_type = 17, id = 66556, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150007, enemy_pos = __rt_30, enemy_type = 17, id = 66557, monster_id = 1001, num = 12}
+}
+, 
+[3150008] = {
+{battle_id = 3150008, enemy_pos = __rt_16, enemy_type = 231, id = 66582, monster_id = 8000101, num = 1}
+, 
+{battle_id = 3150008, enemy_pos = __rt_2, enemy_type = 231, id = 66583, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150008, enemy_pos = __rt_19, enemy_type = 221, id = 66584, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150008, enemy_pos = __rt_14, enemy_type = 221, id = 66585, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150008, enemy_pos = __rt_23, enemy_type = 221, id = 66586, monster_id = 20080, num = 5}
+, 
+{battle_id = 3150008, enemy_pos = __rt_12, enemy_type = 17, id = 66587, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150008, enemy_pos = __rt_15, enemy_type = 17, id = 66588, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150008, enemy_pos = __rt_1, enemy_type = 17, id = 66589, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150008, enemy_pos = __rt_27, enemy_type = 17, id = 66590, monster_id = 1000, num = 9}
+}
+, 
+[3150009] = {
+{battle_id = 3150009, enemy_pos = __rt_16, enemy_type = 231, id = 66609, monster_id = 8000101, num = 1}
+, 
+{battle_id = 3150009, enemy_pos = __rt_1, enemy_type = 231, id = 66610, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150009, enemy_pos = __rt_14, enemy_type = 221, id = 66611, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150009, enemy_pos = __rt_19, enemy_type = 221, id = 66612, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150009, enemy_pos = __rt_3, enemy_type = 221, id = 66613, monster_id = 20080, num = 5}
+, 
+{battle_id = 3150009, enemy_pos = __rt_11, enemy_type = 17, id = 66614, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150009, enemy_pos = __rt_13, enemy_type = 17, id = 66615, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150009, enemy_pos = __rt_17, enemy_type = 17, id = 66616, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150009, enemy_pos = __rt_18, enemy_type = 17, id = 66617, monster_id = 1001, num = 10}
+, 
+{battle_id = 3150009, enemy_pos = __rt_10, enemy_type = 17, id = 66618, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150009, enemy_pos = __rt_28, enemy_type = 17, id = 66619, monster_id = 1000, num = 13}
+}
+, 
+[3150010] = {
+{battle_id = 3150010, enemy_pos = __rt_16, enemy_type = 231, id = 66642, monster_id = 8000101, num = 1}
+, 
+{battle_id = 3150010, enemy_pos = __rt_1, enemy_type = 231, id = 66643, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150010, enemy_pos = __rt_14, enemy_type = 221, id = 66644, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150010, enemy_pos = __rt_4, enemy_type = 221, id = 66645, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150010, enemy_pos = __rt_30, enemy_type = 221, id = 66646, monster_id = 20080, num = 5}
+, 
+{battle_id = 3150010, enemy_pos = __rt_13, enemy_type = 17, id = 66647, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150010, enemy_pos = __rt_29, enemy_type = 17, id = 66648, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150010, enemy_pos = __rt_17, enemy_type = 17, id = 66649, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150010, enemy_pos = __rt_20, enemy_type = 17, id = 66650, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150010, enemy_pos = __rt_7, enemy_type = 17, id = 66651, monster_id = 1001, num = 10}
+, 
+{battle_id = 3150010, enemy_pos = __rt_8, enemy_type = 17, id = 66652, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150010, enemy_pos = __rt_10, enemy_type = 17, id = 66653, monster_id = 1000, num = 12}
+}
+, 
+[3150021] = {
+{battle_id = 3150021, enemy_pos = __rt_20, enemy_type = 234, id = 66277, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150021, enemy_pos = __rt_1, enemy_type = 231, id = 66278, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150021, enemy_pos = __rt_27, enemy_type = 251, id = 66279, monster_id = 20107, num = 3}
+, 
+{battle_id = 3150021, enemy_pos = __rt_30, enemy_type = 221, id = 66280, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150021, enemy_pos = __rt_3, enemy_type = 221, id = 66281, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150021, enemy_pos = __rt_12, enemy_type = 17, id = 66282, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150021, enemy_pos = __rt_13, enemy_type = 17, id = 66283, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150021, enemy_pos = __rt_14, enemy_type = 17, id = 66284, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150021, enemy_pos = __rt_29, enemy_type = 17, id = 66285, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150021, enemy_pos = __rt_16, enemy_type = 17, id = 66286, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150021, enemy_pos = __rt_17, enemy_type = 17, id = 66287, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150021, enemy_pos = __rt_4, enemy_type = 17, id = 66288, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150021, enemy_pos = __rt_19, enemy_type = 17, id = 66289, monster_id = 1000, num = 13}
+, 
+{battle_id = 3150021, enemy_pos = __rt_5, enemy_type = 17, id = 66290, monster_id = 1000, num = 14}
+, 
+{battle_id = 3150021, enemy_pos = __rt_33, enemy_type = 17, id = 66291, monster_id = 1000, num = 15}
+, 
+{battle_id = 3150021, enemy_pos = __rt_6, enemy_type = 17, id = 66292, monster_id = 1000, num = 16}
+, 
+{battle_id = 3150021, enemy_pos = __rt_8, enemy_type = 17, id = 66293, monster_id = 1000, num = 17}
+, 
+{battle_id = 3150021, enemy_pos = __rt_9, enemy_type = 17, id = 66294, monster_id = 1000, num = 18}
+, 
+{battle_id = 3150021, enemy_pos = __rt_10, enemy_type = 17, id = 66295, monster_id = 1000, num = 19}
+}
+, 
+[3150022] = {
+{battle_id = 3150022, enemy_pos = __rt_16, enemy_type = 234, id = 66334, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150022, enemy_pos = __rt_1, enemy_type = 231, id = 66335, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150022, enemy_pos = __rt_17, enemy_type = 221, id = 66336, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150022, enemy_pos = __rt_18, enemy_type = 221, id = 66337, monster_id = 20080, num = 4}
+, 
+{battle_id = 3150022, enemy_pos = __rt_19, enemy_type = 221, id = 66338, monster_id = 80002, num = 5}
+, 
+{battle_id = 3150022, enemy_pos = __rt_22, enemy_type = 17, id = 66339, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150022, enemy_pos = __rt_11, enemy_type = 17, id = 66340, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150022, enemy_pos = __rt_12, enemy_type = 17, id = 66341, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150022, enemy_pos = __rt_13, enemy_type = 17, id = 66342, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150022, enemy_pos = __rt_14, enemy_type = 17, id = 66343, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150022, enemy_pos = __rt_4, enemy_type = 17, id = 66344, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150022, enemy_pos = __rt_5, enemy_type = 17, id = 66345, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150022, enemy_pos = __rt_33, enemy_type = 17, id = 66346, monster_id = 1000, num = 13}
+, 
+{battle_id = 3150022, enemy_pos = __rt_6, enemy_type = 17, id = 66347, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150022, enemy_pos = __rt_9, enemy_type = 17, id = 66348, monster_id = 1000, num = 15}
+, 
+{battle_id = 3150022, enemy_pos = __rt_10, enemy_type = 17, id = 66349, monster_id = 1000, num = 16}
+, 
+{battle_id = 3150022, enemy_pos = __rt_27, enemy_type = 17, id = 66350, monster_id = 1000, num = 17}
+, 
+{battle_id = 3150022, enemy_pos = __rt_28, enemy_type = 17, id = 66351, monster_id = 1000, num = 18}
+, 
+{battle_id = 3150022, enemy_pos = __rt_3, enemy_type = 17, id = 66352, monster_id = 1000, num = 19}
+}
+, 
+[3150023] = {
+{battle_id = 3150023, enemy_pos = __rt_16, enemy_type = 234, id = 66391, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150023, enemy_pos = __rt_1, enemy_type = 231, id = 66392, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150023, enemy_pos = __rt_4, enemy_type = 221, id = 66393, monster_id = 20078, num = 3}
+, 
+{battle_id = 3150023, enemy_pos = __rt_19, enemy_type = 232, id = 66394, monster_id = 80004, num = 4}
+, 
+{battle_id = 3150023, enemy_pos = __rt_30, enemy_type = 221, id = 66395, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150023, enemy_pos = __rt_21, enemy_type = 17, id = 66396, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150023, enemy_pos = __rt_22, enemy_type = 17, id = 66397, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150023, enemy_pos = __rt_11, enemy_type = 17, id = 66398, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150023, enemy_pos = __rt_12, enemy_type = 17, id = 66399, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150023, enemy_pos = __rt_13, enemy_type = 17, id = 66400, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150023, enemy_pos = __rt_14, enemy_type = 17, id = 66401, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150023, enemy_pos = __rt_29, enemy_type = 17, id = 66402, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150023, enemy_pos = __rt_8, enemy_type = 17, id = 66403, monster_id = 1000, num = 13}
+, 
+{battle_id = 3150023, enemy_pos = __rt_9, enemy_type = 17, id = 66404, monster_id = 1000, num = 14}
+, 
+{battle_id = 3150023, enemy_pos = __rt_10, enemy_type = 17, id = 66405, monster_id = 1000, num = 15}
+, 
+{battle_id = 3150023, enemy_pos = __rt_27, enemy_type = 17, id = 66406, monster_id = 1000, num = 16}
+, 
+{battle_id = 3150023, enemy_pos = __rt_28, enemy_type = 17, id = 66407, monster_id = 1000, num = 17}
+, 
+{battle_id = 3150023, enemy_pos = __rt_3, enemy_type = 17, id = 66408, monster_id = 1000, num = 18}
+, 
+{battle_id = 3150023, enemy_pos = __rt_23, enemy_type = 17, id = 66409, monster_id = 1000, num = 19}
+}
+, 
+[3150024] = {
+{battle_id = 3150024, enemy_pos = __rt_13, enemy_type = 234, id = 66440, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150024, enemy_pos = __rt_2, enemy_type = 231, id = 66441, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150024, enemy_pos = __rt_28, enemy_type = 231, id = 66442, monster_id = 8000101, num = 3}
+, 
+{battle_id = 3150024, enemy_pos = __rt_4, enemy_type = 221, id = 66443, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150024, enemy_pos = __rt_30, enemy_type = 221, id = 66444, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150024, enemy_pos = __rt_21, enemy_type = 17, id = 66445, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150024, enemy_pos = __rt_22, enemy_type = 17, id = 66446, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150024, enemy_pos = __rt_25, enemy_type = 17, id = 66447, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150024, enemy_pos = __rt_18, enemy_type = 17, id = 66448, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150024, enemy_pos = __rt_3, enemy_type = 17, id = 66449, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150024, enemy_pos = __rt_23, enemy_type = 17, id = 66450, monster_id = 1000, num = 11}
+}
+, 
+[3150025] = {
+{battle_id = 3150025, enemy_pos = __rt_16, enemy_type = 234, id = 66475, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150025, enemy_pos = __rt_1, enemy_type = 231, id = 66476, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150025, enemy_pos = __rt_19, enemy_type = 221, id = 66477, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150025, enemy_pos = __rt_30, enemy_type = 221, id = 66478, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150025, enemy_pos = __rt_3, enemy_type = 221, id = 66479, monster_id = 20080, num = 5}
+, 
+{battle_id = 3150025, enemy_pos = __rt_11, enemy_type = 17, id = 66480, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150025, enemy_pos = __rt_12, enemy_type = 17, id = 66481, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150025, enemy_pos = __rt_13, enemy_type = 17, id = 66482, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150025, enemy_pos = __rt_17, enemy_type = 17, id = 66483, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150025, enemy_pos = __rt_7, enemy_type = 17, id = 66484, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150025, enemy_pos = __rt_10, enemy_type = 17, id = 66485, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150025, enemy_pos = __rt_27, enemy_type = 17, id = 66486, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150025, enemy_pos = __rt_28, enemy_type = 17, id = 66487, monster_id = 1000, num = 13}
+}
+, 
+[3150026] = {
+{battle_id = 3150026, enemy_pos = __rt_13, enemy_type = 231, id = 66516, monster_id = 8000101, num = 1}
+, 
+{battle_id = 3150026, enemy_pos = __rt_2, enemy_type = 234, id = 66517, monster_id = 2007601, num = 2}
+, 
+{battle_id = 3150026, enemy_pos = __rt_28, enemy_type = 231, id = 66518, monster_id = 8000101, num = 3}
+, 
+{battle_id = 3150026, enemy_pos = __rt_29, enemy_type = 221, id = 66519, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150026, enemy_pos = __rt_5, enemy_type = 221, id = 66520, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150026, enemy_pos = __rt_24, enemy_type = 17, id = 66521, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150026, enemy_pos = __rt_25, enemy_type = 17, id = 66522, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150026, enemy_pos = __rt_16, enemy_type = 17, id = 66523, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150026, enemy_pos = __rt_17, enemy_type = 17, id = 66524, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150026, enemy_pos = __rt_4, enemy_type = 17, id = 66525, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150026, enemy_pos = __rt_6, enemy_type = 17, id = 66526, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150026, enemy_pos = __rt_7, enemy_type = 17, id = 66527, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150026, enemy_pos = __rt_26, enemy_type = 17, id = 66528, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150026, enemy_pos = __rt_18, enemy_type = 17, id = 66529, monster_id = 1000, num = 14}
+, 
+{battle_id = 3150026, enemy_pos = __rt_30, enemy_type = 17, id = 66530, monster_id = 1000, num = 15}
+}
+, 
+[3150027] = {
+{battle_id = 3150027, enemy_pos = __rt_13, enemy_type = 234, id = 66558, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150027, enemy_pos = __rt_2, enemy_type = 231, id = 66559, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150027, enemy_pos = __rt_28, enemy_type = 231, id = 66560, monster_id = 8000101, num = 3}
+, 
+{battle_id = 3150027, enemy_pos = __rt_4, enemy_type = 221, id = 66561, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150027, enemy_pos = __rt_23, enemy_type = 221, id = 66562, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150027, enemy_pos = __rt_24, enemy_type = 17, id = 66563, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150027, enemy_pos = __rt_25, enemy_type = 17, id = 66564, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150027, enemy_pos = __rt_15, enemy_type = 17, id = 66565, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150027, enemy_pos = __rt_20, enemy_type = 17, id = 66566, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150027, enemy_pos = __rt_1, enemy_type = 17, id = 66567, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150027, enemy_pos = __rt_18, enemy_type = 17, id = 66568, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150027, enemy_pos = __rt_30, enemy_type = 17, id = 66569, monster_id = 1001, num = 12}
+}
+, 
+[3150028] = {
+{battle_id = 3150028, enemy_pos = __rt_16, enemy_type = 234, id = 66591, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150028, enemy_pos = __rt_2, enemy_type = 231, id = 66592, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150028, enemy_pos = __rt_19, enemy_type = 221, id = 66593, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150028, enemy_pos = __rt_14, enemy_type = 221, id = 66594, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150028, enemy_pos = __rt_23, enemy_type = 221, id = 66595, monster_id = 20080, num = 5}
+, 
+{battle_id = 3150028, enemy_pos = __rt_12, enemy_type = 17, id = 66596, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150028, enemy_pos = __rt_15, enemy_type = 17, id = 66597, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150028, enemy_pos = __rt_1, enemy_type = 17, id = 66598, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150028, enemy_pos = __rt_27, enemy_type = 17, id = 66599, monster_id = 1000, num = 9}
+}
+, 
+[3150029] = {
+{battle_id = 3150029, enemy_pos = __rt_16, enemy_type = 234, id = 66620, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150029, enemy_pos = __rt_1, enemy_type = 231, id = 66621, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150029, enemy_pos = __rt_14, enemy_type = 221, id = 66622, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150029, enemy_pos = __rt_19, enemy_type = 221, id = 66623, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150029, enemy_pos = __rt_3, enemy_type = 221, id = 66624, monster_id = 20080, num = 5}
+, 
+{battle_id = 3150029, enemy_pos = __rt_11, enemy_type = 17, id = 66625, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150029, enemy_pos = __rt_13, enemy_type = 17, id = 66626, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150029, enemy_pos = __rt_17, enemy_type = 17, id = 66627, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150029, enemy_pos = __rt_18, enemy_type = 17, id = 66628, monster_id = 1001, num = 10}
+, 
+{battle_id = 3150029, enemy_pos = __rt_10, enemy_type = 17, id = 66629, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150029, enemy_pos = __rt_28, enemy_type = 17, id = 66630, monster_id = 1000, num = 13}
+}
+, 
+[3150030] = {
+{battle_id = 3150030, enemy_pos = __rt_16, enemy_type = 234, id = 66654, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150030, enemy_pos = __rt_1, enemy_type = 231, id = 66655, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150030, enemy_pos = __rt_14, enemy_type = 221, id = 66656, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150030, enemy_pos = __rt_4, enemy_type = 221, id = 66657, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150030, enemy_pos = __rt_30, enemy_type = 221, id = 66658, monster_id = 20080, num = 5}
+, 
+{battle_id = 3150030, enemy_pos = __rt_13, enemy_type = 17, id = 66659, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150030, enemy_pos = __rt_29, enemy_type = 17, id = 66660, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150030, enemy_pos = __rt_17, enemy_type = 17, id = 66661, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150030, enemy_pos = __rt_20, enemy_type = 17, id = 66662, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150030, enemy_pos = __rt_7, enemy_type = 17, id = 66663, monster_id = 1001, num = 10}
+, 
+{battle_id = 3150030, enemy_pos = __rt_8, enemy_type = 17, id = 66664, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150030, enemy_pos = __rt_10, enemy_type = 17, id = 66665, monster_id = 1000, num = 12}
+}
+, 
+[3150041] = {
+{battle_id = 3150041, enemy_pos = __rt_20, enemy_type = 234, id = 66296, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150041, enemy_pos = __rt_1, enemy_type = 234, id = 66297, monster_id = 2007601, num = 2}
+, 
+{battle_id = 3150041, enemy_pos = __rt_27, enemy_type = 251, id = 66298, monster_id = 20107, num = 3}
+, 
+{battle_id = 3150041, enemy_pos = __rt_30, enemy_type = 221, id = 66299, monster_id = 20080, num = 4}
+, 
+{battle_id = 3150041, enemy_pos = __rt_3, enemy_type = 221, id = 66300, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150041, enemy_pos = __rt_12, enemy_type = 17, id = 66301, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150041, enemy_pos = __rt_13, enemy_type = 17, id = 66302, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150041, enemy_pos = __rt_14, enemy_type = 17, id = 66303, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150041, enemy_pos = __rt_29, enemy_type = 17, id = 66304, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150041, enemy_pos = __rt_16, enemy_type = 17, id = 66305, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150041, enemy_pos = __rt_17, enemy_type = 17, id = 66306, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150041, enemy_pos = __rt_4, enemy_type = 17, id = 66307, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150041, enemy_pos = __rt_19, enemy_type = 17, id = 66308, monster_id = 1000, num = 13}
+, 
+{battle_id = 3150041, enemy_pos = __rt_5, enemy_type = 17, id = 66309, monster_id = 1000, num = 14}
+, 
+{battle_id = 3150041, enemy_pos = __rt_33, enemy_type = 17, id = 66310, monster_id = 1000, num = 15}
+, 
+{battle_id = 3150041, enemy_pos = __rt_6, enemy_type = 17, id = 66311, monster_id = 1000, num = 16}
+, 
+{battle_id = 3150041, enemy_pos = __rt_8, enemy_type = 17, id = 66312, monster_id = 1000, num = 17}
+, 
+{battle_id = 3150041, enemy_pos = __rt_9, enemy_type = 17, id = 66313, monster_id = 1000, num = 18}
+, 
+{battle_id = 3150041, enemy_pos = __rt_10, enemy_type = 17, id = 66314, monster_id = 1000, num = 19}
+}
+, 
+[3150042] = {
+{battle_id = 3150042, enemy_pos = __rt_16, enemy_type = 234, id = 66353, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150042, enemy_pos = __rt_1, enemy_type = 234, id = 66354, monster_id = 2007601, num = 2}
+, 
+{battle_id = 3150042, enemy_pos = __rt_17, enemy_type = 221, id = 66355, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150042, enemy_pos = __rt_18, enemy_type = 221, id = 66356, monster_id = 20080, num = 4}
+, 
+{battle_id = 3150042, enemy_pos = __rt_19, enemy_type = 221, id = 66357, monster_id = 80002, num = 5}
+, 
+{battle_id = 3150042, enemy_pos = __rt_22, enemy_type = 17, id = 66358, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150042, enemy_pos = __rt_11, enemy_type = 17, id = 66359, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150042, enemy_pos = __rt_12, enemy_type = 17, id = 66360, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150042, enemy_pos = __rt_13, enemy_type = 17, id = 66361, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150042, enemy_pos = __rt_14, enemy_type = 17, id = 66362, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150042, enemy_pos = __rt_4, enemy_type = 17, id = 66363, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150042, enemy_pos = __rt_5, enemy_type = 17, id = 66364, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150042, enemy_pos = __rt_33, enemy_type = 17, id = 66365, monster_id = 1000, num = 13}
+, 
+{battle_id = 3150042, enemy_pos = __rt_6, enemy_type = 17, id = 66366, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150042, enemy_pos = __rt_9, enemy_type = 17, id = 66367, monster_id = 1000, num = 15}
+, 
+{battle_id = 3150042, enemy_pos = __rt_10, enemy_type = 17, id = 66368, monster_id = 1000, num = 16}
+, 
+{battle_id = 3150042, enemy_pos = __rt_27, enemy_type = 17, id = 66369, monster_id = 1000, num = 17}
+, 
+{battle_id = 3150042, enemy_pos = __rt_28, enemy_type = 17, id = 66370, monster_id = 1000, num = 18}
+, 
+{battle_id = 3150042, enemy_pos = __rt_3, enemy_type = 17, id = 66371, monster_id = 1000, num = 19}
+}
+, 
+[3150043] = {
+{battle_id = 3150043, enemy_pos = __rt_16, enemy_type = 234, id = 66410, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150043, enemy_pos = __rt_1, enemy_type = 234, id = 66411, monster_id = 2007601, num = 2}
+, 
+{battle_id = 3150043, enemy_pos = __rt_4, enemy_type = 221, id = 66412, monster_id = 20078, num = 3}
+, 
+{battle_id = 3150043, enemy_pos = __rt_19, enemy_type = 232, id = 66413, monster_id = 80004, num = 4}
+, 
+{battle_id = 3150043, enemy_pos = __rt_30, enemy_type = 221, id = 66414, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150043, enemy_pos = __rt_21, enemy_type = 17, id = 66415, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150043, enemy_pos = __rt_22, enemy_type = 17, id = 66416, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150043, enemy_pos = __rt_11, enemy_type = 17, id = 66417, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150043, enemy_pos = __rt_12, enemy_type = 17, id = 66418, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150043, enemy_pos = __rt_13, enemy_type = 17, id = 66419, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150043, enemy_pos = __rt_14, enemy_type = 17, id = 66420, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150043, enemy_pos = __rt_29, enemy_type = 17, id = 66421, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150043, enemy_pos = __rt_8, enemy_type = 17, id = 66422, monster_id = 1000, num = 13}
+, 
+{battle_id = 3150043, enemy_pos = __rt_9, enemy_type = 17, id = 66423, monster_id = 1000, num = 14}
+, 
+{battle_id = 3150043, enemy_pos = __rt_10, enemy_type = 17, id = 66424, monster_id = 1000, num = 15}
+, 
+{battle_id = 3150043, enemy_pos = __rt_27, enemy_type = 17, id = 66425, monster_id = 1000, num = 16}
+, 
+{battle_id = 3150043, enemy_pos = __rt_28, enemy_type = 17, id = 66426, monster_id = 1000, num = 17}
+, 
+{battle_id = 3150043, enemy_pos = __rt_3, enemy_type = 17, id = 66427, monster_id = 1000, num = 18}
+, 
+{battle_id = 3150043, enemy_pos = __rt_23, enemy_type = 17, id = 66428, monster_id = 1000, num = 19}
+}
+, 
+[3150044] = {
+{battle_id = 3150044, enemy_pos = __rt_13, enemy_type = 234, id = 66451, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150044, enemy_pos = __rt_2, enemy_type = 231, id = 66452, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150044, enemy_pos = __rt_28, enemy_type = 234, id = 66453, monster_id = 2007601, num = 3}
+, 
+{battle_id = 3150044, enemy_pos = __rt_4, enemy_type = 221, id = 66454, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150044, enemy_pos = __rt_30, enemy_type = 221, id = 66455, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150044, enemy_pos = __rt_21, enemy_type = 17, id = 66456, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150044, enemy_pos = __rt_22, enemy_type = 17, id = 66457, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150044, enemy_pos = __rt_25, enemy_type = 17, id = 66458, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150044, enemy_pos = __rt_18, enemy_type = 17, id = 66459, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150044, enemy_pos = __rt_3, enemy_type = 17, id = 66460, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150044, enemy_pos = __rt_23, enemy_type = 17, id = 66461, monster_id = 1000, num = 11}
+}
+, 
+[3150045] = {
+{battle_id = 3150045, enemy_pos = __rt_16, enemy_type = 234, id = 66488, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150045, enemy_pos = __rt_1, enemy_type = 234, id = 66489, monster_id = 2007601, num = 2}
+, 
+{battle_id = 3150045, enemy_pos = __rt_19, enemy_type = 221, id = 66490, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150045, enemy_pos = __rt_30, enemy_type = 221, id = 66491, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150045, enemy_pos = __rt_3, enemy_type = 221, id = 66492, monster_id = 20080, num = 5}
+, 
+{battle_id = 3150045, enemy_pos = __rt_11, enemy_type = 17, id = 66493, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150045, enemy_pos = __rt_12, enemy_type = 17, id = 66494, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150045, enemy_pos = __rt_13, enemy_type = 17, id = 66495, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150045, enemy_pos = __rt_17, enemy_type = 17, id = 66496, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150045, enemy_pos = __rt_7, enemy_type = 17, id = 66497, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150045, enemy_pos = __rt_10, enemy_type = 17, id = 66498, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150045, enemy_pos = __rt_27, enemy_type = 17, id = 66499, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150045, enemy_pos = __rt_28, enemy_type = 17, id = 66500, monster_id = 1000, num = 13}
+}
+, 
+[3150046] = {
+{battle_id = 3150046, enemy_pos = __rt_13, enemy_type = 234, id = 66531, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150046, enemy_pos = __rt_2, enemy_type = 234, id = 66532, monster_id = 2007601, num = 2}
+, 
+{battle_id = 3150046, enemy_pos = __rt_28, enemy_type = 231, id = 66533, monster_id = 8000101, num = 3}
+, 
+{battle_id = 3150046, enemy_pos = __rt_29, enemy_type = 221, id = 66534, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150046, enemy_pos = __rt_5, enemy_type = 221, id = 66535, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150046, enemy_pos = __rt_24, enemy_type = 17, id = 66536, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150046, enemy_pos = __rt_25, enemy_type = 17, id = 66537, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150046, enemy_pos = __rt_16, enemy_type = 17, id = 66538, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150046, enemy_pos = __rt_17, enemy_type = 17, id = 66539, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150046, enemy_pos = __rt_4, enemy_type = 17, id = 66540, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150046, enemy_pos = __rt_6, enemy_type = 17, id = 66541, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150046, enemy_pos = __rt_7, enemy_type = 17, id = 66542, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150046, enemy_pos = __rt_26, enemy_type = 17, id = 66543, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150046, enemy_pos = __rt_18, enemy_type = 17, id = 66544, monster_id = 1000, num = 14}
+, 
+{battle_id = 3150046, enemy_pos = __rt_30, enemy_type = 17, id = 66545, monster_id = 1000, num = 15}
+}
+, 
+[3150047] = {
+{battle_id = 3150047, enemy_pos = __rt_13, enemy_type = 234, id = 66570, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150047, enemy_pos = __rt_2, enemy_type = 231, id = 66571, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150047, enemy_pos = __rt_28, enemy_type = 234, id = 66572, monster_id = 2007601, num = 3}
+, 
+{battle_id = 3150047, enemy_pos = __rt_4, enemy_type = 221, id = 66573, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150047, enemy_pos = __rt_23, enemy_type = 221, id = 66574, monster_id = 20078, num = 5}
+, 
+{battle_id = 3150047, enemy_pos = __rt_24, enemy_type = 17, id = 66575, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150047, enemy_pos = __rt_25, enemy_type = 17, id = 66576, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150047, enemy_pos = __rt_15, enemy_type = 17, id = 66577, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150047, enemy_pos = __rt_20, enemy_type = 17, id = 66578, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150047, enemy_pos = __rt_1, enemy_type = 17, id = 66579, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150047, enemy_pos = __rt_18, enemy_type = 17, id = 66580, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150047, enemy_pos = __rt_30, enemy_type = 17, id = 66581, monster_id = 1001, num = 12}
+}
+, 
+[3150048] = {
+{battle_id = 3150048, enemy_pos = __rt_16, enemy_type = 234, id = 66600, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150048, enemy_pos = __rt_2, enemy_type = 234, id = 66601, monster_id = 2007601, num = 2}
+, 
+{battle_id = 3150048, enemy_pos = __rt_19, enemy_type = 221, id = 66602, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150048, enemy_pos = __rt_14, enemy_type = 221, id = 66603, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150048, enemy_pos = __rt_23, enemy_type = 221, id = 66604, monster_id = 20080, num = 5}
+, 
+{battle_id = 3150048, enemy_pos = __rt_12, enemy_type = 17, id = 66605, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150048, enemy_pos = __rt_15, enemy_type = 17, id = 66606, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150048, enemy_pos = __rt_1, enemy_type = 17, id = 66607, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150048, enemy_pos = __rt_27, enemy_type = 17, id = 66608, monster_id = 1000, num = 9}
+}
+, 
+[3150049] = {
+{battle_id = 3150049, enemy_pos = __rt_16, enemy_type = 234, id = 66631, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150049, enemy_pos = __rt_1, enemy_type = 234, id = 66632, monster_id = 2007601, num = 2}
+, 
+{battle_id = 3150049, enemy_pos = __rt_14, enemy_type = 221, id = 66633, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150049, enemy_pos = __rt_19, enemy_type = 221, id = 66634, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150049, enemy_pos = __rt_3, enemy_type = 221, id = 66635, monster_id = 20080, num = 5}
+, 
+{battle_id = 3150049, enemy_pos = __rt_11, enemy_type = 17, id = 66636, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150049, enemy_pos = __rt_13, enemy_type = 17, id = 66637, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150049, enemy_pos = __rt_17, enemy_type = 17, id = 66638, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150049, enemy_pos = __rt_18, enemy_type = 17, id = 66639, monster_id = 1001, num = 10}
+, 
+{battle_id = 3150049, enemy_pos = __rt_10, enemy_type = 17, id = 66640, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150049, enemy_pos = __rt_28, enemy_type = 17, id = 66641, monster_id = 1000, num = 13}
+}
+, 
+[3150050] = {
+{battle_id = 3150050, enemy_pos = __rt_16, enemy_type = 234, id = 66666, monster_id = 2007601, num = 1}
+, 
+{battle_id = 3150050, enemy_pos = __rt_1, enemy_type = 234, id = 66667, monster_id = 2007601, num = 2}
+, 
+{battle_id = 3150050, enemy_pos = __rt_14, enemy_type = 221, id = 66668, monster_id = 20080, num = 3}
+, 
+{battle_id = 3150050, enemy_pos = __rt_4, enemy_type = 221, id = 66669, monster_id = 20078, num = 4}
+, 
+{battle_id = 3150050, enemy_pos = __rt_30, enemy_type = 221, id = 66670, monster_id = 20080, num = 5}
+, 
+{battle_id = 3150050, enemy_pos = __rt_13, enemy_type = 17, id = 66671, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150050, enemy_pos = __rt_29, enemy_type = 17, id = 66672, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150050, enemy_pos = __rt_17, enemy_type = 17, id = 66673, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150050, enemy_pos = __rt_20, enemy_type = 17, id = 66674, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150050, enemy_pos = __rt_7, enemy_type = 17, id = 66675, monster_id = 1001, num = 10}
+, 
+{battle_id = 3150050, enemy_pos = __rt_8, enemy_type = 17, id = 66676, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150050, enemy_pos = __rt_10, enemy_type = 17, id = 66677, monster_id = 1000, num = 12}
+}
+, 
+[3150051] = {
+{battle_id = 3150051, enemy_pos = __rt_20, enemy_type = 233, id = 66678, monster_id = 80029, num = 1}
+, 
+{battle_id = 3150051, enemy_pos = __rt_13, enemy_type = 233, id = 66679, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150051, enemy_pos = __rt_28, enemy_type = 233, id = 66680, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150051, enemy_pos = __rt_2, enemy_type = 221, id = 66681, monster_id = 80019, num = 4}
+, 
+{battle_id = 3150051, enemy_pos = __rt_34, enemy_type = 222, id = 66682, monster_id = 80027, num = 5}
+, 
+{battle_id = 3150051, enemy_pos = __rt_24, enemy_type = 17, id = 66683, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150051, enemy_pos = __rt_15, enemy_type = 17, id = 66684, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150051, enemy_pos = __rt_16, enemy_type = 17, id = 66685, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150051, enemy_pos = __rt_17, enemy_type = 17, id = 66686, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150051, enemy_pos = __rt_4, enemy_type = 17, id = 66687, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150051, enemy_pos = __rt_6, enemy_type = 17, id = 66688, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150051, enemy_pos = __rt_26, enemy_type = 17, id = 66689, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150051, enemy_pos = __rt_1, enemy_type = 17, id = 66690, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150051, enemy_pos = __rt_18, enemy_type = 17, id = 66691, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150051, enemy_pos = __rt_30, enemy_type = 17, id = 66692, monster_id = 1000, num = 15}
+}
+, 
+[3150052] = {
+{battle_id = 3150052, enemy_pos = __rt_20, enemy_type = 232, id = 66693, monster_id = 80035, num = 1}
+, 
+{battle_id = 3150052, enemy_pos = __rt_13, enemy_type = 233, id = 66694, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150052, enemy_pos = __rt_28, enemy_type = 233, id = 66695, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150052, enemy_pos = __rt_2, enemy_type = 221, id = 66696, monster_id = 80019, num = 4}
+, 
+{battle_id = 3150052, enemy_pos = __rt_34, enemy_type = 222, id = 66697, monster_id = 80027, num = 5}
+, 
+{battle_id = 3150052, enemy_pos = __rt_24, enemy_type = 17, id = 66698, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150052, enemy_pos = __rt_15, enemy_type = 17, id = 66699, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150052, enemy_pos = __rt_16, enemy_type = 17, id = 66700, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150052, enemy_pos = __rt_17, enemy_type = 17, id = 66701, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150052, enemy_pos = __rt_4, enemy_type = 17, id = 66702, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150052, enemy_pos = __rt_6, enemy_type = 17, id = 66703, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150052, enemy_pos = __rt_26, enemy_type = 17, id = 66704, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150052, enemy_pos = __rt_1, enemy_type = 17, id = 66705, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150052, enemy_pos = __rt_18, enemy_type = 17, id = 66706, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150052, enemy_pos = __rt_30, enemy_type = 17, id = 66707, monster_id = 1000, num = 15}
+}
+, 
+[3150053] = {
+{battle_id = 3150053, enemy_pos = __rt_13, enemy_type = 233, id = 66708, monster_id = 8003001, num = 1}
+, 
+{battle_id = 3150053, enemy_pos = __rt_20, enemy_type = 232, id = 66709, monster_id = 80035, num = 2}
+, 
+{battle_id = 3150053, enemy_pos = __rt_28, enemy_type = 233, id = 66710, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150053, enemy_pos = __rt_2, enemy_type = 221, id = 66711, monster_id = 80033, num = 4}
+, 
+{battle_id = 3150053, enemy_pos = __rt_34, enemy_type = 222, id = 66712, monster_id = 80027, num = 5}
+, 
+{battle_id = 3150053, enemy_pos = __rt_24, enemy_type = 17, id = 66713, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150053, enemy_pos = __rt_15, enemy_type = 17, id = 66714, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150053, enemy_pos = __rt_16, enemy_type = 17, id = 66715, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150053, enemy_pos = __rt_17, enemy_type = 17, id = 66716, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150053, enemy_pos = __rt_4, enemy_type = 17, id = 66717, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150053, enemy_pos = __rt_6, enemy_type = 17, id = 66718, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150053, enemy_pos = __rt_26, enemy_type = 17, id = 66719, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150053, enemy_pos = __rt_1, enemy_type = 17, id = 66720, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150053, enemy_pos = __rt_18, enemy_type = 17, id = 66721, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150053, enemy_pos = __rt_30, enemy_type = 17, id = 66722, monster_id = 1000, num = 15}
+}
+, 
+[3150054] = {
+{battle_id = 3150054, enemy_pos = __rt_20, enemy_type = 15, id = 66723, monster_id = 80039, num = 1}
+, 
+{battle_id = 3150054, enemy_pos = __rt_13, enemy_type = 233, id = 66724, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150054, enemy_pos = __rt_28, enemy_type = 233, id = 66725, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150054, enemy_pos = __rt_2, enemy_type = 221, id = 66726, monster_id = 80033, num = 4}
+, 
+{battle_id = 3150054, enemy_pos = __rt_34, enemy_type = 222, id = 66727, monster_id = 80027, num = 5}
+, 
+{battle_id = 3150054, enemy_pos = __rt_24, enemy_type = 17, id = 66728, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150054, enemy_pos = __rt_15, enemy_type = 17, id = 66729, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150054, enemy_pos = __rt_16, enemy_type = 17, id = 66730, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150054, enemy_pos = __rt_17, enemy_type = 17, id = 66731, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150054, enemy_pos = __rt_4, enemy_type = 17, id = 66732, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150054, enemy_pos = __rt_6, enemy_type = 17, id = 66733, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150054, enemy_pos = __rt_26, enemy_type = 17, id = 66734, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150054, enemy_pos = __rt_1, enemy_type = 17, id = 66735, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150054, enemy_pos = __rt_18, enemy_type = 17, id = 66736, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150054, enemy_pos = __rt_30, enemy_type = 17, id = 66737, monster_id = 1000, num = 15}
+}
+, 
+[3150061] = {
+{battle_id = 3150061, enemy_pos = __rt_20, enemy_type = 211, id = 66738, monster_id = 80017, num = 1}
+, 
+{battle_id = 3150061, enemy_pos = __rt_4, enemy_type = 233, id = 66739, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150061, enemy_pos = __rt_18, enemy_type = 233, id = 66740, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150061, enemy_pos = __rt_5, enemy_type = 221, id = 66741, monster_id = 80019, num = 4}
+, 
+{battle_id = 3150061, enemy_pos = __rt_13, enemy_type = 251, id = 66742, monster_id = 80018, num = 5}
+, 
+{battle_id = 3150061, enemy_pos = __rt_22, enemy_type = 17, id = 66743, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150061, enemy_pos = __rt_11, enemy_type = 17, id = 66744, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150061, enemy_pos = __rt_12, enemy_type = 17, id = 66745, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150061, enemy_pos = __rt_14, enemy_type = 17, id = 66746, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150061, enemy_pos = __rt_8, enemy_type = 17, id = 66747, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150061, enemy_pos = __rt_10, enemy_type = 17, id = 66748, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150061, enemy_pos = __rt_27, enemy_type = 17, id = 66749, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150061, enemy_pos = __rt_28, enemy_type = 17, id = 66750, monster_id = 1000, num = 13}
+, 
+{battle_id = 3150061, enemy_pos = __rt_16, enemy_type = 17, id = 66751, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150061, enemy_pos = __rt_7, enemy_type = 17, id = 66752, monster_id = 1001, num = 15}
+}
+, 
+[3150062] = {
+{battle_id = 3150062, enemy_pos = __rt_20, enemy_type = 211, id = 66753, monster_id = 80036, num = 1}
+, 
+{battle_id = 3150062, enemy_pos = __rt_4, enemy_type = 233, id = 66754, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150062, enemy_pos = __rt_18, enemy_type = 233, id = 66755, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150062, enemy_pos = __rt_5, enemy_type = 221, id = 66756, monster_id = 80019, num = 4}
+, 
+{battle_id = 3150062, enemy_pos = __rt_13, enemy_type = 251, id = 66757, monster_id = 80018, num = 5}
+, 
+{battle_id = 3150062, enemy_pos = __rt_22, enemy_type = 17, id = 66758, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150062, enemy_pos = __rt_11, enemy_type = 17, id = 66759, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150062, enemy_pos = __rt_12, enemy_type = 17, id = 66760, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150062, enemy_pos = __rt_14, enemy_type = 17, id = 66761, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150062, enemy_pos = __rt_8, enemy_type = 17, id = 66762, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150062, enemy_pos = __rt_10, enemy_type = 17, id = 66763, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150062, enemy_pos = __rt_27, enemy_type = 17, id = 66764, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150062, enemy_pos = __rt_28, enemy_type = 17, id = 66765, monster_id = 1000, num = 13}
+, 
+{battle_id = 3150062, enemy_pos = __rt_16, enemy_type = 17, id = 66766, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150062, enemy_pos = __rt_7, enemy_type = 17, id = 66767, monster_id = 1001, num = 15}
+}
+, 
+[3150063] = {
+{battle_id = 3150063, enemy_pos = __rt_4, enemy_type = 233, id = 66768, monster_id = 8003001, num = 1}
+, 
+{battle_id = 3150063, enemy_pos = __rt_20, enemy_type = 211, id = 66769, monster_id = 80036, num = 2}
+, 
+{battle_id = 3150063, enemy_pos = __rt_18, enemy_type = 233, id = 66770, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150063, enemy_pos = __rt_5, enemy_type = 221, id = 66771, monster_id = 80033, num = 4}
+, 
+{battle_id = 3150063, enemy_pos = __rt_13, enemy_type = 251, id = 66772, monster_id = 80018, num = 5}
+, 
+{battle_id = 3150063, enemy_pos = __rt_22, enemy_type = 17, id = 66773, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150063, enemy_pos = __rt_11, enemy_type = 17, id = 66774, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150063, enemy_pos = __rt_12, enemy_type = 17, id = 66775, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150063, enemy_pos = __rt_14, enemy_type = 17, id = 66776, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150063, enemy_pos = __rt_8, enemy_type = 17, id = 66777, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150063, enemy_pos = __rt_10, enemy_type = 17, id = 66778, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150063, enemy_pos = __rt_27, enemy_type = 17, id = 66779, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150063, enemy_pos = __rt_28, enemy_type = 17, id = 66780, monster_id = 1000, num = 13}
+, 
+{battle_id = 3150063, enemy_pos = __rt_16, enemy_type = 17, id = 66781, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150063, enemy_pos = __rt_7, enemy_type = 17, id = 66782, monster_id = 1001, num = 15}
+}
+, 
+[3150064] = {
+{battle_id = 3150064, enemy_pos = __rt_20, enemy_type = 2, id = 66783, monster_id = 80043, num = 1}
+, 
+{battle_id = 3150064, enemy_pos = __rt_4, enemy_type = 233, id = 66784, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150064, enemy_pos = __rt_18, enemy_type = 233, id = 66785, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150064, enemy_pos = __rt_5, enemy_type = 221, id = 66786, monster_id = 80033, num = 4}
+, 
+{battle_id = 3150064, enemy_pos = __rt_13, enemy_type = 251, id = 66787, monster_id = 80018, num = 5}
+, 
+{battle_id = 3150064, enemy_pos = __rt_22, enemy_type = 17, id = 66788, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150064, enemy_pos = __rt_11, enemy_type = 17, id = 66789, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150064, enemy_pos = __rt_12, enemy_type = 17, id = 66790, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150064, enemy_pos = __rt_14, enemy_type = 17, id = 66791, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150064, enemy_pos = __rt_8, enemy_type = 17, id = 66792, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150064, enemy_pos = __rt_10, enemy_type = 17, id = 66793, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150064, enemy_pos = __rt_27, enemy_type = 17, id = 66794, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150064, enemy_pos = __rt_28, enemy_type = 17, id = 66795, monster_id = 1000, num = 13}
+, 
+{battle_id = 3150064, enemy_pos = __rt_16, enemy_type = 17, id = 66796, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150064, enemy_pos = __rt_7, enemy_type = 17, id = 66797, monster_id = 1001, num = 15}
+}
+, 
+[3150071] = {
+{battle_id = 3150071, enemy_pos = __rt_20, enemy_type = 211, id = 66798, monster_id = 80017, num = 1}
+, 
+{battle_id = 3150071, enemy_pos = __rt_13, enemy_type = 233, id = 66799, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150071, enemy_pos = __rt_28, enemy_type = 233, id = 66800, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150071, enemy_pos = __rt_4, enemy_type = 221, id = 66801, monster_id = 80019, num = 4}
+, 
+{battle_id = 3150071, enemy_pos = __rt_30, enemy_type = 222, id = 66802, monster_id = 80025, num = 5}
+, 
+{battle_id = 3150071, enemy_pos = __rt_21, enemy_type = 17, id = 66803, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150071, enemy_pos = __rt_22, enemy_type = 17, id = 66804, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150071, enemy_pos = __rt_11, enemy_type = 17, id = 66805, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150071, enemy_pos = __rt_8, enemy_type = 17, id = 66806, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150071, enemy_pos = __rt_9, enemy_type = 17, id = 66807, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150071, enemy_pos = __rt_10, enemy_type = 17, id = 66808, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150071, enemy_pos = __rt_17, enemy_type = 17, id = 66809, monster_id = 1001, num = 12}
+, 
+{battle_id = 3150071, enemy_pos = __rt_2, enemy_type = 17, id = 66810, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150071, enemy_pos = __rt_18, enemy_type = 17, id = 66811, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150071, enemy_pos = __rt_3, enemy_type = 17, id = 66812, monster_id = 1001, num = 15}
+, 
+{battle_id = 3150071, enemy_pos = __rt_5, enemy_type = 17, id = 66813, monster_id = 1001, num = 16}
+, 
+{battle_id = 3150071, enemy_pos = __rt_14, enemy_type = 17, id = 66814, monster_id = 1001, num = 17}
+}
+, 
+[3150072] = {
+{battle_id = 3150072, enemy_pos = __rt_20, enemy_type = 211, id = 66815, monster_id = 80036, num = 1}
+, 
+{battle_id = 3150072, enemy_pos = __rt_13, enemy_type = 233, id = 66816, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150072, enemy_pos = __rt_28, enemy_type = 233, id = 66817, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150072, enemy_pos = __rt_4, enemy_type = 222, id = 66818, monster_id = 80025, num = 4}
+, 
+{battle_id = 3150072, enemy_pos = __rt_30, enemy_type = 222, id = 66819, monster_id = 80025, num = 5}
+, 
+{battle_id = 3150072, enemy_pos = __rt_21, enemy_type = 17, id = 66820, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150072, enemy_pos = __rt_22, enemy_type = 17, id = 66821, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150072, enemy_pos = __rt_11, enemy_type = 17, id = 66822, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150072, enemy_pos = __rt_8, enemy_type = 17, id = 66823, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150072, enemy_pos = __rt_9, enemy_type = 17, id = 66824, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150072, enemy_pos = __rt_10, enemy_type = 17, id = 66825, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150072, enemy_pos = __rt_17, enemy_type = 17, id = 66826, monster_id = 1001, num = 12}
+, 
+{battle_id = 3150072, enemy_pos = __rt_2, enemy_type = 17, id = 66827, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150072, enemy_pos = __rt_18, enemy_type = 17, id = 66828, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150072, enemy_pos = __rt_3, enemy_type = 17, id = 66829, monster_id = 1001, num = 15}
+, 
+{battle_id = 3150072, enemy_pos = __rt_5, enemy_type = 17, id = 66830, monster_id = 1001, num = 16}
+, 
+{battle_id = 3150072, enemy_pos = __rt_14, enemy_type = 17, id = 66831, monster_id = 1001, num = 17}
+}
+, 
+[3150073] = {
+{battle_id = 3150073, enemy_pos = __rt_13, enemy_type = 233, id = 66832, monster_id = 8003001, num = 1}
+, 
+{battle_id = 3150073, enemy_pos = __rt_20, enemy_type = 211, id = 66833, monster_id = 80036, num = 2}
+, 
+{battle_id = 3150073, enemy_pos = __rt_28, enemy_type = 233, id = 66834, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150073, enemy_pos = __rt_4, enemy_type = 251, id = 66835, monster_id = 80037, num = 4}
+, 
+{battle_id = 3150073, enemy_pos = __rt_30, enemy_type = 221, id = 66836, monster_id = 80019, num = 5}
+, 
+{battle_id = 3150073, enemy_pos = __rt_21, enemy_type = 17, id = 66837, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150073, enemy_pos = __rt_22, enemy_type = 17, id = 66838, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150073, enemy_pos = __rt_11, enemy_type = 17, id = 66839, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150073, enemy_pos = __rt_8, enemy_type = 17, id = 66840, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150073, enemy_pos = __rt_9, enemy_type = 17, id = 66841, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150073, enemy_pos = __rt_10, enemy_type = 17, id = 66842, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150073, enemy_pos = __rt_17, enemy_type = 17, id = 66843, monster_id = 1001, num = 12}
+, 
+{battle_id = 3150073, enemy_pos = __rt_2, enemy_type = 17, id = 66844, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150073, enemy_pos = __rt_18, enemy_type = 17, id = 66845, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150073, enemy_pos = __rt_3, enemy_type = 17, id = 66846, monster_id = 1001, num = 15}
+, 
+{battle_id = 3150073, enemy_pos = __rt_5, enemy_type = 17, id = 66847, monster_id = 1001, num = 16}
+, 
+{battle_id = 3150073, enemy_pos = __rt_14, enemy_type = 17, id = 66848, monster_id = 1001, num = 17}
+}
+, 
+[3150074] = {
+{battle_id = 3150074, enemy_pos = __rt_20, enemy_type = 2, id = 66849, monster_id = 80043, num = 1}
+, 
+{battle_id = 3150074, enemy_pos = __rt_13, enemy_type = 233, id = 66850, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150074, enemy_pos = __rt_28, enemy_type = 233, id = 66851, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150074, enemy_pos = __rt_4, enemy_type = 251, id = 66852, monster_id = 80037, num = 4}
+, 
+{battle_id = 3150074, enemy_pos = __rt_30, enemy_type = 221, id = 66853, monster_id = 80019, num = 5}
+, 
+{battle_id = 3150074, enemy_pos = __rt_21, enemy_type = 17, id = 66854, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150074, enemy_pos = __rt_22, enemy_type = 17, id = 66855, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150074, enemy_pos = __rt_11, enemy_type = 17, id = 66856, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150074, enemy_pos = __rt_8, enemy_type = 17, id = 66857, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150074, enemy_pos = __rt_9, enemy_type = 17, id = 66858, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150074, enemy_pos = __rt_10, enemy_type = 17, id = 66859, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150074, enemy_pos = __rt_17, enemy_type = 17, id = 66860, monster_id = 1001, num = 12}
+, 
+{battle_id = 3150074, enemy_pos = __rt_2, enemy_type = 17, id = 66861, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150074, enemy_pos = __rt_18, enemy_type = 17, id = 66862, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150074, enemy_pos = __rt_3, enemy_type = 17, id = 66863, monster_id = 1001, num = 15}
+, 
+{battle_id = 3150074, enemy_pos = __rt_5, enemy_type = 17, id = 66864, monster_id = 1001, num = 16}
+, 
+{battle_id = 3150074, enemy_pos = __rt_14, enemy_type = 17, id = 66865, monster_id = 1001, num = 17}
+}
+, 
+[3150081] = {
+{battle_id = 3150081, enemy_pos = __rt_19, enemy_type = 221, id = 66866, monster_id = 80019, num = 1}
+, 
+{battle_id = 3150081, enemy_pos = __rt_16, enemy_type = 233, id = 66867, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150081, enemy_pos = __rt_1, enemy_type = 233, id = 66868, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150081, enemy_pos = __rt_29, enemy_type = 222, id = 66869, monster_id = 80027, num = 4}
+, 
+{battle_id = 3150081, enemy_pos = __rt_23, enemy_type = 222, id = 66870, monster_id = 80025, num = 5}
+, 
+{battle_id = 3150081, enemy_pos = __rt_24, enemy_type = 17, id = 66871, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150081, enemy_pos = __rt_25, enemy_type = 17, id = 66872, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150081, enemy_pos = __rt_6, enemy_type = 17, id = 66873, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150081, enemy_pos = __rt_7, enemy_type = 17, id = 66874, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150081, enemy_pos = __rt_17, enemy_type = 17, id = 66875, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150081, enemy_pos = __rt_2, enemy_type = 17, id = 66876, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150081, enemy_pos = __rt_18, enemy_type = 17, id = 66877, monster_id = 1000, num = 12}
+}
+, 
+[3150082] = {
+{battle_id = 3150082, enemy_pos = __rt_19, enemy_type = 221, id = 66878, monster_id = 80033, num = 1}
+, 
+{battle_id = 3150082, enemy_pos = __rt_16, enemy_type = 233, id = 66879, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150082, enemy_pos = __rt_1, enemy_type = 233, id = 66880, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150082, enemy_pos = __rt_29, enemy_type = 222, id = 66881, monster_id = 80027, num = 4}
+, 
+{battle_id = 3150082, enemy_pos = __rt_23, enemy_type = 222, id = 66882, monster_id = 80025, num = 5}
+, 
+{battle_id = 3150082, enemy_pos = __rt_24, enemy_type = 17, id = 66883, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150082, enemy_pos = __rt_25, enemy_type = 17, id = 66884, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150082, enemy_pos = __rt_6, enemy_type = 17, id = 66885, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150082, enemy_pos = __rt_7, enemy_type = 17, id = 66886, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150082, enemy_pos = __rt_17, enemy_type = 17, id = 66887, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150082, enemy_pos = __rt_2, enemy_type = 17, id = 66888, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150082, enemy_pos = __rt_18, enemy_type = 17, id = 66889, monster_id = 1000, num = 12}
+}
+, 
+[3150083] = {
+{battle_id = 3150083, enemy_pos = __rt_16, enemy_type = 233, id = 66890, monster_id = 8003001, num = 1}
+, 
+{battle_id = 3150083, enemy_pos = __rt_19, enemy_type = 221, id = 66891, monster_id = 80033, num = 2}
+, 
+{battle_id = 3150083, enemy_pos = __rt_1, enemy_type = 233, id = 66892, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150083, enemy_pos = __rt_29, enemy_type = 222, id = 66893, monster_id = 80027, num = 4}
+, 
+{battle_id = 3150083, enemy_pos = __rt_23, enemy_type = 221, id = 66894, monster_id = 80033, num = 5}
+, 
+{battle_id = 3150083, enemy_pos = __rt_24, enemy_type = 17, id = 66895, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150083, enemy_pos = __rt_25, enemy_type = 17, id = 66896, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150083, enemy_pos = __rt_6, enemy_type = 17, id = 66897, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150083, enemy_pos = __rt_7, enemy_type = 17, id = 66898, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150083, enemy_pos = __rt_17, enemy_type = 17, id = 66899, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150083, enemy_pos = __rt_2, enemy_type = 17, id = 66900, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150083, enemy_pos = __rt_18, enemy_type = 17, id = 66901, monster_id = 1000, num = 12}
+}
+, 
+[3150084] = {
+{battle_id = 3150084, enemy_pos = __rt_19, enemy_type = 10, id = 66902, monster_id = 80042, num = 1}
+, 
+{battle_id = 3150084, enemy_pos = __rt_16, enemy_type = 233, id = 66903, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150084, enemy_pos = __rt_1, enemy_type = 233, id = 66904, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150084, enemy_pos = __rt_29, enemy_type = 222, id = 66905, monster_id = 80020, num = 4}
+, 
+{battle_id = 3150084, enemy_pos = __rt_23, enemy_type = 221, id = 66906, monster_id = 80033, num = 5}
+, 
+{battle_id = 3150084, enemy_pos = __rt_24, enemy_type = 17, id = 66907, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150084, enemy_pos = __rt_25, enemy_type = 17, id = 66908, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150084, enemy_pos = __rt_6, enemy_type = 17, id = 66909, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150084, enemy_pos = __rt_7, enemy_type = 17, id = 66910, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150084, enemy_pos = __rt_17, enemy_type = 17, id = 66911, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150084, enemy_pos = __rt_2, enemy_type = 17, id = 66912, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150084, enemy_pos = __rt_18, enemy_type = 17, id = 66913, monster_id = 1000, num = 12}
+}
+, 
+[3150091] = {
+{battle_id = 3150091, enemy_pos = __rt_16, enemy_type = 233, id = 66914, monster_id = 8003001, num = 1}
+, 
+{battle_id = 3150091, enemy_pos = __rt_1, enemy_type = 233, id = 66915, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150091, enemy_pos = __rt_2, enemy_type = 211, id = 66916, monster_id = 80017, num = 3}
+, 
+{battle_id = 3150091, enemy_pos = __rt_29, enemy_type = 222, id = 66917, monster_id = 80027, num = 4}
+, 
+{battle_id = 3150091, enemy_pos = __rt_23, enemy_type = 251, id = 66918, monster_id = 80024, num = 5}
+, 
+{battle_id = 3150091, enemy_pos = __rt_22, enemy_type = 17, id = 66919, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150091, enemy_pos = __rt_11, enemy_type = 17, id = 66920, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150091, enemy_pos = __rt_24, enemy_type = 17, id = 66921, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150091, enemy_pos = __rt_25, enemy_type = 17, id = 66922, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150091, enemy_pos = __rt_31, enemy_type = 17, id = 66923, monster_id = 1001, num = 10}
+, 
+{battle_id = 3150091, enemy_pos = __rt_32, enemy_type = 17, id = 66924, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150091, enemy_pos = __rt_6, enemy_type = 17, id = 66925, monster_id = 1001, num = 12}
+, 
+{battle_id = 3150091, enemy_pos = __rt_7, enemy_type = 17, id = 66926, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150091, enemy_pos = __rt_9, enemy_type = 17, id = 66927, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150091, enemy_pos = __rt_10, enemy_type = 17, id = 66928, monster_id = 1001, num = 15}
+}
+, 
+[3150092] = {
+{battle_id = 3150092, enemy_pos = __rt_2, enemy_type = 233, id = 66929, monster_id = 80034, num = 1}
+, 
+{battle_id = 3150092, enemy_pos = __rt_1, enemy_type = 233, id = 66930, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150092, enemy_pos = __rt_16, enemy_type = 233, id = 66931, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150092, enemy_pos = __rt_29, enemy_type = 222, id = 66932, monster_id = 80027, num = 4}
+, 
+{battle_id = 3150092, enemy_pos = __rt_23, enemy_type = 251, id = 66933, monster_id = 80024, num = 5}
+, 
+{battle_id = 3150092, enemy_pos = __rt_22, enemy_type = 17, id = 66934, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150092, enemy_pos = __rt_11, enemy_type = 17, id = 66935, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150092, enemy_pos = __rt_24, enemy_type = 17, id = 66936, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150092, enemy_pos = __rt_25, enemy_type = 17, id = 66937, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150092, enemy_pos = __rt_31, enemy_type = 17, id = 66938, monster_id = 1001, num = 10}
+, 
+{battle_id = 3150092, enemy_pos = __rt_32, enemy_type = 17, id = 66939, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150092, enemy_pos = __rt_6, enemy_type = 17, id = 66940, monster_id = 1001, num = 12}
+, 
+{battle_id = 3150092, enemy_pos = __rt_7, enemy_type = 17, id = 66941, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150092, enemy_pos = __rt_9, enemy_type = 17, id = 66942, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150092, enemy_pos = __rt_10, enemy_type = 17, id = 66943, monster_id = 1001, num = 15}
+}
+, 
+[3150093] = {
+{battle_id = 3150093, enemy_pos = __rt_1, enemy_type = 233, id = 66944, monster_id = 8003001, num = 1}
+, 
+{battle_id = 3150093, enemy_pos = __rt_2, enemy_type = 233, id = 66945, monster_id = 80034, num = 2}
+, 
+{battle_id = 3150093, enemy_pos = __rt_16, enemy_type = 233, id = 66946, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150093, enemy_pos = __rt_29, enemy_type = 222, id = 66947, monster_id = 80027, num = 4}
+, 
+{battle_id = 3150093, enemy_pos = __rt_23, enemy_type = 251, id = 66948, monster_id = 80037, num = 5}
+, 
+{battle_id = 3150093, enemy_pos = __rt_22, enemy_type = 17, id = 66949, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150093, enemy_pos = __rt_11, enemy_type = 17, id = 66950, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150093, enemy_pos = __rt_24, enemy_type = 17, id = 66951, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150093, enemy_pos = __rt_25, enemy_type = 17, id = 66952, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150093, enemy_pos = __rt_31, enemy_type = 17, id = 66953, monster_id = 1001, num = 10}
+, 
+{battle_id = 3150093, enemy_pos = __rt_32, enemy_type = 17, id = 66954, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150093, enemy_pos = __rt_6, enemy_type = 17, id = 66955, monster_id = 1001, num = 12}
+, 
+{battle_id = 3150093, enemy_pos = __rt_7, enemy_type = 17, id = 66956, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150093, enemy_pos = __rt_9, enemy_type = 17, id = 66957, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150093, enemy_pos = __rt_10, enemy_type = 17, id = 66958, monster_id = 1001, num = 15}
+}
+, 
+[3150094] = {
+{battle_id = 3150094, enemy_pos = __rt_2, enemy_type = 15, id = 66959, monster_id = 80039, num = 1}
+, 
+{battle_id = 3150094, enemy_pos = __rt_1, enemy_type = 233, id = 66960, monster_id = 8003001, num = 2}
+, 
+{battle_id = 3150094, enemy_pos = __rt_16, enemy_type = 233, id = 66961, monster_id = 8003001, num = 3}
+, 
+{battle_id = 3150094, enemy_pos = __rt_29, enemy_type = 222, id = 66962, monster_id = 80020, num = 4}
+, 
+{battle_id = 3150094, enemy_pos = __rt_23, enemy_type = 251, id = 66963, monster_id = 80037, num = 5}
+, 
+{battle_id = 3150094, enemy_pos = __rt_22, enemy_type = 17, id = 66964, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150094, enemy_pos = __rt_11, enemy_type = 17, id = 66965, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150094, enemy_pos = __rt_24, enemy_type = 17, id = 66966, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150094, enemy_pos = __rt_25, enemy_type = 17, id = 66967, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150094, enemy_pos = __rt_31, enemy_type = 17, id = 66968, monster_id = 1001, num = 10}
+, 
+{battle_id = 3150094, enemy_pos = __rt_32, enemy_type = 17, id = 66969, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150094, enemy_pos = __rt_6, enemy_type = 17, id = 66970, monster_id = 1001, num = 12}
+, 
+{battle_id = 3150094, enemy_pos = __rt_7, enemy_type = 17, id = 66971, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150094, enemy_pos = __rt_9, enemy_type = 17, id = 66972, monster_id = 1001, num = 14}
+, 
+{battle_id = 3150094, enemy_pos = __rt_10, enemy_type = 17, id = 66973, monster_id = 1001, num = 15}
+}
+, 
+[3150100] = {
+{battle_id = 3150100, enemy_pos = __rt_19, enemy_type = 221, id = 65997, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150100, enemy_pos = __rt_1, enemy_type = 231, id = 65998, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150100, enemy_pos = __rt_5, enemy_type = 232, id = 65999, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150100, enemy_pos = __rt_18, enemy_type = 221, id = 66000, monster_id = 20106, num = 4}
+, 
+{battle_id = 3150100, enemy_pos = __rt_16, enemy_type = 242, id = 66001, monster_id = 80009, num = 5}
+, 
+{battle_id = 3150100, enemy_pos = __rt_20, enemy_type = 17, id = 66002, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150100, enemy_pos = __rt_21, enemy_type = 17, id = 66003, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150100, enemy_pos = __rt_22, enemy_type = 17, id = 66004, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150100, enemy_pos = __rt_3, enemy_type = 17, id = 66005, monster_id = 1001, num = 12}
+, 
+{battle_id = 3150100, enemy_pos = __rt_23, enemy_type = 17, id = 66006, monster_id = 1001, num = 13}
+}
+, 
+[3150101] = {
+{battle_id = 3150101, enemy_pos = __rt_29, enemy_type = 221, id = 66027, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150101, enemy_pos = __rt_1, enemy_type = 242, id = 66028, monster_id = 80009, num = 2}
+, 
+{battle_id = 3150101, enemy_pos = __rt_19, enemy_type = 221, id = 66029, monster_id = 80002, num = 3}
+, 
+{battle_id = 3150101, enemy_pos = __rt_17, enemy_type = 242, id = 66030, monster_id = 20079, num = 4}
+, 
+{battle_id = 3150101, enemy_pos = __rt_14, enemy_type = 222, id = 66031, monster_id = 8000701, num = 5}
+, 
+{battle_id = 3150101, enemy_pos = __rt_20, enemy_type = 17, id = 66032, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150101, enemy_pos = __rt_16, enemy_type = 17, id = 66033, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150101, enemy_pos = __rt_12, enemy_type = 17, id = 66034, monster_id = 1001, num = 8}
+}
+, 
+[3150102] = {
+{battle_id = 3150102, enemy_pos = __rt_29, enemy_type = 221, id = 66051, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150102, enemy_pos = __rt_1, enemy_type = 231, id = 66052, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150102, enemy_pos = __rt_19, enemy_type = 242, id = 66053, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150102, enemy_pos = __rt_16, enemy_type = 231, id = 66054, monster_id = 8000101, num = 4}
+, 
+{battle_id = 3150102, enemy_pos = __rt_23, enemy_type = 222, id = 66055, monster_id = 8000701, num = 5}
+, 
+{battle_id = 3150102, enemy_pos = __rt_20, enemy_type = 17, id = 66056, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150102, enemy_pos = __rt_32, enemy_type = 17, id = 66057, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150102, enemy_pos = __rt_2, enemy_type = 17, id = 66058, monster_id = 1001, num = 8}
+}
+, 
+[3150103] = {
+{battle_id = 3150103, enemy_pos = __rt_29, enemy_type = 221, id = 66075, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150103, enemy_pos = __rt_23, enemy_type = 222, id = 66076, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150103, enemy_pos = __rt_2, enemy_type = 221, id = 66077, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150103, enemy_pos = __rt_17, enemy_type = 222, id = 66078, monster_id = 8000701, num = 4}
+, 
+{battle_id = 3150103, enemy_pos = __rt_18, enemy_type = 222, id = 66079, monster_id = 8000701, num = 5}
+, 
+{battle_id = 3150103, enemy_pos = __rt_20, enemy_type = 17, id = 66080, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150103, enemy_pos = __rt_16, enemy_type = 17, id = 66081, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150103, enemy_pos = __rt_12, enemy_type = 17, id = 66082, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150103, enemy_pos = __rt_1, enemy_type = 17, id = 66083, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150103, enemy_pos = __rt_27, enemy_type = 17, id = 66084, monster_id = 1001, num = 10}
+}
+, 
+[3150104] = {
+{battle_id = 3150104, enemy_pos = __rt_4, enemy_type = 221, id = 66105, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150104, enemy_pos = __rt_14, enemy_type = 222, id = 66106, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150104, enemy_pos = __rt_3, enemy_type = 221, id = 66107, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150104, enemy_pos = __rt_2, enemy_type = 242, id = 66108, monster_id = 80009, num = 4}
+, 
+{battle_id = 3150104, enemy_pos = __rt_30, enemy_type = 222, id = 66109, monster_id = 8000701, num = 5}
+, 
+{battle_id = 3150104, enemy_pos = __rt_29, enemy_type = 17, id = 66110, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150104, enemy_pos = __rt_23, enemy_type = 17, id = 66111, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150104, enemy_pos = __rt_21, enemy_type = 17, id = 66112, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150104, enemy_pos = __rt_8, enemy_type = 17, id = 66113, monster_id = 1001, num = 9}
+}
+, 
+[3150105] = {
+{battle_id = 3150105, enemy_pos = __rt_29, enemy_type = 221, id = 66132, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150105, enemy_pos = __rt_23, enemy_type = 222, id = 66133, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150105, enemy_pos = __rt_12, enemy_type = 221, id = 66134, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150105, enemy_pos = __rt_27, enemy_type = 231, id = 66135, monster_id = 8000101, num = 4}
+, 
+{battle_id = 3150105, enemy_pos = __rt_2, enemy_type = 222, id = 66136, monster_id = 8000701, num = 5}
+, 
+{battle_id = 3150105, enemy_pos = __rt_20, enemy_type = 17, id = 66137, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150105, enemy_pos = __rt_16, enemy_type = 17, id = 66138, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150105, enemy_pos = __rt_1, enemy_type = 17, id = 66139, monster_id = 1001, num = 8}
+}
+, 
+[3150106] = {
+{battle_id = 3150106, enemy_pos = __rt_4, enemy_type = 221, id = 66156, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150106, enemy_pos = __rt_30, enemy_type = 222, id = 66157, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150106, enemy_pos = __rt_16, enemy_type = 221, id = 66158, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150106, enemy_pos = __rt_1, enemy_type = 231, id = 66159, monster_id = 8000101, num = 4}
+, 
+{battle_id = 3150106, enemy_pos = __rt_17, enemy_type = 231, id = 66160, monster_id = 8000101, num = 5}
+, 
+{battle_id = 3150106, enemy_pos = __rt_20, enemy_type = 17, id = 66161, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150106, enemy_pos = __rt_31, enemy_type = 17, id = 66162, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150106, enemy_pos = __rt_19, enemy_type = 17, id = 66163, monster_id = 1001, num = 8}
+}
+, 
+[3150107] = {
+{battle_id = 3150107, enemy_pos = __rt_17, enemy_type = 221, id = 66180, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150107, enemy_pos = __rt_18, enemy_type = 222, id = 66181, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150107, enemy_pos = __rt_16, enemy_type = 221, id = 66182, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150107, enemy_pos = __rt_1, enemy_type = 231, id = 66183, monster_id = 8000101, num = 4}
+, 
+{battle_id = 3150107, enemy_pos = __rt_20, enemy_type = 231, id = 66184, monster_id = 8000101, num = 5}
+, 
+{battle_id = 3150107, enemy_pos = __rt_2, enemy_type = 17, id = 66185, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150107, enemy_pos = __rt_11, enemy_type = 17, id = 66186, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150107, enemy_pos = __rt_15, enemy_type = 17, id = 66187, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150107, enemy_pos = __rt_26, enemy_type = 17, id = 66188, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150107, enemy_pos = __rt_10, enemy_type = 17, id = 66189, monster_id = 1001, num = 10}
+}
+, 
+[3150108] = {
+{battle_id = 3150108, enemy_pos = __rt_14, enemy_type = 221, id = 66210, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150108, enemy_pos = __rt_3, enemy_type = 222, id = 66211, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150108, enemy_pos = __rt_13, enemy_type = 221, id = 66212, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150108, enemy_pos = __rt_28, enemy_type = 231, id = 66213, monster_id = 8000101, num = 4}
+, 
+{battle_id = 3150108, enemy_pos = __rt_20, enemy_type = 231, id = 66214, monster_id = 8000101, num = 5}
+, 
+{battle_id = 3150108, enemy_pos = __rt_32, enemy_type = 17, id = 66215, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150108, enemy_pos = __rt_22, enemy_type = 17, id = 66216, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150108, enemy_pos = __rt_9, enemy_type = 17, id = 66217, monster_id = 1001, num = 8}
+}
+, 
+[3150109] = {
+{battle_id = 3150109, enemy_pos = __rt_14, enemy_type = 221, id = 66234, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150109, enemy_pos = __rt_29, enemy_type = 222, id = 66235, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150109, enemy_pos = __rt_12, enemy_type = 231, id = 66236, monster_id = 8000101, num = 3}
+, 
+{battle_id = 3150109, enemy_pos = __rt_13, enemy_type = 222, id = 66237, monster_id = 8000701, num = 4}
+, 
+{battle_id = 3150109, enemy_pos = __rt_23, enemy_type = 221, id = 66238, monster_id = 20079, num = 5}
+, 
+{battle_id = 3150109, enemy_pos = __rt_16, enemy_type = 17, id = 66239, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150109, enemy_pos = __rt_17, enemy_type = 17, id = 66240, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150109, enemy_pos = __rt_4, enemy_type = 17, id = 66241, monster_id = 1001, num = 8}
+}
+, 
+[3150120] = {
+{battle_id = 3150120, enemy_pos = __rt_19, enemy_type = 221, id = 66007, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150120, enemy_pos = __rt_1, enemy_type = 234, id = 66008, monster_id = 80006, num = 2}
+, 
+{battle_id = 3150120, enemy_pos = __rt_5, enemy_type = 232, id = 66009, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150120, enemy_pos = __rt_18, enemy_type = 222, id = 66010, monster_id = 8000701, num = 4}
+, 
+{battle_id = 3150120, enemy_pos = __rt_16, enemy_type = 242, id = 66011, monster_id = 80009, num = 5}
+, 
+{battle_id = 3150120, enemy_pos = __rt_20, enemy_type = 17, id = 66012, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150120, enemy_pos = __rt_21, enemy_type = 17, id = 66013, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150120, enemy_pos = __rt_22, enemy_type = 17, id = 66014, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150120, enemy_pos = __rt_3, enemy_type = 17, id = 66015, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150120, enemy_pos = __rt_23, enemy_type = 17, id = 66016, monster_id = 1001, num = 10}
+}
+, 
+[3150121] = {
+{battle_id = 3150121, enemy_pos = __rt_29, enemy_type = 221, id = 66035, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150121, enemy_pos = __rt_1, enemy_type = 242, id = 66036, monster_id = 80009, num = 2}
+, 
+{battle_id = 3150121, enemy_pos = __rt_19, enemy_type = 242, id = 66037, monster_id = 80013, num = 3}
+, 
+{battle_id = 3150121, enemy_pos = __rt_17, enemy_type = 242, id = 66038, monster_id = 20079, num = 4}
+, 
+{battle_id = 3150121, enemy_pos = __rt_14, enemy_type = 222, id = 66039, monster_id = 8000701, num = 5}
+, 
+{battle_id = 3150121, enemy_pos = __rt_20, enemy_type = 17, id = 66040, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150121, enemy_pos = __rt_16, enemy_type = 17, id = 66041, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150121, enemy_pos = __rt_12, enemy_type = 17, id = 66042, monster_id = 1001, num = 8}
+}
+, 
+[3150122] = {
+{battle_id = 3150122, enemy_pos = __rt_29, enemy_type = 221, id = 66059, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150122, enemy_pos = __rt_1, enemy_type = 231, id = 66060, monster_id = 8000101, num = 2}
+, 
+{battle_id = 3150122, enemy_pos = __rt_19, enemy_type = 242, id = 66061, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150122, enemy_pos = __rt_16, enemy_type = 234, id = 66062, monster_id = 80006, num = 4}
+, 
+{battle_id = 3150122, enemy_pos = __rt_23, enemy_type = 222, id = 66063, monster_id = 8000701, num = 5}
+, 
+{battle_id = 3150122, enemy_pos = __rt_20, enemy_type = 17, id = 66064, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150122, enemy_pos = __rt_32, enemy_type = 17, id = 66065, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150122, enemy_pos = __rt_2, enemy_type = 17, id = 66066, monster_id = 1001, num = 8}
+}
+, 
+[3150123] = {
+{battle_id = 3150123, enemy_pos = __rt_29, enemy_type = 221, id = 66085, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150123, enemy_pos = __rt_23, enemy_type = 222, id = 66086, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150123, enemy_pos = __rt_2, enemy_type = 221, id = 66087, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150123, enemy_pos = __rt_17, enemy_type = 242, id = 66088, monster_id = 80013, num = 4}
+, 
+{battle_id = 3150123, enemy_pos = __rt_18, enemy_type = 222, id = 66089, monster_id = 8000701, num = 5}
+, 
+{battle_id = 3150123, enemy_pos = __rt_20, enemy_type = 17, id = 66090, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150123, enemy_pos = __rt_16, enemy_type = 17, id = 66091, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150123, enemy_pos = __rt_12, enemy_type = 17, id = 66092, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150123, enemy_pos = __rt_1, enemy_type = 17, id = 66093, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150123, enemy_pos = __rt_27, enemy_type = 17, id = 66094, monster_id = 1001, num = 10}
+}
+, 
+[3150124] = {
+{battle_id = 3150124, enemy_pos = __rt_4, enemy_type = 221, id = 66114, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150124, enemy_pos = __rt_14, enemy_type = 222, id = 66115, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150124, enemy_pos = __rt_3, enemy_type = 221, id = 66116, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150124, enemy_pos = __rt_2, enemy_type = 234, id = 66117, monster_id = 80006, num = 4}
+, 
+{battle_id = 3150124, enemy_pos = __rt_30, enemy_type = 222, id = 66118, monster_id = 8000701, num = 5}
+, 
+{battle_id = 3150124, enemy_pos = __rt_29, enemy_type = 17, id = 66119, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150124, enemy_pos = __rt_23, enemy_type = 17, id = 66120, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150124, enemy_pos = __rt_21, enemy_type = 17, id = 66121, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150124, enemy_pos = __rt_8, enemy_type = 17, id = 66122, monster_id = 1001, num = 9}
+}
+, 
+[3150125] = {
+{battle_id = 3150125, enemy_pos = __rt_29, enemy_type = 221, id = 66140, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150125, enemy_pos = __rt_23, enemy_type = 222, id = 66141, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150125, enemy_pos = __rt_12, enemy_type = 221, id = 66142, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150125, enemy_pos = __rt_27, enemy_type = 231, id = 66143, monster_id = 8000101, num = 4}
+, 
+{battle_id = 3150125, enemy_pos = __rt_2, enemy_type = 242, id = 66144, monster_id = 80013, num = 5}
+, 
+{battle_id = 3150125, enemy_pos = __rt_20, enemy_type = 17, id = 66145, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150125, enemy_pos = __rt_16, enemy_type = 17, id = 66146, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150125, enemy_pos = __rt_1, enemy_type = 17, id = 66147, monster_id = 1001, num = 8}
+}
+, 
+[3150126] = {
+{battle_id = 3150126, enemy_pos = __rt_4, enemy_type = 221, id = 66164, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150126, enemy_pos = __rt_30, enemy_type = 222, id = 66165, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150126, enemy_pos = __rt_16, enemy_type = 221, id = 66166, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150126, enemy_pos = __rt_1, enemy_type = 231, id = 66167, monster_id = 8000101, num = 4}
+, 
+{battle_id = 3150126, enemy_pos = __rt_17, enemy_type = 234, id = 66168, monster_id = 80006, num = 5}
+, 
+{battle_id = 3150126, enemy_pos = __rt_20, enemy_type = 17, id = 66169, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150126, enemy_pos = __rt_31, enemy_type = 17, id = 66170, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150126, enemy_pos = __rt_19, enemy_type = 17, id = 66171, monster_id = 1001, num = 8}
+}
+, 
+[3150127] = {
+{battle_id = 3150127, enemy_pos = __rt_17, enemy_type = 221, id = 66190, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150127, enemy_pos = __rt_18, enemy_type = 222, id = 66191, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150127, enemy_pos = __rt_16, enemy_type = 221, id = 66192, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150127, enemy_pos = __rt_1, enemy_type = 231, id = 66193, monster_id = 8000101, num = 4}
+, 
+{battle_id = 3150127, enemy_pos = __rt_20, enemy_type = 234, id = 66194, monster_id = 80006, num = 5}
+, 
+{battle_id = 3150127, enemy_pos = __rt_2, enemy_type = 17, id = 66195, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150127, enemy_pos = __rt_11, enemy_type = 17, id = 66196, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150127, enemy_pos = __rt_15, enemy_type = 17, id = 66197, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150127, enemy_pos = __rt_26, enemy_type = 17, id = 66198, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150127, enemy_pos = __rt_10, enemy_type = 17, id = 66199, monster_id = 1001, num = 10}
+}
+, 
+[3150128] = {
+{battle_id = 3150128, enemy_pos = __rt_14, enemy_type = 221, id = 66218, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150128, enemy_pos = __rt_3, enemy_type = 222, id = 66219, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150128, enemy_pos = __rt_13, enemy_type = 221, id = 66220, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150128, enemy_pos = __rt_28, enemy_type = 231, id = 66221, monster_id = 8000101, num = 4}
+, 
+{battle_id = 3150128, enemy_pos = __rt_20, enemy_type = 231, id = 66222, monster_id = 8000101, num = 5}
+, 
+{battle_id = 3150128, enemy_pos = __rt_32, enemy_type = 17, id = 66223, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150128, enemy_pos = __rt_22, enemy_type = 17, id = 66224, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150128, enemy_pos = __rt_9, enemy_type = 17, id = 66225, monster_id = 1001, num = 8}
+}
+, 
+[3150129] = {
+{battle_id = 3150129, enemy_pos = __rt_14, enemy_type = 221, id = 66242, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150129, enemy_pos = __rt_29, enemy_type = 222, id = 66243, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150129, enemy_pos = __rt_12, enemy_type = 234, id = 66244, monster_id = 80006, num = 3}
+, 
+{battle_id = 3150129, enemy_pos = __rt_13, enemy_type = 222, id = 66245, monster_id = 8000701, num = 4}
+, 
+{battle_id = 3150129, enemy_pos = __rt_23, enemy_type = 221, id = 66246, monster_id = 20079, num = 5}
+, 
+{battle_id = 3150129, enemy_pos = __rt_16, enemy_type = 17, id = 66247, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150129, enemy_pos = __rt_17, enemy_type = 17, id = 66248, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150129, enemy_pos = __rt_4, enemy_type = 17, id = 66249, monster_id = 1001, num = 8}
+}
+, 
+[3150140] = {
+{battle_id = 3150140, enemy_pos = __rt_19, enemy_type = 221, id = 66017, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150140, enemy_pos = __rt_1, enemy_type = 234, id = 66018, monster_id = 80006, num = 2}
+, 
+{battle_id = 3150140, enemy_pos = __rt_5, enemy_type = 242, id = 66019, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150140, enemy_pos = __rt_18, enemy_type = 222, id = 66020, monster_id = 8000701, num = 4}
+, 
+{battle_id = 3150140, enemy_pos = __rt_16, enemy_type = 242, id = 66021, monster_id = 20079, num = 5}
+, 
+{battle_id = 3150140, enemy_pos = __rt_20, enemy_type = 17, id = 66022, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150140, enemy_pos = __rt_21, enemy_type = 17, id = 66023, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150140, enemy_pos = __rt_22, enemy_type = 17, id = 66024, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150140, enemy_pos = __rt_3, enemy_type = 17, id = 66025, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150140, enemy_pos = __rt_23, enemy_type = 17, id = 66026, monster_id = 1001, num = 10}
+}
+, 
+[3150141] = {
+{battle_id = 3150141, enemy_pos = __rt_29, enemy_type = 221, id = 66043, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150141, enemy_pos = __rt_1, enemy_type = 234, id = 66044, monster_id = 80006, num = 2}
+, 
+{battle_id = 3150141, enemy_pos = __rt_19, enemy_type = 242, id = 66045, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150141, enemy_pos = __rt_17, enemy_type = 242, id = 66046, monster_id = 20079, num = 4}
+, 
+{battle_id = 3150141, enemy_pos = __rt_14, enemy_type = 222, id = 66047, monster_id = 8000701, num = 5}
+, 
+{battle_id = 3150141, enemy_pos = __rt_20, enemy_type = 17, id = 66048, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150141, enemy_pos = __rt_16, enemy_type = 17, id = 66049, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150141, enemy_pos = __rt_12, enemy_type = 17, id = 66050, monster_id = 1001, num = 8}
+}
+, 
+[3150142] = {
+{battle_id = 3150142, enemy_pos = __rt_29, enemy_type = 221, id = 66067, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150142, enemy_pos = __rt_1, enemy_type = 242, id = 66068, monster_id = 20079, num = 2}
+, 
+{battle_id = 3150142, enemy_pos = __rt_19, enemy_type = 242, id = 66069, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150142, enemy_pos = __rt_16, enemy_type = 234, id = 66070, monster_id = 80006, num = 4}
+, 
+{battle_id = 3150142, enemy_pos = __rt_23, enemy_type = 222, id = 66071, monster_id = 8000701, num = 5}
+, 
+{battle_id = 3150142, enemy_pos = __rt_20, enemy_type = 17, id = 66072, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150142, enemy_pos = __rt_32, enemy_type = 17, id = 66073, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150142, enemy_pos = __rt_2, enemy_type = 17, id = 66074, monster_id = 1001, num = 8}
+}
+, 
+[3150143] = {
+{battle_id = 3150143, enemy_pos = __rt_29, enemy_type = 221, id = 66095, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150143, enemy_pos = __rt_23, enemy_type = 222, id = 66096, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150143, enemy_pos = __rt_2, enemy_type = 221, id = 66097, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150143, enemy_pos = __rt_17, enemy_type = 242, id = 66098, monster_id = 80013, num = 4}
+, 
+{battle_id = 3150143, enemy_pos = __rt_18, enemy_type = 221, id = 66099, monster_id = 20079, num = 5}
+, 
+{battle_id = 3150143, enemy_pos = __rt_20, enemy_type = 17, id = 66100, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150143, enemy_pos = __rt_16, enemy_type = 17, id = 66101, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150143, enemy_pos = __rt_12, enemy_type = 17, id = 66102, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150143, enemy_pos = __rt_1, enemy_type = 17, id = 66103, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150143, enemy_pos = __rt_27, enemy_type = 17, id = 66104, monster_id = 1001, num = 10}
+}
+, 
+[3150144] = {
+{battle_id = 3150144, enemy_pos = __rt_4, enemy_type = 221, id = 66123, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150144, enemy_pos = __rt_14, enemy_type = 221, id = 66124, monster_id = 20079, num = 2}
+, 
+{battle_id = 3150144, enemy_pos = __rt_3, enemy_type = 221, id = 66125, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150144, enemy_pos = __rt_2, enemy_type = 234, id = 66126, monster_id = 80006, num = 4}
+, 
+{battle_id = 3150144, enemy_pos = __rt_30, enemy_type = 222, id = 66127, monster_id = 8000701, num = 5}
+, 
+{battle_id = 3150144, enemy_pos = __rt_29, enemy_type = 17, id = 66128, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150144, enemy_pos = __rt_23, enemy_type = 17, id = 66129, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150144, enemy_pos = __rt_21, enemy_type = 17, id = 66130, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150144, enemy_pos = __rt_8, enemy_type = 17, id = 66131, monster_id = 1001, num = 9}
+}
+, 
+[3150145] = {
+{battle_id = 3150145, enemy_pos = __rt_29, enemy_type = 221, id = 66148, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150145, enemy_pos = __rt_23, enemy_type = 222, id = 66149, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150145, enemy_pos = __rt_12, enemy_type = 221, id = 66150, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150145, enemy_pos = __rt_27, enemy_type = 221, id = 66151, monster_id = 20079, num = 4}
+, 
+{battle_id = 3150145, enemy_pos = __rt_2, enemy_type = 242, id = 66152, monster_id = 80013, num = 5}
+, 
+{battle_id = 3150145, enemy_pos = __rt_20, enemy_type = 17, id = 66153, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150145, enemy_pos = __rt_16, enemy_type = 17, id = 66154, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150145, enemy_pos = __rt_1, enemy_type = 17, id = 66155, monster_id = 1001, num = 8}
+}
+, 
+[3150146] = {
+{battle_id = 3150146, enemy_pos = __rt_4, enemy_type = 221, id = 66172, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150146, enemy_pos = __rt_30, enemy_type = 222, id = 66173, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150146, enemy_pos = __rt_16, enemy_type = 221, id = 66174, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150146, enemy_pos = __rt_1, enemy_type = 221, id = 66175, monster_id = 20079, num = 4}
+, 
+{battle_id = 3150146, enemy_pos = __rt_17, enemy_type = 234, id = 66176, monster_id = 80006, num = 5}
+, 
+{battle_id = 3150146, enemy_pos = __rt_20, enemy_type = 17, id = 66177, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150146, enemy_pos = __rt_31, enemy_type = 17, id = 66178, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150146, enemy_pos = __rt_19, enemy_type = 17, id = 66179, monster_id = 1001, num = 8}
+}
+, 
+[3150147] = {
+{battle_id = 3150147, enemy_pos = __rt_17, enemy_type = 221, id = 66200, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150147, enemy_pos = __rt_18, enemy_type = 222, id = 66201, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150147, enemy_pos = __rt_16, enemy_type = 221, id = 66202, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150147, enemy_pos = __rt_1, enemy_type = 221, id = 66203, monster_id = 20079, num = 4}
+, 
+{battle_id = 3150147, enemy_pos = __rt_20, enemy_type = 234, id = 66204, monster_id = 80006, num = 5}
+, 
+{battle_id = 3150147, enemy_pos = __rt_2, enemy_type = 17, id = 66205, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150147, enemy_pos = __rt_11, enemy_type = 17, id = 66206, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150147, enemy_pos = __rt_15, enemy_type = 17, id = 66207, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150147, enemy_pos = __rt_26, enemy_type = 17, id = 66208, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150147, enemy_pos = __rt_10, enemy_type = 17, id = 66209, monster_id = 1001, num = 10}
+}
+, 
+[3150148] = {
+{battle_id = 3150148, enemy_pos = __rt_14, enemy_type = 221, id = 66226, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150148, enemy_pos = __rt_3, enemy_type = 222, id = 66227, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150148, enemy_pos = __rt_13, enemy_type = 221, id = 66228, monster_id = 20079, num = 3}
+, 
+{battle_id = 3150148, enemy_pos = __rt_28, enemy_type = 231, id = 66229, monster_id = 8000101, num = 4}
+, 
+{battle_id = 3150148, enemy_pos = __rt_20, enemy_type = 231, id = 66230, monster_id = 8000101, num = 5}
+, 
+{battle_id = 3150148, enemy_pos = __rt_32, enemy_type = 17, id = 66231, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150148, enemy_pos = __rt_22, enemy_type = 17, id = 66232, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150148, enemy_pos = __rt_9, enemy_type = 17, id = 66233, monster_id = 1001, num = 8}
+}
+, 
+[3150149] = {
+{battle_id = 3150149, enemy_pos = __rt_14, enemy_type = 221, id = 66250, monster_id = 20077, num = 1}
+, 
+{battle_id = 3150149, enemy_pos = __rt_29, enemy_type = 222, id = 66251, monster_id = 8000701, num = 2}
+, 
+{battle_id = 3150149, enemy_pos = __rt_12, enemy_type = 234, id = 66252, monster_id = 80006, num = 3}
+, 
+{battle_id = 3150149, enemy_pos = __rt_13, enemy_type = 221, id = 66253, monster_id = 20079, num = 4}
+, 
+{battle_id = 3150149, enemy_pos = __rt_23, enemy_type = 221, id = 66254, monster_id = 20079, num = 5}
+, 
+{battle_id = 3150149, enemy_pos = __rt_16, enemy_type = 17, id = 66255, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150149, enemy_pos = __rt_17, enemy_type = 17, id = 66256, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150149, enemy_pos = __rt_4, enemy_type = 17, id = 66257, monster_id = 1001, num = 8}
+}
+, 
+[3150151] = {
+{battle_id = 3150151, enemy_pos = __rt_35, enemy_type = 222, id = 66974, monster_id = 80020, num = 1}
+, 
+{battle_id = 3150151, enemy_pos = __rt_36, enemy_type = 233, id = 66975, monster_id = 80031, num = 2}
+, 
+{battle_id = 3150151, enemy_pos = __rt_37, enemy_type = 232, id = 66976, monster_id = 80022, num = 3}
+, 
+{battle_id = 3150151, enemy_pos = __rt_38, enemy_type = 221, id = 66977, monster_id = 80019, num = 4}
+, 
+{battle_id = 3150151, enemy_pos = __rt_39, enemy_type = 233, id = 66978, monster_id = 80031, num = 5}
+, 
+{battle_id = 3150151, enemy_pos = __rt_15, enemy_type = 17, id = 66979, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150151, enemy_pos = __rt_16, enemy_type = 17, id = 66980, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150151, enemy_pos = __rt_32, enemy_type = 17, id = 66981, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150151, enemy_pos = __rt_2, enemy_type = 17, id = 66982, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150151, enemy_pos = __rt_26, enemy_type = 17, id = 66983, monster_id = 1001, num = 10}
+, 
+{battle_id = 3150151, enemy_pos = __rt_1, enemy_type = 17, id = 66984, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150151, enemy_pos = __rt_12, enemy_type = 17, id = 66985, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150151, enemy_pos = __rt_27, enemy_type = 17, id = 66986, monster_id = 1000, num = 13}
+}
+, 
+[3150152] = {
+{battle_id = 3150152, enemy_pos = __rt_39, enemy_type = 232, id = 66987, monster_id = 80035, num = 1}
+, 
+{battle_id = 3150152, enemy_pos = __rt_36, enemy_type = 233, id = 66988, monster_id = 80031, num = 2}
+, 
+{battle_id = 3150152, enemy_pos = __rt_37, enemy_type = 222, id = 66989, monster_id = 80027, num = 3}
+, 
+{battle_id = 3150152, enemy_pos = __rt_40, enemy_type = 233, id = 66990, monster_id = 80031, num = 4}
+, 
+{battle_id = 3150152, enemy_pos = __rt_35, enemy_type = 251, id = 66991, monster_id = 80018, num = 5}
+, 
+{battle_id = 3150152, enemy_pos = __rt_15, enemy_type = 17, id = 66992, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150152, enemy_pos = __rt_16, enemy_type = 17, id = 66993, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150152, enemy_pos = __rt_32, enemy_type = 17, id = 66994, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150152, enemy_pos = __rt_2, enemy_type = 17, id = 66995, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150152, enemy_pos = __rt_26, enemy_type = 17, id = 66996, monster_id = 1001, num = 10}
+, 
+{battle_id = 3150152, enemy_pos = __rt_1, enemy_type = 17, id = 66997, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150152, enemy_pos = __rt_12, enemy_type = 17, id = 66998, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150152, enemy_pos = __rt_27, enemy_type = 17, id = 66999, monster_id = 1000, num = 13}
+}
+, 
+[3150153] = {
+{battle_id = 3150153, enemy_pos = __rt_36, enemy_type = 233, id = 67000, monster_id = 80031, num = 1}
+, 
+{battle_id = 3150153, enemy_pos = __rt_38, enemy_type = 221, id = 67001, monster_id = 80033, num = 2}
+, 
+{battle_id = 3150153, enemy_pos = __rt_39, enemy_type = 222, id = 67002, monster_id = 80027, num = 3}
+, 
+{battle_id = 3150153, enemy_pos = __rt_37, enemy_type = 233, id = 67003, monster_id = 80031, num = 4}
+, 
+{battle_id = 3150153, enemy_pos = __rt_35, enemy_type = 251, id = 67004, monster_id = 80037, num = 5}
+, 
+{battle_id = 3150153, enemy_pos = __rt_15, enemy_type = 17, id = 67005, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150153, enemy_pos = __rt_16, enemy_type = 17, id = 67006, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150153, enemy_pos = __rt_32, enemy_type = 17, id = 67007, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150153, enemy_pos = __rt_2, enemy_type = 17, id = 67008, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150153, enemy_pos = __rt_26, enemy_type = 17, id = 67009, monster_id = 1001, num = 10}
+, 
+{battle_id = 3150153, enemy_pos = __rt_1, enemy_type = 17, id = 67010, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150153, enemy_pos = __rt_12, enemy_type = 17, id = 67011, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150153, enemy_pos = __rt_27, enemy_type = 17, id = 67012, monster_id = 1000, num = 13}
+}
+, 
+[3150154] = {
+{battle_id = 3150154, enemy_pos = __rt_19, enemy_type = 10, id = 67013, monster_id = 80042, num = 1}
+, 
+{battle_id = 3150154, enemy_pos = __rt_36, enemy_type = 233, id = 67014, monster_id = 80031, num = 2}
+, 
+{battle_id = 3150154, enemy_pos = __rt_37, enemy_type = 221, id = 67015, monster_id = 80016, num = 3}
+, 
+{battle_id = 3150154, enemy_pos = __rt_40, enemy_type = 251, id = 67016, monster_id = 80038, num = 4}
+, 
+{battle_id = 3150154, enemy_pos = __rt_41, enemy_type = 251, id = 67017, monster_id = 80018, num = 5}
+, 
+{battle_id = 3150154, enemy_pos = __rt_15, enemy_type = 17, id = 67018, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150154, enemy_pos = __rt_16, enemy_type = 17, id = 67019, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150154, enemy_pos = __rt_32, enemy_type = 17, id = 67020, monster_id = 1001, num = 8}
+, 
+{battle_id = 3150154, enemy_pos = __rt_2, enemy_type = 17, id = 67021, monster_id = 1001, num = 9}
+, 
+{battle_id = 3150154, enemy_pos = __rt_26, enemy_type = 17, id = 67022, monster_id = 1001, num = 10}
+, 
+{battle_id = 3150154, enemy_pos = __rt_1, enemy_type = 17, id = 67023, monster_id = 1001, num = 11}
+, 
+{battle_id = 3150154, enemy_pos = __rt_12, enemy_type = 17, id = 67024, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150154, enemy_pos = __rt_27, enemy_type = 17, id = 67025, monster_id = 1000, num = 13}
+}
+, 
+[3150161] = {
+{battle_id = 3150161, enemy_pos = __rt_16, enemy_type = 233, id = 67026, monster_id = 80031, num = 1}
+, 
+{battle_id = 3150161, enemy_pos = __rt_1, enemy_type = 233, id = 67027, monster_id = 80031, num = 2}
+, 
+{battle_id = 3150161, enemy_pos = __rt_4, enemy_type = 222, id = 67028, monster_id = 80025, num = 3}
+, 
+{battle_id = 3150161, enemy_pos = __rt_19, enemy_type = 222, id = 67029, monster_id = 80025, num = 4}
+, 
+{battle_id = 3150161, enemy_pos = __rt_30, enemy_type = 222, id = 67030, monster_id = 80025, num = 5}
+, 
+{battle_id = 3150161, enemy_pos = __rt_22, enemy_type = 17, id = 67031, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150161, enemy_pos = __rt_12, enemy_type = 17, id = 67032, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150161, enemy_pos = __rt_14, enemy_type = 17, id = 67033, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150161, enemy_pos = __rt_24, enemy_type = 17, id = 67034, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150161, enemy_pos = __rt_17, enemy_type = 17, id = 67035, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150161, enemy_pos = __rt_6, enemy_type = 17, id = 67036, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150161, enemy_pos = __rt_18, enemy_type = 17, id = 67037, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150161, enemy_pos = __rt_9, enemy_type = 17, id = 67038, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150161, enemy_pos = __rt_27, enemy_type = 17, id = 67039, monster_id = 1000, num = 14}
+, 
+{battle_id = 3150161, enemy_pos = __rt_3, enemy_type = 17, id = 67040, monster_id = 1000, num = 15}
+}
+, 
+[3150162] = {
+{battle_id = 3150162, enemy_pos = __rt_16, enemy_type = 211, id = 67041, monster_id = 80036, num = 1}
+, 
+{battle_id = 3150162, enemy_pos = __rt_1, enemy_type = 233, id = 67042, monster_id = 80031, num = 2}
+, 
+{battle_id = 3150162, enemy_pos = __rt_19, enemy_type = 233, id = 67043, monster_id = 80031, num = 3}
+, 
+{battle_id = 3150162, enemy_pos = __rt_4, enemy_type = 222, id = 67044, monster_id = 80025, num = 4}
+, 
+{battle_id = 3150162, enemy_pos = __rt_30, enemy_type = 222, id = 67045, monster_id = 80025, num = 5}
+, 
+{battle_id = 3150162, enemy_pos = __rt_22, enemy_type = 17, id = 67046, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150162, enemy_pos = __rt_12, enemy_type = 17, id = 67047, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150162, enemy_pos = __rt_14, enemy_type = 17, id = 67048, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150162, enemy_pos = __rt_24, enemy_type = 17, id = 67049, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150162, enemy_pos = __rt_17, enemy_type = 17, id = 67050, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150162, enemy_pos = __rt_6, enemy_type = 17, id = 67051, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150162, enemy_pos = __rt_18, enemy_type = 17, id = 67052, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150162, enemy_pos = __rt_9, enemy_type = 17, id = 67053, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150162, enemy_pos = __rt_27, enemy_type = 17, id = 67054, monster_id = 1000, num = 14}
+, 
+{battle_id = 3150162, enemy_pos = __rt_3, enemy_type = 17, id = 67055, monster_id = 1000, num = 15}
+}
+, 
+[3150163] = {
+{battle_id = 3150163, enemy_pos = __rt_1, enemy_type = 233, id = 67056, monster_id = 80031, num = 1}
+, 
+{battle_id = 3150163, enemy_pos = __rt_4, enemy_type = 251, id = 67057, monster_id = 80038, num = 2}
+, 
+{battle_id = 3150163, enemy_pos = __rt_16, enemy_type = 233, id = 67058, monster_id = 80031, num = 3}
+, 
+{battle_id = 3150163, enemy_pos = __rt_19, enemy_type = 251, id = 67059, monster_id = 80038, num = 4}
+, 
+{battle_id = 3150163, enemy_pos = __rt_30, enemy_type = 221, id = 67060, monster_id = 80019, num = 5}
+, 
+{battle_id = 3150163, enemy_pos = __rt_22, enemy_type = 17, id = 67061, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150163, enemy_pos = __rt_12, enemy_type = 17, id = 67062, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150163, enemy_pos = __rt_14, enemy_type = 17, id = 67063, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150163, enemy_pos = __rt_24, enemy_type = 17, id = 67064, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150163, enemy_pos = __rt_17, enemy_type = 17, id = 67065, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150163, enemy_pos = __rt_6, enemy_type = 17, id = 67066, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150163, enemy_pos = __rt_18, enemy_type = 17, id = 67067, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150163, enemy_pos = __rt_9, enemy_type = 17, id = 67068, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150163, enemy_pos = __rt_27, enemy_type = 17, id = 67069, monster_id = 1000, num = 14}
+, 
+{battle_id = 3150163, enemy_pos = __rt_3, enemy_type = 17, id = 67070, monster_id = 1000, num = 15}
+}
+, 
+[3150164] = {
+{battle_id = 3150164, enemy_pos = __rt_16, enemy_type = 4, id = 67071, monster_id = 80040, num = 1}
+, 
+{battle_id = 3150164, enemy_pos = __rt_1, enemy_type = 211, id = 67072, monster_id = 80036, num = 2}
+, 
+{battle_id = 3150164, enemy_pos = __rt_4, enemy_type = 233, id = 67073, monster_id = 80031, num = 3}
+, 
+{battle_id = 3150164, enemy_pos = __rt_19, enemy_type = 251, id = 67074, monster_id = 80038, num = 4}
+, 
+{battle_id = 3150164, enemy_pos = __rt_30, enemy_type = 221, id = 67075, monster_id = 80019, num = 5}
+, 
+{battle_id = 3150164, enemy_pos = __rt_22, enemy_type = 17, id = 67076, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150164, enemy_pos = __rt_12, enemy_type = 17, id = 67077, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150164, enemy_pos = __rt_14, enemy_type = 17, id = 67078, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150164, enemy_pos = __rt_24, enemy_type = 17, id = 67079, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150164, enemy_pos = __rt_17, enemy_type = 17, id = 67080, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150164, enemy_pos = __rt_6, enemy_type = 17, id = 67081, monster_id = 1000, num = 11}
+, 
+{battle_id = 3150164, enemy_pos = __rt_18, enemy_type = 17, id = 67082, monster_id = 1000, num = 12}
+, 
+{battle_id = 3150164, enemy_pos = __rt_9, enemy_type = 17, id = 67083, monster_id = 1001, num = 13}
+, 
+{battle_id = 3150164, enemy_pos = __rt_27, enemy_type = 17, id = 67084, monster_id = 1000, num = 14}
+, 
+{battle_id = 3150164, enemy_pos = __rt_3, enemy_type = 17, id = 67085, monster_id = 1000, num = 15}
+}
+, 
+[3150171] = {
+{battle_id = 3150171, enemy_pos = __rt_14, enemy_type = 222, id = 67086, monster_id = 80027, num = 1}
+, 
+{battle_id = 3150171, enemy_pos = __rt_4, enemy_type = 222, id = 67087, monster_id = 80025, num = 2}
+, 
+{battle_id = 3150171, enemy_pos = __rt_18, enemy_type = 233, id = 67088, monster_id = 80031, num = 3}
+, 
+{battle_id = 3150171, enemy_pos = __rt_30, enemy_type = 233, id = 67089, monster_id = 80031, num = 4}
+, 
+{battle_id = 3150171, enemy_pos = __rt_13, enemy_type = 251, id = 67090, monster_id = 80018, num = 5}
+, 
+{battle_id = 3150171, enemy_pos = __rt_16, enemy_type = 17, id = 67091, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150171, enemy_pos = __rt_26, enemy_type = 17, id = 67092, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150171, enemy_pos = __rt_27, enemy_type = 17, id = 67093, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150171, enemy_pos = __rt_2, enemy_type = 17, id = 67094, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150171, enemy_pos = __rt_12, enemy_type = 17, id = 67095, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150171, enemy_pos = __rt_32, enemy_type = 17, id = 67096, monster_id = 1000, num = 11}
+}
+, 
+[3150172] = {
+{battle_id = 3150172, enemy_pos = __rt_4, enemy_type = 221, id = 67097, monster_id = 80033, num = 1}
+, 
+{battle_id = 3150172, enemy_pos = __rt_14, enemy_type = 222, id = 67098, monster_id = 80027, num = 2}
+, 
+{battle_id = 3150172, enemy_pos = __rt_18, enemy_type = 233, id = 67099, monster_id = 80031, num = 3}
+, 
+{battle_id = 3150172, enemy_pos = __rt_30, enemy_type = 233, id = 67100, monster_id = 80031, num = 4}
+, 
+{battle_id = 3150172, enemy_pos = __rt_13, enemy_type = 251, id = 67101, monster_id = 80018, num = 5}
+, 
+{battle_id = 3150172, enemy_pos = __rt_16, enemy_type = 17, id = 67102, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150172, enemy_pos = __rt_26, enemy_type = 17, id = 67103, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150172, enemy_pos = __rt_27, enemy_type = 17, id = 67104, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150172, enemy_pos = __rt_2, enemy_type = 17, id = 67105, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150172, enemy_pos = __rt_12, enemy_type = 17, id = 67106, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150172, enemy_pos = __rt_32, enemy_type = 17, id = 67107, monster_id = 1000, num = 11}
+}
+, 
+[3150173] = {
+{battle_id = 3150173, enemy_pos = __rt_18, enemy_type = 233, id = 67108, monster_id = 80031, num = 1}
+, 
+{battle_id = 3150173, enemy_pos = __rt_4, enemy_type = 251, id = 67109, monster_id = 80038, num = 2}
+, 
+{battle_id = 3150173, enemy_pos = __rt_30, enemy_type = 241, id = 67110, monster_id = 80032, num = 3}
+, 
+{battle_id = 3150173, enemy_pos = __rt_14, enemy_type = 222, id = 67111, monster_id = 80027, num = 4}
+, 
+{battle_id = 3150173, enemy_pos = __rt_13, enemy_type = 251, id = 67112, monster_id = 80018, num = 5}
+, 
+{battle_id = 3150173, enemy_pos = __rt_16, enemy_type = 17, id = 67113, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150173, enemy_pos = __rt_26, enemy_type = 17, id = 67114, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150173, enemy_pos = __rt_27, enemy_type = 17, id = 67115, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150173, enemy_pos = __rt_2, enemy_type = 17, id = 67116, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150173, enemy_pos = __rt_12, enemy_type = 17, id = 67117, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150173, enemy_pos = __rt_32, enemy_type = 17, id = 67118, monster_id = 1000, num = 11}
+}
+, 
+[3150174] = {
+{battle_id = 3150174, enemy_pos = __rt_4, enemy_type = 9, id = 67119, monster_id = 80041, num = 1}
+, 
+{battle_id = 3150174, enemy_pos = __rt_14, enemy_type = 222, id = 67120, monster_id = 80027, num = 2}
+, 
+{battle_id = 3150174, enemy_pos = __rt_18, enemy_type = 233, id = 67121, monster_id = 80031, num = 3}
+, 
+{battle_id = 3150174, enemy_pos = __rt_30, enemy_type = 233, id = 67122, monster_id = 80031, num = 4}
+, 
+{battle_id = 3150174, enemy_pos = __rt_13, enemy_type = 251, id = 67123, monster_id = 80038, num = 5}
+, 
+{battle_id = 3150174, enemy_pos = __rt_16, enemy_type = 17, id = 67124, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150174, enemy_pos = __rt_26, enemy_type = 17, id = 67125, monster_id = 1001, num = 7}
+, 
+{battle_id = 3150174, enemy_pos = __rt_27, enemy_type = 17, id = 67126, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150174, enemy_pos = __rt_2, enemy_type = 17, id = 67127, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150174, enemy_pos = __rt_12, enemy_type = 17, id = 67128, monster_id = 1000, num = 10}
+, 
+{battle_id = 3150174, enemy_pos = __rt_32, enemy_type = 17, id = 67129, monster_id = 1000, num = 11}
+}
+, 
+[3150200] = {
+{battle_id = 3150200, enemy_pos = __rt_2, enemy_type = 202, id = 67190, monster_id = 20069, num = 1}
+, 
+{battle_id = 3150200, enemy_pos = __rt_21, enemy_type = 17, id = 67191, monster_id = 1000, num = 2}
+, 
+{battle_id = 3150200, enemy_pos = __rt_8, enemy_type = 17, id = 67192, monster_id = 1000, num = 3}
+, 
+{battle_id = 3150200, enemy_pos = __rt_29, enemy_type = 17, id = 67193, monster_id = 1000, num = 4}
+, 
+{battle_id = 3150200, enemy_pos = __rt_23, enemy_type = 17, id = 67194, monster_id = 1000, num = 5}
+, 
+{battle_id = 3150200, enemy_pos = __rt_12, enemy_type = 17, id = 67195, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150200, enemy_pos = __rt_27, enemy_type = 17, id = 67196, monster_id = 1000, num = 7}
+}
+, 
+[3150201] = {
+{battle_id = 3150201, enemy_pos = __rt_19, enemy_type = 204, id = 67197, monster_id = 1000022, num = 1}
+, 
+{battle_id = 3150201, enemy_pos = __rt_24, enemy_type = 17, id = 67198, monster_id = 1000, num = 2}
+, 
+{battle_id = 3150201, enemy_pos = __rt_4, enemy_type = 17, id = 67199, monster_id = 1000, num = 3}
+, 
+{battle_id = 3150201, enemy_pos = __rt_6, enemy_type = 17, id = 67200, monster_id = 1001, num = 5}
+, 
+{battle_id = 3150201, enemy_pos = __rt_9, enemy_type = 17, id = 67201, monster_id = 1001, num = 6}
+, 
+{battle_id = 3150201, enemy_pos = __rt_27, enemy_type = 17, id = 67202, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150201, enemy_pos = __rt_23, enemy_type = 17, id = 67203, monster_id = 1000, num = 8}
+, 
+{battle_id = 3150201, enemy_pos = __rt_11, enemy_type = 17, id = 67204, monster_id = 1000, num = 9}
+, 
+{battle_id = 3150201, enemy_pos = __rt_18, enemy_type = 241, id = 67205, monster_id = 80032, num = 10}
+, 
+{battle_id = 3150201, enemy_pos = __rt_17, enemy_type = 232, id = 67206, monster_id = 80016, num = 11}
+, 
+{battle_id = 3150201, enemy_pos = __rt_30, enemy_type = 222, id = 67207, monster_id = 80027, num = 12}
+, 
+{battle_id = 3150201, enemy_pos = __rt_29, enemy_type = 242, id = 67208, monster_id = 80018, num = 13}
+}
+, 
+[3150202] = {
+{battle_id = 3150202, enemy_pos = __rt_2, enemy_type = 201, id = 67209, monster_id = 20116, num = 1}
+, 
+{battle_id = 3150202, enemy_pos = __rt_11, enemy_type = 17, id = 67210, monster_id = 1000, num = 2}
+, 
+{battle_id = 3150202, enemy_pos = __rt_12, enemy_type = 17, id = 67211, monster_id = 1000, num = 3}
+, 
+{battle_id = 3150202, enemy_pos = __rt_13, enemy_type = 17, id = 67212, monster_id = 1000, num = 4}
+, 
+{battle_id = 3150202, enemy_pos = __rt_10, enemy_type = 17, id = 67213, monster_id = 1000, num = 5}
+, 
+{battle_id = 3150202, enemy_pos = __rt_27, enemy_type = 17, id = 67214, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150202, enemy_pos = __rt_28, enemy_type = 17, id = 67215, monster_id = 1000, num = 7}
+}
+, 
+[3150203] = {
+{battle_id = 3150203, enemy_pos = __rt_2, enemy_type = 203, id = 67216, monster_id = 1000021, num = 1}
+, 
+{battle_id = 3150203, enemy_pos = __rt_25, enemy_type = 17, id = 67217, monster_id = 1000, num = 2}
+, 
+{battle_id = 3150203, enemy_pos = __rt_4, enemy_type = 17, id = 67218, monster_id = 1000, num = 3}
+, 
+{battle_id = 3150203, enemy_pos = __rt_7, enemy_type = 17, id = 67219, monster_id = 1000, num = 4}
+, 
+{battle_id = 3150203, enemy_pos = __rt_30, enemy_type = 17, id = 67220, monster_id = 1000, num = 5}
+, 
+{battle_id = 3150203, enemy_pos = __rt_28, enemy_type = 17, id = 67221, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150203, enemy_pos = __rt_13, enemy_type = 17, id = 67222, monster_id = 1000, num = 7}
+, 
+{battle_id = 3150203, enemy_pos = __rt_18, enemy_type = 233, id = 67223, monster_id = 20038, num = 8}
+, 
+{battle_id = 3150203, enemy_pos = __rt_17, enemy_type = 232, id = 67224, monster_id = 20010, num = 9}
+, 
+{battle_id = 3150203, enemy_pos = __rt_14, enemy_type = 242, id = 67225, monster_id = 20017, num = 10}
+, 
+{battle_id = 3150203, enemy_pos = __rt_3, enemy_type = 211, id = 67226, monster_id = 20016, num = 11}
+}
+, 
+[3150204] = {
+{battle_id = 3150204, enemy_pos = __rt_2, enemy_type = 203, id = 67227, monster_id = 30001, num = 1}
+, 
+{battle_id = 3150204, enemy_pos = __rt_16, enemy_type = 233, id = 67228, monster_id = 80022, num = 2}
+, 
+{battle_id = 3150204, enemy_pos = __rt_15, enemy_type = 17, id = 67232, monster_id = 1001, num = 2}
+, 
+{battle_id = 3150204, enemy_pos = __rt_26, enemy_type = 17, id = 67233, monster_id = 1001, num = 3}
+, 
+{battle_id = 3150204, enemy_pos = __rt_1, enemy_type = 233, id = 67229, monster_id = 80022, num = 3}
+, 
+{battle_id = 3150204, enemy_pos = __rt_14, enemy_type = 221, id = 67230, monster_id = 80033, num = 4}
+, 
+{battle_id = 3150204, enemy_pos = __rt_3, enemy_type = 211, id = 67231, monster_id = 80024, num = 5}
+}
+, 
+[3150205] = {
+{battle_id = 3150205, enemy_pos = __rt_2, enemy_type = 201, id = 67234, monster_id = 20116, num = 1}
+, 
+{battle_id = 3150205, enemy_pos = __rt_11, enemy_type = 17, id = 67235, monster_id = 1000, num = 2}
+, 
+{battle_id = 3150205, enemy_pos = __rt_12, enemy_type = 17, id = 67236, monster_id = 1000, num = 3}
+, 
+{battle_id = 3150205, enemy_pos = __rt_13, enemy_type = 17, id = 67237, monster_id = 1000, num = 4}
+, 
+{battle_id = 3150205, enemy_pos = __rt_10, enemy_type = 17, id = 67238, monster_id = 1000, num = 5}
+, 
+{battle_id = 3150205, enemy_pos = __rt_27, enemy_type = 17, id = 67239, monster_id = 1000, num = 6}
+, 
+{battle_id = 3150205, enemy_pos = __rt_28, enemy_type = 17, id = 67240, monster_id = 1000, num = 7}
 }
 , 
 [3900101] = {

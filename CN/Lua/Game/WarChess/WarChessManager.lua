@@ -653,6 +653,9 @@ WarChessManager.WarchesFinish = function(self, isWin, castOverData)
       if overReward == nil then
         wcsFloorReward = false
       else
+        while UIManager:GetWindow(UIWindowTypeID.WarChessSelectChip) ~= nil do
+          (coroutine.yield)(nil)
+        end
         local celanFloorRewardDynCtrl = (self.__wcCtrl):LazyLoadDynCtrl((eWarChessEnum.eDynCtrl).cleanFloorReward)
         celanFloorRewardDynCtrl:OpenCleanFloorRewardSelect(overReward, function()
       -- function num : 0_38_1_1 , upvalues : wcsFloorReward

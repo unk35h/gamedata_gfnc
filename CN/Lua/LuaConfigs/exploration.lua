@@ -160,7 +160,7 @@ local __rt_157 = {1043011, 1043013}
 local __rt_158 = {1043021, 1043023}
 local __rt_159 = {1043031, 1043033}
 local __rt_160 = {1043041, 1043043}
-if not _ENV.createtable or not (_ENV.createtable)(86, 0) then
+if not _ENV.createtable or not (_ENV.createtable)(92, 0) then
   local __rt = {}
 end
 __rt[1] = {1043051, 1043053}
@@ -247,8 +247,14 @@ __rt[81] = {1064031, 1064033}
 __rt[82] = {1064041, 1064043}
 __rt[83] = {1064051, 1064053}
 __rt[84] = {1064061, 1064063}
-__rt[85] = {30035}
-__rt[86] = {30054}
+__rt[85] = {1067011, 1067013}
+__rt[86] = {1067021, 1067023}
+__rt[87] = {1067031, 1067033}
+__rt[88] = {1067041, 1067043}
+__rt[89] = {1067051, 1067053}
+__rt[90] = {1067061, 1067063}
+__rt[91] = {30035}
+__rt[92] = {30054}
 local exploration = {
 [1011] = {chip_pool = __rt_1, id = 1011, scene_id = 3}
 , 
@@ -4278,6 +4284,34 @@ chip_pool = {1063071, 1063073}
 chip_pool = {1064071, 1064073}
 , id = 1064071, scene_id = 1}
 , 
+[1067011] = {chip_pool = __rt[85], id = 1067011, scene_id = 1}
+, 
+[1067012] = {chip_pool = __rt[85], id = 1067012, scene_id = 1}
+, 
+[1067021] = {chip_pool = __rt[86], id = 1067021, scene_id = 1}
+, 
+[1067022] = {chip_pool = __rt[86], id = 1067022, scene_id = 1}
+, 
+[1067031] = {chip_pool = __rt[87], id = 1067031, scene_id = 1}
+, 
+[1067032] = {chip_pool = __rt[87], id = 1067032, scene_id = 1}
+, 
+[1067041] = {chip_pool = __rt[88], id = 1067041, scene_id = 1}
+, 
+[1067042] = {chip_pool = __rt[88], id = 1067042, scene_id = 1}
+, 
+[1067051] = {chip_pool = __rt[89], id = 1067051, scene_id = 1}
+, 
+[1067052] = {chip_pool = __rt[89], id = 1067052, scene_id = 1}
+, 
+[1067061] = {chip_pool = __rt[90], id = 1067061, scene_id = 1}
+, 
+[1067062] = {chip_pool = __rt[90], id = 1067062, scene_id = 1}
+, 
+[1067071] = {
+chip_pool = {1067071, 1067073}
+, id = 1067071, scene_id = 1}
+, 
 [3000110] = {chip_pool = __rt_150, id = 3000110, scene_id = 7}
 , 
 [3000111] = {chip_pool = __rt_80, id = 3000111, map_logic = 3, scene_id = 9}
@@ -4488,11 +4522,11 @@ chip_pool = {1064071, 1064073}
 , 
 [3001253] = {chip_pool = __rt_150, id = 3001253, scene_id = 18}
 , 
-[3001261] = {chip_pool = __rt[85], id = 3001261, scene_id = 18}
+[3001261] = {chip_pool = __rt[91], id = 3001261, scene_id = 18}
 , 
-[3001262] = {chip_pool = __rt[85], id = 3001262, scene_id = 7}
+[3001262] = {chip_pool = __rt[91], id = 3001262, scene_id = 7}
 , 
-[3001263] = {chip_pool = __rt[85], id = 3001263, scene_id = 6}
+[3001263] = {chip_pool = __rt[91], id = 3001263, scene_id = 6}
 , 
 [3001271] = {chip_pool = __rt_150, id = 3001271, scene_id = 4}
 , 
@@ -4559,6 +4593,18 @@ chip_pool = {1064071, 1064073}
 [3001372] = {chip_pool = __rt_150, id = 3001372, scene_id = 18}
 , 
 [3001373] = {chip_pool = __rt_150, id = 3001373, scene_id = 6}
+, 
+[3001381] = {chip_pool = __rt_150, id = 3001381, scene_id = 18}
+, 
+[3001382] = {chip_pool = __rt_150, id = 3001382, scene_id = 7}
+, 
+[3001383] = {chip_pool = __rt_150, id = 3001383, scene_id = 6}
+, 
+[3001391] = {chip_pool = __rt_150, id = 3001391, scene_id = 4}
+, 
+[3001392] = {chip_pool = __rt_150, id = 3001392, scene_id = 12}
+, 
+[3001393] = {chip_pool = __rt_150, id = 3001393, scene_id = 6}
 , 
 [3002011] = {chip_pool = __rt_150, id = 3002011, scene_id = 4}
 , 
@@ -4710,11 +4756,11 @@ chip_pool = {1064071, 1064073}
 , 
 [3002253] = {chip_pool = __rt_150, id = 3002253, scene_id = 18}
 , 
-[3002261] = {chip_pool = __rt[85], id = 3002261, scene_id = 18}
+[3002261] = {chip_pool = __rt[91], id = 3002261, scene_id = 18}
 , 
-[3002262] = {chip_pool = __rt[85], id = 3002262, scene_id = 7}
+[3002262] = {chip_pool = __rt[91], id = 3002262, scene_id = 7}
 , 
-[3002263] = {chip_pool = __rt[85], id = 3002263, scene_id = 6}
+[3002263] = {chip_pool = __rt[91], id = 3002263, scene_id = 6}
 , 
 [3002271] = {chip_pool = __rt_150, id = 3002271, scene_id = 4}
 , 
@@ -4781,6 +4827,18 @@ chip_pool = {1064071, 1064073}
 [3002372] = {chip_pool = __rt_150, id = 3002372, scene_id = 18}
 , 
 [3002373] = {chip_pool = __rt_150, id = 3002373, scene_id = 6}
+, 
+[3002381] = {chip_pool = __rt_150, id = 3002381, scene_id = 18}
+, 
+[3002382] = {chip_pool = __rt_150, id = 3002382, scene_id = 7}
+, 
+[3002383] = {chip_pool = __rt_150, id = 3002383, scene_id = 6}
+, 
+[3002391] = {chip_pool = __rt_150, id = 3002391, scene_id = 4}
+, 
+[3002392] = {chip_pool = __rt_150, id = 3002392, scene_id = 12}
+, 
+[3002393] = {chip_pool = __rt_150, id = 3002393, scene_id = 6}
 , 
 [3003011] = {chip_pool = __rt_111, id = 3003011, map_logic = 3, scene_id = 13}
 , 
@@ -4866,11 +4924,11 @@ chip_pool = {1064071, 1064073}
 , 
 [3003253] = {chip_pool = __rt_150, id = 3003253, scene_id = 18}
 , 
-[3003261] = {chip_pool = __rt[85], id = 3003261, scene_id = 4}
+[3003261] = {chip_pool = __rt[91], id = 3003261, scene_id = 4}
 , 
-[3003262] = {chip_pool = __rt[85], id = 3003262, scene_id = 6}
+[3003262] = {chip_pool = __rt[91], id = 3003262, scene_id = 6}
 , 
-[3003263] = {chip_pool = __rt[85], id = 3003263}
+[3003263] = {chip_pool = __rt[91], id = 3003263}
 , 
 [3003271] = {chip_pool = __rt_150, id = 3003271, scene_id = 7}
 , 
@@ -4938,11 +4996,23 @@ chip_pool = {1064071, 1064073}
 , 
 [3003373] = {chip_pool = __rt_150, id = 3003373}
 , 
-[3004341] = {chip_pool = __rt[86], id = 3004341, scene_id = 6}
+[3003381] = {chip_pool = __rt_150, id = 3003381, scene_id = 6}
 , 
-[3004342] = {chip_pool = __rt[86], id = 3004342, scene_id = 7}
+[3003382] = {chip_pool = __rt_150, id = 3003382, scene_id = 7}
 , 
-[3004343] = {chip_pool = __rt[86], id = 3004343, scene_id = 4}
+[3003383] = {chip_pool = __rt_150, id = 3003383, scene_id = 18}
+, 
+[3003391] = {chip_pool = __rt_150, id = 3003391, scene_id = 6}
+, 
+[3003392] = {chip_pool = __rt_150, id = 3003392, scene_id = 2}
+, 
+[3003393] = {chip_pool = __rt_150, id = 3003393, scene_id = 4}
+, 
+[3004341] = {chip_pool = __rt[92], id = 3004341, scene_id = 6}
+, 
+[3004342] = {chip_pool = __rt[92], id = 3004342, scene_id = 7}
+, 
+[3004343] = {chip_pool = __rt[92], id = 3004343, scene_id = 4}
 }
 local __default_values = {chip_pool = __rt_142, effective_range = 0, id = 100000, map_logic = 1, monster_room_refresh = 1, sceen_camera_effect_id = 0, scene_id = 22, view_range = 0}
 local base = {__index = __default_values, __newindex = function()

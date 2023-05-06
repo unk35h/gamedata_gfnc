@@ -16,6 +16,13 @@ CheckerWarChessSeasonPassDiff.ParamsCheck = function(param)
   local diffId = param[3]
   local actFrameCtrl = ControllerManager:GetController(ControllerTypeId.ActivityFrame)
   local actFrameData = actFrameCtrl:GetActivityFrameData(actFrameId)
+  if actFrameData == nil then
+    if isGameDev then
+      error("activity is nil frameId is " .. tostring(actFrameId))
+    end
+    return false
+  end
+  local cat = actFrameData:GetActivityFrameCat()
   if actFrameData:GetActivityFrameCat() == (ActivityFrameEnum.eActivityType).Hallowmas then
     local seasonCtrl = ControllerManager:GetController(ControllerTypeId.ActivityHallowmas)
     local seasonData = seasonCtrl:GetHallowmasData(actFrameData:GetActId())
@@ -44,10 +51,28 @@ CheckerWarChessSeasonPassDiff.ParamsCheck = function(param)
         return passedMap[diffId]
       else
         do
-          if isGameDev then
-            warn("activity is nil")
+          if actFrameData:GetActivityFrameCat() == (ActivityFrameEnum.eActivityType).Season then
+            local activitySeasonCtrl = ControllerManager:GetController(ControllerTypeId.ActivitySeason)
+            local activitySeasonData = activitySeasonCtrl:GetSeasonData()
+            local seasonId = (activitySeasonData:GetSeasonMainCfg()).warchess_season_id
+            local wcsPassedData = WarChessSeasonManager:GetWCSPassedTower()
+            local sPassedData = wcsPassedData[seasonId]
+            if sPassedData == nil then
+              return false
+            end
+            local passedMap = sPassedData.difficultyRecord
+            if passedMap == nil then
+              return false
+            end
+            return passedMap[diffId]
+          else
+            do
+              if isGameDev then
+                warn("activity is nil")
+              end
+              return false
+            end
           end
-          return false
         end
       end
     end
@@ -60,6 +85,12 @@ CheckerWarChessSeasonPassDiff.GetUnlockInfo = function(param)
   local diffId = param[3]
   local actFrameCtrl = ControllerManager:GetController(ControllerTypeId.ActivityFrame)
   local actFrameData = actFrameCtrl:GetActivityFrameData(actFrameId)
+  if actFrameData == nil then
+    if isGameDev then
+      error("activity is nil frameId is " .. tostring(actFrameId))
+    end
+    return ""
+  end
   if actFrameData:GetActivityFrameCat() == (ActivityFrameEnum.eActivityType).Hallowmas then
     local seasonCtrl = ControllerManager:GetController(ControllerTypeId.ActivityHallowmas)
     local seasonData = seasonCtrl:GetHallowmasData(actFrameData:GetActId())
@@ -86,10 +117,23 @@ CheckerWarChessSeasonPassDiff.GetUnlockInfo = function(param)
         return (string.format)(ConfigData:GetTipContent(8709), envName, diffName)
       else
         do
-          if isGameDev then
-            warn("activity is nil")
+          if actFrameData:GetActivityFrameCat() == (ActivityFrameEnum.eActivityType).Season then
+            local activitySeasonCtrl = ControllerManager:GetController(ControllerTypeId.ActivitySeason)
+            local activitySeasonData = activitySeasonCtrl:GetSeasonData()
+            local seasonId = (activitySeasonData:GetSeasonMainCfg()).warchess_season_id
+            local envCfg = WarChessSeasonManager:GetEnvCfgBySeasonAndDiff(seasonId, diffId)
+            local envName = (LanguageUtil.GetLocaleText)(envCfg.general_env_name)
+            local stageInfoCfg = WarChessSeasonManager:GetWCSStageInfoByDiffId(seasonId, diffId)
+            local diffName = (LanguageUtil.GetLocaleText)(stageInfoCfg.difficulty_name)
+            return (string.format)(ConfigData:GetTipContent(8709), envName, diffName)
+          else
+            do
+              if isGameDev then
+                warn("activity is nil")
+              end
+              return ""
+            end
           end
-          return ""
         end
       end
     end

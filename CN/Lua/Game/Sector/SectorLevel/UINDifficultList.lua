@@ -606,6 +606,16 @@ UINDifficultList.OnListenHeroGrowRunEnd = function(self, actId)
       if id == nil or canFight then
         return 
       end
+      if isChallenge and not canFight then
+        if (UIUtil.CheckIsHaveSpecialMarker)(UIWindowTypeID.CharacterDungeon) then
+          (UIUtil.ReturnUntil2Marker)(UIWindowTypeID.CharacterDungeon, false)
+          return 
+        end
+        if (UIUtil.CheckIsHaveSpecialMarker)(UIWindowTypeID.CharDunVer2) then
+          (UIUtil.ReturnUntil2Marker)(UIWindowTypeID.CharDunVer2, false)
+          return 
+        end
+      end
     end
     ;
     (UIUtil.ReturnUntil2Marker)(UIWindowTypeID.Sector, false)

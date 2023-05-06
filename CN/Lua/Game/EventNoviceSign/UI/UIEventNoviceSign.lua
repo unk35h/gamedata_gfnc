@@ -68,7 +68,7 @@ end
 
 UIEventNoviceSign.OnClickClose = function(self)
   -- function num : 0_4 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIEventNoviceSign.SetCloseCallback = function(self, callback)

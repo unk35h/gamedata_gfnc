@@ -6,50 +6,54 @@ local TaskEnum = require("Game.Task.TaskEnum")
 local cs_playerData = (CS.PlayerDataCenter).Instance
 local TaskData = require("Game.Task.Data.TaskData")
 local ActivityFrameEnum = require("Game.ActivityFrame.ActivityFrameEnum")
-ActivityStarUpData.InitStarUp = function(self, rookieStarCfg)
+ActivityStarUpData.InitStarUp = function(self, rookieStarCfg, msgData)
   -- function num : 0_0
-  self.id = rookieStarCfg.id
-  self.cfg = rookieStarCfg
+  self.id = msgData.actId
+  self.cfg = rookieStarCfg[msgData.subId]
   self.startTime = ((self.cfg).pre_para1)[1]
   self:CollectTaskIds()
   self.curStageId = 1
   self:RefreshStage()
 end
 
+ActivityStarUpData.GetActivityFrameId = function(self)
+  -- function num : 0_1 , upvalues : _ENV, ActivityFrameEnum
+  return (((ConfigData.activity).actTypeMapping)[(ActivityFrameEnum.eActivityType).StarUp])[self.id]
+end
+
 ActivityStarUpData.CollectTaskIds = function(self)
-  -- function num : 0_1 , upvalues : _ENV
+  -- function num : 0_2 , upvalues : _ENV
   self.taskDic = {}
   -- DECOMPILER ERROR at PC4: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   (self.taskDic)[1] = {}
   local mainTaskId = (((self.cfg).phase)[1]).task
-  local systemOpenCfg = (ConfigData.system_open)[(self.cfg).system_id]
-  -- DECOMPILER ERROR at PC16: Confused about usage of register: R3 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC11: Confused about usage of register: R2 in 'UnsetPending'
 
   ;
   ((self.taskDic)[1]).mainTaskId = mainTaskId
-  -- DECOMPILER ERROR at PC20: Confused about usage of register: R3 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC15: Confused about usage of register: R2 in 'UnsetPending'
 
   ;
   ((self.taskDic)[1]).childTaskIds = {}
-  for i,v in ipairs(systemOpenCfg.trigger_para1) do
-    -- DECOMPILER ERROR at PC30: Confused about usage of register: R8 in 'UnsetPending'
+  for i,v in ipairs((self.cfg).init_tasks) do
+    -- DECOMPILER ERROR at PC26: Confused about usage of register: R7 in 'UnsetPending'
 
     if v ~= mainTaskId then
       (((self.taskDic)[1]).childTaskIds)[v] = true
     end
   end
   for i = 2, #(self.cfg).phase do
-    -- DECOMPILER ERROR at PC41: Confused about usage of register: R7 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC37: Confused about usage of register: R6 in 'UnsetPending'
 
     (self.taskDic)[i] = {}
     local mainTaskId = (((self.cfg).phase)[i]).task
-    -- DECOMPILER ERROR at PC48: Confused about usage of register: R8 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC44: Confused about usage of register: R7 in 'UnsetPending'
 
     ;
     ((self.taskDic)[i]).mainTaskId = mainTaskId
-    -- DECOMPILER ERROR at PC52: Confused about usage of register: R8 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC48: Confused about usage of register: R7 in 'UnsetPending'
 
     ;
     ((self.taskDic)[i]).childTaskIds = {}
@@ -60,7 +64,7 @@ ActivityStarUpData.CollectTaskIds = function(self)
     end
     do break end
     for k,v in ipairs(taskCfg.next_task) do
-      -- DECOMPILER ERROR at PC87: Confused about usage of register: R15 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC83: Confused about usage of register: R14 in 'UnsetPending'
 
       if v ~= mainTaskId then
         (((self.taskDic)[i]).childTaskIds)[v] = true
@@ -70,7 +74,7 @@ ActivityStarUpData.CollectTaskIds = function(self)
 end
 
 ActivityStarUpData.RefreshStage = function(self)
-  -- function num : 0_2 , upvalues : cs_playerData, ActivityStarUpEnum, _ENV, TaskEnum, ActivityFrameEnum
+  -- function num : 0_3 , upvalues : cs_playerData, ActivityStarUpEnum, _ENV, TaskEnum, ActivityFrameEnum
   if self.curStageId == nil then
     return 
   end
@@ -117,13 +121,13 @@ ActivityStarUpData.RefreshStage = function(self)
 end
 
 ActivityStarUpData.IsFinish = function(self)
-  -- function num : 0_3
+  -- function num : 0_4
   do return self.curStageId == nil end
   -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
 
 ActivityStarUpData.UpdateStarUpRedddot = function(self)
-  -- function num : 0_4 , upvalues : _ENV, ActivityFrameEnum
+  -- function num : 0_5 , upvalues : _ENV, ActivityFrameEnum
   local activityFrameCtrl = ControllerManager:GetController(ControllerTypeId.ActivityFrame, true)
   local actInfo = activityFrameCtrl:GetActivityFrameDataByTypeAndId((ActivityFrameEnum.eActivityType).StarUp, self.id)
   if actInfo == nil or not actInfo:IsActivityOpen() then
@@ -157,7 +161,7 @@ ActivityStarUpData.UpdateStarUpRedddot = function(self)
 end
 
 ActivityStarUpData.ContainsTask = function(self, taskId, isAllStage)
-  -- function num : 0_5
+  -- function num : 0_6
   if not isAllStage then
     isAllStage = false
   end
@@ -174,9 +178,9 @@ ActivityStarUpData.ContainsTask = function(self, taskId, isAllStage)
 end
 
 ActivityStarUpData.GetTasks = function(self, stageId, isJustMainTask, ignoreNullData)
-  -- function num : 0_6 , upvalues : _ENV, TaskData
+  -- function num : 0_7 , upvalues : _ENV, TaskData
   CreatePickedTGask = function(id)
-    -- function num : 0_6_0 , upvalues : _ENV, TaskData
+    -- function num : 0_7_0 , upvalues : _ENV, TaskData
     local stcData = (ConfigData.task)[id]
     do
       if stcData ~= nil then

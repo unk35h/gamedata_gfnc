@@ -315,7 +315,7 @@ end
 
 UIEpResidentStore._OnClickReturn = function(self)
   -- function num : 0_15 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIEpResidentStore.OnDelete = function(self)

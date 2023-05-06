@@ -1,7 +1,7 @@
 -- params : ...
 -- function num : 0 , upvalues : _ENV
 require("Framework.Network.NetworkProto")
-NetworkTypeID = {Hero = 1, Lottery = 2, Building = 3, Shop = 5, Sector = 6, Object = 7, Task = 8, Factory = 9, Exploration = 10, AchivLevel = 11, ItemRoom = 12, StoreRoom = 14, EventRoom = 15, ResetRoom = 16, Mail = 17, Login = 18, Arithmetic = 19, Dorm = 20, HeroEnter = 21, Effector = 22, Friendship = 23, BattleDungeon = 24, Debug = 25, Avg = 26, CommanderSkill = 27, BattlePass = 28, DailySignIn = 29, ActivityFrame = 30, Pay = 31, CDKey = 32, EventNoviceSign = 33, PayGift = 34, Warehouse = 35, Friend = 36, TimingProduct = 37, ActivitySectorI = 38, DungeonTower = 39, DungeonSectorII = 40, FlappyBird = 41, WhiteDay = 42, AdjCustom = 43, TinyGame = 44, RefreshDun = 45, ActivityRound = 46, GameDamie = 47, ActivityCarnival = 48, ActivityHistoryTinyGame = 49, ActivityDailyChallenge = 50, ActivitySectorIII = 51, ActivitySignInMiniGame = 52, SpecWeapon = 53, HeroGrow = 54, ActivityHallowmas = 55, ActivityKeyExertion = 56, ActivitySpring = 57, Share = 58, WarChess = 60, DormFight = 61, Invitation = 62, EventWeeklyQA = 63, GM = 999}
+NetworkTypeID = {Hero = 1, Lottery = 2, Building = 3, Shop = 5, Sector = 6, Object = 7, Task = 8, Factory = 9, Exploration = 10, AchivLevel = 11, ItemRoom = 12, StoreRoom = 14, EventRoom = 15, ResetRoom = 16, Mail = 17, Login = 18, Arithmetic = 19, Dorm = 20, HeroEnter = 21, Effector = 22, Friendship = 23, BattleDungeon = 24, Debug = 25, Avg = 26, CommanderSkill = 27, BattlePass = 28, DailySignIn = 29, ActivityFrame = 30, Pay = 31, CDKey = 32, EventNoviceSign = 33, PayGift = 34, Warehouse = 35, Friend = 36, TimingProduct = 37, ActivitySectorI = 38, DungeonTower = 39, DungeonSectorII = 40, FlappyBird = 41, WhiteDay = 42, AdjCustom = 43, TinyGame = 44, RefreshDun = 45, ActivityRound = 46, GameDamie = 47, ActivityCarnival = 48, ActivityHistoryTinyGame = 49, ActivityDailyChallenge = 50, ActivitySectorIII = 51, ActivitySignInMiniGame = 52, SpecWeapon = 53, HeroGrow = 54, ActivityHallowmas = 55, ActivityKeyExertion = 56, ActivitySpring = 57, Share = 58, WarChess = 60, DormFight = 61, Invitation = 62, EventWeeklyQA = 63, ActivitySeason = 64, GM = 999}
 NetworkGlobalConfig = {
 [NetworkTypeID.Hero] = {NetworkClass = require("Game.Hero.HeroNetworkCtrl")}
 , 
@@ -124,5 +124,7 @@ NetworkGlobalConfig = {
 [NetworkTypeID.Invitation] = {NetworkClass = require("Game.ActivityInvitation.Data.ActivityInvitationNetwork")}
 , 
 [NetworkTypeID.EventWeeklyQA] = {NetworkClass = require("Game.EventWeeklyQA.EventWeeklyQANetWork")}
+, 
+[NetworkTypeID.ActivitySeason] = {NetworkClass = require("Game.ActivitySeason.ActivitySeasonNetworkController")}
 }
 

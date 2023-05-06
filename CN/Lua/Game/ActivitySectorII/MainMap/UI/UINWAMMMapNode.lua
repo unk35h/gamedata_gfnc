@@ -423,7 +423,7 @@ UINWAMMMapNode._OnClickMapBg = function(self)
   -- function num : 0_14 , upvalues : _ENV
   self.distan = 0
   if self._lastSelectLevel ~= nil then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 end
 

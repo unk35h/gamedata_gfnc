@@ -46,8 +46,37 @@ ActLbUtil.UpdLbEnttBluedot = function(enttId)
   end
 end
 
-ActLbUtil.GetActLbFlowUIScaleParam = function()
+ActLbUtil.UpdLbEntranceBlueDot = function(enttidDic, FuncDic)
   -- function num : 0_3 , upvalues : _ENV
+  local actLbCtrl = ControllerManager:GetController(ControllerTypeId.ActivityLobbyCtrl)
+  if actLbCtrl == nil then
+    return 
+  end
+  local mainWin = UIManager:GetWindow(UIWindowTypeID.ActLobbyMain)
+  if mainWin then
+    local blueDotShow = false
+    for k,v in pairs(enttidDic) do
+      local intractData = (actLbCtrl.actLbIntrctCtrl):GetActLbIntractDataById(v)
+      if not intractData or not intractData:GetLbIntrctObjActionIdList() then
+        local actionIdList = table.emptytable
+      end
+      for k,actionId in pairs(actionIdList) do
+        local actionFunc = FuncDic[actionId]
+        if actionFunc then
+          blueDotShow = actionFunc(intractData)
+        end
+      end
+    end
+    do
+      if blueDotShow or not blueDotShow then
+        mainWin:ShowQuickEntranceBlueDot(blueDotShow)
+      end
+    end
+  end
+end
+
+ActLbUtil.GetActLbFlowUIScaleParam = function()
+  -- function num : 0_4 , upvalues : _ENV
   local actLbCtrl = ControllerManager:GetController(ControllerTypeId.ActivityLobbyCtrl)
   if actLbCtrl == nil then
     error("actLbCtrl == nil")
@@ -60,7 +89,7 @@ ActLbUtil.GetActLbFlowUIScaleParam = function()
 end
 
 ActLbUtil.UpdActLbEnttUnlockStateByObjId = function(objId)
-  -- function num : 0_4 , upvalues : _ENV
+  -- function num : 0_5 , upvalues : _ENV
   local actLbCtrl = ControllerManager:GetController(ControllerTypeId.ActivityLobbyCtrl)
   if actLbCtrl == nil then
     return 
@@ -88,7 +117,7 @@ ActLbUtil.UpdActLbEnttUnlockStateByObjId = function(objId)
 end
 
 ActLbUtil.ActLbActivityRunningTimeout = function(actId)
-  -- function num : 0_5 , upvalues : _ENV
+  -- function num : 0_6 , upvalues : _ENV
   local actLbCtrl = ControllerManager:GetController(ControllerTypeId.ActivityLobbyCtrl)
   if actLbCtrl == nil or actLbCtrl:GetActLbActId() ~= actId then
     return 
@@ -110,7 +139,7 @@ ActLbUtil.ActLbActivityRunningTimeout = function(actId)
 end
 
 ActLbUtil.ActLbActivityFinish = function(actId)
-  -- function num : 0_6 , upvalues : _ENV, ActLbUtil
+  -- function num : 0_7 , upvalues : _ENV, ActLbUtil
   local actLbCtrl = ControllerManager:GetController(ControllerTypeId.ActivityLobbyCtrl)
   if actLbCtrl == nil or actLbCtrl:GetActLbActId() ~= actId then
     return 
@@ -122,7 +151,7 @@ ActLbUtil.ActLbActivityFinish = function(actId)
 end
 
 ActLbUtil.ExitActivityLobby = function(toHome)
-  -- function num : 0_7 , upvalues : _ENV
+  -- function num : 0_8 , upvalues : _ENV
   local actLbCtrl = ControllerManager:GetController(ControllerTypeId.ActivityLobbyCtrl)
   if actLbCtrl == nil then
     return 

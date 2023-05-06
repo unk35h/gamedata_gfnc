@@ -989,6 +989,12 @@ local guide_describe = {
 , 
 {describe = 225009, id = 30, index = 9, order = 3}
 }
+, 
+{
+{describe = 122765, id = 30, index = 10, order = 1}
+, 
+{describe = 506425, id = 30, index = 10, order = 2}
+}
 }
 , 
 [31] = {
@@ -1554,6 +1560,74 @@ local guide_describe = {
 {describe = 481519, id = 44, index = 7, order = 1}
 , 
 {describe = 397220, id = 44, index = 7, order = 2}
+}
+}
+, 
+[45] = {
+{
+{describe = 474304, id = 45, index = 1, order = 1}
+, 
+{describe = 365293, id = 45, index = 1, order = 2}
+, 
+{describe = 509675, id = 45, index = 1, order = 3}
+, 
+{describe = 162251, id = 45, index = 1, order = 4}
+, 
+{describe = 519716, id = 45, index = 1, order = 5}
+}
+, 
+{
+{describe = 135161, id = 45, index = 2, order = 1}
+, 
+{describe = 109690, id = 45, index = 2, order = 2}
+, 
+{describe = 464622, id = 45, index = 2, order = 3}
+}
+, 
+{
+{describe = 220162, id = 45, index = 3, order = 1}
+, 
+{describe = 103286, id = 45, index = 3, order = 2}
+}
+, 
+{
+{describe = 96547, id = 45, index = 4, order = 1}
+, 
+{describe = 230003, id = 45, index = 4, order = 2}
+}
+, 
+{
+{describe = 435249, id = 45, index = 5, order = 1}
+, 
+{describe = 103861, id = 45, index = 5, order = 2}
+, 
+{describe = 181445, id = 45, index = 5, order = 3}
+, 
+{describe = 26190, id = 45, index = 5, order = 4}
+}
+, 
+{
+{describe = 304191, id = 45, index = 6, order = 1}
+, 
+{describe = 223191, id = 45, index = 6, order = 2}
+}
+, 
+{
+{describe = 61167, id = 45, index = 7, order = 1}
+, 
+{describe = 415983, id = 45, index = 7, order = 2}
+, 
+{describe = 455873, id = 45, index = 7, order = 3}
+, 
+{describe = 231727, id = 45, index = 7, order = 4}
+}
+}
+, 
+[46] = {
+{
+{describe = 48500, id = 46, index = 1, order = 1}
+, 
+{describe = 506425, id = 46, index = 1, order = 2}
 }
 }
 }

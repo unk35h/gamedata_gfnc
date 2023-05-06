@@ -409,19 +409,27 @@ UnlockFunc.onUnlockAth = function()
   (NetworkManager:GetNetwork(NetworkTypeID.Arithmetic)):CS_ATH_Detail()
 end
 
-UnlockFunc.OnUnlockTalent = function()
+UnlockFunc.onCompleteIntro = function()
   -- function num : 0_43 , upvalues : _ENV
+  local topStatusWin = UIManager:GetWindow(UIWindowTypeID.TopStatus)
+  if topStatusWin ~= nil and topStatusWin.topGroup ~= nil then
+    (topStatusWin.topGroup):ShowTopBtnGroupGoHomeBtn(true)
+  end
+end
+
+UnlockFunc.OnUnlockTalent = function()
+  -- function num : 0_44 , upvalues : _ENV
   (PlayerDataCenter.allHeroTalentData):InitHeroTalent()
   MsgCenter:Broadcast(eMsgEventId.HeroTalentUnlock)
 end
 
 UnlockFunc.OnUnlockSpecWeapon = function()
-  -- function num : 0_44 , upvalues : _ENV
+  -- function num : 0_45 , upvalues : _ENV
   MsgCenter:Broadcast(eMsgEventId.SpecWeaponUnlock)
 end
 
 UnlockFunc.OnUnlockAdjChange = function()
-  -- function num : 0_45 , upvalues : _ENV
+  -- function num : 0_46 , upvalues : _ENV
   local window = UIManager:GetWindow(UIWindowTypeID.Home)
   if window ~= nil and window.active then
     (window.homeLeftNode):RefreshAdjBtn()
@@ -429,7 +437,7 @@ UnlockFunc.OnUnlockAdjChange = function()
 end
 
 UnlockFunc.OnUnlockAdjModule = function(self)
-  -- function num : 0_46 , upvalues : _ENV
+  -- function num : 0_47 , upvalues : _ENV
   local window = UIManager:GetWindow(UIWindowTypeID.Home)
   if window ~= nil and window.active then
     (window.homeController):LoadBoardHero()

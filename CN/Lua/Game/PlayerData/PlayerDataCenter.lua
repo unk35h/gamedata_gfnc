@@ -383,8 +383,7 @@ PlayerDataCenter.SyncUserData = function(self, userData)
               (NetworkManager:GetNetwork(NetworkTypeID.Sector)):SendAchievement()
               ;
               (NetworkManager:GetNetwork(NetworkTypeID.ActivityFrame)):CS_ACTIVITY_Detail(function()
-    -- function num : 0_8_2 , upvalues : self, _ENV, ActivityFrameEnum
-    (self.activityStarUpData):InitActivityStarUp()
+    -- function num : 0_8_2 , upvalues : _ENV, ActivityFrameEnum, self
     local activityFrameCtr = ControllerManager:GetController(ControllerTypeId.ActivityFrame, true)
     if activityFrameCtr:IsExistOpenActByActType((ActivityFrameEnum.eActivityType).SectorI) then
       (NetworkManager:GetNetwork(NetworkTypeID.ActivitySectorI)):CS_ACTIVITYSECTORI_Detail_NOWait()

@@ -78,7 +78,7 @@ pre_para1 = {1106}
 , 
 {avg_order = "Y", des = 139961, id = 28, name = 219105, pre_para1 = __rt_7}
 , 
-{avg_order = "X", des = 440898, id = 29, name = 253899, 
+{avg_order = "X", des = 440898, id = 29, name = 253898, 
 pre_para1 = {2106}
 }
 , 

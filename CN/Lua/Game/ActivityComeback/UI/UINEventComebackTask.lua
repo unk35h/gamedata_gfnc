@@ -143,6 +143,9 @@ end
 
 UINEventComebackTask.__TaskUpdate = function(self, taskData)
   -- function num : 0_6
+  if self._taskIdItemDic == nil then
+    return 
+  end
   local item = (self._taskIdItemDic)[taskData.id]
   if item == nil then
     return 

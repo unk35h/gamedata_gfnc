@@ -103,6 +103,12 @@ pre_para1 = {1678654800}
 , 
 pre_para2 = {1683489599}
 , shop_id = 703}
+, 
+{currencyId = 1050, currencyNums = __rt_5, goods_shelves = 7, itemId = 301704, pre_condition = __rt_7, 
+pre_para1 = {1683493200}
+, 
+pre_para2 = {1688327999}
+, shop_id = 703}
 }
 , 
 [1002] = {

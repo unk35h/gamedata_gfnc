@@ -8,6 +8,8 @@ UIWarChessTimeRewind.OnInit = function(self)
   (UIUtil.AddButtonListener)((self.ui).btn_Confirm, self, self.__OnClickConfirm)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Cancel, self, self.__OnClickCancel)
+  ;
+  (UIUtil.AddButtonListener)((self.ui).btn_Rewind, self, self.__OnClickReturnBattleBefore)
   self.turnItemPool = (UIItemPool.New)(UINWarChessTimeRewindItem, (self.ui).obj_turn)
   ;
   ((self.ui).obj_turn):SetActive(false)
@@ -19,6 +21,10 @@ end
 
 UIWarChessTimeRewind.InitWCTimeRewind = function(self)
   -- function num : 0_1 , upvalues : _ENV
+  self._returnBattleBeforeFunc = nil
+  self._turnBackFunc = nil
+  ;
+  ((self.ui).rewind):SetActive(false)
   local wcCtrl = WarChessManager:GetWarChessCtrl()
   local curTurnNum = (wcCtrl.turnCtrl):GetWCTurnNum()
   self.__eSize = 1 / (curTurnNum - 1)
@@ -33,15 +39,29 @@ UIWarChessTimeRewind.InitWCTimeRewind = function(self)
     end
   end
   local rewindTotalTime, rewindLeftTime = (wcCtrl.turnCtrl):GetWCRewindTimes()
-  -- DECOMPILER ERROR at PC48: Confused about usage of register: R5 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC55: Confused about usage of register: R5 in 'UnsetPending'
 
   ;
   ((self.ui).tex_Turn).text = tostring(rewindLeftTime) .. "/" .. tostring(rewindTotalTime)
   -- DECOMPILER ERROR: 2 unprocessed JMP targets
 end
 
-UIWarChessTimeRewind.__OnSelectTurnItem = function(self, turnItem)
+UIWarChessTimeRewind.InitWCTimeRewindInBattle = function(self, turnBackFunc, returnBattleBeforeFunc)
   -- function num : 0_2
+  self:InitWCTimeRewind()
+  self._returnBattleBeforeFunc = returnBattleBeforeFunc
+  self._turnBackFunc = turnBackFunc
+  ;
+  ((self.ui).rewind):SetActive(true)
+  local rightOffset = (((self.ui).turnGroup).padding).right
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R4 in 'UnsetPending'
+
+  ;
+  (((self.ui).turnGroup).padding).right = rightOffset - 320
+end
+
+UIWarChessTimeRewind.__OnSelectTurnItem = function(self, turnItem)
+  -- function num : 0_3
   if self.__selectedTurnItem ~= nil then
     (self.__selectedTurnItem):SetIsSelected(false)
   end
@@ -56,33 +76,45 @@ UIWarChessTimeRewind.__OnSelectTurnItem = function(self, turnItem)
 end
 
 UIWarChessTimeRewind.__OnValueChange = function(self)
-  -- function num : 0_3
+  -- function num : 0_4
   local rate = ((self.ui).scrollRect).horizontalNormalizedPosition
 end
 
 UIWarChessTimeRewind.__OnClickConfirm = function(self)
-  -- function num : 0_4 , upvalues : _ENV
+  -- function num : 0_5 , upvalues : _ENV
   if self.__selectedTurnItem == nil then
     return 
   end
   local wcCtrl = WarChessManager:GetWarChessCtrl()
   local wid = wcCtrl:GetWCId()
   local rewindTurnNum = (self.__selectedTurnItem).turnNum
-  ;
-  (wcCtrl.wcNetworkCtrl):CS_WarChess_ResetTheRound(wid, rewindTurnNum, function()
-    -- function num : 0_4_0 , upvalues : self
+  if self._turnBackFunc ~= nil then
+    (self._turnBackFunc)(wid, rewindTurnNum)
+  else
+    ;
+    (wcCtrl.wcNetworkCtrl):CS_WarChess_ResetTheRound(wid, rewindTurnNum, function()
+    -- function num : 0_5_0 , upvalues : self
     self:Delete()
   end
 )
+  end
 end
 
 UIWarChessTimeRewind.__OnClickCancel = function(self)
-  -- function num : 0_5
+  -- function num : 0_6
   self:Delete()
 end
 
+UIWarChessTimeRewind.__OnClickReturnBattleBefore = function(self)
+  -- function num : 0_7
+  self:Delete()
+  if self._returnBattleBeforeFunc ~= nil then
+    (self._returnBattleBeforeFunc)()
+  end
+end
+
 UIWarChessTimeRewind.OnDelete = function(self)
-  -- function num : 0_6
+  -- function num : 0_8
 end
 
 return UIWarChessTimeRewind

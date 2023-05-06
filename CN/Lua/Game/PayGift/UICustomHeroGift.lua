@@ -8,11 +8,11 @@ local CS_MessageCommon = CS.MessageCommon
 local CS_Resloader = CS.ResLoader
 UICustomHeroGift.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, UINChipGiftRewardItem, UINCustomHeroGiftNode
-  (UIUtil.SetTopStatus)(self, self.OnBackHeroSelectGift, nil, nil, nil, true)
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack()
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Close, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Close, self, self.OnBackHeroSelectGift)
   ;
-  (UIUtil.AddButtonListener)((self.ui).background, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).background, self, self.OnBackHeroSelectGift)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Buy, self, self.OnClickBuy)
   ;
@@ -176,7 +176,7 @@ UICustomHeroGift.OnClickBuy = function(self)
   payGiftCtrl:SendBuyGifit((self._giftInfo).defaultCfg, paramList, function()
     -- function num : 0_4_0 , upvalues : _ENV, self
     if not IsNull(self.transform) then
-      (UIUtil.OnClickBack)()
+      (UIUtil.OnClickBackByUiTab)(self)
     end
   end
 )
@@ -193,14 +193,15 @@ UICustomHeroGift.OnClickSelectHero = function(self)
 end
 
 UICustomHeroGift.RefreshcCustomNode = function(self)
-  -- function num : 0_6
+  -- function num : 0_6 , upvalues : _ENV
   local params = (self._giftInfo):GetSelfSelectGiftParams()
   local selectHeroId = params ~= nil and (params[1]).param or nil
   if self._isHeroSelct then
     (self._selectHeroItem):RefreshCustomHeroGiftSelect(selectHeroId)
   else
+    local selfSelectCfg = (ConfigData.customized_gift)[((self._giftInfo).defaultCfg).param]
     ;
-    (self._selectHeroItem):RefreshCustomChipGiftSelect(selectHeroId)
+    (self._selectHeroItem):RefreshCustomChipGiftSelect(selectHeroId, selfSelectCfg)
   end
 end
 
@@ -209,7 +210,7 @@ UICustomHeroGift.OnTogIgnore = function(self, value)
   ((self.ui).img_Select):SetActive(value)
 end
 
-UICustomHeroGift.OnBackHeroSelectGift = function(self)
+UICustomHeroGift.BackAction = function(self)
   -- function num : 0_8 , upvalues : _ENV
   do
     if ((self.ui).tog_Popup).isOn then
@@ -225,8 +226,13 @@ UICustomHeroGift.OnBackHeroSelectGift = function(self)
   end
 end
 
+UICustomHeroGift.OnBackHeroSelectGift = function(self)
+  -- function num : 0_9 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UICustomHeroGift.OnDelete = function(self)
-  -- function num : 0_9 , upvalues : _ENV, base
+  -- function num : 0_10 , upvalues : _ENV, base
   if self._timerId ~= nil then
     TimerManager:StopTimer(self._timerId)
     self._timerId = nil

@@ -21,17 +21,23 @@ local __rt_18 = {3, 1}
 local __rt_19 = {177, 179}
 local __rt_20 = {334760, 217541}
 local __rt_21 = {2000005, 2000010, 2000011, 2000217}
-local __rt_22 = {2000201, 2000202, 2000205}
-local __rt_23 = {2, 3}
-local __rt_24 = {4, 4}
-local __rt_25 = {2000201, 2000202, 2000203, 2000205}
-local __rt_26 = {4, 1}
-local __rt_27 = {2, 1}
-local __rt_28 = {146, 147}
-local __rt_29 = {121008, 194946}
-local __rt_30 = {2000208, 2000209, 2000211, 2000212}
-local __rt_31 = {2000209, 2000212}
-local __rt_32 = {30049, 30050, 30051, 30053}
+local __rt_22 = {7, 1}
+local __rt_23 = {2000201, 2000202, 2000205}
+local __rt_24 = {2, 3}
+local __rt_25 = {2, 0}
+local __rt_26 = {4, 4}
+local __rt_27 = {3, 0}
+local __rt_28 = {2000201, 2000202, 2000203, 2000205}
+local __rt_29 = {4, 1}
+local __rt_30 = {2000205, 2000415, 2000430}
+local __rt_31 = {2000205, 2000425, 2000430}
+local __rt_32 = {2000205, 2000405, 2000430}
+local __rt_33 = {2, 1}
+local __rt_34 = {146, 147}
+local __rt_35 = {121008, 194946}
+local __rt_36 = {2000208, 2000209, 2000211, 2000212}
+local __rt_37 = {2000209, 2000212}
+local __rt_38 = {30049, 30050, 30051, 30053}
 local warchess_level = {
 [99] = {chip_pool = __rt_3, edit_team = 2, exchange = false, fail_long = 178113, id = 99, min_team = 2, name = 433595, open_fog_of_war = true, recomme_team = 2, shop = 1, stress = 101, trigger_special = 1}
 , 
@@ -183,6 +189,12 @@ Initial_coord = {9, 2}
 , 
 [803] = {Initial_coord = __rt_18, chip_pool = __rt_21, edit_team = 2, exchange = false, fail_long = 428290, id = 803, name = 229652, open_fog_of_war = true, shop = 2, stress = 301, victory_long = 195855}
 , 
+[804] = {Initial_coord = __rt_22, chip_pool = __rt_21, edit_team = 2, exchange = false, fail_long = 102156, id = 804, name = 506900, open_fog_of_war = true, shop = 2, stress = 301, victory = 375698, victory_long = 375698}
+, 
+[805] = {Initial_coord = __rt_18, chip_pool = __rt_21, edit_team = 2, exchange = false, fail_long = 102156, id = 805, name = 506900, open_fog_of_war = true, shop = 2, stress = 301, victory = 375698, victory_long = 375698}
+, 
+[806] = {Initial_coord = __rt_22, chip_pool = __rt_21, edit_team = 2, exchange = false, fail_long = 102156, id = 806, name = 506900, open_fog_of_war = true, shop = 2, stress = 301, victory = 375698, victory_long = 375698}
+, 
 [1000] = {Initial_coord = __rt_16, id = 1000, name = 20222, victory = 241821, victory_long = 398720, warning = 6}
 , 
 [1001] = {Initial_coord = __rt_16, id = 1001, name = 349739, prefeb_id = 22, victory = 241821, victory_long = 160417, warning = 6}
@@ -207,7 +219,7 @@ Initial_coord = {9, 2}
 , 
 [1011] = {Initial_coord = __rt_4, environment = 2, id = 1011, prefeb_id = 24, warning = 6}
 , 
-[1012] = {Initial_coord = __rt_23, id = 1012, prefeb_id = 24, warning = 6}
+[1012] = {Initial_coord = __rt_24, id = 1012, prefeb_id = 24, warning = 6}
 , 
 [1013] = {Initial_coord = __rt_16, id = 1013, prefeb_id = 24, warning = 6}
 , 
@@ -215,9 +227,9 @@ Initial_coord = {9, 2}
 , 
 [1015] = {Initial_coord = __rt_7, id = 1015, prefeb_id = 24, warning = 6}
 , 
-[1016] = {Initial_coord = __rt_23, id = 1016, prefeb_id = 24, warning = 6}
+[1016] = {Initial_coord = __rt_24, id = 1016, prefeb_id = 24, warning = 6}
 , 
-[1017] = {Initial_coord = __rt_23, id = 1017, prefeb_id = 24, warning = 6}
+[1017] = {Initial_coord = __rt_24, id = 1017, prefeb_id = 24, warning = 6}
 , 
 [1018] = {Initial_coord = __rt_4, id = 1018, prefeb_id = 24, warning = 6}
 , 
@@ -225,9 +237,9 @@ Initial_coord = {9, 2}
 , 
 [1020] = {Initial_coord = __rt_7, id = 1020, prefeb_id = 24, warning = 6}
 , 
-[1021] = {Initial_coord = __rt_23, id = 1021, prefeb_id = 24, warning = 6}
+[1021] = {Initial_coord = __rt_24, id = 1021, prefeb_id = 24, warning = 6}
 , 
-[1022] = {Initial_coord = __rt_23, id = 1022, prefeb_id = 24, warning = 6}
+[1022] = {Initial_coord = __rt_24, id = 1022, prefeb_id = 24, warning = 6}
 , 
 [1023] = {Initial_coord = __rt_4, id = 1023, prefeb_id = 24, warning = 6}
 , 
@@ -235,7 +247,7 @@ Initial_coord = {9, 2}
 , 
 [1025] = {Initial_coord = __rt_7, id = 1025, prefeb_id = 24, warning = 6}
 , 
-[1026] = {Initial_coord = __rt_23, id = 1026, prefeb_id = 24, warning = 6}
+[1026] = {Initial_coord = __rt_24, id = 1026, prefeb_id = 24, warning = 6}
 , 
 [1027] = {Initial_coord = __rt_4, id = 1027, prefeb_id = 24, warning = 6}
 , 
@@ -243,25 +255,39 @@ Initial_coord = {9, 2}
 , 
 [1029] = {Initial_coord = __rt_7, id = 1029, prefeb_id = 24, warning = 6}
 , 
-[1030] = {Initial_coord = __rt_23, id = 1030, prefeb_id = 24, warning = 6}
+[1030] = {Initial_coord = __rt_24, id = 1030, prefeb_id = 24, warning = 6}
 , 
-[1031] = {Initial_coord = __rt_23, id = 1031, prefeb_id = 24, warning = 6}
+[1031] = {Initial_coord = __rt_24, id = 1031, prefeb_id = 24, warning = 6}
 , 
-[1050] = {Initial_coord = __rt_23, id = 1050, name = 94943, prefeb_id = 18, warning = 6}
+[1032] = {Initial_coord = __rt_25, id = 1032, name = 304977, prefeb_id = 24, victory = 258475, victory_long = 258475, warning = 6}
 , 
-[1051] = {Initial_coord = __rt_23, environment = 2, id = 1051, name = 94943, prefeb_id = 18, warning = 6}
+[1033] = {Initial_coord = __rt_25, id = 1033, name = 304977, prefeb_id = 24, victory = 436197, victory_long = 436197, warning = 6}
+, 
+[1034] = {Initial_coord = __rt_25, id = 1034, name = 304977, prefeb_id = 24, victory = 436197, victory_long = 436197, warning = 6}
+, 
+[1035] = {Initial_coord = __rt_25, id = 1035, name = 304977, prefeb_id = 24, victory = 436197, victory_long = 436197, warning = 6}
+, 
+[1036] = {Initial_coord = __rt_25, id = 1036, name = 304977, prefeb_id = 24, victory = 436197, victory_long = 436197, warning = 6}
+, 
+[1037] = {Initial_coord = __rt_25, id = 1037, name = 304977, prefeb_id = 24, victory = 436197, victory_long = 436197, warning = 6}
+, 
+[1038] = {Initial_coord = __rt_25, id = 1038, name = 304977, prefeb_id = 24, victory = 436197, victory_long = 436197, warning = 6}
+, 
+[1050] = {Initial_coord = __rt_24, id = 1050, name = 94943, prefeb_id = 18, warning = 6}
+, 
+[1051] = {Initial_coord = __rt_24, environment = 2, id = 1051, name = 94943, prefeb_id = 18, warning = 6}
 , 
 [1100] = {Initial_coord = __rt_16, id = 1100, name = 331145, prefeb_id = 6, warning = 6}
 , 
 [1101] = {Initial_coord = __rt_7, id = 1101, name = 136374, prefeb_id = 4, victory = 241821, victory_long = 142468, warning = 6}
 , 
-[1102] = {Initial_coord = __rt_23, id = 1102, name = 465891, warning = 6}
+[1102] = {Initial_coord = __rt_24, id = 1102, name = 465891, warning = 6}
 , 
 [1103] = {
 Initial_coord = {4, 3}
 , environment = 2, id = 1103, name = 271120, prefeb_id = 22, victory = 241821, victory_long = 512223, warning = 6}
 , 
-[1104] = {Initial_coord = __rt_24, exchange = false, fail_long = 178113, id = 1104, name = 71028, prefeb_id = 18, victory = 330511, victory_long = 330511, warning = 12}
+[1104] = {Initial_coord = __rt_26, exchange = false, fail_long = 178113, id = 1104, name = 71028, prefeb_id = 18, victory = 330511, victory_long = 330511, warning = 12}
 , 
 [1105] = {Initial_coord = __rt_4, fail_long = 178113, id = 1105, name = 71028, prefeb_id = 7, warning = 12}
 , 
@@ -273,89 +299,109 @@ Initial_coord = {4, 3}
 , 
 [1109] = {Initial_coord = __rt_7, id = 1109, name = 451684, prefeb_id = 24, warning = 6}
 , 
-[1110] = {Initial_coord = __rt_23, id = 1110, name = 451684, prefeb_id = 24, warning = 6}
+[1110] = {Initial_coord = __rt_24, id = 1110, name = 451684, prefeb_id = 24, warning = 6}
 , 
 [1111] = {Initial_coord = __rt_7, environment = 2, id = 1111, name = 451684, prefeb_id = 24, warning = 6}
 , 
 [1112] = {Initial_coord = __rt_16, id = 1112, name = 451684, prefeb_id = 24, warning = 6}
 , 
-[1113] = {Initial_coord = __rt_23, id = 1113, name = 451684, prefeb_id = 24, warning = 6}
+[1113] = {Initial_coord = __rt_24, id = 1113, name = 451684, prefeb_id = 24, warning = 6}
 , 
 [1114] = {Initial_coord = __rt_7, id = 1114, name = 451684, prefeb_id = 24, warning = 6}
 , 
 [1115] = {Initial_coord = __rt_4, fail_long = 178113, id = 1115, name = 71028, prefeb_id = 7, warning = 12}
 , 
-[1116] = {Initial_coord = __rt_23, id = 1116, name = 451684, prefeb_id = 24, warning = 6}
+[1116] = {Initial_coord = __rt_24, id = 1116, name = 451684, prefeb_id = 24, warning = 6}
 , 
 [1117] = {Initial_coord = __rt_7, id = 1117, name = 451684, prefeb_id = 24, warning = 6}
 , 
 [1118] = {Initial_coord = __rt_4, fail_long = 178113, id = 1118, name = 71028, prefeb_id = 7, warning = 12}
 , 
+[1119] = {Initial_coord = __rt_27, fail_long = 178113, id = 1119, name = 424218, prefeb_id = 7, victory = 79190, victory_long = 79190, warning = 12}
+, 
+[1120] = {Initial_coord = __rt_27, fail_long = 178113, id = 1120, name = 424218, prefeb_id = 7, warning = 12}
+, 
 [1150] = {
 Initial_coord = {3, 4}
 , id = 1150, name = 82988, prefeb_id = 4, warning = 6}
 , 
-[1200] = {Initial_coord = __rt_16, chip_pool = __rt_25, id = 1200, name = 502812, warning = 6}
+[1200] = {Initial_coord = __rt_16, chip_pool = __rt_28, id = 1200, name = 502812, warning = 6}
 , 
-[1201] = {Initial_coord = __rt_4, chip_pool = __rt_25, id = 1201, name = 308041, warning = 6}
+[1201] = {Initial_coord = __rt_4, chip_pool = __rt_28, id = 1201, name = 308041, warning = 6}
 , 
-[1202] = {Initial_coord = __rt_16, chip_pool = __rt_25, id = 1202, name = 113270, warning = 6}
+[1202] = {Initial_coord = __rt_16, chip_pool = __rt_28, id = 1202, name = 113270, warning = 6}
 , 
-[1203] = {Initial_coord = __rt_16, chip_pool = __rt_25, id = 1203, name = 502812, warning = 6}
+[1203] = {Initial_coord = __rt_16, chip_pool = __rt_28, id = 1203, name = 502812, warning = 6}
 , 
-[1204] = {Initial_coord = __rt_4, chip_pool = __rt_25, id = 1204, name = 308041, warning = 6}
+[1204] = {Initial_coord = __rt_4, chip_pool = __rt_28, id = 1204, name = 308041, warning = 6}
 , 
-[1250] = {Initial_coord = __rt_16, chip_pool = __rt_25, environment = 2, id = 1250, name = 442787, warning = 6}
+[1205] = {Initial_coord = __rt_27, chip_pool = __rt_28, id = 1205, name = 329419, victory = 241821, victory_long = 241821, warning = 6}
 , 
-[1300] = {Initial_coord = __rt_24, chip_pool = __rt_25, id = 1300, name = 316474, open_fog_of_war = true, warning = 6}
+[1206] = {Initial_coord = __rt_27, chip_pool = __rt_28, id = 1206, name = 329419, warning = 6}
 , 
-[1301] = {Initial_coord = __rt_24, chip_pool = __rt_25, id = 1301, name = 121703, prefeb_id = 22, victory = 347439, victory_long = 498660, warning = 6}
+[1250] = {Initial_coord = __rt_16, chip_pool = __rt_28, environment = 2, id = 1250, name = 442787, warning = 6}
 , 
-[2000] = {Initial_coord = __rt_7, chip_pool = __rt_25, environment = 2, id = 2000, name = 142231, prefeb_id = 18, warning = 6}
+[1300] = {Initial_coord = __rt_26, chip_pool = __rt_28, id = 1300, name = 316474, open_fog_of_war = true, warning = 6}
 , 
-[2001] = {Initial_coord = __rt_16, chip_pool = __rt_25, id = 2001, name = 471748, prefeb_id = 7, warning = 6}
+[1301] = {Initial_coord = __rt_26, chip_pool = __rt_28, id = 1301, name = 121703, prefeb_id = 22, victory = 347439, victory_long = 498660, warning = 6}
 , 
-[2002] = {Initial_coord = __rt_16, chip_pool = __rt_25, id = 2002, name = 276977, prefeb_id = 6, warning = 6}
+[2000] = {Initial_coord = __rt_7, chip_pool = __rt_28, environment = 2, id = 2000, name = 142231, prefeb_id = 18, warning = 6}
 , 
-[2003] = {Initial_coord = __rt_24, chip_pool = __rt_25, environment = 2, fail_long = 178113, id = 2003, name = 342098, open_fog_of_war = true, prefeb_id = 4, victory = 95991, victory_long = 95991, warning = 12}
+[2001] = {Initial_coord = __rt_16, chip_pool = __rt_28, id = 2001, name = 471748, prefeb_id = 7, warning = 6}
 , 
-[2004] = {Initial_coord = __rt_7, chip_pool = __rt_25, environment = 2, fail_long = 178113, id = 2004, name = 342098, open_fog_of_war = true, prefeb_id = 4, victory = 95991, victory_long = 95991, warning = 12}
+[2002] = {Initial_coord = __rt_16, chip_pool = __rt_28, id = 2002, name = 276977, prefeb_id = 6, warning = 6}
 , 
-[2050] = {Initial_coord = __rt_16, chip_pool = __rt_25, id = 2050, name = 82206, warning = 6}
+[2003] = {Initial_coord = __rt_26, chip_pool = __rt_28, environment = 2, fail_long = 178113, id = 2003, name = 342098, open_fog_of_war = true, prefeb_id = 4, victory = 95991, victory_long = 95991, warning = 12}
 , 
-[2051] = {Initial_coord = __rt_16, chip_pool = __rt_25, id = 2051, name = 411723, prefeb_id = 22, warning = 6}
+[2004] = {Initial_coord = __rt_7, chip_pool = __rt_28, environment = 2, fail_long = 178113, id = 2004, name = 342098, open_fog_of_war = true, prefeb_id = 4, victory = 95991, victory_long = 95991, warning = 12}
 , 
-[2100] = {Initial_coord = __rt_16, chip_pool = __rt_25, environment = 2, fail_long = 178113, id = 2100, name = 479170, prefeb_id = 18, victory = 475394, victory_long = 475394, warning = 12}
+[2050] = {Initial_coord = __rt_16, chip_pool = __rt_28, id = 2050, name = 82206, warning = 6}
 , 
-[2101] = {Initial_coord = __rt_16, chip_pool = __rt_25, id = 2101, name = 284399, prefeb_id = 7, warning = 6}
+[2051] = {Initial_coord = __rt_16, chip_pool = __rt_28, id = 2051, name = 411723, prefeb_id = 22, warning = 6}
 , 
-[2102] = {Initial_coord = __rt_16, chip_pool = __rt_25, id = 2102, name = 89629, prefeb_id = 24, warning = 6}
+[2100] = {Initial_coord = __rt_16, chip_pool = __rt_28, environment = 2, fail_long = 178113, id = 2100, name = 479170, prefeb_id = 18, victory = 475394, victory_long = 475394, warning = 12}
 , 
-[2200] = {Initial_coord = __rt_16, chip_pool = __rt_25, environment = 2, id = 2200, name = 490795, prefeb_id = 4, warning = 6}
+[2101] = {Initial_coord = __rt_16, chip_pool = __rt_28, id = 2101, name = 284399, prefeb_id = 7, warning = 6}
 , 
-[2201] = {Initial_coord = __rt_7, chip_pool = __rt_25, id = 2201, name = 296024, warning = 6}
+[2102] = {Initial_coord = __rt_16, chip_pool = __rt_28, id = 2102, name = 89629, prefeb_id = 24, warning = 6}
 , 
-[2202] = {Initial_coord = __rt_7, chip_pool = __rt_25, id = 2202, name = 101253, prefeb_id = 24, warning = 6}
+[2200] = {Initial_coord = __rt_16, chip_pool = __rt_28, environment = 2, id = 2200, name = 490795, prefeb_id = 4, warning = 6}
 , 
-[2203] = {Initial_coord = __rt_16, chip_pool = __rt_25, environment = 2, id = 2203, name = 430770, prefeb_id = 4, warning = 6}
+[2201] = {Initial_coord = __rt_7, chip_pool = __rt_28, id = 2201, name = 296024, warning = 6}
 , 
-[2204] = {Initial_coord = __rt_7, chip_pool = __rt_25, id = 2204, name = 235999, warning = 6}
+[2202] = {Initial_coord = __rt_7, chip_pool = __rt_28, id = 2202, name = 101253, prefeb_id = 24, warning = 6}
 , 
-[5000] = {Initial_coord = __rt_24, chip_pool = __rt_25, edit_team = 2, id = 5000, min_team = 2, name = 382039, recomme_team = 2}
+[2203] = {Initial_coord = __rt_16, chip_pool = __rt_28, environment = 2, id = 2203, name = 430770, prefeb_id = 4, warning = 6}
 , 
-[5001] = {Initial_coord = __rt_24, chip_pool = __rt_25, edit_team = 2, id = 5001, name = 382039, recomme_team = 2}
+[2204] = {Initial_coord = __rt_7, chip_pool = __rt_28, id = 2204, name = 235999, warning = 6}
 , 
-[5002] = {Initial_coord = __rt_24, chip_pool = __rt_25, edit_team = 2, id = 5002, min_team = 2, name = 382039, recomme_team = 2}
+[5000] = {Initial_coord = __rt_26, chip_pool = __rt_28, edit_team = 2, id = 5000, min_team = 2, name = 382039, recomme_team = 2}
 , 
-[5003] = {Initial_coord = __rt_26, chip_pool = __rt_25, edit_team = 2, id = 5003, min_team = 2, name = 382039, recomme_team = 2}
+[5001] = {Initial_coord = __rt_26, chip_pool = __rt_28, edit_team = 2, id = 5001, name = 382039, recomme_team = 2}
 , 
-[5004] = {Initial_coord = __rt_26, chip_pool = __rt_25, edit_team = 2, id = 5004, name = 382039, recomme_team = 2}
+[5002] = {Initial_coord = __rt_26, chip_pool = __rt_28, edit_team = 2, id = 5002, min_team = 2, name = 382039, recomme_team = 2}
 , 
-[5005] = {Initial_coord = __rt_26, chip_pool = __rt_25, edit_team = 2, id = 5005, min_team = 2, name = 382039, recomme_team = 2, shop = 5}
+[5003] = {Initial_coord = __rt_29, chip_pool = __rt_28, edit_team = 2, id = 5003, min_team = 2, name = 382039, recomme_team = 2}
 , 
-[5006] = {Initial_coord = __rt_26, chip_pool = __rt_25, edit_team = 2, id = 5006, name = 382039, recomme_team = 2, shop = 5}
+[5004] = {Initial_coord = __rt_29, chip_pool = __rt_28, edit_team = 2, id = 5004, name = 382039, recomme_team = 2}
 , 
-[5007] = {Initial_coord = __rt_26, chip_pool = __rt_25, edit_team = 2, id = 5007, min_team = 2, name = 382039, recomme_team = 2, shop = 5}
+[5005] = {Initial_coord = __rt_29, chip_pool = __rt_28, edit_team = 2, id = 5005, min_team = 2, name = 382039, recomme_team = 2}
+, 
+[5006] = {Initial_coord = __rt_29, chip_pool = __rt_28, edit_team = 2, id = 5006, name = 382039, recomme_team = 2}
+, 
+[5007] = {Initial_coord = __rt_29, chip_pool = __rt_28, edit_team = 2, id = 5007, min_team = 2, name = 382039, recomme_team = 2}
+, 
+[5008] = {Initial_coord = __rt_29, chip_pool = __rt_30, edit_team = 2, id = 5008, min_team = 2, name = 382039, recomme_team = 2}
+, 
+[5009] = {Initial_coord = __rt_29, chip_pool = __rt_30, edit_team = 2, id = 5009, name = 382039, recomme_team = 2}
+, 
+[5010] = {Initial_coord = __rt_29, chip_pool = __rt_31, edit_team = 2, id = 5010, min_team = 2, name = 382039, recomme_team = 2}
+, 
+[5011] = {Initial_coord = __rt_29, chip_pool = __rt_31, edit_team = 2, id = 5011, name = 382039, recomme_team = 2}
+, 
+[5012] = {Initial_coord = __rt_29, chip_pool = __rt_32, edit_team = 2, id = 5012, min_team = 2, name = 382039, recomme_team = 2}
+, 
+[5013] = {Initial_coord = __rt_29, chip_pool = __rt_32, edit_team = 2, id = 5013, name = 382039, recomme_team = 2}
 , 
 [6000] = {Initial_coord = __rt_4, assist = __rt_5, assist_name = __rt_6, chip_pool = __rt_3, edit_team = 1, exchange = false, fail_long = 178113, id = 6000, name = 382039, open_fog_of_war = true, shop = 1, stress = 101, warning = 12}
 , 
@@ -365,75 +411,77 @@ Initial_coord = {3, 4}
 , 
 [6003] = {Initial_coord = __rt_7, assist = __rt_13, assist_name = __rt_14, chip_pool = __rt_3, edit_team = 2, exchange = false, fail_long = 178113, id = 6003, name = 382039, open_fog_of_war = true, shop = 1, stress = 103, warning = 12}
 , 
-[7000] = {Initial_coord = __rt_27, assist = __rt_28, assist_name = __rt_29, 
+[7000] = {Initial_coord = __rt_33, assist = __rt_34, assist_name = __rt_35, 
 chip_pool = {2000208, 2000212}
-, environment = 2, id = 7000, name = 45280, prefeb_id = 24, warning = 6}
+, environment = 2, id = 7000, name = 45280, prefeb_id = 24, shop = 4, warning = 6}
 , 
-[7001] = {Initial_coord = __rt_27, assist = __rt_28, assist_name = __rt_29, 
+[7001] = {Initial_coord = __rt_33, assist = __rt_34, assist_name = __rt_35, 
 chip_pool = {2000208, 2000209, 2000212}
-, id = 7001, name = 45280, prefeb_id = 24, warning = 6}
+, id = 7001, name = 45280, prefeb_id = 24, shop = 4, warning = 6}
 , 
-[7002] = {Initial_coord = __rt_27, assist = __rt_28, assist_name = __rt_29, 
+[7002] = {Initial_coord = __rt_33, assist = __rt_34, assist_name = __rt_35, 
 chip_pool = {2000208, 2000210, 2000212}
-, id = 7002, name = 45280, warning = 6}
+, id = 7002, name = 45280, shop = 4, warning = 6}
 , 
-[7003] = {Initial_coord = __rt_27, assist = __rt_28, assist_name = __rt_29, chip_pool = __rt_30, environment = 2, id = 7003, name = 45280, warning = 6}
+[7003] = {Initial_coord = __rt_33, assist = __rt_34, assist_name = __rt_35, chip_pool = __rt_36, environment = 2, id = 7003, name = 45280, shop = 4, warning = 6}
 , 
-[7004] = {Initial_coord = __rt_16, assist = __rt_28, assist_name = __rt_29, 
+[7004] = {Initial_coord = __rt_16, assist = __rt_34, assist_name = __rt_35, 
 chip_pool = {2000208, 2000211, 2000212}
-, id = 7004, name = 45280, warning = 6}
+, id = 7004, name = 45280, shop = 4, warning = 6}
 , 
-[7005] = {Initial_coord = __rt_18, assist = __rt_28, assist_name = __rt_29, chip_pool = __rt_30, id = 7005, name = 45280, warning = 6}
+[7005] = {Initial_coord = __rt_18, assist = __rt_34, assist_name = __rt_35, chip_pool = __rt_36, id = 7005, name = 45280, shop = 4, warning = 6}
 , 
-[7006] = {Initial_coord = __rt_27, assist = __rt_28, assist_name = __rt_29, chip_pool = __rt_31, environment = 2, id = 7006, name = 45280, warning = 6}
+[7006] = {Initial_coord = __rt_33, assist = __rt_34, assist_name = __rt_35, chip_pool = __rt_37, environment = 2, id = 7006, name = 45280, shop = 4, warning = 6}
 , 
-[7007] = {Initial_coord = __rt_26, assist = __rt_28, assist_name = __rt_29, chip_pool = __rt_31, edit_team = 2, id = 7007, min_team = 2, name = 45280, recomme_team = 2}
+[7007] = {Initial_coord = __rt_29, assist = __rt_34, assist_name = __rt_35, chip_pool = __rt_37, edit_team = 2, id = 7007, min_team = 2, name = 45280, recomme_team = 2, shop = 4}
 , 
-[7008] = {Initial_coord = __rt_26, assist = __rt_28, assist_name = __rt_29, chip_pool = __rt_31, edit_team = 2, id = 7008, name = 45280, recomme_team = 2}
+[7008] = {Initial_coord = __rt_29, assist = __rt_34, assist_name = __rt_35, chip_pool = __rt_37, edit_team = 2, id = 7008, name = 45280, recomme_team = 2, shop = 4}
 , 
-[10001] = {Initial_coord = __rt_18, chip_pool = __rt_32, edit_team = 2, exchange = false, id = 10001, name = 494828, prefeb_id = 28, stress = 10001, trigger_id = 7100, trigger_special = 1, victory = 129543, victory_long = 129543}
+[9999] = {assist_id = 11, chip_pool = __rt_38, edit_team = 2, exchange = false, fail_long = 428290, id = 9999, name = 439268, open_fog_of_war = true, prefeb_id = 28, shop = 2, stress = 154}
 , 
-[10002] = {Initial_coord = __rt_26, chip_pool = __rt_32, edit_team = 2, exchange = false, id = 10002, name = 356669, prefeb_id = 28, stress = 10002, trigger_id = 7100, trigger_special = 1, victory = 129543, victory_long = 129543}
+[10001] = {Initial_coord = __rt_18, chip_pool = __rt_38, edit_team = 2, exchange = false, id = 10001, name = 494828, prefeb_id = 28, shop = 4, stress = 10001, trigger_id = 7100, trigger_special = 1, victory = 129543, victory_long = 129543}
 , 
-[10003] = {chip_pool = __rt_32, edit_team = 2, exchange = false, fail_long = 428290, id = 10003, name = 263489, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 129543, victory_long = 129543}
+[10002] = {Initial_coord = __rt_29, chip_pool = __rt_38, edit_team = 2, exchange = false, id = 10002, name = 356669, prefeb_id = 28, shop = 4, stress = 10002, trigger_id = 7100, trigger_special = 1, victory = 129543, victory_long = 129543}
 , 
-[10004] = {chip_pool = __rt_32, edit_team = 2, exchange = false, fail_long = 428290, id = 10004, name = 260615, open_fog_of_war = true, prefeb_id = 28, shop = 2, stress = 154, victory = 241821, victory_long = 241821}
+[10003] = {chip_pool = __rt_38, edit_team = 2, exchange = false, fail_long = 428290, id = 10003, name = 263489, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 129543, victory_long = 129543}
 , 
-[10005] = {chip_pool = __rt_32, edit_team = 2, exchange = false, id = 10005, name = 186536, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 347439, victory_long = 436197}
+[10004] = {chip_pool = __rt_38, edit_team = 2, exchange = false, fail_long = 428290, id = 10004, name = 260615, open_fog_of_war = true, prefeb_id = 28, shop = 2, stress = 154, victory = 241821, victory_long = 241821}
 , 
-[10006] = {Initial_coord = __rt_4, chip_pool = __rt_32, edit_team = 2, exchange = false, fail_long = 178113, id = 10006, name = 23469, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 347439, victory_long = 436197}
+[10005] = {chip_pool = __rt_38, edit_team = 2, exchange = false, id = 10005, name = 186536, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 347439, victory_long = 436197}
 , 
-[10008] = {assist_id = 11, chip_pool = __rt_32, edit_team = 2, exchange = false, fail_long = 428290, id = 10008, min_team = 2, name = 176141, open_fog_of_war = true, prefeb_id = 28, shop = 2, stress = 154}
+[10006] = {Initial_coord = __rt_4, chip_pool = __rt_38, edit_team = 2, exchange = false, fail_long = 178113, id = 10006, name = 23469, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 347439, victory_long = 436197}
 , 
-[10011] = {Initial_coord = __rt_18, chip_pool = __rt_32, edit_team = 2, exchange = false, id = 10011, name = 189298, open_fog_of_war = true, prefeb_id = 28, stress = 10011, trigger_id = 7100, trigger_special = 1, victory = 68108, victory_long = 68108}
+[10008] = {assist_id = 11, chip_pool = __rt_38, edit_team = 2, exchange = false, fail_long = 428290, id = 10008, min_team = 2, name = 176141, open_fog_of_war = true, prefeb_id = 28, shop = 2, stress = 154}
 , 
-[10013] = {chip_pool = __rt_32, edit_team = 2, exchange = false, fail_long = 428290, id = 10013, name = 482247, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 404846, victory_long = 404846}
+[10011] = {Initial_coord = __rt_18, chip_pool = __rt_38, edit_team = 2, exchange = false, id = 10011, name = 189298, open_fog_of_war = true, prefeb_id = 28, shop = 4, stress = 10011, trigger_id = 7100, trigger_special = 1, victory = 68108, victory_long = 68108}
 , 
-[10014] = {chip_pool = __rt_32, edit_team = 2, exchange = false, fail_long = 51008, id = 10014, name = 83401, open_fog_of_war = true, prefeb_id = 28, shop = 2, stress = 154, victory = 241821, victory_long = 241821}
+[10013] = {chip_pool = __rt_38, edit_team = 2, exchange = false, fail_long = 428290, id = 10013, name = 482247, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 404846, victory_long = 404846}
 , 
-[10015] = {chip_pool = __rt_32, edit_team = 2, exchange = false, fail_long = 178113, id = 10015, name = 405294, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 347439, victory_long = 436197}
+[10014] = {chip_pool = __rt_38, edit_team = 2, exchange = false, fail_long = 51008, id = 10014, name = 83401, open_fog_of_war = true, prefeb_id = 28, shop = 2, stress = 154, victory = 241821, victory_long = 241821}
 , 
-[10071] = {Initial_coord = __rt_18, assist_id = 8, chip_pool = __rt_32, edit_team = 2, exchange = false, id = 10071, name = 494828, prefeb_id = 28, stress = 10001, trigger_id = 7100, trigger_special = 1, victory = 129543, victory_long = 129543}
+[10015] = {chip_pool = __rt_38, edit_team = 2, exchange = false, fail_long = 178113, id = 10015, name = 405294, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 347439, victory_long = 436197}
 , 
-[10072] = {Initial_coord = __rt_26, assist_id = 9, chip_pool = __rt_32, edit_team = 2, exchange = false, id = 10072, name = 356669, prefeb_id = 28, stress = 10002, trigger_id = 7100, trigger_special = 1, victory = 129543, victory_long = 129543}
+[10071] = {Initial_coord = __rt_18, assist_id = 8, chip_pool = __rt_38, edit_team = 2, exchange = false, id = 10071, name = 494828, prefeb_id = 28, shop = 4, stress = 10001, trigger_id = 7100, trigger_special = 1, victory = 129543, victory_long = 129543}
 , 
-[10073] = {assist_id = 10, chip_pool = __rt_32, edit_team = 2, exchange = false, fail_long = 428290, id = 10073, name = 263489, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 129543, victory_long = 129543}
+[10072] = {Initial_coord = __rt_29, assist_id = 9, chip_pool = __rt_38, edit_team = 2, exchange = false, id = 10072, name = 356669, prefeb_id = 28, shop = 4, stress = 10002, trigger_id = 7100, trigger_special = 1, victory = 129543, victory_long = 129543}
 , 
-[10074] = {assist_id = 11, chip_pool = __rt_32, edit_team = 2, exchange = false, fail_long = 428290, id = 10074, name = 260615, open_fog_of_war = true, prefeb_id = 28, shop = 2, stress = 154, victory = 241821, victory_long = 241821}
+[10073] = {assist_id = 10, chip_pool = __rt_38, edit_team = 2, exchange = false, fail_long = 428290, id = 10073, name = 263489, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 129543, victory_long = 129543}
 , 
-[10075] = {chip_pool = __rt_32, edit_team = 2, exchange = false, id = 10075, name = 186536, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 347439, victory_long = 436197}
+[10074] = {assist_id = 11, chip_pool = __rt_38, edit_team = 2, exchange = false, fail_long = 428290, id = 10074, name = 260615, open_fog_of_war = true, prefeb_id = 28, shop = 2, stress = 154, victory = 241821, victory_long = 241821}
 , 
-[10076] = {Initial_coord = __rt_4, chip_pool = __rt_32, edit_team = 2, exchange = false, fail_long = 178113, id = 10076, name = 23469, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 347439, victory_long = 436197}
+[10075] = {chip_pool = __rt_38, edit_team = 2, exchange = false, id = 10075, name = 186536, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 347439, victory_long = 436197}
 , 
-[10078] = {assist_id = 11, chip_pool = __rt_32, edit_team = 2, exchange = false, fail_long = 428290, id = 10078, min_team = 2, name = 176141, open_fog_of_war = true, prefeb_id = 28, shop = 2, stress = 154}
+[10076] = {Initial_coord = __rt_4, chip_pool = __rt_38, edit_team = 2, exchange = false, fail_long = 178113, id = 10076, name = 23469, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 347439, victory_long = 436197}
 , 
-[10081] = {Initial_coord = __rt_18, assist_id = 8, chip_pool = __rt_32, edit_team = 2, exchange = false, id = 10081, name = 189298, open_fog_of_war = true, prefeb_id = 28, stress = 10011, trigger_id = 7100, trigger_special = 1, victory = 68108, victory_long = 68108}
+[10078] = {assist_id = 11, chip_pool = __rt_38, edit_team = 2, exchange = false, fail_long = 428290, id = 10078, min_team = 2, name = 176141, open_fog_of_war = true, prefeb_id = 28, shop = 2, stress = 154}
 , 
-[10083] = {assist_id = 10, chip_pool = __rt_32, edit_team = 2, exchange = false, fail_long = 428290, id = 10083, name = 482247, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 404846, victory_long = 404846}
+[10081] = {Initial_coord = __rt_18, assist_id = 8, chip_pool = __rt_38, edit_team = 2, exchange = false, id = 10081, name = 189298, open_fog_of_war = true, prefeb_id = 28, shop = 4, stress = 10011, trigger_id = 7100, trigger_special = 1, victory = 68108, victory_long = 68108}
 , 
-[10085] = {chip_pool = __rt_32, edit_team = 2, exchange = false, fail_long = 178113, id = 10085, name = 405294, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 347439, victory_long = 436197}
+[10083] = {assist_id = 10, chip_pool = __rt_38, edit_team = 2, exchange = false, fail_long = 428290, id = 10083, name = 482247, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 404846, victory_long = 404846}
+, 
+[10085] = {chip_pool = __rt_38, edit_team = 2, exchange = false, fail_long = 178113, id = 10085, name = 405294, prefeb_id = 28, shop = 2, stress = 154, trigger_id = 7100, trigger_special = 1, victory = 347439, victory_long = 436197}
 }
-local __default_values = {Initial_coord = __rt_1, assist = __rt_2, assist_id = 0, assist_name = __rt_2, chip_pool = __rt_22, edit_team = 5, environment = 0, exchange = true, fail_long = 230136, id = 100, min_team = 1, name = 424460, open_fog_of_war = false, prefeb_id = 23, recomme_team = 1, shop = 4, start_formation = 0, stress = 2003, trigger_icon = "", trigger_id = 0, trigger_special = 0, victory = 309792, victory_long = 309792, warning = 0}
+local __default_values = {Initial_coord = __rt_1, assist = __rt_2, assist_id = 0, assist_name = __rt_2, chip_pool = __rt_23, edit_team = 5, environment = 0, exchange = true, fail_long = 230136, id = 100, min_team = 1, name = 424460, open_fog_of_war = false, prefeb_id = 23, recomme_team = 1, shop = 5, start_formation = 0, stress = 2003, trigger_icon = "", trigger_id = 0, trigger_special = 0, victory = 309792, victory_long = 309792, warning = 0}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")

@@ -5,20 +5,27 @@ local base = UIBaseNode
 local UINUserHead = require("Game.CommonUI.Head.UINUserHead")
 local UINCommonRankPanelItem = require("Game.CommonUI.Rank.UINCommonRankPanelItem")
 local BattleUtil = require("Game.Battle.BattleUtil")
+local FloatAlignEnum = require("Game.CommonUI.FloatWin.FloatAlignEnum")
+local HAType = FloatAlignEnum.HAType
+local VAType = FloatAlignEnum.VAType
 UINCommonRankPanel.eRankDragWay = {Down = 1, Up = 2}
 UINCommonRankPanel.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, UINUserHead
   (UIUtil.LuaUIBindingTable)(self.transform, self.ui)
   self.__resloader = ((CS.ResLoader).Create)()
-  -- DECOMPILER ERROR at PC16: Confused about usage of register: R1 in 'UnsetPending'
+  ;
+  (UIUtil.AddButtonListener)((self.ui).btn_ErrorIcon, self, self.__OnBtnErrorIcon)
+  ;
+  (UIUtil.AddButtonListener)((self.ui).btn_FloatingBG, self, self.__OnBtnFloatingBG)
+  -- DECOMPILER ERROR at PC30: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.ui).loop_scroll).onInstantiateItem = BindCallback(self, self.__OnNewItem)
-  -- DECOMPILER ERROR at PC23: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC37: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.ui).loop_scroll).onChangeItem = BindCallback(self, self.__OnChangeItem)
-  -- DECOMPILER ERROR at PC30: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC44: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.ui).loop_scroll).onReturnItem = BindCallback(self, self.__OnReturnItem)
@@ -29,7 +36,7 @@ UINCommonRankPanel.OnInit = function(self)
   ;
   (self.myHeadNode):Init((self.ui).my_uINBaseHead)
   self.__rankPageNum = (ConfigData.buildinConfig).CommonRankPageNum
-  -- DECOMPILER ERROR at PC57: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC71: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   (((self.ui).tex_MyRank).text).text = ""
@@ -319,6 +326,33 @@ UINCommonRankPanel.RefreshCommonMyRank = function(self, myRank, hasTime, isShowN
       ;
       (((self.ui).tex_MyHeroCount).gameObject):SetActive(false)
     end
+    self.myRankStatus = myRank.rankStatus
+    ;
+    (((self.ui).btn_FloatingBG).gameObject):SetActive(false)
+    if myRank.rankStatus then
+      if myRank.rankStatus == 0 then
+        ((self.ui).obj_Error):SetActive(false)
+      else
+        if myRank.rankStatus == 1 then
+          ((self.ui).obj_Error):SetActive(true)
+          ;
+          ((self.ui).tex_Error):SetIndex(0)
+          -- DECOMPILER ERROR at PC184: Confused about usage of register: R4 in 'UnsetPending'
+
+          ;
+          ((self.ui).img_Error).color = (self.ui).color_inCheck
+        else
+          ;
+          ((self.ui).obj_Error):SetActive(true)
+          ;
+          ((self.ui).tex_Error):SetIndex(1)
+          -- DECOMPILER ERROR at PC200: Confused about usage of register: R4 in 'UnsetPending'
+
+          ;
+          ((self.ui).img_Error).color = (self.ui).color_checkFail
+        end
+      end
+    end
   end
 end
 
@@ -344,8 +378,49 @@ UINCommonRankPanel._CalculateScoreAndFrame = function(self, score1)
   end
 end
 
+UINCommonRankPanel.__OnBtnErrorIcon = function(self)
+  -- function num : 0_15
+  self.isShowFloatingFrame = not self.isShowFloatingFrame
+  self:ControllerFloatFrameShow()
+  ;
+  (((self.ui).btn_FloatingBG).gameObject):SetActive(self.isShowFloatingFrame)
+end
+
+UINCommonRankPanel.__OnBtnFloatingBG = function(self)
+  -- function num : 0_16
+  self.isShowFloatingFrame = false
+  self:ControllerFloatFrameShow()
+  ;
+  (((self.ui).btn_FloatingBG).gameObject):SetActive(self.isShowFloatingFrame)
+end
+
+UINCommonRankPanel.ControllerFloatFrameShow = function(self)
+  -- function num : 0_17 , upvalues : _ENV, HAType, VAType
+  if self.isShowFloatingFrame then
+    local win = UIManager:ShowWindow(UIWindowTypeID.FloatingFrame)
+    local titleTex, contentTex = ConfigData:GetTipContent(8801), ConfigData:GetTipContent(8802)
+    if self.myRankStatus == 2 then
+      titleTex = ConfigData:GetTipContent(8803)
+    end
+    win:SetTitleAndContext(titleTex, contentTex)
+    win:FloatTo(((self.ui).obj_Error).transform, HAType.left, VAType.up)
+  else
+    do
+      -- DECOMPILER ERROR at PC43: Overwrote pending register: R3 in 'AssignReg'
+
+      local win = UIManager:GetWindow(contentTex.FloatingFrame)
+      if win ~= nil then
+        win:Hide()
+        win:Clean3DModifier()
+      end
+    end
+  end
+end
+
 UINCommonRankPanel.OnDelete = function(self)
-  -- function num : 0_15 , upvalues : base
+  -- function num : 0_18 , upvalues : base
+  self.isShowFloatingFrame = false
+  self:ControllerFloatFrameShow()
   if self.__resloader ~= nil then
     (self.__resloader):Put2Pool()
     self.__resloader = nil

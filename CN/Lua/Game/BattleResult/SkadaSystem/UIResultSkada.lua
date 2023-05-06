@@ -99,7 +99,7 @@ end
 
 UIResultSkada.OnBtnCloseClicked = function(self)
   -- function num : 0_7 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIResultSkada.OnDelete = function(self)

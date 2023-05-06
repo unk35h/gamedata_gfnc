@@ -545,6 +545,7 @@ LuaSkillBase.AddSetHurtTrigger = function(self, name, priority, eventFunc, sende
       isTriggerSet = -1
     end
   end
+  isTriggerSet = -1
   local bindFunc = BindCallback(self, eventFunc)
   LuaSkillCtrl:AddSkillTriggerWithBindArg(eSkillTriggerType.SetHurt, self.cskill, eTriggerSkillType.RoleSkill, name, priority, bindFunc, false, sender, target, senderBelongNum, targetBelongNum, senderRoleType, targetRoleType, skillId, skillTag, isTriggerSet)
 end
@@ -560,6 +561,7 @@ LuaSkillBase.AddSetDeadHurtTrigger = function(self, name, priority, eventFunc, s
       isTriggerSet = -1
     end
   end
+  isTriggerSet = -1
   local bindFunc = BindCallback(self, eventFunc)
   LuaSkillCtrl:AddSkillTriggerWithBindArg(eSkillTriggerType.SetDeadHurt, self.cskill, eTriggerSkillType.RoleSkill, name, priority, bindFunc, false, sender, target, senderBelongNum, targetBelongNum, senderRoleType, targetRoleType, skillId, skillTag, isTriggerSet)
 end
@@ -575,6 +577,7 @@ LuaSkillBase.AddAfterHurtTrigger = function(self, name, priority, eventFunc, sen
       isTriggerSet = -1
     end
   end
+  isTriggerSet = -1
   local bindFunc = BindCallback(self, self.__BaseOnAfterHurt, eventFunc)
   LuaSkillCtrl:AddSkillTriggerWithBindArg(eSkillTriggerType.AfterHurt, self.cskill, eTriggerSkillType.RoleSkill, name, priority, bindFunc, false, sender, target, senderBelongNum, targetBelongNum, senderRoleType, targetRoleType, skillId, skillTag, isTriggerSet)
 end
@@ -600,6 +603,7 @@ LuaSkillBase.AddSetHealTrigger = function(self, name, priority, eventFunc, sende
       isTriggerSet = -1
     end
   end
+  isTriggerSet = -1
   local bindFunc = BindCallback(self, eventFunc)
   LuaSkillCtrl:AddSkillTriggerWithBindArg(eSkillTriggerType.SetHeal, self.cskill, eTriggerSkillType.RoleSkill, name, priority, bindFunc, false, sender, target, senderBelongNum, targetBelongNum, senderRoleType, targetRoleType, skillId, skillTag, isTriggerSet)
 end
@@ -615,6 +619,7 @@ LuaSkillBase.AddAfterHealTrigger = function(self, name, priority, eventFunc, sen
       isTriggerSet = -1
     end
   end
+  isTriggerSet = -1
   local bindFunc = BindCallback(self, eventFunc)
   LuaSkillCtrl:AddSkillTriggerWithBindArg(eSkillTriggerType.AfterHeal, self.cskill, eTriggerSkillType.RoleSkill, name, priority, bindFunc, false, sender, target, senderBelongNum, targetBelongNum, senderRoleType, targetRoleType, skillId, skillTag, isTriggerSet)
 end
@@ -678,6 +683,7 @@ LuaSkillBase.AddHurtResultStartTrigger = function(self, name, priority, eventFun
       isTriggerSet = -1
     end
   end
+  isTriggerSet = -1
   local bindFunc = BindCallback(self, eventFunc)
   LuaSkillCtrl:AddSkillTriggerWithBindArg(eSkillTriggerType.HurtResultStart, self.cskill, eTriggerSkillType.RoleSkill, name, priority, bindFunc, false, sender, target, senderBelongNum, targetBelongNum, senderRoleType, targetRoleType, skillId, skillTag, isTriggerSet)
 end
@@ -693,6 +699,7 @@ LuaSkillBase.AddHurtResultEndTrigger = function(self, name, priority, eventFunc,
       isTriggerSet = -1
     end
   end
+  isTriggerSet = -1
   local bindFunc = BindCallback(self, eventFunc)
   LuaSkillCtrl:AddSkillTriggerWithBindArg(eSkillTriggerType.HurtResultEnd, self.cskill, eTriggerSkillType.RoleSkill, name, priority, bindFunc, false, sender, target, senderBelongNum, targetBelongNum, senderRoleType, targetRoleType, skillId, skillTag, isTriggerSet)
 end
@@ -708,6 +715,7 @@ LuaSkillBase.AddHealResultStartTrigger = function(self, name, priority, eventFun
       isTriggerSet = -1
     end
   end
+  isTriggerSet = -1
   local bindFunc = BindCallback(self, eventFunc)
   LuaSkillCtrl:AddSkillTriggerWithBindArg(eSkillTriggerType.HealResultStart, self.cskill, eTriggerSkillType.RoleSkill, name, priority, bindFunc, false, sender, target, senderBelongNum, targetBelongNum, senderRoleType, targetRoleType, skillId, skillTag, isTriggerSet)
 end
@@ -723,6 +731,7 @@ LuaSkillBase.AddHealResultEndTrigger = function(self, name, priority, eventFunc,
       isTriggerSet = -1
     end
   end
+  isTriggerSet = -1
   local bindFunc = BindCallback(self, eventFunc)
   LuaSkillCtrl:AddSkillTriggerWithBindArg(eSkillTriggerType.HealResultEnd, self.cskill, eTriggerSkillType.RoleSkill, name, priority, bindFunc, false, sender, target, senderBelongNum, targetBelongNum, senderRoleType, targetRoleType, skillId, skillTag, isTriggerSet)
 end

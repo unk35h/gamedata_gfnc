@@ -5,7 +5,8 @@ local SectorLevelDetailEnum = require("Game.Sector.Enum.SectorLevelDetailEnum")
 local ExplorationEnum = require("Game.Exploration.ExplorationEnum")
 local ActivityFrameEnum = require("Game.ActivityFrame.ActivityFrameEnum")
 local cs_MessageCommon = CS.MessageCommon
-SectorStageDetailHelper.PlayMoudleType = {Ep = 1, Warchess = 2, WarchessSeason = 3, EpMixWarchess = 4}
+local emptyString = ""
+SectorStageDetailHelper.PlayMoudleType = {Ep = 1, Warchess = 2, WarchessSeason = 3, EpMixWarchess = 4, AVG = 5}
 local GetChipPreviewByEpModuleIdFunc = {[proto_csmsg_SystemFunctionID.SystemFunctionID_Exploration] = function(stageId, param)
   -- function num : 0_0 , upvalues : _ENV
   local chip_dic = {}
@@ -126,10 +127,11 @@ end
 end
 }
 local TryToShowCurrentLevelTipsFunc = {[proto_csmsg_SystemFunctionID.SystemFunctionID_Exploration] = function(stageCfg, playModeType)
-  -- function num : 0_10 , upvalues : _ENV, SectorStageDetailHelper, ExplorationEnum
+  -- function num : 0_10 , upvalues : _ENV, SectorStageDetailHelper, ExplorationEnum, emptyString
   local msg = nil
   local sectorCfg = (ConfigData.sector)[stageCfg.sector]
   local strName = (LanguageUtil.GetLocaleText)(sectorCfg.name)
+  local courseDes = (LanguageUtil.GetLocaleText)(sectorCfg.course_des)
   if ((ConfigData.sector).onlyShowStageIdSectorDic)[stageCfg.sector] then
     if playModeType == (SectorStageDetailHelper.PlayMoudleType).EpMixWarchess then
       local win23Ctrl = ControllerManager:GetController(ControllerTypeId.ActivityWinter23)
@@ -167,7 +169,11 @@ local TryToShowCurrentLevelTipsFunc = {[proto_csmsg_SystemFunctionID.SystemFunct
           else
             do
               do
-                msg = (string.format)(ConfigData:GetTipContent(TipContent.Sector_IsExploringOtherSector2normal), strName, strLv, strDiff)
+                if courseDes ~= nil and courseDes ~= emptyString then
+                  msg = (string.format)(ConfigData:GetTipContent(TipContent.Sector_IsExploringOtherSector2normal), strName, emptyString, strDiff)
+                else
+                  msg = (string.format)(ConfigData:GetTipContent(TipContent.Sector_IsExploringOtherSector2normal), strName, strLv, strDiff)
+                end
                 ExplorationManager:TryGiveUpLastExploration(msg, stageCfg)
               end
             end
@@ -352,6 +358,9 @@ SectorStageDetailHelper.HasUnCompleteStage = function(PlayMoudleType)
             end
             return false
           end
+          if PlayMoudleType == (SectorStageDetailHelper.PlayMoudleType).AVG then
+            return false
+          end
           if isGameDev then
             error("PlayMoudleType Error")
           end
@@ -464,10 +473,13 @@ SectorStageDetailHelper.IsSectorHasUnComplete = function(sectorId)
 end
 
 SectorStageDetailHelper.SectorPlayMoudle = function(sectorId)
-  -- function num : 0_26 , upvalues : _ENV, SectorLevelDetailEnum, SectorStageDetailHelper
+  -- function num : 0_26 , upvalues : _ENV, SectorStageDetailHelper, SectorLevelDetailEnum
   local sectorCfg = (ConfigData.sector)[sectorId]
   if sectorCfg == nil then
     return 0
+  end
+  if ((ConfigData.sector_stage).sectorIdList)[sectorId] == nil then
+    return (SectorStageDetailHelper.PlayMoudleType).AVG
   end
   local isWarchessSector = sectorCfg.sector_type == (SectorLevelDetailEnum.eSectorType).WarChess
   local isMixSector = sectorCfg.sector_type == (SectorLevelDetailEnum.eSectorType).ActWin23

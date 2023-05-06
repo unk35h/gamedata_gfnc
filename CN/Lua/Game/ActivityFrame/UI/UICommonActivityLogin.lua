@@ -11,7 +11,7 @@ UICommonActivityLogin.OnInit = function(self)
   ;
   (UIUtil.AddValueChangedListener)((self.ui).tog_Popup, self, self.OnReadOnePopupChanged)
   ;
-  (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack()
   self.resloader = ((CS.ResLoader).Create)()
 end
 
@@ -111,13 +111,13 @@ UICommonActivityLogin.SetTimeId = function(self, isShop, shopId)
       -- function num : 0_4_0_0 , upvalues : shopCtrl, shopId, _ENV, self
       local hasLimit, startTime, endTime = shopCtrl:GetIsThisShopHasTimeLimit(shopId)
       if not hasLimit then
-        (UIUtil.OnClickBack)()
+        (UIUtil.OnClickBackByUiTab)(self)
         return 
       end
       local remaindTime = endTime - PlayerDataCenter.timestamp
       local d, h, m, s = TimeUtil:TimestampToTimeInter(remaindTime, false, true)
       if remaindTime < 0 then
-        (UIUtil.OnClickBack)()
+        (UIUtil.OnClickBackByUiTab)(self)
         return 
       end
       if d > 0 then
@@ -152,7 +152,7 @@ end
 UICommonActivityLogin.OnClickJump = function(self)
   -- function num : 0_6 , upvalues : _ENV
   if self._jumpCallback ~= nil then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
     ;
     (self._jumpCallback)()
   end
@@ -175,7 +175,7 @@ end
 
 UICommonActivityLogin.OnActivityBtnCloseClicked = function(self)
   -- function num : 0_9 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UICommonActivityLogin.OnReadOnePopupChanged = function(self, value)

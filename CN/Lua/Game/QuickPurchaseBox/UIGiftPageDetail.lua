@@ -141,7 +141,7 @@ end
 
 UIGiftPageDetail.OnClickGiftPageClose = function(self)
   -- function num : 0_7 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 return UIGiftPageDetail

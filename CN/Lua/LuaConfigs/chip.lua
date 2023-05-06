@@ -160,7 +160,7 @@ local __rt_157 = {10304}
 local __rt_158 = {10305}
 local __rt_159 = {10306}
 local __rt_160 = {10307}
-if not createtable or not createtable(152, 0) then
+if not createtable or not createtable(153, 0) then
   local __rt = {}
 end
 __rt[1] = {10308}
@@ -299,22 +299,23 @@ __rt[133] = {10000}
 __rt[134] = {180}
 __rt[135] = {207}
 __rt[136] = {240}
-__rt[137] = {202, 203}
-__rt[138] = {300, 300}
-__rt[139] = {140}
-__rt[140] = {70}
-__rt[141] = {0, 0, 0}
-__rt[142] = {12, 28, 19}
-__rt[143] = {12000, 5000, 5000}
-__rt[144] = {300, 300, 150}
-__rt[145] = {500, 500, 150}
-__rt[146] = {500, 500, 200}
-__rt[147] = {600, 600, 200}
-__rt[148] = {4001405}
-__rt[149] = {125}
-__rt[150] = {3, 3}
-__rt[151] = {3}
-__rt[152] = {26}
+__rt[137] = {20, 20}
+__rt[138] = {202, 203}
+__rt[139] = {300, 300}
+__rt[140] = {140}
+__rt[141] = {70}
+__rt[142] = {0, 0, 0}
+__rt[143] = {12, 28, 19}
+__rt[144] = {12000, 5000, 5000}
+__rt[145] = {300, 300, 150}
+__rt[146] = {500, 500, 150}
+__rt[147] = {500, 500, 200}
+__rt[148] = {600, 600, 200}
+__rt[149] = {4001405}
+__rt[150] = {125}
+__rt[151] = {3, 3}
+__rt[152] = {3}
+__rt[153] = {26}
 local chip = {
 [904] = {id = 904, skill_list = __rt_2}
 , 
@@ -3662,6 +3663,14 @@ skill_list = {91025}
 skill_list = {91026}
 }
 , 
+[91027] = {
+attribute_id = {226, 228}
+, attribute_initial = __rt[112], id = 91027, level_increase = __rt[137]}
+, 
+[91028] = {
+attribute_id = {203, 212}
+, attribute_initial = __rt[112], id = 91028, level_increase = __rt[137]}
+, 
 [92000] = {chip_quality = 1, id = 92000, influence = 701, 
 skill_list = {92000}
 }
@@ -3894,6 +3903,58 @@ skill_list = {92062}
 , 
 [92078] = {id = 92078, influence = 701, skill_list = __rt[58]}
 , 
+[92079] = {id = 92079, influence = 701, 
+skill_list = {92079}
+}
+, 
+[92080] = {id = 92080, influence = 701, 
+skill_list = {92080}
+}
+, 
+[92081] = {id = 92081, influence = 701, 
+skill_list = {92081}
+}
+, 
+[92082] = {id = 92082, influence = 701, 
+skill_list = {92082}
+}
+, 
+[92083] = {id = 92083, influence = 701, 
+skill_list = {92083}
+}
+, 
+[92084] = {id = 92084, influence = 701, 
+skill_list = {92084}
+}
+, 
+[92085] = {id = 92085, influence = 701, 
+skill_list = {92085}
+}
+, 
+[92086] = {id = 92086, 
+skill_list = {92086}
+}
+, 
+[92087] = {id = 92087, 
+skill_list = {92087}
+}
+, 
+[92088] = {id = 92088, influence = 601, 
+skill_list = {92088}
+}
+, 
+[92089] = {id = 92089, 
+skill_list = {92089}
+}
+, 
+[92090] = {id = 92090, 
+skill_list = {92090}
+}
+, 
+[92091] = {id = 92091, influence = 701, 
+skill_list = {92091}
+}
+, 
 [93000] = {
 attribute_id = {205, 9, 10}
 , 
@@ -4009,6 +4070,26 @@ skill_list = {93033}
 [93038] = {arg = 1, id = 93038, influence = 102, skill_list = __rt[49]}
 , 
 [93039] = {id = 93039, influence = 701, skill_list = __rt[56]}
+, 
+[93040] = {id = 93040, 
+skill_list = {93040}
+}
+, 
+[93041] = {id = 93041, 
+skill_list = {93041}
+}
+, 
+[93042] = {id = 93042, influence = 601, 
+skill_list = {93042}
+}
+, 
+[93043] = {id = 93043, influence = 701, 
+skill_list = {93043}
+}
+, 
+[93044] = {id = 93044, 
+skill_list = {93044}
+}
 , 
 [94100] = {buff_id = 94100, id = 94100, influence = 601, 
 skill_list = {94100}
@@ -4154,21 +4235,21 @@ skill_list = {94220}
 skill_list = {94221}
 }
 , 
-[108000] = {attribute_id = __rt[137], attribute_initial = __rt[138], id = 108000, influence = 601, level_increase = __rt[138], markid = 14}
+[108000] = {attribute_id = __rt[138], attribute_initial = __rt[139], id = 108000, influence = 601, level_increase = __rt[139], markid = 14}
 , 
 [108001] = {attribute_id = __rt_3, attribute_initial = __rt_10, id = 108001, influence = 601, level_increase = __rt_10, markid = 14}
 , 
 [108002] = {attribute_id = __rt_4, attribute_initial = __rt_14, id = 108002, level_increase = __rt_14}
 , 
-[108003] = {attribute_id = __rt[137], attribute_initial = __rt[114], id = 108003, influence = 601, level_increase = __rt[114], markid = 14}
+[108003] = {attribute_id = __rt[138], attribute_initial = __rt[114], id = 108003, influence = 601, level_increase = __rt[114], markid = 14}
 , 
 [108004] = {attribute_id = __rt_3, attribute_initial = __rt_10, id = 108004, level_increase = __rt_10}
 , 
 [108005] = {attribute_id = __rt_4, attribute_initial = __rt_10, id = 108005, level_increase = __rt_10}
 , 
-[108006] = {attribute_id = __rt_7, attribute_initial = __rt[139], id = 108006, level_increase = __rt[139]}
+[108006] = {attribute_id = __rt_7, attribute_initial = __rt[140], id = 108006, level_increase = __rt[140]}
 , 
-[108007] = {attribute_id = __rt_3, attribute_initial = __rt[140], id = 108007, level_increase = __rt[140]}
+[108007] = {attribute_id = __rt_3, attribute_initial = __rt[141], id = 108007, level_increase = __rt[141]}
 , 
 [108008] = {attribute_id = __rt_3, attribute_initial = __rt_28, id = 108008, level_increase = __rt_28}
 , 
@@ -4184,17 +4265,17 @@ skill_list = {94221}
 , 
 [108014] = {attribute_id = __rt[87], 
 attribute_initial = {15000, 5000, 5000}
-, id = 108014, influence = 601, level_increase = __rt[141]}
+, id = 108014, influence = 601, level_increase = __rt[142]}
 , 
-[108015] = {attribute_id = __rt[142], 
+[108015] = {attribute_id = __rt[143], 
 attribute_initial = {500, 500, 300}
-, id = 108015, influence = 601, level_increase = __rt[141]}
+, id = 108015, influence = 601, level_increase = __rt[142]}
 , 
 [108016] = {attribute_id = __rt_25, attribute_initial = __rt_16, id = 108016, influence = 601, level_increase = __rt[15], skill_list = __rt[66]}
 , 
 [108017] = {attribute_id = __rt[87], 
 attribute_initial = {9000, 4000, 4000}
-, id = 108017, influence = 601, level_increase = __rt[141]}
+, id = 108017, influence = 601, level_increase = __rt[142]}
 , 
 [108018] = {attribute_id = __rt[17], attribute_initial = __rt[126], id = 108018, influence = 601, level_increase = __rt[15]}
 , 
@@ -4202,13 +4283,13 @@ attribute_initial = {9000, 4000, 4000}
 , 
 [108020] = {attribute_id = __rt[87], 
 attribute_initial = {16000, 6000, 6000}
-, id = 108020, influence = 601, level_increase = __rt[141]}
+, id = 108020, influence = 601, level_increase = __rt[142]}
 , 
 [108021] = {attribute_id = __rt_52, attribute_initial = __rt[124], id = 108021, influence = 601, level_increase = __rt[15]}
 , 
 [108022] = {attribute_id = __rt[16], attribute_initial = __rt_14, id = 108022, influence = 601}
 , 
-[108023] = {attribute_id = __rt[87], attribute_initial = __rt[143], id = 108023, influence = 601, level_increase = __rt[141]}
+[108023] = {attribute_id = __rt[87], attribute_initial = __rt[144], id = 108023, influence = 601, level_increase = __rt[142]}
 , 
 [108024] = {attribute_id = __rt_31, attribute_initial = __rt_23, id = 108024, influence = 601, level_increase = __rt[15]}
 , 
@@ -4216,15 +4297,15 @@ attribute_initial = {16000, 6000, 6000}
 , 
 [108026] = {attribute_id = __rt[87], 
 attribute_initial = {10600, 4000, 4000}
-, id = 108026, influence = 601, level_increase = __rt[141]}
+, id = 108026, influence = 601, level_increase = __rt[142]}
 , 
-[108027] = {attribute_id = __rt[142], attribute_initial = __rt[144], id = 108027, influence = 601, level_increase = __rt[141]}
+[108027] = {attribute_id = __rt[143], attribute_initial = __rt[145], id = 108027, influence = 601, level_increase = __rt[142]}
 , 
 [108028] = {id = 108028, influence = 601, skill_list = __rt[63]}
 , 
 [108029] = {attribute_id = __rt[87], 
 attribute_initial = {8400, 2000, 2000}
-, id = 108029, influence = 601, level_increase = __rt[141]}
+, id = 108029, influence = 601, level_increase = __rt[142]}
 , 
 [108030] = {attribute_id = __rt[125], attribute_initial = __rt_46, id = 108030, influence = 601, level_increase = __rt[15]}
 , 
@@ -4232,7 +4313,7 @@ attribute_initial = {8400, 2000, 2000}
 , 
 [108032] = {attribute_id = __rt[87], 
 attribute_initial = {6400, 1900, 1900}
-, id = 108032, influence = 601, level_increase = __rt[141]}
+, id = 108032, influence = 601, level_increase = __rt[142]}
 , 
 [108033] = {attribute_id = __rt[111], attribute_initial = __rt_12, id = 108033, influence = 601, level_increase = __rt[15]}
 , 
@@ -4240,7 +4321,7 @@ attribute_initial = {6400, 1900, 1900}
 , 
 [108035] = {attribute_id = __rt[87], 
 attribute_initial = {5700, 1600, 1600}
-, id = 108035, influence = 601, level_increase = __rt[141]}
+, id = 108035, influence = 601, level_increase = __rt[142]}
 , 
 [108036] = {attribute_id = __rt_31, attribute_initial = __rt_23, id = 108036, influence = 601, level_increase = __rt[15]}
 , 
@@ -4248,23 +4329,23 @@ attribute_initial = {5700, 1600, 1600}
 , 
 [108038] = {attribute_id = __rt[87], 
 attribute_initial = {2200, 600, 600}
-, id = 108038, influence = 601, level_increase = __rt[141]}
+, id = 108038, influence = 601, level_increase = __rt[142]}
 , 
-[108039] = {attribute_id = __rt[142], attribute_initial = __rt[144], id = 108039, influence = 601, level_increase = __rt[141]}
+[108039] = {attribute_id = __rt[143], attribute_initial = __rt[145], id = 108039, influence = 601, level_increase = __rt[142]}
 , 
 [108040] = {id = 108040, influence = 701, skill_list = __rt[109]}
 , 
 [108041] = {attribute_id = __rt[87], 
 attribute_initial = {1400, 580, 580}
-, id = 108041, influence = 601, level_increase = __rt[141]}
+, id = 108041, influence = 601, level_increase = __rt[142]}
 , 
-[108042] = {attribute_id = __rt[142], attribute_initial = __rt[145], id = 108042, influence = 601, level_increase = __rt[141]}
+[108042] = {attribute_id = __rt[143], attribute_initial = __rt[146], id = 108042, influence = 601, level_increase = __rt[142]}
 , 
 [108043] = {id = 108043, influence = 601, skill_list = __rt[105]}
 , 
 [108044] = {attribute_id = __rt[87], 
 attribute_initial = {1290, 480, 480}
-, id = 108044, influence = 601, level_increase = __rt[141]}
+, id = 108044, influence = 601, level_increase = __rt[142]}
 , 
 [108045] = {attribute_id = __rt[125], attribute_initial = __rt_46, id = 108045, influence = 601, level_increase = __rt[15]}
 , 
@@ -4272,53 +4353,53 @@ attribute_initial = {1290, 480, 480}
 , 
 [108047] = {attribute_id = __rt[87], 
 attribute_initial = {1390, 540, 540}
-, id = 108047, influence = 601, level_increase = __rt[141]}
+, id = 108047, influence = 601, level_increase = __rt[142]}
 , 
-[108048] = {attribute_id = __rt[142], attribute_initial = __rt[145], id = 108048, influence = 601, level_increase = __rt[141]}
+[108048] = {attribute_id = __rt[143], attribute_initial = __rt[146], id = 108048, influence = 601, level_increase = __rt[142]}
 , 
 [108049] = {id = 108049, influence = 601, skill_list = __rt[64]}
 , 
 [108050] = {attribute_id = __rt[87], 
 attribute_initial = {1390, 550, 550}
-, id = 108050, influence = 601, level_increase = __rt[141]}
+, id = 108050, influence = 601, level_increase = __rt[142]}
 , 
-[108051] = {attribute_id = __rt[142], attribute_initial = __rt[145], id = 108051, influence = 601, level_increase = __rt[141]}
+[108051] = {attribute_id = __rt[143], attribute_initial = __rt[146], id = 108051, influence = 601, level_increase = __rt[142]}
 , 
 [108052] = {id = 108052, influence = 601, skill_list = __rt[65]}
 , 
 [108053] = {attribute_id = __rt[87], 
 attribute_initial = {1230, 500, 500}
-, id = 108053, influence = 601, level_increase = __rt[141]}
+, id = 108053, influence = 601, level_increase = __rt[142]}
 , 
-[108054] = {attribute_id = __rt[142], attribute_initial = __rt[146], id = 108054, influence = 601, level_increase = __rt[141]}
+[108054] = {attribute_id = __rt[143], attribute_initial = __rt[147], id = 108054, influence = 601, level_increase = __rt[142]}
 , 
 [108055] = {id = 108055, influence = 701, skill_list = __rt[60]}
 , 
 [108056] = {attribute_id = __rt[87], 
 attribute_initial = {1670, 670, 670}
-, id = 108056, influence = 601, level_increase = __rt[141]}
+, id = 108056, influence = 601, level_increase = __rt[142]}
 , 
-[108057] = {attribute_id = __rt[142], attribute_initial = __rt[146], id = 108057, influence = 601, level_increase = __rt[141]}
+[108057] = {attribute_id = __rt[143], attribute_initial = __rt[147], id = 108057, influence = 601, level_increase = __rt[142]}
 , 
 [108058] = {id = 108058, influence = 601, skill_list = __rt[64]}
 , 
 [108059] = {attribute_id = __rt[87], 
 attribute_initial = {1570, 730, 730}
-, id = 108059, influence = 601, level_increase = __rt[141]}
+, id = 108059, influence = 601, level_increase = __rt[142]}
 , 
-[108060] = {attribute_id = __rt[142], attribute_initial = __rt[147], id = 108060, influence = 601, level_increase = __rt[141]}
+[108060] = {attribute_id = __rt[143], attribute_initial = __rt[148], id = 108060, influence = 601, level_increase = __rt[142]}
 , 
 [108061] = {id = 108061, influence = 701, skill_list = __rt[109]}
 , 
 [108062] = {attribute_id = __rt[87], 
 attribute_initial = {1480, 580, 580}
-, id = 108062, influence = 601, level_increase = __rt[141]}
+, id = 108062, influence = 601, level_increase = __rt[142]}
 , 
-[108063] = {attribute_id = __rt[142], attribute_initial = __rt[147], id = 108063, influence = 601, level_increase = __rt[141]}
+[108063] = {attribute_id = __rt[143], attribute_initial = __rt[148], id = 108063, influence = 601, level_increase = __rt[142]}
 , 
 [108064] = {attribute_id = __rt[16], attribute_initial = __rt_14, id = 108064, influence = 601}
 , 
-[108065] = {attribute_id = __rt[87], attribute_initial = __rt[143], id = 108065, influence = 601, level_increase = __rt[141]}
+[108065] = {attribute_id = __rt[87], attribute_initial = __rt[144], id = 108065, influence = 601, level_increase = __rt[142]}
 , 
 [108066] = {attribute_id = __rt[125], attribute_initial = __rt_46, id = 108066, influence = 601, level_increase = __rt[15]}
 , 
@@ -4326,13 +4407,13 @@ attribute_initial = {1480, 580, 580}
 , 
 [108068] = {attribute_id = __rt[87], 
 attribute_initial = {8000, 3000, 3000}
-, id = 108068, influence = 601, level_increase = __rt[141]}
+, id = 108068, influence = 601, level_increase = __rt[142]}
 , 
-[108069] = {attribute_id = __rt[142], attribute_initial = __rt[144], id = 108069, influence = 601, level_increase = __rt[141]}
+[108069] = {attribute_id = __rt[143], attribute_initial = __rt[145], id = 108069, influence = 601, level_increase = __rt[142]}
 , 
 [108070] = {id = 108070, influence = 601, skill_list = __rt[64]}
 , 
-[108071] = {attribute_id = __rt[87], attribute_initial = __rt[132], id = 108071, influence = 601, level_increase = __rt[141]}
+[108071] = {attribute_id = __rt[87], attribute_initial = __rt[132], id = 108071, influence = 601, level_increase = __rt[142]}
 , 
 [108072] = {attribute_id = __rt[111], attribute_initial = __rt_12, id = 108072, influence = 601, level_increase = __rt[15]}
 , 
@@ -4340,7 +4421,7 @@ attribute_initial = {8000, 3000, 3000}
 , 
 [108074] = {attribute_id = __rt[87], 
 attribute_initial = {6000, 1000, 1000}
-, id = 108074, influence = 601, level_increase = __rt[141]}
+, id = 108074, influence = 601, level_increase = __rt[142]}
 , 
 [108075] = {attribute_id = __rt_52, attribute_initial = __rt[124], id = 108075, influence = 601, level_increase = __rt[15]}
 , 
@@ -4348,9 +4429,9 @@ attribute_initial = {6000, 1000, 1000}
 , 
 [108077] = {attribute_id = __rt[87], 
 attribute_initial = {4000, 1000, 1000}
-, id = 108077, influence = 601, level_increase = __rt[141]}
+, id = 108077, influence = 601, level_increase = __rt[142]}
 , 
-[108078] = {attribute_id = __rt[142], attribute_initial = __rt[145], id = 108078, influence = 601, level_increase = __rt[141]}
+[108078] = {attribute_id = __rt[143], attribute_initial = __rt[146], id = 108078, influence = 601, level_increase = __rt[142]}
 , 
 [108079] = {attribute_id = __rt[16], attribute_initial = __rt_14, id = 108079, influence = 601}
 , 
@@ -4698,6 +4779,18 @@ skill_list = {4001035}
 skill_list = {4001036}
 , type = 4}
 , 
+[4001038] = {buff_id = 4001038, id = 4001038, 
+skill_list = {4001038}
+, type = 4}
+, 
+[4001039] = {buff_id = 4001039, id = 4001039, 
+skill_list = {4001039}
+, type = 4}
+, 
+[4001040] = {buff_id = 4001040, id = 4001040, 
+skill_list = {4001040}
+, type = 4}
+, 
 [4001101] = {id = 4001101, influence = 701, 
 skill_list = {4001101}
 }
@@ -4770,6 +4863,14 @@ skill_list = {4001116}
 , 
 [4001121] = {id = 4001121, 
 skill_list = {4001121}
+}
+, 
+[4001133] = {id = 4001133, influence = 701, 
+skill_list = {4001133}
+}
+, 
+[4001134] = {id = 4001134, influence = 701, 
+skill_list = {4001134}
 }
 , 
 [4001201] = {buff_id = 4001201, id = 4001201, 
@@ -4858,6 +4959,14 @@ skill_list = {4001222}
 skill_list = {4001223}
 , type = 4}
 , 
+[4001243] = {buff_id = 4001243, id = 4001243, 
+skill_list = {4001243}
+, type = 4}
+, 
+[4001244] = {buff_id = 4001244, id = 4001244, influence = 701, 
+skill_list = {4001244}
+, type = 4}
+, 
 [4001401] = {attribute_id = __rt[121], attribute_initial = __rt[62], id = 4001401, level_increase = __rt[15]}
 , 
 [4001402] = {attribute_id = __rt[121], attribute_initial = __rt[62], id = 4001402, level_increase = __rt[15]}
@@ -4866,17 +4975,17 @@ skill_list = {4001223}
 , 
 [4001404] = {attribute_id = __rt[121], attribute_initial = __rt[62], id = 4001404, level_increase = __rt[15]}
 , 
-[4001405] = {id = 4001405, skill_list = __rt[148]}
+[4001405] = {id = 4001405, skill_list = __rt[149]}
 , 
 [4001406] = {attribute_id = __rt[135], attribute_initial = __rt_16, id = 4001406, level_increase = __rt[15]}
 , 
-[4001407] = {attribute_id = __rt[92], attribute_initial = __rt[138], id = 4001407, level_increase = __rt[74]}
+[4001407] = {attribute_id = __rt[92], attribute_initial = __rt[139], id = 4001407, level_increase = __rt[74]}
 , 
-[4001408] = {id = 4001408, influence = 601, skill_list = __rt[148]}
+[4001408] = {id = 4001408, influence = 601, skill_list = __rt[149]}
 , 
 [4001409] = {attribute_id = __rt[135], attribute_initial = __rt_16, id = 4001409, influence = 601, level_increase = __rt[15]}
 , 
-[4001410] = {attribute_id = __rt[92], attribute_initial = __rt[138], id = 4001410, influence = 601, level_increase = __rt[74]}
+[4001410] = {attribute_id = __rt[92], attribute_initial = __rt[139], id = 4001410, influence = 601, level_increase = __rt[74]}
 , 
 [4001411] = {id = 4001411, influence = 701}
 , 
@@ -4900,7 +5009,7 @@ skill_list = {4010404}
 skill_list = {4010405}
 }
 , 
-[4010406] = {id = 4010406, influence = 701, 
+[4010406] = {id = 4010406, 
 skill_list = {4010406}
 }
 , 
@@ -4948,9 +5057,9 @@ skill_list = {4010416}
 , 
 [4010421] = {attribute_id = __rt_15, attribute_initial = __rt_62, id = 4010421, level_increase = __rt_62}
 , 
-[4010422] = {attribute_id = __rt_24, attribute_initial = __rt[149], id = 4010422, level_increase = __rt[149]}
+[4010422] = {attribute_id = __rt_24, attribute_initial = __rt[150], id = 4010422, level_increase = __rt[150]}
 , 
-[4010423] = {attribute_id = __rt[127], attribute_initial = __rt[149], id = 4010423, level_increase = __rt[149]}
+[4010423] = {attribute_id = __rt[127], attribute_initial = __rt[150], id = 4010423, level_increase = __rt[150]}
 , 
 [4010424] = {attribute_id = __rt_3, attribute_initial = __rt_26, id = 4010424, level_increase = __rt_26}
 , 
@@ -4958,13 +5067,13 @@ skill_list = {4010416}
 , 
 [4010426] = {
 attribute_id = {4, 27}
-, attribute_initial = __rt[150], id = 4010426, level_increase = __rt[150]}
+, attribute_initial = __rt[151], id = 4010426, level_increase = __rt[151]}
 , 
 [4010427] = {attribute_id = __rt_15, attribute_initial = __rt_6, id = 4010427, level_increase = __rt_6}
 , 
-[4010428] = {attribute_id = __rt[151], attribute_initial = __rt_10, id = 4010428, level_increase = __rt_10}
+[4010428] = {attribute_id = __rt[152], attribute_initial = __rt_10, id = 4010428, level_increase = __rt_10}
 , 
-[4010429] = {attribute_id = __rt[152], attribute_initial = __rt_10, id = 4010429, level_increase = __rt_10}
+[4010429] = {attribute_id = __rt[153], attribute_initial = __rt_10, id = 4010429, level_increase = __rt_10}
 , 
 [4010430] = {attribute_id = __rt_31, attribute_initial = __rt_45, id = 4010430, level_increase = __rt_45}
 , 
@@ -4974,9 +5083,167 @@ attribute_id = {4, 27}
 , 
 [4010433] = {attribute_id = __rt[17], attribute_initial = __rt_6, id = 4010433, level_increase = __rt_6}
 , 
-[4010434] = {attribute_id = __rt[151], attribute_initial = __rt[151], id = 4010434, level_increase = __rt[151]}
+[4010434] = {attribute_id = __rt[152], attribute_initial = __rt[152], id = 4010434, level_increase = __rt[152]}
 , 
-[4010435] = {attribute_id = __rt[152], attribute_initial = __rt[151], id = 4010435, level_increase = __rt[151]}
+[4010435] = {attribute_id = __rt[153], attribute_initial = __rt[152], id = 4010435, level_increase = __rt[152]}
+, 
+[4010443] = {id = 4010443, 
+skill_list = {4010443}
+}
+, 
+[4010444] = {id = 4010444}
+, 
+[4010445] = {id = 4010445, 
+skill_list = {4010445}
+}
+, 
+[4010446] = {id = 4010446, 
+skill_list = {4010446}
+}
+, 
+[4010447] = {id = 4010447, 
+skill_list = {4010447}
+}
+, 
+[4010448] = {id = 4010448, influence = 701, 
+skill_list = {4010448}
+}
+, 
+[4010449] = {id = 4010449, 
+skill_list = {4010449}
+}
+, 
+[4010450] = {id = 4010450, 
+skill_list = {4010450}
+}
+, 
+[4010451] = {id = 4010451, 
+skill_list = {4010451}
+}
+, 
+[4010452] = {id = 4010452, influence = 701, 
+skill_list = {4010452}
+}
+, 
+[4010453] = {id = 4010453, 
+skill_list = {4010453}
+}
+, 
+[4010457] = {id = 4010457, 
+skill_list = {4010457}
+}
+, 
+[4010458] = {id = 4010458, 
+skill_list = {4010458}
+}
+, 
+[4010459] = {id = 4010459, 
+skill_list = {4010459}
+}
+, 
+[4010460] = {id = 4010460, 
+skill_list = {4010460}
+}
+, 
+[4010461] = {id = 4010461, 
+skill_list = {4010461}
+}
+, 
+[4010462] = {id = 4010462, 
+skill_list = {4010462}
+}
+, 
+[4010463] = {id = 4010463, 
+skill_list = {4010463}
+}
+, 
+[4010464] = {id = 4010464, 
+skill_list = {4010464}
+}
+, 
+[4010465] = {id = 4010465, 
+skill_list = {4010465}
+}
+, 
+[4010466] = {id = 4010466, 
+skill_list = {4010466}
+}
+, 
+[4010467] = {id = 4010467, 
+skill_list = {4010467}
+}
+, 
+[4010468] = {id = 4010468, 
+skill_list = {4010468}
+}
+, 
+[4010469] = {id = 4010469, 
+skill_list = {4010469}
+}
+, 
+[4010470] = {id = 4010470, 
+skill_list = {4010470}
+}
+, 
+[4010471] = {id = 4010471, 
+skill_list = {4010471}
+}
+, 
+[4010472] = {id = 4010472, 
+skill_list = {4010472}
+}
+, 
+[4010473] = {id = 4010473, 
+skill_list = {4010473}
+}
+, 
+[4010474] = {id = 4010474, 
+skill_list = {4010474}
+}
+, 
+[4010475] = {id = 4010475, influence = 701, 
+skill_list = {4010475}
+}
+, 
+[4010476] = {id = 4010476, influence = 701, 
+skill_list = {4010476}
+}
+, 
+[4010477] = {id = 4010477, influence = 701, 
+skill_list = {4010477}
+}
+, 
+[4010478] = {id = 4010478, influence = 701, 
+skill_list = {4010478}
+}
+, 
+[4010479] = {id = 4010479, influence = 701, 
+skill_list = {4010479}
+}
+, 
+[4010480] = {id = 4010480, 
+skill_list = {4010480}
+}
+, 
+[4010481] = {id = 4010481, 
+skill_list = {4010481}
+}
+, 
+[4010482] = {id = 4010482, 
+skill_list = {4010482}
+}
+, 
+[4020001] = {buff_id = 4020001, id = 4020001, influence = 701, 
+skill_list = {4020001}
+, type = 4}
+, 
+[4020002] = {buff_id = 4020002, id = 4020002, influence = 701, 
+skill_list = {4020002}
+, type = 4}
+, 
+[4020003] = {buff_id = 4020003, id = 4020003, influence = 701, 
+skill_list = {4020003}
+, type = 4}
 , 
 [9910015] = {arg = 3, fun_tag = 995, id = 9910015, influence = 102, markid = 5, skill_list = __rt_21}
 , 

@@ -193,7 +193,7 @@ local sectorTypes = {[(JumpManager.eJumpTarget).Sector] = true, [(JumpManager.eJ
 local heroTypes = {[(JumpManager.eJumpTarget).Hero] = true}
 local DormTypes = {[(JumpManager.eJumpTarget).Dorm] = true}
 local SectorActivityType = {[eActivityType.SectorI] = true, [eActivityType.HeroGrow] = true, [eActivityType.SectorII] = true, [eActivityType.RefreshDun] = true, [eActivityType.Carnival] = true, [eActivityType.DailyChallenge] = true, [eActivityType.SectorIII] = true, [eActivityType.Hallowmas] = true, [eActivityType.Spring] = true, [eActivityType.Winter23] = true}
-local NotNeedBack2HomeAct = {[eActivityType.WhiteDay] = true, [eActivityType.Spring] = true, [eActivityType.Winter23] = true}
+local NotNeedBack2HomeAct = {[eActivityType.WhiteDay] = true, [eActivityType.Spring] = true, [eActivityType.Winter23] = true, [eActivityType.Season] = true}
 JumpManager.IsJumpNeedBack2Home = function(self, jumpType, argList)
   -- function num : 0_4 , upvalues : notNeedBack2Home, _ENV, HomeEnum, JumpManager, sectorTypes, heroTypes, DormTypes
   if notNeedBack2Home[jumpType] then
@@ -263,7 +263,7 @@ JumpManager.__BeforeDirectJump = function(self)
   -- function num : 0_9 , upvalues : _ENV
   local formationCtrl = ControllerManager:GetController(ControllerTypeId.Formation)
   if formationCtrl ~= nil then
-    formationCtrl:Delete()
+    formationCtrl:RealExitFormation()
   end
   local dailyTaskCtrl = ControllerManager:GetController(ControllerTypeId.DailyDungeonLevelCtrl)
   if dailyTaskCtrl ~= nil then
@@ -1562,29 +1562,59 @@ JumpManager.Jump2DynActivity = function(self, jumpOverCallback, argList)
                       end
                       return 
                     end
-                    if activityFrameData ~= nil and SectorActivityType[activityFrameData.actCat] then
-                      self:Jump2DynSectorLevel(jumpOverCallback, {activityId, true})
-                      return 
-                    end
                     do
-                      if activityFrameData ~= nil and activityFrameData.actCat == eActivityType.HistoryTinyGame then
-                        local historyTinyGameCtrl = ControllerManager:GetController(ControllerTypeId.HistoryTinyGameActivity)
-                        if historyTinyGameCtrl ~= nil then
-                          historyTinyGameCtrl:TryOpenHistoryTinyGame((activityFrameData:GetActId()), nil, true)
+                      if activityFrameData ~= nil and activityFrameData.actCat == eActivityType.Season then
+                        local seasonCtrl = ControllerManager:GetController(ControllerTypeId.ActivitySeason)
+                        if seasonCtrl ~= nil then
+                          local actId = activityFrameData:GetActId()
+                          local actLobbyCtrl = ControllerManager:GetController(ControllerTypeId.ActivityLobbyCtrl)
+                          if actSpecialJumpId == nil or actSpecialJumpId == 0 then
+                            if actLobbyCtrl == nil then
+                              self:__BeforeDirectJump()
+                              seasonCtrl:OpenSeason(actId)
+                            else
+                              (UIUtil.ReturnUntil2Marker)(UIWindowTypeID.ActLobbyMain, false)
+                            end
+                          elseif actLobbyCtrl == nil then
+                            self:__BeforeDirectJump()
+                            seasonCtrl:OpenSeason(actId, true, function()
+    -- function num : 0_62_4 , upvalues : seasonCtrl, actSpecialJumpId
+    seasonCtrl:OpenSeasonObj(actSpecialJumpId)
+  end
+)
+                          else
+                            seasonCtrl:OpenSeasonObj(actSpecialJumpId)
+                          end
+                        end
+                        if jumpOverCallback ~= nil then
+                          jumpOverCallback()
                         end
                         return 
                       end
-                      if category or 0 == 0 or not activityFrameCtrl:IsHaveShowByEnterType(category) then
-                        category = activityFrameCtrl:GetAutoJumpTargetActivity()
+                      if activityFrameData ~= nil and SectorActivityType[activityFrameData.actCat] then
+                        self:Jump2DynSectorLevel(jumpOverCallback, {activityId, true})
+                        return 
                       end
-                      local Home = UIManager:GetWindow(UIWindowTypeID.Home)
-                      if Home ~= nil then
-                        (Home.homeLeftNode):OnClickActivity(category, activityId)
+                      do
+                        if activityFrameData ~= nil and activityFrameData.actCat == eActivityType.HistoryTinyGame then
+                          local historyTinyGameCtrl = ControllerManager:GetController(ControllerTypeId.HistoryTinyGameActivity)
+                          if historyTinyGameCtrl ~= nil then
+                            historyTinyGameCtrl:TryOpenHistoryTinyGame((activityFrameData:GetActId()), nil, true)
+                          end
+                          return 
+                        end
+                        if category or 0 == 0 or not activityFrameCtrl:IsHaveShowByEnterType(category) then
+                          category = activityFrameCtrl:GetAutoJumpTargetActivity()
+                        end
+                        local Home = UIManager:GetWindow(UIWindowTypeID.Home)
+                        if Home ~= nil then
+                          (Home.homeLeftNode):OnClickActivity(category, activityId)
+                        end
+                        if jumpOverCallback ~= nil then
+                          jumpOverCallback()
+                        end
+                        -- DECOMPILER ERROR: 46 unprocessed JMP targets
                       end
-                      if jumpOverCallback ~= nil then
-                        jumpOverCallback()
-                      end
-                      -- DECOMPILER ERROR: 39 unprocessed JMP targets
                     end
                   end
                 end
@@ -1673,13 +1703,6 @@ JumpManager.DirectShowShop = function(self, beforeJumpCallback, jumpOverCallback
     if not unCtrlTopbtn then
       (UIUtil.SetTopStatusBtnShow)(false, false)
     end
-    win:SetShopMainCloseFunc(function()
-      -- function num : 0_65_0_0 , upvalues : unCtrlTopbtn, _ENV
-      if not unCtrlTopbtn then
-        (UIUtil.SetTopStatusBtnShow)(true, true)
-      end
-    end
-)
     if jumpOverCallback ~= nil then
       jumpOverCallback()
     end

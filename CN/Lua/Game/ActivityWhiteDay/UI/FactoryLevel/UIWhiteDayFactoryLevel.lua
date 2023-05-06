@@ -9,7 +9,7 @@ UIWhiteDayFactoryLevel.OnInit = function(self)
   ;
   ((self.ui).obj_rowItem):SetActive(false)
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Close, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Close, nil, self.__OnClickClose)
   self.__genWDFLLevelItems = BindCallback(self, self.GenWDFLLevelItems)
   MsgCenter:AddListener(eMsgEventId.WhiteDayPhotoChange, self.__genWDFLLevelItems)
   MsgCenter:AddListener(eMsgEventId.WhiteDayOrderChange, self.__genWDFLLevelItems)
@@ -35,20 +35,25 @@ UIWhiteDayFactoryLevel.GenWDFLLevelItems = function(self)
   end
 end
 
-UIWhiteDayFactoryLevel.__OnClickClose = function(self)
+UIWhiteDayFactoryLevel.BackAction = function(self)
   -- function num : 0_3
   self:Hide()
 end
 
+UIWhiteDayFactoryLevel.__OnClickClose = function(self)
+  -- function num : 0_4 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIWhiteDayFactoryLevel.OnShow = function(self)
-  -- function num : 0_4 , upvalues : _ENV, base
-  (UIUtil.SetTopStatus)(self, self.__OnClickClose, nil, nil, nil, true)
+  -- function num : 0_5 , upvalues : _ENV, base
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack()
   ;
   (base.OnShow)(self)
 end
 
 UIWhiteDayFactoryLevel.OnDelete = function(self)
-  -- function num : 0_5 , upvalues : base, _ENV
+  -- function num : 0_6 , upvalues : base, _ENV
   (base.OnDelete)(self)
   MsgCenter:RemoveListener(eMsgEventId.WhiteDayPhotoChange, self.__genWDFLLevelItems)
   MsgCenter:RemoveListener(eMsgEventId.WhiteDayOrderChange, self.__genWDFLLevelItems)

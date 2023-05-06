@@ -62,10 +62,8 @@ UIDungeonInfoDetail.ShowChipDetail = function(self, chipDataList, index, Deselec
     ((self.ui).obj_DetailTips):SetActive(not isGainActiveAlg)
     ;
     ((self.ui).activeAlgTitle):SetActive(isGainActiveAlg)
-    if not self.SettedTopStatus then
-      (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
-      self.SettedTopStatus = true
-    end
+    ;
+    (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack(true)
   end
 end
 
@@ -126,10 +124,8 @@ UIDungeonInfoDetail.__CommonShowHeroDetail = function(self, dynHeroData, deselec
   self.switchHeroCallBack = switchBack
   if not self.isShowingHeroDetail then
     MsgCenter:Broadcast(eMsgEventId.OnDungeonDetailWinChange, true)
-    if not self.SettedTopStatus then
-      (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
-      self.SettedTopStatus = true
-    end
+    ;
+    (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack(true)
   end
   self.isShowingHeroDetail = true
 end
@@ -172,7 +168,6 @@ end
 
 UIDungeonInfoDetail.BackAction = function(self)
   -- function num : 0_10 , upvalues : _ENV
-  self.SettedTopStatus = false
   self:HideChipDetail()
   self:HideHeroDetail()
   self:Hide()
@@ -184,9 +179,7 @@ end
 
 UIDungeonInfoDetail.OnClickRetreat = function(self)
   -- function num : 0_11 , upvalues : _ENV
-  if self.SettedTopStatus then
-    (UIUtil.OnClickBack)()
-  end
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIDungeonInfoDetail.__ReshowLastCharacterInfoBtn = function(self)
@@ -199,9 +192,7 @@ end
 
 UIDungeonInfoDetail.OnClickBlank = function(self)
   -- function num : 0_13 , upvalues : _ENV
-  if self.SettedTopStatus then
-    (UIUtil.OnClickBack)()
-  end
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIDungeonInfoDetail.OnClickLeftButton = function(self)

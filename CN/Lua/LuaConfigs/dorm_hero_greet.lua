@@ -132,6 +132,8 @@ local dorm_hero_greet = {
 [1065] = {hero_id = 1065}
 , 
 [1066] = {hero_id = 1066}
+, 
+[1067] = {hero_id = 1067}
 }
 local __default_values = {hero_action = "Dorm_Talk", hero_id = 1001, loop_time = 2.5}
 local base = {__index = __default_values, __newindex = function()

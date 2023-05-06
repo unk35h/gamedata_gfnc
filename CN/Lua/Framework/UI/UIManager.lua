@@ -131,9 +131,8 @@ local InitWindowInternal = function(self, typeID, uiconfig, prefab, fromWhichUI)
   rectTransform.localPosition = (Vector3.New)(0, 0, 0)
   rectTransform.offsetMax = (Vector2.New)(0, 0)
   rectTransform.offsetMin = (Vector2.New)(0, 0)
-  LocalizeManager:SetUILocalizeConfig(rectTransform)
   local window = ((uiconfig.WindowClass).New)()
-  -- DECOMPILER ERROR at PC62: Confused about usage of register: R8 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC58: Confused about usage of register: R8 in 'UnsetPending'
 
   ;
   (self.windows)[typeID] = window
@@ -178,6 +177,7 @@ local CreateWindowInternal = function(self, typeID, isAsync, replaceTypeId, from
   if isAsync then
     local tmpId = typeID
     do
+      (((UIUtil.CreateNewTopStatusData)()):SetTopStatusAsyncWindowId(tmpId)):PushTopStatusDataToBackStack()
       resloader:LoadABAssetAsync(PathConsts:GetUIPrefabPath(uiconfig.PrefabName), function(prefab)
     -- function num : 0_16_0 , upvalues : InitWindowInternal, self, typeID, uiconfig, fromWhichUI, _ENV, tmpId, cs_UIManager
     local window = InitWindowInternal(self, typeID, uiconfig, prefab, fromWhichUI)
@@ -191,6 +191,8 @@ local CreateWindowInternal = function(self, typeID, isAsync, replaceTypeId, from
     if (table.count)(self.async_loaders) == 0 then
       cs_UIManager.MaxMaskActive = false
     end
+    ;
+    (UIUtil.PopFromBackStackByAsyncWindowId)(tmpId)
   end
 )
     end
@@ -479,7 +481,7 @@ UIManager.OnClickNavBack = function(self)
   end
   local guidePictureWin = self:GetWindow(UIWindowTypeID.GuidePicture_0623New)
   if guidePictureWin ~= nil then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(guidePictureWin)
     return 
   end
   local messageBoxWin = self:GetWindow(UIWindowTypeID.MessageBox)
@@ -488,16 +490,16 @@ UIManager.OnClickNavBack = function(self)
     messageBoxWin:OnClickClose()
     return 
   end
+  if GuideManager.inGuide and CS_ClientConsts.IsAudit then
+    cs_MicaSDKManager:ExitGame()
+  end
+  do return  end
   local messageCommonWin = self:GetWindow(UIWindowTypeID.MessageCommon)
   if messageCommonWin ~= nil and messageCommonWin.active then
     messageCommonWin:OnClickNo()
     messageCommonWin:OnClickClose()
     return 
   end
-  if GuideManager.inGuide and CS_ClientConsts.IsAudit then
-    cs_MicaSDKManager:ExitGame()
-  end
-  do return  end
   local getHeroWin = self:GetWindow(UIWindowTypeID.GetHero)
   if getHeroWin ~= nil then
     getHeroWin:OnClickClose()
@@ -514,7 +516,7 @@ UIManager.OnClickNavBack = function(self)
     return 
   end
   if (UIUtil.PeekBackStack)() ~= nil then
-    (UIUtil.OnClickBack)()
+    (UIUtil.ForceOnClickBack)()
     return 
   end
   local explorationWin = self:GetWindow(UIWindowTypeID.Exploration)

@@ -415,6 +415,20 @@ local battle_buff = {
 , 
 [289] = {buff_type = 2, id = 289, name = 274422}
 , 
+[500] = {describe = "", id = 500, name = 447673}
+, 
+[501] = {buff_type = 2, describe = "", icon = "ICON_LBuff_4", id = 501, name = 254407}
+, 
+[502] = {describe = "", id = 502, name = 316348}
+, 
+[503] = {buff_type = 2, describe = "", icon = "ICON_LBuff_4", id = 503, name = 28553}
+, 
+[504] = {id = 504, name = 428205}
+, 
+[505] = {id = 505, name = 283493}
+, 
+[506] = {buff_type = 2, describe = "", icon = "ICON_LBuff_4", id = 506, name = 337501}
+, 
 [999] = {icon = "ICON_LBuff_3", id = 999, name = 485137}
 , 
 [1000] = {id = 1000, name = 506771}
@@ -1079,6 +1093,54 @@ local battle_buff = {
 , 
 [2072] = {id = 2072, name = 394492}
 , 
+[2073] = {buff_type = 1, describe = 67200, icon = "ICON_LBuff_120", id = 2073, name = 54728}
+, 
+[2074] = {id = 2074, name = 278699}
+, 
+[2075] = {id = 2075, name = 268587}
+, 
+[2076] = {id = 2076, name = 67015}
+, 
+[2077] = {id = 2077, name = 444444}
+, 
+[2078] = {id = 2078, name = 405137}
+, 
+[2079] = {id = 2079, name = 105556}
+, 
+[2080] = {id = 2080, name = 426213}
+, 
+[2081] = {id = 2081, name = 105556}
+, 
+[2082] = {id = 2082, name = 457544}
+, 
+[2083] = {id = 2083, name = 507473}
+, 
+[2084] = {id = 2084, name = 456399}
+, 
+[2085] = {id = 2085, name = 194862}
+, 
+[2086] = {id = 2086, name = 199116}
+, 
+[2087] = {id = 2087, name = 413392}
+, 
+[2088] = {id = 2088, name = 175201}
+, 
+[2089] = {id = 2089, name = 28342}
+, 
+[2090] = {buff_type = 2, id = 2090, name = 86469}
+, 
+[2091] = {buff_type = 2, id = 2091, name = 201730}
+, 
+[2092] = {id = 2092, name = 498849}
+, 
+[2093] = {id = 2093, name = 447396}
+, 
+[2094] = {id = 2094, name = 124375}
+, 
+[2095] = {id = 2095, name = 48696}
+, 
+[2096] = {id = 2096, name = 76267}
+, 
 [3001] = {buff_type = 2, icon = "ICON_LBuff_54", id = 3001, name = 13075}
 , 
 [3002] = {buff_type = 2, id = 3002, name = 165117}
@@ -1428,6 +1490,10 @@ local battle_buff = {
 [100801] = {id = 100801, name = 273375}
 , 
 [100802] = {buff_type = 1, icon = "ICON_LBuff_37", id = 100802, name = 255313}
+, 
+[100803] = {buff_type = 1, icon = "ICON_LBuff_20", id = 100803, name = 371563}
+, 
+[100804] = {buff_type = 1, icon = "ICON_LBuff_82", id = 100804, name = 12872}
 , 
 [100901] = {icon = "ICON_LBuff_36", id = 100901, name = 350352}
 , 
@@ -1872,6 +1938,12 @@ local battle_buff = {
 [106602] = {buff_type = 2, id = 106602, name = 516408}
 , 
 [106603] = {buff_type = 2, describe = "", id = 106603, name = 515447}
+, 
+[106701] = {buff_type = 2, icon = "ICON_LBuff_16", id = 106701, name = 354338}
+, 
+[106702] = {id = 106702, name = 522198}
+, 
+[106703] = {buff_type = 2, id = 106703, name = 509242}
 , 
 [110001] = {buff_type = 2, id = 110001, name = 263919}
 , 

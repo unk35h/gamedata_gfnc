@@ -2,7 +2,7 @@
 -- function num : 0 , upvalues : _ENV
 local bs_104702 = class("bs_104702", LuaSkillBase)
 local base = LuaSkillBase
-bs_104702.config = {effectId = 104703, effectId2 = 104709, buffId_Da = 104701, 
+bs_104702.config = {effectId = 104703, effectId2 = 104709, effectId3 = 104715, buffId_Da = 104701, 
 HurtConfig = {hit_formula = 0, basehurt_formula = 3000, crit_formula = 0, crithur_ratio = 0}
 , speed = 1, action_speed = 1, skill_time = 25, actionId = 1002, selectId = 65, selectRange = 10, audioId_hit = 104706, start_time = 22}
 bs_104702.ctor = function(self)
@@ -62,6 +62,7 @@ bs_104702.SkillEventFunc = function(self, effect, eventId, target)
   if eventId == eBattleEffectEvent.Trigger and effect.dataId == (self.config).effectId then
     LuaSkillCtrl:PlayAuSource(target, (self.config).audioId_hit)
     local targetList = LuaSkillCtrl:CallTargetSelect(self, (self.config).selectId, (self.config).selectRange)
+    LuaSkillCtrl:CallEffect(target, (self.config).effectId3, self)
     LuaSkillCtrl:CallBuff(self, target.targetRole, (self.config).buffId_Da, 1, (self.arglist)[2])
     LuaSkillCtrl:CallBuff(self, self.caster, (self.config).buffId_Da, 1, (self.arglist)[2])
     LuaSkillCtrl:StartTimer(nil, (self.arglist)[2], function()

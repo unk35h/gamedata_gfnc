@@ -14,8 +14,9 @@ ActivityKeyExertionData.InitKeyExertionData = function(self, actId)
   self._progressBar = (self._mainCfg).progress_bar
   self._net = NetworkManager:GetNetwork(NetworkTypeID.ActivityKeyExertion)
   self._taskIdDic = {}
+  self._mainColor = (ColorUtil.FromHexUnit)((self._mainCfg).color)
   for _,taskId in pairs((self._mainCfg).task) do
-    -- DECOMPILER ERROR at PC28: Confused about usage of register: R7 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC34: Confused about usage of register: R7 in 'UnsetPending'
 
     (self._taskIdDic)[taskId] = true
   end
@@ -128,6 +129,27 @@ end
 ActivityKeyExertionData.GetKeyExertionCurrentTaskId = function(self)
   -- function num : 0_17
   return ((self._mainCfg).task)[1]
+end
+
+ActivityKeyExertionData.GetBigRewardId = function(self)
+  -- function num : 0_18
+  return (self._mainCfg).big_reward
+end
+
+ActivityKeyExertionData.GetIsBigRewardAllPicked = function(self)
+  -- function num : 0_19
+  do return (self._mainCfg).reward_times <= self.bigRewardPickedCount or 0 end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+end
+
+ActivityKeyExertionData.GetKeyExertionMainColor = function(self)
+  -- function num : 0_20
+  return self._mainColor
+end
+
+ActivityKeyExertionData.SetBigRewardPickedCount = function(self, count)
+  -- function num : 0_21
+  self.bigRewardPickedCount = count
 end
 
 return ActivityKeyExertionData

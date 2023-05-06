@@ -37,6 +37,7 @@ UINTopBtnGroup.RefreshTopGroupUI = function(self, topData)
   local active = self.__onBackClick ~= nil or topData.backAction ~= nil
   ;
   (((self.ui).btn_Back).gameObject):SetActive(active)
+  self.topData = topData
   if active and self._showGoHomeBtn then
     (((self.ui).btn_GoHome).gameObject):SetActive(not topData.topBtnOnlyReturn)
     self._goHomeBtnActive = active
@@ -49,16 +50,26 @@ UINTopBtnGroup.RefreshTopGroupUI = function(self, topData)
   end
 end
 
-UINTopBtnGroup.ShowTopBtnGroupGoHomeBtn = function(self, show)
+UINTopBtnGroup.GetShowTopBtnGroupGoHomeBtn = function(self)
   -- function num : 0_2
+  return self._showGoHomeBtn
+end
+
+UINTopBtnGroup.ShowTopBtnGroupGoHomeBtn = function(self, show)
+  -- function num : 0_3
   self._showGoHomeBtn = show
   if self._goHomeBtnActive then
     (((self.ui).btn_GoHome).gameObject):SetActive(self._showGoHomeBtn)
   end
 end
 
+UINTopBtnGroup.GetShowNaviBtn = function(self)
+  -- function num : 0_4
+  return self._showNaviBtn
+end
+
 UINTopBtnGroup.RefreshouldShowNaviBtn = function(self, show)
-  -- function num : 0_3 , upvalues : _ENV
+  -- function num : 0_5 , upvalues : _ENV
   local couldShow = FunctionUnlockMgr:ValidateUnlock(proto_csmsg_SystemFunctionID.SystemFunctionID_QuickJump)
   self._showNaviBtn = not couldShow or show
   if self._goHomeBtnActive then
@@ -67,7 +78,7 @@ UINTopBtnGroup.RefreshouldShowNaviBtn = function(self, show)
 end
 
 UINTopBtnGroup.SetUITopStatusBtnShow = function(self, showHome, showNav)
-  -- function num : 0_4
+  -- function num : 0_6
   ;
   (((self.ui).btn_GoHome).gameObject):SetActive(not self._goHomeBtnActive or not self._showGoHomeBtn or showHome)
   ;
@@ -75,17 +86,17 @@ UINTopBtnGroup.SetUITopStatusBtnShow = function(self, showHome, showNav)
 end
 
 UINTopBtnGroup.SetBeforeBackCloseNavigation = function(self, closeNavigationAction)
-  -- function num : 0_5
+  -- function num : 0_7
   self.__closeNavigationAction = closeNavigationAction
 end
 
 UINTopBtnGroup.SetBackClickAction = function(self, onBackClick)
-  -- function num : 0_6
+  -- function num : 0_8
   self.__onBackClick = onBackClick
 end
 
 UINTopBtnGroup.__OnBtnBackClick = function(self)
-  -- function num : 0_7 , upvalues : _ENV
+  -- function num : 0_9 , upvalues : _ENV
   if self.__closeNavigationAction ~= nil and (self.__closeNavigationAction)() then
     return 
   end
@@ -96,18 +107,18 @@ UINTopBtnGroup.__OnBtnBackClick = function(self)
   else
     do
       ;
-      (UIUtil.OnClickBack)()
+      (UIUtil.OnClickBackByUiTab)((self.topData).uiTab)
     end
   end
 end
 
 UINTopBtnGroup.SetBtnHomeClickAction = function(self, onHomeClick)
-  -- function num : 0_8
+  -- function num : 0_10
   self.__onHomeClick = onHomeClick
 end
 
 UINTopBtnGroup.__OnBtnHomeClick = function(self)
-  -- function num : 0_9 , upvalues : _ENV
+  -- function num : 0_11 , upvalues : _ENV
   if self.__ReturnHomeCallback == nil then
     self.__ReturnHomeCallback = BindCallback(self, self.__ReturnHome)
   end
@@ -116,7 +127,7 @@ UINTopBtnGroup.__OnBtnHomeClick = function(self)
 end
 
 UINTopBtnGroup.__ReturnHome = function(self)
-  -- function num : 0_10 , upvalues : _ENV
+  -- function num : 0_12 , upvalues : _ENV
   if self.__onHomeClick ~= nil then
     (self.__onHomeClick)()
   else
@@ -126,31 +137,31 @@ UINTopBtnGroup.__ReturnHome = function(self)
 end
 
 UINTopBtnGroup.SetBtnOpenNavigationClickAction = function(self, onNaviClick)
-  -- function num : 0_11
+  -- function num : 0_13
   self.__onNaviClick = onNaviClick
 end
 
 UINTopBtnGroup.__OnBtnpenNavigationClick = function(self)
-  -- function num : 0_12
+  -- function num : 0_14
   if self.__onNaviClick ~= nil then
     (self.__onNaviClick)()
   end
 end
 
 UINTopBtnGroup.SetInfoClickAction = function(self, infoClickAction)
-  -- function num : 0_13
+  -- function num : 0_15
   self.__onInfoClick = infoClickAction
 end
 
 UINTopBtnGroup.__OnBtnInfoClick = function(self)
-  -- function num : 0_14
+  -- function num : 0_16
   if self.__onInfoClick ~= nil then
     (self.__onInfoClick)()
   end
 end
 
 UINTopBtnGroup.SetInfoBtnActive = function(self, bool)
-  -- function num : 0_15 , upvalues : _ENV
+  -- function num : 0_17 , upvalues : _ENV
   local topData = (UIUtil.PeekBackStack)()
   if topData == nil then
     (((self.ui).btn_Info).gameObject):SetActive(false)
@@ -162,12 +173,12 @@ UINTopBtnGroup.SetInfoBtnActive = function(self, bool)
 end
 
 UINTopBtnGroup.SetInfoBtnBluedot = function(self, bool)
-  -- function num : 0_16
+  -- function num : 0_18
   ((self.ui).blueDot_info):SetActive(bool)
 end
 
 UINTopBtnGroup.__TryInitBtnHomeRedDot = function(self)
-  -- function num : 0_17 , upvalues : _ENV
+  -- function num : 0_19 , upvalues : _ENV
   self.redDotNodeDic = {}
   for index,cfg in ipairs(ConfigData.navigation_sub) do
     local redDotPathList = (string.split)(cfg.red_dot_path, ".")
@@ -184,7 +195,7 @@ UINTopBtnGroup.__TryInitBtnHomeRedDot = function(self)
 end
 
 UINTopBtnGroup._CheckRedDot = function(self, ...)
-  -- function num : 0_18 , upvalues : _ENV
+  -- function num : 0_20 , upvalues : _ENV
   local ok, node = RedDotController:GetRedDotNode(...)
   if ok and (self.redDotNodeDic)[node] == nil then
     RedDotController:AddListener(node.nodePath, self.__ReddotNodeUpdate)
@@ -197,7 +208,7 @@ UINTopBtnGroup._CheckRedDot = function(self, ...)
 end
 
 UINTopBtnGroup.ReddotNodeUpdate = function(self, node)
-  -- function num : 0_19
+  -- function num : 0_21
   -- DECOMPILER ERROR at PC7: Confused about usage of register: R2 in 'UnsetPending'
 
   (self.redDotNodeDic)[node] = node:GetRedDotCount() > 0
@@ -206,7 +217,7 @@ UINTopBtnGroup.ReddotNodeUpdate = function(self, node)
 end
 
 UINTopBtnGroup.RefreshHomeRedDotFx = function(self)
-  -- function num : 0_20 , upvalues : _ENV
+  -- function num : 0_22 , upvalues : _ENV
   local hasRed = false
   for node,bool in pairs(self.redDotNodeDic) do
     if bool then
@@ -225,12 +236,12 @@ UINTopBtnGroup.RefreshHomeRedDotFx = function(self)
 end
 
 UINTopBtnGroup.GetTopBtnBackRectTran = function(self)
-  -- function num : 0_21
+  -- function num : 0_23
   return ((self.ui).btn_Back).transform
 end
 
 UINTopBtnGroup.OnDelete = function(self)
-  -- function num : 0_22 , upvalues : _ENV, base
+  -- function num : 0_24 , upvalues : _ENV, base
   for node,_ in pairs(self.redDotNodeDic) do
     RedDotController:RemoveListener(node.nodePath, self.__ReddotNodeUpdate)
   end

@@ -10,8 +10,12 @@ return_tech_item = {[1217] = 1}
 [7] = {activity_tech_item = 1223, activity_tech_type = 7, 
 return_tech_item = {[1224] = 1}
 }
+, 
+[9] = {activity_tech_item = 1227, activity_tech_type = 9, common_des = 6, itemNoEnoughTip = 9311, resetNoEnoughTip = 9312, 
+return_tech_item = {[1228] = 1}
 }
-local __default_values = {activity_tech_item = 1212, activity_tech_type = 5, 
+}
+local __default_values = {activity_tech_item = 1212, activity_tech_type = 5, common_des = 0, itemNoEnoughTip = 0, resetNoEnoughTip = 0, 
 return_tech_item = {[1213] = 1}
 }
 local base = {__index = __default_values, __newindex = function()

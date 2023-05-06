@@ -192,6 +192,14 @@ local challenge_appearance = {
 [1681074000] = {time_end = 1681074000}
 , 
 [1681678800] = {time_end = 1681678800}
+, 
+[1682283600] = {time_end = 1682283600}
+, 
+[1682888400] = {time_end = 1682888400}
+, 
+[1683493200] = {time_end = 1683493200}
+, 
+[1684098000] = {time_end = 1684098000}
 }
 local __default_values = {time_end = 1624222800, ui_prefab = ""}
 local base = {__index = __default_values, __newindex = function()

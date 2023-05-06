@@ -79,6 +79,8 @@ local hero_relationship = {
 {id = 1007, index = 1, line_des = 365174, related_hero = 1032}
 , 
 {id = 1007, index = 2, line_des = 444669, related_hero = 1018}
+, 
+{id = 1007, index = 3, line_des = 403773, related_hero = 1067}
 }
 , 
 [1008] = {
@@ -271,6 +273,8 @@ local hero_relationship = {
 {id = 1030, index = 3, line_des = 87047, related_hero = 1035}
 , 
 {id = 1030, index = 4, line_des = 290328, related_hero = 1061}
+, 
+{id = 1030, index = 5, line_des = 290328, related_hero = 1067}
 }
 , 
 [1031] = {
@@ -301,6 +305,8 @@ local hero_relationship = {
 , 
 [1034] = {
 {id = 1034, index = 1, line_des = 249733, related_hero = 1013}
+, 
+{id = 1034, index = 2, line_des = 290328, related_hero = 1067}
 }
 , 
 [1035] = {
@@ -379,6 +385,8 @@ local hero_relationship = {
 {id = 1041, index = 4, line_des = 403773, related_hero = 1061}
 , 
 {id = 1041, index = 5, line_des = 25752, related_hero = 1065}
+, 
+{id = 1041, index = 6, line_des = 290328, related_hero = 1067}
 }
 , 
 [1042] = {
@@ -625,6 +633,16 @@ local hero_relationship = {
 {id = 1066, index = 3, line_des = 290328, related_hero = 1058}
 , 
 {id = 1066, index = 4, line_des = 290328, related_hero = 1059}
+}
+, 
+[1067] = {
+{id = 1067, index = 1, line_des = 403773, related_hero = 1007}
+, 
+{id = 1067, index = 2, line_des = 290328, related_hero = 1041}
+, 
+{id = 1067, index = 3, line_des = 290328, related_hero = 1034}
+, 
+{id = 1067, index = 4, line_des = 290328, related_hero = 1030}
 }
 }
 return hero_relationship

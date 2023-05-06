@@ -131,6 +131,12 @@ local activity_name = {
 , 
 [67] = {icon = "ICON_activity_6001", name = 239684, name_id = 67}
 , 
+[68] = {icon = "ICON_activity_6001", name = 298796, name_id = 68}
+, 
+[69] = {name = 418161, name_id = 69}
+, 
+[70] = {icon = "ICON_activity_4010", name = 4608, name_id = 70}
+, 
 [999999] = {icon = "ICON_activity_sign", name = 472901, name_id = 999999}
 }
 local __default_values = {icon = "ICON_activity_4001", name = 121720, name_id = 1}

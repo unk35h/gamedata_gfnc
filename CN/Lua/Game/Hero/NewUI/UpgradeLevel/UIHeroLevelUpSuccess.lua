@@ -108,7 +108,7 @@ end
 
 UIHeroLevelUpSuccess.OnClickClose = function(self)
   -- function num : 0_6 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIHeroLevelUpSuccess.OnBtnCloseClicked = function(self)

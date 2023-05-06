@@ -36,11 +36,17 @@ UIWarChessEvent.OnInit = function(self)
 end
 
 UIWarChessEvent.InitWCEvent = function(self, eventCtrl)
-  -- function num : 0_1 , upvalues : eEventShowType
+  -- function num : 0_1
   self.eventCtrl = eventCtrl
   local eventCfg = (self.eventCtrl):GetWCEventConfig()
-  local nodeCfg = (self.__eventTypeNode)[eventCfg.event_tag]
   local choiceDatas = (self.eventCtrl):GetWCEventChoices()
+  self:InitWCEventWithoutCtrl(eventCfg, choiceDatas)
+end
+
+UIWarChessEvent.InitWCEventWithoutCtrl = function(self, eventCfg, choiceDatas, OnClickSelectFunc, OnClickExitFunc)
+  -- function num : 0_2 , upvalues : eEventShowType
+  self._eventCfg = eventCfg
+  local nodeCfg = (self.__eventTypeNode)[eventCfg.event_tag]
   if nodeCfg ~= nil then
     self.__eventNode = ((nodeCfg.class).New)()
     ;
@@ -65,26 +71,27 @@ UIWarChessEvent.InitWCEvent = function(self, eventCtrl)
       ;
       (((self.ui).btn_Map).gameObject):SetActive(true)
       self:__RefreshItemNum()
+      self._OnClickSelectFunc = OnClickSelectFunc
+      self._OnClickExitFunc = OnClickExitFunc
     end
   end
 end
 
 UIWarChessEvent.__RefreshItemNum = function(self)
-  -- function num : 0_2 , upvalues : _ENV
-  local eventCfg = (self.eventCtrl):GetWCEventConfig()
-  local itemId = eventCfg.ref_item
+  -- function num : 0_3 , upvalues : _ENV
+  local itemId = (self._eventCfg).ref_item
   if itemId ~= 0 and WarChessSeasonManager:GetIsInWCSeason() then
     local wcCtrl = WarChessManager:GetWarChessCtrl()
     local capacity = (wcCtrl.backPackCtrl):GetWCItemCapacity(itemId)
     local curNum = (wcCtrl.backPackCtrl):GetWCItemNum(itemId)
     ;
     ((self.ui).obj_countNode):SetActive(true)
-    -- DECOMPILER ERROR at PC39: Confused about usage of register: R6 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC37: Confused about usage of register: R5 in 'UnsetPending'
 
     if capacity > 0 then
       ((self.ui).tex_Count).text = tostring(curNum) .. "/" .. tostring(capacity)
     else
-      -- DECOMPILER ERROR at PC46: Confused about usage of register: R6 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC44: Confused about usage of register: R5 in 'UnsetPending'
 
       ;
       ((self.ui).tex_Count).text = tostring(curNum)
@@ -98,7 +105,7 @@ UIWarChessEvent.__RefreshItemNum = function(self)
 end
 
 UIWarChessEvent.GetWCChoicePool = function(self)
-  -- function num : 0_3 , upvalues : _ENV, UINWarChessEventChoiceItem
+  -- function num : 0_4 , upvalues : _ENV, UINWarChessEventChoiceItem
   if self.choicePool == nil then
     self.choicePool = (UIItemPool.New)(UINWarChessEventChoiceItem, (self.ui).obj_choiceItem)
   end
@@ -106,7 +113,7 @@ UIWarChessEvent.GetWCChoicePool = function(self)
 end
 
 UIWarChessEvent.RefreshWCEventBG = function(self, picId)
-  -- function num : 0_4 , upvalues : _ENV
+  -- function num : 0_5 , upvalues : _ENV
   local cfg = (ConfigData.warchess_event_pic)[picId]
   if cfg == nil then
     error("warchess_event_pic is null,id:" .. tostring(picId))
@@ -135,7 +142,7 @@ UIWarChessEvent.RefreshWCEventBG = function(self, picId)
 end
 
 UIWarChessEvent.OnClickShowMap = function(self)
-  -- function num : 0_5
+  -- function num : 0_6
   local isOpen = ((self.ui).frameNode).activeInHierarchy
   ;
   ((self.ui).tex_MapBtnName):SetIndex(isOpen and 1 or 0)
@@ -146,7 +153,11 @@ UIWarChessEvent.OnClickShowMap = function(self)
 end
 
 UIWarChessEvent.__OnClickExit = function(self)
-  -- function num : 0_6 , upvalues : _ENV
+  -- function num : 0_7 , upvalues : _ENV
+  if self._OnClickExitFunc ~= nil then
+    (self._OnClickExitFunc)()
+    return 
+  end
   if self.__firstChoiceData ~= nil then
     self:__OnClickEventChoice(self.__firstChoiceData)
   else
@@ -155,12 +166,17 @@ UIWarChessEvent.__OnClickExit = function(self)
 end
 
 UIWarChessEvent.__OnClickEventChoice = function(self, choiceData)
-  -- function num : 0_7
+  -- function num : 0_8
+  if self._OnClickSelectFunc ~= nil then
+    (self._OnClickSelectFunc)(choiceData)
+    return 
+  end
+  ;
   (self.eventCtrl):WCEventSelect(choiceData)
 end
 
 UIWarChessEvent.OnDelete = function(self)
-  -- function num : 0_8 , upvalues : base, _ENV
+  -- function num : 0_9 , upvalues : base, _ENV
   (base.OnDelete)(self)
   if self.resloader ~= nil then
     (self.resloader):Put2Pool()

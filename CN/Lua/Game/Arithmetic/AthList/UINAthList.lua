@@ -379,7 +379,7 @@ end
 UINAthList._Return2SuitNode = function(self, popFunc, withoutSuit)
   -- function num : 0_27 , upvalues : _ENV, AthSortEnum
   if popFunc then
-    (UIUtil.PopFromBackStack)()
+    (UIUtil.PopFromBackStackByUiTab)(self)
   end
   if not withoutSuit then
     (self.athListSuit):Show()
@@ -441,7 +441,7 @@ end
 UINAthList.SelectAthListSuit = function(self, athSuitId)
   -- function num : 0_31 , upvalues : _ENV
   if self.showSuitAth then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
   ;
   (self.togSuit):SetAthListTogSelect(true)

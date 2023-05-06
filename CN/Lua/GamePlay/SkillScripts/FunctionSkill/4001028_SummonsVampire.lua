@@ -16,8 +16,8 @@ end
 bs_4001028.OnRealSummonerCaster = function(self, summonerEntity)
   -- function num : 0_2 , upvalues : _ENV
   if (summonerEntity.recordTable).VampireFlag ~= true then
-    LuaSkillCtrl:CallBuff(self, summonerEntity, (self.config).buffId, 1)
-    -- DECOMPILER ERROR at PC13: Confused about usage of register: R2 in 'UnsetPending'
+    LuaSkillCtrl:CallBuff(self, summonerEntity, (self.config).buffId, 1, nil, true)
+    -- DECOMPILER ERROR at PC15: Confused about usage of register: R2 in 'UnsetPending'
 
     ;
     (summonerEntity.recordTable).VampireFlag = true

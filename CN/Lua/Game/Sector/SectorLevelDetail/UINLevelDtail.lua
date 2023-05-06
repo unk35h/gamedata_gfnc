@@ -792,7 +792,7 @@ UINLevelDtail.__EnterBattleFormation = function(self)
         end
         do
           if self.detailType == eDetailType.Stage then
-            (((enterFmtData:SetFmtCtrlBaseInfo((FmtEnum.eFmtFromModule).SectorLevel, (self.stageCfg).id, lastFmtId)):SetFmtCtrlCallback(enterFunc, exitFunc, startBattleFunc)):SetEnterBattleCostTicketNum((self.stageCfg).cost_strength_num)):SetFmtCtrlChipDataList(chipDataList)
+            ((((enterFmtData:SetFmtCtrlBaseInfo((FmtEnum.eFmtFromModule).SectorLevel, (self.stageCfg).id, lastFmtId)):SetFmtCtrlCallback(enterFunc, exitFunc, startBattleFunc)):SetEnterBattleCostTicketNum((self.stageCfg).cost_strength_num)):SetFmtCtrlChipDataList(chipDataList)):SetOfficialSupportCfgId((self.stageCfg).official_assist)
             if (PlayerDataCenter.sectorAchievementDatas):HasStageChallengeTask((self.stageCfg).id) then
               if not self._SetChallengeModeFunc then
                 self._SetChallengeModeFunc = BindCallback(self, self._SetChallengeModeOpen)
@@ -852,7 +852,7 @@ UINLevelDtail.OnCliCkViewAvg = function(self)
     return 
   end
   ;
-  (UIUtil.OnClickBack)()
+  (UIUtil.ForceOnClickBack)()
   local playFunc = function()
     -- function num : 0_30_0 , upvalues : _ENV, self, eInfoNodeType
     (ControllerManager:GetController(ControllerTypeId.Avg, true)):StartAvg((self.avgCfg).script_id, (self.avgCfg).id, function()

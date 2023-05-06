@@ -7,17 +7,18 @@ local cs_MovieManager = (CS.MovieManager).Instance
 UINDailyDungeonQuickBattle.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV
   (UIUtil.LuaUIBindingTable)(self.transform, self.ui)
+  self._onClickClose = BindCallback(self, self.OnClickClose)
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Close, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Close, nil, self._onClickClose)
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Clear, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Clear, nil, self._onClickClose)
   ;
-  (UIUtil.AddButtonListener)((self.ui).background, nil, UIUtil.OnClickBack)
-  -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
+  (UIUtil.AddButtonListener)((self.ui).background, nil, self._onClickClose)
+  -- DECOMPILER ERROR at PC37: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.ui).list).onInstantiateItem = BindCallback(self, self.__OnInstantiateItem)
-  -- DECOMPILER ERROR at PC42: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC44: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.ui).list).onChangeItem = BindCallback(self, self.__OnChangeItem)
@@ -164,8 +165,13 @@ UINDailyDungeonQuickBattle.__ShowQuick = function(self)
   (self._moviePlayer):PresetsPauseVideoFrameNo(59)
 end
 
+UINDailyDungeonQuickBattle.OnClickClose = function(self)
+  -- function num : 0_6 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UINDailyDungeonQuickBattle.QuickQuit = function(self, toHome)
-  -- function num : 0_6 , upvalues : _ENV, cs_MovieManager
+  -- function num : 0_7 , upvalues : _ENV, cs_MovieManager
   if not toHome and self._isInAutoShow then
     self:__ShowQuick()
     ;
@@ -185,7 +191,7 @@ UINDailyDungeonQuickBattle.QuickQuit = function(self, toHome)
 end
 
 UINDailyDungeonQuickBattle.OnDelete = function(self)
-  -- function num : 0_7 , upvalues : cs_MovieManager, _ENV, base
+  -- function num : 0_8 , upvalues : cs_MovieManager, _ENV, base
   if self._moviePlayer ~= nil then
     (self._moviePlayer):ReSet()
     cs_MovieManager:ReturnMoviePlayer(self._moviePlayer)

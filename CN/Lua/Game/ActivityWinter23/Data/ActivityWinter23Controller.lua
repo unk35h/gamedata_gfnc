@@ -401,7 +401,7 @@ ActivityWinter23Controller.ChangeWinter23MainEpRepeat = function(self, chapterId
   end
   local detailWin = UIManager:GetWindow(UIWindowTypeID.SectorLevelDetail)
   if detailWin and detailWin.active then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
   self:_FinEnterMainEp(chapterId)
   return self.repeatLevel
@@ -416,7 +416,7 @@ ActivityWinter23Controller.ChangeWinter23MainEpSector = function(self, sectorId,
   self.sectorId = sectorId
   local detailWin = UIManager:GetWindow(UIWindowTypeID.SectorLevelDetail)
   if detailWin and detailWin.active then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
   self:_FinEnterMainEp(chapterId)
 end

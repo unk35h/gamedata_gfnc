@@ -39,9 +39,9 @@ end
 UINGiftItemListPage.OnClickBuy = function(self)
   -- function num : 0_2 , upvalues : _ENV
   local payGiftCtrl = ControllerManager:GetController(ControllerTypeId.PayGift)
-  payGiftCtrl:SendBuyGifit((self._giftInfo).defaultCfg, nil, function()
+  payGiftCtrl:SendBuyGifitInfo(self._giftInfo, nil, function()
     -- function num : 0_2_0 , upvalues : _ENV, self
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
     if self._callback ~= nil then
       (self._callback)()
     end

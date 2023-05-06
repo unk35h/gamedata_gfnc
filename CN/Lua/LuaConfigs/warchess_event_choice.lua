@@ -52,35 +52,41 @@ pms = {1, 1215, 1}
 local __rt_20 = {cat = 16, 
 pms = {1, 1225, 1}
 }
-local __rt_21 = {
+local __rt_21 = {cat = 16, 
+pms = {1, 1225, 5}
+}
+local __rt_22 = {
 {cat = 33, pms = __rt_9}
 }
-local __rt_22 = {cat = 5, 
+local __rt_23 = {cat = 5, 
 pms = {1, 2, 1}
 }
-local __rt_23 = {__rt_11}
-local __rt_24 = {__rt_22}
-local __rt_25 = {cat = 10, 
+local __rt_24 = {__rt_11}
+local __rt_25 = {__rt_23}
+local __rt_26 = {cat = 10, 
 pms = {26}
 }
-local __rt_26 = {
+local __rt_27 = {
 {cat = 4, pms = __rt_9}
 }
-local __rt_27 = {__rt_17, __rt_22}
-local __rt_28 = {cat = 10, pms = __rt_9}
-local __rt_29 = {cat = 10, 
+local __rt_28 = {__rt_17, __rt_23}
+local __rt_29 = {cat = 10, pms = __rt_9}
+local __rt_30 = {cat = 10, 
 pms = {2}
 }
-local __rt_30 = {
+local __rt_31 = {
 {cat = 10, 
 pms = {3}
 }
 }
-local __rt_31 = {cat = 10, 
+local __rt_32 = {cat = 10, 
 pms = {23}
 }
-local __rt_32 = {__rt_31, __rt_17}
-local __rt_33 = {__rt_31}
+local __rt_33 = {__rt_32, __rt_17}
+local __rt_34 = {__rt_32}
+local __rt_35 = {cat = 10, 
+pms = {17}
+}
 local warchess_event_choice = {
 {choice_color = 1, choice_describe_txt = 343705, icon = "event_icon_func", 
 triggerActions = {__rt_1}
@@ -265,24 +271,28 @@ triggerActions = {__rt_20, __rt_15}
 }
 , 
 [131] = {choice_condition = 1, choice_describe_txt = 501494, icon = "event_icon_func", id = 131, 
-triggerActions = {
-{cat = 16, 
-pms = {1, 1225, 5}
-}
-, __rt_16}
+triggerActions = {__rt_21, __rt_16}
 }
 , 
 [132] = {choice_color = 2, icon = "event_icon_func", id = 132}
 , 
-[201] = {choice_describe_txt = 444557, icon = "event_icon_func", id = 201, triggerActions = __rt_21}
+[133] = {choice_condition = 1, choice_describe_txt = 501494, icon = "event_icon_func", id = 133, 
+triggerActions = {__rt_21, 
+{cat = 13, 
+pms = {3, 3000}
+}
+}
+}
 , 
-[202] = {choice_describe_txt = 65666, icon = "event_icon_func", id = 202, triggerActions = __rt_21}
+[201] = {choice_describe_txt = 444557, icon = "event_icon_func", id = 201, triggerActions = __rt_22}
 , 
-[203] = {choice_describe_txt = 513012, icon = "event_icon_func", id = 203, triggerActions = __rt_21}
+[202] = {choice_describe_txt = 65666, icon = "event_icon_func", id = 202, triggerActions = __rt_22}
 , 
-[204] = {choice_describe_txt = 115825, icon = "event_icon_func", id = 204, triggerActions = __rt_21}
+[203] = {choice_describe_txt = 513012, icon = "event_icon_func", id = 203, triggerActions = __rt_22}
 , 
-[205] = {choice_describe_txt = 385244, icon = "event_icon_func", id = 205, triggerActions = __rt_21}
+[204] = {choice_describe_txt = 115825, icon = "event_icon_func", id = 204, triggerActions = __rt_22}
+, 
+[205] = {choice_describe_txt = 385244, icon = "event_icon_func", id = 205, triggerActions = __rt_22}
 , 
 [206] = {choice_describe_txt = 139228, icon = "event_icon_func", id = 206}
 , 
@@ -305,37 +315,37 @@ pms = {1, 1225, 5}
 [215] = {choice_describe_txt = 148531, icon = "event_icon_func", id = 215}
 , 
 [216] = {choice_describe_txt = 946, icon = "event_icon_func", id = 216, 
-triggerActions = {__rt_22, __rt_11}
+triggerActions = {__rt_23, __rt_11}
 }
 , 
-[217] = {choice_describe_txt = 343705, icon = "event_icon_func", id = 217, triggerActions = __rt_23}
+[217] = {choice_describe_txt = 343705, icon = "event_icon_func", id = 217, triggerActions = __rt_24}
 , 
 [250] = {choice_describe_txt = 174167, id = 250}
 , 
-[251] = {choice_describe_txt = 252346, icon = "event_icon_limit", id = 251, triggerActions = __rt_24}
+[251] = {choice_describe_txt = 252346, icon = "event_icon_limit", id = 251, triggerActions = __rt_25}
 , 
 [252] = {choice_describe_txt = 283324, id = 252}
 , 
 [253] = {choice_describe_txt = 1662, icon = "event_icon_limit", id = 253, 
-triggerActions = {__rt_22, __rt_18}
+triggerActions = {__rt_23, __rt_18}
 }
 , 
 [254] = {choice_describe_txt = 361649, icon = "event_icon_limit", id = 254, 
-triggerActions = {__rt_22, __rt_17}
+triggerActions = {__rt_23, __rt_17}
 }
 , 
-[255] = {choice_describe_txt = 361649, icon = "event_icon_limit", id = 255, triggerActions = __rt_24}
+[255] = {choice_describe_txt = 361649, icon = "event_icon_limit", id = 255, triggerActions = __rt_25}
 , 
 [259] = {choice_describe_txt = 454214, id = 259}
 , 
 [260] = {choice_describe_txt = 397731, id = 260}
 , 
 [261] = {choice_describe_txt = 233834, icon = "event_icon_limit", id = 261, 
-triggerActions = {__rt_22, __rt_25}
+triggerActions = {__rt_23, __rt_26}
 }
 , 
 [264] = {choice_describe_txt = 49823, icon = "event_icon_limit", id = 264, 
-triggerActions = {__rt_22, 
+triggerActions = {__rt_23, 
 {cat = 10, 
 pms = {24}
 }
@@ -351,7 +361,7 @@ pms = {24}
 [268] = {choice_describe_txt = 423268, id = 268}
 , 
 [269] = {choice_describe_txt = 40916, icon = "event_icon_limit", id = 269, 
-triggerActions = {__rt_22, 
+triggerActions = {__rt_23, 
 {cat = 10, 
 pms = {27}
 }
@@ -360,7 +370,7 @@ pms = {27}
 , 
 [270] = {choice_describe_txt = 201169, id = 270}
 , 
-[271] = {choice_describe_txt = 1790, id = 271, triggerActions = __rt_26}
+[271] = {choice_describe_txt = 1790, id = 271, triggerActions = __rt_27}
 , 
 [299] = {choice_describe_txt = 342474, id = 299}
 , 
@@ -374,12 +384,12 @@ pms = {27}
 , 
 [304] = {choice_describe_txt = 342474, id = 304}
 , 
-[305] = {choice_describe_txt = 195810, icon = "event_icon_limit", id = 305, triggerActions = __rt_27}
+[305] = {choice_describe_txt = 195810, icon = "event_icon_limit", id = 305, triggerActions = __rt_28}
 , 
 [306] = {choice_describe_txt = 229629, id = 306}
 , 
 [307] = {choice_describe_txt = 66585, id = 307, 
-triggerActions = {__rt_28}
+triggerActions = {__rt_29}
 }
 , 
 [308] = {choice_describe_txt = 211764, id = 308}
@@ -388,24 +398,24 @@ triggerActions = {__rt_28}
 , 
 [310] = {choice_describe_txt = 287983, id = 310}
 , 
-[311] = {choice_describe_txt = 239382, icon = "event_icon_limit", id = 311, triggerActions = __rt_27}
+[311] = {choice_describe_txt = 239382, icon = "event_icon_limit", id = 311, triggerActions = __rt_28}
 , 
-[312] = {choice_describe_txt = 190784, icon = "event_icon_limit", id = 312, triggerActions = __rt_27}
+[312] = {choice_describe_txt = 190784, icon = "event_icon_limit", id = 312, triggerActions = __rt_28}
 , 
-[313] = {choice_describe_txt = 403013, icon = "event_icon_limit", id = 313, triggerActions = __rt_27}
+[313] = {choice_describe_txt = 403013, icon = "event_icon_limit", id = 313, triggerActions = __rt_28}
 , 
 [314] = {choice_describe_txt = 196106, id = 314}
 , 
 [315] = {choice_describe_txt = 83415, id = 315}
 , 
-[316] = {choice_describe_txt = 208071, icon = "event_icon_limit", id = 316, triggerActions = __rt_27}
+[316] = {choice_describe_txt = 208071, icon = "event_icon_limit", id = 316, triggerActions = __rt_28}
 , 
 [317] = {choice_describe_txt = 36416, id = 317}
 , 
 [318] = {choice_describe_txt = 42293, id = 318}
 , 
 [319] = {choice_describe_txt = 466912, id = 319, 
-triggerActions = {__rt_29}
+triggerActions = {__rt_30}
 }
 , 
 [320] = {choice_describe_txt = 237215, id = 320}
@@ -414,15 +424,15 @@ triggerActions = {__rt_29}
 , 
 [322] = {choice_describe_txt = 55873, id = 322}
 , 
-[323] = {choice_describe_txt = 214717, icon = "event_icon_limit", id = 323, triggerActions = __rt_27}
+[323] = {choice_describe_txt = 214717, icon = "event_icon_limit", id = 323, triggerActions = __rt_28}
 , 
-[324] = {choice_describe_txt = 470834, icon = "event_icon_limit", id = 324, triggerActions = __rt_27}
+[324] = {choice_describe_txt = 470834, icon = "event_icon_limit", id = 324, triggerActions = __rt_28}
 , 
-[325] = {choice_describe_txt = 108714, icon = "event_icon_limit", id = 325, triggerActions = __rt_27}
+[325] = {choice_describe_txt = 108714, icon = "event_icon_limit", id = 325, triggerActions = __rt_28}
 , 
 [326] = {choice_describe_txt = 168428, id = 326}
 , 
-[327] = {choice_describe_txt = 271170, id = 327, triggerActions = __rt_30}
+[327] = {choice_describe_txt = 271170, id = 327, triggerActions = __rt_31}
 , 
 [328] = {choice_describe_txt = 287983, id = 328}
 , 
@@ -440,14 +450,14 @@ pms = {34}
 , 
 [330] = {choice_describe_txt = 360799, id = 330}
 , 
-[331] = {choice_describe_txt = 326088, icon = "event_icon_func", id = 331, triggerActions = __rt_27}
+[331] = {choice_describe_txt = 326088, icon = "event_icon_func", id = 331, triggerActions = __rt_28}
 , 
-[332] = {choice_describe_txt = 504743, icon = "event_icon_func", id = 332, triggerActions = __rt_27}
+[332] = {choice_describe_txt = 504743, icon = "event_icon_func", id = 332, triggerActions = __rt_28}
 , 
-[333] = {choice_describe_txt = 184613, icon = "event_icon_func", id = 333, triggerActions = __rt_27}
+[333] = {choice_describe_txt = 184613, icon = "event_icon_func", id = 333, triggerActions = __rt_28}
 , 
 [334] = {choice_describe_txt = 246661, id = 334, 
-triggerActions = {__rt_28, __rt_17}
+triggerActions = {__rt_29, __rt_17}
 }
 , 
 [335] = {choice_describe_txt = 107669, id = 335}
@@ -469,22 +479,22 @@ pms = {29}
 {cat = 10, 
 pms = {16}
 }
-, __rt_29}
+, __rt_30}
 }
 , 
-[341] = {choice_describe_txt = 316141, icon = "event_icon_limit", id = 341, triggerActions = __rt_27}
+[341] = {choice_describe_txt = 316141, icon = "event_icon_limit", id = 341, triggerActions = __rt_28}
 , 
-[342] = {choice_describe_txt = 169728, icon = "event_icon_limit", id = 342, triggerActions = __rt_27}
+[342] = {choice_describe_txt = 169728, icon = "event_icon_limit", id = 342, triggerActions = __rt_28}
 , 
-[343] = {choice_describe_txt = 179544, icon = "event_icon_limit", id = 343, triggerActions = __rt_27}
+[343] = {choice_describe_txt = 179544, icon = "event_icon_limit", id = 343, triggerActions = __rt_28}
 , 
 [344] = {choice_describe_txt = 94611, icon = "event_icon_limit", id = 344, 
-triggerActions = {__rt_17, __rt_22, __rt_25}
+triggerActions = {__rt_17, __rt_23, __rt_26}
 }
 , 
-[345] = {choice_describe_txt = 354295, id = 345, triggerActions = __rt_32}
+[345] = {choice_describe_txt = 354295, id = 345, triggerActions = __rt_33}
 , 
-[346] = {choice_describe_txt = 408485, id = 346, triggerActions = __rt_32}
+[346] = {choice_describe_txt = 408485, id = 346, triggerActions = __rt_33}
 , 
 [347] = {choice_describe_txt = 232248, id = 347}
 , 
@@ -492,13 +502,13 @@ triggerActions = {__rt_17, __rt_22, __rt_25}
 , 
 [349] = {choice_describe_txt = 366211, id = 349}
 , 
-[350] = {choice_describe_txt = 453021, icon = "event_icon_limit", id = 350, triggerActions = __rt_27}
+[350] = {choice_describe_txt = 453021, icon = "event_icon_limit", id = 350, triggerActions = __rt_28}
 , 
-[351] = {choice_describe_txt = 22229, icon = "event_icon_limit", id = 351, triggerActions = __rt_27}
+[351] = {choice_describe_txt = 22229, icon = "event_icon_limit", id = 351, triggerActions = __rt_28}
 , 
-[352] = {choice_describe_txt = 188241, id = 352, triggerActions = __rt_33}
+[352] = {choice_describe_txt = 188241, id = 352, triggerActions = __rt_34}
 , 
-[353] = {choice_describe_txt = 321735, id = 353, triggerActions = __rt_33}
+[353] = {choice_describe_txt = 321735, id = 353, triggerActions = __rt_34}
 , 
 [354] = {choice_describe_txt = 226776, id = 354, 
 triggerActions = {
@@ -512,7 +522,7 @@ pms = {50}
 , 
 [356] = {choice_describe_txt = 92954, id = 356}
 , 
-[357] = {choice_describe_txt = 231097, id = 357, triggerActions = __rt_30}
+[357] = {choice_describe_txt = 231097, id = 357, triggerActions = __rt_31}
 , 
 [358] = {choice_describe_txt = 384496, id = 358}
 , 
@@ -538,7 +548,7 @@ pms = {50}
 , 
 [369] = {choice_describe_txt = 443707, id = 369}
 , 
-[370] = {choice_describe_txt = 143988, id = 370, triggerActions = __rt_26}
+[370] = {choice_describe_txt = 143988, id = 370, triggerActions = __rt_27}
 , 
 [371] = {choice_describe_txt = 431416, id = 371, 
 triggerActions = {
@@ -600,11 +610,47 @@ pms = {5000001}
 , 
 [392] = {choice_describe_txt = 255679, id = 392, triggerActions = __rt_6}
 , 
-[393] = {choice_describe_txt = 137670, id = 393, triggerActions = __rt_23}
+[393] = {choice_describe_txt = 137670, id = 393, triggerActions = __rt_24}
 , 
 [394] = {choice_describe_txt = 34878, id = 394, triggerActions = __rt_8}
 , 
 [395] = {choice_describe_txt = 124388, id = 395, triggerActions = __rt_6}
+, 
+[396] = {choice_describe_txt = 222346, id = 396, 
+triggerActions = {__rt_35}
+}
+, 
+[400] = {choice_describe_txt = 305357, id = 400}
+, 
+[401] = {choice_describe_txt = 48157, id = 401, 
+triggerActions = {__rt_35, __rt_23}
+}
+, 
+[402] = {choice_describe_txt = 262062, id = 402}
+, 
+[403] = {choice_describe_txt = 184171, id = 403, 
+triggerActions = {__rt_35, __rt_11}
+}
+, 
+[404] = {choice_describe_txt = 32720, id = 404}
+, 
+[405] = {choice_describe_txt = 197647, id = 405, 
+triggerActions = {__rt_35, 
+{cat = 13, 
+pms = {2, 2000}
+}
+}
+}
+, 
+[406] = {choice_describe_txt = 487473, id = 406}
+, 
+[407] = {choice_describe_txt = 328017, id = 407, 
+triggerActions = {__rt_35, 
+{cat = 16, 
+pms = {2, 12, 2}
+}
+}
+}
 }
 local __default_values = {choice_color = 0, choice_condition = 0, choice_describe_txt = 205378, icon = "event_icon_buff", id = 1, triggerActions = __rt_2}
 local base = {__index = __default_values, __newindex = function()

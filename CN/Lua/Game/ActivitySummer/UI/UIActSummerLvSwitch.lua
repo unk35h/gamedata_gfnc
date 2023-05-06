@@ -57,7 +57,7 @@ UIActSummerLvSwitch.OnClickSummerLvConfirm = function(self)
   ;
   (self.lvBtnPool):DeleteAll()
   ;
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
   ;
   (self.callback)((self.difficultList)[self._selectIndex])
 end

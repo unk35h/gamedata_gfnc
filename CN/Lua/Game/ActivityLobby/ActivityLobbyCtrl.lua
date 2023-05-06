@@ -95,6 +95,9 @@ end
 ActivityLobbyCtrl._OnSceneLoaded = function(self)
   -- function num : 0_5 , upvalues : _ENV
   AudioManager:PlayAudioById((self._actLbCfg).bgm)
+  if not (string.IsNullOrEmpty)((self._actLbCfg).bgm_selector) then
+    AudioManager:SetSourceSelectorLabel(eAudioSourceType.BgmSource, (self._actLbCfg).bgm_selector, (self._actLbCfg).selector_label)
+  end
   local rootGo = (((CS.UnityEngine).GameObject).Find)("ActLobboyRoot")
   if IsNull(rootGo) then
     error("Cant find ActLobboyRoot")
@@ -116,6 +119,8 @@ ActivityLobbyCtrl._OnSceneLoaded = function(self)
     (self.actLbIntrctCtrl):UpdLbCurInteractList()
   end
 )
+  ;
+  (self.actLbCamCtrl):PlayOpeningMovie((self._actLbCfg).opening, (self._actLbCfg).openingStartTime, (self._actLbCfg).openingKeepTime)
   ;
   (self.actLbCamCtrl):ActLbPlayStartShowTimeLine(self._skipStartShow)
   self._isInLoadingScene = false

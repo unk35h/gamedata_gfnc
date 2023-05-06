@@ -61,6 +61,7 @@ WarChessBattleCtrl.OpenWCSubSystem = function(self, systemState, identify)
   self.curDynPlayer = teamData:GetTeamDynPlayer()
   self.__systemPos = systemState.pos
   self.__allowQuit = battleSystemData.allowQuit
+  self.__useedEventSystem = battleSystemData.useedEventSystem
   self.__identify = identify
   self.__refreshTime = battleSystemData.refreshTime
   self._originHeroPos = nil
@@ -146,6 +147,7 @@ WarChessBattleCtrl.__InitBattle = function(self, teamData, battleSystemData)
   end
   local wcDynPlayer = teamData:GetTeamDynPlayer()
   local battleRoomData = (WarChessBattleRoom.CreateWCBattleRoom)(battleSystemData, wcDynPlayer, self)
+  self._battleRoomData = battleRoomData
   self.battleRoomId = battleSystemData.roomId
   WarChessManager:PlayWcAuBgm()
   if battleRoomData:IsWcBossRoom() then
@@ -169,7 +171,7 @@ WarChessBattleCtrl.__InitBattle = function(self, teamData, battleSystemData)
           dynHero:SetCoord(coord, (ConfigData.buildinConfig).BenchX)
         end
       end
-      -- DECOMPILER ERROR at PC92: Confused about usage of register: R16 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC93: Confused about usage of register: R16 in 'UnsetPending'
 
       ;
       (self._originHeroPos)[index] = dynHero.coord
@@ -215,7 +217,9 @@ end
 
 WarChessBattleCtrl.GetWCAllowRetreatBattle = function(self)
   -- function num : 0_5
-  return self.__allowQuit
+  if self.__allowQuit then
+    return not self.__useedEventSystem
+  end
 end
 
 WarChessBattleCtrl.SetWCAllowRetreatBattle = function(self, active)
@@ -223,11 +227,16 @@ WarChessBattleCtrl.SetWCAllowRetreatBattle = function(self, active)
   self.__allowQuit = active
 end
 
-WarChessBattleCtrl.WCEscapeFromBattle = function(self)
-  -- function num : 0_7 , upvalues : _ENV
-  if self.__allowQuit then
+WarChessBattleCtrl.SetWCUseedEventSystemInbattle = function(self)
+  -- function num : 0_7
+  self.__useedEventSystem = true
+end
+
+WarChessBattleCtrl.WCEscapeFromBattle = function(self, callback)
+  -- function num : 0_8 , upvalues : _ENV
+  if self.__allowQuit and not self.__useedEventSystem then
     ((self.wcCtrl).wcNetworkCtrl):CS_WarChess_BattleSystem_Quit(self.__identify, function(args)
-    -- function num : 0_7_0 , upvalues : _ENV, self
+    -- function num : 0_8_0 , upvalues : _ENV, self, callback
     if args.Count == 0 then
       error("args.Count == 0")
       return 
@@ -250,6 +259,9 @@ WarChessBattleCtrl.WCEscapeFromBattle = function(self)
       end
       do
         self._originHeroPos = nil
+        if callback ~= nil then
+          ((self.wcCtrl).palySquCtrl):SetReLoadSceneOverCallback(callback)
+        end
         UIManager:DeleteAllWindow()
         self:ExitWCBattle(false, true)
       end
@@ -259,30 +271,182 @@ WarChessBattleCtrl.WCEscapeFromBattle = function(self)
   end
 end
 
+WarChessBattleCtrl.WCReturnBattleBefore = function(self)
+  -- function num : 0_9 , upvalues : _ENV
+  ((self.wcCtrl).wcNetworkCtrl):CS_WarChess_BattleSystem_BackBeforeBattle(self.__identify, function(args)
+    -- function num : 0_9_0 , upvalues : _ENV, self
+    if args.Count == 0 then
+      error("args.Count == 0")
+      return 
+    end
+    local battleController = ((CS.BattleManager).Instance).CurBattleController
+    if battleController ~= nil then
+      (battleController.fsm):ChangeState((CS.eBattleState).End)
+      ;
+      ((battleController.fsm).currentState):ResetPlayerCharacter(true)
+      ;
+      ((battleController.fsm).currentState):EndBattleAndClear()
+    end
+    if self._originHeroPos ~= nil and self.curDynPlayer ~= nil then
+      for k,coord in pairs(self._originHeroPos) do
+        local dynHero = ((self.curDynPlayer).heroList)[k]
+        dynHero:SetCoord(coord, (ConfigData.buildinConfig).BenchX)
+      end
+    end
+    do
+      self._originHeroPos = nil
+      local warChess = args[0]
+      ;
+      ((self.wcCtrl).palySquCtrl):SetReLoadSceneOverCallback(function()
+      -- function num : 0_9_0_0 , upvalues : self, warChess
+      (self.wcCtrl):WarChessApplyTimeRewind(warChess)
+    end
+)
+      UIManager:DeleteAllWindow()
+      self:ExitWCBattle(false, true)
+    end
+  end
+)
+end
+
 WarChessBattleCtrl.OnBattleEnd = function(self, battleEndState, evenId, dealBattleEndEvent)
-  -- function num : 0_8 , upvalues : DungeonBattleBaseCtrl, _ENV
+  -- function num : 0_10 , upvalues : _ENV
+  if WarChessSeasonManager:IsInWCS() then
+    self:__OnBattleEndWcSeason(battleEndState, evenId, dealBattleEndEvent)
+  else
+    self:__OnBattleEndWc(battleEndState, evenId, dealBattleEndEvent)
+  end
+end
+
+WarChessBattleCtrl.__OnBattleEndWcSeason = function(self, battleEndState, evenId, dealBattleEndEvent)
+  -- function num : 0_11 , upvalues : _ENV, eWarChessEnum, DungeonBattleBaseCtrl
+  local LocalFunc_OpenRewind = function()
+    -- function num : 0_11_0 , upvalues : _ENV, self
+    local warchessCtrl = WarChessManager:GetWarChessCtrl()
+    local _, rewindCount = (warchessCtrl.turnCtrl):GetWCRewindTimes()
+    if rewindCount <= 0 then
+      return 
+    end
+    UIManager:ShowWindowAsync(UIWindowTypeID.WarChessTimeRewind, function(win)
+      -- function num : 0_11_0_0 , upvalues : self
+      if win == nil then
+        return 
+      end
+      win:InitWCTimeRewindInBattle(function(wid, rewindTurnNum)
+        -- function num : 0_11_0_0_0 , upvalues : self
+        self:WCEscapeFromBattle(function()
+          -- function num : 0_11_0_0_0_0 , upvalues : self, wid, rewindTurnNum
+          ((self.wcCtrl).wcNetworkCtrl):CS_WarChess_ResetTheRound(wid, rewindTurnNum)
+        end
+)
+      end
+, function(wid)
+        -- function num : 0_11_0_0_1 , upvalues : self
+        self:WCReturnBattleBefore()
+      end
+)
+    end
+)
+  end
+
+  local LocalFunc_OpenReborn = function()
+    -- function num : 0_11_1 , upvalues : _ENV, eWarChessEnum, self, battleEndState
+    local healingItemId, healingCount, enventId = WarChessSeasonManager:GetWcSSpItemByLogicType((eWarChessEnum.WCSpecialItemLogicType).healing)
+    local spitemCfg = WarChessSeasonManager:GetWcSSpItemConfigByLogicType((eWarChessEnum.WCSpecialItemLogicType).healing)
+    if healingCount or 0 < (spitemCfg.ex_arg2)[2] then
+      return 
+    end
+    local WarchessEventUtil = require("Game.Warchess.WarchessEventUtil")
+    WarchessEventUtil:ApplyWcEventInBattle((spitemCfg.ex_arg2)[1], false, function()
+      -- function num : 0_11_1_0 , upvalues : self, battleEndState, _ENV
+      self.__useedEventSystem = true
+      local battleCtrl = battleEndState.battleController
+      local enemyList = (battleCtrl.EnemyTeamController).battleRoleList
+      local curHpDic = {}
+      for i = 0, enemyList.Count - 1 do
+        local enemy = enemyList[i]
+        curHpDic[enemy.uid] = enemy.hp * 10000 // enemy.maxHp
+      end
+      local luaEnemyList = (self._battleRoomData).monsterList
+      for i,monster in ipairs(luaEnemyList) do
+        if curHpDic[monster.uid] ~= nil then
+          monster.hpPer = curHpDic[monster.uid]
+        else
+          monster.hpPer = 0
+          curHpDic[monster.uid] = 0
+        end
+      end
+      local teamData = ((self.wcCtrl).battleCtrl):GetCurSelectedTeamData()
+      local wid, tid = ((self.wcCtrl).teamCtrl):GetWCTeamIdentify(teamData)
+      local identify = {wid = wid, tid = tid}
+      ;
+      ((self.wcCtrl).wcNetworkCtrl):CS_WarChess_BattleSystem_UpdateData(identify, curHpDic)
+      self:ReqRestartBattle(battleEndState.battleController)
+      UIManager:DeleteWindow(UIWindowTypeID.BattleFail)
+      UIManager:DeleteWindow(UIWindowTypeID.BattleCrazyMode)
+      UIManager:DeleteWindow(UIWindowTypeID.RichIntro)
+    end
+)
+  end
+
   if evenId == (DungeonBattleBaseCtrl.eBattleEndType).Failure then
     UIManager:ShowWindowAsync(UIWindowTypeID.BattleFail, function(win)
-    -- function num : 0_8_0 , upvalues : self, dealBattleEndEvent, evenId, _ENV, battleEndState
-    win:InitWCBattleFail(self:GetBattleSettleName(), function()
-      -- function num : 0_8_0_0 , upvalues : self
-      self:WCEscapeFromBattle()
-    end
-, function()
-      -- function num : 0_8_0_1 , upvalues : dealBattleEndEvent, evenId, _ENV
+    -- function num : 0_11_2 , upvalues : self, LocalFunc_OpenRewind, dealBattleEndEvent, evenId, _ENV, battleEndState, LocalFunc_OpenReborn
+    win:InitWCSeasonBattleFail(self:GetBattleSettleName(), LocalFunc_OpenRewind, function()
+      -- function num : 0_11_2_0 , upvalues : dealBattleEndEvent, evenId, _ENV
       dealBattleEndEvent(evenId)
       UIManager:DeleteWindow(UIWindowTypeID.BattleFail)
     end
 , function()
-      -- function num : 0_8_0_2 , upvalues : self, battleEndState
+      -- function num : 0_11_2_1 , upvalues : self, battleEndState
       self:ReqRestartBattle(battleEndState.battleController)
     end
 , function()
-      -- function num : 0_8_0_3 , upvalues : win, _ENV, battleEndState
+      -- function num : 0_11_2_2 , upvalues : win, _ENV, battleEndState
       win:Hide()
       ;
       (BattleUtil.ShowBattleResultSkada)(battleEndState.battleController, function()
-        -- function num : 0_8_0_3_0 , upvalues : win
+        -- function num : 0_11_2_2_0 , upvalues : win
+        win:SetIgnoreDelayFlagOnce(true)
+        win:Show()
+      end
+)
+    end
+, LocalFunc_OpenReborn)
+    if not self.__allowQuit then
+      win:HideBattleReviewBtn()
+    end
+  end
+)
+  else
+    dealBattleEndEvent(evenId)
+  end
+end
+
+WarChessBattleCtrl.__OnBattleEndWc = function(self, battleEndState, evenId, dealBattleEndEvent)
+  -- function num : 0_12 , upvalues : DungeonBattleBaseCtrl, _ENV
+  if evenId == (DungeonBattleBaseCtrl.eBattleEndType).Failure then
+    UIManager:ShowWindowAsync(UIWindowTypeID.BattleFail, function(win)
+    -- function num : 0_12_0 , upvalues : self, dealBattleEndEvent, evenId, _ENV, battleEndState
+    win:InitWCBattleFail(self:GetBattleSettleName(), function()
+      -- function num : 0_12_0_0 , upvalues : self
+      self:WCEscapeFromBattle()
+    end
+, function()
+      -- function num : 0_12_0_1 , upvalues : dealBattleEndEvent, evenId, _ENV
+      dealBattleEndEvent(evenId)
+      UIManager:DeleteWindow(UIWindowTypeID.BattleFail)
+    end
+, function()
+      -- function num : 0_12_0_2 , upvalues : self, battleEndState
+      self:ReqRestartBattle(battleEndState.battleController)
+    end
+, function()
+      -- function num : 0_12_0_3 , upvalues : win, _ENV, battleEndState
+      win:Hide()
+      ;
+      (BattleUtil.ShowBattleResultSkada)(battleEndState.battleController, function()
+        -- function num : 0_12_0_3_0 , upvalues : win
         win:SetIgnoreDelayFlagOnce(true)
         win:Show()
       end
@@ -298,7 +462,7 @@ WarChessBattleCtrl.OnBattleEnd = function(self, battleEndState, evenId, dealBatt
 end
 
 WarChessBattleCtrl.ReqBattleSettle = function(self, battleEndState, requestData)
-  -- function num : 0_9 , upvalues : _ENV
+  -- function num : 0_13 , upvalues : _ENV
   local wid, tid = ((self.wcCtrl).teamCtrl):GetWCTeamIdentify(self.teamData)
   local isBattleWin = battleEndState.win
   local battleCtrl = battleEndState.battleController
@@ -376,7 +540,7 @@ WarChessBattleCtrl.ReqBattleSettle = function(self, battleEndState, requestData)
     sendMsg.bossDamagePecent = bossDamageHpRatio
     ;
     ((self.wcCtrl).wcNetworkCtrl):CS_WarChess_BattleSystem_Settle(sendMsg, function()
-    -- function num : 0_9_0 , upvalues : self, isBattleWin, battleEndState, hpDic
+    -- function num : 0_13_0 , upvalues : self, isBattleWin, battleEndState, hpDic
     self._originHeroPos = nil
     if not isBattleWin then
       battleEndState:ResetPlayerCharacter(true)
@@ -392,7 +556,7 @@ WarChessBattleCtrl.ReqBattleSettle = function(self, battleEndState, requestData)
 end
 
 WarChessBattleCtrl.VictoryBattleEndCoroutine = function(self, battleEndState)
-  -- function num : 0_10 , upvalues : _ENV, CS_BattleManager_Ins, util
+  -- function num : 0_14 , upvalues : _ENV, CS_BattleManager_Ins, util
   local battleController = battleEndState.battleController
   local CS_CameraController_Ins = (CS.CameraController).Instance
   self.__settleTimelinePause = false
@@ -404,7 +568,7 @@ WarChessBattleCtrl.VictoryBattleEndCoroutine = function(self, battleEndState)
   local enemyRoleList = (battleController.EnemyTeamController).battleOriginRoleList
   local mvpGrade = (BattleUtil.GenMvp)(playerRoleList)
   local battleEndCoroutine = function()
-    -- function num : 0_10_0 , upvalues : CS_CameraController_Ins, battleController, mvpGrade, self, _ENV, playerRoleList, enemyRoleList, battleEndState, CS_BattleManager_Ins, isBattleWin
+    -- function num : 0_14_0 , upvalues : CS_CameraController_Ins, battleController, mvpGrade, self, _ENV, playerRoleList, enemyRoleList, battleEndState, CS_BattleManager_Ins, isBattleWin
     CS_CameraController_Ins:PlaySettlementCut(battleController, mvpGrade.role, self:GetRoleMvpCameraOffset(mvpGrade.role))
     while self.__waitSettleResult do
       (coroutine.yield)()
@@ -421,7 +585,7 @@ WarChessBattleCtrl.VictoryBattleEndCoroutine = function(self, battleEndState)
     local dungeonRoleList = (battleController.PlayerTeamController).battleRoleList
     self:PlayRoleWinActionAndEffect(dungeonRoleList, mvpGrade.role)
     UIManager:ShowWindowAsync(UIWindowTypeID.WarChessBattleResult, function(win)
-      -- function num : 0_10_0_0 , upvalues : self, playerRoleList, enemyRoleList, mvpGrade, _ENV
+      -- function num : 0_14_0_0 , upvalues : self, playerRoleList, enemyRoleList, mvpGrade, _ENV
       if win == nil then
         return 
       end
@@ -429,10 +593,10 @@ WarChessBattleCtrl.VictoryBattleEndCoroutine = function(self, battleEndState)
       win:SetWCBattleResultBattleData(playerRoleList, enemyRoleList, mvpGrade)
       win:SetWCBattleResultRewardData(self.__winRewardDic)
       win:SetContinueCallback(function()
-        -- function num : 0_10_0_0_0 , upvalues : _ENV, self
+        -- function num : 0_14_0_0_0 , upvalues : _ENV, self
         local loadingWindow = UIManager:ShowWindow(UIWindowTypeID.WarChessLoading)
         local preLoadFunc = function()
-          -- function num : 0_10_0_0_0_0 , upvalues : self
+          -- function num : 0_14_0_0_0_0 , upvalues : self
           self.__startSelectChip = true
         end
 
@@ -467,7 +631,7 @@ WarChessBattleCtrl.VictoryBattleEndCoroutine = function(self, battleEndState)
 end
 
 WarChessBattleCtrl.OnTimelineNoticeOpenResultUI = function(self)
-  -- function num : 0_11 , upvalues : _ENV
+  -- function num : 0_15 , upvalues : _ENV
   self.__showResultUI = true
   if self.__waitSettleResult then
     ((CS.CameraController).Instance):PauseSettlementCut(true)
@@ -476,11 +640,11 @@ WarChessBattleCtrl.OnTimelineNoticeOpenResultUI = function(self)
 end
 
 WarChessBattleCtrl.ExitWCBattle = function(self, isBattleWin, isEscape)
-  -- function num : 0_12 , upvalues : _ENV, eWarChessEnum
+  -- function num : 0_16 , upvalues : _ENV, eWarChessEnum
   self.__isInBattleScene = false
   ;
   (self.wcCtrl):ReLoadWarChessSecne(function()
-    -- function num : 0_12_0 , upvalues : self, isBattleWin, _ENV, eWarChessEnum
+    -- function num : 0_16_0 , upvalues : self, isBattleWin, _ENV, eWarChessEnum
     (self.sceneCtrl):OnWCBattleOver()
     if isBattleWin then
       self:SelectWCBattleChip()
@@ -491,9 +655,9 @@ WarChessBattleCtrl.ExitWCBattle = function(self, isBattleWin, isEscape)
 end
 
 WarChessBattleCtrl.SelectWCBattleChip = function(self, isSkipBattle)
-  -- function num : 0_13 , upvalues : _ENV, eWarChessEnum
+  -- function num : 0_17 , upvalues : _ENV, eWarChessEnum
   self:__WCDropBuff(function()
-    -- function num : 0_13_0 , upvalues : self, isSkipBattle, _ENV, eWarChessEnum
+    -- function num : 0_17_0 , upvalues : self, isSkipBattle, _ENV, eWarChessEnum
     local chipList = self.__winChipList
     if #chipList == 0 then
       if isSkipBattle then
@@ -503,7 +667,7 @@ WarChessBattleCtrl.SelectWCBattleChip = function(self, isSkipBattle)
     end
     local teamDataDic = ((self.wcCtrl).teamCtrl):GetWCTeams()
     UIManager:ShowWindowAsync(UIWindowTypeID.WarChessSelectChip, function(wcChipWindow)
-      -- function num : 0_13_0_0 , upvalues : chipList, teamDataDic, self, _ENV, eWarChessEnum
+      -- function num : 0_17_0_0 , upvalues : chipList, teamDataDic, self, _ENV, eWarChessEnum
       wcChipWindow:InitWCSelectChip(chipList, teamDataDic, self._eventCSelectChipComplete)
       wcChipWindow:InitWCSelectChipRefresh(BindCallback(self, self.__WCSelectChipRefresh), self.__refreshTime)
       wcChipWindow:InitWCSelectChipSkip(BindCallback(self, self.__WCSelectChipSkip))
@@ -516,7 +680,7 @@ WarChessBattleCtrl.SelectWCBattleChip = function(self, isSkipBattle)
 end
 
 WarChessBattleCtrl.__WCSelectChipComplete = function(self, index, teamData, selectComplete)
-  -- function num : 0_14
+  -- function num : 0_18
   if selectComplete ~= nil then
     selectComplete()
   end
@@ -525,7 +689,7 @@ WarChessBattleCtrl.__WCSelectChipComplete = function(self, index, teamData, sele
   local wid, tid = ((self.wcCtrl).teamCtrl):GetWCTeamIdentify(self.teamData)
   ;
   ((self.wcCtrl).wcNetworkCtrl):CS_WarChess_BattleSystem_SelectAlg(wid, tid, index, stid, function()
-    -- function num : 0_14_0 , upvalues : self
+    -- function num : 0_18_0 , upvalues : self
     if self.enemyEntityData ~= nil then
       (self.enemyEntityData):PlayEntityAnimation(-1)
       self.enemyEntityData = nil
@@ -535,11 +699,11 @@ WarChessBattleCtrl.__WCSelectChipComplete = function(self, index, teamData, sele
 end
 
 WarChessBattleCtrl.__WCSelectChipRefresh = function(self)
-  -- function num : 0_15 , upvalues : _ENV, ChipData
+  -- function num : 0_19 , upvalues : _ENV, ChipData
   local wid, tid = ((self.wcCtrl).teamCtrl):GetWCTeamIdentify(self.teamData)
   ;
   ((self.wcCtrl).wcNetworkCtrl):CS_WarChess_BattleSystem_RefreshAlg(wid, tid, function(msgList)
-    -- function num : 0_15_0 , upvalues : self, _ENV, ChipData
+    -- function num : 0_19_0 , upvalues : self, _ENV, ChipData
     if msgList.Count <= 0 then
       return 
     end
@@ -568,11 +732,11 @@ WarChessBattleCtrl.__WCSelectChipRefresh = function(self)
 end
 
 WarChessBattleCtrl.__WCSelectChipSkip = function(self, selectComplete)
-  -- function num : 0_16
+  -- function num : 0_20
   local wid, tid = ((self.wcCtrl).teamCtrl):GetWCTeamIdentify(self.teamData)
   ;
   ((self.wcCtrl).wcNetworkCtrl):CS_WarChess_BattleSystem_DropAlg(wid, tid, function()
-    -- function num : 0_16_0 , upvalues : self, selectComplete
+    -- function num : 0_20_0 , upvalues : self, selectComplete
     if self.enemyEntityData ~= nil then
       (self.enemyEntityData):PlayEntityAnimation(-1)
       self.enemyEntityData = nil
@@ -585,7 +749,7 @@ WarChessBattleCtrl.__WCSelectChipSkip = function(self, selectComplete)
 end
 
 WarChessBattleCtrl.__WCDropBuff = function(self, callback)
-  -- function num : 0_17 , upvalues : _ENV, WarChessBuffData
+  -- function num : 0_21 , upvalues : _ENV, WarChessBuffData
   if self.__winBuffList ~= nil and #self.__winBuffList > 0 then
     local buffList = {}
     do
@@ -595,7 +759,7 @@ WarChessBattleCtrl.__WCDropBuff = function(self, callback)
         (table.insert)(buffList, wcsBuffData)
       end
       UIManager:ShowWindowAsync(UIWindowTypeID.EpBuffDesc, function(win)
-    -- function num : 0_17_0 , upvalues : buffList, callback
+    -- function num : 0_21_0 , upvalues : buffList, callback
     win:InitWCBuffDesc(buffList, callback, 3)
   end
 )
@@ -610,33 +774,33 @@ WarChessBattleCtrl.__WCDropBuff = function(self, callback)
 end
 
 WarChessBattleCtrl.GetEffectPoolCtrl = function(self)
-  -- function num : 0_18
+  -- function num : 0_22
   return (self.sceneCtrl).effectPoolCtrl
 end
 
 WarChessBattleCtrl.GetHeroObjectDic = function(self)
-  -- function num : 0_19
+  -- function num : 0_23
   return (self.sceneCtrl).heroObjectDic
 end
 
 WarChessBattleCtrl.GetRoleAppearEffect = function(self)
-  -- function num : 0_20
+  -- function num : 0_24
   return (self.sceneCtrl):GetRoleAppearEffect()
 end
 
 WarChessBattleCtrl.GetRoleDisappearEffect = function(self)
-  -- function num : 0_21
+  -- function num : 0_25
   return (self.sceneCtrl):GetRoleAppearEffect()
 end
 
 WarChessBattleCtrl.BattleLoadReady = function(self, battleController)
-  -- function num : 0_22 , upvalues : base
+  -- function num : 0_26 , upvalues : base
   (base.BattleLoadReady)(self)
   self:TryShowWarChessBeforeBattleBuff(battleController.BattleRoomData)
 end
 
 WarChessBattleCtrl.TryShowWarChessBeforeBattleBuff = function(self)
-  -- function num : 0_23 , upvalues : _ENV, eWarChessEnum
+  -- function num : 0_27 , upvalues : _ENV, eWarChessEnum
   local buffDic = ((self.wcCtrl).backPackCtrl):GetWCBuffDic()
   local showBuffList = {}
   for _,wcBuffData in pairs(buffDic) do
@@ -646,7 +810,7 @@ WarChessBattleCtrl.TryShowWarChessBeforeBattleBuff = function(self)
   end
   if #showBuffList > 0 then
     UIManager:ShowWindowAsync(UIWindowTypeID.EpBuffDesc, function(win)
-    -- function num : 0_23_0 , upvalues : showBuffList
+    -- function num : 0_27_0 , upvalues : showBuffList
     win:InitWCBuffDesc(showBuffList, nil, 5)
   end
 )
@@ -654,7 +818,7 @@ WarChessBattleCtrl.TryShowWarChessBeforeBattleBuff = function(self)
 end
 
 WarChessBattleCtrl.GetBattleSettleName = function(self)
-  -- function num : 0_24 , upvalues : _ENV
+  -- function num : 0_28 , upvalues : _ENV
   if self.battleRoomId == nil then
     return ""
   end
@@ -666,7 +830,7 @@ WarChessBattleCtrl.GetBattleSettleName = function(self)
 end
 
 WarChessBattleCtrl.IsInGuardBattle = function(self)
-  -- function num : 0_25 , upvalues : _ENV
+  -- function num : 0_29 , upvalues : _ENV
   if self.battleRoomId == nil then
     return false
   end
@@ -679,26 +843,32 @@ WarChessBattleCtrl.IsInGuardBattle = function(self)
 end
 
 WarChessBattleCtrl.SetInstaKillName = function(self, fxName)
-  -- function num : 0_26
+  -- function num : 0_30
   self.__InstaKillFxName = fxName
 end
 
 WarChessBattleCtrl.GetIsInBattleScene = function(self)
-  -- function num : 0_27
+  -- function num : 0_31
   return self.__isInBattleScene
 end
 
 WarChessBattleCtrl.CloseWCSubSystem = function(self, isSwitchClose)
-  -- function num : 0_28 , upvalues : _ENV
+  -- function num : 0_32 , upvalues : _ENV
   if isSwitchClose then
     error("warChess Battle system not support Switch")
   end
   self.__allowQuit = nil
+  self.__useedEventSystem = nil
   return 
 end
 
+WarChessBattleCtrl.GetCurSelectedTeamData = function(self)
+  -- function num : 0_33
+  return self.teamData
+end
+
 WarChessBattleCtrl.Delete = function(self)
-  -- function num : 0_29 , upvalues : _ENV
+  -- function num : 0_34 , upvalues : _ENV
   (self.sceneCtrl):OnDelete()
   MsgCenter:RemoveListener(eMsgEventId.OnTimelineNoticeCreateResultUI, self.__OnTimelineNoticeOpenResultUI)
   self:OnDelete()

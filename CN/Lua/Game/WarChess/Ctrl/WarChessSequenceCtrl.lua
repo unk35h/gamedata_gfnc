@@ -298,5 +298,15 @@ WarChessSequenceCtrl.__TryPalyGetRewradBagReward = function(self)
   end
 end
 
+WarChessSequenceCtrl.SetReLoadSceneOverCallback = function(self, callback)
+  -- function num : 0_22 , upvalues : _ENV
+  (table.insert)(self.__playSequence, callback)
+end
+
+WarChessSequenceCtrl.ApplayReLoadSceneOver = function(self)
+  -- function num : 0_23
+  self:__PlayNext()
+end
+
 return WarChessSequenceCtrl
 

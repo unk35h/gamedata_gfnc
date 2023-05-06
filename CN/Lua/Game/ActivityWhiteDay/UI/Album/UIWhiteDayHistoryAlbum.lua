@@ -16,10 +16,10 @@ UIWhiteDayHistoryAlbum.OnInit = function(self)
   ConfigData:LoadDynCfg(eDynConfigData.activity_white_day_photo)
   ConfigData:LoadDynCfg(eDynConfigData.activity_white_day)
   ;
-  (UIUtil.SetTopStatus)(self, self.OnClickClose, nil, nil, nil, true)
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack()
   self.resloader = (cs_ResLoader.Create)()
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Close, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Close, self, self.OnClickClose)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_PreviousPage, self, self.OnWDClickPreviousPage)
   ;
@@ -248,13 +248,18 @@ UIWhiteDayHistoryAlbum.__OnOpenSkinPanel = function(self, selectSkinId)
 )
 end
 
-UIWhiteDayHistoryAlbum.OnClickClose = function(self)
+UIWhiteDayHistoryAlbum.BackAction = function(self)
   -- function num : 0_12
   self:Delete()
 end
 
+UIWhiteDayHistoryAlbum.OnClickClose = function(self)
+  -- function num : 0_13 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIWhiteDayHistoryAlbum.OnDelete = function(self)
-  -- function num : 0_13 , upvalues : _ENV, eDynConfigData, base
+  -- function num : 0_14 , upvalues : _ENV, eDynConfigData, base
   if self.resloader ~= nil then
     (self.resloader):Put2Pool()
     self.resloader = nil

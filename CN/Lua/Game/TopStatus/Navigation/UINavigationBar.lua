@@ -10,6 +10,7 @@ local JumpManager = require("Game.Jump.JumpManager")
 local TaskEnum = require("Game.Task.TaskEnum")
 UINavigationBar.OnInit = function(self)
   -- function num : 0_0 , upvalues : cs_ResLoader, _ENV
+  self.__permanent = true
   self.resloader = (cs_ResLoader.Create)()
   self:__TryFindLeanTouchGo()
   ;
@@ -43,8 +44,10 @@ end
 UINavigationBar.__TryFindLeanTouchGo = function(self)
   -- function num : 0_1 , upvalues : _ENV
   if IsNull(self.leanTouchGo) then
-    self.leanTouchGo = ((((CS.Lean).Touch).LeanTouch).Instance).gameObject
-    if IsNull(self.leanTouchGo) then
+    local inst = (((CS.Lean).Touch).LeanTouch).Instance
+    if not IsNull(inst) then
+      self.leanTouchGo = inst.gameObject
+    else
       self.leanTouchGo = nil
     end
   end

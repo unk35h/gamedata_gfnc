@@ -159,7 +159,7 @@ end
 
 UIHeroPotential.OnClickCancle = function(self)
   -- function num : 0_3 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIHeroPotential.OnClickConfirm = function(self)
@@ -188,7 +188,7 @@ UIHeroPotential.OnClickConfirm = function(self)
     -- function num : 0_4_0 , upvalues : self, _ENV, localSelf
     self.isDelayApplyCloseEvent = true
     ;
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
     localSelf:OnPotentialSuccess(lastData)
   end
 )

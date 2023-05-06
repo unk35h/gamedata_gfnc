@@ -110,7 +110,11 @@ UICIDJumpInfoItem.InitUseGift = function(self, selectItemId, giftList)
         return 
       end
       UIManager:HideWindow(UIWindowTypeID.GlobalItemDetail)
-      window:InitCommonUseGift(itemCfg, selectItemId)
+      window:InitCommonUseGift(itemCfg, selectItemId, function()
+        -- function num : 0_4_0_0_0 , upvalues : _ENV
+        (UIUtil.OnClickBackByWinId)(UIWindowTypeID.GlobalItemDetail)
+      end
+)
     end
 )
           return 

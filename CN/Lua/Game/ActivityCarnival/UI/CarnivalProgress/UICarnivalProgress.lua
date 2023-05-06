@@ -191,6 +191,9 @@ UICarnivalProgress._OnJumpItem = function(self, levelData)
   end
   local envId = (((ConfigData.activity_carnival_env).levelEnvDic)[(self._carnivalData):GetActId()])[levelData.level]
   if envId or 0 > 0 then
+    if not (self._carnivalData):IsActivityRunning() then
+      return 
+    end
     local sectorId = ((self._carnivalData):GetCarnivalMainCfg()).main_stage
     do
       do
@@ -203,7 +206,7 @@ UICarnivalProgress._OnJumpItem = function(self, levelData)
         if self._jumpEnvFunc ~= nil then
           (self._jumpEnvFunc)(envId)
         end
-        -- DECOMPILER ERROR at PC67: Unhandled construct in 'MakeBoolean' P1
+        -- DECOMPILER ERROR at PC73: Unhandled construct in 'MakeBoolean' P1
 
         if (levelData.carnivalExpCfg).unlock_story > 0 and self._jumpSectorStageFunc ~= nil then
           (self._jumpSectorStageFunc)((levelData.carnivalExpCfg).unlock_story, true)

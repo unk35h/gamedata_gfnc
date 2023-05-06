@@ -78,6 +78,9 @@ WarChessDeployState.InitDeployTeam = function(self)
   local fmtDatas = {}
   local forms = WarChessSeasonManager:GetWCSEnterNextFloorTeamInfo()
   WarChessSeasonManager:SetWCSEnterNextFloorTeamInfo(nil)
+  if #FormationUtil.fixedFmtIdList < #wcLevelCfg.assist then
+    error("fixed team not support over then " .. tostring(#FormationUtil.fixedFmtIdList))
+  end
   for index = 1, maxShowFmtNum do
     local fmtId = (FormationUtil.GetFmtIdOffsetByFmtFromModule)((FmtEnum.eFmtFromModule).WarChess) + index
     local fixedHeroTeamId = (wcLevelCfg.assist)[index]
@@ -100,7 +103,7 @@ WarChessDeployState.InitDeployTeam = function(self)
         local teamData = ((self.wcCtrl).teamCtrl):GetTeamDataByTeamIndexIgnoreDead(onboardIndex)
         if teamData ~= nil then
           local clientIndex = teamData:GetWCTeamClientIndex()
-          -- DECOMPILER ERROR at PC103: Confused about usage of register: R23 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC117: Confused about usage of register: R23 in 'UnsetPending'
 
           if clientIndex == index then
             (self.__dynDeployTeamDic)[clientIndex] = teamData
@@ -110,7 +113,7 @@ WarChessDeployState.InitDeployTeam = function(self)
               local power = fmtCtrl:CalculatePower(fmtData)
               dTeamData:SetDTeamTeamPower(power)
               dTeamData:SetDTeamIsFixedTeam(false)
-              -- DECOMPILER ERROR at PC126: Confused about usage of register: R26 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC140: Confused about usage of register: R26 in 'UnsetPending'
 
               ;
               (self.__deployTeamDic)[index] = dTeamData
@@ -120,7 +123,7 @@ WarChessDeployState.InitDeployTeam = function(self)
       end
       if (self.__deployTeamDic)[index] == nil then
         local dTeamData = self:_CreateDeployTeamData(fixedFmtId, fmtId, index, fmtCtrl, forms)
-        -- DECOMPILER ERROR at PC140: Confused about usage of register: R18 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC154: Confused about usage of register: R18 in 'UnsetPending'
 
         ;
         (self.__deployTeamDic)[index] = dTeamData
@@ -129,7 +132,7 @@ WarChessDeployState.InitDeployTeam = function(self)
       end
     else
       local dTeamData, isCreateNew = self:_CreateDeployTeamData(fixedFmtId, fmtId, index, fmtCtrl, forms)
-      -- DECOMPILER ERROR at PC156: Confused about usage of register: R19 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC170: Confused about usage of register: R19 in 'UnsetPending'
 
       ;
       (self.__deployTeamDic)[index] = dTeamData
@@ -183,7 +186,7 @@ WarChessDeployState._CreateDeployTeamData = function(self, fixedFmtId, fmtId, in
           local officialSupportCfgId, warchessAssistCfg = nil, nil
           if wcsCtrl ~= nil then
             officialSupportCfgId = wcsCtrl:GetWCSOfficialSupportCfgId()
-            warchessAssistCfg = (ConfigData.warchess_assist)[officialSupportCfgId]
+            warchessAssistCfg = (ConfigData.official_assist)[officialSupportCfgId]
           end
           if warchessAssistCfg ~= nil then
             for index,heroId in pairs(officialSupportHeroDic) do

@@ -117,12 +117,12 @@ UISelectBoardHero.Confirm = function(self)
     (NetworkManager:GetNetwork(NetworkTypeID.Object)):CS_User_ModifyShowGirl(((self.heroSortList).selectHero).dataId)
     AudioManager:RemoveAllVoice(true)
     local waitFunc = function()
-      -- function num : 0_7_0_0 , upvalues : _ENV
+      -- function num : 0_7_0_0 , upvalues : _ENV, self
       (coroutine.yield)(nil)
       ;
       (ControllerManager:GetController(ControllerTypeId.HomeController)):PlayLoginHeroGreeting()
       ;
-      (UIUtil.OnClickBack)()
+      (UIUtil.OnClickBackByUiTab)(self)
     end
 
     self.__waitCoroutine = (GR.StartCoroutine)((util.cs_generator)(waitFunc))
@@ -130,7 +130,7 @@ UISelectBoardHero.Confirm = function(self)
 )
   else
     ;
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 end
 

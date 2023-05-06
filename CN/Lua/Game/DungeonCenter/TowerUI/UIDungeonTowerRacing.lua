@@ -83,7 +83,7 @@ end
 
 UIDungeonTowerRacing._OnBtnCloseClicked = function(self)
   -- function num : 0_4 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIDungeonTowerRacing.OnDelete = function(self)

@@ -70,6 +70,10 @@ local login_popup_ui = {
 {id = 34, login_prefab = "UINActCarnival23ReprintLoginIn"}
 , 
 {id = 35, item_icon = 2566, login_prefab = "UINCharDunErika"}
+, 
+{id = 36, item_icon = 2567, login_prefab = "UINCharDunCascadia"}
+, 
+{id = 37, login_prefab = "UINActSeason23AprilLoginIn"}
 }
 local __default_values = {id = 1, ishide = false, item_icon = 0, login_prefab = "Img_ActSum21LoginIn"}
 local base = {__index = __default_values, __newindex = function()

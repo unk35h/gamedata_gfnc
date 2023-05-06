@@ -5,6 +5,7 @@ local UIWarChessMain = class("UIWarChessMain", UIBaseWindow)
 local cs_ResLoader = CS.ResLoader
 local UINWarChessMainTop = require("Game.WarChess.UI.Main.Top.UINWarChessMainTop")
 local eWarChessEnum = require("Game.WarChess.eWarChessEnum")
+local UINWarChessWarnLoop = require("Game.WarChess.UI.Main.UINWarChessWarnLoop")
 local DownNode = {
 deploy = {res = "UINWarChessDeploy", class = "Game.WarChess.UI.Main.UINWarChessMain_DeployNode"}
 , 
@@ -21,13 +22,16 @@ local SpecialTrriggerNode = {
 [(eWarChessEnum.WCSpecialTriggerType).chessJump] = {res = "UINWarChessLevelTrigger", class = "Game.WarChess.UI.Main.WarChessItem.UINWarChessLevelChessTrigger"}
 }
 UIWarChessMain.OnInit = function(self)
-  -- function num : 0_0 , upvalues : UINWarChessMainTop, cs_ResLoader, _ENV
+  -- function num : 0_0 , upvalues : UINWarChessMainTop, cs_ResLoader, UINWarChessWarnLoop, _ENV
   self.topNode = (UINWarChessMainTop.New)()
   ;
   (self.topNode):Init((self.ui).obj_top)
   self.downNode = nil
   self.__curDownNodeName = nil
   self.resloader = (cs_ResLoader.Create)()
+  self._warnEffectNode = (UINWarChessWarnLoop.New)()
+  ;
+  (self._warnEffectNode):Init((self.ui).img_turnWarrning)
   self.__onTimeRewind = BindCallback(self, self.__OnTimeRewind)
   MsgCenter:AddListener(eMsgEventId.WC_TimeRewind, self.__onTimeRewind)
 end
@@ -109,7 +113,7 @@ UIWarChessMain.WcMainFadeBttomUI = function(self, isFade)
 end
 
 UIWarChessMain.InitSpecialItem = function(self)
-  -- function num : 0_8 , upvalues : _ENV, eWarChessEnum, SpecialItemNode
+  -- function num : 0_8 , upvalues : _ENV, SpecialItemNode
   if not WarChessSeasonManager:GetIsInWCSeason() then
     return 
   end
@@ -123,8 +127,7 @@ UIWarChessMain.InitSpecialItem = function(self)
   if specialItemCfg == nil then
     return 
   end
-  local specialItemType = (eWarChessEnum.WCSpecialItemId2Type)[specialItemId]
-  local uiNodeCfg = SpecialItemNode[specialItemType]
+  local uiNodeCfg = SpecialItemNode[specialItemCfg.ui_type]
   if uiNodeCfg == nil then
     return 
   end
@@ -135,7 +138,7 @@ UIWarChessMain.InitSpecialItem = function(self)
   itemShowNode:InitWCSSpecialItem(specialItemCfg)
   ;
   (itemShowNode.transform):SetParent((self.ui).trans_SpBottleHolder)
-  -- DECOMPILER ERROR at PC60: Confused about usage of register: R9 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC59: Confused about usage of register: R8 in 'UnsetPending'
 
   ;
   (itemShowNode.transform).anchoredPosition = Vector2.zero
@@ -228,6 +231,10 @@ UIWarChessMain.OnDelete = function(self)
   if self.levelSpecialTriggerNode ~= nil then
     (self.levelSpecialTriggerNode):Delete()
     self.levelSpecialTriggerNode = nil
+  end
+  if self._warnEffectNode ~= nil then
+    (self._warnEffectNode):Delete()
+    self._warnEffectNode = nil
   end
   MsgCenter:RemoveListener(eMsgEventId.WC_TimeRewind, self.__onTimeRewind)
 end

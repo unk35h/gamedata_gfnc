@@ -251,6 +251,8 @@ UIDungeonBase.OnBattleStart = function(self, autoBattleCount)
     UIManager:ShowWindowOnly(UIWindowTypeID.Sector)
     if (BattleDungeonManager.autoCtrl):IsEnbaleDungeonAutoMode() then
       (BattleDungeonManager.autoCtrl):ExitDungeonAutoModel()
+      ;
+      (BattleDungeonManager.autoCtrl):DungeonAutoReset()
     end
   end
 

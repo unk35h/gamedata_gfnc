@@ -1785,6 +1785,26 @@
       "Formula": "@pow*GetSkillArg(4)/1000*(-1)"
     },
     {
+      "Id": 106701,
+      "Formula": "GetHurtType()==0?max(#def*(1-$2/1000)*(1-SelfExtra(2)/1000)-@sunder,-200):max(#magic_res*(1-$2/1000)*(1-SelfExtra(2)/1000)-@magic_pen,-200)"
+    },
+    {
+      "Id": 106702,
+      "Formula": "max(1,@pow*max(0.1,(1000/(GetFVal(106701)+1000)))*1)*$3/1000"
+    },
+    {
+      "Id": 106703,
+      "Formula": "GetHurtType()==0?max(#def*(1-GetSkillArg(1)/1000)*(1-SelfExtra(2)/1000)-@sunder,-200):max(#magic_res*(1-GetSkillArg(1)/1000)*(1-SelfExtra(2)/1000)-@magic_pen,-200)"
+    },
+    {
+      "Id": 106704,
+      "Formula": "max(1,@pow*max(0.1,(1000/(GetFVal(106701)+1000)))*1)"
+    },
+    {
+      "Id": 106705,
+      "Formula": "@pow*GetSkillArg(4)/1000*$2"
+    },
+    {
       "Id": 206801,
       "Formula": "TarBuff(88)>0?0:$1"
     },

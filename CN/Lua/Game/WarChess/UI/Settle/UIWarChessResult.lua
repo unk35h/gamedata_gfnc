@@ -20,6 +20,8 @@ UIWarChessResult.OnInit = function(self)
   (UIUtil.AddButtonListenerWithArg)((self.ui).btn_GotoItem1, self, self.OnClickJump2DefeatAdvise, 1)
   ;
   (UIUtil.AddButtonListenerWithArg)((self.ui).btn_GotoItem2, self, self.OnClickJump2DefeatAdvise, 2)
+  ;
+  (UIUtil.AddButtonListener)((self.ui).btn_GotoTechUp, self, self.OnClickJump2ActTech)
 end
 
 UIWarChessResult.InitWarChessResult = function(self, isWin)
@@ -76,13 +78,33 @@ UIWarChessResult.InitWarChessResult = function(self, isWin)
         self:__ShowChip()
         self:__ShowCoin()
         self:__ShowPowerIncrease()
+        self:__RefreshTechBtn()
       end
     end
   end
 end
 
-UIWarChessResult.RefreshWCResultReward = function(self, wcSettelRewardData)
+UIWarChessResult.__RefreshTechBtn = function(self)
   -- function num : 0_2 , upvalues : _ENV
+  if not WarChessSeasonManager:IsInWCS() then
+    return 
+  end
+  local openFunc, reddotOPenFunc = WarChessSeasonManager:GetSeasonTechJumpFunc()
+  if openFunc == nil then
+    return 
+  end
+  self._openTechFunc = openFunc
+  ;
+  (((self.ui).btn_GotoTechUp).gameObject):SetActive(true)
+  ;
+  (((self.ui).btn_GotoItem1).gameObject):SetActive(false)
+  ;
+  ((self.ui).redDot_GotoTechUp):SetActive((reddotOPenFunc ~= nil and reddotOPenFunc()))
+  -- DECOMPILER ERROR: 2 unprocessed JMP targets
+end
+
+UIWarChessResult.RefreshWCResultReward = function(self, wcSettelRewardData)
+  -- function num : 0_3 , upvalues : _ENV
   if not wcSettelRewardData.firstPassRewardDic then
     local firstPassRewardDic = table.emptytable
   end
@@ -119,10 +141,14 @@ UIWarChessResult.RefreshWCResultReward = function(self, wcSettelRewardData)
   end
   local normalRewardDic = {}
   if isHaveInnerReward then
-    (table.merge)(normalRewardDic, innerWCReardDic)
+    for key,value in pairs(innerWCReardDic) do
+      normalRewardDic[key] = (normalRewardDic[key] or 0) + value
+    end
   end
   if isHaveRewardBagReward then
-    (table.merge)(normalRewardDic, stmStorePickRewardDic)
+    for key,value in pairs(stmStorePickRewardDic) do
+      normalRewardDic[key] = (normalRewardDic[key] or 0) + value
+    end
   end
   for itemId,itemNum in pairs(normalRewardDic) do
     local rewardItem = (self.rewardItemPool):GetOne()
@@ -131,11 +157,11 @@ UIWarChessResult.RefreshWCResultReward = function(self, wcSettelRewardData)
     ;
     (rewardItem.transform):SetParent(((self.ui).normalList).transform)
   end
-  -- DECOMPILER ERROR: 10 unprocessed JMP targets
+  -- DECOMPILER ERROR: 14 unprocessed JMP targets
 end
 
 UIWarChessResult.RefreshWCLevelInfo = function(self, name, indexName)
-  -- function num : 0_3
+  -- function num : 0_4
   (((self.ui).tex_LevelName).gameObject):SetActive(true)
   -- DECOMPILER ERROR at PC8: Confused about usage of register: R3 in 'UnsetPending'
 
@@ -148,7 +174,7 @@ UIWarChessResult.RefreshWCLevelInfo = function(self, name, indexName)
 end
 
 UIWarChessResult.__ShowChip = function(self)
-  -- function num : 0_4 , upvalues : _ENV
+  -- function num : 0_5 , upvalues : _ENV
   local wcCtrl = WarChessManager:GetWarChessCtrl()
   local teamDic = (wcCtrl.teamCtrl):GetWCTeams()
   local allChipLevel = 0
@@ -176,7 +202,7 @@ UIWarChessResult.__ShowChip = function(self)
 end
 
 UIWarChessResult.__ShowCoin = function(self)
-  -- function num : 0_5 , upvalues : _ENV
+  -- function num : 0_6 , upvalues : _ENV
   local wcCtrl = WarChessManager:GetWarChessCtrl()
   local CCNum = (wcCtrl.backPackCtrl):GetWCCoinNum()
   -- DECOMPILER ERROR at PC11: Confused about usage of register: R3 in 'UnsetPending'
@@ -186,7 +212,7 @@ UIWarChessResult.__ShowCoin = function(self)
 end
 
 UIWarChessResult.__ShowPowerIncrease = function(self)
-  -- function num : 0_6 , upvalues : _ENV
+  -- function num : 0_7 , upvalues : _ENV
   local wcCtrl = WarChessManager:GetWarChessCtrl()
   local teamDic = (wcCtrl.teamCtrl):GetWCTeams()
   local totalNewPower = 0
@@ -207,7 +233,7 @@ UIWarChessResult.__ShowPowerIncrease = function(self)
 end
 
 UIWarChessResult.__ShowMVP = function(self)
-  -- function num : 0_7 , upvalues : _ENV, HeroData
+  -- function num : 0_8 , upvalues : _ENV, HeroData
   local wcCtrl = WarChessManager:GetWarChessCtrl()
   local epMvpData = (wcCtrl.teamCtrl):GetWCMvpData()
   if epMvpData ~= nil then
@@ -217,7 +243,7 @@ UIWarChessResult.__ShowMVP = function(self)
       if heroData == nil then
         local heroCfg = (ConfigData.hero_data)[heroId]
         heroData = (HeroData.New)({
-basic = {id = heroId, level = 1, exp = 0, star = heroCfg.rank, potentialLvl = 0, ts = -1, career = heroCfg.career, company = heroCfg.camp}
+basic = {id = heroId, level = 1, exp = 0, star = heroCfg.rank, potentialLvl = 0, ts = -1, career = heroCfg.career, company = heroCfg.camp, skinId = (PlayerDataCenter.skinData):DealNotSelfHaveHeroSkinOverraid(0, heroId)}
 })
       end
       ExplorationManager:PlayMVPVoice(heroId)
@@ -231,14 +257,14 @@ basic = {id = heroId, level = 1, exp = 0, star = heroCfg.rank, potentialLvl = 0,
 end
 
 UIWarChessResult._LoadMvpPic = function(self, resPicName)
-  -- function num : 0_8 , upvalues : cs_ResLoader, _ENV
+  -- function num : 0_9 , upvalues : cs_ResLoader, _ENV
   if self.bigImgResloader ~= nil then
     (self.bigImgResloader):Put2Pool()
   end
   self.bigImgResloader = (cs_ResLoader.Create)()
   ;
   (self.bigImgResloader):LoadABAssetAsync(PathConsts:GetCharacterBigImgPrefabPath(resPicName), function(prefab)
-    -- function num : 0_8_0 , upvalues : _ENV, self
+    -- function num : 0_9_0 , upvalues : _ENV, self
     DestroyUnityObject(self.bigImgGameObject)
     self.bigImgGameObject = prefab:Instantiate((self.ui).heroBigImgNode)
     local commonPicCtrl = (self.bigImgGameObject):FindComponent(eUnityComponentID.CommonPicController)
@@ -248,9 +274,9 @@ UIWarChessResult._LoadMvpPic = function(self, resPicName)
 end
 
 UIWarChessResult.OnClickTeamChipDetail = function(self)
-  -- function num : 0_9 , upvalues : _ENV
+  -- function num : 0_10 , upvalues : _ENV
   UIManager:ShowWindowAsync(UIWindowTypeID.WarChessViewChip, function(window)
-    -- function num : 0_9_0
+    -- function num : 0_10_0
     if window ~= nil then
       window:InitAllTeamChips()
     end
@@ -259,9 +285,9 @@ UIWarChessResult.OnClickTeamChipDetail = function(self)
 end
 
 UIWarChessResult.OnReturnClicked = function(self)
-  -- function num : 0_10 , upvalues : _ENV
+  -- function num : 0_11 , upvalues : _ENV
   WarChessManager:ExitWarChess((Consts.SceneName).Sector, self._isWin, nil, function()
-    -- function num : 0_10_0 , upvalues : _ENV
+    -- function num : 0_11_0 , upvalues : _ENV
     local aftertTeatmentCtrl = ControllerManager:GetController(ControllerTypeId.BattleResultAftertTeatment)
     if aftertTeatmentCtrl ~= nil then
       aftertTeatmentCtrl:TeatmentBengin()
@@ -271,7 +297,7 @@ UIWarChessResult.OnReturnClicked = function(self)
 end
 
 UIWarChessResult.__RefreshDefeatJump = function(self)
-  -- function num : 0_11 , upvalues : _ENV
+  -- function num : 0_12 , upvalues : _ENV
   local cfg1 = (ConfigData.defeat_jump)[1]
   local cfg2 = (ConfigData.defeat_jump)[2]
   self.__defeatJumpCfgList = {cfg1, cfg2}
@@ -285,7 +311,7 @@ UIWarChessResult.__RefreshDefeatJump = function(self)
   ((self.ui).img_PicGotoItem1).enabled = false
   ;
   (self.resloader):LoadABAssetAsync(PathConsts:GetAtlasAssetPath("ExplorationResultFailures"), function(spriteAtlas)
-    -- function num : 0_11_0 , upvalues : _ENV, self, cfg1, cfg2
+    -- function num : 0_12_0 , upvalues : _ENV, self, cfg1, cfg2
     if spriteAtlas == nil then
       return 
     end
@@ -321,9 +347,9 @@ UIWarChessResult.__RefreshDefeatJump = function(self)
 end
 
 UIWarChessResult.OnClickJump2DefeatAdvise = function(self, typeIndex)
-  -- function num : 0_12 , upvalues : _ENV, JumpManager
+  -- function num : 0_13 , upvalues : _ENV, JumpManager
   WarChessManager:ExitWarChess((Consts.SceneName).Main, false, function()
-    -- function num : 0_12_0 , upvalues : self, typeIndex, _ENV, JumpManager
+    -- function num : 0_13_0 , upvalues : self, typeIndex, _ENV, JumpManager
     local defeatJumpCfg = (self.__defeatJumpCfgList)[typeIndex]
     if defeatJumpCfg == nil then
       error("defeatJumpCfg is nil with index " .. tostring(typeIndex))
@@ -332,7 +358,7 @@ UIWarChessResult.OnClickJump2DefeatAdvise = function(self, typeIndex)
     local jumpId = defeatJumpCfg.jump_id
     local jumpArg = defeatJumpCfg.jump_arg
     JumpManager:Jump(jumpId, nil, function()
-      -- function num : 0_12_0_0 , upvalues : _ENV
+      -- function num : 0_13_0_0 , upvalues : _ENV
       local aftertTeatmentCtrl = ControllerManager:GetController(ControllerTypeId.BattleResultAftertTeatment)
       if aftertTeatmentCtrl ~= nil then
         aftertTeatmentCtrl:TeatmentBengin()
@@ -343,8 +369,19 @@ UIWarChessResult.OnClickJump2DefeatAdvise = function(self, typeIndex)
 )
 end
 
+UIWarChessResult.OnClickJump2ActTech = function(self)
+  -- function num : 0_14 , upvalues : _ENV
+  WarChessManager:ExitWarChess((Consts.SceneName).Main, false, function()
+    -- function num : 0_14_0 , upvalues : self
+    if self._openTechFunc ~= nil then
+      (self._openTechFunc)()
+    end
+  end
+)
+end
+
 UIWarChessResult.OnDelete = function(self)
-  -- function num : 0_13
+  -- function num : 0_15
   if self.resloader ~= nil then
     (self.resloader):Put2Pool()
     self.resloader = nil

@@ -77,7 +77,7 @@ UILotterySelectPool._OnClickConfirm = function(self)
     return 
   end
   ;
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UILotterySelectPool.OnDelete = function(self)

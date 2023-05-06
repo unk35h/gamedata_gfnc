@@ -24,6 +24,7 @@ WarChessBuffData.ctor = function(self, uid, id)
   -- function num : 0_2 , upvalues : _ENV
   self.uid = uid
   self.id = id
+  self.dataId = id
   self.wcBuffCfg = (ConfigData.warchess_buff)[id]
   if self.wcBuffCfg == nil then
     error("warches buff cfg not exist id:" .. tostring(id))

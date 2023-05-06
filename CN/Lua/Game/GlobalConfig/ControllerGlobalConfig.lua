@@ -1,6 +1,6 @@
 -- params : ...
 -- function num : 0 , upvalues : _ENV
-ControllerTypeId = {SectorController = 1, OasisController = 2, Shop = 4, Factory = 5, Task = 6, Mail = 7, Setting = 8, Dorm = 9, Avg = 10, Formation = 12, AvgPlay = 13, TimePass = 14, HomeController = 15, Login = 16, Lottery = 17, Cv = 18, StrategyOverview = 19, BuildingQueue = 21, BattlePass = 22, Skin = 23, Pay = 24, ActivityFrame = 25, CommanderSkill = 26, SectorTaskCtrl = 27, PayGift = 28, RecommeFormation = 29, GameNotice = 30, BattleResultAftertTeatment = 31, DailyDungeonLevelCtrl = 32, DormFight = 33, ShowCharacter = 34, DungeonTower = 35, SectorII = 36, WhiteDay = 37, ActRefreshDungeon = 38, ActivityComeback = 39, ActivityTask = 40, ActivityRound = 41, Share = 42, ActivityCarnival = 43, HandBook = 44, HistoryTinyGameActivity = 45, ActivityDailyChallenge = 46, ActivitySectorIII = 47, ActivityTaskLimit = 48, ActivitySignInMiniGame = 49, ActivityHeroGrow = 50, ActivityHallowmas = 51, ActivityKeyExertion = 52, ActivitySpring = 53, ActivityLobbyCtrl = 54, ActivityWinter23 = 55, ActivityInvitation = 56, SmashingPenguins = 57, ShowCharacterSkin = 10086, DormFight = 101, EventWeeklyQA = 102, EventAngelaGift = 103}
+ControllerTypeId = {SectorController = 1, OasisController = 2, Shop = 4, Factory = 5, Task = 6, Mail = 7, Setting = 8, Dorm = 9, Avg = 10, Formation = 12, AvgPlay = 13, TimePass = 14, HomeController = 15, Login = 16, Lottery = 17, Cv = 18, StrategyOverview = 19, BuildingQueue = 21, BattlePass = 22, Skin = 23, Pay = 24, ActivityFrame = 25, CommanderSkill = 26, SectorTaskCtrl = 27, PayGift = 28, RecommeFormation = 29, GameNotice = 30, BattleResultAftertTeatment = 31, DailyDungeonLevelCtrl = 32, DormFight = 33, ShowCharacter = 34, DungeonTower = 35, SectorII = 36, WhiteDay = 37, ActRefreshDungeon = 38, ActivityComeback = 39, ActivityTask = 40, ActivityRound = 41, Share = 42, ActivityCarnival = 43, HandBook = 44, HistoryTinyGameActivity = 45, ActivityDailyChallenge = 46, ActivitySectorIII = 47, ActivityTaskLimit = 48, ActivitySignInMiniGame = 49, ActivityHeroGrow = 50, ActivityHallowmas = 51, ActivityKeyExertion = 52, ActivitySpring = 53, ActivityLobbyCtrl = 54, ActivityWinter23 = 55, ActivityInvitation = 56, SmashingPenguins = 57, ActivitySeason = 58, ShowCharacterSkin = 10086, DormFight = 101, EventWeeklyQA = 102, EventAngelaGift = 103}
 ControllerGlobalConfig = {
 [ControllerTypeId.HomeController] = {ControllerClass = require("Game.Home.HomeController")}
 , 
@@ -115,5 +115,7 @@ ControllerGlobalConfig = {
 [ControllerTypeId.EventWeeklyQA] = {ControllerClass = require("Game.EventWeeklyQA.EventWeeklyQAController")}
 , 
 [ControllerTypeId.EventAngelaGift] = {ControllerClass = require("Game.EventAngelaGift.EventAngelaGiftController")}
+, 
+[ControllerTypeId.ActivitySeason] = {ControllerClass = require("Game.ActivitySeason.ActivitySeasonController")}
 }
 

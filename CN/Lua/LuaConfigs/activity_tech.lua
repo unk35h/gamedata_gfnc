@@ -67,7 +67,7 @@ local activity_tech = {
 , 
 [10091] = {activity_tech_type = 1, col = 3, icon = "Win21Tech_10091", name = 474792, pre_tech_level = 0, row = 1009, tech_id = 10091}
 , 
-[21011] = {branch = 1, col = 1, icon = "Carnival22Tech_21011", name = 196328, pre_tech_level = 0, row = 2001, tech_id = 21011}
+[21011] = {branch = 1, col = 1, icon = "Carnival22Tech_21011", pre_tech_level = 0, row = 2001, tech_id = 21011}
 , 
 [21022] = {branch = 1, col = 2, icon = "Carnival22Tech_21022", name = 211836, pre_tech_level = 0, row = 2002, tech_id = 21022}
 , 
@@ -75,7 +75,7 @@ local activity_tech = {
 , 
 [21042] = {branch = 1, col = 2, icon = "Carnival22Tech_21042", name = 301134, pre_tech = 21022, row = 2004, tech_id = 21042}
 , 
-[21051] = {branch = 1, col = 1, icon = "Carnival22Tech_21051", pre_tech = 21031, row = 2005, tech_id = 21051}
+[21051] = {branch = 1, col = 1, icon = "Carnival22Tech_21051", name = 380711, pre_tech = 21031, row = 2005, tech_id = 21051}
 , 
 [21062] = {branch = 1, col = 2, icon = "Carnival22Tech_21062", name = 273561, pre_tech = 21042, row = 2006, tech_id = 21062}
 , 
@@ -167,7 +167,7 @@ local activity_tech = {
 , 
 [30013] = {activity_tech_type = 3, branch = 6, col = 3, frame = 1, icon = "Tech340", name = 198687, pre_tech_level = 0, refresh_type = 2, row = 3001, tech_id = 30013}
 , 
-[30014] = {activity_tech_type = 3, branch = 7, frame = 2, icon = "Tech277", name = 196328, pre_tech_level = 0, refresh_type = 1, row = 3001, tech_id = 30014}
+[30014] = {activity_tech_type = 3, branch = 7, frame = 2, icon = "Tech277", pre_tech_level = 0, refresh_type = 1, row = 3001, tech_id = 30014}
 , 
 [30016] = {activity_tech_type = 3, branch = 8, col = 6, frame = 2, icon = "Tech286", name = 523379, pre_tech_level = 0, refresh_type = 1, row = 3001, tech_id = 30016}
 , 
@@ -355,7 +355,7 @@ local activity_tech = {
 , 
 [50071] = {activity_tech_type = 5, branch = 9, col = 1, icon = "Tech443", name = 321273, pre_tech = 50051, refresh_type = 1, row = 5007, tech_id = 50071}
 , 
-[50073] = {activity_tech_type = 5, branch = 10, col = 3, icon = "Tech50073", name = 196328, pre_tech = 50053, refresh_type = 1, row = 5007, tech_id = 50073}
+[50073] = {activity_tech_type = 5, branch = 10, col = 3, icon = "Tech50073", pre_tech = 50053, refresh_type = 1, row = 5007, tech_id = 50073}
 , 
 [50075] = {activity_tech_type = 5, branch = 11, col = 5, icon = "Tech456", name = 427436, pre_tech = 50055, refresh_type = 1, row = 5007, tech_id = 50075}
 , 
@@ -363,7 +363,7 @@ local activity_tech = {
 , 
 [50082] = {activity_tech_type = 5, branch = 9, col = 2, icon = "Tech50082", name = 75512, pre_tech = 50062, refresh_type = 1, row = 5008, tech_id = 50082}
 , 
-[50084] = {activity_tech_type = 5, branch = 10, icon = "Tech50084", pre_tech = 50064, refresh_type = 1, row = 5008, tech_id = 50084}
+[50084] = {activity_tech_type = 5, branch = 10, icon = "Tech50084", name = 380711, pre_tech = 50064, refresh_type = 1, row = 5008, tech_id = 50084}
 , 
 [50086] = {activity_tech_type = 5, branch = 11, col = 6, icon = "Tech455", name = 178557, pre_tech = 50066, refresh_type = 1, row = 5008, tech_id = 50086}
 , 
@@ -395,7 +395,7 @@ local activity_tech = {
 , 
 [60011] = {activity_tech_type = 6, branch = 13, col = 1, icon = "Spring23Tech_09", name = 450293, pre_tech_level = 0, refresh_type = 1, row = 6001, tech_id = 60011}
 , 
-[60012] = {activity_tech_type = 6, branch = 13, col = 2, name = 196328, pre_tech_level = 0, refresh_type = 1, row = 6001, tech_id = 60012}
+[60012] = {activity_tech_type = 6, branch = 13, col = 2, pre_tech_level = 0, refresh_type = 1, row = 6001, tech_id = 60012}
 , 
 [60013] = {activity_tech_type = 6, branch = 13, col = 3, icon = "Spring23Tech_17", name = 239959, pre_tech_level = 0, refresh_type = 1, row = 6001, tech_id = 60013}
 , 
@@ -411,7 +411,7 @@ local activity_tech = {
 , 
 [60051] = {activity_tech_type = 6, branch = 13, col = 1, icon = "Spring23Tech_16", name = 505726, pre_tech = 60021, refresh_type = 1, row = 6005, tech_id = 60051}
 , 
-[60052] = {activity_tech_type = 6, branch = 13, col = 2, pre_tech = 60042, refresh_type = 1, row = 6005, tech_id = 60052}
+[60052] = {activity_tech_type = 6, branch = 13, col = 2, name = 380711, pre_tech = 60042, refresh_type = 1, row = 6005, tech_id = 60052}
 , 
 [60053] = {activity_tech_type = 6, branch = 13, col = 3, icon = "Spring23Tech_03", name = 443667, pre_tech = 60023, refresh_type = 1, row = 6005, tech_id = 60053}
 , 
@@ -491,7 +491,7 @@ local activity_tech = {
 , 
 [71011] = {activity_tech_type = 7, branch = 16, col = 1, icon = "Spring23Tech_09", name = 450293, pre_tech_level = 0, refresh_type = 1, row = 7001, tech_id = 71011}
 , 
-[71013] = {activity_tech_type = 7, branch = 16, col = 3, pre_tech_level = 0, refresh_type = 1, row = 7001, tech_id = 71013}
+[71013] = {activity_tech_type = 7, branch = 16, col = 3, name = 380711, pre_tech_level = 0, refresh_type = 1, row = 7001, tech_id = 71013}
 , 
 [71022] = {activity_tech_type = 7, branch = 16, col = 2, icon = "Spring23Tech_12", name = 331235, pre_tech_level = 0, refresh_type = 1, row = 7002, tech_id = 71022}
 , 
@@ -503,7 +503,7 @@ local activity_tech = {
 , 
 [71051] = {activity_tech_type = 7, branch = 16, col = 1, icon = "Spring23Tech_14", name = 124718, pre_tech = 71031, refresh_type = 1, row = 7005, tech_id = 71051}
 , 
-[71053] = {activity_tech_type = 7, branch = 16, col = 3, pre_tech = 71033, refresh_type = 1, row = 7005, tech_id = 71053}
+[71053] = {activity_tech_type = 7, branch = 16, col = 3, name = 380711, pre_tech = 71033, refresh_type = 1, row = 7005, tech_id = 71053}
 , 
 [71062] = {activity_tech_type = 7, branch = 16, col = 2, icon = "Spring23Tech_05", name = 302746, pre_tech = 71042, refresh_type = 1, row = 7006, tech_id = 71062}
 , 
@@ -547,7 +547,7 @@ local activity_tech = {
 , 
 [73057] = {activity_tech_type = 7, branch = 18, col = 7, icon = "Spring23Tech_121", name = 131742, pre_tech = 73047, pre_total_level = 75, refresh_type = 1, row = 7005, tech_id = 73057}
 , 
-[81011] = {activity_tech_type = 8, branch = 19, col = 1, icon = "Carnival22Tech_21011", name = 196328, pre_tech_level = 0, row = 8001, tech_id = 81011}
+[81011] = {activity_tech_type = 8, branch = 19, col = 1, icon = "Carnival22Tech_21011", pre_tech_level = 0, row = 8001, tech_id = 81011}
 , 
 [81022] = {activity_tech_type = 8, branch = 19, col = 2, icon = "Carnival22Tech_21022", name = 211836, pre_tech_level = 0, row = 8002, tech_id = 81022}
 , 
@@ -555,7 +555,7 @@ local activity_tech = {
 , 
 [81042] = {activity_tech_type = 8, branch = 19, col = 2, icon = "Carnival22Tech_21042", name = 301134, pre_tech = 81022, row = 8004, tech_id = 81042}
 , 
-[81051] = {activity_tech_type = 8, branch = 19, col = 1, icon = "Carnival22Tech_21051", pre_tech = 81031, row = 8005, tech_id = 81051}
+[81051] = {activity_tech_type = 8, branch = 19, col = 1, icon = "Carnival22Tech_21051", name = 380711, pre_tech = 81031, row = 8005, tech_id = 81051}
 , 
 [81062] = {activity_tech_type = 8, branch = 19, col = 2, icon = "Carnival22Tech_21062", name = 273561, pre_tech = 81042, row = 8006, tech_id = 81062}
 , 
@@ -641,6 +641,94 @@ local activity_tech = {
 , 
 [83156] = {activity_tech_type = 8, branch = 21, col = 6, icon = "Carnival22Tech_23156", name = 78857, pre_tech = 83146, row = 8014, tech_id = 83156}
 , 
+[91011] = {activity_tech_type = 9, branch = 23, col = 1, icon = "S1Tech57", name = 366684, pre_tech_level = 0, refresh_type = 1, row = 9001, tech_id = 91011}
+, 
+[91012] = {activity_tech_type = 9, branch = 23, col = 2, icon = "S1Tech42", name = 348842, pre_tech_level = 0, refresh_type = 1, row = 9002, tech_id = 91012}
+, 
+[91021] = {activity_tech_type = 9, branch = 23, col = 1, icon = "S1Tech41", name = 481037, pre_tech = 91011, refresh_type = 1, row = 9003, tech_id = 91021}
+, 
+[91022] = {activity_tech_type = 9, branch = 23, col = 2, icon = "S1Tech44", name = 321273, pre_tech = 91012, refresh_type = 1, row = 9004, tech_id = 91022}
+, 
+[91031] = {activity_tech_type = 9, branch = 23, col = 1, icon = "S1Tech47", name = 444050, pre_tech = 91021, refresh_type = 1, row = 9005, tech_id = 91031}
+, 
+[91032] = {activity_tech_type = 9, branch = 23, col = 2, icon = "S1Tech07", name = 317929, pre_tech = 91022, refresh_type = 1, row = 9006, tech_id = 91032}
+, 
+[91041] = {activity_tech_type = 9, branch = 23, col = 1, icon = "S1Tech43", name = 480021, pre_tech = 91031, refresh_type = 1, row = 9007, tech_id = 91041}
+, 
+[91042] = {activity_tech_type = 9, branch = 23, col = 2, icon = "S1Tech58", name = 75512, pre_tech = 91032, refresh_type = 1, row = 9008, tech_id = 91042}
+, 
+[91051] = {activity_tech_type = 9, branch = 23, col = 1, icon = "S1Tech46", name = 324779, pre_tech = 91041, refresh_type = 1, row = 9009, tech_id = 91051}
+, 
+[91052] = {activity_tech_type = 9, branch = 23, col = 2, icon = "S1Tech45", name = 389590, pre_tech = 91042, refresh_type = 1, row = 9010, tech_id = 91052}
+, 
+[91062] = {activity_tech_type = 9, branch = 23, col = 2, icon = "S1Tech53", name = 487852, pre_tech = 91052, refresh_type = 1, row = 9012, tech_id = 91062}
+, 
+[92011] = {activity_tech_type = 9, branch = 24, col = 3, icon = "Spring23Tech_114", name = 234574, pre_tech_level = 0, refresh_type = 1, row = 9001, tech_id = 92011}
+, 
+[92012] = {activity_tech_type = 9, branch = 24, icon = "Spring23Tech_113", name = 450588, pre_tech_level = 0, refresh_type = 1, row = 9002, tech_id = 92012}
+, 
+[92021] = {activity_tech_type = 9, branch = 24, col = 3, icon = "S1Tech60", name = 263610, pre_tech = 92011, refresh_type = 1, row = 9003, tech_id = 92021}
+, 
+[92022] = {activity_tech_type = 9, branch = 24, icon = "S1Tech62", name = 28888, pre_tech = 92012, refresh_type = 1, row = 9004, tech_id = 92022}
+, 
+[92031] = {activity_tech_type = 9, branch = 24, col = 3, icon = "Spring23Tech_118", name = 111514, pre_tech = 92021, refresh_type = 1, row = 9005, tech_id = 92031}
+, 
+[92032] = {activity_tech_type = 9, branch = 24, icon = "S1Tech49", name = 128784, pre_tech = 92022, refresh_type = 1, row = 9006, tech_id = 92032}
+, 
+[92041] = {activity_tech_type = 9, branch = 24, col = 3, icon = "S1Tech50", name = 413272, pre_tech = 92031, refresh_type = 1, row = 9007, tech_id = 92041}
+, 
+[92042] = {activity_tech_type = 9, branch = 24, icon = "Spring23Tech_116", name = 465483, pre_tech = 92032, refresh_type = 1, row = 9008, tech_id = 92042}
+, 
+[92051] = {activity_tech_type = 9, branch = 24, col = 3, icon = "S1Tech61", name = 257017, pre_tech = 92041, refresh_type = 1, row = 9009, tech_id = 92051}
+, 
+[92052] = {activity_tech_type = 9, branch = 24, icon = "S1Tech63", name = 416679, pre_tech = 92042, refresh_type = 1, row = 9010, tech_id = 92052}
+, 
+[92061] = {activity_tech_type = 9, branch = 24, col = 3, icon = "Spring23Tech_112", name = 262742, pre_tech = 92051, refresh_type = 1, row = 9011, tech_id = 92061}
+, 
+[92062] = {activity_tech_type = 9, branch = 24, icon = "S1Tech56", name = 275428, pre_tech = 92052, refresh_type = 1, row = 9012, tech_id = 92062}
+, 
+[93011] = {activity_tech_type = 9, branch = 25, col = 5, icon = "Spring23Tech_09", name = 497537, pre_tech_level = 0, refresh_type = 1, row = 9001, tech_id = 93011}
+, 
+[93012] = {activity_tech_type = 9, branch = 25, col = 6, pre_tech_level = 0, refresh_type = 1, row = 9002, tech_id = 93012}
+, 
+[93021] = {activity_tech_type = 9, branch = 25, col = 5, icon = "Spring23Tech_07", name = 124718, pre_tech = 93011, refresh_type = 1, row = 9003, tech_id = 93021}
+, 
+[93022] = {activity_tech_type = 9, branch = 25, col = 6, icon = "Winter23Tech_201", name = 427436, pre_tech = 93012, refresh_type = 1, row = 9004, tech_id = 93022}
+, 
+[93031] = {activity_tech_type = 9, branch = 25, col = 5, icon = "S1Tech10", name = 265921, pre_tech = 93021, refresh_type = 1, row = 9005, tech_id = 93031}
+, 
+[93032] = {activity_tech_type = 9, branch = 25, col = 6, icon = "Spring23Tech_16", name = 505726, pre_tech = 93022, refresh_type = 1, row = 9006, tech_id = 93032}
+, 
+[93041] = {activity_tech_type = 9, branch = 25, col = 5, icon = "S1Tech11", name = 170358, pre_tech = 93031, refresh_type = 1, row = 9007, tech_id = 93041}
+, 
+[93042] = {activity_tech_type = 9, branch = 25, col = 6, icon = "Spring23Tech_15", name = 204888, pre_tech = 93032, refresh_type = 1, row = 9008, tech_id = 93042}
+, 
+[93051] = {activity_tech_type = 9, branch = 25, col = 5, icon = "S1Tech48", name = 72441, pre_tech = 93041, refresh_type = 1, row = 9009, tech_id = 93051}
+, 
+[93052] = {activity_tech_type = 9, branch = 25, col = 6, icon = "S1Tech40", name = 302746, pre_tech = 93042, refresh_type = 1, row = 9010, tech_id = 93052}
+, 
+[93061] = {activity_tech_type = 9, branch = 25, col = 5, icon = "S1Tech54", name = 382941, pre_tech = 93051, refresh_type = 1, row = 9011, tech_id = 93061}
+, 
+[93062] = {activity_tech_type = 9, branch = 25, col = 6, icon = "S1Tech55", name = 124262, pre_tech = 93052, refresh_type = 1, row = 9012, tech_id = 93062}
+, 
+[94011] = {activity_tech_type = 9, branch = 26, col = 7, icon = "S1Tech51", name = 249777, pre_tech_level = 0, pre_total_level = 12, refresh_type = 1, row = 9001, tech_id = 94011}
+, 
+[94012] = {activity_tech_type = 9, branch = 26, col = 7, icon = "S1Tech13", name = 201872, pre_tech = 94011, pre_total_level = 24, refresh_type = 1, row = 9002, tech_id = 94012}
+, 
+[94013] = {activity_tech_type = 9, branch = 26, col = 7, icon = "S1Tech15", name = 220814, pre_tech = 94012, pre_total_level = 36, refresh_type = 1, row = 9003, tech_id = 94013}
+, 
+[94014] = {activity_tech_type = 9, branch = 26, col = 7, icon = "S1Tech02", name = 270443, pre_tech = 94013, pre_total_level = 48, refresh_type = 1, row = 9004, tech_id = 94014}
+, 
+[94015] = {activity_tech_type = 9, branch = 26, col = 7, icon = "S1Tech01", name = 219118, pre_tech = 94014, pre_total_level = 60, refresh_type = 1, row = 9005, tech_id = 94015}
+, 
+[94016] = {activity_tech_type = 9, branch = 26, col = 7, icon = "S1Tech14", name = 367388, pre_tech = 94015, pre_total_level = 72, refresh_type = 1, row = 9006, tech_id = 94016}
+, 
+[94017] = {activity_tech_type = 9, branch = 26, col = 7, icon = "S1Tech59", name = 29469, pre_tech = 94016, pre_total_level = 84, refresh_type = 1, row = 9007, tech_id = 94017}
+, 
+[94018] = {activity_tech_type = 9, branch = 26, col = 7, icon = "S1Tech03", name = 380424, pre_tech = 94017, pre_total_level = 96, refresh_type = 1, row = 9008, tech_id = 94018}
+, 
+[94019] = {activity_tech_type = 9, branch = 26, col = 7, icon = "S1Tech52", name = 183904, pre_tech = 94018, pre_total_level = 108, refresh_type = 1, row = 9009, tech_id = 94019}
+, 
 [200101] = {branch = 1, col = 0, icon = "Carnival22Tech_200101", name = 173989, pre_tech_level = 0, tech_id = 200101}
 , 
 [200102] = {branch = 1, col = 0, icon = "Carnival22Tech_200102", name = 276833, pre_tech_level = 0, tech_id = 200102}
@@ -689,7 +777,7 @@ local activity_tech = {
 , 
 [800304] = {activity_tech_type = 8, branch = 21, col = 0, icon = "Carnival22Tech_200304", name = 198864, pre_tech_level = 0, tech_id = 800304}
 }
-local __default_values = {activity_tech_type = 2, branch = 0, col = 4, frame = 0, icon = "Spring23Tech_08", name = 380711, pre_tech = 0, pre_tech_level = 1, pre_total_level = 0, refresh_type = 0, row = 0, tech_id = 10011}
+local __default_values = {activity_tech_type = 2, branch = 0, col = 4, frame = 0, icon = "Spring23Tech_08", name = 196328, pre_tech = 0, pre_tech_level = 1, pre_total_level = 0, refresh_type = 0, row = 0, tech_id = 10011}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")
@@ -841,7 +929,7 @@ techRowIdDic = {
 }
 , 
 {
-techIds = {62017, 61011, 61012, 61021, 61022, 61032, 61042, 61051, 61052, 61061, 61062, 61072, 61082, 60061, 60063, 61091, 61092, 61093, 60072, 61102, 60082, 60091, 60092, 60093, 60102, 60032, 60042, 62087, 62077, 62067, 62057, 62047, 62037, 62027, 61063, 61053, 61023, 61013, 60062, 60053, 60052, 60051, 60023, 60022, 60021, 60013, 60012, 60011}
+techIds = {62017, 61011, 61012, 61021, 61022, 61032, 61042, 61051, 61052, 61061, 61062, 61072, 61082, 60061, 60063, 61091, 61092, 61093, 60072, 61102, 60082, 60091, 60092, 60093, 60102, 60042, 60032, 62087, 62077, 62067, 62057, 62047, 62037, 62027, 61063, 61053, 61023, 61013, 60062, 60053, 60052, 60051, 60023, 60022, 60021, 60013, 60012, 60011}
 , 
 techRowIdDic = {
 [6001] = {62017, 61011, 61012, 61013, 60013, 60012, 60011}
@@ -867,18 +955,18 @@ techRowIdDic = {
 }
 , 
 {
-techIds = {71022, 72054, 72056, 71033, 72065, 71042, 72074, 71051, 72076, 71053, 73057, 72085, 71062, 73047, 73037, 73027, 73017, 71071, 72045, 71073, 72036, 72034, 71082, 72025, 72016, 72014, 71031, 71013, 71011}
+techIds = {73017, 73057, 72025, 73047, 71022, 72054, 72056, 71033, 72065, 71042, 72074, 71051, 72076, 71053, 72085, 71062, 73037, 73027, 71071, 72045, 71073, 72036, 72034, 71082, 72016, 72014, 71031, 71013, 71011}
 , 
 techRowIdDic = {
 [7001] = {73017, 72016, 72014, 71013, 71011}
 , 
-[7002] = {71022, 73027, 72025}
+[7002] = {72025, 71022, 73027}
 , 
 [7003] = {71033, 73037, 72036, 72034, 71031}
 , 
-[7004] = {71042, 73047, 72045}
+[7004] = {73047, 71042, 72045}
 , 
-[7005] = {72054, 72056, 71051, 71053, 73057}
+[7005] = {73057, 72054, 72056, 71051, 71053}
 , 
 [7006] = {72065, 71062}
 , 
@@ -889,20 +977,20 @@ techRowIdDic = {
 }
 , 
 {
-techIds = {800301, 800303, 83015, 83026, 83035, 83046, 82033, 83066, 83075, 83086, 83095, 82073, 83106, 81062, 83115, 82093, 81071, 83126, 82104, 81082, 83135, 82113, 81091, 83146, 82124, 81102, 83156, 82133, 81111, 82144, 81122, 82154, 81131, 82164, 81142, 82174, 81152, 83055, 82084, 82064, 82053, 82044, 82024, 82013, 81051, 81042, 81031, 81022, 81011, 800304, 800302, 800204, 800202, 800104, 800103, 800102, 800101, 800201, 800203}
+techIds = {800301, 800303, 83015, 83026, 83035, 83046, 82033, 83066, 83075, 83086, 83095, 82073, 83106, 81062, 83115, 82093, 81071, 83126, 82104, 81082, 83135, 82113, 81091, 83146, 82124, 81102, 83156, 82133, 81111, 82144, 81122, 82154, 81131, 82164, 81142, 82174, 81152, 81051, 82013, 800104, 800204, 800304, 81042, 800202, 81022, 83055, 82084, 82064, 82053, 82044, 82024, 81031, 81011, 800302, 800103, 800102, 800101, 800201, 800203}
 , 
 techRowIdDic = {
-[0] = {800301, 800303, 800304, 800302, 800204, 800202, 800104, 800103, 800102, 800101, 800201, 800203}
+[0] = {800301, 800303, 800104, 800204, 800304, 800202, 800302, 800103, 800102, 800101, 800201, 800203}
 , 
 [8001] = {83015, 82013, 81011}
 , 
-[8002] = {83026, 82024, 81022}
+[8002] = {83026, 81022, 82024}
 , 
 [8003] = {83035, 82033, 81031}
 , 
-[8004] = {83046, 82044, 81042}
+[8004] = {83046, 81042, 82044}
 , 
-[8005] = {83055, 82053, 81051}
+[8005] = {81051, 83055, 82053}
 , 
 [8006] = {83066, 81062, 82064}
 , 
@@ -929,6 +1017,36 @@ techRowIdDic = {
 [8017] = {83135, 82133, 81131}
 }
 }
+, 
+{
+techIds = {94019, 94018, 94016, 94014, 94013, 94012, 94011, 93061, 93052, 93041, 93032, 93031, 93021, 93012, 93011, 92061, 92051, 92042, 92041, 92031, 92022, 92021, 92011, 91062, 91051, 91042, 91041, 91031, 91022, 91021, 91011, 94015, 94017, 93022, 92012, 93042, 93051, 92032, 91012, 93062, 92052, 91032, 92062, 91052}
+, 
+techRowIdDic = {
+[9001] = {94011, 93011, 92011, 91011}
+, 
+[9002] = {94012, 93012, 92012, 91012}
+, 
+[9003] = {94013, 93021, 92021, 91021}
+, 
+[9004] = {94014, 92022, 91022, 93022}
+, 
+[9005] = {93031, 92031, 91031, 94015}
+, 
+[9006] = {94016, 93032, 92032, 91032}
+, 
+[9007] = {93041, 92041, 91041, 94017}
+, 
+[9008] = {94018, 92042, 91042, 93042}
+, 
+[9009] = {94019, 92051, 91051, 93051}
+, 
+[9010] = {93052, 92052, 91052}
+, 
+[9011] = {93061, 92061}
+, 
+[9012] = {91062, 93062, 92062}
+}
+}
 }
 , 
 couldUnlockChipSuitDic = {
@@ -953,6 +1071,8 @@ techTypeCostIdDic = {
 {[1223] = 1144920}
 , 
 {[1041] = 882900, [1042] = 6400}
+, 
+{[1227] = 1075200}
 }
 }
 ;

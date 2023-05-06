@@ -25,7 +25,7 @@ end
 
 UIWhiteDay2048Score.OnBtnGameAgain = function(self)
   -- function num : 0_2 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
   if self._gameCtrl ~= nil then
     (self._gameCtrl):StartNew2048Game()
   end
@@ -39,7 +39,7 @@ end
 
 UIWhiteDay2048Score.OnBtnBGClick = function(self)
   -- function num : 0_4 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIWhiteDay2048Score.OnDelete = function(self)

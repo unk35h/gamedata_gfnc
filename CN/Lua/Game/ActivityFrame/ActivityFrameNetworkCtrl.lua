@@ -215,6 +215,22 @@ ActivityFrameNetworkCtrl.SC_ACTIVITY_ConcreteInfos = function(self, msg)
                                         invitationCtrl:AddInvitation(v)
                                       end
                                     end
+                                    do
+                                      do
+                                        if msg.activityKeyExertion ~= nil then
+                                          local keyExertionCtrl = ControllerManager:GetController(ControllerTypeId.ActivityKeyExertion, true)
+                                          keyExertionCtrl:UpdateAllKeyExertionData(msg.activityKeyExertion)
+                                        end
+                                        do
+                                          if #msg.activitySeason > 0 then
+                                            local seasonCtrl = ControllerManager:GetController(ControllerTypeId.ActivitySeason, true)
+                                            seasonCtrl:InitSeasons(msg.activitySeason)
+                                          end
+                                          ;
+                                          (PlayerDataCenter.activityStarUpData):InitActivityStarUp(msg.activityRookieStar)
+                                        end
+                                      end
+                                    end
                                   end
                                 end
                               end
@@ -456,7 +472,14 @@ ActivityFrameNetworkCtrl.CS_Activity_Quest_Commit = function(self, id, questId, 
   ;
   (self._singleTaskTable).questId = questId
   self:SendMsg(proto_csmsg_MSG_ID.MSG_CS_Activity_Quest_Commit, proto_csmsg.CS_Activity_Quest_Commit, self._singleTaskTable)
-  cs_WaitNetworkResponse:StartWait(proto_csmsg_MSG_ID.MSG_CS_Activity_Quest_Commit, callback, proto_csmsg_MSG_ID.MSG_SC_Activity_Quest_Commit)
+  cs_WaitNetworkResponse:StartWait(proto_csmsg_MSG_ID.MSG_CS_Activity_Quest_Commit, function()
+    -- function num : 0_28_0 , upvalues : _ENV, questId, callback
+    MsgCenter:Broadcast(eMsgEventId.TaskCommitComplete, (ConfigData.task)[questId])
+    if callback ~= nil then
+      callback()
+    end
+  end
+, proto_csmsg_MSG_ID.MSG_SC_Activity_Quest_Commit)
 end
 
 ActivityFrameNetworkCtrl.SC_Activity_Quest_Commit = function(self, msg)

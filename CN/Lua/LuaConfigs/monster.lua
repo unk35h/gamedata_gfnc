@@ -87,56 +87,59 @@ local __rt_84 = {209400, 209401, 209402, 209403, 209404}
 local __rt_85 = {209402, 209403, 209404}
 local __rt_86 = {511, 201104, 201102}
 local __rt_87 = {5}
-local __rt_88 = {1, 12, 20}
-local __rt_89 = {2, 3, 20}
-local __rt_90 = {2100001, 210012, 210013}
-local __rt_91 = {1, 18, 21}
-local __rt_92 = {1, 12, 21}
-local __rt_93 = {210800, 210801, 210802}
-local __rt_94 = {210900, 210901, 210902, 210903, 210904}
-local __rt_95 = {2009800, 2009801, 2009802}
-local __rt_96 = {211600, 211601}
-local __rt_97 = {211500, 211501, 211502}
-local __rt_98 = {204400, 204411, 999001}
-local __rt_99 = {2, 5, 20}
-local __rt_100 = {543, 204311, 999001}
-local __rt_101 = {9, 11, 20}
-local __rt_102 = {206500, 206501, 206502, 206503}
-local __rt_103 = {206502, 206503}
-local __rt_104 = {206600, 206601, 206602, 206603}
-local __rt_105 = {206602, 206603}
-local __rt_106 = {511, 201101, 201103}
-local __rt_107 = {204601}
-local __rt_108 = {204602}
-local __rt_109 = {204603}
-local __rt_110 = {505, 300001, 300002, 300003, 200001}
-local __rt_111 = {300003}
-local __rt_112 = {200903, 200902}
-local __rt_113 = {201003, 201002}
-local __rt_114 = {201903, 201904}
-local __rt_115 = {202003}
-local __rt_116 = {203205, 203207}
-local __rt_117 = {60004}
-local __rt_118 = {1, 3, 13}
-local __rt_119 = {3, 7, 23}
-local __rt_120 = {206800, 206801, 206802, 206803}
-local __rt_121 = {206802, 206803}
-local __rt_122 = {206700, 206701, 206702, 206703, 206704, 206706}
-local __rt_123 = {1, 5, 18}
-local __rt_124 = {206702, 206703, 206704, 206706}
-local __rt_125 = {506, 206001}
-local __rt_126 = {204400, 204401, 999001}
-local __rt_127 = {204500, 204501, 204502, 999001}
-local __rt_128 = {1, 8, 21}
-local __rt_129 = {543, 204301, 999001}
-local __rt_130 = {2, 3, 21}
-local __rt_131 = {542, 204203, 204201, 204202, 999001}
-local __rt_132 = {601, 70008}
-local __rt_133 = {204804, 204803}
-local __rt_134 = {206700, 206707, 206702, 206703, 206704, 206706}
-local __rt_135 = {602}
-local __rt_136 = {2, 3, 5}
-local __rt_137 = {102500, 1025012, 1025022}
+local __rt_88 = {210100, 210101}
+local __rt_89 = {1, 12, 20}
+local __rt_90 = {2, 3, 20}
+local __rt_91 = {2100001, 210012, 210013}
+local __rt_92 = {1, 18, 21}
+local __rt_93 = {1, 12, 21}
+local __rt_94 = {210800, 210801, 210802}
+local __rt_95 = {210900, 210901, 210902, 210903, 210904}
+local __rt_96 = {2009800, 2009801, 2009802}
+local __rt_97 = {211600, 211601}
+local __rt_98 = {211500, 211501, 211502}
+local __rt_99 = {204400, 204411, 999001}
+local __rt_100 = {2, 5, 20}
+local __rt_101 = {543, 204311, 999001}
+local __rt_102 = {9, 11, 20}
+local __rt_103 = {206500, 206501, 206502, 206503}
+local __rt_104 = {206502, 206503}
+local __rt_105 = {206600, 206601, 206602, 206603}
+local __rt_106 = {206602, 206603}
+local __rt_107 = {511, 201101, 201103}
+local __rt_108 = {204601}
+local __rt_109 = {204602}
+local __rt_110 = {204603}
+local __rt_111 = {505, 300001, 300002, 300003, 200001}
+local __rt_112 = {300003}
+local __rt_113 = {200903, 200902}
+local __rt_114 = {201003, 201002}
+local __rt_115 = {201903, 201904}
+local __rt_116 = {202003}
+local __rt_117 = {203205, 203207}
+local __rt_118 = {60004}
+local __rt_119 = {1, 3, 13}
+local __rt_120 = {3, 7, 23}
+local __rt_121 = {206800, 206801, 206802, 206803}
+local __rt_122 = {206802, 206803}
+local __rt_123 = {206700, 206701, 206702, 206703, 206704, 206706}
+local __rt_124 = {1, 5, 18}
+local __rt_125 = {206702, 206703, 206704, 206706}
+local __rt_126 = {506, 206001}
+local __rt_127 = {204400, 204401, 999001}
+local __rt_128 = {204500, 204501, 204502, 999001}
+local __rt_129 = {1, 8, 21}
+local __rt_130 = {543, 204301, 999001}
+local __rt_131 = {2, 3, 21}
+local __rt_132 = {542, 204203, 204201, 204202, 999001}
+local __rt_133 = {601, 70008}
+local __rt_134 = {208200, 208201}
+local __rt_135 = {502, 200213}
+local __rt_136 = {204804, 204803}
+local __rt_137 = {206700, 206707, 206702, 206703, 206704, 206706}
+local __rt_138 = {602}
+local __rt_139 = {2, 3, 5}
+local __rt_140 = {102500, 1025012, 1025022}
 local monster = {
 [100] = {career = 1, 
 enemy_skill = {70000}
@@ -414,9 +417,7 @@ enemy_skill = {209604, 209602}
 enemy_skill = {209605, 209602}
 , id = 20075, info = 7063, monster_tag = __rt_87, move_spd = 300, name = 2491, src_id = 2098}
 , 
-[20076] = {
-enemy_skill = {210100, 210101}
-, id = 20076, info = 456773, intensity = 2, monster_tag = __rt_50, move_spd = 225, name = 456773, src_id = 2101}
+[20076] = {enemy_skill = __rt_88, id = 20076, info = 456773, intensity = 2, monster_tag = __rt_50, move_spd = 225, name = 456773, src_id = 2101}
 , 
 [20077] = {camp = 2, career = 2, 
 enemy_skill = {210200, 210201}
@@ -444,19 +445,19 @@ skill_array = {210601, 210602}
 , 
 [20082] = {camp = 2, 
 enemy_skill = {208200, 208211}
-, id = 20082, info = 437201, monster_tag = __rt_88, move_spd = 225, name = 437201, src_id = 2086}
+, id = 20082, info = 437201, monster_tag = __rt_89, move_spd = 225, name = 437201, src_id = 2086}
 , 
 [20083] = {camp = 2, career = 2, 
 enemy_skill = {208300, 208311}
-, id = 20083, info = 80921, monster_tag = __rt_89, move_spd = 75, name = 80921, range = 4, src_id = 2087}
+, id = 20083, info = 80921, monster_tag = __rt_90, move_spd = 75, name = 80921, range = 4, src_id = 2087}
 , 
 [20084] = {camp = 2, career = 2, 
 enemy_skill = {208400, 208411}
-, id = 20084, info = 511893, monster_tag = __rt_89, move_spd = 75, name = 511893, range = 4, src_id = 2088}
+, id = 20084, info = 511893, monster_tag = __rt_90, move_spd = 75, name = 511893, range = 4, src_id = 2088}
 , 
 [20085] = {camp = 2, 
 enemy_skill = {208500, 208511}
-, id = 20085, info = 36396, monster_tag = __rt_88, move_spd = 225, name = 36396, src_id = 2089}
+, id = 20085, info = 36396, monster_tag = __rt_89, move_spd = 225, name = 36396, src_id = 2089}
 , 
 [20086] = {camp = 2, career = 5, 
 enemy_skill = {210200, 210211}
@@ -470,7 +471,7 @@ enemy_skill = {2099001, 209911}
 enemy_skill = {210300, 210311, 210312}
 , id = 20088, info = 22525, monster_tag = __rt_58, move_spd = 75, name = 504971, range = 10, src_id = 2103}
 , 
-[20089] = {camp = 2, career = 4, enemy_skill = __rt_90, id = 20089, info = "", intensity = 2, monster_tag = __rt_1, move_spd = 0, name = 503810, range = 10, src_id = 2100}
+[20089] = {camp = 2, career = 4, enemy_skill = __rt_91, id = 20089, info = "", intensity = 2, monster_tag = __rt_1, move_spd = 0, name = 503810, range = 10, src_id = 2100}
 , 
 [20090] = {
 enemy_skill = {210100, 210111}
@@ -478,41 +479,41 @@ enemy_skill = {210100, 210111}
 , 
 [20091] = {camp = 2, 
 enemy_skill = {208600, 208611, 208612, 208613, 999001}
-, id = 20091, info = 190911, intensity = 2, monster_tag = __rt_91, move_spd = 225, name = 190911, src_id = 2090}
+, id = 20091, info = 190911, intensity = 2, monster_tag = __rt_92, move_spd = 225, name = 190911, src_id = 2090}
 , 
 [20092] = {camp = 2, 
 enemy_skill = {208700, 208711, 208712, 208713, 999001}
-, id = 20092, info = 65188, intensity = 2, monster_tag = __rt_92, name = 65188, src_id = 2091}
+, id = 20092, info = 65188, intensity = 2, monster_tag = __rt_93, name = 65188, src_id = 2091}
 , 
-[20093] = {break_id = 10103, camp = 2, career = 5, enemy_skill = __rt_93, id = 20093, info = 12773, intensity = 3, monster_tag = __rt_70, name = 12773, range = 4, src_id = 2118}
+[20093] = {break_id = 10103, camp = 2, career = 5, enemy_skill = __rt_94, id = 20093, info = 12773, intensity = 3, monster_tag = __rt_70, name = 12773, range = 4, src_id = 2118}
 , 
-[20097] = {blood_bar_num = 1, break_id = 10104, camp = 2, career = 4, enemy_skill = __rt_94, id = 20097, info = 369521, intensity = 4, monster_tag = __rt_64, name = 369521, range = 4, src_id = 2109}
+[20097] = {blood_bar_num = 1, break_id = 10104, camp = 2, career = 4, enemy_skill = __rt_95, id = 20097, info = 369521, intensity = 4, monster_tag = __rt_64, name = 369521, range = 4, src_id = 2109}
 , 
-[20098] = {break_id = 10102, camp = 2, enemy_skill = __rt_95, id = 20098, info = 223299, intensity = 2, monster_tag = __rt_9, name = 415318, src_id = 2061}
+[20098] = {break_id = 10102, camp = 2, enemy_skill = __rt_96, id = 20098, info = 223299, intensity = 2, monster_tag = __rt_9, name = 415318, src_id = 2061}
 , 
-[20099] = {break_id = 10101, camp = 2, career = 4, enemy_skill = __rt_96, id = 20099, info = 430125, monster_tag = __rt_35, name = 77036, range = 10, src_id = 2116}
+[20099] = {break_id = 10101, camp = 2, career = 4, enemy_skill = __rt_97, id = 20099, info = 430125, monster_tag = __rt_35, name = 77036, range = 10, src_id = 2116}
 , 
-[20101] = {break_id = 10102, camp = 2, career = 4, enemy_skill = __rt_97, id = 20101, info = "snooper", intensity = 2, monster_tag = __rt_35, name = 180264, range = 3, src_id = 2115}
+[20101] = {break_id = 10102, camp = 2, career = 4, enemy_skill = __rt_98, id = 20101, info = "snooper", intensity = 2, monster_tag = __rt_35, name = 180264, range = 3, src_id = 2115}
 , 
 [20102] = {blood_bar_num = 1, break_id = 10304, camp = 2, career = 2, enemy_skill = __rt_84, id = 20102, info = 148531, intensity = 4, monster_tag = __rt_58, name = 148531, range = 10, skill_array = __rt_85, src_id = 2094}
 , 
-[20103] = {camp = 2, career = 4, enemy_skill = __rt_96, id = 20103, info = 430125, monster_tag = __rt_35, name = 77036, range = 10, src_id = 2116}
+[20103] = {camp = 2, career = 4, enemy_skill = __rt_97, id = 20103, info = 430125, monster_tag = __rt_35, name = 77036, range = 10, src_id = 2116}
 , 
-[20104] = {camp = 2, career = 4, enemy_skill = __rt_97, id = 20104, info = "snooper", intensity = 2, monster_tag = __rt_35, name = 180264, range = 3, src_id = 2115}
+[20104] = {camp = 2, career = 4, enemy_skill = __rt_98, id = 20104, info = "snooper", intensity = 2, monster_tag = __rt_35, name = 180264, range = 3, src_id = 2115}
 , 
-[20105] = {camp = 2, career = 1, enemy_skill = __rt_95, id = 20105, info = 223299, intensity = 2, monster_tag = __rt_9, name = 415318, src_id = 2061}
+[20105] = {camp = 2, career = 1, enemy_skill = __rt_96, id = 20105, info = 223299, intensity = 2, monster_tag = __rt_9, name = 415318, src_id = 2061}
 , 
-[20106] = {break_id = 10401, camp = 2, career = 2, enemy_skill = __rt_98, id = 20106, info = 161465, monster_tag = __rt_99, move_spd = 120, name = 432750, range = 3, src_id = 2044}
+[20106] = {break_id = 10401, camp = 2, career = 2, enemy_skill = __rt_99, id = 20106, info = 161465, monster_tag = __rt_100, move_spd = 120, name = 432750, range = 3, src_id = 2044}
 , 
-[20107] = {break_id = 10401, camp = 2, career = 5, enemy_skill = __rt_100, id = 20107, info = 52553, monster_tag = __rt_101, move_spd = 90, name = 90833, range = 10, src_id = 2043}
+[20107] = {break_id = 10401, camp = 2, career = 5, enemy_skill = __rt_101, id = 20107, info = 52553, monster_tag = __rt_102, move_spd = 90, name = 90833, range = 10, src_id = 2043}
 , 
-[20108] = {break_id = 10104, camp = 2, career = 4, enemy_skill = __rt_94, id = 20108, info = 80525, intensity = 4, monster_tag = __rt_64, name = 369521, range = 4, src_id = 2109}
+[20108] = {break_id = 10104, camp = 2, career = 4, enemy_skill = __rt_95, id = 20108, info = 80525, intensity = 4, monster_tag = __rt_64, name = 369521, range = 4, src_id = 2109}
 , 
-[20109] = {blood_bar_num = 1, break_id = 10103, camp = 2, career = 5, enemy_skill = __rt_93, id = 20109, info = 12773, intensity = 3, monster_tag = __rt_70, name = 12773, range = 4, src_id = 2118}
+[20109] = {blood_bar_num = 1, break_id = 10103, camp = 2, career = 5, enemy_skill = __rt_94, id = 20109, info = 12773, intensity = 3, monster_tag = __rt_70, name = 12773, range = 4, src_id = 2118}
 , 
-[20110] = {break_id = 10404, enemy_skill = __rt_102, id = 20110, info = 297983, intensity = 4, monster_tag = __rt_1, name = 312720, skill_array = __rt_103, src_id = 2065}
+[20110] = {break_id = 10404, enemy_skill = __rt_103, id = 20110, info = 297983, intensity = 4, monster_tag = __rt_1, name = 312720, skill_array = __rt_104, src_id = 2065}
 , 
-[20111] = {break_id = 10404, enemy_skill = __rt_104, id = 20111, info = 10799, intensity = 4, monster_tag = __rt_1, name = 283328, skill_array = __rt_105, src_id = 2066}
+[20111] = {break_id = 10404, enemy_skill = __rt_105, id = 20111, info = 10799, intensity = 4, monster_tag = __rt_1, name = 283328, skill_array = __rt_106, src_id = 2066}
 , 
 [20112] = {blood_bar_num = 1, break_id = 10404, career = 2, enemy_skill = __rt_74, group = 2, id = 20112, info = 281282, intensity = 4, monster_tag = __rt_1, name = 56227, range = 3, skill_array = __rt_75, src_id = 2080}
 , 
@@ -528,7 +529,7 @@ enemy_skill = {208700, 208711, 208712, 208713, 999001}
 enemy_skill = {502}
 , id = 25000, info = 497586, monster_tag = __rt_35, move_spd = 300, name = 522987, range = 3, src_id = 2002}
 , 
-[25001] = {career = 1, enemy_skill = __rt_106, id = 25001, info = 338733, monster_tag = __rt_5, move_spd = 300, name = 28620, src_id = 2011}
+[25001] = {career = 1, enemy_skill = __rt_107, id = 25001, info = 338733, monster_tag = __rt_5, move_spd = 300, name = 28620, src_id = 2011}
 , 
 [25002] = {enemy_skill = __rt_22, id = 25002, info = 496840, monster_tag = __rt_23, move_spd = 225, name = 43724, src_id = 2007}
 , 
@@ -544,11 +545,11 @@ enemy_skill = {201804}
 enemy_skill = {201805}
 , id = 25005, info = 467586, intensity = 2, move_spd = 225, name = 418305, src_id = 2018}
 , 
-[25006] = {camp = 2, enemy_skill = __rt_107, id = 25006, info = 467586, intensity = 2, move_spd = 0, name = 149785}
+[25006] = {camp = 2, enemy_skill = __rt_108, id = 25006, info = 467586, intensity = 2, move_spd = 0, name = 149785}
 , 
-[25007] = {camp = 2, enemy_skill = __rt_108, id = 25007, info = 467586, intensity = 2, move_spd = 0, name = 149785}
+[25007] = {camp = 2, enemy_skill = __rt_109, id = 25007, info = 467586, intensity = 2, move_spd = 0, name = 149785}
 , 
-[25008] = {camp = 2, enemy_skill = __rt_109, id = 25008, info = 467586, intensity = 2, move_spd = 0, name = 149785}
+[25008] = {camp = 2, enemy_skill = __rt_110, id = 25008, info = 467586, intensity = 2, move_spd = 0, name = 149785}
 , 
 [25013] = {
 enemy_skill = {201813}
@@ -562,21 +563,21 @@ enemy_skill = {201814}
 enemy_skill = {201815}
 , id = 25015, info = 467586, intensity = 2, move_spd = 225, name = 418305, src_id = 2018}
 , 
-[30000] = {blood_bar_num = 1, career = 1, enemy_skill = __rt_110, id = 30000, info = 286718, intensity = 3, 
+[30000] = {blood_bar_num = 1, career = 1, enemy_skill = __rt_111, id = 30000, info = 286718, intensity = 3, 
 monster_tag = {1, 4, 8}
-, name = 335946, skill_array = __rt_111, src_id = 2005}
+, name = 335946, skill_array = __rt_112, src_id = 2005}
 , 
-[30001] = {blood_bar_num = 1, enemy_skill = __rt_37, id = 30001, info = 355889, intensity = 4, monster_tag = __rt_38, move_spd = 225, name = 453828, skill_array = __rt_112, src_id = 2009}
+[30001] = {blood_bar_num = 1, enemy_skill = __rt_37, id = 30001, info = 355889, intensity = 4, monster_tag = __rt_38, move_spd = 225, name = 453828, skill_array = __rt_113, src_id = 2009}
 , 
-[30002] = {blood_bar_num = 1, enemy_skill = __rt_39, id = 30002, info = 216754, intensity = 4, monster_tag = __rt_38, move_spd = 225, name = 335242, skill_array = __rt_113, src_id = 2010}
+[30002] = {blood_bar_num = 1, enemy_skill = __rt_39, id = 30002, info = 216754, intensity = 4, monster_tag = __rt_38, move_spd = 225, name = 335242, skill_array = __rt_114, src_id = 2010}
 , 
-[30003] = {blood_bar_num = 1, career = 4, enemy_skill = __rt_40, id = 30003, info = 271976, intensity = 4, monster_tag = __rt_2, move_spd = 180, name = 45989, skill_array = __rt_114, src_id = 2019}
+[30003] = {blood_bar_num = 1, career = 4, enemy_skill = __rt_40, id = 30003, info = 271976, intensity = 4, monster_tag = __rt_2, move_spd = 180, name = 45989, skill_array = __rt_115, src_id = 2019}
 , 
-[30004] = {blood_bar_num = 1, career = 2, enemy_skill = __rt_41, id = 30004, info = 386541, intensity = 4, monster_tag = __rt_42, move_spd = 120, name = 2576, range = 10, skill_array = __rt_115, src_id = 2020}
+[30004] = {blood_bar_num = 1, career = 2, enemy_skill = __rt_41, id = 30004, info = 386541, intensity = 4, monster_tag = __rt_42, move_spd = 120, name = 2576, range = 10, skill_array = __rt_116, src_id = 2020}
 , 
 [30005] = {blood_bar_num = 1, camp = 2, career = 2, 
 enemy_skill = {532, 203204, 203205, 203206, 203207}
-, id = 30005, info = 458706, intensity = 3, monster_tag = __rt_13, move_spd = 90, name = 77751, range = 10, skill_array = __rt_116, src_id = 2032}
+, id = 30005, info = 458706, intensity = 3, monster_tag = __rt_13, move_spd = 90, name = 77751, range = 10, skill_array = __rt_117, src_id = 2032}
 , 
 [40000] = {blood_bar_num = 1, career = 1, 
 enemy_skill = {70002}
@@ -602,21 +603,21 @@ enemy_skill = {201802}
 enemy_skill = {204001}
 , id = 40005, info = 5020, monster_tag = __rt_1, move_spd = 0, name = 373647, src_id = 2040}
 , 
-[40006] = {career = 1, enemy_skill = __rt_117, id = 40006, info = 406234, is_shadow = true, monster_tag = __rt_1, move_spd = 0, name = 279575, src_id = 1005}
+[40006] = {career = 1, enemy_skill = __rt_118, id = 40006, info = 406234, is_shadow = true, monster_tag = __rt_1, move_spd = 0, name = 279575, src_id = 1005}
 , 
-[40007] = {career = 5, enemy_skill = __rt_117, id = 40007, info = 419591, is_shadow = true, monster_tag = __rt_1, move_spd = 0, name = 139228, src_id = 1001}
+[40007] = {career = 5, enemy_skill = __rt_118, id = 40007, info = 419591, is_shadow = true, monster_tag = __rt_1, move_spd = 0, name = 139228, src_id = 1001}
 , 
-[40008] = {career = 4, enemy_skill = __rt_117, id = 40008, info = 294704, is_shadow = true, monster_tag = __rt_1, move_spd = 0, name = 170919, src_id = 1002}
+[40008] = {career = 4, enemy_skill = __rt_118, id = 40008, info = 294704, is_shadow = true, monster_tag = __rt_1, move_spd = 0, name = 170919, src_id = 1002}
 , 
-[40009] = {career = 1, enemy_skill = __rt_117, id = 40009, info = 153420, is_shadow = true, monster_tag = __rt_1, move_spd = 0, name = 53962, src_id = 3008}
+[40009] = {career = 1, enemy_skill = __rt_118, id = 40009, info = 153420, is_shadow = true, monster_tag = __rt_1, move_spd = 0, name = 53962, src_id = 3008}
 , 
-[40010] = {blood_bar_num = 1, career = 1, enemy_skill = __rt_110, id = 40010, info = 286718, intensity = 3, is_shadow = true, monster_tag = __rt_9, name = 335946, skill_array = __rt_111, src_id = 2005}
+[40010] = {blood_bar_num = 1, career = 1, enemy_skill = __rt_111, id = 40010, info = 286718, intensity = 3, is_shadow = true, monster_tag = __rt_9, name = 335946, skill_array = __rt_112, src_id = 2005}
 , 
-[40011] = {blood_bar_num = 1, enemy_skill = __rt_37, id = 40011, info = 355889, intensity = 4, is_shadow = true, monster_tag = __rt_38, move_spd = 225, name = 453828, skill_array = __rt_112, src_id = 2009}
+[40011] = {blood_bar_num = 1, enemy_skill = __rt_37, id = 40011, info = 355889, intensity = 4, is_shadow = true, monster_tag = __rt_38, move_spd = 225, name = 453828, skill_array = __rt_113, src_id = 2009}
 , 
-[40012] = {blood_bar_num = 1, enemy_skill = __rt_39, id = 40012, info = 216754, intensity = 4, is_shadow = true, monster_tag = __rt_38, move_spd = 225, name = 335242, skill_array = __rt_113, src_id = 2010}
+[40012] = {blood_bar_num = 1, enemy_skill = __rt_39, id = 40012, info = 216754, intensity = 4, is_shadow = true, monster_tag = __rt_38, move_spd = 225, name = 335242, skill_array = __rt_114, src_id = 2010}
 , 
-[40013] = {blood_bar_num = 1, career = 4, enemy_skill = __rt_40, id = 40013, info = 271976, intensity = 4, is_shadow = true, monster_tag = __rt_2, move_spd = 180, name = 45989, skill_array = __rt_114, src_id = 2019}
+[40013] = {blood_bar_num = 1, career = 4, enemy_skill = __rt_40, id = 40013, info = 271976, intensity = 4, is_shadow = true, monster_tag = __rt_2, move_spd = 180, name = 45989, skill_array = __rt_115, src_id = 2019}
 , 
 [40014] = {blood_bar_num = 1, career = 2, 
 enemy_skill = {520, 202001, 202002, 202005}
@@ -624,13 +625,13 @@ enemy_skill = {520, 202001, 202002, 202005}
 skill_array = {202005}
 , src_id = 2020}
 , 
-[40015] = {blood_bar_num = 1, camp = 2, career = 4, id = 40015, info = 493133, monster_tag = __rt_118, move_spd = 225, name = 400037, src_id = 2029}
+[40015] = {blood_bar_num = 1, camp = 2, career = 4, id = 40015, info = 493133, monster_tag = __rt_119, move_spd = 225, name = 400037, src_id = 2029}
 , 
-[40016] = {blood_bar_num = 1, camp = 2, career = 4, id = 40016, info = 493133, monster_tag = __rt_118, move_spd = 225, name = 183009, src_id = 2029}
+[40016] = {blood_bar_num = 1, camp = 2, career = 4, id = 40016, info = 493133, monster_tag = __rt_119, move_spd = 225, name = 183009, src_id = 2029}
 , 
-[40017] = {blood_bar_num = 1, camp = 2, career = 4, id = 40017, info = 493133, monster_tag = __rt_118, move_spd = 225, name = 482554, src_id = 2029}
+[40017] = {blood_bar_num = 1, camp = 2, career = 4, id = 40017, info = 493133, monster_tag = __rt_119, move_spd = 225, name = 482554, src_id = 2029}
 , 
-[40018] = {blood_bar_num = 1, camp = 2, career = 4, id = 40018, info = 493133, monster_tag = __rt_118, move_spd = 225, name = 310502, src_id = 2029}
+[40018] = {blood_bar_num = 1, camp = 2, career = 4, id = 40018, info = 493133, monster_tag = __rt_119, move_spd = 225, name = 310502, src_id = 2029}
 , 
 [40019] = {career = 5, 
 enemy_skill = {202301, 202304, 202305}
@@ -650,7 +651,7 @@ enemy_skill = {504, 200401, 200404, 200403}
 , 
 [40023] = {camp = 2, career = 4, 
 enemy_skill = {206710}
-, id = 40023, info = 295449, intensity = 4, monster_tag = __rt_119, move_spd = 0, name = 21450, range = 10, src_id = 2067}
+, id = 40023, info = 295449, intensity = 4, monster_tag = __rt_120, move_spd = 0, name = 21450, range = 10, src_id = 2067}
 , 
 [40024] = {camp = 2, 
 enemy_skill = {204604}
@@ -678,7 +679,7 @@ enemy_skill = {301103}
 , 
 [40030] = {camp = 2, career = 4, 
 enemy_skill = {301104}
-, id = 40030, info = 295449, intensity = 4, monster_tag = __rt_119, move_spd = 0, name = 21450, range = 10, src_id = 2067}
+, id = 40030, info = 295449, intensity = 4, monster_tag = __rt_120, move_spd = 0, name = 21450, range = 10, src_id = 2067}
 , 
 [40031] = {
 enemy_skill = {206500, 206501, 206502, 206503, 206510}
@@ -688,9 +689,9 @@ enemy_skill = {206500, 206501, 206502, 206503, 206510}
 enemy_skill = {206600, 206601, 206602, 206603, 206610}
 , id = 40032, info = 10799, intensity = 4, monster_tag = __rt_1, name = 283328, src_id = 2066}
 , 
-[40033] = {blood_bar_num = 1, enemy_skill = __rt_120, id = 40033, info = 387420, intensity = 4, is_shadow = true, monster_tag = __rt_1, name = 10237, skill_array = __rt_121, src_id = 2068}
+[40033] = {blood_bar_num = 1, enemy_skill = __rt_121, id = 40033, info = 387420, intensity = 4, is_shadow = true, monster_tag = __rt_1, name = 10237, skill_array = __rt_122, src_id = 2068}
 , 
-[40034] = {blood_bar_num = 1, camp = 2, enemy_skill = __rt_122, id = 40034, info = 21450, intensity = 4, is_shadow = true, monster_tag = __rt_123, name = 21450, skill_array = __rt_124, src_id = 2067}
+[40034] = {blood_bar_num = 1, camp = 2, enemy_skill = __rt_123, id = 40034, info = 21450, intensity = 4, is_shadow = true, monster_tag = __rt_124, name = 21450, skill_array = __rt_125, src_id = 2067}
 , 
 [40035] = {career = 1, 
 enemy_skill = {301502, 301504}
@@ -728,7 +729,7 @@ enemy_skill = {204702}
 monster_tag = {1, 3, 7}
 , move_spd = 10, name = 335946, src_id = 2005}
 , 
-[50003] = {career = 1, enemy_skill = __rt_106, id = 50003, info = 338733, monster_tag = __rt_5, move_spd = 10, name = 28620, src_id = 2011}
+[50003] = {career = 1, enemy_skill = __rt_107, id = 50003, info = 338733, monster_tag = __rt_5, move_spd = 10, name = 28620, src_id = 2011}
 , 
 [50005] = {enemy_skill = __rt_22, id = 50005, info = 496840, monster_tag = __rt_23, move_spd = 30, name = 43724, src_id = 2007}
 , 
@@ -766,25 +767,25 @@ enemy_skill = {702, 202501, 202502}
 , 
 [50104] = {career = 2, enemy_skill = __rt_6, id = 50104, info = 156279, monster_tag = __rt_7, move_spd = 50, name = 251695, range = 10, src_id = 2014}
 , 
-[50105] = {career = 1, enemy_skill = __rt_106, id = 50105, info = 338733, monster_tag = __rt_5, move_spd = 50, name = 28620, src_id = 2011}
+[50105] = {career = 1, enemy_skill = __rt_107, id = 50105, info = 338733, monster_tag = __rt_5, move_spd = 50, name = 28620, src_id = 2011}
 , 
-[50106] = {career = 4, enemy_skill = __rt_125, id = 50106, info = 491508, monster_tag = __rt_32, move_spd = 70, name = 341619, range = 10, src_id = 2060}
+[50106] = {career = 4, enemy_skill = __rt_126, id = 50106, info = 491508, monster_tag = __rt_32, move_spd = 70, name = 341619, range = 10, src_id = 2060}
 , 
 [50107] = {camp = 2, career = 4, id = 50107, info = 493133, monster_tag = __rt_52, move_spd = 70, name = 242499, src_id = 2029}
 , 
 [50108] = {break_id = 10201, camp = 2, career = 1, enemy_skill = __rt_53, id = 50108, info = 183248, monster_tag = __rt_54, move_spd = 50, name = 311710, src_id = 2030}
 , 
-[50109] = {camp = 2, career = 2, enemy_skill = __rt_126, id = 50109, info = 161465, monster_tag = __rt_99, move_spd = 70, name = 432750, range = 3, src_id = 2044}
+[50109] = {camp = 2, career = 2, enemy_skill = __rt_127, id = 50109, info = 161465, monster_tag = __rt_100, move_spd = 70, name = 432750, range = 3, src_id = 2044}
 , 
-[50110] = {break_id = 10201, camp = 2, career = 1, enemy_skill = __rt_127, id = 50110, info = 509288, intensity = 2, monster_tag = __rt_128, move_spd = 50, name = 348877, src_id = 2045}
+[50110] = {break_id = 10201, camp = 2, career = 1, enemy_skill = __rt_128, id = 50110, info = 509288, intensity = 2, monster_tag = __rt_129, move_spd = 50, name = 348877, src_id = 2045}
 , 
-[50111] = {camp = 2, career = 4, enemy_skill = __rt_90, id = 50111, info = "", intensity = 2, monster_tag = __rt_1, move_spd = 30, name = 503810, range = 10, src_id = 2100}
+[50111] = {camp = 2, career = 4, enemy_skill = __rt_91, id = 50111, info = "", intensity = 2, monster_tag = __rt_1, move_spd = 30, name = 503810, range = 10, src_id = 2100}
 , 
-[50112] = {camp = 2, career = 5, enemy_skill = __rt_129, id = 50112, info = 52553, monster_tag = __rt_101, move_spd = 30, name = 90833, range = 10, src_id = 2043}
+[50112] = {camp = 2, career = 5, enemy_skill = __rt_130, id = 50112, info = 52553, monster_tag = __rt_102, move_spd = 30, name = 90833, range = 10, src_id = 2043}
 , 
 [50113] = {break_id = 10201, camp = 2, career = 4, 
 enemy_skill = {704, 204203, 204201, 204202, 999001}
-, id = 50113, info = 64993, intensity = 2, monster_tag = __rt_130, move_spd = 70, name = 348121, range = 2, src_id = 2042}
+, id = 50113, info = 64993, intensity = 2, monster_tag = __rt_131, move_spd = 70, name = 348121, range = 2, src_id = 2042}
 , 
 [50114] = {camp = 2, career = 2, enemy_skill = __rt_61, id = 50114, info = 129778, monster_tag = __rt_62, move_spd = 70, name = 55283, range = 5, src_id = 2039}
 , 
@@ -796,7 +797,7 @@ enemy_skill = {703, 200401, 2004032}
 , 
 [50201] = {break_id = 10201, camp = 2, 
 enemy_skill = {705, 208711, 208712, 208713, 999001}
-, id = 50201, info = 65188, intensity = 2, monster_tag = __rt_92, move_spd = 30, name = 65188, src_id = 2091}
+, id = 50201, info = 65188, intensity = 2, monster_tag = __rt_93, move_spd = 30, name = 65188, src_id = 2091}
 , 
 [50202] = {break_id = 10201, 
 enemy_skill = {706, 210111}
@@ -804,13 +805,13 @@ enemy_skill = {706, 210111}
 , 
 [50203] = {break_id = 10202, camp = 2, 
 enemy_skill = {707, 208611, 208612, 208613, 999001}
-, id = 50203, info = 190911, intensity = 2, monster_tag = __rt_91, move_spd = 30, name = 190911, src_id = 2090}
+, id = 50203, info = 190911, intensity = 2, monster_tag = __rt_92, move_spd = 30, name = 190911, src_id = 2090}
 , 
 [50204] = {break_id = 10202, camp = 2, career = 4, 
 enemy_skill = {708, 203101, 203102}
 , id = 50204, info = 37147, intensity = 2, monster_tag = __rt_23, move_spd = 30, name = 128665, src_id = 2031}
 , 
-[50205] = {break_id = 10202, camp = 2, career = 5, enemy_skill = __rt_93, id = 50205, info = 12773, intensity = 3, monster_tag = __rt_70, move_spd = 30, name = 12773, range = 4, src_id = 2118}
+[50205] = {break_id = 10202, camp = 2, career = 5, enemy_skill = __rt_94, id = 50205, info = 12773, intensity = 3, monster_tag = __rt_70, move_spd = 30, name = 12773, range = 4, src_id = 2118}
 , 
 [50206] = {break_id = 10202, camp = 2, career = 5, 
 enemy_skill = {709, 210801, 210802}
@@ -824,17 +825,17 @@ enemy_skill = {709, 210801, 210802}
 , 
 [60004] = {camp = 2, career = 2, enemy_skill = __rt_61, id = 60004, info = 129778, monster_tag = __rt_62, move_spd = 30, name = 55283, range = 5, src_id = 2039}
 , 
-[60005] = {camp = 2, career = 2, enemy_skill = __rt_126, id = 60005, info = 161465, monster_tag = __rt_99, move_spd = 30, name = 432750, range = 3, src_id = 2044}
+[60005] = {camp = 2, career = 2, enemy_skill = __rt_127, id = 60005, info = 161465, monster_tag = __rt_100, move_spd = 30, name = 432750, range = 3, src_id = 2044}
 , 
-[60006] = {camp = 2, career = 1, enemy_skill = __rt_127, id = 60006, info = 509288, intensity = 2, monster_tag = __rt_128, move_spd = 15, name = 348877, src_id = 2045}
+[60006] = {camp = 2, career = 1, enemy_skill = __rt_128, id = 60006, info = 509288, intensity = 2, monster_tag = __rt_129, move_spd = 15, name = 348877, src_id = 2045}
 , 
-[60007] = {camp = 2, career = 4, enemy_skill = __rt_131, id = 60007, info = 64993, intensity = 2, monster_tag = __rt_130, move_spd = 30, name = 348121, range = 2, src_id = 2042}
+[60007] = {camp = 2, career = 4, enemy_skill = __rt_132, id = 60007, info = 64993, intensity = 2, monster_tag = __rt_131, move_spd = 30, name = 348121, range = 2, src_id = 2042}
 , 
-[60008] = {camp = 2, career = 5, enemy_skill = __rt_129, id = 60008, info = 52553, monster_tag = __rt_101, move_spd = 60, name = 90833, range = 3, src_id = 2043}
+[60008] = {camp = 2, career = 5, enemy_skill = __rt_130, id = 60008, info = 52553, monster_tag = __rt_102, move_spd = 60, name = 90833, range = 3, src_id = 2043}
 , 
-[60009] = {career = 4, enemy_skill = __rt_125, id = 60009, info = 491508, monster_tag = __rt_32, move_spd = 15, name = 341619, range = 10, src_id = 2060}
+[60009] = {career = 4, enemy_skill = __rt_126, id = 60009, info = 491508, monster_tag = __rt_32, move_spd = 15, name = 341619, range = 10, src_id = 2060}
 , 
-[60010] = {career = 1, enemy_skill = __rt_132, id = 60010, info = 381959, monster_tag = __rt_3, move_spd = 40, name = 188984, src_id = 3010}
+[60010] = {career = 1, enemy_skill = __rt_133, id = 60010, info = 381959, monster_tag = __rt_3, move_spd = 40, name = 188984, src_id = 3010}
 , 
 [60011] = {career = 1, 
 enemy_skill = {603}
@@ -870,27 +871,27 @@ enemy_skill = {502, 203902}
 , 
 [70006] = {camp = 2, career = 2, 
 enemy_skill = {204400, 204402, 999001}
-, id = 70006, info = 161465, monster_tag = __rt_99, move_spd = 40, name = 432750, range = 3, src_id = 2044}
+, id = 70006, info = 161465, monster_tag = __rt_100, move_spd = 40, name = 432750, range = 3, src_id = 2044}
 , 
 [70007] = {camp = 2, career = 1, 
 enemy_skill = {204500, 999001}
-, id = 70007, info = 509288, intensity = 2, monster_tag = __rt_128, move_spd = 15, name = 348877, src_id = 2045}
+, id = 70007, info = 509288, intensity = 2, monster_tag = __rt_129, move_spd = 15, name = 348877, src_id = 2045}
 , 
 [70008] = {camp = 2, career = 4, 
 enemy_skill = {542, 999001}
-, id = 70008, info = 64993, intensity = 2, monster_tag = __rt_130, move_spd = 40, name = 348121, range = 2, src_id = 2042}
+, id = 70008, info = 64993, intensity = 2, monster_tag = __rt_131, move_spd = 40, name = 348121, range = 2, src_id = 2042}
 , 
-[70009] = {camp = 2, career = 5, enemy_skill = __rt_129, id = 70009, info = 52553, monster_tag = __rt_101, move_spd = 15, name = 90833, range = 3, src_id = 2043}
+[70009] = {camp = 2, career = 5, enemy_skill = __rt_130, id = 70009, info = 52553, monster_tag = __rt_102, move_spd = 15, name = 90833, range = 3, src_id = 2043}
 , 
-[70010] = {career = 4, enemy_skill = __rt_125, id = 70010, info = 491508, monster_tag = __rt_32, move_spd = 15, name = 341619, range = 10, src_id = 2060}
+[70010] = {career = 4, enemy_skill = __rt_126, id = 70010, info = 491508, monster_tag = __rt_32, move_spd = 15, name = 341619, range = 10, src_id = 2060}
 , 
-[70011] = {career = 1, enemy_skill = __rt_132, id = 70011, info = 381959, monster_tag = __rt_3, move_spd = 40, name = 188984, src_id = 3010}
+[70011] = {career = 1, enemy_skill = __rt_133, id = 70011, info = 381959, monster_tag = __rt_3, move_spd = 40, name = 188984, src_id = 3010}
 , 
 [70012] = {
 enemy_skill = {525, 202501}
 , id = 70012, info = 185142, intensity = 2, monster_tag = __rt_50, move_spd = 40, name = 201005, src_id = 2025}
 , 
-[70013] = {career = 1, enemy_skill = __rt_106, id = 70013, info = 338733, monster_tag = __rt_5, move_spd = 40, name = 28620, src_id = 2011}
+[70013] = {career = 1, enemy_skill = __rt_107, id = 70013, info = 338733, monster_tag = __rt_5, move_spd = 40, name = 28620, src_id = 2011}
 , 
 [70014] = {career = 5, enemy_skill = __rt_14, id = 70014, info = 491508, monster_tag = __rt_32, move_spd = 40, name = 431524, range = 10, src_id = 2006}
 , 
@@ -898,33 +899,29 @@ enemy_skill = {525, 202501}
 enemy_skill = {504, 200401, 2004032}
 , id = 70015, info = 177519, intensity = 3, monster_tag = __rt_23, move_spd = 20, name = 146640, src_id = 2004}
 , 
-[80001] = {camp = 2, 
-enemy_skill = {208200, 208201}
-, id = 80001, info = 437201, monster_tag = __rt_88, move_spd = 225, name = 437201, src_id = 2086}
+[80001] = {camp = 2, enemy_skill = __rt_134, id = 80001, info = 437201, monster_tag = __rt_89, move_spd = 225, name = 437201, src_id = 2086}
 , 
 [80002] = {camp = 2, career = 2, 
 enemy_skill = {208300, 208301}
-, id = 80002, info = 80921, monster_tag = __rt_89, move_spd = 75, name = 80921, range = 4, src_id = 2087}
+, id = 80002, info = 80921, monster_tag = __rt_90, move_spd = 75, name = 80921, range = 4, src_id = 2087}
 , 
 [80003] = {camp = 2, career = 2, 
 enemy_skill = {208400, 208401}
-, id = 80003, info = 511893, monster_tag = __rt_89, move_spd = 75, name = 511893, range = 4, src_id = 2088}
+, id = 80003, info = 511893, monster_tag = __rt_90, move_spd = 75, name = 511893, range = 4, src_id = 2088}
 , 
 [80004] = {camp = 2, 
 enemy_skill = {208500, 208501}
-, id = 80004, info = 36396, monster_tag = __rt_88, move_spd = 225, name = 36396, src_id = 2089}
+, id = 80004, info = 36396, monster_tag = __rt_89, move_spd = 225, name = 36396, src_id = 2089}
 , 
 [80005] = {camp = 2, 
 enemy_skill = {208600, 208601, 208602, 208603, 999001}
-, id = 80005, info = 190911, intensity = 2, monster_tag = __rt_91, move_spd = 225, name = 190911, src_id = 2090}
+, id = 80005, info = 190911, intensity = 2, monster_tag = __rt_92, move_spd = 225, name = 190911, src_id = 2090}
 , 
 [80006] = {camp = 2, 
 enemy_skill = {208700, 208701, 208702, 208703, 999001}
-, id = 80006, info = 65188, intensity = 2, monster_tag = __rt_92, name = 65188, src_id = 2091}
+, id = 80006, info = 65188, intensity = 2, monster_tag = __rt_93, name = 65188, src_id = 2091}
 , 
-[80007] = {camp = 2, career = 2, 
-enemy_skill = {502, 200213}
-, id = 80007, info = 129778, monster_tag = __rt_62, move_spd = 300, name = 55283, range = 5, src_id = 2039}
+[80007] = {camp = 2, career = 2, enemy_skill = __rt_135, id = 80007, info = 129778, monster_tag = __rt_62, move_spd = 300, name = 55283, range = 5, src_id = 2039}
 , 
 [80008] = {camp = 2, career = 4, 
 enemy_skill = {529, 202911}
@@ -938,17 +935,17 @@ enemy_skill = {530, 203011}
 enemy_skill = {531, 203111, 203112}
 , id = 80010, info = 37147, intensity = 2, monster_tag = __rt_23, move_spd = 225, name = 128665, src_id = 2031}
 , 
-[80011] = {camp = 2, career = 2, enemy_skill = __rt_98, id = 80011, info = 161465, monster_tag = __rt_99, move_spd = 120, name = 432750, range = 3, src_id = 2044}
+[80011] = {camp = 2, career = 2, enemy_skill = __rt_99, id = 80011, info = 161465, monster_tag = __rt_100, move_spd = 120, name = 432750, range = 3, src_id = 2044}
 , 
 [80012] = {camp = 2, career = 1, 
 enemy_skill = {204500, 204511, 204512, 999001}
-, id = 80012, info = 509288, intensity = 2, monster_tag = __rt_128, move_spd = 120, name = 348877, src_id = 2045}
+, id = 80012, info = 509288, intensity = 2, monster_tag = __rt_129, move_spd = 120, name = 348877, src_id = 2045}
 , 
 [80013] = {camp = 2, career = 4, 
 enemy_skill = {542, 204213, 204211, 204212, 999001}
-, id = 80013, info = 64993, intensity = 2, monster_tag = __rt_130, name = 348121, range = 2, src_id = 2042}
+, id = 80013, info = 64993, intensity = 2, monster_tag = __rt_131, name = 348121, range = 2, src_id = 2042}
 , 
-[80014] = {camp = 2, career = 5, enemy_skill = __rt_100, id = 80014, info = 52553, monster_tag = __rt_101, move_spd = 90, name = 90833, range = 10, src_id = 2043}
+[80014] = {camp = 2, career = 5, enemy_skill = __rt_101, id = 80014, info = 52553, monster_tag = __rt_102, move_spd = 90, name = 90833, range = 10, src_id = 2043}
 , 
 [80015] = {career = 4, enemy_skill = __rt_30, id = 80015, info = 52553, monster_tag = __rt_29, move_spd = 300, name = 124780, src_id = 2013}
 , 
@@ -1006,13 +1003,13 @@ enemy_skill = {542, 204213, 204211, 204212, 999001}
 , 
 [80043] = {career = 1, enemy_skill = __rt_19, id = 80043, info = 286718, intensity = 3, monster_tag = __rt_9, name = 335946, src_id = 2005}
 , 
-[80044] = {enemy_skill = __rt_102, id = 80044, info = 297983, intensity = 4, monster_tag = __rt_1, name = 312720, skill_array = __rt_103, src_id = 2065}
+[80044] = {enemy_skill = __rt_103, id = 80044, info = 297983, intensity = 4, monster_tag = __rt_1, name = 312720, skill_array = __rt_104, src_id = 2065}
 , 
-[80045] = {enemy_skill = __rt_104, id = 80045, info = 10799, intensity = 4, monster_tag = __rt_1, name = 283328, skill_array = __rt_105, src_id = 2066}
+[80045] = {enemy_skill = __rt_105, id = 80045, info = 10799, intensity = 4, monster_tag = __rt_1, name = 283328, skill_array = __rt_106, src_id = 2066}
 , 
 [80046] = {blood_bar_num = 1, career = 2, enemy_skill = __rt_71, id = 80046, info = 98746, intensity = 3, monster_tag = __rt_72, name = 278444, range = 10, skill_array = __rt_73, src_id = 2079}
 , 
-[80047] = {blood_bar_num = 1, enemy_skill = __rt_37, id = 80047, info = 355889, intensity = 4, monster_tag = __rt_38, move_spd = 225, name = 453828, skill_array = __rt_112, src_id = 2009}
+[80047] = {blood_bar_num = 1, enemy_skill = __rt_37, id = 80047, info = 355889, intensity = 4, monster_tag = __rt_38, move_spd = 225, name = 453828, skill_array = __rt_113, src_id = 2009}
 , 
 [99999] = {career = 2, 
 enemy_skill = {502, 200204}
@@ -1028,23 +1025,23 @@ monster_tag = {2, 19}
 , 
 [300010] = {blood_bar_num = 1, 
 enemy_skill = {509, 2009010, 200902, 200903}
-, id = 300010, info = 355889, intensity = 4, monster_tag = __rt_38, move_spd = 225, name = 453828, skill_array = __rt_112, src_id = 2009}
+, id = 300010, info = 355889, intensity = 4, monster_tag = __rt_38, move_spd = 225, name = 453828, skill_array = __rt_113, src_id = 2009}
 , 
 [300030] = {blood_bar_num = 1, career = 4, 
 enemy_skill = {519, 2019010, 201902, 201903, 201904}
-, id = 300030, info = 271976, intensity = 4, monster_tag = __rt_2, move_spd = 180, name = 45989, skill_array = __rt_114, src_id = 2019}
+, id = 300030, info = 271976, intensity = 4, monster_tag = __rt_2, move_spd = 180, name = 45989, skill_array = __rt_115, src_id = 2019}
 , 
 [300040] = {blood_bar_num = 1, career = 2, 
 enemy_skill = {520, 2020010, 202002, 202003}
-, id = 300040, info = 386541, intensity = 4, monster_tag = __rt_42, move_spd = 120, name = 2576, range = 10, skill_array = __rt_115, src_id = 2020}
+, id = 300040, info = 386541, intensity = 4, monster_tag = __rt_42, move_spd = 120, name = 2576, range = 10, skill_array = __rt_116, src_id = 2020}
 , 
 [300050] = {blood_bar_num = 1, camp = 2, career = 2, 
 enemy_skill = {532, 2032040, 203205, 203206, 203207}
-, id = 300050, info = 458706, intensity = 3, monster_tag = __rt_13, move_spd = 90, name = 77751, range = 10, skill_array = __rt_116, src_id = 2032}
+, id = 300050, info = 458706, intensity = 3, monster_tag = __rt_13, move_spd = 90, name = 77751, range = 10, skill_array = __rt_117, src_id = 2032}
 , 
 [300051] = {blood_bar_num = 1, camp = 2, career = 4, 
 enemy_skill = {600, 204800, 204806, 204802, 204803, 204804}
-, id = 300051, info = 205718, intensity = 4, monster_tag = __rt_119, move_spd = 0, name = 205718, range = 10, skill_array = __rt_133, src_id = 2048}
+, id = 300051, info = 205718, intensity = 4, monster_tag = __rt_120, move_spd = 0, name = 205718, range = 10, skill_array = __rt_136, src_id = 2048}
 , 
 [300052] = {blood_bar_num = 1, 
 enemy_skill = {504, 200401, 2004031}
@@ -1052,9 +1049,9 @@ enemy_skill = {504, 200401, 2004031}
 , 
 [300053] = {blood_bar_num = 1, 
 enemy_skill = {206800, 206804, 206802, 206803}
-, id = 300053, info = 387420, intensity = 4, monster_tag = __rt_1, name = 10237, skill_array = __rt_121, src_id = 2068}
+, id = 300053, info = 387420, intensity = 4, monster_tag = __rt_1, name = 10237, skill_array = __rt_122, src_id = 2068}
 , 
-[300054] = {blood_bar_num = 1, camp = 2, enemy_skill = __rt_134, id = 300054, info = 21450, intensity = 4, monster_tag = __rt_123, name = 21450, skill_array = __rt_124, src_id = 2067}
+[300054] = {blood_bar_num = 1, camp = 2, enemy_skill = __rt_137, id = 300054, info = 21450, intensity = 4, monster_tag = __rt_124, name = 21450, skill_array = __rt_125, src_id = 2067}
 , 
 [300055] = {blood_bar_num = 1, camp = 2, career = 2, 
 enemy_skill = {2092000, 209201, 209202, 209203, 209206, 209204, 209205}
@@ -1086,25 +1083,25 @@ enemy_skill = {526, 202603}
 , 
 [925002] = {enemy_skill = __rt_22, id = 925002, info = 496840, monster_tag = __rt_23, move_spd = 80, name = 43724, src_id = 2007}
 , 
-[1000001] = {camp = 2, career = 4, enemy_skill = __rt_131, id = 1000001, info = 64993, intensity = 2, monster_tag = __rt_130, name = 348121, range = 2, src_id = 2042}
+[1000001] = {camp = 2, career = 4, enemy_skill = __rt_132, id = 1000001, info = 64993, intensity = 2, monster_tag = __rt_131, name = 348121, range = 2, src_id = 2042}
 , 
-[1000002] = {camp = 2, career = 5, enemy_skill = __rt_129, id = 1000002, info = 52553, monster_tag = __rt_101, move_spd = 90, name = 90833, range = 10, src_id = 2043}
+[1000002] = {camp = 2, career = 5, enemy_skill = __rt_130, id = 1000002, info = 52553, monster_tag = __rt_102, move_spd = 90, name = 90833, range = 10, src_id = 2043}
 , 
-[1000003] = {camp = 2, career = 2, enemy_skill = __rt_126, id = 1000003, info = 161465, monster_tag = __rt_99, move_spd = 120, name = 432750, range = 3, src_id = 2044}
+[1000003] = {camp = 2, career = 2, enemy_skill = __rt_127, id = 1000003, info = 161465, monster_tag = __rt_100, move_spd = 120, name = 432750, range = 3, src_id = 2044}
 , 
-[1000004] = {camp = 2, career = 1, enemy_skill = __rt_127, id = 1000004, info = 509288, intensity = 2, monster_tag = __rt_128, move_spd = 120, name = 348877, src_id = 2045}
+[1000004] = {camp = 2, career = 1, enemy_skill = __rt_128, id = 1000004, info = 509288, intensity = 2, monster_tag = __rt_129, move_spd = 120, name = 348877, src_id = 2045}
 , 
 [1000006] = {blood_bar_num = 1, camp = 2, career = 4, 
 enemy_skill = {204810}
 , id = 1000006, info = 181061, intensity = 4, monster_tag = __rt_1, move_spd = 0, name = "???", range = 10, src_id = 2048}
 , 
-[1000007] = {camp = 2, career = 2, enemy_skill = __rt_126, id = 1000007, info = 161465, monster_tag = __rt_99, move_spd = 120, name = 432750, range = 3, src_id = 2055}
+[1000007] = {camp = 2, career = 2, enemy_skill = __rt_127, id = 1000007, info = 161465, monster_tag = __rt_100, move_spd = 120, name = 432750, range = 3, src_id = 2055}
 , 
-[1000008] = {camp = 2, career = 1, enemy_skill = __rt_127, id = 1000008, info = 509288, intensity = 2, monster_tag = __rt_128, move_spd = 120, name = 348877, src_id = 2056}
+[1000008] = {camp = 2, career = 1, enemy_skill = __rt_128, id = 1000008, info = 509288, intensity = 2, monster_tag = __rt_129, move_spd = 120, name = 348877, src_id = 2056}
 , 
-[1000009] = {camp = 2, career = 4, enemy_skill = __rt_131, id = 1000009, info = 64993, intensity = 2, monster_tag = __rt_130, name = 348121, range = 2, src_id = 2053}
+[1000009] = {camp = 2, career = 4, enemy_skill = __rt_132, id = 1000009, info = 64993, intensity = 2, monster_tag = __rt_131, name = 348121, range = 2, src_id = 2053}
 , 
-[1000010] = {camp = 2, career = 5, enemy_skill = __rt_129, id = 1000010, info = 52553, monster_tag = __rt_101, move_spd = 90, name = 90833, range = 10, src_id = 2054}
+[1000010] = {camp = 2, career = 5, enemy_skill = __rt_130, id = 1000010, info = 52553, monster_tag = __rt_102, move_spd = 90, name = 90833, range = 10, src_id = 2054}
 , 
 [1000011] = {camp = 2, career = 4, enemy_skill = __rt_55, id = 1000011, info = 37147, intensity = 2, monster_tag = __rt_23, move_spd = 30, name = 128665, src_id = 2050}
 , 
@@ -1114,27 +1111,27 @@ enemy_skill = {204810}
 monster_tag = {1, 8}
 , move_spd = 10, name = 311710, src_id = 2049}
 , 
-[1000014] = {camp = 2, enemy_skill = __rt_107, id = 1000014, info = 467586, intensity = 2, move_spd = 0, name = 149785, src_id = 2051}
+[1000014] = {camp = 2, enemy_skill = __rt_108, id = 1000014, info = 467586, intensity = 2, move_spd = 0, name = 149785, src_id = 2051}
 , 
-[1000015] = {camp = 2, enemy_skill = __rt_108, id = 1000015, info = 467586, intensity = 2, move_spd = 0, name = 149785, src_id = 2051}
+[1000015] = {camp = 2, enemy_skill = __rt_109, id = 1000015, info = 467586, intensity = 2, move_spd = 0, name = 149785, src_id = 2051}
 , 
-[1000016] = {camp = 2, enemy_skill = __rt_109, id = 1000016, info = 467586, intensity = 2, move_spd = 0, name = 149785, src_id = 2051}
+[1000016] = {camp = 2, enemy_skill = __rt_110, id = 1000016, info = 467586, intensity = 2, move_spd = 0, name = 149785, src_id = 2051}
 , 
 [1000017] = {camp = 2, career = 4, id = 1000017, info = 493133, monster_tag = __rt_52, move_spd = 30, name = 242499, src_id = 2057}
 , 
 [1000018] = {blood_bar_num = 1, camp = 2, career = 4, 
 enemy_skill = {600, 204800, 204801, 204802, 204803, 204804}
-, id = 1000018, info = 205718, intensity = 4, monster_tag = __rt_119, move_spd = 0, name = 205718, range = 10, skill_array = __rt_133, src_id = 2048}
+, id = 1000018, info = 205718, intensity = 4, monster_tag = __rt_120, move_spd = 0, name = 205718, range = 10, skill_array = __rt_136, src_id = 2048}
 , 
-[1000019] = {enemy_skill = __rt_102, id = 1000019, info = 297983, intensity = 4, monster_tag = __rt_1, name = 312720, skill_array = __rt_103, src_id = 2065}
+[1000019] = {enemy_skill = __rt_103, id = 1000019, info = 297983, intensity = 4, monster_tag = __rt_1, name = 312720, skill_array = __rt_104, src_id = 2065}
 , 
-[1000020] = {enemy_skill = __rt_104, id = 1000020, info = 10799, intensity = 4, monster_tag = __rt_1, name = 283328, skill_array = __rt_105, src_id = 2066}
+[1000020] = {enemy_skill = __rt_105, id = 1000020, info = 10799, intensity = 4, monster_tag = __rt_1, name = 283328, skill_array = __rt_106, src_id = 2066}
 , 
-[1000021] = {blood_bar_num = 1, enemy_skill = __rt_120, id = 1000021, info = 387420, intensity = 4, monster_tag = __rt_1, name = 10237, skill_array = __rt_121, src_id = 2068}
+[1000021] = {blood_bar_num = 1, enemy_skill = __rt_121, id = 1000021, info = 387420, intensity = 4, monster_tag = __rt_1, name = 10237, skill_array = __rt_122, src_id = 2068}
 , 
-[1000022] = {blood_bar_num = 1, camp = 2, enemy_skill = __rt_122, id = 1000022, info = 21450, intensity = 4, monster_tag = __rt_123, name = 21450, skill_array = __rt_124, src_id = 2067}
+[1000022] = {blood_bar_num = 1, camp = 2, enemy_skill = __rt_123, id = 1000022, info = 21450, intensity = 4, monster_tag = __rt_124, name = 21450, skill_array = __rt_125, src_id = 2067}
 , 
-[1000023] = {enemy_skill = __rt_135, id = 1000023, info = 210734, monster_tag = __rt_34, move_spd = 0, name = 210734, src_id = 3024}
+[1000023] = {enemy_skill = __rt_138, id = 1000023, info = 210734, monster_tag = __rt_34, move_spd = 0, name = 210734, src_id = 3024}
 , 
 [1000024] = {camp = 2, career = 4, 
 enemy_skill = {300101, 100201, 70028}
@@ -1174,7 +1171,7 @@ enemy_skill = {300401, 300402, 300403, 70029}
 enemy_skill = {601, 70031}
 , id = 1000033, info = 294896, move_spd = 0, name = 348122, src_id = 3010}
 , 
-[1000034] = {enemy_skill = __rt_135, id = 1000034, info = 210734, monster_tag = __rt_34, move_spd = 300, name = 339261, src_id = 3024}
+[1000034] = {enemy_skill = __rt_138, id = 1000034, info = 210734, monster_tag = __rt_34, move_spd = 300, name = 339261, src_id = 3024}
 , 
 [1000035] = {camp = 5, career = 2, 
 enemy_skill = {300501, 300503}
@@ -1200,7 +1197,7 @@ enemy_skill = {310701, 310703}
 enemy_skill = {310701, 310702, 310703}
 , id = 1000040, info = "", monster_tag = __rt_35, name = 25806, range = 5, src_id = 2085}
 , 
-[1000060] = {break_id = 10201, camp = 2, career = 4, enemy_skill = __rt_131, id = 1000060, info = 64993, intensity = 2, monster_tag = __rt_130, name = 348121, range = 2, src_id = 2042}
+[1000060] = {break_id = 10201, camp = 2, career = 4, enemy_skill = __rt_132, id = 1000060, info = 64993, intensity = 2, monster_tag = __rt_131, name = 348121, range = 2, src_id = 2042}
 , 
 [1001000] = {blood_bar_num = 1, career = 1, 
 enemy_skill = {601, 70034}
@@ -1284,25 +1281,33 @@ enemy_skill = {206900}
 , 
 [1021058] = {career = 2, 
 enemy_skill = {305800, 305801}
-, id = 1021058, info = "416", intensity = 2, monster_tag = __rt_136, name = "416", range = 3, src_id = 2097}
+, id = 1021058, info = "416", intensity = 2, monster_tag = __rt_139, name = "416", range = 3, src_id = 2097}
 , 
 [1021059] = {career = 2, 
 enemy_skill = {105800, 105801}
-, id = 1021059, info = 213507, intensity = 2, monster_tag = __rt_136, name = 213507, range = 3, src_id = 1058}
+, id = 1021059, info = 213507, intensity = 2, monster_tag = __rt_139, name = 213507, range = 3, src_id = 1058}
 , 
 [2000201] = {break_id = 10403, career = 1, enemy_skill = __rt_19, id = 2000201, info = 286718, intensity = 3, monster_tag = __rt_9, name = 335946, src_id = 2005}
 , 
-[2003301] = {break_id = 10104, career = 4, enemy_skill = __rt_40, id = 2003301, info = 271976, intensity = 4, is_shadow = true, monster_tag = __rt_2, move_spd = 180, name = 45989, skill_array = __rt_114, src_id = 2019}
+[2003301] = {break_id = 10104, career = 4, enemy_skill = __rt_40, id = 2003301, info = 271976, intensity = 4, is_shadow = true, monster_tag = __rt_2, move_spd = 180, name = 45989, skill_array = __rt_115, src_id = 2019}
 , 
-[2003302] = {break_id = 10404, career = 4, enemy_skill = __rt_40, id = 2003302, info = 271976, intensity = 4, monster_tag = __rt_2, move_spd = 180, name = 45989, skill_array = __rt_114, src_id = 2019}
+[2003302] = {break_id = 10404, career = 4, enemy_skill = __rt_40, id = 2003302, info = 271976, intensity = 4, monster_tag = __rt_2, move_spd = 180, name = 45989, skill_array = __rt_115, src_id = 2019}
 , 
 [2004001] = {break_id = 10403, career = 2, enemy_skill = __rt_12, id = 2004001, info = 51952, intensity = 3, monster_tag = __rt_13, move_spd = 90, name = 100975, range = 10, src_id = 2026}
 , 
 [2004401] = {break_id = 10403, camp = 2, career = 2, enemy_skill = __rt_56, id = 2004401, info = 458706, intensity = 3, monster_tag = __rt_13, move_spd = 90, name = 77751, range = 10, src_id = 2032}
 , 
-[3000101] = {blood_bar_num = 1, break_id = 10404, enemy_skill = __rt_37, id = 3000101, info = 355889, intensity = 4, monster_tag = __rt_38, move_spd = 225, name = 453828, skill_array = __rt_112, src_id = 2009}
+[2007601] = {break_id = 10401, enemy_skill = __rt_88, id = 2007601, info = 456773, intensity = 2, monster_tag = __rt_50, move_spd = 225, name = 456773, src_id = 2101}
 , 
-[3000401] = {blood_bar_num = 1, break_id = 10404, career = 2, enemy_skill = __rt_41, id = 3000401, info = 386541, intensity = 4, monster_tag = __rt_42, move_spd = 120, name = 2576, range = 10, skill_array = __rt_115, src_id = 2020}
+[3000101] = {blood_bar_num = 1, break_id = 10404, enemy_skill = __rt_37, id = 3000101, info = 355889, intensity = 4, monster_tag = __rt_38, move_spd = 225, name = 453828, skill_array = __rt_113, src_id = 2009}
+, 
+[3000401] = {blood_bar_num = 1, break_id = 10404, career = 2, enemy_skill = __rt_41, id = 3000401, info = 386541, intensity = 4, monster_tag = __rt_42, move_spd = 120, name = 2576, range = 10, skill_array = __rt_116, src_id = 2020}
+, 
+[8000101] = {break_id = 10401, camp = 2, enemy_skill = __rt_134, id = 8000101, info = 437201, monster_tag = __rt_89, move_spd = 225, name = 437201, src_id = 2086}
+, 
+[8000701] = {break_id = 10401, camp = 2, career = 2, enemy_skill = __rt_135, id = 8000701, info = 129778, monster_tag = __rt_62, move_spd = 300, name = 55283, range = 5, src_id = 2039}
+, 
+[8003001] = {break_id = 10401, enemy_skill = __rt_66, id = 8003001, info = 160237, monster_tag = __rt_48, move_spd = 225, name = 479494, src_id = 2076}
 , 
 [9001001] = {camp = 2, career = 5, 
 enemy_skill = {100100, 1001012, 1001022}
@@ -1364,7 +1369,7 @@ enemy_skill = {102200, 1022012, 1022022}
 enemy_skill = {102300, 1023012, 1023022}
 , id = 9001023, intensity = 2, is_shadow = true, move_spd = 200, name = 511896, src_id = 102300}
 , 
-[9001025] = {camp = 4, career = 2, enemy_skill = __rt_137, id = 9001025, intensity = 2, is_shadow = true, name = 43974, range = 3, src_id = 102500}
+[9001025] = {camp = 4, career = 2, enemy_skill = __rt_140, id = 9001025, intensity = 2, is_shadow = true, name = 43974, range = 3, src_id = 102500}
 , 
 [9001026] = {camp = 4, career = 5, 
 enemy_skill = {102600, 1026012, 1026022}
@@ -1410,9 +1415,9 @@ enemy_skill = {104400, 1044012, 1044022}
 enemy_skill = {104900, 1049012, 1049022}
 , id = 9001049, info = "", intensity = 2, is_shadow = true, move_spd = 300, name = 189659, src_id = 104900}
 , 
-[9001058] = {camp = 4, career = 2, enemy_skill = __rt_137, id = 9001058, info = 383073, intensity = 2, name = 213507, range = 3, src_id = 102500}
+[9001058] = {camp = 4, career = 2, enemy_skill = __rt_140, id = 9001058, info = 383073, intensity = 2, name = 213507, range = 3, src_id = 102500}
 , 
-[30005401] = {blood_bar_num = 1, break_id = 10404, camp = 2, enemy_skill = __rt_134, id = 30005401, info = 21450, intensity = 4, monster_tag = __rt_123, name = 21450, skill_array = __rt_124, src_id = 2067}
+[30005401] = {blood_bar_num = 1, break_id = 10404, camp = 2, enemy_skill = __rt_137, id = 30005401, info = 21450, intensity = 4, monster_tag = __rt_124, name = 21450, skill_array = __rt_125, src_id = 2067}
 }
 local __default_values = {blood_bar_num = 0, break_id = 0, camp = 1, career = 3, contain_action = true, enemy_skill = __rt_51, group = 0, id = 100, info = 277360, intensity = 1, isShowHpText = false, isShowInfoBar = true, isShowStateBar = true, is_shadow = false, monster_tag = __rt_15, move_spd = 150, name = 32137, range = 1, skill_array = __rt_1, src_id = 2046}
 local base = {__index = __default_values, __newindex = function()

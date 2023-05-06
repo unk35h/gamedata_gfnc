@@ -2,7 +2,7 @@
 -- function num : 0 , upvalues : _ENV
 local bs_101901 = class("bs_101901", LuaSkillBase)
 local base = LuaSkillBase
-bs_101901.config = {monsterId = 14, effectId1 = 10687, effectId2 = 10686, effectId2_weapon = 101906, effectId3 = 10699, effectId_db = 10700, effectId_db_weapon = 101905, 
+bs_101901.config = {monsterId = 14, effectId1 = 10687, effectId1_skin = 106871, effectId2 = 10686, effectId2_weapon = 101906, effectId3 = 10699, effectId_db = 10700, effectId_db_weapon = 101905, 
 hurtConfig = {hit_formula = 0, basehurt_formula = 10081, crit_formula = 0, crithur_ratio = 0}
 , buffId_229 = 229, skill_time = 47, start_time = 27, actionId = 1002, action_speed = 1, audioId1 = 219, audioId2 = 220, weaponLv = 0}
 local SyncAttrList = {eHeroAttr.moveSpeed, eHeroAttr.dodge, eHeroAttr.crit, eHeroAttr.critDamage, eHeroAttr.sunder, eHeroAttr.damage_increase, eHeroAttr.injury_reduce, eHeroAttr.heal, eHeroAttr.treatment, eHeroAttr.magic_pen, eHeroAttr.cd_reduce}
@@ -94,15 +94,19 @@ bs_101901.PlaySkill = function(self)
           LuaSkillCtrl:CallRoleAction(self, (self.config).actionId, 1)
           LuaSkillCtrl:StartTimer(nil, (self.config).start_time, attackTrigger)
           LuaSkillCtrl:PlayAuSource(self.caster, (self.config).audioId1)
-          self.effect = LuaSkillCtrl:CallEffect(self.caster, (self.config).effectId1, self, nil, nil, nil, true)
+          if LuaSkillCtrl:GetCasterSkinId(self.caster) == 301905 then
+            self.effect = LuaSkillCtrl:CallEffect(self.caster, (self.config).effectId1_skin, self, nil, nil, nil, true)
+          else
+            self.effect = LuaSkillCtrl:CallEffect(self.caster, (self.config).effectId1, self, nil, nil, nil, true)
+          end
           if (self.config).weaponLv >= 1 then
             self.effect2 = LuaSkillCtrl:CallEffect(target, (self.config).effectId_db_weapon, self, nil, nil, nil, true)
           else
             self.effect2 = LuaSkillCtrl:CallEffect(target, (self.config).effectId_db, self, nil, nil, nil, true)
           end
-          -- DECOMPILER ERROR at PC262: LeaveBlock: unexpected jumping out IF_THEN_STMT
+          -- DECOMPILER ERROR at PC279: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-          -- DECOMPILER ERROR at PC262: LeaveBlock: unexpected jumping out IF_STMT
+          -- DECOMPILER ERROR at PC279: LeaveBlock: unexpected jumping out IF_STMT
 
         end
       end

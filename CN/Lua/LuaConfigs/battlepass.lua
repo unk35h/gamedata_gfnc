@@ -57,15 +57,17 @@ local __rt_54 = {100, 1}
 local __rt_55 = {8206, 6003}
 local __rt_56 = {1504}
 local __rt_57 = {1505, 3001}
-local __rt_58 = {8202}
-local __rt_59 = {8203}
-local __rt_60 = {8204}
-local __rt_61 = {}
-local __rt_62 = {1000, 1006, 8128}
-local __rt_63 = {100, 20, 1}
-local __rt_64 = {3001, 1006, 8128}
-local __rt_65 = {1, 20, 1}
-local __rt_66 = {1, 30, 1}
+local __rt_58 = {8201}
+local __rt_59 = {8202}
+local __rt_60 = {8203}
+local __rt_61 = {8231, 6003}
+local __rt_62 = {8204}
+local __rt_63 = {}
+local __rt_64 = {1000, 1006, 8128}
+local __rt_65 = {100, 20, 1}
+local __rt_66 = {3001, 1006, 8128}
+local __rt_67 = {1, 20, 1}
+local __rt_68 = {1, 30, 1}
 local battlepass = {
 {
 {base_item_ids = __rt_1, base_item_nums = __rt_2, senior_item_ids = __rt_3}
@@ -1916,9 +1918,7 @@ senior_item_ids = {306303, 3001}
 , 
 {base_item_ids = __rt_22, id = 19, level = 8, senior_item_ids = __rt_22, senior_item_nums = __rt_41}
 , 
-{
-base_item_ids = {8201}
-, base_item_nums = __rt_2, id = 19, level = 9, senior_item_ids = __rt_58}
+{base_item_ids = __rt_58, base_item_nums = __rt_2, id = 19, level = 9, senior_item_ids = __rt_59}
 , 
 {base_item_ids = __rt_24, base_item_nums = __rt_21, id = 19, level = 10, 
 senior_item_ids = {302605, 3001}
@@ -1940,7 +1940,7 @@ senior_item_ids = {302605, 3001}
 , 
 {base_item_ids = __rt_22, id = 19, level = 18, senior_item_ids = __rt_22, senior_item_nums = __rt_41}
 , 
-{base_item_ids = __rt_58, base_item_nums = __rt_2, id = 19, level = 19, senior_item_ids = __rt_59}
+{base_item_ids = __rt_59, base_item_nums = __rt_2, id = 19, level = 19, senior_item_ids = __rt_60}
 , 
 {base_item_ids = __rt_24, base_item_nums = __rt_21, id = 19, level = 20, senior_item_ids = __rt_28, senior_item_nums = __rt_45, tag = true}
 , 
@@ -1952,9 +1952,7 @@ senior_item_ids = {302605, 3001}
 , 
 {base_item_ids = __rt_9, id = 19, level = 24, senior_item_ids = __rt_11, senior_item_nums = __rt_37}
 , 
-{base_item_ids = __rt_24, base_item_nums = __rt_2, id = 19, level = 25, 
-senior_item_ids = {8231, 6003}
-, senior_item_nums = __rt_25}
+{base_item_ids = __rt_24, base_item_nums = __rt_2, id = 19, level = 25, senior_item_ids = __rt_61, senior_item_nums = __rt_25}
 , 
 {base_item_ids = __rt_16, id = 19, level = 26, senior_item_ids = __rt_17, senior_item_nums = __rt_10}
 , 
@@ -1962,7 +1960,7 @@ senior_item_ids = {8231, 6003}
 , 
 {base_item_ids = __rt_22, id = 19, level = 28, senior_item_ids = __rt_22, senior_item_nums = __rt_41}
 , 
-{base_item_ids = __rt_59, base_item_nums = __rt_2, id = 19, level = 29, senior_item_ids = __rt_60}
+{base_item_ids = __rt_60, base_item_nums = __rt_2, id = 19, level = 29, senior_item_ids = __rt_62}
 , 
 {base_item_ids = __rt_31, id = 19, level = 30, senior_item_ids = __rt_28, senior_item_nums = __rt_48, tag = true}
 , 
@@ -1982,7 +1980,7 @@ senior_item_ids = {8231, 6003}
 , 
 {base_item_ids = __rt_22, id = 19, level = 38, senior_item_ids = __rt_22, senior_item_nums = __rt_41}
 , 
-{base_item_ids = __rt_60, base_item_nums = __rt_2, id = 19, level = 39, senior_item_ids = __rt_36, senior_item_nums = __rt_23}
+{base_item_ids = __rt_62, base_item_nums = __rt_2, id = 19, level = 39, senior_item_ids = __rt_36, senior_item_nums = __rt_23}
 , 
 {base_item_ids = __rt_56, base_item_nums = __rt_21, id = 19, level = 40, senior_item_ids = __rt_57, senior_item_nums = __rt_49, tag = true}
 , 
@@ -2002,29 +2000,133 @@ senior_item_ids = {8231, 6003}
 , 
 {base_item_ids = __rt_22, id = 19, level = 48, senior_item_ids = __rt_22, senior_item_nums = __rt_41}
 , 
-{base_item_ids = __rt_60, base_item_nums = __rt_2, id = 19, level = 49, senior_item_ids = __rt_36, senior_item_nums = __rt_23}
+{base_item_ids = __rt_62, base_item_nums = __rt_2, id = 19, level = 49, senior_item_ids = __rt_36, senior_item_nums = __rt_23}
 , 
 {base_item_ids = __rt_31, exp = 500, id = 19, level = 50, senior_item_ids = __rt_28, senior_item_nums = __rt_48, tag = true}
 }
+, 
+{
+{base_item_ids = __rt_1, base_item_nums = __rt_2, id = 20, senior_item_ids = __rt_3}
+, 
+{base_item_nums = __rt_5, id = 20, level = 2, senior_item_nums = __rt_6}
+, 
+{base_item_ids = __rt_7, base_item_nums = __rt_8, id = 20, level = 3, senior_item_ids = __rt_7, senior_item_nums = __rt_26}
+, 
+{base_item_ids = __rt_9, id = 20, level = 4, senior_item_ids = __rt_11, senior_item_nums = __rt_10}
+, 
+{base_item_ids = __rt_50, base_item_nums = __rt_8, id = 20, level = 5, senior_item_ids = __rt_51, senior_item_nums = __rt_52}
+, 
+{base_item_ids = __rt_16, id = 20, level = 6, senior_item_ids = __rt_17, senior_item_nums = __rt_10}
+, 
+{base_item_ids = __rt_18, base_item_nums = __rt_19, id = 20, level = 7, senior_item_ids = __rt_20, senior_item_nums = __rt_21}
+, 
+{base_item_ids = __rt_22, id = 20, level = 8, senior_item_ids = __rt_22, senior_item_nums = __rt_41}
+, 
+{base_item_ids = __rt_58, base_item_nums = __rt_2, id = 20, level = 9, senior_item_ids = __rt_59}
+, 
+{base_item_ids = __rt_24, base_item_nums = __rt_21, id = 20, level = 10, 
+senior_item_ids = {305104, 3001}
+, senior_item_nums = __rt_25, tag = true}
+, 
+{base_item_ids = __rt_1, base_item_nums = __rt_2, id = 20, level = 11, senior_item_ids = __rt_3}
+, 
+{base_item_nums = __rt_26, id = 20, level = 12, senior_item_nums = __rt_6}
+, 
+{base_item_ids = __rt_7, base_item_nums = __rt_8, id = 20, level = 13, senior_item_ids = __rt_7, senior_item_nums = __rt_26}
+, 
+{base_item_ids = __rt_9, id = 20, level = 14, senior_item_ids = __rt_11, senior_item_nums = __rt_10}
+, 
+{base_item_ids = __rt_12, base_item_nums = __rt_53, id = 20, level = 15, senior_item_ids = __rt_14, senior_item_nums = __rt_54}
+, 
+{base_item_ids = __rt_16, id = 20, level = 16, senior_item_ids = __rt_17, senior_item_nums = __rt_10}
+, 
+{base_item_ids = __rt_18, base_item_nums = __rt_19, id = 20, level = 17, senior_item_ids = __rt_20, senior_item_nums = __rt_21}
+, 
+{base_item_ids = __rt_22, id = 20, level = 18, senior_item_ids = __rt_22, senior_item_nums = __rt_41}
+, 
+{base_item_ids = __rt_59, base_item_nums = __rt_2, id = 20, level = 19, senior_item_ids = __rt_60}
+, 
+{base_item_ids = __rt_24, base_item_nums = __rt_21, id = 20, level = 20, senior_item_ids = __rt_28, senior_item_nums = __rt_45, tag = true}
+, 
+{base_item_ids = __rt_3, base_item_nums = __rt_21, id = 20, level = 21, senior_item_ids = __rt_3}
+, 
+{base_item_nums = __rt_29, id = 20, level = 22, senior_item_nums = __rt_6}
+, 
+{base_item_ids = __rt_7, base_item_nums = __rt_8, id = 20, level = 23, senior_item_ids = __rt_7, senior_item_nums = __rt_26}
+, 
+{base_item_ids = __rt_9, id = 20, level = 24, senior_item_ids = __rt_11, senior_item_nums = __rt_37}
+, 
+{base_item_ids = __rt_24, base_item_nums = __rt_2, id = 20, level = 25, senior_item_ids = __rt_61, senior_item_nums = __rt_25}
+, 
+{base_item_ids = __rt_16, id = 20, level = 26, senior_item_ids = __rt_17, senior_item_nums = __rt_10}
+, 
+{base_item_ids = __rt_18, base_item_nums = __rt_19, id = 20, level = 27, senior_item_ids = __rt_20, senior_item_nums = __rt_21}
+, 
+{base_item_ids = __rt_22, id = 20, level = 28, senior_item_ids = __rt_22, senior_item_nums = __rt_41}
+, 
+{base_item_ids = __rt_60, base_item_nums = __rt_2, id = 20, level = 29, senior_item_ids = __rt_62}
+, 
+{base_item_ids = __rt_31, id = 20, level = 30, senior_item_ids = __rt_28, senior_item_nums = __rt_48, tag = true}
+, 
+{base_item_ids = __rt_3, base_item_nums = __rt_21, id = 20, level = 31, senior_item_ids = __rt_33}
+, 
+{base_item_nums = __rt_34, id = 20, level = 32, senior_item_nums = __rt_6}
+, 
+{base_item_ids = __rt_7, base_item_nums = __rt_8, id = 20, level = 33, senior_item_ids = __rt_7, senior_item_nums = __rt_26}
+, 
+{base_item_ids = __rt_9, id = 20, level = 34, senior_item_ids = __rt_11, senior_item_nums = __rt_37}
+, 
+{base_item_ids = __rt_12, base_item_nums = __rt_13, id = 20, level = 35, senior_item_ids = __rt_14, senior_item_nums = __rt_54}
+, 
+{base_item_ids = __rt_16, id = 20, level = 36, senior_item_ids = __rt_17, senior_item_nums = __rt_10}
+, 
+{base_item_ids = __rt_18, base_item_nums = __rt_19, id = 20, level = 37, senior_item_ids = __rt_20, senior_item_nums = __rt_21}
+, 
+{base_item_ids = __rt_22, id = 20, level = 38, senior_item_ids = __rt_22, senior_item_nums = __rt_41}
+, 
+{base_item_ids = __rt_62, base_item_nums = __rt_2, id = 20, level = 39, senior_item_ids = __rt_36, senior_item_nums = __rt_23}
+, 
+{base_item_ids = __rt_56, base_item_nums = __rt_21, id = 20, level = 40, senior_item_ids = __rt_57, senior_item_nums = __rt_49, tag = true}
+, 
+{base_item_ids = __rt_33, base_item_nums = __rt_19, id = 20, level = 41, senior_item_ids = __rt_33}
+, 
+{base_item_nums = __rt_39, id = 20, level = 42, senior_item_nums = __rt_6}
+, 
+{base_item_ids = __rt_7, base_item_nums = __rt_8, id = 20, level = 43, senior_item_ids = __rt_7, senior_item_nums = __rt_26}
+, 
+{base_item_ids = __rt_9, id = 20, level = 44, senior_item_ids = __rt_11, senior_item_nums = __rt_37}
+, 
+{base_item_ids = __rt_24, base_item_nums = __rt_21, id = 20, level = 45, senior_item_ids = __rt_14, senior_item_nums = __rt_15}
+, 
+{base_item_ids = __rt_16, id = 20, level = 46, senior_item_ids = __rt_17, senior_item_nums = __rt_10}
+, 
+{base_item_ids = __rt_18, base_item_nums = __rt_19, id = 20, level = 47, senior_item_ids = __rt_20, senior_item_nums = __rt_21}
+, 
+{base_item_ids = __rt_22, id = 20, level = 48, senior_item_ids = __rt_22, senior_item_nums = __rt_41}
+, 
+{base_item_ids = __rt_62, base_item_nums = __rt_2, id = 20, level = 49, senior_item_ids = __rt_36, senior_item_nums = __rt_23}
+, 
+{base_item_ids = __rt_31, exp = 500, id = 20, level = 50, senior_item_ids = __rt_28, senior_item_nums = __rt_48, tag = true}
+}
 ; 
 [101] = {
-{base_item_ids = __rt_61, base_item_nums = __rt_61, exp = 200, id = 101, senior_item_ids = __rt_62, senior_item_nums = __rt_63}
+{base_item_ids = __rt_63, base_item_nums = __rt_63, exp = 200, id = 101, senior_item_ids = __rt_64, senior_item_nums = __rt_65}
 , 
-{base_item_ids = __rt_61, base_item_nums = __rt_61, exp = 400, id = 101, level = 2, senior_item_ids = __rt_64, senior_item_nums = __rt_65}
+{base_item_ids = __rt_63, base_item_nums = __rt_63, exp = 400, id = 101, level = 2, senior_item_ids = __rt_66, senior_item_nums = __rt_67}
 , 
-{base_item_ids = __rt_61, base_item_nums = __rt_61, exp = 400, id = 101, level = 3, senior_item_ids = __rt_64, senior_item_nums = __rt_65}
+{base_item_ids = __rt_63, base_item_nums = __rt_63, exp = 400, id = 101, level = 3, senior_item_ids = __rt_66, senior_item_nums = __rt_67}
 , 
-{base_item_ids = __rt_61, base_item_nums = __rt_61, exp = 500, id = 101, level = 4, senior_item_ids = __rt_62, senior_item_nums = __rt_63}
+{base_item_ids = __rt_63, base_item_nums = __rt_63, exp = 500, id = 101, level = 4, senior_item_ids = __rt_64, senior_item_nums = __rt_65}
 , 
-{base_item_ids = __rt_61, base_item_nums = __rt_61, exp = 500, id = 101, level = 5, senior_item_ids = __rt_64, senior_item_nums = __rt_66}
+{base_item_ids = __rt_63, base_item_nums = __rt_63, exp = 500, id = 101, level = 5, senior_item_ids = __rt_66, senior_item_nums = __rt_68}
 , 
-{base_item_ids = __rt_61, base_item_nums = __rt_61, exp = 500, id = 101, level = 6, senior_item_ids = __rt_64, senior_item_nums = __rt_66}
+{base_item_ids = __rt_63, base_item_nums = __rt_63, exp = 500, id = 101, level = 6, senior_item_ids = __rt_66, senior_item_nums = __rt_68}
 , 
-{base_item_ids = __rt_61, base_item_nums = __rt_61, exp = 500, id = 101, level = 7, senior_item_ids = __rt_62, 
+{base_item_ids = __rt_63, base_item_nums = __rt_63, exp = 500, id = 101, level = 7, senior_item_ids = __rt_64, 
 senior_item_nums = {100, 30, 1}
 }
 , 
-{base_item_ids = __rt_61, base_item_nums = __rt_61, exp = 500, id = 101, level = 8, senior_item_ids = __rt_64, senior_item_nums = __rt_66}
+{base_item_ids = __rt_63, base_item_nums = __rt_63, exp = 500, id = 101, level = 8, senior_item_ids = __rt_66, senior_item_nums = __rt_68}
 }
 }
 local __default_values = {base_item_ids = __rt_4, base_item_nums = __rt_10, exp = 100, id = 1, level = 1, senior_item_ids = __rt_4, senior_item_nums = __rt_2, tag = false}
@@ -2039,7 +2141,7 @@ for k,v in pairs(battlepass) do
   end
 end
 local __rawdata = {__basemetatable = base, 
-max_level = {50, 25, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50; [101] = 8}
+max_level = {50, 25, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50; [101] = 8}
 , 
 tag_items = {
 {
@@ -2155,6 +2257,12 @@ item_ids = {1002, 1505, 3001, 302605}
 , 
 item_nums = {1200, 1, 8, 1}
 }
+, 
+{
+item_ids = {1002, 1505, 3001, 305104}
+, 
+item_nums = {1200, 1, 8, 1}
+}
 ; 
 [101] = {
 item_ids = {}
@@ -2167,6 +2275,8 @@ tag_levels = {
 {10, 20, 30, 40, 50}
 , 
 {}
+, 
+{10, 20, 30, 40, 50}
 , 
 {10, 20, 30, 40, 50}
 , 

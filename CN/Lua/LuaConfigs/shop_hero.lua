@@ -268,6 +268,10 @@ pre_para1 = {1065}
 {goods_shelves = 66, hero = 1066, itemId = 2566, order = 66, page = 402, 
 pre_para1 = {1066}
 }
+, 
+{goods_shelves = 67, hero = 1067, itemId = 2567, order = 67, page = 403, 
+pre_para1 = {1067}
+}
 }
 }
 local __default_values = {currencyId = 1006, currencyNums = __rt_1, goods_shelves = 1, hero = 1001, itemId = 2501, itemNums = __rt_2, order = 1, page = 404, pre_condition = __rt_3, 
@@ -548,6 +552,10 @@ resourceIds = {1006}
 [2566] = {
 resourceIds = {1006}
 , shelfId = 66, shopId = 403}
+, 
+[2567] = {
+resourceIds = {1006}
+, shelfId = 67, shopId = 403}
 }
 }
 setmetatable(shop_hero, {__index = __rawdata})

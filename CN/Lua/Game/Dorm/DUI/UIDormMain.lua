@@ -38,7 +38,7 @@ UIDormMain.OnInit = function(self)
   ;
   (self.swtichHouseNode):Init((self.ui).houseNode)
   ;
-  (UIUtil.SetTopStatus)(self, self.OnDormMainReturnClicked, nil, DormEnum.ShowMainInfoFunc)
+  (((((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.OnDormMainReturnClicked)):SetTopStatusInfoFunc(DormEnum.ShowMainInfoFunc)):SetTopStatusVisible(true)):PushTopStatusDataToBackStack()
   self.__OnDormMaxComfortChanged = BindCallback(self, self.OnDormMaxComfortChanged)
   MsgCenter:AddListener(eMsgEventId.DormMaxComfortChanged, self.__OnDormMaxComfortChanged)
   self.dormCtrl = ControllerManager:GetController(ControllerTypeId.Dorm)
@@ -173,7 +173,7 @@ UIDormMain.OnEditorClicked = function(self)
   -- function num : 0_13 , upvalues : _ENV, DormEnum
   (self.dormCtrl):EnterDormEditor()
   ;
-  (UIUtil.SetTopStatus)(self, self.OnDormMainReturnClicked, nil, DormEnum.ShowMainInfoFunc)
+  (((((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.OnDormMainReturnClicked)):SetTopStatusInfoFunc(DormEnum.ShowMainInfoFunc)):SetTopStatusVisible(true)):PushTopStatusDataToBackStack()
 end
 
 UIDormMain.OnDormButClicked = function(self)

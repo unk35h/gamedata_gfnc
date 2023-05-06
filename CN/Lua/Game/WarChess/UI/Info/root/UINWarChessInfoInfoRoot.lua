@@ -77,17 +77,18 @@ UINWarChessInfoInfoRoot.PopInfoRoot4Entity = function(self, entityData, winInfo)
   ;
   ((self.__opIconItem).transform).localPosition = Vector3.one
   if isMonster then
-    self.__hpBarItem = ((self.winInfo).hpBarPool):GetOne()
-    local logicPos = entityData:GetEntityLogicPos()
     local hpRate = entityData:GetWCMonsterHP()
-    ;
-    (self.__hpBarItem):SetWCIIHPBar(true, hpRate)
-    ;
-    ((self.__hpBarItem).transform):SetParent((self.ui).hpBarHolder)
-    -- DECOMPILER ERROR at PC71: Confused about usage of register: R9 in 'UnsetPending'
+    if hpRate < 1 then
+      self.__hpBarItem = ((self.winInfo).hpBarPool):GetOne()
+      ;
+      (self.__hpBarItem):SetWCIIHPBar(true, hpRate)
+      ;
+      ((self.__hpBarItem).transform):SetParent((self.ui).hpBarHolder)
+      -- DECOMPILER ERROR at PC71: Confused about usage of register: R8 in 'UnsetPending'
 
-    ;
-    ((self.__hpBarItem).transform).localPosition = Vector3.one
+      ;
+      ((self.__hpBarItem).transform).localPosition = Vector3.one
+    end
     if self.__enemyMoveItem == nil then
       local isOK, maxPathLength = (WarChessHelper.CheckEnemyCanMove)(entityData)
       if isOK then
@@ -96,7 +97,7 @@ UINWarChessInfoInfoRoot.PopInfoRoot4Entity = function(self, entityData, winInfo)
         (self.__enemyMoveItem):SetCouldMoveDistance(maxPathLength)
         ;
         ((self.__enemyMoveItem).transform):SetParent((self.ui).enemyMoveHolder)
-        -- DECOMPILER ERROR at PC99: Confused about usage of register: R11 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC99: Confused about usage of register: R10 in 'UnsetPending'
 
         ;
         ((self.__enemyMoveItem).transform).localPosition = Vector3.zero
@@ -378,13 +379,29 @@ UINWarChessInfoInfoRoot.RefreshWCTeamHpBar = function(self)
 end
 
 UINWarChessInfoInfoRoot.RefreshWCMonsterHpBar = function(self)
-  -- function num : 0_15
-  if self.entityData == nil or self.__hpBarItem == nil then
+  -- function num : 0_15 , upvalues : _ENV
+  if self.entityData == nil then
     return 
   end
   local isMonster = (self.entityData):GetEntityIsMonster()
   if isMonster then
     local hpRate = (self.entityData):GetWCMonsterHP()
+    if hpRate >= 1 then
+      if self.__hpBarItem ~= nil then
+        ((self.winInfo).hpBarPool):HideOne(self.__hpBarItem)
+        self.__hpBarItem = nil
+      end
+      return 
+    end
+    if self.__hpBarItem == nil then
+      self.__hpBarItem = ((self.winInfo).hpBarPool):GetOne()
+      ;
+      ((self.__hpBarItem).transform):SetParent((self.ui).hpBarHolder)
+      -- DECOMPILER ERROR at PC42: Confused about usage of register: R3 in 'UnsetPending'
+
+      ;
+      ((self.__hpBarItem).transform).localPosition = Vector3.one
+    end
     ;
     (self.__hpBarItem):SetWCIIHPBar(true, hpRate)
   end

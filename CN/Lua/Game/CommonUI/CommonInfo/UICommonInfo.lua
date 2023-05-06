@@ -69,13 +69,13 @@ end
 UICommonInfo.__OnClickRootBack = function(self)
   -- function num : 0_5 , upvalues : _ENV
   if self.isNotNeedTop then
-    (UIUtil.PopFromBackStack)()
+    (UIUtil.PopFromBackStackByUiTab)(self)
     ;
     (UIUtil.HideTopStatus)()
     self:__onBackClick()
   else
     ;
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 end
 

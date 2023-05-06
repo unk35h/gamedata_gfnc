@@ -10,7 +10,6 @@ WarChessSeasonCtrl.ctor = function(self, seasonId, towerId, wcsEnvId)
   ConfigData:LoadDynCfg(eDynConfigData.warchess_season)
   ConfigData:LoadDynCfg(eDynConfigData.warchess_season_item)
   ConfigData:LoadDynCfg(eDynConfigData.warchess_general_env_pool)
-  ConfigData:LoadDynCfg(eDynConfigData.warchess_assist)
   ConfigData:LoadDynCfg(eDynConfigData.warchess_monster_change)
   ConfigData:LoadDynCfg(eDynConfigData.warchess_tower_shop_drop)
   self.resloader = (cs_ResLoader.Create)()
@@ -33,27 +32,45 @@ WarChessSeasonCtrl.EnterWCSeasonLobbyByMsg = function(self, lobbyMessage, isReco
   self.__couldSelectWCLevelList = lobbyMessage.RoomData
   self.__formMsg = (lobbyMessage.backLobbyReMainData).forms
   self.warChessSeasonFloor = (lobbyMessage.backLobbyReMainData).warChessSeasonFloor
+  self._initialProtocolDic = {}
+  for _,buffId in ipairs((lobbyMessage.backLobbyReMainData).initialProtocol) do
+    -- DECOMPILER ERROR at PC16: Confused about usage of register: R8 in 'UnsetPending'
+
+    (self._initialProtocolDic)[buffId] = true
+  end
   WarChessSeasonManager:SetOutSideInfo2WCManager()
   WarChessManager:EnterWarChessByOutMsg(lobbyMessage.backLobbyReMainData, isReconnect)
 end
 
+WarChessSeasonCtrl.GetWCSInitUnlockDic = function(self)
+  -- function num : 0_2 , upvalues : _ENV
+  if not self._initialProtocolDic then
+    return table.emptytable
+  end
+end
+
+WarChessSeasonCtrl.CleanWCSInitUnlockDic = function(self)
+  -- function num : 0_3
+  self._initialProtocolDic = nil
+end
+
 WarChessSeasonCtrl.GetWCSTowerId = function(self)
-  -- function num : 0_2
+  -- function num : 0_4
   return self.__wcTowerId
 end
 
 WarChessSeasonCtrl.GetWCSSeasonId = function(self)
-  -- function num : 0_3
+  -- function num : 0_5
   return self.__wcSeasonId
 end
 
 WarChessSeasonCtrl.GetWCSSeasonCfg = function(self)
-  -- function num : 0_4
+  -- function num : 0_6
   return self.__wcSeasonCfg
 end
 
 WarChessSeasonCtrl.GetWCSOfficialSupportCfgId = function(self)
-  -- function num : 0_5 , upvalues : _ENV
+  -- function num : 0_7 , upvalues : _ENV
   local towerID = WarChessSeasonManager:GetWCSSeasonTowerID()
   local floorIndex = self:WCSGetFloor()
   local floorCfg = ((ConfigData.warchess_season_floor)[towerID])[floorIndex]
@@ -64,27 +81,27 @@ WarChessSeasonCtrl.GetWCSOfficialSupportCfgId = function(self)
 end
 
 WarChessSeasonCtrl.GetWCEnvId = function(self)
-  -- function num : 0_6
+  -- function num : 0_8
   return self.__wcsEnvId
 end
 
 WarChessSeasonCtrl.GetWCEnvCfg = function(self)
-  -- function num : 0_7
+  -- function num : 0_9
   return self.__wcsEnvCfg
 end
 
 WarChessSeasonCtrl.WCSGetLobbyNextRoomDataMsg = function(self)
-  -- function num : 0_8
+  -- function num : 0_10
   return self.__couldSelectWCLevelList
 end
 
 WarChessSeasonCtrl.WCSGetFloor = function(self)
-  -- function num : 0_9
+  -- function num : 0_11
   return self.warChessSeasonFloor
 end
 
 WarChessSeasonCtrl.WCSGetIsAtLastFloor = function(self)
-  -- function num : 0_10 , upvalues : _ENV
+  -- function num : 0_12 , upvalues : _ENV
   local curFloor = self:WCSGetFloor()
   local towerID = WarChessSeasonManager:GetWCSSeasonTowerID()
   local floorCfgs = (ConfigData.warchess_season_floor)[towerID]
@@ -94,27 +111,27 @@ WarChessSeasonCtrl.WCSGetIsAtLastFloor = function(self)
 end
 
 WarChessSeasonCtrl.WCSGetTotalScore = function(self)
-  -- function num : 0_11
+  -- function num : 0_13
   return self.wcsTotalScore
 end
 
 WarChessSeasonCtrl.WCSSetTotalScore = function(self, wcsTotalScore)
-  -- function num : 0_12
+  -- function num : 0_14
   self.wcsTotalScore = wcsTotalScore
 end
 
 WarChessSeasonCtrl.WCSSetSurWCSRoomData = function(self, curWCSRoomData)
-  -- function num : 0_13
+  -- function num : 0_15
   self.__curWCSRoomData = curWCSRoomData
 end
 
 WarChessSeasonCtrl.WCSGetSurWCSRoomData = function(self)
-  -- function num : 0_14
+  -- function num : 0_16
   return self.__curWCSRoomData
 end
 
 WarChessSeasonCtrl.Delete = function(self)
-  -- function num : 0_15 , upvalues : _ENV, eDynConfigData
+  -- function num : 0_17 , upvalues : _ENV, eDynConfigData
   if self.resloader ~= nil then
     (self.resloader):Put2Pool()
     self.resloader = nil
@@ -125,7 +142,6 @@ WarChessSeasonCtrl.Delete = function(self)
   ConfigData:ReleaseDynCfg(eDynConfigData.warchess_season)
   ConfigData:ReleaseDynCfg(eDynConfigData.warchess_season_item)
   ConfigData:ReleaseDynCfg(eDynConfigData.warchess_general_env_pool)
-  ConfigData:ReleaseDynCfg(eDynConfigData.warchess_assist)
   ConfigData:ReleaseDynCfg(eDynConfigData.warchess_monster_change)
   ConfigData:ReleaseDynCfg(eDynConfigData.warchess_tower_shop_drop)
 end

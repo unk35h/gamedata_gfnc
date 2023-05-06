@@ -31,7 +31,11 @@ bs_100800.PlaySkill = function(self, passdata)
     rangeOffset = 10
   end
   if ((self.caster).recordTable).BJ == true then
-    targetRole = self:FindEnemy(3, rangeOffset)
+    if ((self.caster).recordTable).weapon == true then
+      targetRole = self:FindEnemy(14, rangeOffset)
+    else
+      targetRole = self:FindEnemy(3, rangeOffset)
+    end
     if targetRole == nil then
       targetRole = self:FindEnemy(10001)
     end
@@ -101,8 +105,17 @@ bs_100800.SkillEventFunc2 = function(self, effect, eventId, target)
   if miss and eventId == eBattleEffectEvent.Trigger and effect.dataId == (self.config).effectId_trail then
     local arg = ((self.caster).recordTable)["arglist[1]"]
     local skillResult = LuaSkillCtrl:CallSkillResult(effect, target)
-    LuaSkillCtrl:HealResult(skillResult, (self.config).heal_config, {arg}, false)
-    skillResult:EndResult()
+    if ((self.caster).recordTable).weapon2 == true then
+      arg = arg + ((self.caster).recordTable).exHeal_rate
+      local hpRate = (target.targetRole)._curHp * 1000 // (target.targetRole).maxHp
+      if hpRate <= 500 then
+        arg = (arg) * (1000 + ((self.caster).recordTable).exHeal) // 1000
+      end
+    end
+    do
+      LuaSkillCtrl:HealResult(skillResult, (self.config).heal_config, {arg}, false)
+      skillResult:EndResult()
+    end
   end
 end
 

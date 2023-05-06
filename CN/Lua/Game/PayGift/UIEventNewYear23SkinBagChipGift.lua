@@ -128,7 +128,7 @@ end
 
 UIEventNewYear23SkinBagChipGift.OnClickCloseBtn = function(self)
   -- function num : 0_5 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIEventNewYear23SkinBagChipGift.OnBackChipGift = function(self)

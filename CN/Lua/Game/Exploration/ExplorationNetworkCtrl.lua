@@ -108,6 +108,17 @@ ExplorationNetworkCtrl.CS_EXPLORATION_Start = function(self, dungeonId, formId, 
 
     ;
     (self.epSendStartData).challengeQuests = challengeTaskIdList
+    local fmtData = (PlayerDataCenter.formationDic)[formId]
+    local officeAssist = nil
+    if fmtData == nil then
+      error("fmtData == nil, formId:" .. tostring(formId))
+    else
+      officeAssist = fmtData:GetFmtOfficeAssistData()
+    end
+    -- DECOMPILER ERROR at PC38: Confused about usage of register: R13 in 'UnsetPending'
+
+    ;
+    (self.epSendStartData).assist = officeAssist
     if not starting then
       starting = 0
     end
@@ -120,11 +131,11 @@ ExplorationNetworkCtrl.CS_EXPLORATION_Start = function(self, dungeonId, formId, 
     if substitute < 0 then
       error("substitute power low then 0, substitute:" .. tostring(substitute))
     end
-    -- DECOMPILER ERROR at PC45: Confused about usage of register: R11 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC64: Confused about usage of register: R13 in 'UnsetPending'
 
     ;
     (self.epSendStartData).starting = starting
-    -- DECOMPILER ERROR at PC47: Confused about usage of register: R11 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC66: Confused about usage of register: R13 in 'UnsetPending'
 
     ;
     (self.epSendStartData).substitute = substitute

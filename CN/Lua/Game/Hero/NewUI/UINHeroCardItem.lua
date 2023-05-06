@@ -225,13 +225,21 @@ UINHeroCardItem.RefreshSpecWeaponState = function(self)
   ;
   ((self.ui).img_SpecWeapon):SetActive(true)
   local specWeaponData = (self.heroData):GetHeroDataSpecWeapon(weaponId)
+  -- DECOMPILER ERROR at PC22: Confused about usage of register: R3 in 'UnsetPending'
+
   if specWeaponData == nil then
+    ((self.ui).img_SpecWeaponFade).alpha = 0.6
+    ;
     ((self.ui).img_SpecWeaponLV):SetIndex(0)
     return 
   end
   local step = specWeaponData:GetSpecWeaponCurStep()
   ;
   ((self.ui).img_SpecWeaponLV):SetIndex(step)
+  -- DECOMPILER ERROR at PC44: Confused about usage of register: R4 in 'UnsetPending'
+
+  ;
+  ((self.ui).img_SpecWeaponFade).alpha = step == 0 and 0.6 or 1
 end
 
 UINHeroCardItem.OnSpecIconClicked = function(self)

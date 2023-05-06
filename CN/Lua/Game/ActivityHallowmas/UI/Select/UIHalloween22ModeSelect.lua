@@ -160,7 +160,7 @@ end
 
 UIHalloween22ModeSelect.OnClickBackSelect = function(self)
   -- function num : 0_10 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIHalloween22ModeSelect.OnCloseSelect = function(self)

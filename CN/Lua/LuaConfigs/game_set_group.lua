@@ -6,6 +6,10 @@ local game_set_group = {
 {group_name = 431367, id = 2, 
 order = {3}
 }
+, 
+{group_name = 229021, id = 3, 
+order = {4, 5}
+}
 }
 local __default_values = {group_name = 105467, id = 1, 
 order = {2, 1}

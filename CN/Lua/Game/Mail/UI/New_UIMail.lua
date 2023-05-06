@@ -6,8 +6,20 @@ local JumpManager = require("Game.Jump.JumpManager")
 local MailEnum = require("Game.Mail.MailEnum")
 local UINMailListItem = require("Game.Mail.UI.UINMailListItem")
 local UINMailContent = require("Game.Mail.UI.UINMailContent")
+local _loadSenderPicFunc = {[(MailEnum.SenderPicType).lPic] = function(self, picName)
+  -- function num : 0_0 , upvalues : _ENV
+  (self.resloader):LoadABAssetAsync(PathConsts:GetCharacterBigImgPrefabPath(picName), function(prefab)
+    -- function num : 0_0_0 , upvalues : _ENV, self
+    DestroyUnityObject(self._senderPic)
+    self._senderPic = prefab:Instantiate((self.ui).obj_HeroHolder)
+    local commonPicCtrl = (self._senderPic):FindComponent(eUnityComponentID.CommonPicController)
+    commonPicCtrl:SetPosType("HeroList")
+  end
+)
+end
+}
 New_UIMail.OnInit = function(self)
-  -- function num : 0_0 , upvalues : _ENV, UINMailContent
+  -- function num : 0_1 , upvalues : _ENV, UINMailContent
   self.mailDataList = {}
   self.mailItemDic = {}
   self.ctrl = ControllerManager:GetController(ControllerTypeId.Mail, true)
@@ -17,12 +29,14 @@ New_UIMail.OnInit = function(self)
   (UIUtil.AddButtonListener)((self.ui).btn_GetAll, self, self.GetAllRewards)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Delete, self, self.DeletAllReadedMail)
+  ;
+  (UIUtil.AddButtonListener)((self.ui).btn_treasureSelect, self, self.OnClickTreasureSelect)
   self._OnClickMailItem = BindCallback(self, self.OnClickMailItem)
-  -- DECOMPILER ERROR at PC43: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC50: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.ui).loopList_mails).onInstantiateItem = BindCallback(self, self.m_OnNewItem)
-  -- DECOMPILER ERROR at PC50: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC57: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.ui).loopList_mails).onChangeItem = BindCallback(self, self.m_OnChangeItem)
@@ -33,24 +47,24 @@ New_UIMail.OnInit = function(self)
   MsgCenter:AddListener(eMsgEventId.OnMailDiff, self._m_MailDiff)
   self._m_MailDelete = BindCallback(self, self.m_MailDelete)
   MsgCenter:AddListener(eMsgEventId.OnMailDelete, self._m_MailDelete)
+  self.resloader = ((CS.ResLoader).Create)()
   ;
-  (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack()
 end
 
 New_UIMail.OnShow = function(self)
-  -- function num : 0_1 , upvalues : base
+  -- function num : 0_2 , upvalues : base
   (base.OnShow)(self)
   ;
   (self.ctrl):OnMailUIShow(function()
-    -- function num : 0_1_0 , upvalues : self
-    self:RefreshMailList((self.ctrl):GetMailDataList())
-    self:OpenFirstMail()
+    -- function num : 0_2_0 , upvalues : self
+    self:RefreshTreasureSelect(false)
   end
 )
 end
 
 New_UIMail.RefreshMailList = function(self, dataList)
-  -- function num : 0_2 , upvalues : _ENV
+  -- function num : 0_3 , upvalues : _ENV
   local num = #dataList
   self.mailDataList = dataList
   if num > 0 then
@@ -73,7 +87,10 @@ New_UIMail.RefreshMailList = function(self, dataList)
     ;
     ((self.ui).btnGroup):SetActive(false)
   end
-  local numLimit = (ConfigData.game_config).MailNumLimit
+  local isTreasure = (self.ctrl):GetOnlyShowTreasureMail()
+  if not isTreasure or not (ConfigData.game_config).MailTreasureCount then
+    local numLimit = (ConfigData.game_config).MailNumLimit
+  end
   ;
   ((self.ui).tex_Count):SetIndex(0, tostring(num), tostring(numLimit))
   if num == 0 then
@@ -82,7 +99,7 @@ New_UIMail.RefreshMailList = function(self, dataList)
 end
 
 New_UIMail.m_OnNewItem = function(self, go)
-  -- function num : 0_3 , upvalues : UINMailListItem
+  -- function num : 0_4 , upvalues : UINMailListItem
   local mailItem = (UINMailListItem.New)()
   mailItem:Init(go)
   mailItem:SetCallback(self._OnClickMailItem)
@@ -93,7 +110,7 @@ New_UIMail.m_OnNewItem = function(self, go)
 end
 
 New_UIMail.m_OnChangeItem = function(self, go, index)
-  -- function num : 0_4 , upvalues : _ENV
+  -- function num : 0_5 , upvalues : _ENV
   local mailItem = (self.mailItemDic)[go]
   if mailItem == nil then
     error("Can\'t find mailItem by gameObject")
@@ -107,7 +124,7 @@ New_UIMail.m_OnChangeItem = function(self, go, index)
 end
 
 New_UIMail.m_GetItemByData = function(self, data)
-  -- function num : 0_5 , upvalues : _ENV
+  -- function num : 0_6 , upvalues : _ENV
   for k,v in ipairs(self.mailDataList) do
     if v == data then
       local index = k - 1
@@ -117,7 +134,7 @@ New_UIMail.m_GetItemByData = function(self, data)
 end
 
 New_UIMail.m_GetItemGoByIndex = function(self, index)
-  -- function num : 0_6
+  -- function num : 0_7
   local go = ((self.ui).loopList_mails):GetCellByIndex(index)
   if go ~= nil then
     return (self.mailItemDic)[go]
@@ -126,7 +143,7 @@ New_UIMail.m_GetItemGoByIndex = function(self, index)
 end
 
 New_UIMail.m_MailDiff = function(self, diffDatas, hasNew)
-  -- function num : 0_7 , upvalues : _ENV
+  -- function num : 0_8 , upvalues : _ENV
   if hasNew then
     self:RefreshMailList((self.ctrl):GetMailDataList())
     return 
@@ -143,7 +160,7 @@ New_UIMail.m_MailDiff = function(self, diffDatas, hasNew)
 end
 
 New_UIMail.m_MailDelete = function(self, delete)
-  -- function num : 0_8 , upvalues : _ENV
+  -- function num : 0_9 , upvalues : _ENV
   if (table.count)(delete) > 0 then
     self:RefreshMailList((self.ctrl):GetMailDataList())
     if self.lastSelectMailData ~= nil and (self.lastSelectMailData).isDeleted then
@@ -153,7 +170,7 @@ New_UIMail.m_MailDelete = function(self, delete)
 end
 
 New_UIMail.OpenFirstMail = function(self)
-  -- function num : 0_9
+  -- function num : 0_10
   if #self.mailDataList > 0 then
     local firstMailData = (self.mailDataList)[1]
     if self.lastSelectMailData == firstMailData then
@@ -161,11 +178,15 @@ New_UIMail.OpenFirstMail = function(self)
     end
     local mailItem = self:m_GetItemByData(firstMailData)
     mailItem:OnCkilck(true)
+  else
+    do
+      self:ClearOldSenderPic()
+    end
   end
 end
 
 New_UIMail.OnClickMailItem = function(self, mailData)
-  -- function num : 0_10
+  -- function num : 0_11
   -- DECOMPILER ERROR at PC7: Confused about usage of register: R2 in 'UnsetPending'
 
   if self.lastSelectMailData ~= nil and mailData ~= self.lastSelectMailData then
@@ -182,34 +203,77 @@ New_UIMail.OnClickMailItem = function(self, mailData)
 end
 
 New_UIMail.OpenMail = function(self, mailData)
-  -- function num : 0_11
+  -- function num : 0_12
   (self.ctrl):ReqMailRead(mailData.uid, function()
-    -- function num : 0_11_0
+    -- function num : 0_12_0
   end
 )
   ;
   (self.mailContent):UpdateContent(mailData)
 end
 
+New_UIMail.ClearOldSenderPic = function(self)
+  -- function num : 0_13 , upvalues : _ENV
+  if self._senderPic ~= nil then
+    DestroyUnityObject(self._senderPic)
+    self._senderPic = nil
+  end
+end
+
+New_UIMail.RefreshSenderPic = function(self, mailData)
+  -- function num : 0_14 , upvalues : _loadSenderPicFunc
+  self:ClearOldSenderPic()
+  local picName, senderPicType = mailData:GetSenderPic()
+  if picName ~= nil and _loadSenderPicFunc[senderPicType] ~= nil then
+    (_loadSenderPicFunc[senderPicType])(self, picName)
+  end
+end
+
+New_UIMail.OnClickTreasureSelect = function(self)
+  -- function num : 0_15
+  local isOn = not (self.ctrl):GetOnlyShowTreasureMail()
+  self:RefreshTreasureSelect(isOn)
+end
+
+New_UIMail.RefreshTreasureSelect = function(self, isOn)
+  -- function num : 0_16
+  if isOn then
+    ((self.ui).img_treasureSelect):SetIndex(1)
+  else
+    ;
+    ((self.ui).img_treasureSelect):SetIndex(0)
+  end
+  ;
+  (self.ctrl):SetOnlyShowTreasureMail(isOn)
+  -- DECOMPILER ERROR at PC21: Confused about usage of register: R2 in 'UnsetPending'
+
+  if self.lastSelectMailData then
+    (self.lastSelectMailData).isSelected = false
+  end
+  self.lastSelectMailData = nil
+  self:RefreshMailList((self.ctrl):GetMailDataList())
+  self:OpenFirstMail()
+end
+
 New_UIMail.GetAllRewards = function(self)
-  -- function num : 0_12
+  -- function num : 0_17
   (self.ctrl):ReqOneClickPickUp()
 end
 
 New_UIMail.DeletAllReadedMail = function(self)
-  -- function num : 0_13 , upvalues : _ENV
+  -- function num : 0_18 , upvalues : _ENV
   AudioManager:PlayAudioById(1057)
   ;
   (self.ctrl):ReqOneClickDelete()
 end
 
 New_UIMail.SetUIMailHideCallback = function(self, callback)
-  -- function num : 0_14
+  -- function num : 0_19
   self.__hideCallback = callback
 end
 
 New_UIMail.OnHide = function(self)
-  -- function num : 0_15 , upvalues : base
+  -- function num : 0_20 , upvalues : base
   self:OnCloseWin()
   if self.__hideCallback ~= nil then
     (self.__hideCallback)()
@@ -219,21 +283,29 @@ New_UIMail.OnHide = function(self)
 end
 
 New_UIMail.BackAction = function(self)
-  -- function num : 0_16
+  -- function num : 0_21
   (self.mailContent):Delete()
   self:Delete()
 end
 
 New_UIMail.OnClickReturn = function(self)
-  -- function num : 0_17 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  -- function num : 0_22 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 New_UIMail.OnDelete = function(self)
-  -- function num : 0_18 , upvalues : _ENV, base
+  -- function num : 0_23 , upvalues : _ENV, base
   MsgCenter:RemoveListener(eMsgEventId.OnMailDiff, self._m_MailDiff)
   MsgCenter:RemoveListener(eMsgEventId.OnMailDelete, self._m_MailDelete)
-  -- DECOMPILER ERROR at PC16: Confused about usage of register: R1 in 'UnsetPending'
+  if self.resloader ~= nil then
+    (self.resloader):Put2Pool()
+    self.resloader = nil
+  end
+  if self._senderPic ~= nil then
+    DestroyUnityObject(self._senderPic)
+    self._senderPic = nil
+  end
+  -- DECOMPILER ERROR at PC30: Confused about usage of register: R1 in 'UnsetPending'
 
   if self.lastSelectMailData ~= nil then
     (self.lastSelectMailData).isSelected = false

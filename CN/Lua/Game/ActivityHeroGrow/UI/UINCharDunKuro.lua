@@ -80,7 +80,7 @@ UINCharDunKuro._LoadLive2D = function(self, resIsDoneFunc)
     return 
   end
   local heroData = (HeroData.New)({
-basic = {id = self.heroID, level = 1, exp = 0, star = heroCfg.rank, potentialLvl = 0, ts = -1, career = heroCfg.career, company = heroCfg.camp}
+basic = {id = self.heroID, level = 1, exp = 0, star = heroCfg.rank, potentialLvl = 0, ts = -1, career = heroCfg.career, company = heroCfg.camp, skinId = (PlayerDataCenter.skinData):DealNotSelfHaveHeroSkinOverraid(0, self.heroID)}
 })
   DestroyUnityObject(self.liveGo)
   self.resLoader = (cs_ResLoader.Create)()

@@ -19,11 +19,11 @@ UIHeroTask.OnInit = function(self)
   ;
   ((self.ui).loop_scroll).onChangeItem = BindCallback(self, self.__OnChangeItem)
   ;
-  (UIUtil.AddButtonListenerWithArg)((self.ui).btn_background, self, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListenerWithArg)((self.ui).btn_background, self, self.__OnClickReturn)
   ;
-  (UIUtil.AddButtonListenerWithArg)((self.ui).btn_Close, self, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListenerWithArg)((self.ui).btn_Close, self, self.__OnClickReturn)
   ;
-  (UIUtil.SetTopStatus)(self, self.__OnClickReturn)
+  ((((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):SetTopStatusVisible(true)):PushTopStatusDataToBackStack()
   ;
   (UIUtil.HideTopStatus)()
   self._b__RefreshHeroTask = BindCallback(self, self.__RefreshHeroTask)
@@ -150,7 +150,7 @@ UIHeroTask.__OnChangeItem = function(self, go, index)
   taskItem:InitHeroTaskItem(taskData, self.heroData)
 end
 
-UIHeroTask.__OnClickReturn = function(self)
+UIHeroTask.BackAction = function(self)
   -- function num : 0_7
   if self.closeCallback ~= nil then
     (self.closeCallback)()
@@ -158,13 +158,18 @@ UIHeroTask.__OnClickReturn = function(self)
   self:Delete()
 end
 
-UIHeroTask.OnHide = function(self)
+UIHeroTask.__OnClickReturn = function(self)
   -- function num : 0_8 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
+UIHeroTask.OnHide = function(self)
+  -- function num : 0_9 , upvalues : _ENV
   (UIUtil.ReShowTopStatus)()
 end
 
 UIHeroTask.OnDelete = function(self)
-  -- function num : 0_9 , upvalues : _ENV, base
+  -- function num : 0_10 , upvalues : _ENV, base
   MsgCenter:RemoveListener(eMsgEventId.OnHeroTaskChange, self._b__RefreshHeroTask)
   if self.resloader ~= nil then
     (self.resloader):Put2Pool()

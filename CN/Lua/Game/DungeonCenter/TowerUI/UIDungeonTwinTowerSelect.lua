@@ -93,7 +93,7 @@ UIDungeonTwinTowerSelect.OnSelectTwinTower = function(self, towerTypeData)
   -- function num : 0_4 , upvalues : _ENV
   local towerId = towerTypeData:GetDungeonTowerTypeId()
   ;
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
   if towerId == self.__selectTowerId then
     return 
   end
@@ -126,7 +126,7 @@ end
 
 UIDungeonTwinTowerSelect._OnBtnCancelClick = function(self)
   -- function num : 0_5 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIDungeonTwinTowerSelect._OnClickTowerReturn = function(self)

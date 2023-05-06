@@ -3,17 +3,20 @@
 local AllActivityStarUpData = class("AllActivityStarUpData")
 local ActivityStarUpEnum = require("Game.ActivityStarUp.ActivityStarUpEnum")
 local ActivityStarUpData = require("Game.ActivityStarUp.ActivityStarUpData")
-AllActivityStarUpData.InitActivityStarUp = function(self)
+AllActivityStarUpData.InitActivityStarUp = function(self, msg)
   -- function num : 0_0 , upvalues : _ENV, ActivityStarUpData
   self.__isInited = true
   self.dataDic = {}
-  for k,v in pairs(ConfigData.rookie_star) do
-    local data = (ActivityStarUpData.New)()
-    data:InitStarUp(v)
-    -- DECOMPILER ERROR at PC14: Confused about usage of register: R7 in 'UnsetPending'
+  for _,msgData in ipairs(msg) do
+    local cfg = (ConfigData.rookie_star)[msgData.actId]
+    if cfg ~= nil then
+      local data = (ActivityStarUpData.New)()
+      data:InitStarUp(cfg, msgData)
+      -- DECOMPILER ERROR at PC21: Confused about usage of register: R9 in 'UnsetPending'
 
-    ;
-    (self.dataDic)[k] = data
+      ;
+      (self.dataDic)[msgData.actId] = data
+    end
   end
 end
 

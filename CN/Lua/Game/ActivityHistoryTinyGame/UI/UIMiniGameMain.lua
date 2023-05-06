@@ -90,7 +90,7 @@ UIMiniGameMain.OnHTGOpenSubUI = function(self, subUIType, isTopBack)
   if subUIType == 1 then
     self.__isOpenOther = false
     if not isTopBack then
-      (UIUtil.PopFromBackStack)()
+      (UIUtil.PopFromBackStackByUiTab)(self)
     end
   end
   if subUIType ~= 1 and not self.__isOpenOther then
@@ -129,7 +129,7 @@ UIMiniGameMain.OnHTGOpenSubUI = function(self, subUIType, isTopBack)
   if self._selectUIType ~= eSubUIType.Main then
     self:__ShowSubUIAni(subClass)
   end
-  -- DECOMPILER ERROR at PC121: Confused about usage of register: R9 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC122: Confused about usage of register: R9 in 'UnsetPending'
 
   ;
   (self._subUIDic)[self._selectUIType] = subClass

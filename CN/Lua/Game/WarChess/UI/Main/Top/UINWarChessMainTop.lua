@@ -11,7 +11,7 @@ local eWarChessEnum = require("Game.WarChess.eWarChessEnum")
 local cs_MessageCommon = CS.MessageCommon
 local cs_DoTween = ((CS.DG).Tweening).DOTween
 UINWarChessMainTop.OnInit = function(self)
-  -- function num : 0_0 , upvalues : _ENV, UINResourceGroup, UINWCBuffList, UINWarChessMainTop_PressBar, UINWarChessMainTop_PressPanel, UINWarChessMainTop_Goal, cs_DoTween
+  -- function num : 0_0 , upvalues : _ENV, UINResourceGroup, UINWCBuffList, UINWarChessMainTop_PressBar, UINWarChessMainTop_PressPanel, UINWarChessMainTop_Goal
   (UIUtil.LuaUIBindingTable)(self.transform, self.ui)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_pressureBar, self, self.ShowWCPressFrameNode)
@@ -63,23 +63,6 @@ UINWarChessMainTop.OnInit = function(self)
   MsgCenter:AddListener(eMsgEventId.WC_StressPointChange, self.__onWCPressChange)
   self.__onTimeRewind = BindCallback(self, self.OnTimeRewind)
   MsgCenter:AddListener(eMsgEventId.WC_TimeRewind, self.__onTimeRewind)
-  self.__showWarningQueue = (cs_DoTween.Sequence)()
-  ;
-  (self.__showWarningQueue):SetAutoKill(false)
-  ;
-  (((self.__showWarningQueue):AppendCallback(function()
-    -- function num : 0_0_0 , upvalues : self
-    ((self.ui).img_turnWarrning):DOFade(1, 0.5)
-  end
-)):AppendInterval(0.5)):AppendCallback(function()
-    -- function num : 0_0_1 , upvalues : self
-    ((self.ui).img_turnWarrning):DOFade(0, 0.5)
-  end
-)
-  ;
-  (self.__showWarningQueue):SetLoops(2)
-  ;
-  (self.__showWarningQueue):Pause()
 end
 
 UINWarChessMainTop.ShowWCDeployInfo = function(self)
@@ -180,20 +163,6 @@ UINWarChessMainTop.OnTrunNumChange = function(self, num)
   -- DECOMPILER ERROR at PC5: Confused about usage of register: R2 in 'UnsetPending'
 
   ((self.ui).tex_turnNum).text = tostring(num)
-  local warningNumber = (WarChessManager.wcLevelCfg).warning
-  local img = ((self.ui).tex_turnNum):GetComponentInParent(typeof(((CS.UnityEngine).UI).Image))
-  if warningNumber and warningNumber > 0 and img and warningNumber - num < 3 then
-    img.color = (Color.New)(1, 0.19607843137255, 0.19607843137255)
-    ;
-    ((img.transform):DOPunchScale((Vector3.New)(0.5, 0.5, 0), 0.5, 1, 0)):SetLoops(2)
-    if warningNumber - num <= 0 then
-      (self.__showWarningQueue):Restart()
-    end
-  else
-    if warningNumber and warningNumber > 0 and img then
-      img.color = (Color.New)(1, 1, 1)
-    end
-  end
 end
 
 UINWarChessMainTop.OnCoinNumChange = function(self, itemId, num)
@@ -352,8 +321,6 @@ UINWarChessMainTop.OnDelete = function(self)
     (self.resloader):Put2Pool()
     self.resloader = nil
   end
-  ;
-  (self.__showWarningQueue):Kill()
   ;
   (self.pressBarNode):Delete()
 end

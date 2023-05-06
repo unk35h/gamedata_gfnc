@@ -1,13 +1,13 @@
 -- params : ...
 -- function num : 0 , upvalues : _ENV
 local dungeon_info = {
-{}
+{info_text = 262461}
 , 
-{info_text = 286543, ui_type = 2}
+{ui_type = 2}
 , 
 {info_text = 54539, ui_type = 3}
 }
-local __default_values = {info_text = 262461, ui_type = 1}
+local __default_values = {info_text = 230305, ui_type = 1}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")

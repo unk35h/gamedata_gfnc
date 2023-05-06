@@ -371,14 +371,14 @@ UINQuickPurchasePayGift.OnClickBuyNormal = function(self)
     end
     payGiftCtrl:SendBuyGifit(giftCfg, (self.payGiftInfo):GetSelfSelectGiftParams(), function()
     -- function num : 0_7_0 , upvalues : _ENV
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByWinId)(UIWindowTypeID.QuickBuy)
   end
 )
     return 
   end
   payGiftCtrl:SendBuyGifit(giftCfg, nil, function()
     -- function num : 0_7_1 , upvalues : _ENV
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByWinId)(UIWindowTypeID.QuickBuy)
   end
 )
 end
@@ -395,7 +395,7 @@ UINQuickPurchasePayGift.OnClickBuySuper = function(self)
   local payGiftCtrl = ControllerManager:GetController(ControllerTypeId.PayGift, true)
   payGiftCtrl:SendBuyGifit(giftCfg, nil, function()
     -- function num : 0_8_0 , upvalues : _ENV
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByWinId)(UIWindowTypeID.QuickBuy)
   end
 )
 end

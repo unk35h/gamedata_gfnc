@@ -8,6 +8,7 @@ local JumpManager = require("Game.Jump.JumpManager")
 local cs_InputUtility = CS.InputUtility
 UITopStatus.OnInit = function(self)
   -- function num : 0_0 , upvalues : UINTopBtnGroup, UINResourceGroup, _ENV
+  self.__permanent = true
   self.__NavigationWin = nil
   self.topGroup = (UINTopBtnGroup.New)()
   ;
@@ -177,7 +178,7 @@ UITopStatus.TryClickTopBack = function(self)
   -- function num : 0_13 , upvalues : cs_InputUtility, _ENV
   local rectTran = (self.topGroup):GetTopBtnBackRectTran()
   if (rectTran.gameObject).activeInHierarchy and (cs_InputUtility.UIClickable)(rectTran) then
-    (UIUtil.OnClickBack)()
+    (UIUtil.ForceOnClickBack)()
     return true
   end
   return false
@@ -197,6 +198,9 @@ UITopStatus.OnDelete = function(self)
   (self.topGroup):Delete()
   ;
   (self.resGroup):Delete()
+  if self.__NavigationWin ~= nil then
+    (self.__NavigationWin):Delete()
+  end
   ;
   (base.OnDelete)(self)
 end

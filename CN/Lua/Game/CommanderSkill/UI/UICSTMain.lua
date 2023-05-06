@@ -22,13 +22,9 @@ UICSTMain.OnInit = function(self)
   (self.skillDetailNode):Hide()
   self.resLoader = (cs_ResLoader.Create)()
   ;
-  (UIUtil.SetTopStatus)(self, self._OnClickReturn, nil, nil, nil, nil, function()
-    -- function num : 0_0_0 , upvalues : _ENV
-    if ExplorationManager:IsInExploration() then
-      (UIUtil.SetTopStatusBtnShow)(false, false)
-    end
-  end
-)
+  (UIUtil.SetTopStatus)(self, self._OnClickReturn)
+  ;
+  (UIUtil.SetTopStatusBtnShow)(false, false)
 end
 
 UICSTMain.InitCSTMain = function(self, cmdSkillCtrl, treeDataList, selectedTreeId)

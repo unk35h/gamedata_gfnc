@@ -16,8 +16,9 @@ UINActivityStarUpTask.OnInit = function(self)
   self.rewardPool = (UIItemPool.New)(UINBaseItemWithReceived, (self.ui).rewardItem)
 end
 
-UINActivityStarUpTask.InitItem = function(self, taskInfo)
+UINActivityStarUpTask.InitItem = function(self, activityInfo, taskInfo)
   -- function num : 0_1 , upvalues : _ENV
+  self.activityInfo = activityInfo
   self.taskInfo = taskInfo
   local isFinish = taskInfo.state == proto_object_QuestState.QuestStateCompleted
   ;
@@ -100,8 +101,22 @@ end
 
 UINActivityStarUpTask.OnClickGet = function(self)
   -- function num : 0_4 , upvalues : _ENV
-  local taskCtr = ControllerManager:GetController(ControllerTypeId.Task)
-  taskCtr:SendCommitQuestReward(self.taskInfo, self._showCommonReward)
+  local actFrameNet = NetworkManager:GetNetwork(NetworkTypeID.ActivityFrame)
+  actFrameNet:CS_Activity_Quest_Commit((self.activityInfo):GetActivityFrameId(), (self.taskInfo).id, function()
+    -- function num : 0_4_0 , upvalues : self, _ENV
+    (self.activityInfo):UpdateStarUpRedddot()
+    if IsNull(self.transform) or not self._showCommonReward then
+      return 
+    end
+    local ids, nums = (self.taskInfo):GetTaskCfgRewards()
+    local rewardDic = {}
+    for i,id in ipairs(ids) do
+      rewardDic[id] = nums[i]
+    end
+    ;
+    (UIUtil.ShowCommonReward)(rewardDic)
+  end
+)
 end
 
 UINActivityStarUpTask.SetActLimitTaskShowCommonReward = function(self)

@@ -154,7 +154,7 @@ end
 UINSpring23StoryChar.OnCliCkRect = function(self)
   -- function num : 0_10 , upvalues : _ENV
   if (UIUtil.CheckTopIsWindow)(UIWindowTypeID.AvgDetail) then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 end
 

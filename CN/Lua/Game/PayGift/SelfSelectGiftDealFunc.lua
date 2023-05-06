@@ -95,7 +95,7 @@ local ShowSelectHeroFragWin = function(window, dataList, payGiftInfo, fragNum, i
       afterSelectFunc(selfSelectCfg)
       window:Delete()
       ;
-      (UIUtil.OnClickBack)()
+      (UIUtil.OnClickBackByUiTab)(self)
     end
 
     if hasThisHero and maxNeedNum < fragNum then

@@ -30,184 +30,188 @@ FunctionUnlockMgr.InitListener = function(self)
   -- DECOMPILER ERROR at PC9: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Store] = UnlockFunc.onUnlockShop
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_CompleteIntro] = UnlockFunc.onCompleteIntro
   -- DECOMPILER ERROR at PC14: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Factory] = UnlockFunc.onUnlockFactory
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Store] = UnlockFunc.onUnlockShop
   -- DECOMPILER ERROR at PC19: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Building] = UnlockFunc.onUnlockOasis
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Factory] = UnlockFunc.onUnlockFactory
   -- DECOMPILER ERROR at PC24: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Exploration] = UnlockFunc.onUnlockSector
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Building] = UnlockFunc.onUnlockOasis
   -- DECOMPILER ERROR at PC29: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_HeroGroup] = UnlockFunc.onUnlockHeroList
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Exploration] = UnlockFunc.onUnlockSector
   -- DECOMPILER ERROR at PC34: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Lottery] = UnlockFunc.onUnlockLottery
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_HeroGroup] = UnlockFunc.onUnlockHeroList
   -- DECOMPILER ERROR at PC39: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Training] = UnlockFunc.onUnlockTraining
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Lottery] = UnlockFunc.onUnlockLottery
   -- DECOMPILER ERROR at PC44: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Social] = UnlockFunc.onUnlockSocial
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Training] = UnlockFunc.onUnlockTraining
   -- DECOMPILER ERROR at PC49: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_HeroEnter] = UnlockFunc.onUnlockHeroEnter
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Social] = UnlockFunc.onUnlockSocial
   -- DECOMPILER ERROR at PC54: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_EnemyDetail] = UnlockFunc.onUnlockEnemyDetail
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_HeroEnter] = UnlockFunc.onUnlockHeroEnter
   -- DECOMPILER ERROR at PC59: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Dorm] = UnlockFunc.onUnlockDorm
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_EnemyDetail] = UnlockFunc.onUnlockEnemyDetail
   -- DECOMPILER ERROR at PC64: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Random] = UnlockFunc.onUnlockRandom
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Dorm] = UnlockFunc.onUnlockDorm
   -- DECOMPILER ERROR at PC69: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_commander_skill] = UnlockFunc.onUnlockCommanderSkill
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Random] = UnlockFunc.onUnlockRandom
   -- DECOMPILER ERROR at PC74: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_commander_skill_Ui] = UnlockFunc.onUnlockCommanderSkillUI
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_commander_skill] = UnlockFunc.onUnlockCommanderSkill
   -- DECOMPILER ERROR at PC79: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_HeroRank] = UnlockFunc.onUnlockStarUp
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_commander_skill_Ui] = UnlockFunc.onUnlockCommanderSkillUI
   -- DECOMPILER ERROR at PC84: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_SectorBuilding] = UnlockFunc.onUnlockSectorBuilding
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_HeroRank] = UnlockFunc.onUnlockStarUp
   -- DECOMPILER ERROR at PC89: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_SectorBuilding1] = UnlockFunc.onUnlockSectorBuilding
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_SectorBuilding] = UnlockFunc.onUnlockSectorBuilding
   -- DECOMPILER ERROR at PC94: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_TaskUi] = UnlockFunc.onUnlockTaskUI
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_SectorBuilding1] = UnlockFunc.onUnlockSectorBuilding
   -- DECOMPILER ERROR at PC99: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_DailyTask] = UnlockFunc.onUnlockDailyAndWeeklyTaskUI
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_TaskUi] = UnlockFunc.onUnlockTaskUI
   -- DECOMPILER ERROR at PC104: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Endless] = UnlockFunc.onUnlockEndlss
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_DailyTask] = UnlockFunc.onUnlockDailyAndWeeklyTaskUI
   -- DECOMPILER ERROR at PC109: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Hard] = UnlockFunc.onUnlockEndlss
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Endless] = UnlockFunc.onUnlockEndlss
   -- DECOMPILER ERROR at PC114: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Achievement] = UnlockFunc.onUnlockAchievement
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Hard] = UnlockFunc.onUnlockEndlss
   -- DECOMPILER ERROR at PC119: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_friendship] = UnlockFunc.onUnlockFriendShip
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Achievement] = UnlockFunc.onUnlockAchievement
   -- DECOMPILER ERROR at PC124: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_DailyChallenge] = UnlockFunc.onUnlockPeriodicChanllenge
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_friendship] = UnlockFunc.onUnlockFriendShip
   -- DECOMPILER ERROR at PC129: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Mail] = UnlockFunc.onUnlockMial
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_DailyChallenge] = UnlockFunc.onUnlockPeriodicChanllenge
   -- DECOMPILER ERROR at PC134: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_SignIn] = UnlockFunc.onUnlockSignIn
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Mail] = UnlockFunc.onUnlockMial
   -- DECOMPILER ERROR at PC139: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_TrainingPlan] = UnlockFunc.onUnlockHeroTask
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_SignIn] = UnlockFunc.onUnlockSignIn
   -- DECOMPILER ERROR at PC144: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_HeroInformation] = UnlockFunc.onUnlockHeroInfo
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_TrainingPlan] = UnlockFunc.onUnlockHeroTask
   -- DECOMPILER ERROR at PC149: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_GiftCode] = UnlockFunc.onUnlockCDK
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_HeroInformation] = UnlockFunc.onUnlockHeroInfo
   -- DECOMPILER ERROR at PC154: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_SectorTask] = UnlockFunc.onUnlockSectorTask
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_GiftCode] = UnlockFunc.onUnlockCDK
   -- DECOMPILER ERROR at PC159: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_QuickJump] = UnlockFunc.onUnlockNavigation
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_SectorTask] = UnlockFunc.onUnlockSectorTask
   -- DECOMPILER ERROR at PC164: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_CommanderInformation] = UnlockFunc.onUnlockCommanderInformation
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_QuickJump] = UnlockFunc.onUnlockNavigation
   -- DECOMPILER ERROR at PC169: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Skin] = UnlockFunc.onUnlockSkin
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_CommanderInformation] = UnlockFunc.onUnlockCommanderInformation
   -- DECOMPILER ERROR at PC174: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Backpack_ui] = UnlockFunc.onUnlockWarehouse
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Skin] = UnlockFunc.onUnlockSkin
   -- DECOMPILER ERROR at PC179: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_ChangeUserInfo] = UnlockFunc.onUnlockChangeUserInfo
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Backpack_ui] = UnlockFunc.onUnlockWarehouse
   -- DECOMPILER ERROR at PC184: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Chat] = UnlockFunc.onUnlockWorldChat
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_ChangeUserInfo] = UnlockFunc.onUnlockChangeUserInfo
   -- DECOMPILER ERROR at PC189: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Friend] = UnlockFunc.onUnlockFriend
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Chat] = UnlockFunc.onUnlockWorldChat
   -- DECOMPILER ERROR at PC194: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_DailyDungeon] = UnlockFunc.OnUnlockDailyDungeon
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Friend] = UnlockFunc.onUnlockFriend
   -- DECOMPILER ERROR at PC199: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_WeeklyChallenge] = UnlockFunc.OnUnlockWeeklyChallenge
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_DailyDungeon] = UnlockFunc.OnUnlockDailyDungeon
   -- DECOMPILER ERROR at PC204: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_LargeActivity] = UnlockFunc.OnUnlockSectorActivity
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_WeeklyChallenge] = UnlockFunc.OnUnlockWeeklyChallenge
   -- DECOMPILER ERROR at PC209: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_HeroActivity] = UnlockFunc.OnUnlockHeroActivity
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_LargeActivity] = UnlockFunc.OnUnlockSectorActivity
   -- DECOMPILER ERROR at PC214: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_DungeonTower] = UnlockFunc.OnUnlockDungeonTower
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_HeroActivity] = UnlockFunc.OnUnlockHeroActivity
   -- DECOMPILER ERROR at PC219: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Talent] = UnlockFunc.OnUnlockTalent
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_DungeonTower] = UnlockFunc.OnUnlockDungeonTower
   -- DECOMPILER ERROR at PC224: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_MainPreset_ui] = UnlockFunc.OnUnlockAdjChange
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_Talent] = UnlockFunc.OnUnlockTalent
   -- DECOMPILER ERROR at PC229: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
-  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_MainPreset1] = UnlockFunc.OnUnlockAdjModule
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_MainPreset_ui] = UnlockFunc.OnUnlockAdjChange
   -- DECOMPILER ERROR at PC234: Confused about usage of register: R1 in 'UnsetPending'
+
+  ;
+  (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_MainPreset1] = UnlockFunc.OnUnlockAdjModule
+  -- DECOMPILER ERROR at PC239: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   (self.unlockListener)[proto_csmsg_SystemFunctionID.SystemFunctionID_SpecWeapon] = UnlockFunc.OnUnlockSpecWeapon

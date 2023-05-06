@@ -224,24 +224,36 @@ end
 
 FormationData.SetHero2Formation = function(self, index, heroId)
   -- function num : 0_14
-  if self.isHaveSupport and (self.suooprtHeroData).formIdx == index then
-    self:CleanSupportData()
-  end
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R3 in 'UnsetPending'
-
-  if self.isHaveOfficialSupport and (self.officialSuppotDic)[index] ~= nil then
-    (self.officialSuppotDic)[index] = nil
-  end
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R3 in 'UnsetPending'
+  self:ClearFormationIdx(index)
+  -- DECOMPILER ERROR at PC4: Confused about usage of register: R3 in 'UnsetPending'
 
   ;
   (self.data)[index] = heroId
 end
 
+FormationData.ClearFormationIdx = function(self, index)
+  -- function num : 0_15 , upvalues : _ENV
+  if self.isHaveSupport and (self.suooprtHeroData).formIdx == index then
+    self:CleanSupportData()
+  end
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R2 in 'UnsetPending'
+
+  if self.isHaveOfficialSupport and (self.officialSuppotDic)[index] ~= nil then
+    (self.officialSuppotDic)[index] = nil
+    if (table.IsEmptyTable)(self.officialSuppotDic) then
+      self:CleanOfficialSupportData()
+    end
+  end
+  -- DECOMPILER ERROR at PC27: Confused about usage of register: R2 in 'UnsetPending'
+
+  ;
+  (self.data)[index] = nil
+end
+
 FormationData.Exchange2Hero = function(self, index1, index2)
-  -- function num : 0_15
+  -- function num : 0_16
   local exchangeNN = function(index1, index2)
-    -- function num : 0_15_0 , upvalues : self
+    -- function num : 0_16_0 , upvalues : self
     -- DECOMPILER ERROR at PC6: Confused about usage of register: R3 in 'UnsetPending'
 
     -- DECOMPILER ERROR at PC7: Confused about usage of register: R2 in 'UnsetPending'
@@ -250,7 +262,7 @@ FormationData.Exchange2Hero = function(self, index1, index2)
   end
 
   local exchangeSN = function(supportIndex, normalIndex)
-    -- function num : 0_15_1 , upvalues : self
+    -- function num : 0_16_1 , upvalues : self
     -- DECOMPILER ERROR at PC3: Confused about usage of register: R2 in 'UnsetPending'
 
     (self.data)[supportIndex] = (self.data)[normalIndex]
@@ -265,7 +277,7 @@ FormationData.Exchange2Hero = function(self, index1, index2)
   end
 
   local exchangeNO = function(officialIndex, normalIndex)
-    -- function num : 0_15_2 , upvalues : self
+    -- function num : 0_16_2 , upvalues : self
     -- DECOMPILER ERROR at PC3: Confused about usage of register: R2 in 'UnsetPending'
 
     (self.data)[officialIndex] = (self.data)[normalIndex]
@@ -284,7 +296,7 @@ FormationData.Exchange2Hero = function(self, index1, index2)
   end
 
   local exchangeSO = function(supportIndex, officialIndex)
-    -- function num : 0_15_3 , upvalues : self
+    -- function num : 0_16_3 , upvalues : self
     -- DECOMPILER ERROR at PC3: Confused about usage of register: R2 in 'UnsetPending'
 
     (self.officialSuppotDic)[supportIndex] = (self.officialSuppotDic)[officialIndex]
@@ -299,7 +311,7 @@ FormationData.Exchange2Hero = function(self, index1, index2)
   end
 
   local exchangeOO = function(index1, index2)
-    -- function num : 0_15_4 , upvalues : self
+    -- function num : 0_16_4 , upvalues : self
     -- DECOMPILER ERROR at PC6: Confused about usage of register: R3 in 'UnsetPending'
 
     -- DECOMPILER ERROR at PC7: Confused about usage of register: R2 in 'UnsetPending'
@@ -352,14 +364,14 @@ FormationData.Exchange2Hero = function(self, index1, index2)
 end
 
 FormationData.CleanFormation = function(self)
-  -- function num : 0_16
+  -- function num : 0_17
   self:CleanSupportData()
   self:CleanOfficialSupportData()
   self.data = {}
 end
 
 FormationData.GetFormationHeroDic = function(self, isNotNeedExtra)
-  -- function num : 0_17 , upvalues : _ENV
+  -- function num : 0_18 , upvalues : _ENV
   do
     if self._fixedHeroIdList ~= nil and not isNotNeedExtra then
       local data = {}
@@ -396,7 +408,7 @@ FormationData.GetFormationHeroDic = function(self, isNotNeedExtra)
 end
 
 FormationData._GetExcludeHeroList = function(self, heroIdxDic)
-  -- function num : 0_18 , upvalues : _ENV
+  -- function num : 0_19 , upvalues : _ENV
   if self._excludeHeroIdDic == nil then
     return heroIdxDic
   end
@@ -410,7 +422,7 @@ FormationData._GetExcludeHeroList = function(self, heroIdxDic)
 end
 
 FormationData.GetFormationHeroData = function(self, index)
-  -- function num : 0_19 , upvalues : _ENV
+  -- function num : 0_20 , upvalues : _ENV
   local heroId = nil
   if self.isHaveSupport and (self.suooprtHeroData).formIdx == index then
     return self.__suooprtHeroData
@@ -437,94 +449,110 @@ FormationData.GetFormationHeroData = function(self, index)
 end
 
 FormationData.SetSupportHeroData = function(self, suooprtHeroData, index, useLast)
-  -- function num : 0_20
+  -- function num : 0_21
+  self:ClearFormationIdx(index)
   if self.suooprtHeroData == nil then
     self.suooprtHeroData = {}
   end
   self.isHaveSupport = true
-  -- DECOMPILER ERROR at PC7: Confused about usage of register: R4 in 'UnsetPending'
-
-  ;
-  (self.data)[index] = nil
   self.__suooprtHeroData = suooprtHeroData
-  -- DECOMPILER ERROR at PC10: Confused about usage of register: R4 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC11: Confused about usage of register: R4 in 'UnsetPending'
 
   ;
   (self.suooprtHeroData).formIdx = index
-  -- DECOMPILER ERROR at PC18: Confused about usage of register: R4 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC19: Confused about usage of register: R4 in 'UnsetPending'
 
   if not useLast then
     (self.suooprtHeroData).uid = (suooprtHeroData:GetUserInfo()):GetUserUID()
   end
-  -- DECOMPILER ERROR at PC21: Confused about usage of register: R4 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC22: Confused about usage of register: R4 in 'UnsetPending'
 
   ;
   (self.suooprtHeroData).heroId = suooprtHeroData.dataId
 end
 
 FormationData.GetSupportHeroData = function(self)
-  -- function num : 0_21
+  -- function num : 0_22
   if self.isHaveSupport then
     return self.suooprtHeroData
   end
 end
 
 FormationData.GetRealSupportHeroData = function(self)
-  -- function num : 0_22
+  -- function num : 0_23
   if self.isHaveSupport then
     return self.__suooprtHeroData
   end
 end
 
 FormationData.CleanSupportData = function(self)
-  -- function num : 0_23
+  -- function num : 0_24
   self.isHaveSupport = false
   self.__suooprtHeroData = nil
   self.suooprtHeroData = nil
 end
 
 FormationData.SetOfficialSupportHeroData = function(self, officialSuppotData, index)
-  -- function num : 0_24
+  -- function num : 0_25
+  self:ClearFormationIdx(index)
   if self.officialSuppotDic == nil then
     self.officialSuppotDic = {}
   end
   self.isHaveOfficialSupport = true
   local officialSupportCfgId = officialSuppotData:GetOfficialSupportCfgId()
-  -- DECOMPILER ERROR at PC14: Confused about usage of register: R4 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC17: Confused about usage of register: R4 in 'UnsetPending'
 
   ;
   (self.officialSuppotDic)[index] = {o_heroData = officialSuppotData, heroId = officialSuppotData.dataId, cfgId = officialSupportCfgId}
-  -- DECOMPILER ERROR at PC16: Confused about usage of register: R4 in 'UnsetPending'
-
-  ;
-  (self.data)[index] = nil
 end
 
 FormationData.CleanOfficialSupportData = function(self)
-  -- function num : 0_25
+  -- function num : 0_26
   self.isHaveOfficialSupport = false
   self.officialSuppotDic = nil
 end
 
 FormationData.GetIsHaveOfficialSupport = function(self)
-  -- function num : 0_26
+  -- function num : 0_27
   return self.isHaveOfficialSupport
 end
 
 FormationData.GetIsHaveOfficialSupportDic = function(self)
-  -- function num : 0_27
+  -- function num : 0_28
   return self.officialSuppotDic
 end
 
+FormationData.GetFmtOfficeAssistData = function(self)
+  -- function num : 0_29 , upvalues : _ENV
+  if not self:GetIsHaveOfficialSupport() then
+    return 
+  end
+  local teamId = nil
+  local assistElem = {}
+  local dic = self:GetIsHaveOfficialSupportDic()
+  for fmtIdx,officialSuppotData in pairs(dic) do
+    if teamId == nil then
+      teamId = officialSuppotData.cfgId
+    else
+      if teamId ~= officialSuppotData.cfgId then
+        error("offical support team id not same, pls check")
+      end
+    end
+    ;
+    (table.insert)(assistElem, {heroId = officialSuppotData.heroId, formIdx = fmtIdx})
+  end
+  return {teamId = teamId, assistElem = assistElem}
+end
+
 FormationData.GetCstSkillList = function(self)
-  -- function num : 0_28 , upvalues : _ENV
+  -- function num : 0_30 , upvalues : _ENV
   if not (PlayerDataCenter.cstDataDic)[self.cstId] then
     return table.emptytable
   end
 end
 
 FormationData.GetIsOnlyHaveSupportHero = function(self)
-  -- function num : 0_29 , upvalues : _ENV
+  -- function num : 0_31 , upvalues : _ENV
   if not self.isHaveSupport then
     return false
   end
@@ -539,29 +567,29 @@ FormationData.GetIsOnlyHaveSupportHero = function(self)
 end
 
 FormationData.SetFmtFixedHeroList = function(self, heroList, heroIdList)
-  -- function num : 0_30
+  -- function num : 0_32
   self._fixedHeroList = heroList
   self._fixedHeroIdList = heroIdList
 end
 
 FormationData.ClearFmtFixedHero = function(self)
-  -- function num : 0_31
+  -- function num : 0_33
   self._fixedHeroList = nil
   self._fixedHeroIdList = nil
 end
 
 FormationData.SetFmtExcludeHeroIdDic = function(self, excludeHeroIdDic)
-  -- function num : 0_32
+  -- function num : 0_34
   self._excludeHeroIdDic = excludeHeroIdDic
 end
 
 FormationData.ClearFmtExcludeHeroIdDic = function(self)
-  -- function num : 0_33
+  -- function num : 0_35
   self._excludeHeroIdDic = nil
 end
 
 FormationData.DeepCopyFmtData = function(self)
-  -- function num : 0_34 , upvalues : _ENV
+  -- function num : 0_36 , upvalues : _ENV
   local fntData = DeepCopy(self)
   fntData.__suooprtHeroData = self.__suooprtHeroData
   return fntData

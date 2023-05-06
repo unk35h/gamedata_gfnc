@@ -133,25 +133,8 @@ WarChessDeployTeamData.GetWcDTeamFmtData = function(self)
 end
 
 WarChessDeployTeamData.GetOfficeAssistData = function(self)
-  -- function num : 0_21 , upvalues : _ENV
-  if not (self.__fmtData):GetIsHaveOfficialSupport() then
-    return 
-  end
-  local teamId = nil
-  local assistElem = {}
-  local dic = (self.__fmtData):GetIsHaveOfficialSupportDic()
-  for fmtIdx,officialSuppotData in pairs(dic) do
-    if teamId == nil then
-      teamId = officialSuppotData.cfgId
-    else
-      if teamId ~= officialSuppotData.cfgId then
-        error("offical support team id not same, pls check")
-      end
-    end
-    ;
-    (table.insert)(assistElem, {heroId = officialSuppotData.heroId, formIdx = fmtIdx})
-  end
-  return {teamId = teamId, assistElem = assistElem}
+  -- function num : 0_21
+  return (self.__fmtData):GetFmtOfficeAssistData()
 end
 
 return WarChessDeployTeamData

@@ -42,7 +42,7 @@ UIFactoryHeroListCover.OnConfirm = function(self)
   (cs_MessageCommon.ShowMessageTips)(ConfigData:GetTipContent(TipContent.Factory_HeroEnterSuccess))
   self:OnReturnClicked()
   ;
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIFactoryHeroListCover.OnReturnClicked = function(self)

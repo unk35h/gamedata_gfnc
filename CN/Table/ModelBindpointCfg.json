@@ -484,12 +484,28 @@
       "Path": "*/*_root/Bone025/Bone026"
     },
     {
+      "Id": 101902,
+      "Path": "*/*_root/Bone64/weapon"
+    },
+    {
       "Id": 102001,
       "Path": "yanny_halloween/yanny_halloween_root/Bone050"
     },
     {
       "Id": 102401,
       "Path": "*/*_root/Bone048/Bone067/weapon2"
+    },
+    {
+      "Id": 102501,
+      "Path": "*/*_root/Bip002/Bip002 Pelvis/Bone002"
+    },
+    {
+      "Id": 102502,
+      "Path": "*/*_root/Bip002/Bip002 Pelvis/Bip002 Spine/Bip002 Spine1/Bip002 Neck/Bip002 R Clavicle/Bip002 R UpperArm/Bip002 R Forearm/Bip002 R Hand/Bone044/Bone045/Bone046"
+    },
+    {
+      "Id": 102503,
+      "Path": "*/*_root/Bip002/Bip002 Pelvis/Bip002 Spine/Bip002 Spine1/Bip002 Neck/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002 L Hand/Bone051/Bone052/Bone053"
     },
     {
       "Id": 102601,
@@ -710,6 +726,10 @@
     {
       "Id": 106603,
       "Path": "*/*_root/Bone0126/Bone0127/exAttack"
+    },
+    {
+      "Id": 106701,
+      "Path": "*/*_root/gou_root/Bip002/Bip002 Pelvis/Bip002 Spine/Bone047/Bone048/weapon1"
     },
     {
       "Id": 204200,

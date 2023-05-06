@@ -42,6 +42,30 @@ local warchess_tower_shop_drop = {
 {stage_id = 13, tower_id = 20}
 , 
 {stage_id = 13, tower_id = 21}
+, 
+{stage_id = 22, tower_id = 22}
+, 
+{stage_id = 23, tower_id = 23}
+, 
+{stage_id = 24, tower_id = 24}
+, 
+{stage_id = 24, tower_id = 25}
+, 
+{stage_id = 22, tower_id = 26}
+, 
+{stage_id = 23, tower_id = 27}
+, 
+{stage_id = 24, tower_id = 28}
+, 
+{stage_id = 24, tower_id = 29}
+, 
+{stage_id = 22, tower_id = 30}
+, 
+{stage_id = 23, tower_id = 31}
+, 
+{stage_id = 24, tower_id = 32}
+, 
+{stage_id = 24, tower_id = 33}
 }
 local __default_values = {stage_id = 0, tower_id = 1}
 local base = {__index = __default_values, __newindex = function()

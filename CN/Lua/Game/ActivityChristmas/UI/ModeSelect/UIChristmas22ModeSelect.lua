@@ -217,7 +217,7 @@ end
 
 UIChristmas22ModeSelect.OnClickCloseModeSelect = function(self)
   -- function num : 0_10 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIChristmas22ModeSelect.OnCloseChristmasSelect = function(self)

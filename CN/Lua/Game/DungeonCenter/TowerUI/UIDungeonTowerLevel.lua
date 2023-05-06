@@ -529,7 +529,7 @@ end
 UIDungeonTowerLevel.CloseLevelDetailWindow = function(self)
   -- function num : 0_24 , upvalues : _ENV
   if self.__selectTowerLevelData ~= nil then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByWinId)(UIWindowTypeID.DungeonLevelDetail)
   end
 end
 

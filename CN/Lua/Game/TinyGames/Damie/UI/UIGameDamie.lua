@@ -27,9 +27,9 @@ UIGameDamie.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, StepState, EfcItem, DamieConfig
   self.netWork = NetworkManager:GetNetwork(NetworkTypeID.GameDamie)
   ;
-  (UIUtil.SetTopStatus)(self, self.OnClickDamieBack, nil, nil, nil, true)
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack()
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Back, self, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Back, self, self.OnClickDamieBack)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Start, self, self.__SwitchToStart)
   ;
@@ -48,14 +48,14 @@ UIGameDamie.OnInit = function(self)
   self.__resumeAction = BindCallback(self, self.__Resume2Game)
   self.__exitAction = BindCallback(self, self.__Back2Main)
   self.__isPlaying = false
-  -- DECOMPILER ERROR at PC84: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC85: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.ui).btn_Pause).interactable = false
   self.__stopProgressInGame = false
   self.__curBossTag = 1
   self.__lastBornedScore = 0
-  -- DECOMPILER ERROR at PC91: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC92: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.ui).endTime).text = DamieConfig.ActivityEndTime
@@ -850,7 +850,7 @@ UIGameDamie.__OnHitAudioPlay = function(self, characterId)
   AudioManager:PlayAudio(cueName, CharaVoSheetName, eAudioSourceType.VoiceSource)
 end
 
-UIGameDamie.OnClickDamieBack = function(self)
+UIGameDamie.BackAction = function(self)
   -- function num : 0_49
   self:Delete()
   if self.__onExit ~= nil then
@@ -859,8 +859,13 @@ UIGameDamie.OnClickDamieBack = function(self)
   end
 end
 
+UIGameDamie.OnClickDamieBack = function(self)
+  -- function num : 0_50 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIGameDamie.OnDelete = function(self)
-  -- function num : 0_50 , upvalues : _ENV, CharaVoSheetName
+  -- function num : 0_51 , upvalues : _ENV, CharaVoSheetName
   self:__ResetGameState()
   AudioManager:RemoveCueSheet(CharaVoSheetName)
   ;

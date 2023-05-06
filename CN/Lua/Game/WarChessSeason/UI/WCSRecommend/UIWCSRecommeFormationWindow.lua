@@ -29,10 +29,7 @@ end
 
 UIWCSRecommeFormationWindow.InitWCSRecommendTeamAndSkill = function(self, recommendTeamList, recommendSkillDataList)
   -- function num : 0_1 , upvalues : _ENV
-  if not self.settedTopStatus then
-    (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
-    self.settedTopStatus = true
-  end
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack(true)
   self._recommendTeamList = recommendTeamList
   self._recommendSkillDataList = recommendSkillDataList
   ;
@@ -66,7 +63,7 @@ UIWCSRecommeFormationWindow._GetOneHeroHead = function(self, heroId, parentTr)
     if not isHas then
       local heroCfg = (ConfigData.hero_data)[heroId]
       heroInfo = (HeroData.New)({
-basic = {id = heroCfg.id, level = 1, exp = 0, star = heroCfg.rank, potentialLvl = 0, ts = -1, career = heroCfg.career, company = heroCfg.camp}
+basic = {id = heroCfg.id, level = 1, exp = 0, star = heroCfg.rank, potentialLvl = 0, ts = -1, career = heroCfg.career, company = heroCfg.camp, skinId = (PlayerDataCenter.skinData):DealNotSelfHaveHeroSkinOverraid(0, heroId)}
 })
       heroInfo.heroCfg = heroCfg
     end
@@ -126,15 +123,12 @@ end
 
 UIWCSRecommeFormationWindow.BackAction = function(self)
   -- function num : 0_7
-  self.settedTopStatus = false
   self:Hide()
 end
 
 UIWCSRecommeFormationWindow.OnClickClose = function(self)
   -- function num : 0_8 , upvalues : _ENV
-  if self.settedTopStatus then
-    (UIUtil.OnClickBack)()
-  end
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIWCSRecommeFormationWindow.OnDelete = function(self)

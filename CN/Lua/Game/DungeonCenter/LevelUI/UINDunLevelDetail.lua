@@ -385,7 +385,7 @@ UINDunLevelDetail.RefreshDungeonAutoBattleBtn = function(self, isLocked)
     end
   else
     do
-      if dungeonType == (DungeonLevelEnum.DunLevelType).SectorII or dungeonType == (DungeonLevelEnum.DunLevelType).SectorIII or dungeonType == (DungeonLevelEnum.DunLevelType).HeroGrow or dungeonType == (DungeonLevelEnum.DunLevelType).Season then
+      if dungeonType == (DungeonLevelEnum.DunLevelType).SectorII or dungeonType == (DungeonLevelEnum.DunLevelType).SectorIII or dungeonType == (DungeonLevelEnum.DunLevelType).HeroGrow or dungeonType == (DungeonLevelEnum.DunLevelType).Season or dungeonType == (DungeonLevelEnum.DunLevelType).SeasonI then
         local showAuto = (self.__dunLevelData):GetCouldShowAutoPlay()
         local isUnlock = (self.__dunLevelData):GetIsLevelCompleteNoSup()
         ;
@@ -501,16 +501,23 @@ end
     seasonCtrl:EnterSeasonDugeon(self.__dunLevelData, autoBattleCount)
   end
 end
-, [(DungeonLevelEnum.DunLevelType).Spring] = function(self, isAutoBattle)
+, [(DungeonLevelEnum.DunLevelType).Spring] = function(self, autoBattleCount)
   -- function num : 0_25 , upvalues : _ENV
   local springCtrl = ControllerManager:GetController(ControllerTypeId.ActivitySpring)
   if springCtrl ~= nil then
     springCtrl:OnEnterSpringChallenge(self.__dunLevelData)
   end
 end
+, [(DungeonLevelEnum.DunLevelType).SeasonI] = function(self, autoBattleCount)
+  -- function num : 0_26 , upvalues : _ENV
+  local seasonCtrl = ControllerManager:GetController(ControllerTypeId.ActivitySeason)
+  if seasonCtrl ~= nil then
+    seasonCtrl:OnEnterActSeasonChallenge(self.__dunLevelData, autoBattleCount)
+  end
+end
 }
 UINDunLevelDetail.__EnterDungeonBattle = function(self)
-  -- function num : 0_26 , upvalues : enterDunFunc, _ENV
+  -- function num : 0_27 , upvalues : enterDunFunc, _ENV
   local dungeonType = (self.__dunLevelData):GetDungeonLevelType()
   local func = enterDunFunc[dungeonType]
   if func == nil then
@@ -521,12 +528,12 @@ UINDunLevelDetail.__EnterDungeonBattle = function(self)
 end
 
 UINDunLevelDetail.OnClickDungeonAutoBattle = function(self)
-  -- function num : 0_27 , upvalues : DungeonLevelEnum, enterDunFunc, cs_MessageCommon, _ENV, JumpManager
+  -- function num : 0_28 , upvalues : DungeonLevelEnum, enterDunFunc, cs_MessageCommon, _ENV, JumpManager
   local dungeonType = (self.__dunLevelData):GetDungeonLevelType()
   if dungeonType == (DungeonLevelEnum.DunLevelType).Tower then
     (enterDunFunc[(DungeonLevelEnum.DunLevelType).Tower])(self, true)
   else
-    if dungeonType == (DungeonLevelEnum.DunLevelType).SectorII or dungeonType == (DungeonLevelEnum.DunLevelType).SectorIII or dungeonType == (DungeonLevelEnum.DunLevelType).HeroGrow or dungeonType == (DungeonLevelEnum.DunLevelType).Season then
+    if dungeonType == (DungeonLevelEnum.DunLevelType).SectorII or dungeonType == (DungeonLevelEnum.DunLevelType).SectorIII or dungeonType == (DungeonLevelEnum.DunLevelType).HeroGrow or dungeonType == (DungeonLevelEnum.DunLevelType).Season or dungeonType == (DungeonLevelEnum.DunLevelType).SeasonI then
       if not (self.__dunLevelData):GetIsLevelCompleteNoSup() then
         (cs_MessageCommon.ShowMessageTipsWithErrorSound)(ConfigData:GetTipContent(7102))
         return 
@@ -546,12 +553,12 @@ UINDunLevelDetail.OnClickDungeonAutoBattle = function(self)
       end
       do
         UIManager:CreateWindowAsync(UIWindowTypeID.BattleAutoMode, function(window)
-    -- function num : 0_27_0 , upvalues : self, enterDunFunc
+    -- function num : 0_28_0 , upvalues : self, enterDunFunc
     if window == nil then
       return 
     end
     window:InitSectorIIDunAutoSet(self.__dunLevelData, function(autoCount)
-      -- function num : 0_27_0_0 , upvalues : self, enterDunFunc
+      -- function num : 0_28_0_0 , upvalues : self, enterDunFunc
       local dungeonType = (self.__dunLevelData):GetDungeonLevelType()
       local func = enterDunFunc[dungeonType]
       if func ~= nil then
@@ -567,19 +574,19 @@ UINDunLevelDetail.OnClickDungeonAutoBattle = function(self)
 end
 
 UINDunLevelDetail.OnClickDungeonRecomme = function(self)
-  -- function num : 0_28 , upvalues : _ENV
+  -- function num : 0_29 , upvalues : _ENV
   local recommeCtrl = ControllerManager:GetController(ControllerTypeId.RecommeFormation, true)
   recommeCtrl:ReqDunRecommeFormation((self.__dunLevelData):GetDungeonLevelStageId(), false)
 end
 
 UINDunLevelDetail._OnClickGiveup = function(self)
-  -- function num : 0_29 , upvalues : DungeonLevelEnum, _ENV
+  -- function num : 0_30 , upvalues : DungeonLevelEnum, _ENV
   local dungeonType = (self.__dunLevelData):GetDungeonLevelType()
   if dungeonType == (DungeonLevelEnum.DunLevelType).SectorIIChallenge then
     local sectorIICtrl = ControllerManager:GetController(ControllerTypeId.SectorII)
     if sectorIICtrl ~= nil then
       sectorIICtrl:ReqSettleActSctIIChallengeDg(self.__dunLevelData, function(objList)
-    -- function num : 0_29_0 , upvalues : self, _ENV
+    -- function num : 0_30_0 , upvalues : self, _ENV
     self:_UpdBattleBtn(self.isLocked)
     if objList.Count <= 0 then
       error("CS_DUNGEONWinterVerify_Settle objList.Count error:" .. tostring(objList.Count))
@@ -587,11 +594,11 @@ UINDunLevelDetail._OnClickGiveup = function(self)
     end
     local msg = objList[0]
     local showRewardFunc = function()
-      -- function num : 0_29_0_0 , upvalues : _ENV, msg
+      -- function num : 0_30_0_0 , upvalues : _ENV, msg
       (UIUtil.ReShowTopStatus)()
       if (table.count)(msg.rewards) > 0 then
         UIManager:ShowWindowAsync(UIWindowTypeID.CommonReward, function(window)
-        -- function num : 0_29_0_0_0 , upvalues : _ENV, msg
+        -- function num : 0_30_0_0_0 , upvalues : _ENV, msg
         if window == nil then
           return 
         end
@@ -605,7 +612,7 @@ UINDunLevelDetail._OnClickGiveup = function(self)
 
     local historyMaxScore = (self.__dunLevelData):GetSctIIChallengeDgMaxScore()
     UIManager:ShowWindowAsync(UIWindowTypeID.WCDebuffResult, function(window)
-      -- function num : 0_29_0_1 , upvalues : msg, historyMaxScore, showRewardFunc, _ENV
+      -- function num : 0_30_0_1 , upvalues : msg, historyMaxScore, showRewardFunc, _ENV
       if window == nil then
         return 
       end
@@ -621,11 +628,11 @@ UINDunLevelDetail._OnClickGiveup = function(self)
 end
 
 UINDunLevelDetail.OnClickUnlock = function(self)
-  -- function num : 0_30 , upvalues : DungeonLevelEnum, _ENV
+  -- function num : 0_31 , upvalues : DungeonLevelEnum, _ENV
   local dungeonType = (self.__dunLevelData):GetDungeonLevelType()
   if dungeonType == (DungeonLevelEnum.DunLevelType).ADC then
     (self.__dunLevelData):ReqADCDunUnlock(function()
-    -- function num : 0_30_0 , upvalues : _ENV, self
+    -- function num : 0_31_0 , upvalues : _ENV, self
     if not IsNull(self.transform) then
       self:_UpdBattleBtn(false)
       self:__RefreshUnLockBtnState()
@@ -636,12 +643,12 @@ UINDunLevelDetail.OnClickUnlock = function(self)
 end
 
 UINDunLevelDetail.GetDNLevelDetailWidthAndDuration = function(self)
-  -- function num : 0_31
+  -- function num : 0_32
   return ((self.transform).sizeDelta).x, ((self.ui).moveTween).duration
 end
 
 UINDunLevelDetail.PlayMoveTween = function(self, isShow)
-  -- function num : 0_32 , upvalues : _ENV
+  -- function num : 0_33 , upvalues : _ENV
   if isShow then
     if self.__isShow then
       return 
@@ -660,12 +667,12 @@ UINDunLevelDetail.PlayMoveTween = function(self, isShow)
 end
 
 UINDunLevelDetail.__OnMoveTweenComplete = function(self)
-  -- function num : 0_33 , upvalues : _ENV
+  -- function num : 0_34 , upvalues : _ENV
   (UIUtil.CloseOneCover)("DLevelDetailTween")
 end
 
 UINDunLevelDetail.__OnMoveTweenRewind = function(self)
-  -- function num : 0_34 , upvalues : _ENV
+  -- function num : 0_35 , upvalues : _ENV
   (UIUtil.CloseOneCover)("DLevelDetailTween")
   UIManager:HideWindow(UIWindowTypeID.ClickContinue)
   UIManager:HideWindow(UIWindowTypeID.DungeonLevelDetail)
@@ -673,17 +680,17 @@ UINDunLevelDetail.__OnMoveTweenRewind = function(self)
 end
 
 UINDunLevelDetail.OnShow = function(self)
-  -- function num : 0_35 , upvalues : base
+  -- function num : 0_36 , upvalues : base
   (base.OnShow)(self)
 end
 
 UINDunLevelDetail.OnHide = function(self)
-  -- function num : 0_36 , upvalues : _ENV
+  -- function num : 0_37 , upvalues : _ENV
   (UIUtil.CloseOneCover)("DLevelDetailTween")
 end
 
 UINDunLevelDetail.OnDelete = function(self)
-  -- function num : 0_37 , upvalues : _ENV, base
+  -- function num : 0_38 , upvalues : _ENV, base
   if self.__nodeDic ~= nil then
     for k,v in pairs(self.__nodeDic) do
       v:Delete()

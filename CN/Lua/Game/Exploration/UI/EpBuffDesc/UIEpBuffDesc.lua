@@ -483,7 +483,7 @@ end
 
 UIEpBuffDesc._OnBackgroundClick = function(self)
   -- function num : 0_18 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIEpBuffDesc._OnClickBuffItem = function(self, buffItem, epBuff)
@@ -502,12 +502,33 @@ end
 
 UIEpBuffDesc._OnClickBtnCheck = function(self)
   -- function num : 0_20 , upvalues : _ENV
-  local net = NetworkManager:GetNetwork(NetworkTypeID.Exploration)
-  net:CS_EXPLORATION_OpeninBuffSelect(self._selectedBuffId, function()
-    -- function num : 0_20_0 , upvalues : _ENV
-    (UIUtil.OnClickBack)()
+  if ExplorationManager:IsInExploration() then
+    local net = NetworkManager:GetNetwork(NetworkTypeID.Exploration)
+    net:CS_EXPLORATION_OpeninBuffSelect(self._selectedBuffId, function()
+    -- function num : 0_20_0 , upvalues : _ENV, self
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 )
+    return 
+  else
+    do
+      if WarChessSeasonManager:IsInWCS() then
+        local wid = (WarChessManager:GetWarChessCtrl()):GetWCId()
+        local net = NetworkManager:GetNetwork(NetworkTypeID.WarChess)
+        net:CS_WarChess_Choice_Protocol(wid, self._selectedBuffId, function()
+    -- function num : 0_20_1 , upvalues : _ENV, self
+    (WarChessSeasonManager:GetWCSCtrl()):CleanWCSInitUnlockDic()
+    ;
+    (UIUtil.OnClickBackByUiTab)(self)
+  end
+)
+        return 
+      end
+      do
+        error("Unsurpported select buff")
+      end
+    end
+  end
 end
 
 UIEpBuffDesc.OnHide = function(self)

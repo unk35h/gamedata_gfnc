@@ -319,7 +319,7 @@ DormController.ChangedDormHouse = function(self, houseId, afterEnterFunc)
     return 
   end
   if self.state == (DormEnum.eDormState).HouseEdit then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
   local saveUserData = PersistentManager:GetDataModel((PersistentConfig.ePackage).UserData)
   local readed = saveUserData:GetNewDormHouseReaded(houseId)

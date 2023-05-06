@@ -407,5 +407,16 @@ UIBaseWindow.AutoDeleteTopStatus = function(self)
   return (UIUtil.CheckTopWindowAndClear)(self.__typeID)
 end
 
+-- DECOMPILER ERROR at PC113: Confused about usage of register: R9 in 'UnsetPending'
+
+UIBaseWindow.OnDelete = function(self)
+  -- function num : 0_26 , upvalues : _ENV
+  if self.settedTopStatus and not self.isHandledTopStatus then
+    (UIUtil.PopFromBackStackByUiTab)(self)
+  end
+  ;
+  (UIBaseNode.OnDelete)(self)
+end
+
 return UIBaseWindow
 

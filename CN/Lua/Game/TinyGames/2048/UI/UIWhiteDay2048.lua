@@ -212,7 +212,7 @@ UIWhiteDay2048._OnCloseReturn = function(self, isBackHome)
     (self.__gameCtrl):Exit2048AndSettlement()
     self:Delete()
     ;
-    (UIUtil.PopFromBackStack)()
+    (UIUtil.PopFromBackStackByUiTab)(self)
   end
 , nil)
     return false

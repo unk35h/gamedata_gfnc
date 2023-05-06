@@ -63,7 +63,7 @@ UINHeroInfoFrageState.__OnClickUnlock = function(self)
   ;
   (NetworkManager:GetNetwork(NetworkTypeID.Hero)):CS_HERO_MERGE((self.heroData).fragId, function()
     -- function num : 0_4_0 , upvalues : _ENV, self
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
     UIManager:ShowWindowAsync(UIWindowTypeID.GetHero, function(window)
       -- function num : 0_4_0_0 , upvalues : _ENV, self
       if window == nil then

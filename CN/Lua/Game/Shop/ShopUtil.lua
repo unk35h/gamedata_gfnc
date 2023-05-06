@@ -139,6 +139,9 @@ ShopUtil.GetSkinShopIdList = function()
   if FunctionUnlockMgr:ValidateUnlock(proto_csmsg_SystemFunctionID.SystemFunctionID_Store) then
     for k,shopId in ipairs((ConfigData.skin).skinShopIds) do
       local shopCfg = (ConfigData.shop)[shopId]
+      if shopCfg == nil and isGameDev then
+        error("shopCfg is nil shopId=" .. tostring(shopId))
+      end
       if (CheckCondition.CheckLua)(shopCfg.pre_condition, shopCfg.pre_para1, shopCfg.pre_para2) then
         (table.insert)(needStoreList, shopId)
       end

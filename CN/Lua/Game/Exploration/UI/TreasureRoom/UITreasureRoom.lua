@@ -237,7 +237,7 @@ end
 
 UITreasureRoom.OnComfirmClick = function(self, chipPanel)
   -- function num : 0_12 , upvalues : _ENV
-  (UIUtil.PopFromBackStack)()
+  (UIUtil.PopFromBackStackByUiTab)(self)
   local chipItemTran = chipPanel:GetChipItemTransform()
   local chipData = chipPanel:GetChipDetailPanelData()
   local dynPlayer = ExplorationManager:GetDynPlayer()
@@ -265,7 +265,7 @@ end
 
 UITreasureRoom.OnSkipClick = function(self)
   -- function num : 0_14 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UITreasureRoom.TreasureGiveupLogic = function(self)

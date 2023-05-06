@@ -21,8 +21,8 @@ UIWinter23StrategyOverview.__SetNodeClass = function(self)
   self._techTitleClass = require("Game.ActivityChristmas.UI.Tech.UINChristmas22TechTitle")
   self._specialSideClass = require("Game.ActivityWinter23.UI.Tech.UINWinter23TechSpecialSide")
   self._techLvClass = require("Game.ActivitySpring.UI.Tech.UINSpring23TechLv")
-  self._desType = eLogicDesType.Winter23
   self._lvNodeOffset = 20
+  self._desType = eLogicDesType.Winter23
   self._itemNoEnoughTip = 9204
   self._resetNoEnoughTip = 9205
 end
@@ -32,10 +32,26 @@ UIWinter23StrategyOverview.InitChristmas22StrategyOverview = function(self, actT
   (base.InitChristmas22StrategyOverview)(self, actTechTree, specialBranchId, callback)
   ;
   (self._actBgNode):InitActivityBG(actTechTree:GetTechActFrameId(), self.resloader)
+  self:ResetActivityBaseTechInfo(actTechTree)
+end
+
+UIWinter23StrategyOverview.ResetActivityBaseTechInfo = function(self, actTechTree)
+  -- function num : 0_3 , upvalues : _ENV
+  local treeId = actTechTree:GetTreeId()
+  local infoCfg = (ConfigData.activity_tech_type)[treeId]
+  if infoCfg.itemNoEnoughTip == 0 or not infoCfg.itemNoEnoughTip then
+    self._itemNoEnoughTip = self._itemNoEnoughTip
+    if infoCfg.resetNoEnoughTip == 0 or not infoCfg.resetNoEnoughTip then
+      self._resetNoEnoughTip = self._resetNoEnoughTip
+      if infoCfg.common_des == 0 or not infoCfg.common_des then
+        self._desType = self._desType
+      end
+    end
+  end
 end
 
 UIWinter23StrategyOverview.OnClickSpItemDetail = function(self, techItem, techData)
-  -- function num : 0_3 , upvalues : _ENV
+  -- function num : 0_4 , upvalues : _ENV
   if self._lvNode == nil then
     ((self.ui).techInfoNode):SetActive(true)
     self._lvNode = ((self._techLvClass).New)()

@@ -13,9 +13,9 @@ UIWhiteDayTask.OnInit = function(self)
   ((self.ui).obj_taskItem):SetActive(false)
   self.__onCompleteTask = BindCallback(self, self.__OnCompleteTask)
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_background, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_background, self, self.__OnClickClose)
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Close, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Close, self, self.__OnClickClose)
   ;
   (UIUtil.AddValueChangedListener)((self.ui).tog_EndlessTask, self, self.__OnEndlessTaskTogValueChange)
   ;
@@ -263,21 +263,26 @@ UIWhiteDayTask.__RemoveWDTaskReddot = function(self)
   self.__refresnEndlessTaskReddot = nil
 end
 
-UIWhiteDayTask.__OnClickClose = function(self)
+UIWhiteDayTask.BackAction = function(self)
   -- function num : 0_9
   self:__RemoveWDTaskReddot()
   self:Delete()
 end
 
+UIWhiteDayTask.__OnClickClose = function(self)
+  -- function num : 0_10 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIWhiteDayTask.OnShow = function(self)
-  -- function num : 0_10 , upvalues : _ENV, base
-  (UIUtil.SetTopStatus)(self, self.__OnClickClose, nil, nil, nil, true)
+  -- function num : 0_11 , upvalues : _ENV, base
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack()
   ;
   (base.OnShow)(self)
 end
 
 UIWhiteDayTask.OnDelete = function(self)
-  -- function num : 0_11 , upvalues : _ENV, base
+  -- function num : 0_12 , upvalues : _ENV, base
   if self.taskTimerId ~= nil then
     TimerManager:StopTimer(self.taskTimerId)
     self.taskTimerId = nil

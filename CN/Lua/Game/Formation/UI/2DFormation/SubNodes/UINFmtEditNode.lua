@@ -1049,7 +1049,7 @@ end
 
 UINFmtEditNode.OnClickChioceClose = function(self)
   -- function num : 0_39 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UINFmtEditNode.OnDelete = function(self)

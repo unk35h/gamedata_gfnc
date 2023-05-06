@@ -1793,7 +1793,7 @@ choiceGetNew = {
 choiceGetNew = {
 {dataId = 20200, dataType = 4}
 }
-, describe = 319222, group = 1447, id = 1447, replace_txt = 201447}
+, describe = 319223, group = 1447, id = 1447, replace_txt = 201447}
 , 
 [1448] = {
 choiceGetNew = {
@@ -2180,6 +2180,18 @@ choiceGetNew = {
 [1563] = {describe = 193020, event_exit = false, group = 1563, id = 1563, replace_txt = 201563}
 , 
 [1564] = {describe = 519373, group = 1564, id = 1564, replace_txt = 201564}
+, 
+[1565] = {describe = 490394, event_exit = false, group = 1565, id = 1565, replace_txt = 201565}
+, 
+[1566] = {describe = 233614, event_exit = false, group = 1566, id = 1566, replace_txt = 201566}
+, 
+[1567] = {describe = 295037, event_exit = false, group = 1567, id = 1567, replace_txt = 201567}
+, 
+[1568] = {describe = 465690, event_exit = false, group = 1568, id = 1568, replace_txt = 201568}
+, 
+[1569] = {describe = 43017, event_exit = false, group = 1569, id = 1569, replace_txt = 201569}
+, 
+[1570] = {describe = 462706, group = 1570, id = 1570, replace_txt = 201570}
 , 
 [2001] = {auto_priority = 0, choiceGetNew = __rt_88, describe = 75853, group = 2001, icon = "event_g_icon_cache", id = 2001, replace_txt = 202001}
 , 

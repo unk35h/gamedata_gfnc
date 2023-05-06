@@ -15,33 +15,10 @@ WCMonsterEntity.ctor = function(self, entityData)
   self.entityData = entityData
   self.monsterGo = nil
   self.animator = nil
-  self.effectName = nil
-  self.effectGO = nil
-end
-
-WCMonsterEntity.SetEntityEffect = function(self, effectName, effectGO)
-  -- function num : 0_1
-  if effectName ~= nil and effectGO ~= nil then
-    self.effectName = effectName
-    self.effectGO = effectGO
-  end
-end
-
-WCMonsterEntity.RecycleEntityEffect = function(self)
-  -- function num : 0_2 , upvalues : _ENV
-  do
-    if self.effectName ~= nil and self.effectGO ~= nil then
-      local wcCtrl = WarChessManager:GetWarChessCtrl()
-      ;
-      (wcCtrl.animaCtrl):RecycleWCEffect(self.effectName, self.effectGO)
-    end
-    self.effectName = nil
-    self.effectGO = nil
-  end
 end
 
 WCMonsterEntity.PreLoadModel = function(self, notWait, bind)
-  -- function num : 0_3 , upvalues : _ENV, cs_GameObject, cs_ResLoader
+  -- function num : 0_1 , upvalues : _ENV, cs_GameObject, cs_ResLoader
   if self.resloader ~= nil then
     (self.resloader):Put2Pool()
     self.resloader = nil
@@ -72,7 +49,7 @@ WCMonsterEntity.PreLoadModel = function(self, notWait, bind)
       return 
     end
     local areaAwait = (self.resloader):LoadABAssetAsyncAwait(modelPath, function(prefab)
-    -- function num : 0_3_0 , upvalues : self
+    -- function num : 0_1_0 , upvalues : self
     self.__prefab = prefab
   end
 )
@@ -81,7 +58,7 @@ WCMonsterEntity.PreLoadModel = function(self, notWait, bind)
 end
 
 WCMonsterEntity.RealLoadModel = function(self, bind)
-  -- function num : 0_4 , upvalues : _ENV, cs_GameObject, rotae
+  -- function num : 0_2 , upvalues : _ENV, cs_GameObject, rotae
   local creatLogicPos = (self.entityData):GetEntityLogicPos()
   local parentName = "Entity:" .. tostring(creatLogicPos.x) .. "," .. tostring(creatLogicPos.y)
   if IsNull(self.__parentGo) then
@@ -97,6 +74,7 @@ WCMonsterEntity.RealLoadModel = function(self, bind)
   ((self.__parentGo).transform):Rotate(rotae)
   if self.__prefab ~= nil then
     self.monsterGo = (self.__prefab):Instantiate((self.__parentGo).transform)
+    self:WCntitySetRotate((self.entityData):GetEntityRandonRotate())
     self.animator = (self.monsterGo):FindComponent(eUnityComponentID.Animator)
     ;
     (self.animator):SetBool("IsBattle", true)
@@ -123,12 +101,12 @@ WCMonsterEntity.RealLoadModel = function(self, bind)
 end
 
 WCMonsterEntity.GetWCEntityMoverOverCallback = function(self, moveOverCallback)
-  -- function num : 0_5
+  -- function num : 0_3
   self.moveOverCallback = moveOverCallback
 end
 
 WCMonsterEntity.WCEntitySetPos = function(self, pos, playAnim, oldLogicPos, logicPos)
-  -- function num : 0_6 , upvalues : _ENV, WarChessHelper, TEAM_MOVE_SPEED_PER_SECOND, ROTATE_COST_TIME, eWarChessEnum
+  -- function num : 0_4 , upvalues : _ENV, WarChessHelper, TEAM_MOVE_SPEED_PER_SECOND, ROTATE_COST_TIME, eWarChessEnum
   -- DECOMPILER ERROR at PC4: Confused about usage of register: R5 in 'UnsetPending'
 
   if not playAnim then
@@ -160,7 +138,7 @@ WCMonsterEntity.WCEntitySetPos = function(self, pos, playAnim, oldLogicPos, logi
       local rotatePassedTime = 0
       local needCalRotate = true
       local MoveEntity_Update = function()
-    -- function num : 0_6_0 , upvalues : _ENV, TEAM_MOVE_SPEED_PER_SECOND, pathList, index, self, WarChessHelper, needCalRotate, targetRotate, rotatePassedTime, ROTATE_COST_TIME, wcCtrl
+    -- function num : 0_4_0 , upvalues : _ENV, TEAM_MOVE_SPEED_PER_SECOND, pathList, index, self, WarChessHelper, needCalRotate, targetRotate, rotatePassedTime, ROTATE_COST_TIME, wcCtrl
     local deltaTime = Time.deltaTime
     local maxMoveDis = TEAM_MOVE_SPEED_PER_SECOND * deltaTime
     local targeGrid = pathList[index]
@@ -229,12 +207,12 @@ WCMonsterEntity.WCEntitySetPos = function(self, pos, playAnim, oldLogicPos, logi
 end
 
 WCMonsterEntity.WCEntityGetParentGO = function(self)
-  -- function num : 0_7
+  -- function num : 0_5
   return self.__parentGo
 end
 
 WCMonsterEntity.WCEntityGetShowPos = function(self)
-  -- function num : 0_8 , upvalues : _ENV
+  -- function num : 0_6 , upvalues : _ENV
   if IsNull(self.__parentGo) then
     error("enity not load or not exist")
     return nil
@@ -243,30 +221,34 @@ WCMonsterEntity.WCEntityGetShowPos = function(self)
 end
 
 WCMonsterEntity.WCEntityGetForward = function(self)
-  -- function num : 0_9 , upvalues : _ENV
+  -- function num : 0_7 , upvalues : _ENV
   local forward = ((self.__parentGo).transform).forward
   return (Vector3.New)(forward.x, forward.y, forward.z)
 end
 
 WCMonsterEntity.WCEntityGetRotate = function(self)
-  -- function num : 0_10
+  -- function num : 0_8
   return ((self.__parentGo).transform).localRotation
 end
 
 WCMonsterEntity.WCntitySetRotate = function(self, rotate)
-  -- function num : 0_11
-  -- DECOMPILER ERROR at PC2: Confused about usage of register: R2 in 'UnsetPending'
+  -- function num : 0_9
+  if rotate == nil then
+    return 
+  end
+  -- DECOMPILER ERROR at PC5: Confused about usage of register: R2 in 'UnsetPending'
 
+  ;
   ((self.__parentGo).transform).localRotation = rotate
 end
 
 WCMonsterEntity.PlayWCMonsterAnimation = function(self, animaId, trigger, callback)
-  -- function num : 0_12 , upvalues : _ENV
+  -- function num : 0_10 , upvalues : _ENV
   if animaId == -1 and not IsNull(self.monsterGo) then
     (self.animator):SetTrigger("BattleDie")
     ;
     (((((self.monsterGo).transform):DOLocalMoveY(-1, 1)):SetDelay(0.5)):OnComplete(function()
-    -- function num : 0_12_0 , upvalues : callback, self
+    -- function num : 0_10_0 , upvalues : callback, self
     if callback ~= nil then
       callback()
     end
@@ -277,7 +259,7 @@ WCMonsterEntity.PlayWCMonsterAnimation = function(self, animaId, trigger, callba
 end
 
 WCMonsterEntity.PlayAttackAnimation = function(self, targetPos, playSpeedRate)
-  -- function num : 0_13
+  -- function num : 0_11
   (((self.monsterGo).transform):DOLookAt(targetPos, 0.1)):SetLink(self.monsterGo)
   self.__oldSpeed = (self.animator).speed
   -- DECOMPILER ERROR at PC13: Confused about usage of register: R3 in 'UnsetPending'
@@ -289,34 +271,33 @@ WCMonsterEntity.PlayAttackAnimation = function(self, targetPos, playSpeedRate)
 end
 
 WCMonsterEntity.EndPlayAttackAnimation = function(self)
-  -- function num : 0_14
+  -- function num : 0_12
   -- DECOMPILER ERROR at PC2: Confused about usage of register: R1 in 'UnsetPending'
 
   (self.animator).speed = self.__oldSpeed
 end
 
 WCMonsterEntity.GetGameObject = function(self)
-  -- function num : 0_15
+  -- function num : 0_13
   return self.monsterGo
 end
 
 WCMonsterEntity.Show = function(self)
-  -- function num : 0_16
+  -- function num : 0_14
   (self.__parentGo):SetActive(true)
 end
 
 WCMonsterEntity.Hide = function(self)
-  -- function num : 0_17
+  -- function num : 0_15
   (self.__parentGo):SetActive(false)
 end
 
 WCMonsterEntity.EntityOnSceneUnload = function(self)
-  -- function num : 0_18
+  -- function num : 0_16
 end
 
 WCMonsterEntity.Delete = function(self)
-  -- function num : 0_19 , upvalues : _ENV
-  self:RecycleEntityEffect()
+  -- function num : 0_17 , upvalues : _ENV
   self:EntityOnSceneUnload()
   DestroyUnityObject(self.__parentGo)
   self.__parentGo = nil

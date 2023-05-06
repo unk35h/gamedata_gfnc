@@ -705,6 +705,12 @@ size = {6, 9}
 , 
 [721056] = {id = 721056, is_theme = false, prefab = "Furnitures_001/Prefabs/nanaka_weapon", size = __rt_6}
 , 
+[721057] = {category = 2, id = 721057, is_theme = false, prefab = "Furnitures_001/Prefabs/nascita_weapon", size = __rt_19, type = 2}
+, 
+[721058] = {category = 11, id = 721058, is_theme = false, prefab = "Furnitures_001/Prefabs/cascadia_poster", size = __rt_48, type = 7}
+, 
+[721059] = {id = 721059, is_theme = false, prefab = "Furnitures_001/Prefabs/cleaning_robot", size = __rt_6}
+, 
 [721101] = {category = 9, comfort = 150, id = 721101, prefab = "Furnitures_001/Prefabs/sd2016_table_001", size = __rt_20}
 , 
 [721102] = {can_binding = true, category = 8, comfort = 250, id = 721102, interact_point = __rt_26, 

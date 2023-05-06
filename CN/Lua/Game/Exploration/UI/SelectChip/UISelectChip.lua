@@ -338,7 +338,7 @@ end
 
 UISelectChip.ComfirmSelectChip = function(self, chipPanel)
   -- function num : 0_15 , upvalues : _ENV
-  (UIUtil.PopFromBackStack)()
+  (UIUtil.PopFromBackStackByUiTab)(self)
   local index = chipPanel.index
   local chipData = chipPanel:GetChipDetailPanelData()
   local chipReturnMoney = 0
@@ -380,7 +380,7 @@ end
 
 UISelectChip.OnClickGiveup = function(self)
   -- function num : 0_16 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UISelectChip.StartGiveUpLogic = function(self)

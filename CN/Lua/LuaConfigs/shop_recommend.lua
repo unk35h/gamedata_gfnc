@@ -50,6 +50,10 @@ local __rt_47 = {1678348800}
 local __rt_48 = {1679558400}
 local __rt_49 = {1682582399}
 local __rt_50 = {1680767999}
+local __rt_51 = {1685001599}
+local __rt_52 = {0, 1681977599}
+local __rt_53 = {1681977600}
+local __rt_54 = {1681977599}
 local shop_recommend = {
 {imgIcon = "UI_TheaterRetroRecommended2022", 
 pre_para2 = {1653551999}
@@ -894,6 +898,56 @@ jump_arg = {901, 211}
 {id = 172, imgIcon = "UI_ShopRecommendPack131", 
 jump_arg = {901, 212}
 , pre_para2 = __rt_49}
+, 
+{id = 173, imgIcon = "UI_MythSkins2023", pre_para2 = __rt_51, type = 1}
+, 
+{id = 174, imgIcon = "UI_ShopRecommendPack96", 
+jump_arg = {901, 213}
+, pre_condition = __rt_27, pre_para1 = __rt_28, pre_para2 = __rt_52}
+, 
+{id = 175, imgIcon = "UI_ShopRecommendPack97", 
+jump_arg = {901, 214}
+, pre_condition = __rt_27, pre_para1 = __rt_28, pre_para2 = __rt_52}
+, 
+{id = 176, imgIcon = "UI_ShopRecommendPack108", 
+jump_arg = {901, 215}
+, pre_para1 = __rt_53, pre_para2 = __rt_49}
+, 
+{id = 177, imgIcon = "UI_ShopRecommendPack132", 
+jump_arg = {901, 216}
+, pre_para2 = __rt_54}
+, 
+{id = 178, imgIcon = "UI_ShopRecommendPack132", 
+jump_arg = {901, 217}
+, pre_para1 = __rt_53, pre_para2 = __rt_49}
+, 
+{id = 179, imgIcon = "UI_ShopRecommendPack98", 
+jump_arg = {901, 218}
+, pre_para2 = __rt_54}
+, 
+{id = 180, imgIcon = "UI_ChildrenReturn2023", pre_para2 = __rt_51, type = 1}
+, 
+{id = 181, imgIcon = "UI_SchoolFurnitureReturn2023", 
+jump_arg = {105}
+, pre_para2 = __rt_51, type = 1}
+, 
+{id = 182, imgIcon = "UI_ShopRecommendPack99", 
+jump_arg = {901, 220}
+, 
+pre_para2 = {1683187199}
+}
+, 
+{id = 183, imgIcon = "UI_ShopRecommendPack133", 
+jump_arg = {901, 221}
+, pre_para2 = __rt_51}
+, 
+{id = 184, imgIcon = "UI_ShopRecommendPack134", 
+jump_arg = {901, 222}
+, pre_condition = __rt_5, 
+pre_para1 = {1067, -1}
+, 
+pre_para2 = {3, 1685001599}
+}
 }
 local __default_values = {id = 1, imgIcon = "UI_ShopRecommendPack37", jump_arg = __rt_1, jump_target = 105, pre_condition = __rt_2, pre_para1 = __rt_3, pre_para2 = __rt_46, type = 2}
 local base = {__index = __default_values, __newindex = function()

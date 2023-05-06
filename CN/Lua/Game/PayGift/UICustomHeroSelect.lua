@@ -7,11 +7,11 @@ local cs_ResLoader = CS.ResLoader
 local eSelfSelectGift = require("Game.PayGift.eSelfSelectGift")
 UICustomHeroSelect.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, cs_ResLoader
-  (UIUtil.SetTopStatus)(self, self.Delete, nil, nil, nil, true)
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.Delete)):PushTopStatusDataToBackStack()
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Close, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Close, self, self.OnClickBack)
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Cancle, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Cancle, self, self.OnClickBack)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Confirm, self, self.OnClickConfirmSelect)
   self.__OnSelectHeroCallback = BindCallback(self, self.__OnSelectHero)
@@ -102,14 +102,19 @@ UICustomHeroSelect.OnClickConfirmSelect = function(self)
     return 
   end
   ;
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
   if self._callback ~= nil then
     (self._callback)(self._selectHeroId)
   end
 end
 
+UICustomHeroSelect.OnClickBack = function(self)
+  -- function num : 0_6 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UICustomHeroSelect.OnDelete = function(self)
-  -- function num : 0_6 , upvalues : base
+  -- function num : 0_7 , upvalues : base
   (base.OnDelete)(self)
 end
 

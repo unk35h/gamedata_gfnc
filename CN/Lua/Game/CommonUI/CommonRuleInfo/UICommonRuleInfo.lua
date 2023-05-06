@@ -40,7 +40,7 @@ end
 
 UICommonRuleInfo.__OnClickBackgroup = function(self)
   -- function num : 0_2 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UICommonRuleInfo.__CloseUI = function(self)

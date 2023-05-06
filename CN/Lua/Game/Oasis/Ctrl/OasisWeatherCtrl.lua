@@ -7,6 +7,9 @@ local cs_WeatherConfig = CS.WeatherConfig
 local cs_SkyController = CS.SkyController
 local cs_ResLoader = CS.ResLoader
 local cs_time = (CS.UnityEngine).Time
+local cs_Shader = (CS.UnityEngine).Shader
+local snowIntensityNameId = (cs_Shader.PropertyToID)("_snowIntensity")
+local snowColorNameId = (cs_Shader.PropertyToID)("_snowColor")
 OasisWeatherCtrl.InitOasisWeatherCtrl = function(self)
   -- function num : 0_0 , upvalues : _ENV, cs_OasisWeatherController, cs_WeatherConfig, cs_SkyController, cs_ResLoader
   self.isInOasis = false
@@ -36,11 +39,19 @@ OasisWeatherCtrl.InitOasisWeatherCtrl = function(self)
     self:RandomNewWeather()
     self:TransToHomeEffect()
   end
+  self:__InitSnowShaderGlobalValue()
   -- DECOMPILER ERROR: 5 unprocessed JMP targets
 end
 
+OasisWeatherCtrl.__InitSnowShaderGlobalValue = function(self)
+  -- function num : 0_1 , upvalues : cs_Shader, snowIntensityNameId, snowColorNameId, _ENV
+  (cs_Shader.SetGlobalFloat)(snowIntensityNameId, 0)
+  ;
+  (cs_Shader.SetGlobalColor)(snowColorNameId, Color.white)
+end
+
 OasisWeatherCtrl.SetOasisWeatherSetting = function(self, effectQuality)
-  -- function num : 0_1 , upvalues : _ENV, cs_OasisWeatherController
+  -- function num : 0_2 , upvalues : _ENV, cs_OasisWeatherController
   self._effectQuality = effectQuality
   if IsNull(self.oasisWeatherController) then
     self.oasisWeatherController = cs_OasisWeatherController.Instance
@@ -68,7 +79,7 @@ OasisWeatherCtrl.SetOasisWeatherSetting = function(self, effectQuality)
 end
 
 OasisWeatherCtrl.GenerateweatherList = function(self, weatherConfigData)
-  -- function num : 0_2 , upvalues : _ENV, cs_WeatherConfig
+  -- function num : 0_3 , upvalues : _ENV, cs_WeatherConfig
   self.weatherList = {}
   self.totalWeight = 0
   for _,weatherData in pairs(weatherConfigData) do
@@ -92,7 +103,7 @@ OasisWeatherCtrl.GenerateweatherList = function(self, weatherConfigData)
 end
 
 OasisWeatherCtrl.RandomNewWeather = function(self)
-  -- function num : 0_3 , upvalues : _ENV, cs_time
+  -- function num : 0_4 , upvalues : _ENV, cs_time
   if not self.isActive then
     return 
   end
@@ -119,12 +130,12 @@ OasisWeatherCtrl.RandomNewWeather = function(self)
 end
 
 OasisWeatherCtrl.StopWeatherEffect = function(self)
-  -- function num : 0_4
+  -- function num : 0_5
   self:_StopAmbienceAudio()
 end
 
 OasisWeatherCtrl.GetCurrentWeather = function(self)
-  -- function num : 0_5 , upvalues : _ENV
+  -- function num : 0_6 , upvalues : _ENV
   local weatherIndex = (PlayerDataCenter.cacheSaveData):GetLastWeatherIndex()
   if weatherIndex ~= nil then
     return (self.weatherList)[weatherIndex]
@@ -132,7 +143,7 @@ OasisWeatherCtrl.GetCurrentWeather = function(self)
 end
 
 OasisWeatherCtrl.GetRandomWeather = function(self)
-  -- function num : 0_6 , upvalues : _ENV
+  -- function num : 0_7 , upvalues : _ENV
   local weight = (math.random)(self.totalWeight)
   local curWeight = 0
   for i = 1, #self.weatherList do
@@ -145,7 +156,7 @@ OasisWeatherCtrl.GetRandomWeather = function(self)
 end
 
 OasisWeatherCtrl.SetWeatherManager = function(self, weatherConfig, isForce)
-  -- function num : 0_7 , upvalues : _ENV, cs_OasisWeatherController
+  -- function num : 0_8 , upvalues : _ENV, cs_OasisWeatherController
   if not self.isInOasis and not isForce then
     return 
   end
@@ -170,7 +181,7 @@ end
 local homeRainEffectPrefabPaths = {"FX/Scene/tianqi/new/FX_003_Oasis_001_rain_low.prefab", "FX/Scene/tianqi/new/FX_003_Oasis_001_rain_mid.prefab", "FX/Scene/tianqi/new/FX_003_Oasis_001_rain_high.prefab", "FX/Scene/tianqi/new/FX_003_Oasis_001_high_snow_low.prefab", "FX/Scene/tianqi/new/FX_003_Oasis_001_high_snow_mid.prefab", "FX/Scene/tianqi/new/FX_003_Oasis_001_high_snow_high.prefab"}
 local oasisWeatherEffectPrefabPaths = {"FX/Scene/tianqi/new/FX_003_Oasis_001_rain_low-lvzhou.prefab", "FX/Scene/tianqi/new/FX_003_Oasis_001_rain_mid-lvzhou.prefab", "FX/Scene/tianqi/new/FX_003_Oasis_001_rain_high-lvzhou.prefab"}
 OasisWeatherCtrl.SetEffect = function(self, weatherData)
-  -- function num : 0_8 , upvalues : homeRainEffectPrefabPaths, oasisWeatherEffectPrefabPaths
+  -- function num : 0_9 , upvalues : homeRainEffectPrefabPaths, oasisWeatherEffectPrefabPaths
   if weatherData == nil then
     return 
   end
@@ -204,7 +215,7 @@ OasisWeatherCtrl.SetEffect = function(self, weatherData)
   local homeWeatherEffectPath = homeRainEffectPrefabPaths[effectId]
   if homeWeatherEffectPath ~= nil then
     (self.resLoader):LoadABAssetAsync(homeWeatherEffectPath, function(prefab)
-    -- function num : 0_8_0 , upvalues : self
+    -- function num : 0_9_0 , upvalues : self
     if prefab == nil then
       return 
     end
@@ -215,7 +226,7 @@ OasisWeatherCtrl.SetEffect = function(self, weatherData)
   local oasisRainEffectPrefabPath = oasisWeatherEffectPrefabPaths[effectId]
   if oasisRainEffectPrefabPath then
     (self.resLoader):LoadABAssetAsync(oasisRainEffectPrefabPath, function(prefab)
-    -- function num : 0_8_1 , upvalues : self
+    -- function num : 0_9_1 , upvalues : self
     if prefab == nil then
       return 
     end
@@ -227,7 +238,7 @@ OasisWeatherCtrl.SetEffect = function(self, weatherData)
 end
 
 OasisWeatherCtrl._SetAmbienceAuido = function(self, oasisWeatherCfg)
-  -- function num : 0_9 , upvalues : _ENV
+  -- function num : 0_10 , upvalues : _ENV
   if oasisWeatherCfg.amb_audio_id == 0 or self._effectQuality < 2 then
     self:_StopAmbienceAudio()
     return 
@@ -246,7 +257,7 @@ OasisWeatherCtrl._SetAmbienceAuido = function(self, oasisWeatherCfg)
 end
 
 OasisWeatherCtrl._StopAmbienceAudio = function(self)
-  -- function num : 0_10 , upvalues : _ENV
+  -- function num : 0_11 , upvalues : _ENV
   if self._ambAuBack ~= nil then
     AudioManager:StopAudioByBack(self._ambAuBack)
   end
@@ -256,7 +267,7 @@ end
 
 local skyCloudMatPaths = {"FX/Scene/tianqi/new/uSkyPro Clouds 2D_rain_low.mat", "FX/Scene/tianqi/new/uSkyPro Clouds 2D_rain_mid.mat", "FX/Scene/tianqi/new/uSkyPro Clouds 2D_rain_high.mat"}
 OasisWeatherCtrl.SetSkyProParam = function(self, effectId)
-  -- function num : 0_11 , upvalues : _ENV, skyCloudMatPaths
+  -- function num : 0_12 , upvalues : _ENV, skyCloudMatPaths
   -- DECOMPILER ERROR at PC6: Confused about usage of register: R2 in 'UnsetPending'
 
   if not IsNull(self.uskyPro) then
@@ -273,7 +284,7 @@ OasisWeatherCtrl.SetSkyProParam = function(self, effectId)
   local skyCloudMatPath = skyCloudMatPaths[effectId]
   if not IsNull(self.cloud2d) and self.resLoader ~= nil then
     (self.resLoader):LoadABAssetAsync(skyCloudMatPath, function(material)
-    -- function num : 0_11_0 , upvalues : self, _ENV
+    -- function num : 0_12_0 , upvalues : self, _ENV
     if material == nil then
       return 
     end
@@ -287,7 +298,7 @@ OasisWeatherCtrl.SetSkyProParam = function(self, effectId)
 end
 
 OasisWeatherCtrl.ReSetEffect = function(self)
-  -- function num : 0_12 , upvalues : _ENV
+  -- function num : 0_13 , upvalues : _ENV
   if not IsNull(self.homeRainEffect) then
     DestroyUnityObject((self.homeRainEffect).gameObject)
   end
@@ -297,13 +308,13 @@ OasisWeatherCtrl.ReSetEffect = function(self)
 end
 
 OasisWeatherCtrl.ResetDefaultWeather = function(self)
-  -- function num : 0_13
+  -- function num : 0_14
   self:SetWeatherManager(self.defaultWeatherConfig, true)
   self:ReSetEffect()
 end
 
 OasisWeatherCtrl.TransEffect = function(self, isInOasis)
-  -- function num : 0_14 , upvalues : _ENV
+  -- function num : 0_15 , upvalues : _ENV
   if not IsNull(self.homeRainEffect) then
     ((self.homeRainEffect).gameObject):SetActive(not isInOasis)
   end
@@ -313,7 +324,7 @@ OasisWeatherCtrl.TransEffect = function(self, isInOasis)
 end
 
 OasisWeatherCtrl.TransToOasisEffect = function(self)
-  -- function num : 0_15
+  -- function num : 0_16
   if self.isActive then
     self:TransEffect(true)
     if self:GetCurrentWeather() ~= nil then
@@ -323,13 +334,13 @@ OasisWeatherCtrl.TransToOasisEffect = function(self)
 end
 
 OasisWeatherCtrl.TransToHomeEffect = function(self)
-  -- function num : 0_16
+  -- function num : 0_17
   self:TransEffect(false)
   self:SetWeatherManager(self.defaultWeatherConfig, true)
 end
 
 OasisWeatherCtrl.OnEnterOasis = function(self)
-  -- function num : 0_17 , upvalues : _ENV
+  -- function num : 0_18 , upvalues : _ENV
   self.isInOasis = true
   self:TransToOasisEffect()
   local cloud = ((CS.SkyController).Instance).clouds
@@ -337,13 +348,13 @@ OasisWeatherCtrl.OnEnterOasis = function(self)
 end
 
 OasisWeatherCtrl.OnExitOasis = function(self)
-  -- function num : 0_18
+  -- function num : 0_19
   self.isInOasis = false
   self:TransToHomeEffect()
 end
 
 OasisWeatherCtrl.OnDelete = function(self)
-  -- function num : 0_19 , upvalues : _ENV
+  -- function num : 0_20 , upvalues : _ENV
   self:_StopAmbienceAudio()
   self:ResetDefaultWeather()
   self.isInOasis = false

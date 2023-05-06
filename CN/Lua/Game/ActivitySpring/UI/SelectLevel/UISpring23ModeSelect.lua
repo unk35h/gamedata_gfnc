@@ -156,7 +156,7 @@ end
 
 UISpring23ModeSelect.OnClickCloseModeSelect = function(self)
   -- function num : 0_8 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UISpring23ModeSelect.OnDelete = function(self)

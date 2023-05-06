@@ -115,7 +115,7 @@ local __rt_106 = {[2] = 8, [3] = 6, [9] = 2, [10] = 3, [12] = 9, [19] = 1, [26] 
 local hero_data = {
 [1001] = {camp = 2, career = 5, cv = 57056, dorm_ai = 1005, model = "Persicaria", mvp_para = __rt_3, name = 139228, name_en = "Persicaria", priority2_suit_dic = __rt_4, priority_main_attribute_dic = __rt_5, priority_sub_attribute1_dic = __rt_6, priority_sub_attribute2_dic = __rt_6, priority_sub_attribute3_dic = __rt_6, range = 4, rank = 4, recommendAredSuitDic = __rt_9, tag = __rt_11, talk = 397529}
 , 
-[1002] = {archives_career = 379661, attribute_recommend = __rt_12, camp = 2, cv = 72470, default_skin = 300200, dorm_ai = 1005, fragment = 2502, id = 1002, model = "H-01", name = 170919, name_en = "Antonina", priority2_suit_dic = __rt_14, priority_sub_attribute1_dic = __rt_16, priority_sub_attribute2_dic = __rt_16, priority_sub_attribute3_dic = __rt_16, range = 3, rank = 4, recommendAredSuitDic = __rt_19, recommendSuitDic = __rt_20, 
+[1002] = {archives_career = 379661, attribute_recommend = __rt_12, camp = 2, cv = 72470, default_skin = 300200, dorm_ai = 1005, fragment = 2502, id = 1002, model = "H-01", name = 170919, name_en = "Antonina", priority2_suit_dic = __rt_14, priority_main_attribute_dic = __rt_15, priority_sub_attribute1_dic = __rt_16, priority_sub_attribute2_dic = __rt_16, priority_sub_attribute3_dic = __rt_16, range = 3, rank = 4, recommendAredSuitDic = __rt_19, recommendSuitDic = __rt_20, 
 skill_list = {100200, 100201, 100202, 100203}
 , 
 skin = {300201, 300202, 300203, 300204, 300205, 300206, 300207}
@@ -131,7 +131,7 @@ skill_list = {100300, 100301, 100302, 100303}
 skin = {300301, 300302, 300303, 300304, 300305, 300306}
 , src_id = 1003}
 , 
-[1004] = {archives_career = 309420, attribute_recommend = __rt_30, birthday = 303177, camp = 1, career = 2, cv = 222500, default_skin = 300400, dorm_ai = 1006, fragment = 2504, id = 1004, model = "Gaul", mvp_para = __rt_31, name = 412120, name_en = "Simo", 
+[1004] = {archives_career = 309420, attribute_recommend = __rt_30, birthday = 303177, career = 2, cv = 222500, default_skin = 300400, dorm_ai = 1006, fragment = 2504, id = 1004, model = "Gaul", mvp_para = __rt_31, name = 412120, name_en = "Simo", 
 priority2_suit_dic = {10, 11, 12, 13, 9, 14, 3, 15, 16, 17, 26, 27, 6, 28, 29, 7, 30, 31, 32, 33, 18, 19; [25] = 20, [26] = 4, [27] = 1, [30] = 34, [31] = 35, [32] = 36, [33] = 2, [34] = 21, [35] = 37, [36] = 38, [37] = 5, [38] = 22, [39] = 23, [40] = 8, [41] = 39, [42] = 24, [43] = 25, [44] = 40}
 , priority_main_attribute_dic = __rt_32, priority_sub_attribute1_dic = __rt_33, priority_sub_attribute2_dic = __rt_33, priority_sub_attribute3_dic = __rt_33, range = 3, rank = 2, 
 recommendAredSuitDic = {__rt_34, __rt_8, 
@@ -147,7 +147,7 @@ skin = {300401, 300402, 300403, 300404, 300405}
 , 
 [1005] = {archives_career = 297831, 
 attribute_recommend = {[2] = true, [4] = true, [7] = true, [20] = true, [26] = true}
-, birthday = 27510, camp = 1, career = 1, cv = 220446, default_skin = 300500, dorm_ai = 1003, fragment = 2505, id = 1005, model = "ME78", move_spd = 200, mvp_para = __rt_36, name = 279575, name_en = "Croque", 
+, birthday = 27510, career = 1, cv = 220446, default_skin = 300500, dorm_ai = 1003, fragment = 2505, id = 1005, model = "ME78", move_spd = 200, mvp_para = __rt_36, name = 279575, name_en = "Croque", 
 priority2_suit_dic = {11, 12, 7, 13, 14, 15, 16, 17, 18, 19, 25, 26, 27, 28, 1, 29, 30, 31, 32, 5, 8, 2; [25] = 20, [26] = 3, [27] = 21, [30] = 33, [31] = 34, [32] = 35, [33] = 22, [34] = 23, [35] = 36, [36] = 37, [37] = 38, [38] = 4, [39] = 24, [40] = 39, [41] = 6, [42] = 9, [43] = 10, [44] = 40}
 , 
 priority_main_attribute_dic = {[23] = 5, [26] = 4, [202] = 1, [204] = 2, [226] = 3}
@@ -175,9 +175,9 @@ skill_list = {100600, 100601, 100602, 100603}
 skin = {300601, 300602, 300603, 300604, 300605}
 , src_id = 1006}
 , 
-[1007] = {archives_career = 379662, attribute_recommend = __rt_43, birthday = 487022, camp = 1, career = 3, cv = 299057, default_skin = 300700, fragment = 2507, id = 1007, model = "FF-Alpha", move_spd = 300, mvp_para = __rt_23, name = 245114, name_en = "Chelsea", 
+[1007] = {archives_career = 379662, attribute_recommend = __rt_43, birthday = 487022, career = 3, cv = 299057, default_skin = 300700, fragment = 2507, id = 1007, model = "FF-Alpha", move_spd = 300, mvp_para = __rt_23, name = 245114, name_en = "Chelsea", 
 priority2_suit_dic = {13, 14, 9, 15, 16, 1, 4, 17, 18, 2, 6, 24, 25, 26, 27, 28, 29, 30, 31, 32, 10, 19; [25] = 20, [26] = 5, [27] = 3, [30] = 33, [31] = 34, [32] = 35, [33] = 21, [34] = 22, [35] = 36, [36] = 37, [37] = 38, [38] = 23, [39] = 7, [40] = 39, [41] = 8, [42] = 11, [43] = 12, [44] = 40}
-, priority_main_attribute_dic = __rt_44, rank = 2, 
+, rank = 2, 
 recommendAredSuitDic = {
 {[6] = 1, [10] = 2, [27] = 3}
 , __rt_17, __rt_27}
@@ -205,7 +205,7 @@ skin = {300801, 300802, 300803, 300804}
 , 
 [1009] = {archives_career = 69709, attribute_recommend = __rt_50, birthday = 67052, camp = 2, cv = 171634, default_skin = 300900, dorm_ai = 1001, fragment = 2509, id = 1009, model = "MAIA", name = 424012, name_en = "Mai", 
 priority2_suit_dic = {9, 10, 7, 11, 12, 13, 3, 14, 15, 16, 5, 24, 25, 26, 1, 27, 28, 29, 30, 31, 17, 2; [25] = 18, [26] = 4, [27] = 19, [30] = 32, [31] = 33, [32] = 34, [33] = 20, [34] = 21, [35] = 35, [36] = 36, [37] = 37, [38] = 22, [39] = 6, [40] = 38, [41] = 39, [42] = 23, [43] = 8, [44] = 40}
-, priority_sub_attribute1_dic = __rt_16, priority_sub_attribute2_dic = __rt_16, priority_sub_attribute3_dic = __rt_16, range = 3, rank = 2, 
+, priority_main_attribute_dic = __rt_15, priority_sub_attribute1_dic = __rt_16, priority_sub_attribute2_dic = __rt_16, priority_sub_attribute3_dic = __rt_16, range = 3, rank = 2, 
 recommendAredSuitDic = {__rt_7, __rt_17, 
 {[3] = 1, [43] = 2}
 }
@@ -217,7 +217,7 @@ skill_list = {100900, 100901, 100902, 100903}
 skin = {300901, 300902, 300903}
 , src_id = 1009, tag = __rt_51, talk = 517361}
 , 
-[1010] = {archives_career = 147925, attribute_recommend = __rt_52, birthday = 496898, camp = 1, career = 1, cv = 44920, default_skin = 301000, dorm_ai = 1006, fragment = 2510, id = 1010, model = "RP VII", move_spd = 200, mvp_para = __rt_36, name = 516981, name_en = "Evelyn", 
+[1010] = {archives_career = 147925, attribute_recommend = __rt_52, birthday = 496898, career = 1, cv = 44920, default_skin = 301000, dorm_ai = 1006, fragment = 2510, id = 1010, model = "RP VII", move_spd = 200, mvp_para = __rt_36, name = 516981, name_en = "Evelyn", 
 priority_main_attribute_dic = {[2] = 2, [4] = 6, [23] = 5, [26] = 4, [202] = 1, [226] = 3}
 , priority_sub_attribute1_dic = __rt_37, priority_sub_attribute2_dic = __rt_37, priority_sub_attribute3_dic = __rt_37, recommendAredSuitDic = __rt_55, recommendSuitDic = __rt_56, 
 skill_list = {101000, 101001, 101002, 101003}
@@ -303,7 +303,7 @@ skill_list = {101500, 101501, 101502, 101503}
 skin = {301501, 301502, 301503, 301504, 301505}
 , src_id = 1015, tag = __rt_63}
 , 
-[1016] = {archives_career = 492374, attribute_recommend = __rt_66, birthday = 411804, cv = 72470, default_skin = 301600, fragment = 2516, id = 1016, model = "ARTIST 3.0", name = 492510, name_en = "Banxsy", 
+[1016] = {archives_career = 492374, attribute_recommend = __rt_66, birthday = 411804, camp = 4, cv = 72470, default_skin = 301600, fragment = 2516, id = 1016, model = "ARTIST 3.0", name = 492510, name_en = "Banxsy", 
 priority2_suit_dic = {13, 14, 15, 16, 17, 18, 8, 19, 20, 2, 26, 27, 28, 29, 30, 31, 32, 33, 1, 34, 12, 21; [25] = 22, [26] = 9, [27] = 3, [30] = 4, [31] = 35, [32] = 6, [33] = 7, [34] = 5, [35] = 36, [36] = 37, [37] = 10, [38] = 23, [39] = 24, [40] = 38, [41] = 39, [42] = 25, [43] = 11, [44] = 40}
 , 
 priority_main_attribute_dic = {[2] = 4, [3] = 3, [4] = 5, [23] = 1, [27] = 6, [203] = 2}
@@ -358,7 +358,7 @@ recommendSuitDic = {[3] = true, [5] = true, [7] = true, [11] = true, [21] = true
 , 
 skill_list = {101900, 101901, 101902, 101903}
 , 
-skin = {301901, 301902, 301903, 301904}
+skin = {301901, 301902, 301903, 301904, 301905}
 , src_id = 1019, tag = __rt_72}
 , 
 [1020] = {archives_career = 241346, attribute_recommend = __rt_52, birthday = 347754, camp = 2, career = 1, cv = 460387, default_skin = 302000, dorm_ai = 1001, fragment = 2520, id = 1020, model = "Mariner II", move_spd = 200, mvp_para = __rt_36, name = 41160, name_en = "Yanny", 
@@ -383,7 +383,7 @@ tag = {4, 5}
 , 
 [1021] = {archives_career = "DJ", 
 attribute_recommend = {[2] = true, [7] = true, [23] = true, [26] = true}
-, birthday = 289741, cv = 164463, default_skin = 302100, fragment = 2521, id = 1021, model = "MDJ", move_spd = 200, name = 508749, name_en = "Groove", 
+, birthday = 289741, camp = 4, cv = 164463, default_skin = 302100, fragment = 2521, id = 1021, model = "MDJ", move_spd = 200, name = 508749, name_en = "Groove", 
 priority2_suit_dic = {6, 7, 8, 9, 10, 11, 2, 12, 13, 14, 24, 25, 26, 27, 28, 29, 30, 31, 1, 32, 15, 16; [25] = 17, [26] = 3, [27] = 18, [30] = 33, [31] = 34, [32] = 35, [33] = 19, [34] = 20, [35] = 36, [36] = 37, [37] = 4, [38] = 21, [39] = 22, [40] = 38, [41] = 39, [42] = 23, [43] = 5, [44] = 40}
 , priority_main_attribute_dic = __rt_68, priority_sub_attribute1_dic = __rt_16, priority_sub_attribute2_dic = __rt_16, priority_sub_attribute3_dic = __rt_16, range = 2, rank = 2, 
 recommendAredSuitDic = {__rt_69, __rt_8, 
@@ -433,7 +433,7 @@ skin = {302301, 302302, 302303, 302304}
 tag = {5, 6}
 }
 , 
-[1024] = {archives_career = 321849, attribute_recommend = __rt_75, birthday = 72751, camp = 1, career = 2, cv = 252520, default_skin = 302400, fragment = 2524, id = 1024, model = "E-Pilot", mvp_para = __rt_31, name = 432074, name_en = "Earhart", 
+[1024] = {archives_career = 321849, attribute_recommend = __rt_75, birthday = 72751, career = 2, cv = 252520, default_skin = 302400, fragment = 2524, id = 1024, model = "E-Pilot", mvp_para = __rt_31, name = 432074, name_en = "Earhart", 
 priority2_suit_dic = {9, 10, 11, 12, 8, 13, 3, 14, 15, 16, 25, 26, 6, 27, 28, 29, 30, 31, 32, 33, 17, 18; [25] = 19, [26] = 4, [27] = 2, [30] = 34, [31] = 35, [32] = 36, [33] = 20, [34] = 1, [35] = 37, [36] = 38, [37] = 5, [38] = 21, [39] = 22, [40] = 7, [41] = 39, [42] = 23, [43] = 24, [44] = 40}
 , 
 priority_main_attribute_dic = {[2] = 3, [4] = 4, [9] = 6, [10] = 7, [26] = 2, [27] = 5, [226] = 1}
@@ -451,7 +451,7 @@ skin = {302401, 302402, 302403, 302404}
 , 
 [1025] = {archives_career = 517479, 
 attribute_recommend = {[3] = true, [5] = true, [9] = true, [10] = true, [19] = true}
-, birthday = 104677, career = 2, cv = 522523, default_skin = 302500, fragment = 2525, id = 1025, model = "CM-EM", mvp_para = __rt_31, name = 43974, name_en = "Chanzhi", 
+, birthday = 104677, camp = 4, career = 2, cv = 522523, default_skin = 302500, fragment = 2525, id = 1025, model = "CM-EM", mvp_para = __rt_31, name = 43974, name_en = "Chanzhi", 
 priority2_suit_dic = {10, 11, 12, 13, 7, 14, 3, 15, 16, 17, 26, 27, 8, 28, 29, 9, 30, 31, 32, 33, 18, 19; [25] = 20, [26] = 4, [27] = 1, [30] = 34, [31] = 35, [32] = 36, [33] = 21, [34] = 2, [35] = 37, [36] = 38, [37] = 5, [38] = 22, [39] = 23, [40] = 6, [41] = 39, [42] = 24, [43] = 25, [44] = 40}
 , priority_main_attribute_dic = __rt_32, priority_sub_attribute1_dic = __rt_33, priority_sub_attribute2_dic = __rt_33, priority_sub_attribute3_dic = __rt_33, range = 3, 
 recommendAredSuitDic = {__rt_78, __rt_8, __rt_61}
@@ -460,10 +460,10 @@ recommendSuitDic = {[5] = true, [7] = true, [13] = true, [16] = true, [26] = tru
 , 
 skill_list = {102500, 102501, 102502, 102503}
 , 
-skin = {302501, 302502, 302503, 302504}
+skin = {302501, 302502, 302503, 302504, 302505}
 , src_id = 1025}
 , 
-[1026] = {archives_career = 291387, birthday = 478796, career = 5, cv = 266489, default_skin = 302600, dorm_ai = 1006, fragment = 2526, id = 1026, model = "CM-Idol", mvp_para = __rt_3, name = 297612, name_en = "Nanaka", 
+[1026] = {archives_career = 291387, birthday = 478796, camp = 4, career = 5, cv = 266489, default_skin = 302600, dorm_ai = 1006, fragment = 2526, id = 1026, model = "CM-Idol", mvp_para = __rt_3, name = 297612, name_en = "Nanaka", 
 priority2_suit_dic = {6, 8, 9, 10, 11, 12, 3, 13, 14, 15, 24, 25, 26, 27, 1, 28, 29, 30, 31, 32, 16, 2; [25] = 17, [26] = 4, [27] = 18, [30] = 33, [31] = 34, [32] = 35, [33] = 19, [34] = 20, [35] = 36, [36] = 37, [37] = 5, [38] = 21, [39] = 22, [40] = 38, [41] = 39, [42] = 7, [43] = 23, [44] = 40}
 , priority_main_attribute_dic = __rt_5, priority_sub_attribute1_dic = __rt_6, priority_sub_attribute2_dic = __rt_6, priority_sub_attribute3_dic = __rt_6, range = 3, 
 recommendAredSuitDic = {__rt_7, __rt_8, __rt_49}
@@ -477,7 +477,7 @@ skin = {302601, 302602, 302603, 302604, 302605}
 , 
 [1027] = {archives_career = 412437, 
 attribute_recommend = {[2] = true, [4] = true, [20] = true, [23] = true, [26] = true}
-, birthday = 239686, camp = 1, career = 1, cv = 329981, default_skin = 302700, dorm_ai = 1005, fragment = 2527, id = 1027, model = "CRAR", move_spd = 200, mvp_para = __rt_36, name = 403087, name_en = "Zion", 
+, birthday = 239686, career = 1, cv = 329981, default_skin = 302700, dorm_ai = 1005, fragment = 2527, id = 1027, model = "CRAR", move_spd = 200, mvp_para = __rt_36, name = 403087, name_en = "Zion", 
 priority_main_attribute_dic = {[4] = 1, [23] = 6, [26] = 5, [27] = 2, [202] = 3, [226] = 4}
 , priority_sub_attribute1_dic = __rt_37, priority_sub_attribute2_dic = __rt_37, priority_sub_attribute3_dic = __rt_37, rank = 2, recommendAredSuitDic = __rt_55, recommendSuitDic = __rt_56, 
 skill_list = {102700, 102701, 102702, 102703}
@@ -501,7 +501,7 @@ skill_list = {102800, 102801, 102802, 102803}
 skin = {302801, 302802, 302803, 302804}
 , src_id = 1028}
 , 
-[1029] = {archives_career = 410247, attribute_recommend = __rt_50, birthday = 416846, default_skin = 302900, fragment = 2529, id = 1029, model = "CM-JRNLST", name = 121008, name_en = "Willow", 
+[1029] = {archives_career = 410247, attribute_recommend = __rt_50, birthday = 416846, camp = 4, default_skin = 302900, fragment = 2529, id = 1029, model = "CM-JRNLST", name = 121008, name_en = "Willow", 
 priority2_suit_dic = {10, 11, 12, 13, 14, 15, 4, 16, 17, 18, 6, 25, 26, 27, 1, 28, 29, 30, 3, 31, 9, 2; [25] = 19, [26] = 5, [27] = 20, [30] = 32, [31] = 33, [32] = 34, [33] = 21, [34] = 22, [35] = 35, [36] = 36, [37] = 37, [38] = 23, [39] = 7, [40] = 38, [41] = 39, [42] = 24, [43] = 8, [44] = 40}
 , priority_main_attribute_dic = __rt_68, priority_sub_attribute1_dic = __rt_16, priority_sub_attribute2_dic = __rt_16, priority_sub_attribute3_dic = __rt_16, range = 2, 
 recommendAredSuitDic = {__rt_48, __rt_17, __rt_18}
@@ -541,7 +541,7 @@ skill_list = {103100, 103101, 103102, 103103}
 skin = {303101, 303102, 303103, 303104, 303105}
 , src_id = 1031, tag = __rt_11}
 , 
-[1032] = {archives_career = 358424, attribute_recommend = __rt_12, birthday = 399669, camp = 1, career = 2, cv = 14880, default_skin = 303200, fragment = 2532, id = 1032, model = "DMLT", move_spd = 130, mvp_para = __rt_31, name = 226887, name_en = "Octogen", 
+[1032] = {archives_career = 358424, attribute_recommend = __rt_12, birthday = 399669, career = 2, cv = 14880, default_skin = 303200, fragment = 2532, id = 1032, model = "DMLT", move_spd = 130, mvp_para = __rt_31, name = 226887, name_en = "Octogen", 
 priority2_suit_dic = {13, 14, 9, 15, 7, 16, 3, 17, 18, 2, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 10, 19; [25] = 20, [26] = 4, [27] = 1, [30] = 35, [31] = 36, [32] = 37, [33] = 21, [34] = 22, [35] = 38, [36] = 39, [37] = 5, [38] = 23, [39] = 24, [40] = 6, [41] = 8, [42] = 11, [43] = 12, [44] = 40}
 , priority_main_attribute_dic = __rt_41, priority_sub_attribute1_dic = __rt_42, priority_sub_attribute2_dic = __rt_42, priority_sub_attribute3_dic = __rt_42, range = 5, rank = 4, 
 recommendAredSuitDic = {__rt_83, __rt_8, __rt_58}
@@ -555,7 +555,7 @@ skin = {303201, 303202, 303203, 303204}
 , 
 [1033] = {archives_career = 440965, attribute_recommend = __rt_67, birthday = 375204, camp = 3, cv = 159026, default_skin = 303300, dorm_ai = 1005, fragment = 2533, id = 1033, model = "Forensic 3.6", name = 171274, name_en = "Rise", 
 priority2_suit_dic = {8, 9, 7, 10, 11, 12, 3, 13, 14, 15, 5, 24, 25, 26, 1, 27, 28, 29, 30, 31, 16, 2; [25] = 17, [26] = 4, [27] = 18, [30] = 32, [31] = 33, [32] = 34, [33] = 19, [34] = 20, [35] = 35, [36] = 36, [37] = 37, [38] = 21, [39] = 6, [40] = 38, [41] = 39, [42] = 22, [43] = 23, [44] = 40}
-, priority_sub_attribute1_dic = __rt_16, priority_sub_attribute2_dic = __rt_16, priority_sub_attribute3_dic = __rt_16, range = 3, rank = 4, 
+, priority_main_attribute_dic = __rt_15, priority_sub_attribute1_dic = __rt_16, priority_sub_attribute2_dic = __rt_16, priority_sub_attribute3_dic = __rt_16, range = 3, rank = 4, 
 recommendAredSuitDic = {__rt_7, __rt_17, 
 {[3] = 1}
 }
@@ -567,9 +567,9 @@ skill_list = {103300, 103301, 103302, 103303}
 skin = {303301, 303302, 303303, 303304, 303305}
 , src_id = 1033, tag = __rt_51}
 , 
-[1034] = {archives_career = 187617, attribute_recommend = __rt_67, birthday = 268111, camp = 1, cv = 286454, default_skin = 303400, fragment = 2534, id = 1034, model = "MCDT", move_spd = 200, name = 36722, 
+[1034] = {archives_career = 187617, attribute_recommend = __rt_67, birthday = 268111, cv = 286454, default_skin = 303400, fragment = 2534, id = 1034, model = "MCDT", move_spd = 200, name = 36722, 
 priority2_suit_dic = {12, 13, 10, 14, 15, 16, 6, 17, 18, 1, 8, 25, 26, 27, 28, 29, 30, 31, 32, 33, 19, 20; [25] = 21, [26] = 7, [27] = 2, [30] = 3, [31] = 5, [32] = 34, [33] = 22, [34] = 4, [35] = 35, [36] = 36, [37] = 37, [38] = 23, [39] = 9, [40] = 38, [41] = 39, [42] = 11, [43] = 24, [44] = 40}
-, priority_sub_attribute1_dic = __rt_16, priority_sub_attribute2_dic = __rt_16, priority_sub_attribute3_dic = __rt_16, range = 2, rank = 2, 
+, priority_main_attribute_dic = __rt_15, priority_sub_attribute1_dic = __rt_16, priority_sub_attribute2_dic = __rt_16, priority_sub_attribute3_dic = __rt_16, range = 2, rank = 2, 
 recommendAredSuitDic = {__rt_84, __rt_17, __rt_70}
 , 
 recommendSuitDic = {[3] = true, [7] = true, [10] = true, [11] = true, [26] = true, [27] = true, [30] = true, [31] = true, [34] = true, [39] = true, [42] = true}
@@ -629,7 +629,7 @@ skin = {303801, 303802, 303803, 303804}
 attribute_recommend = {[2] = true, [3] = true, [23] = true}
 , birthday = 126428, camp = 5, career = 3, cv = 151408, default_skin = 303900, dorm_ai = 1006, fragment = 2539, id = 1039, model = "Butler-36", move_spd = 300, mvp_para = __rt_23, name = 472491, name_en = "Centaureissi", 
 priority2_suit_dic = {15, 16, 11, 17, 9, 3, 4, 18, 19, 2, 6, 25, 26, 27, 28, 29, 30, 31, 32, 33, 12, 20; [25] = 21, [26] = 5, [27] = 1, [30] = 34, [31] = 35, [32] = 36, [33] = 22, [34] = 23, [35] = 37, [36] = 38, [37] = 39, [38] = 24, [39] = 7, [40] = 8, [41] = 10, [42] = 13, [43] = 14, [44] = 40}
-, priority_main_attribute_dic = __rt_44, 
+, 
 recommendAredSuitDic = {
 {[6] = 3, [10] = 2, [27] = 1}
 , __rt_17, __rt_58}
@@ -661,7 +661,7 @@ skill_list = {104000, 104001, 104002, 104003}
 skin = {304001, 304002}
 , src_id = 1040, tag = __rt_51}
 , 
-[1041] = {archives_career = 273930, birthday = 104677, camp = 1, career = 5, cv = 405668, default_skin = 304100, fragment = 2541, id = 1041, model = "DMT-X", mvp_para = __rt_3, name = 124099, name_en = "DeLacey", priority2_suit_dic = __rt_64, 
+[1041] = {archives_career = 273930, birthday = 104677, career = 5, cv = 405668, default_skin = 304100, fragment = 2541, id = 1041, model = "DMT-X", mvp_para = __rt_3, name = 124099, name_en = "DeLacey", priority2_suit_dic = __rt_64, 
 priority_main_attribute_dic = {[2] = 4, [4] = 5, [21] = 1, [26] = 3, [27] = 6, [226] = 2}
 , priority_sub_attribute1_dic = __rt_90, priority_sub_attribute2_dic = __rt_90, priority_sub_attribute3_dic = __rt_90, range = 3, 
 recommendAredSuitDic = {__rt_7, __rt_8, __rt_29}
@@ -675,7 +675,7 @@ skin = {304101, 304102, 304103, 304104, 304105, 304106}
 , 
 [1042] = {archives_career = 319666, attribute_recommend = __rt_43, birthday = 519872, camp = 2, career = 3, cv = 31897, default_skin = 304200, dorm_ai = 1005, fragment = 2542, id = 1042, model = "BPT1", move_spd = 300, mvp_para = __rt_23, name = 501167, name_en = "Hatsuchiri", 
 priority2_suit_dic = {14, 15, 10, 16, 8, 17, 3, 18, 19, 20, 5, 25, 26, 27, 28, 29, 30, 31, 32, 33, 11, 21; [25] = 22, [26] = 4, [27] = 2, [30] = 34, [31] = 35, [32] = 36, [33] = 1, [34] = 23, [35] = 37, [36] = 38, [37] = 39, [38] = 24, [39] = 6, [40] = 7, [41] = 9, [42] = 12, [43] = 13, [44] = 40}
-, priority_main_attribute_dic = __rt_44, 
+, 
 recommendAredSuitDic = {__rt_26, __rt_17, __rt_58}
 , 
 recommendSuitDic = {[3] = true, [5] = true, [7] = true, [11] = true, [21] = true, [26] = true, [27] = true, [33] = true, [39] = true, [40] = true, [41] = true, [42] = true, [43] = true}
@@ -687,7 +687,7 @@ skin = {304201, 304202, 304203, 304204}
 tag = {2, 4}
 }
 , 
-[1043] = {archives_career = 433612, attribute_recommend = __rt_52, birthday = 374950, camp = 1, career = 1, cv = 424438, default_skin = 304300, dorm_ai = 1006, fragment = 2543, id = 1043, model = "SI-MT", move_spd = 200, mvp_para = __rt_36, name = 220297, name_en = "Python", 
+[1043] = {archives_career = 433612, attribute_recommend = __rt_52, birthday = 374950, career = 1, cv = 424438, default_skin = 304300, dorm_ai = 1006, fragment = 2543, id = 1043, model = "SI-MT", move_spd = 200, mvp_para = __rt_36, name = 220297, name_en = "Python", 
 priority2_suit_dic = {7, 8, 9, 10, 5, 11, 12, 13, 14, 15, 25, 26, 27, 28, 29, 30, 31, 32, 1, 6, 16, 17; [25] = 18, [26] = 2, [27] = 19, [30] = 33, [31] = 34, [32] = 35, [33] = 20, [34] = 21, [35] = 36, [36] = 37, [37] = 38, [38] = 3, [39] = 22, [40] = 4, [41] = 39, [42] = 23, [43] = 24, [44] = 40}
 , 
 priority_main_attribute_dic = {[3] = 4, [4] = 1, [23] = 5, [27] = 6, [202] = 2, [203] = 3}
@@ -701,7 +701,7 @@ skill_list = {104300, 104301, 104302, 104303}
 skin = {304301, 304302, 304303, 304304, 304305}
 , src_id = 1043, tag = __rt_40}
 , 
-[1044] = {archives_career = 512875, attribute_recommend = __rt_12, birthday = 302513, career = 2, cv = 331566, default_skin = 304400, dorm_ai = 1001, fragment = 2544, id = 1044, model = "CM.SL", mvp_para = __rt_31, name = 73980, name_en = "Kuro", 
+[1044] = {archives_career = 512875, attribute_recommend = __rt_12, birthday = 302513, camp = 4, career = 2, cv = 331566, default_skin = 304400, dorm_ai = 1001, fragment = 2544, id = 1044, model = "CM.SL", mvp_para = __rt_31, name = 73980, name_en = "Kuro", 
 priority2_suit_dic = {8, 9, 10, 11, 7, 12, 3, 13, 14, 15, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 16, 17; [25] = 18, [26] = 4, [27] = 2, [30] = 34, [31] = 35, [32] = 36, [33] = 1, [34] = 19, [35] = 37, [36] = 38, [37] = 5, [38] = 20, [39] = 21, [40] = 6, [41] = 39, [42] = 22, [43] = 23, [44] = 40}
 , priority_main_attribute_dic = __rt_41, priority_sub_attribute1_dic = __rt_42, priority_sub_attribute2_dic = __rt_42, priority_sub_attribute3_dic = __rt_42, range = 4, 
 recommendAredSuitDic = {__rt_26, __rt_8, __rt_86}
@@ -727,7 +727,7 @@ skill_list = {104500, 104501, 104502, 104503}
 skin = {304501, 304502, 304503, 304504, 304505}
 , src_id = 1045}
 , 
-[1046] = {archives_career = 91007, attribute_recommend = __rt_92, birthday = 406105, career = 2, cv = 310657, default_skin = 304600, dorm_ai = 1001, fragment = 2546, id = 1046, model = "CM-ENT 2.0A", mvp_para = __rt_31, name = 2766, name_en = "Daiyan", 
+[1046] = {archives_career = 91007, attribute_recommend = __rt_92, birthday = 406105, camp = 4, career = 2, cv = 310657, default_skin = 304600, dorm_ai = 1001, fragment = 2546, id = 1046, model = "CM-ENT 2.0A", mvp_para = __rt_31, name = 2766, name_en = "Daiyan", 
 priority2_suit_dic = {12, 13, 7, 14, 15, 16, 3, 17, 18, 19, 25, 26, 11, 27, 28, 29, 30, 31, 32, 33, 8, 20; [25] = 21, [26] = 4, [27] = 1, [30] = 34, [31] = 35, [32] = 36, [33] = 22, [34] = 2, [35] = 37, [36] = 38, [37] = 5, [38] = 23, [39] = 24, [40] = 39, [41] = 6, [42] = 9, [43] = 10, [44] = 40}
 , 
 priority_main_attribute_dic = {[2] = 3, [3] = 2, [4] = 4, [9] = 7, [10] = 8, [23] = 6, [27] = 5, [203] = 1}
@@ -743,17 +743,17 @@ skill_list = {104600, 104601, 104602, 104603}
 skin = {304601, 304602, 304603, 304604, 304605, 304606, 304607}
 , src_id = 1046, tag = __rt_94}
 , 
-[1047] = {archives_career = 27643, attribute_recommend = __rt_92, birthday = 288887, camp = 1, career = 2, cv = 147899, default_skin = 304700, dorm_ai = 1001, fragment = 2547, id = 1047, is_limited = true, model = "HT-Alpha", mvp_para = __rt_31, name = 56129, name_en = "Sockdolager", not_mergeable = true, 
+[1047] = {archives_career = 27643, attribute_recommend = __rt_92, birthday = 288887, career = 2, cv = 147899, default_skin = 304700, dorm_ai = 1001, fragment = 2547, id = 1047, is_limited = true, model = "HT-Alpha", mvp_para = __rt_31, name = 56129, name_en = "Sockdolager", not_mergeable = true, 
 priority2_suit_dic = {8, 9, 10, 11, 7, 12, 3, 13, 14, 15, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 16, 17; [25] = 18, [26] = 4, [27] = 1, [30] = 34, [31] = 35, [32] = 36, [33] = 19, [34] = 2, [35] = 37, [36] = 38, [37] = 5, [38] = 20, [39] = 21, [40] = 6, [41] = 39, [42] = 22, [43] = 23, [44] = 40}
 , priority_main_attribute_dic = __rt_32, priority_sub_attribute1_dic = __rt_33, priority_sub_attribute2_dic = __rt_33, priority_sub_attribute3_dic = __rt_33, range = 5, rank = 4, 
 recommendAredSuitDic = {__rt_78, __rt_8, __rt_86}
 , recommendSuitDic = __rt_87, 
 skill_list = {104700, 104701, 104702, 104703}
 , 
-skin = {304701, 304702}
+skin = {304701, 304702, 304703}
 , src_id = 1047, tag = __rt_94}
 , 
-[1048] = {archives_career = 139002, attribute_recommend = __rt_92, birthday = 33183, cv = 487951, default_skin = 304800, dorm_ai = 1003, fragment = 2548, id = 1048, model = "EW-55", name = 135798, name_en = "Nora", priority2_suit_dic = __rt_95, priority_main_attribute_dic = __rt_88, range = 3, recommendAredSuitDic = __rt_96, recommendSuitDic = __rt_97, 
+[1048] = {archives_career = 139002, attribute_recommend = __rt_92, birthday = 33183, camp = 4, cv = 487951, default_skin = 304800, dorm_ai = 1003, fragment = 2548, id = 1048, model = "EW-55", name = 135798, name_en = "Nora", priority2_suit_dic = __rt_95, priority_main_attribute_dic = __rt_88, range = 3, recommendAredSuitDic = __rt_96, recommendSuitDic = __rt_97, 
 skill_list = {104800, 104801, 104802, 104803}
 , 
 skin = {304801, 304802, 304803, 304804}
@@ -761,9 +761,9 @@ skin = {304801, 304802, 304803, 304804}
 , 
 [1049] = {archives_career = 51297, 
 attribute_recommend = {[2] = true, [3] = true, [20] = true, [23] = true}
-, birthday = 374179, camp = 1, career = 3, cv = 252520, default_skin = 304900, dorm_ai = 1001, fragment = 2549, id = 1049, model = "AAT", move_spd = 300, mvp_para = __rt_23, name = 189659, name_en = "Magnhilda", 
+, birthday = 374179, career = 3, cv = 252520, default_skin = 304900, dorm_ai = 1001, fragment = 2549, id = 1049, model = "AAT", move_spd = 300, mvp_para = __rt_23, name = 189659, name_en = "Magnhilda", 
 priority2_suit_dic = {14, 15, 10, 1, 16, 3, 4, 17, 18, 19, 6, 25, 26, 27, 28, 29, 30, 31, 32, 8, 11, 20; [25] = 21, [26] = 5, [27] = 2, [30] = 33, [31] = 34, [32] = 35, [33] = 22, [34] = 23, [35] = 36, [36] = 37, [37] = 38, [38] = 24, [39] = 7, [40] = 39, [41] = 9, [42] = 12, [43] = 13, [44] = 40}
-, priority_main_attribute_dic = __rt_44, 
+, 
 recommendAredSuitDic = {
 {[4] = 1, [6] = 3, [27] = 2}
 , __rt_17, __rt_39}
@@ -775,7 +775,7 @@ skill_list = {104900, 104901, 104902, 104903}
 skin = {304901, 304902, 304903, 304904, 304905}
 , src_id = 1049}
 , 
-[1050] = {archives_career = 169451, attribute_recommend = __rt_50, birthday = 362603, cv = 297373, default_skin = 305000, fragment = 2550, id = 1050, model = "ArSC", name = 167345, name_en = "Puzzle", priority2_suit_dic = __rt_14, priority_sub_attribute1_dic = __rt_98, priority_sub_attribute2_dic = __rt_98, priority_sub_attribute3_dic = __rt_98, range = 2, recommendAredSuitDic = __rt_19, recommendSuitDic = __rt_20, 
+[1050] = {archives_career = 169451, attribute_recommend = __rt_50, birthday = 362603, camp = 4, cv = 297373, default_skin = 305000, fragment = 2550, id = 1050, model = "ArSC", name = 167345, name_en = "Puzzle", priority2_suit_dic = __rt_14, priority_main_attribute_dic = __rt_15, priority_sub_attribute1_dic = __rt_98, priority_sub_attribute2_dic = __rt_98, priority_sub_attribute3_dic = __rt_98, range = 2, recommendAredSuitDic = __rt_19, recommendSuitDic = __rt_20, 
 skill_list = {105000, 105001, 105002, 105003}
 , 
 skin = {305001, 305002, 305003}
@@ -783,9 +783,9 @@ skin = {305001, 305002, 305003}
 tag = {4, 6}
 }
 , 
-[1051] = {archives_career = 391104, attribute_recommend = __rt_66, birthday = 447747, career = 3, cv = 124172, default_skin = 305100, dorm_ai = 1006, fragment = 2551, id = 1051, model = "CM-Act/TS", move_spd = 300, mvp_para = __rt_23, name = 449592, name_en = "Nascita", 
+[1051] = {archives_career = 391104, attribute_recommend = __rt_66, birthday = 447747, camp = 4, career = 3, cv = 124172, default_skin = 305100, dorm_ai = 1006, fragment = 2551, id = 1051, model = "CM-Act/TS", move_spd = 300, mvp_para = __rt_23, name = 449592, name_en = "Nascita", 
 priority2_suit_dic = {8, 9, 10, 11, 7, 12, 3, 13, 14, 15, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 16, 17; [25] = 18, [26] = 4, [27] = 19, [30] = 34, [31] = 35, [32] = 36, [33] = 1, [34] = 2, [35] = 37, [36] = 38, [37] = 5, [38] = 20, [39] = 21, [40] = 6, [41] = 39, [42] = 22, [43] = 23, [44] = 40}
-, priority_main_attribute_dic = __rt_44, 
+, 
 recommendAredSuitDic = {
 {[33] = 1, [34] = 2}
 , __rt_8, __rt_86}
@@ -794,7 +794,7 @@ recommendSuitDic = {[5] = true, [7] = true, [26] = true, [33] = true, [34] = tru
 , 
 skill_list = {105100, 105101, 105102, 105103}
 , 
-skin = {305101, 305102, 305103}
+skin = {305101, 305102, 305103, 305104}
 , src_id = 1051}
 , 
 [1052] = {archives_career = 148832, birthday = 162519, camp = 3, career = 5, cv = 329981, default_skin = 305200, dorm_ai = 1001, fragment = 2552, id = 1052, model = "UL-GSA", mvp_para = __rt_3, name = 332678, name_en = "Helix", 
@@ -811,7 +811,7 @@ skill_list = {105200, 105201, 105202, 105203}
 skin = {305201, 305202, 305203, 305204, 305205}
 , src_id = 1052, tag = __rt_63}
 , 
-[1053] = {archives_career = 419134, attribute_recommend = __rt_75, birthday = 430570, career = 2, cv = 323548, default_skin = 305300, dorm_ai = 1001, fragment = 2553, id = 1053, model = "EF-55", mvp_para = __rt_31, name = 425940, name_en = "Zangyin", 
+[1053] = {archives_career = 419134, attribute_recommend = __rt_75, birthday = 430570, camp = 4, career = 2, cv = 323548, default_skin = 305300, dorm_ai = 1001, fragment = 2553, id = 1053, model = "EF-55", mvp_para = __rt_31, name = 425940, name_en = "Zangyin", 
 priority2_suit_dic = {10, 11, 12, 13, 7, 14, 3, 15, 16, 17, 26, 27, 8, 28, 29, 9, 30, 31, 32, 33, 18, 2; [25] = 19, [26] = 4, [27] = 1, [30] = 34, [31] = 35, [32] = 36, [33] = 20, [34] = 21, [35] = 37, [36] = 38, [37] = 5, [38] = 22, [39] = 23, [40] = 6, [41] = 39, [42] = 24, [43] = 25, [44] = 40}
 , priority_main_attribute_dic = __rt_99, priority_sub_attribute1_dic = __rt_76, priority_sub_attribute2_dic = __rt_76, priority_sub_attribute3_dic = __rt_76, range = 4, 
 recommendAredSuitDic = {
@@ -827,7 +827,7 @@ skin = {305301, 305302, 305303}
 , 
 [1054] = {archives_career = 21174, 
 attribute_recommend = {[2] = true, [4] = true, [20] = true, [27] = true}
-, birthday = 416280, career = 1, cv = 313181, default_skin = 305400, dorm_ai = 1003, fragment = 2554, id = 1054, model = "E-GAST", move_spd = 200, mvp_para = __rt_36, name = 6147, name_en = "Millau", 
+, birthday = 416280, camp = 4, career = 1, cv = 313181, default_skin = 305400, dorm_ai = 1003, fragment = 2554, id = 1054, model = "E-GAST", move_spd = 200, mvp_para = __rt_36, name = 6147, name_en = "Millau", 
 priority2_suit_dic = {12, 13, 8, 14, 15, 16, 17, 18, 19, 20, 26, 27, 28, 29, 1, 30, 31, 32, 33, 6, 9, 2; [25] = 4, [26] = 5, [27] = 21, [30] = 34, [31] = 3, [32] = 35, [33] = 22, [34] = 23, [35] = 36, [36] = 37, [37] = 38, [38] = 24, [39] = 25, [40] = 39, [41] = 7, [42] = 10, [43] = 11, [44] = 40}
 , 
 priority_main_attribute_dic = {[23] = 5, [26] = 4, [202] = 2, [204] = 1, [226] = 3}
@@ -847,7 +847,7 @@ skin = {305401, 305402, 305403}
 attribute_recommend = {[23] = true, [26] = true}
 , birthday = 180819, camp = 2, cv = 48128, default_skin = 305500, dorm_ai = 1001, fragment = 2555, id = 1055, model = "T1642", name = 344043, name_en = "Hannah", 
 priority2_suit_dic = {9, 10, 11, 12, 13, 14, 3, 15, 16, 17, 5, 24, 25, 26, 1, 27, 28, 29, 30, 31, 8, 2; [25] = 18, [26] = 4, [27] = 19, [30] = 32, [31] = 33, [32] = 34, [33] = 20, [34] = 21, [35] = 35, [36] = 36, [37] = 37, [38] = 22, [39] = 6, [40] = 38, [41] = 39, [42] = 7, [43] = 23, [44] = 40}
-, priority_sub_attribute1_dic = __rt_16, priority_sub_attribute2_dic = __rt_16, priority_sub_attribute3_dic = __rt_16, range = 4, 
+, priority_main_attribute_dic = __rt_15, priority_sub_attribute1_dic = __rt_16, priority_sub_attribute2_dic = __rt_16, priority_sub_attribute3_dic = __rt_16, range = 4, 
 recommendAredSuitDic = {__rt_7, __rt_17, 
 {[21] = 2, [42] = 1}
 }
@@ -859,7 +859,7 @@ skill_list = {105500, 105501, 105502, 105503}
 skin = {305501, 305502, 305503}
 , src_id = 1055, tag = __rt_51}
 , 
-[1056] = {archives_career = 273346, attribute_recommend = __rt_12, birthday = 160288, camp = 1, career = 2, cv = 215446, default_skin = 305600, fragment = 2556, id = 1056, is_limited = true, model = "OBJ-9420", mvp_para = __rt_31, name_en = "Uranus", 
+[1056] = {archives_career = 273346, attribute_recommend = __rt_12, birthday = 160288, career = 2, cv = 215446, default_skin = 305600, fragment = 2556, id = 1056, is_limited = true, model = "OBJ-9420", mvp_para = __rt_31, name_en = "Uranus", 
 priority2_suit_dic = {13, 14, 7, 15, 12, 16, 3, 17, 18, 19, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 8, 20; [25] = 21, [26] = 4, [27] = 1, [30] = 35, [31] = 36, [32] = 37, [33] = 22, [34] = 2, [35] = 38, [36] = 39, [37] = 5, [38] = 23, [39] = 24, [40] = 11, [41] = 6, [42] = 9, [43] = 10, [44] = 40}
 , priority_main_attribute_dic = __rt_24, priority_sub_attribute1_dic = __rt_42, priority_sub_attribute2_dic = __rt_42, priority_sub_attribute3_dic = __rt_42, range = 4, rank = 4, 
 recommendAredSuitDic = {__rt_78, __rt_8, __rt_71}
@@ -873,7 +873,7 @@ skin = {305601, 305602}
 , 
 [1057] = {attribute_recommend = __rt_50, birthday = 319129, camp = 2, cv = 283215, default_skin = 305700, fragment = 2557, id = 1057, model = "RSM-Admin", name = 13199, name_en = "Turing", 
 priority2_suit_dic = {7, 8, 9, 10, 11, 12, 3, 13, 14, 15, 24, 25, 26, 27, 1, 28, 29, 30, 31, 32, 16, 2; [25] = 17, [26] = 4, [27] = 18, [30] = 33, [31] = 34, [32] = 35, [33] = 19, [34] = 20, [35] = 36, [36] = 37, [37] = 5, [38] = 21, [39] = 22, [40] = 38, [41] = 39, [42] = 6, [43] = 23, [44] = 40}
-, priority_sub_attribute1_dic = __rt_16, priority_sub_attribute2_dic = __rt_16, priority_sub_attribute3_dic = __rt_16, range = 4, 
+, priority_main_attribute_dic = __rt_15, priority_sub_attribute1_dic = __rt_16, priority_sub_attribute2_dic = __rt_16, priority_sub_attribute3_dic = __rt_16, range = 4, 
 recommendAredSuitDic = {__rt_7, __rt_8, 
 {[42] = 1}
 }
@@ -885,7 +885,7 @@ skill_list = {105700, 105701, 105702, 105703}
 skin = {305701, 305702, 305703}
 , src_id = 1057, tag = __rt_51}
 , 
-[1058] = {archives_career = 340156, attribute_recommend = __rt_81, camp = 1, career = 2, cv = 456705, default_skin = 305800, fragment = 2558, id = 1058, is_limited = true, model = "NSP", mvp_para = __rt_31, name = 213507, name_en = "Clukay", not_mergeable = true, priority2_suit_dic = __rt_101, priority_main_attribute_dic = __rt_99, priority_sub_attribute1_dic = __rt_76, priority_sub_attribute2_dic = __rt_76, priority_sub_attribute3_dic = __rt_76, range = 4, recommendSuitDic = __rt_103, 
+[1058] = {archives_career = 340156, attribute_recommend = __rt_81, career = 2, cv = 456705, default_skin = 305800, fragment = 2558, id = 1058, is_limited = true, model = "NSP", mvp_para = __rt_31, name = 213507, name_en = "Clukay", not_mergeable = true, priority2_suit_dic = __rt_101, priority_main_attribute_dic = __rt_99, priority_sub_attribute1_dic = __rt_76, priority_sub_attribute2_dic = __rt_76, priority_sub_attribute3_dic = __rt_76, range = 4, recommendSuitDic = __rt_103, 
 skill_list = {105800, 105801, 105802, 105803}
 , 
 skin = {305801, 305802, 305803}
@@ -911,7 +911,7 @@ skin = {305901, 305902}
 , 
 [1060] = {archives_career = 43094, attribute_recommend = __rt_22, birthday = 58927, camp = 5, cv = 487219, default_skin = 306000, dorm_ai = 1003, fragment = 2560, id = 1060, model = "DetectiveD", move_spd = 300, name = 194946, name_en = "Dupin", 
 priority2_suit_dic = {12, 13, 14, 15, 16, 17, 7, 18, 19, 1, 9, 25, 26, 27, 5, 28, 29, 30, 31, 32, 11, 6; [25] = 20, [26] = 8, [27] = 2, [30] = 3, [31] = 33, [32] = 34, [33] = 21, [34] = 4, [35] = 35, [36] = 36, [37] = 37, [38] = 22, [39] = 10, [40] = 38, [41] = 39, [42] = 23, [43] = 24, [44] = 40}
-, priority_sub_attribute1_dic = __rt_105, priority_sub_attribute2_dic = __rt_105, priority_sub_attribute3_dic = __rt_105, 
+, priority_main_attribute_dic = __rt_15, priority_sub_attribute1_dic = __rt_105, priority_sub_attribute2_dic = __rt_105, priority_sub_attribute3_dic = __rt_105, 
 recommendAredSuitDic = {
 {[10] = 1, [15] = 5, [22] = 6, [27] = 2, [30] = 3, [34] = 4}
 , __rt_17, __rt_91}
@@ -923,7 +923,7 @@ skill_list = {106000, 106001, 106002, 106003}
 skin = {306001, 306002, 306003}
 , src_id = 1060, tag = __rt_65}
 , 
-[1061] = {archives_career = 187383, attribute_recommend = __rt_81, birthday = 267136, cv = 334113, default_skin = 306100, dorm_ai = 1003, fragment = 2561, id = 1061, model = "E-Orchestra", move_spd = 200, name = 189484, name_en = "Undine", 
+[1061] = {archives_career = 187383, attribute_recommend = __rt_81, birthday = 267136, camp = 4, cv = 334113, default_skin = 306100, dorm_ai = 1003, fragment = 2561, id = 1061, model = "E-Orchestra", move_spd = 200, name = 189484, name_en = "Undine", 
 priority2_suit_dic = {8, 9, 10, 11, 12, 13, 3, 14, 15, 16, 24, 25, 26, 27, 1, 28, 29, 30, 31, 32, 6, 2; [25] = 17, [26] = 4, [27] = 18, [30] = 33, [31] = 34, [32] = 35, [33] = 19, [34] = 20, [35] = 36, [36] = 37, [37] = 5, [38] = 21, [39] = 22, [40] = 38, [41] = 39, [42] = 7, [43] = 23, [44] = 40}
 , 
 priority_main_attribute_dic = {[2] = 6, [9] = 1, [10] = 2, [26] = 4, [202] = 5, [226] = 3}
@@ -941,7 +941,7 @@ skin = {306101, 306102, 306103}
 tag = {1, 3}
 }
 , 
-[1062] = {archives_career = 66979, attribute_recommend = __rt_30, birthday = 399669, career = 3, cv = 85543, default_skin = 306200, dorm_ai = 1003, fragment = 2562, id = 1062, model = "CM-ENT 2.0B", move_spd = 200, name = 492583, name_en = "Jiangyu", 
+[1062] = {archives_career = 66979, attribute_recommend = __rt_30, birthday = 399669, camp = 4, career = 3, cv = 85543, default_skin = 306200, dorm_ai = 1003, fragment = 2562, id = 1062, model = "CM-ENT 2.0B", move_spd = 200, name = 492583, name_en = "Jiangyu", 
 priority2_suit_dic = {11, 12, 13, 14, 8, 15, 3, 16, 17, 1, 5, 26, 9, 27, 28, 10, 29, 30, 31, 32, 18, 19; [25] = 20, [26] = 4, [27] = 2, [30] = 33, [31] = 34, [32] = 35, [33] = 21, [34] = 22, [35] = 36, [36] = 37, [37] = 38, [38] = 23, [39] = 6, [40] = 7, [41] = 39, [42] = 24, [43] = 25, [44] = 40}
 , priority_main_attribute_dic = __rt_59, priority_sub_attribute1_dic = __rt_60, priority_sub_attribute2_dic = __rt_60, priority_sub_attribute3_dic = __rt_60, 
 recommendAredSuitDic = {__rt_74, __rt_17, __rt_61}
@@ -955,7 +955,7 @@ skin = {306201, 306202, 306203}
 , 
 [1063] = {archives_career = 172274, 
 attribute_recommend = {[3] = true, [9] = true, [10] = true, [19] = true, [26] = true}
-, birthday = 122977, career = 2, cv = 250049, default_skin = 306300, dorm_ai = 1003, fragment = 2563, id = 1063, move_spd = 200, mvp_para = __rt_31, name = 421865, name_en = "Yelena", priority2_suit_dic = __rt_101, 
+, birthday = 122977, camp = 4, career = 2, cv = 250049, default_skin = 306300, dorm_ai = 1003, fragment = 2563, id = 1063, move_spd = 200, mvp_para = __rt_31, name = 421865, name_en = "Yelena", priority2_suit_dic = __rt_101, 
 priority_main_attribute_dic = {[2] = 4, [9] = 5, [10] = 6, [202] = 3, [203] = 1, [226] = 2}
 , priority_sub_attribute1_dic = __rt_106, priority_sub_attribute2_dic = __rt_106, priority_sub_attribute3_dic = __rt_106, range = 4, recommendSuitDic = __rt_103, 
 skill_list = {106300, 106301, 106302, 106303}
@@ -971,7 +971,7 @@ skin = {306401, 306402}
 , 
 [1065] = {archives_career = 522684, attribute_recommend = __rt_43, birthday = 254535, camp = 3, career = 3, cv = 201901, default_skin = 306500, dorm_ai = 1003, fragment = 2565, id = 1065, is_limited = true, model = "UL-SD", move_spd = 300, mvp_para = __rt_23, name = 463012, name_en = "Lind", not_mergeable = true, 
 priority2_suit_dic = {12, 13, 8, 14, 15, 16, 3, 17, 18, 19, 5, 24, 25, 26, 27, 28, 29, 30, 31, 32, 9, 20; [25] = 21, [26] = 4, [27] = 1, [30] = 33, [31] = 34, [32] = 35, [33] = 22, [34] = 2, [35] = 36, [36] = 37, [37] = 38, [38] = 23, [39] = 6, [40] = 39, [41] = 7, [42] = 10, [43] = 11, [44] = 40}
-, priority_main_attribute_dic = __rt_44, 
+, 
 recommendAredSuitDic = {__rt_78, __rt_17, __rt_27}
 , 
 recommendSuitDic = {[3] = true, [7] = true, [11] = true, [21] = true, [26] = true, [27] = true, [34] = true, [39] = true, [41] = true, [42] = true, [43] = true}
@@ -985,15 +985,29 @@ tag = {4, 1}
 , 
 [1066] = {archives_career = 492024, attribute_recommend = __rt_43, birthday = 371753, camp = 5, career = 2, cv = 227267, default_skin = 306600, fragment = 2566, id = 1066, model = "SP VII", mvp_para = __rt_31, name = 138974, name_en = "Erika", 
 priority2_suit_dic = {12, 13, 8, 14, 15, 16, 3, 17, 18, 19, 5, 24, 25, 26, 27, 28, 29, 30, 31, 32, 9, 20; [25] = 21, [26] = 4, [27] = 1, [30] = 33, [31] = 34, [32] = 35, [33] = 2, [34] = 22, [35] = 36, [36] = 37, [37] = 38, [38] = 23, [39] = 6, [40] = 39, [41] = 7, [42] = 10, [43] = 11, [44] = 40}
-, priority_main_attribute_dic = __rt_44, range = 3, 
+, range = 3, 
 recommendAredSuitDic = {__rt_34, __rt_17, __rt_27}
 , recommendSuitDic = __rt_28, 
 skill_list = {106600, 106601, 106602, 106603}
 , 
 skin = {306601, 306602}
 , src_id = 1066, tag = __rt_72}
+, 
+[1067] = {archives_career = 154982, attribute_recommend = __rt_43, birthday = 252287, career = 3, cv = 456705, default_skin = 306700, fragment = 2567, id = 1067, model = "SRT-8", mvp_para = __rt_23, name = 54750, name_en = "Cascadia", 
+priority2_suit_dic = {11, 12, 7, 13, 14, 15, 2, 16, 17, 18, 4, 24, 25, 26, 27, 28, 29, 30, 31, 32, 8, 19; [25] = 20, [26] = 3, [27] = 21, [30] = 33, [31] = 34, [32] = 35, [33] = 1, [34] = 22, [35] = 36, [36] = 37, [37] = 38, [38] = 23, [39] = 5, [40] = 39, [41] = 6, [42] = 9, [43] = 10, [44] = 40}
+, 
+recommendAredSuitDic = {
+{[33] = 1}
+, __rt_17, __rt_27}
+, 
+recommendSuitDic = {[3] = true, [7] = true, [11] = true, [21] = true, [26] = true, [33] = true, [39] = true, [41] = true, [42] = true, [43] = true}
+, 
+skill_list = {106700, 106701, 106702, 106703}
+, 
+skin = {306701, 306702}
+, src_id = 1067, tag = __rt_72}
 }
-local __default_values = {algorithm_space = __rt_1, archives_career = 199821, attribute_recommend = __rt_2, birthday = 185961, camp = 4, career = 4, cv = 129124, default_skin = 300100, dorm_ai = 1004, dorm_move_spd = 0.8, fragment = 2501, hero_audio_res = true, id = 1001, intensity = 10, is_limited = false, is_locked = false, lock_heroinfo = false, model = "A-PST(Di)", move_spd = 150, mvp_para = __rt_13, name = 106489, name_en = "Abigail", not_mergeable = false, priority2_suit_dic = __rt_53, priority_main_attribute_dic = __rt_15, priority_sub_attribute1_dic = __rt_45, priority_sub_attribute2_dic = __rt_45, priority_sub_attribute3_dic = __rt_45, range = 1, rank = 6, recommendAredSuitDic = __rt_102, recommendSuitDic = __rt_10, 
+local __default_values = {algorithm_space = __rt_1, archives_career = 199821, attribute_recommend = __rt_2, birthday = 185961, camp = 1, career = 4, cv = 129124, default_skin = 300100, dorm_ai = 1004, dorm_move_spd = 0.8, fragment = 2501, hero_audio_res = true, id = 1001, intensity = 10, is_limited = false, is_locked = false, lock_heroinfo = false, model = "A-PST(Di)", move_spd = 150, mvp_para = __rt_13, name = 106489, name_en = "Abigail", not_mergeable = false, priority2_suit_dic = __rt_53, priority_main_attribute_dic = __rt_44, priority_sub_attribute1_dic = __rt_45, priority_sub_attribute2_dic = __rt_45, priority_sub_attribute3_dic = __rt_45, range = 1, rank = 6, recommendAredSuitDic = __rt_102, recommendSuitDic = __rt_10, 
 skill_list = {100100, 100101, 100102, 100103}
 , 
 skin = {300101, 300102, 300103, 300104, 300105, 300106, 300107, 300108}
@@ -1006,8 +1020,8 @@ end
 for k,v in (_ENV.pairs)(hero_data) do
   (_ENV.setmetatable)(v, base)
 end
-local __rawdata = {__basemetatable = base, totalHeroCount = 66, 
-totalVoiceHeroIdList = {1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065, 1066}
+local __rawdata = {__basemetatable = base, totalHeroCount = 67, 
+totalVoiceHeroIdList = {1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065, 1066, 1067}
 }
 ;
 (_ENV.setmetatable)(hero_data, {__index = __rawdata})

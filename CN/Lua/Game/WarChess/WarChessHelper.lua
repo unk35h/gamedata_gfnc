@@ -3,6 +3,7 @@
 local WarChessHelper = {}
 local eWarChessEnum = require("Game.WarChess.eWarChessEnum")
 local eGridToward = eWarChessEnum.eGridToward
+local WarChessBattleRoom = require("Game.WarChess.Data.Battle.WarChessBattleRoom")
 WarChessHelper.rotateValue = {[eGridToward.up] = Vector3.zero, [eGridToward.right] = (Vector3.New)(0, 90, 0), [eGridToward.down] = (Vector3.New)(0, 180, 0), [eGridToward.left] = (Vector3.New)(0, -90, 0)}
 WarChessHelper.rotate2Move = {[eGridToward.up] = Vector2.up, [eGridToward.right] = Vector2.right, [eGridToward.down] = -Vector2.up, [eGridToward.left] = -Vector2.right}
 WarChessHelper.rotateMatrix = {
@@ -541,6 +542,28 @@ WarChessHelper.WCJumpChessType2HeadIconId = function(numericValue)
   local WarChessJumpCtrl = require("Game.WarChess.Ctrl.SubSystemCtrl.WarChessJumpCtrl")
   local jumpTable = (WarChessJumpCtrl.jumpDiffTable)[(WarChessJumpCtrl.eJumpType).chess]
   return (jumpTable.headIconIds)[numericValue]
+end
+
+WarChessHelper.GetRandomRotate = function(min, max)
+  -- function num : 0_21 , upvalues : _ENV
+  if min == nil or max == nil then
+    return nil
+  end
+  local angle = (math.random)(min, max)
+  return (Quaternion.Euler)(0, angle + 180, 0)
+end
+
+WarChessHelper.CalWCRoomBattlePower = function(monsters, teamData)
+  -- function num : 0_22 , upvalues : WarChessBattleRoom, _ENV
+  local fakeBattleRoom = (WarChessBattleRoom.New)()
+  fakeBattleRoom.battleMap = ((CS.BattleUtility).GenBattleMap)(7, 5, 3, 5, 100)
+  fakeBattleRoom:__InitMonsterOrNeutralData(monsters)
+  local fightingPower = 0
+  for k,dynMonster in pairs(fakeBattleRoom.monsterList) do
+    fightingPower = fightingPower + dynMonster:GetFightingPower()
+  end
+  print("战斗力为:" .. tostring(fightingPower))
+  return fightingPower
 end
 
 return WarChessHelper

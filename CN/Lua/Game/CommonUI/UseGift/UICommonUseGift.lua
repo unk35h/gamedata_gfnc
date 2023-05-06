@@ -155,7 +155,7 @@ UICommonUseGift.OnClickUse = function(self)
       do
         warehouseNetwork:CS_BACKPACK_UseItem((self.itemCfg).id, self.itemCountUse, self.__OnUseGiftSuccess)
         ;
-        (UIUtil.OnClickBack)()
+        (UIUtil.OnClickBackByUiTab)(self)
       end
     end
   end
@@ -171,7 +171,7 @@ end
 
 UICommonUseGift.OnClickCancle = function(self)
   -- function num : 0_7 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UICommonUseGift.OnClickAdd = function(self)

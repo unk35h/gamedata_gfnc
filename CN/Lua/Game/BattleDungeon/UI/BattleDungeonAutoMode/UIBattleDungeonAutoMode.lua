@@ -92,12 +92,12 @@ end
 
 UIBattleDungeonAutoMode.OnClickClose = function(self)
   -- function num : 0_6 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIBattleDungeonAutoMode.OnBattleStart = function(self, count)
   -- function num : 0_7 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
   if self.startcallback ~= nil then
     (self.startcallback)(count)
   end

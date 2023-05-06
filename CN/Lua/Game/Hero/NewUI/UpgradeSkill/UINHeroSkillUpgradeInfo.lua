@@ -260,7 +260,7 @@ UINHeroSkillUpgradeInfo.__OnJump2StarUp = function(self)
       return 
     end
     ;
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
     window = UIManager:GetWindow(UIWindowTypeID.HeroState)
     if window == nil or not window.active then
       return 

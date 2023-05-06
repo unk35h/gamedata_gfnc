@@ -80,7 +80,7 @@ end
 
 UISpring23Unlock.OnClickJump = function(self)
   -- function num : 0_4 , upvalues : _ENV, eActInteract23Spring
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
   local ctrl = ControllerManager:GetController(ControllerTypeId.ActivityLobbyCtrl)
   if ctrl ~= nil then
     (ctrl.actLbIntrctCtrl):InvokeActLbEntity((eActInteract23Spring.eLbIntrctEntityId).EnvSelect)
@@ -93,7 +93,7 @@ UISpring23Unlock.OnClickBG = function(self)
     self:ShowNext()
   else
     ;
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 end
 

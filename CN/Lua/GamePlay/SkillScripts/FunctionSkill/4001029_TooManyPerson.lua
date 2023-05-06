@@ -29,7 +29,7 @@ bs_4001029.ReCallBuff = function(self)
     return 
   end
   for i = 0, targetList.Count - 1 do
-    LuaSkillCtrl:CallBuff(self, targetList[i], (self.config).buffId, buffTier)
+    LuaSkillCtrl:CallBuff(self, targetList[i], (self.config).buffId, buffTier, nil, true)
   end
 end
 

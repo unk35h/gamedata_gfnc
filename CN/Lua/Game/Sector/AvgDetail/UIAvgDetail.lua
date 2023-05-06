@@ -189,7 +189,7 @@ end
 
 UIAvgDetail.OnClickPlay = function(self)
   -- function num : 0_6 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
   local avgCtrl = ControllerManager:GetController(ControllerTypeId.Avg, true)
   avgCtrl:StartAvg((self._avgCfg).script_id, (self._avgCfg).id, function()
     -- function num : 0_6_0 , upvalues : _ENV
@@ -202,7 +202,7 @@ end
 
 UIAvgDetail.OnClockCloseBg = function(self)
   -- function num : 0_7 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIAvgDetail.__ShowRewardDetail = function(self, itemCfg)

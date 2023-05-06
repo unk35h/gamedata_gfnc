@@ -1,7 +1,7 @@
 -- params : ...
 -- function num : 0 , upvalues : _ENV
 local NetworkDiffDeliver = {}
-local diffOrderList = {proto_csmsg_SyncUpdateDiffEnum.DIFF_FUNCTION, proto_csmsg_SyncUpdateDiffEnum.DIFF_USERBASE, proto_csmsg_SyncUpdateDiffEnum.DIFF_BATTLEPASS, proto_csmsg_SyncUpdateDiffEnum.DIFF_BUILDING, proto_csmsg_SyncUpdateDiffEnum.DIFF_INTIMACY, proto_csmsg_SyncUpdateDiffEnum.DIFF_FACTORY, proto_csmsg_SyncUpdateDiffEnum.DIFF_SECTOR, proto_csmsg_SyncUpdateDiffEnum.DIFF_ALG, proto_csmsg_SyncUpdateDiffEnum.DIFF_EXPLORATION, proto_csmsg_SyncUpdateDiffEnum.DIFF_HERO, proto_csmsg_SyncUpdateDiffEnum.DIFF_ATH, proto_csmsg_SyncUpdateDiffEnum.DIFF_RESOURCE, proto_csmsg_SyncUpdateDiffEnum.DIFF_EFFECTORRG, proto_csmsg_SyncUpdateDiffEnum.DIFF_QUEST, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACHIEVEMENT, proto_csmsg_SyncUpdateDiffEnum.DIFF_LOTTERY, proto_csmsg_SyncUpdateDiffEnum.DIFF_COUNTER, proto_csmsg_SyncUpdateDiffEnum.DIFF_MAIL, proto_csmsg_SyncUpdateDiffEnum.DIFF_MONTHCARD, proto_csmsg_SyncUpdateDiffEnum.DIFF_ENDLESS, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY, proto_csmsg_SyncUpdateDiffEnum.DIFF_FRIEND, proto_csmsg_SyncUpdateDiffEnum.DIFF_DUNGEON_DYNC, proto_csmsg_SyncUpdateDiffEnum.DIFF_TIMING_PRODUCT, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_SECTOR_I, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_SECTOR_Hero, proto_csmsg_SyncUpdateDiffEnum.DIFF_DUNGEON_TOWER, proto_csmsg_SyncUpdateDiffEnum.DIFF_HERO_TALENT, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_SECTOR_II, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_VALENTINE, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_ROUND, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_REFRESHDUNGEON, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_QUEST, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_CARNIVAL, proto_csmsg_SyncUpdateDiffEnum.DIFF_EFFECT, proto_csmsg_SyncUpdateDiffEnum.DIFF_TINYGAME, proto_csmsg_SyncUpdateDiffEnum.DIFF_RECHARGE, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_SUMMER2022, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_HALLOWEEN, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_WINTER2023, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_INVITATION}
+local diffOrderList = {proto_csmsg_SyncUpdateDiffEnum.DIFF_FUNCTION, proto_csmsg_SyncUpdateDiffEnum.DIFF_USERBASE, proto_csmsg_SyncUpdateDiffEnum.DIFF_BATTLEPASS, proto_csmsg_SyncUpdateDiffEnum.DIFF_BUILDING, proto_csmsg_SyncUpdateDiffEnum.DIFF_INTIMACY, proto_csmsg_SyncUpdateDiffEnum.DIFF_FACTORY, proto_csmsg_SyncUpdateDiffEnum.DIFF_SECTOR, proto_csmsg_SyncUpdateDiffEnum.DIFF_ALG, proto_csmsg_SyncUpdateDiffEnum.DIFF_EXPLORATION, proto_csmsg_SyncUpdateDiffEnum.DIFF_HERO, proto_csmsg_SyncUpdateDiffEnum.DIFF_ATH, proto_csmsg_SyncUpdateDiffEnum.DIFF_RESOURCE, proto_csmsg_SyncUpdateDiffEnum.DIFF_EFFECTORRG, proto_csmsg_SyncUpdateDiffEnum.DIFF_QUEST, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACHIEVEMENT, proto_csmsg_SyncUpdateDiffEnum.DIFF_LOTTERY, proto_csmsg_SyncUpdateDiffEnum.DIFF_COUNTER, proto_csmsg_SyncUpdateDiffEnum.DIFF_MAIL, proto_csmsg_SyncUpdateDiffEnum.DIFF_MONTHCARD, proto_csmsg_SyncUpdateDiffEnum.DIFF_ENDLESS, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY, proto_csmsg_SyncUpdateDiffEnum.DIFF_FRIEND, proto_csmsg_SyncUpdateDiffEnum.DIFF_DUNGEON_DYNC, proto_csmsg_SyncUpdateDiffEnum.DIFF_TIMING_PRODUCT, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_SECTOR_I, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_SECTOR_Hero, proto_csmsg_SyncUpdateDiffEnum.DIFF_DUNGEON_TOWER, proto_csmsg_SyncUpdateDiffEnum.DIFF_HERO_TALENT, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_SECTOR_II, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_VALENTINE, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_ROUND, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_REFRESHDUNGEON, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_QUEST, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_CARNIVAL, proto_csmsg_SyncUpdateDiffEnum.DIFF_EFFECT, proto_csmsg_SyncUpdateDiffEnum.DIFF_TINYGAME, proto_csmsg_SyncUpdateDiffEnum.DIFF_RECHARGE, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_SUMMER2022, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_HALLOWEEN, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_WINTER2023, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_INVITATION, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_KEYEXERTION, proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_SEASON}
 local diffFuncTable = {[proto_csmsg_SyncUpdateDiffEnum.DIFF_ACHIEVEMENT] = function(syncUpdateDiff)
   -- function num : 0_0 , upvalues : _ENV
   local diffMsg = syncUpdateDiff.achievement
@@ -382,9 +382,31 @@ end
     end
   end
 end
+, [proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_KEYEXERTION] = function(syncUpdateDiff)
+  -- function num : 0_41 , upvalues : _ENV
+  if syncUpdateDiff.activityKeyExertion ~= nil then
+    local keyExertionCtrl = ControllerManager:GetController(ControllerTypeId.ActivityKeyExertion)
+    if keyExertionCtrl ~= nil then
+      keyExertionCtrl:UpdateAllKeyExertionData((syncUpdateDiff.activityKeyExertion).data)
+      return true
+    end
+  end
+end
+, [proto_csmsg_SyncUpdateDiffEnum.DIFF_ACTIVITY_SEASON] = function(syncUpdateDiff)
+  -- function num : 0_42 , upvalues : _ENV
+  if syncUpdateDiff.activitySeason ~= nil then
+    local activitySeasonCtrl = ControllerManager:GetController(ControllerTypeId.ActivitySeason)
+    if activitySeasonCtrl ~= nil then
+      for _,data in pairs(syncUpdateDiff.activitySeason) do
+        activitySeasonCtrl:UpdateSeasons(data)
+      end
+      return true
+    end
+  end
+end
 }
 NetworkDiffDeliver.HandleDiff = function(self, syncUpdateDiff)
-  -- function num : 0_41 , upvalues : _ENV, diffOrderList
+  -- function num : 0_43 , upvalues : _ENV, diffOrderList
   if syncUpdateDiff == nil then
     return 
   end
@@ -398,7 +420,7 @@ NetworkDiffDeliver.HandleDiff = function(self, syncUpdateDiff)
 end
 
 NetworkDiffDeliver.__HandleDiffEnum = function(self, syncUpdateDiff, syncUpdateDiffEnum)
-  -- function num : 0_42 , upvalues : diffFuncTable, _ENV
+  -- function num : 0_44 , upvalues : diffFuncTable, _ENV
   local func = diffFuncTable[syncUpdateDiffEnum]
   if func ~= nil then
     local isSuccessUpdate = func(syncUpdateDiff)

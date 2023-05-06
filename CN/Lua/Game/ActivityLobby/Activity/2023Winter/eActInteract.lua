@@ -119,11 +119,11 @@ end
 
 eActInteract.eLbIntrctActionId = {Main = 1, Shop = 2, Tech = 3, Repeat = 4, MiniGame = 6, WarChessSeason = 7, ChessGreenHand = 8}
 eActInteract.eLbIntrctEntityId = {Main = 1, Shop = 2, Tech = 3, Repeat = 4, MiniGame = 6, WarChessSeason = 7, ChessGreenHand = 8, sol = 9, deadSol = 13}
-eActInteract.eIntrctFuncs = {[(eActInteract.eLbIntrctEntityId).Main] = function(entity)
+eActInteract.eIntrctFuncs = {[(eActInteract.eLbIntrctActionId).Main] = function(entity)
   -- function num : 0_4 , upvalues : EnterMapEp
   EnterMapEp(false)
 end
-, [(eActInteract.eLbIntrctEntityId).Shop] = function(entity)
+, [(eActInteract.eLbIntrctActionId).Shop] = function(entity)
   -- function num : 0_5 , upvalues : eActInteract, _ENV, ActLbUtil
   local intrctData = entity:GetLbIntrctEntData()
   local unlock = intrctData:IsLbIntrctUnlock()
@@ -157,7 +157,7 @@ end
   end
 )
 end
-, [(eActInteract.eLbIntrctEntityId).Tech] = function(entity)
+, [(eActInteract.eLbIntrctActionId).Tech] = function(entity)
   -- function num : 0_6 , upvalues : eActInteract, _ENV, ActLbUtil
   local intrctData = entity:GetLbIntrctEntData()
   local unlock = intrctData:IsLbIntrctUnlock()
@@ -181,14 +181,14 @@ end
   end
 )
 end
-, [(eActInteract.eLbIntrctEntityId).Repeat] = function()
+, [(eActInteract.eLbIntrctActionId).Repeat] = function()
   -- function num : 0_7 , upvalues : EnterMapEp
   EnterMapEp(true)
 end
 , [5] = function()
   -- function num : 0_8
 end
-, [(eActInteract.eLbIntrctEntityId).MiniGame] = function()
+, [(eActInteract.eLbIntrctActionId).MiniGame] = function()
   -- function num : 0_9 , upvalues : _ENV, ActLbUtil
   local win23Ctrl = (ControllerManager:GetController(ControllerTypeId.ActivityWinter23))
   local winter23Data = nil
@@ -221,7 +221,7 @@ end
   smashingPenguinsController:SetSmashingPenguinsActEndTime(endtime)
   smashingPenguinsController:ShowSmashingPenguinUIMain(activityFwId, miniGameConfigId, joinRewards, maxScore, realReturnFunc)
 end
-, [(eActInteract.eLbIntrctEntityId).WarChessSeason] = function()
+, [(eActInteract.eLbIntrctActionId).WarChessSeason] = function()
   -- function num : 0_10 , upvalues : _ENV, ActLbUtil
   local win23Ctrl = ControllerManager:GetController(ControllerTypeId.ActivityWinter23)
   if win23Ctrl then
@@ -253,7 +253,7 @@ end
     end
   end
 end
-, [(eActInteract.eLbIntrctEntityId).ChessGreenHand] = function()
+, [(eActInteract.eLbIntrctActionId).ChessGreenHand] = function()
   -- function num : 0_11 , upvalues : _ENV, SectorStageDetailHelper, ActLbUtil
   local win23Ctrl = ControllerManager:GetController(ControllerTypeId.ActivityWinter23)
   if win23Ctrl then

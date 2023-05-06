@@ -20,6 +20,8 @@ UINMailContent.OnInit = function(self)
   (UIUtil.AddButtonListener)((self.ui).btn_Get, self, self.m_GetReward)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Delete, self, self.m_DeleteOneMail)
+  ;
+  (UIUtil.AddButtonListener)((self.ui).btn_Collect, self, self.OnClickTreasure)
   self.timerId = TimerManager:StartTimer(1, self.m_OutOfDataTime, self, false, false, true)
 end
 
@@ -42,11 +44,36 @@ UINMailContent.UpdateContent = function(self, mailData)
 end
 
 UINMailContent.m_RefreshStaticUI = function(self, mailData)
-  -- function num : 0_2
-  -- DECOMPILER ERROR at PC4: Confused about usage of register: R2 in 'UnsetPending'
+  -- function num : 0_2 , upvalues : _ENV
+  local isHaveAtt, attDic, isPicked = mailData:IsHaveAtt()
+  local isTreasure = mailData:GetIsTreasure()
+  if isTreasure then
+    ((self.ui).tex_Collect):SetIndex(1)
+    ;
+    ((self.ui).img_Collect):SetIndex(1)
+    if isHaveAtt then
+      ((self.ui).expiryDate):SetIndex(1)
+    else
+      ;
+      ((self.ui).expiryDate):SetIndex(0)
+    end
+  else
+    ;
+    ((self.ui).tex_Collect):SetIndex(0)
+    ;
+    ((self.ui).img_Collect):SetIndex(0)
+    ;
+    ((self.ui).expiryDate):SetIndex(0)
+  end
+  local mailWindow = UIManager:GetWindow(UIWindowTypeID.Mail)
+  if mailWindow ~= nil then
+    mailWindow:RefreshSenderPic(mailData)
+  end
+  -- DECOMPILER ERROR at PC59: Confused about usage of register: R7 in 'UnsetPending'
 
+  ;
   ((self.ui).tex_Tile).text = mailData:GetTitle()
-  -- DECOMPILER ERROR at PC9: Confused about usage of register: R2 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC64: Confused about usage of register: R7 in 'UnsetPending'
 
   ;
   ((self.ui).tex_Frome).text = mailData:GetSender()
@@ -58,7 +85,7 @@ UINMailContent.m_RefreshStaticUI = function(self, mailData)
     return 
   end
   self.__lastText = text
-  -- DECOMPILER ERROR at PC33: Confused about usage of register: R5 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC88: Confused about usage of register: R10 in 'UnsetPending'
 
   ;
   ((self.ui).tex_Content).text = text
@@ -66,6 +93,16 @@ end
 
 UINMailContent.m_RefreshReward = function(self, mailData)
   -- function num : 0_3 , upvalues : _ENV
+  if mailData.expiredTm < PlayerDataCenter.timestamp then
+    ((self.ui).reward):SetActive(false)
+    ;
+    (((self.ui).expiryDate).gameObject):SetActive(false)
+    ;
+    (((self.ui).btn_Delete).gameObject):SetActive(true)
+    return 
+  end
+  ;
+  (((self.ui).expiryDate).gameObject):SetActive(true)
   local isHaveAtt, attDic, isPicked = mailData:IsHaveAtt()
   ;
   ((self.ui).reward):SetActive(isHaveAtt)
@@ -141,8 +178,19 @@ UINMailContent.m_OutOfDataTime = function(self)
   end
 end
 
+UINMailContent.OnClickTreasure = function(self)
+  -- function num : 0_6
+  local isTreasure = (self.mailData):GetIsTreasure()
+  if isTreasure then
+    (self.ctrl):ReqCancelTreasuredMail((self.mailData).uid)
+  else
+    ;
+    (self.ctrl):ReqTreasuredMail((self.mailData).uid)
+  end
+end
+
 UINMailContent.m_GetReward = function(self)
-  -- function num : 0_6 , upvalues : _ENV, cs_MessageCommon
+  -- function num : 0_7 , upvalues : _ENV, cs_MessageCommon
   local containAth = false
   for k,item in ipairs((self.poolMailItem).listItem) do
     local itemCfg = item.itemCfg
@@ -162,14 +210,14 @@ UINMailContent.m_GetReward = function(self)
 end
 
 UINMailContent.m_DeleteOneMail = function(self)
-  -- function num : 0_7 , upvalues : _ENV
+  -- function num : 0_8 , upvalues : _ENV
   AudioManager:PlayAudioById(1057)
   ;
   (self.ctrl):ReqDeleteOneMail((self.mailData).uid)
 end
 
 UINMailContent.OnClickHerf = function(self, herfStr)
-  -- function num : 0_8 , upvalues : _ENV, JumpManager
+  -- function num : 0_9 , upvalues : _ENV, JumpManager
   local arg = {}
   local index = (string.find)(herfStr, ":")
   arg[1] = (string.sub)(herfStr, 1, index - 1)
@@ -184,7 +232,7 @@ UINMailContent.OnClickHerf = function(self, herfStr)
       end
       if jumpTypeId > 0 then
         JumpManager:Jump(jumpTypeId, function(jumpCallback)
-    -- function num : 0_8_0 , upvalues : jumpTypeId, JumpManager, _ENV
+    -- function num : 0_9_0 , upvalues : jumpTypeId, JumpManager, _ENV
     if jumpTypeId == (JumpManager.eJumpTarget).Mail then
       return 
     end
@@ -222,7 +270,7 @@ UINMailContent.OnClickHerf = function(self, herfStr)
 end
 
 UINMailContent.GetWebURL = function(self, sourceURL)
-  -- function num : 0_9 , upvalues : _ENV, cs_UnityWebRequest
+  -- function num : 0_10 , upvalues : _ENV, cs_UnityWebRequest
   if (string.match)(sourceURL, "h5game=true") ~= nil then
     local url = sourceURL
     local UID = PlayerDataCenter.strPlayerId
@@ -253,13 +301,13 @@ UINMailContent.GetWebURL = function(self, sourceURL)
 end
 
 UINMailContent.__DealContent = function(self, content)
-  -- function num : 0_10
+  -- function num : 0_11
   content = self:__DealPlayerName(content)
   return content
 end
 
 UINMailContent.__DealPlayerName = function(self, content)
-  -- function num : 0_11 , upvalues : _ENV
+  -- function num : 0_12 , upvalues : _ENV
   local p = "<cmdr>"
   local playName = PlayerDataCenter:GetSelfName()
   content = (string.gsub)(content, p, playName)
@@ -267,7 +315,7 @@ UINMailContent.__DealPlayerName = function(self, content)
 end
 
 UINMailContent.OnDelete = function(self)
-  -- function num : 0_12 , upvalues : _ENV, base
+  -- function num : 0_13 , upvalues : _ENV, base
   if self.timerId ~= nil then
     TimerManager:StopTimer(self.timerId)
     self.timerId = nil

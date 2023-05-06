@@ -342,6 +342,8 @@ local portrait = {
 [426502] = {icon = "ICON_Item_426502", id = 426502, name = 518798}
 , 
 [426602] = {icon = "ICON_Item_426602", id = 426602, name = 56596}
+, 
+[426702] = {icon = "ICON_Item_426702", id = 426702, name = 417148}
 }
 local __default_values = {describe = 5, describe_name = 207877, dyn_head = "", get_id = 0, icon = "ICON_Item_2001", id = 420001, is_hide = false, name = "42Lab", type = 6, type_name = 42619}
 local base = {__index = __default_values, __newindex = function()
@@ -353,7 +355,7 @@ for k,v in (_ENV.pairs)(portrait) do
   (_ENV.setmetatable)(v, base)
 end
 local __rawdata = {__basemetatable = base, 
-typeCount = {3, 5, 5, 0, 0, 66, 11, 1; [0] = 1}
+typeCount = {3, 5, 5, 0, 0, 67, 11, 1; [0] = 1}
 , 
 types = {523201, 53553, 413210, 442396, 469118, 42619, 384123, 173136; [0] = 178435}
 }

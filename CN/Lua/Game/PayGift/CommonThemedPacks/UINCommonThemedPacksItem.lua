@@ -17,11 +17,12 @@ UINCommonThemedPacksItem.OnInit = function(self)
   self._resloader = ((CS.ResLoader).Create)()
 end
 
-UINCommonThemedPacksItem.InitCommonThemedPacksItem = function(self, payGiftInfo, soldOutCallback)
+UINCommonThemedPacksItem.InitCommonThemedPacksItem = function(self, payGiftInfo, soldOutCallback, showQuickBox)
   -- function num : 0_1 , upvalues : _ENV, CS_ClientConsts, ShopEnum
   self._payGiftInfo = payGiftInfo
   self._soldOutCallback = soldOutCallback
-  -- DECOMPILER ERROR at PC9: Confused about usage of register: R3 in 'UnsetPending'
+  self._showQuickBox = showQuickBox
+  -- DECOMPILER ERROR at PC10: Confused about usage of register: R4 in 'UnsetPending'
 
   ;
   ((self.ui).tex_GiftName).text = (LanguageUtil.GetLocaleText)((payGiftInfo.groupCfg).name)
@@ -79,13 +80,20 @@ UINCommonThemedPacksItem.InitCommonThemedPacksItem = function(self, payGiftInfo,
       item:InitItemWithCount(itemCfg, itemCount)
       item:SetNotNeedAnyJump(true)
     end
-    if self._timerId == nil then
-      self._timerId = TimerManager:StartTimer(1, self.__CountDown, self, false)
+    local isPeriodcity = (self._payGiftInfo):IsPeriodicityPayGift()
+    if (self._payGiftInfo):IsPeriodicityPayGift() then
+      self._endTime = (self._payGiftInfo):GetPayGiftNextTime()
+    else
+      local flag, startTime, endTime = (self._payGiftInfo):IsUnlockTimeCondition()
+      self._endTime = endTime
     end
-    local flag, startTime, endTime = (self._payGiftInfo):IsUnlockTimeCondition()
-    self._endTime = endTime
-    self:__CountDown()
-    self:RefreshCommonThemedPacksItem()
+    do
+      if self._timerId == nil then
+        self._timerId = TimerManager:StartTimer(1, self.__CountDown, self, false)
+      end
+      self:__CountDown()
+      self:RefreshCommonThemedPacksItem()
+    end
   end
 end
 
@@ -99,12 +107,9 @@ UINCommonThemedPacksItem.RefreshCommonThemedPacksItem = function(self)
   else
     ;
     ((self.ui).limit):SetActive(true)
-    if buyCount == 0 then
-      ((self.ui).tex_limit):SetIndex(0, tostring(limitCount))
-    else
-      ;
-      ((self.ui).tex_limit):SetIndex(1, tostring(limitCount - buyCount))
-    end
+    local isPeriodcity = (self._payGiftInfo):IsPeriodicityPayGift()
+    ;
+    ((self.ui).tex_limit):SetIndex(isPeriodcity and 1 or 0, tostring(limitCount - buyCount))
     ;
     ((self.ui).img_SoldOut):SetActive(limitCount == buyCount)
   end
@@ -113,12 +118,18 @@ end
 
 UINCommonThemedPacksItem.__CountDown = function(self)
   -- function num : 0_3 , upvalues : _ENV, ActivityFrameUtil
+  -- DECOMPILER ERROR at PC5: Confused about usage of register: R1 in 'UnsetPending'
+
+  if self._endTime == nil then
+    ((self.ui).tex_Time).text = nil
+    return 
+  end
   local time = self._endTime - PlayerDataCenter.timestamp
   if time < 0 then
     return 
   end
   local timeStr = (ActivityFrameUtil.GetCountdownTimeStr)(self._endTime)
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R3 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC19: Confused about usage of register: R3 in 'UnsetPending'
 
   ;
   ((self.ui).tex_Time).text = timeStr
@@ -130,26 +141,32 @@ UINCommonThemedPacksItem.OnClickBuy = function(self)
   if isLimit and buyCount == limitCount then
     return 
   end
-  UIManager:ShowWindowAsync(UIWindowTypeID.QuickBuy, function(window)
-    -- function num : 0_4_0 , upvalues : self, _ENV
+  local buyEndFunc = function()
+    -- function num : 0_4_0 , upvalues : _ENV, self
+    if IsNull(self.transform) then
+      return 
+    end
+    if (self._payGiftInfo):IsSoldOut() and self._soldOutCallback ~= nil then
+      (self._soldOutCallback)()
+      return 
+    end
+    self:RefreshCommonThemedPacksItem()
+  end
+
+  if self._showQuickBox then
+    UIManager:ShowWindowAsync(UIWindowTypeID.QuickBuy, function(window)
+    -- function num : 0_4_1 , upvalues : self, buyEndFunc
     if window == nil then
       return 
     end
     window:SlideIn()
-    window:InitGiftItemList(self._payGiftInfo, function()
-      -- function num : 0_4_0_0 , upvalues : _ENV, self
-      if IsNull(self.transform) then
-        return 
-      end
-      if (self._payGiftInfo):IsSoldOut() and self._soldOutCallback ~= nil then
-        (self._soldOutCallback)()
-        return 
-      end
-      self:RefreshCommonThemedPacksItem()
-    end
-)
+    window:InitGiftItemList(self._payGiftInfo, buyEndFunc)
   end
 )
+    return 
+  end
+  local payGiftCtrl = ControllerManager:GetController(ControllerTypeId.PayGift)
+  payGiftCtrl:SendBuyGifitInfo(self._payGiftInfo, nil, buyEndFunc)
 end
 
 UINCommonThemedPacksItem.OnDelete = function(self)

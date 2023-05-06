@@ -180,7 +180,7 @@ pre_para1 = {5}
 , 
 [1204] = {id = 1204, name = 480857, pre_para1 = __rt_18}
 , 
-[1205] = {id = 1205, name = 449711, pre_para1 = __rt_21, screening = true}
+[1205] = {id = 1205, name = 449711, pre_para1 = __rt_21}
 , 
 [1300] = {id = 1300, name = 413834, pre_para1 = __rt_4}
 , 

@@ -213,7 +213,7 @@ end
 
 UINLtrPtNode._OnClickClose = function(self)
   -- function num : 0_9 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UINLtrPtNode._InitSwithTween = function(self)

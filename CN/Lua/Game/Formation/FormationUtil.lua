@@ -85,8 +85,10 @@ FormationUtil.GetFmtIdByFixedTeamId = function(fixedTeamId)
   -- function num : 0_10 , upvalues : _ENV, FormationUtil
   local saveUserData = PersistentManager:GetDataModel((PersistentConfig.ePackage).UserData)
   local fixedTeamId2FmtIdDic, fixedTeamIdListSaved = saveUserData:GetFmtFixedSaved()
+  local fmtId = nil
   if (table.contain)(fixedTeamIdListSaved, fixedTeamId) then
-    local fmtId = fixedTeamId2FmtIdDic[fixedTeamId]
+    (table.insert)(fixedTeamIdListSaved, (table.remove)(fixedTeamIdListSaved, 1))
+    fmtId = fixedTeamId2FmtIdDic[fixedTeamId]
     local formationData = (PlayerDataCenter.formationDic)[fmtId]
     if formationData == nil then
       formationData = PlayerDataCenter:CreateFormation(fmtId)
@@ -104,26 +106,24 @@ FormationUtil.GetFmtIdByFixedTeamId = function(fixedTeamId)
       end
       do
         do
-          do
-            if assistTeamCfg.extra_add < (table.count)(formationData.data) or idxError then
-              formationData:CleanFormation()
-              ;
-              (NetworkManager:GetNetwork(NetworkTypeID.Hero)):SendFormationFresh(fmtId, formationData.data)
-            end
-            do return fmtId end
-            local fmtId = nil
-            if #FormationUtil.fixedFmtIdList <= #fixedTeamIdListSaved then
-              local removeFixedTeamId = (table.remove)(fixedTeamIdListSaved, 1)
-              fmtId = fixedTeamId2FmtIdDic[removeFixedTeamId]
-              fixedTeamId2FmtIdDic[removeFixedTeamId] = nil
-            else
+          if assistTeamCfg.extra_add < (table.count)(formationData.data) or idxError then
+            formationData:CleanFormation()
+            ;
+            (NetworkManager:GetNetwork(NetworkTypeID.Hero)):SendFormationFresh(fmtId, formationData.data)
+          end
+          if #FormationUtil.fixedFmtIdList <= #fixedTeamIdListSaved then
+            local removeFixedTeamId = (table.remove)(fixedTeamIdListSaved, 1)
+            fmtId = fixedTeamId2FmtIdDic[removeFixedTeamId]
+            fixedTeamId2FmtIdDic[removeFixedTeamId] = nil
+          else
+            do
               do
+                local newFmtIdIdx = #fixedTeamIdListSaved + 1
+                fmtId = (FormationUtil.fixedFmtIdList)[newFmtIdIdx]
+                ;
+                (table.insert)(fixedTeamIdListSaved, fixedTeamId)
+                fixedTeamId2FmtIdDic[fixedTeamId] = fmtId
                 do
-                  local newFmtIdIdx = #fixedTeamIdListSaved + 1
-                  fmtId = (FormationUtil.fixedFmtIdList)[newFmtIdIdx]
-                  ;
-                  (table.insert)(fixedTeamIdListSaved, fixedTeamId)
-                  fixedTeamId2FmtIdDic[fixedTeamId] = fmtId
                   local formationData = (PlayerDataCenter.formationDic)[fmtId]
                   if formationData == nil then
                     formationData = PlayerDataCenter:CreateFormation(fmtId)

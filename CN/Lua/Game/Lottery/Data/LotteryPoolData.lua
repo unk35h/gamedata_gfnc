@@ -299,5 +299,20 @@ LotteryPoolData.TryGetLtrIntoAvgNotPlayed = function(self)
   return nil
 end
 
+LotteryPoolData.GetBuyableGiftIdList = function(self)
+  -- function num : 0_35 , upvalues : _ENV
+  if #(self.ltrCfg).gift_id == 0 then
+    return false
+  end
+  local payGiftCtrl = ControllerManager:GetController(ControllerTypeId.PayGift, true)
+  for k,giftId in ipairs((self.ltrCfg).gift_id) do
+    local giftInfo = payGiftCtrl:GetPayGiftDataById(giftId)
+    if giftInfo and giftInfo:IsUnlock() and not giftInfo:IsSoldOut() then
+      return true, (self.ltrCfg).gift_id
+    end
+  end
+  return false
+end
+
 return LotteryPoolData
 

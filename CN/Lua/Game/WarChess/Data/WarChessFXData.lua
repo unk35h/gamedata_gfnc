@@ -48,13 +48,18 @@ WarChessFXData.GetWCFXIsNotOnce = function(self)
   return not self.__isOnce
 end
 
-WarChessFXData.GetWCFXIsNeedFillCount = function(self)
+WarChessFXData.GetWCFXIsBound = function(self)
   -- function num : 0_5
+  return self.__isBind
+end
+
+WarChessFXData.GetWCFXIsNeedFillCount = function(self)
+  -- function num : 0_6
   return (self.__fxCfg).need_count
 end
 
 WarChessFXData.GetWCFXCoutNum = function(self)
-  -- function num : 0_6
+  -- function num : 0_7
   if self.__isGrid then
     return (self.__gridData):GetFxCount()
   else

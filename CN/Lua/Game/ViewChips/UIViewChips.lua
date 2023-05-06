@@ -199,7 +199,7 @@ end
 
 UIViewChips.__OnClickClose = function(self)
   -- function num : 0_13 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIViewChips.OnShow = function(self)

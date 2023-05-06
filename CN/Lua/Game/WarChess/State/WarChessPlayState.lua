@@ -76,7 +76,7 @@ WarChessPlayState.OnEnterState = function(self)
     globalData:SetEnterPlayCount(enterPlayCount + 1)
     WarChessSeasonManager:OnWCEnterPlayState()
     UIManager:ShowWindowAsync(UIWindowTypeID.WarChessMain, function(win)
-      -- function num : 0_1_1_0 , upvalues : self, eWarChessEnum, teamData, enterPlayCount, _ENV
+      -- function num : 0_1_1_0 , upvalues : self, eWarChessEnum, teamData, _ENV, enterPlayCount
       if (self.wcCtrl):GetWCSurSubSystemCat() == (eWarChessEnum.eSystemCat).battle then
         -- DECOMPILER ERROR at PC16: Unhandled construct in 'MakeBoolean' P1
 
@@ -88,7 +88,10 @@ WarChessPlayState.OnEnterState = function(self)
       if win ~= nil then
         win:InitWarChessPlay(self, teamData)
       end
-      -- DECOMPILER ERROR at PC34: Confused about usage of register: R1 in 'UnsetPending'
+      if (self.wcCtrl):IsWCReconnected() then
+        WarChessSeasonManager:TryWcSsBuffSelect()
+      end
+      -- DECOMPILER ERROR at PC42: Confused about usage of register: R1 in 'UnsetPending'
 
       if enterPlayCount == 0 and not (self.wcCtrl):IsWCReconnected() then
         ((self.wcCtrl).teamCtrl).startPlayAnimaPlaying = true
@@ -587,7 +590,7 @@ WarChessPlayState.__PopEntityInteract = function(self, entityData, teamData)
     if self.__CurSelectedTeamIndex == nil then
       ((self.wcCtrl).mapCtrl):TryShowWCMonsterCouldMoveRange(true, entityData)
     end
-    if self.__isPopedData ~= nil and self.__isPopedData == entityData then
+    if (self.__isPopedData ~= nil and self.__isPopedData == entityData) or (CommonUtil.GetIsWarChessQuickInteract)() and not GuideManager.inGuide then
       (win_wcInfo.OPNode):WCOpDoubleClick()
       self.__isPopedData = nil
     else
@@ -642,7 +645,7 @@ WarChessPlayState.__PopGridInteract = function(self, gridData, teamData)
   end
 )
   if isOK then
-    if self.__isPopedData ~= nil and self.__isPopedData == gridData then
+    if (self.__isPopedData ~= nil and self.__isPopedData == gridData) or (CommonUtil.GetIsWarChessQuickInteract)() and not GuideManager.inGuide then
       (win_wcInfo.OPNode):WCOpDoubleClick()
       self.__isPopedData = nil
     else

@@ -332,7 +332,7 @@ end
 
 UILotteryResult._OnClickClose = function(self)
   -- function num : 0_14 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UILotteryResult.OnDelete = function(self)

@@ -122,6 +122,14 @@ jump_arg = {17002}
 [33] = {activityId = 10015, id = 33, image_entrance = "UI_CharDunLoginInErikaEntrance", 
 jump_arg = {10015}
 , popup_id = 35, red_dot = 2}
+, 
+[34] = {activityId = 31001, id = 34, image_entrance = "UI_Season23AprilEntrance", 
+jump_arg = {31001}
+, popup_id = 37}
+, 
+[35] = {activityId = 10016, id = 35, image_entrance = "UI_CharDunLoginInCascadiaEntrance", 
+jump_arg = {10016}
+, popup_id = 36, red_dot = 2}
 }
 local __default_values = {activityId = 10001, id = 1, image_entrance = "ActSummer2021/UI_ActSum21Entrance", 
 jump_arg = {10001}
@@ -135,7 +143,7 @@ for k,v in pairs(activity_entrance) do
   setmetatable(v, base)
 end
 local __rawdata = {__basemetatable = base, 
-activityIdDic = {[9001] = 1, [10001] = 2, [10002] = 3, [10003] = 5, [10004] = 10, [10005] = 8, [10006] = 12, [10007] = 15, [10008] = 17, [10009] = 6, [10010] = 22, [10011] = 23, [10012] = 27, [10013] = 26, [10014] = 30, [10015] = 33, [11001] = 4, [11002] = 28, [12001] = 7, [12002] = 20, [12003] = 31, [13001] = 9, [17001] = 14, [17002] = 32, [18001] = 13, [19001] = 16, [20001] = 19, [22001] = 11, [22002] = 24, [24001] = 25, [25001] = 29}
+activityIdDic = {[9001] = 1, [10001] = 2, [10002] = 3, [10003] = 5, [10004] = 10, [10005] = 8, [10006] = 12, [10007] = 15, [10008] = 17, [10009] = 6, [10010] = 22, [10011] = 23, [10012] = 27, [10013] = 26, [10014] = 30, [10015] = 33, [10016] = 35, [11001] = 4, [11002] = 28, [12001] = 7, [12002] = 20, [12003] = 31, [13001] = 9, [17001] = 14, [17002] = 32, [18001] = 13, [19001] = 16, [20001] = 19, [22001] = 11, [22002] = 24, [24001] = 25, [25001] = 29, [31001] = 34}
 }
 setmetatable(activity_entrance, {__index = __rawdata})
 return activity_entrance

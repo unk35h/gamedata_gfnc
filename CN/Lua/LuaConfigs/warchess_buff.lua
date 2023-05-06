@@ -141,6 +141,8 @@ local warchess_buff = {
 , 
 [10214] = {buff = 10214, cost_num = 999, description = 387786, icon = "ICON_xy_WCZE3", name = 209068}
 , 
+[20009] = {buff = 20009, buff_type = 11, cost_num = 999, description = 389545, icon = "ICON_g_atn_1", name = 133542}
+, 
 [40024] = {buff = 40024, cost_num = 999, description = 265589, icon = "ICON_xy_WCZE1"}
 , 
 [40025] = {buff = 40025, cost_num = 999, description = 320875, icon = "ICON_xy_WCZE1"}
@@ -385,6 +387,18 @@ local warchess_buff = {
 , 
 [4001037] = {buff = 4001037, buff_type = 12, cost_num = 3, description = 390016, icon = "ICON_xy_Warchess_23", is_show = true, name = 133402}
 , 
+[4001038] = {buff = 4001038, cost_num = 3, description = 186050, icon = "ICON_WCS1_4001038", is_show = true, name = 337254}
+, 
+[4001039] = {buff = 4001039, cost_num = 3, description = 242527, icon = "ICON_4T_9", is_show = true, name = 141809}
+, 
+[4001040] = {buff = 4001040, cost_num = 3, description = 240567, icon = "ICON_WCS1_4001040", is_show = true, name = 73056}
+, 
+[4001041] = {buff = 4001041, buff_type = 33, cost_num = 5, description = 438064, icon = "ICON_xy_Warchess_3", name = 422841}
+, 
+[4001042] = {buff = 4001042, buff_type = 18, cost_num = 5, description = 451065, icon = "ICON_xy_Warchess_3", name = 270443}
+, 
+[4001043] = {buff = 4001043, buff_type = 34, cost_num = 5, description = 70867, icon = "ICON_WCS1_4001043", is_show = true, name = 141633}
+, 
 [4001101] = {buff = 4001101, description = 270837, icon = "ICON_xy_7", is_show = true, name = 270754, show_type = 1}
 , 
 [4001102] = {buff = 4001102, color_type = 2, description = 132917, icon = "ICON_xy_8", is_show = true, name = 380502, show_type = 1}
@@ -448,6 +462,10 @@ local warchess_buff = {
 [4001131] = {buff = 4001131, buff_type = 25, description = 16828, icon = "ICON_xy_Warchess_14", name = 435789, show_type = 1}
 , 
 [4001132] = {buff = 4001132, buff_type = 7, color_type = 2, description = 154492, icon = "ICON_xy_8", is_show = true, name = 34339, show_type = 1}
+, 
+[4001133] = {buff = 4001133, color_type = 2, description = 445332, icon = "ICON_WCS1_4001133", is_show = true, name = 59201, show_type = 1}
+, 
+[4001134] = {buff = 4001134, description = 165964, icon = "ICON_WCS1_4001134", is_show = true, name = 317381, show_type = 1}
 , 
 [4001201] = {buff = 4001201, cost_num = 5, description = 3185, icon = "ICON_xy_3", is_show = true, name = 476326}
 , 
@@ -530,6 +548,10 @@ local warchess_buff = {
 [4001241] = {buff = 4001241, cost_num = 5, description = 515700, icon = "ICON_4T_1", name = 204888}
 , 
 [4001242] = {buff = 4001242, cost_num = 999, description = 66189, icon = "ICON_xy_Warchess_3", name = 302746}
+, 
+[4001243] = {buff = 4001243, cost_num = 5, description = 398635, icon = "ICON_WCS1_4001243", is_show = true, name = 47709}
+, 
+[4001244] = {buff = 4001244, cost_num = 5, description = 143199, icon = "ICON_WCS1_4001244", is_show = true, name = 480037}
 , 
 [4001301] = {buff = 4001301, buff_type = 26, color_type = 2, description = 218407, icon = "ICON_WSJ_XY10", is_show = true, name = 254597, show_type = 1}
 , 
@@ -699,6 +721,100 @@ local warchess_buff = {
 , 
 [4010442] = {buff = 4010442, buff_type = 4, cost_num = 2, description = 284822, icon = "ICON_xy_Warchess_7", is_show = true, name = 415247, show_type = 2}
 , 
+[4010443] = {buff = 4010443, color_type = 3, description = 405204, name = 380424}
+, 
+[4010444] = {buff = 4010444, color_type = 3, description = 62481, name = 81172}
+, 
+[4010445] = {buff = 4010445, color_type = 3, description = 151713, name = 28888}
+, 
+[4010446] = {buff = 4010446, color_type = 3, description = 332030, name = 263610}
+, 
+[4010447] = {buff = 4010447, color_type = 3, description = 201762, name = 381944}
+, 
+[4010448] = {buff = 4010448, color_type = 3, description = 456277, name = 416679}
+, 
+[4010449] = {buff = 4010449, color_type = 3, description = 388982, name = 265921}
+, 
+[4010450] = {buff = 4010450, color_type = 3, description = 162609, name = 170358}
+, 
+[4010451] = {buff = 4010451, color_type = 3, description = 147233, name = 201872}
+, 
+[4010452] = {buff = 4010452, color_type = 3, description = 32089, name = 220814}
+, 
+[4010453] = {buff = 4010453, color_type = 3, description = 96044, name = 91553}
+, 
+[4010454] = {buff = 4010454, buff_type = 28, color_type = 3, description = 410971, name = 317929}
+, 
+[4010455] = {buff = 4010455, buff_type = 28, color_type = 3, description = 312053, name = 317929}
+, 
+[4010456] = {buff = 4010456, buff_type = 28, color_type = 3, description = 213135, name = 317929}
+, 
+[4010457] = {buff = 4010457, color_type = 3, description = 343383, name = 28888}
+, 
+[4010458] = {buff = 4010458, color_type = 3, description = 92171, name = 28888}
+, 
+[4010459] = {buff = 4010459, color_type = 3, description = 165182, name = 28888}
+, 
+[4010460] = {buff = 4010460, color_type = 3, description = 438258, name = 28888}
+, 
+[4010461] = {buff = 4010461, color_type = 3, description = 160219, name = 28888}
+, 
+[4010462] = {buff = 4010462, color_type = 3, description = 158471, name = 263610}
+, 
+[4010463] = {buff = 4010463, color_type = 3, description = 25401, name = 263610}
+, 
+[4010464] = {buff = 4010464, color_type = 3, description = 104602, name = 263610}
+, 
+[4010465] = {buff = 4010465, color_type = 3, description = 156976, name = 263610}
+, 
+[4010466] = {buff = 4010466, color_type = 3, description = 236177, name = 263610}
+, 
+[4010467] = {buff = 4010467, color_type = 3, description = 451389, name = 265921}
+, 
+[4010468] = {buff = 4010468, color_type = 3, description = 231664, name = 265921}
+, 
+[4010469] = {buff = 4010469, color_type = 3, description = 306450, name = 265921}
+, 
+[4010470] = {buff = 4010470, color_type = 3, description = 326638, name = 170358}
+, 
+[4010471] = {buff = 4010471, color_type = 3, description = 94235, name = 170358}
+, 
+[4010472] = {buff = 4010472, color_type = 3, description = 386120, name = 170358}
+, 
+[4010473] = {buff = 4010473, color_type = 3, description = 153717, name = 170358}
+, 
+[4010474] = {buff = 4010474, color_type = 3, description = 445602, name = 170358}
+, 
+[4010475] = {buff = 4010475, color_type = 3, description = 75203, name = 413272}
+, 
+[4010476] = {buff = 4010476, color_type = 3, description = 454552, name = 413272}
+, 
+[4010477] = {buff = 4010477, color_type = 3, description = 309613, name = 413272}
+, 
+[4010478] = {buff = 4010478, color_type = 3, description = 164674, name = 413272}
+, 
+[4010479] = {buff = 4010479, color_type = 3, description = 19735, name = 413272}
+, 
+[4010480] = {buff = 4010480, color_type = 3, description = 259351, name = 128784}
+, 
+[4010481] = {buff = 4010481, color_type = 3, description = 114411, name = 128784}
+, 
+[4010482] = {buff = 4010482, color_type = 3, description = 493760, name = 128784}
+, 
+[4020001] = {buff = 4020001, description = 36371, icon = "ICON_WCS1_4020001", is_show = true, name = 11165}
+, 
+[4020002] = {buff = 4020002, description = 355819, icon = "ICON_WCS1_4020002", is_show = true, name = 475049}
+, 
+[4020003] = {buff = 4020003, description = 52566, icon = "ICON_WCS1_4020003", is_show = true, name = 302036}
+, 
+[4020004] = {buff = 4020004, buff_type = 7, description = 155699, icon = "ICON_xy_71", is_show = true, name = 213502, show_type = 1}
+, 
+[4020005] = {buff = 4020005, buff_type = 7, color_type = 2, description = 518213, icon = "ICON_xy_8", is_show = true, name = 236676, show_type = 1}
+, 
+[4020006] = {buff = 4020006, buff_type = 7, color_type = 2, description = 510417, icon = "ICON_xy_8", is_show = true, name = 165799, show_type = 1}
+, 
+[4020007] = {buff = 4020007, buff_type = 7, color_type = 2, description = 266357, icon = "ICON_xy_8", is_show = true, name = 110761, show_type = 1}
+, 
 [5000000] = {buff = 5000000, buff_type = 27, color_type = 3, description = 397010, name = 487378}
 , 
 [5000001] = {buff = 5000001, buff_type = 27, color_type = 3, description = 121177, name = 487378}
@@ -712,8 +828,12 @@ local warchess_buff = {
 [5010443] = {buff = 5010443, buff_type = 31, color_type = 3, description = 305133, name = 305133}
 , 
 [5010444] = {buff = 5010444, buff_type = 31, color_type = 3, description = 78255, name = 78255}
+, 
+[5020000] = {buff = 5020000, buff_type = 32, color_type = 3, description = 406779, name = 406779}
+, 
+[5020001] = {buff = 5020001, buff_type = 15, color_type = 3, description = 221823, name = 221823}
 }
-local __default_values = {buff = 10000, buff_type = 1, color_type = 1, cost_num = 1, description = 222852, icon = "ICON_xy_Warchess_1", is_show = false, name = 74322, show_type = 0}
+local __default_values = {buff = 10000, buff_type = 1, color_type = 1, cost_num = 1, description = 222853, icon = "ICON_xy_Warchess_1", is_show = false, name = 74322, show_type = 0}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")

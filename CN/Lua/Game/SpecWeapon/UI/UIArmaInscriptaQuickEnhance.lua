@@ -151,7 +151,7 @@ end
 UIArmaInscriptaQuickEnhance.OnClickConfirm = function(self)
   -- function num : 0_9 , upvalues : _ENV
   if (PlayerDataCenter.allSpecWeaponData):IsSpecWeaponCloseQuickEnhanceTip() then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
     if self._callback ~= nil then
       (self._callback)(self._addLevel)
     end
@@ -172,7 +172,7 @@ UIArmaInscriptaQuickEnhance.OnClickConfirm = function(self)
     local tip = ConfigData:GetTipContent(5082, (LanguageUtil.GetRomanNumber)((self._specWeapon):GetSpecWeaponCurStep()), tostring((self._specWeapon):GetSpecWeaponCurLevel() + self._addLevel))
     window:ShowItemCostAny(tip, costIds, costNums, function()
       -- function num : 0_9_0_0 , upvalues : _ENV, self
-      (UIUtil.OnClickBack)()
+      (UIUtil.OnClickBackByUiTab)(self)
       if self._callback ~= nil then
         (self._callback)(self._addLevel)
       end
@@ -189,7 +189,7 @@ end
 
 UIArmaInscriptaQuickEnhance.OnClickCancle = function(self)
   -- function num : 0_10 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIArmaInscriptaQuickEnhance.__ItemUpdate = function(self, itemDic)
@@ -204,7 +204,7 @@ end
 
 UIArmaInscriptaQuickEnhance.OnClickBgClose = function(self)
   -- function num : 0_12 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIArmaInscriptaQuickEnhance.OnCloseEnhance = function(self)

@@ -85,6 +85,8 @@ local battle_dungeon_dungeon = {
 , 
 [44] = {dungeon_type = 44, share_twice = 1}
 , 
+[45] = {dungeon_type = 45}
+, 
 [500] = {dungeon_type = 500}
 , 
 [501] = {dungeon_type = 501}

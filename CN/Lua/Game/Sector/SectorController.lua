@@ -1609,6 +1609,8 @@ SectorController.OnDelete = function(self)
   UIManager:DeleteWindow(UIWindowTypeID.Sector)
   UIManager:DeleteWindow(UIWindowTypeID.SectorLevel)
   ControllerManager:DeleteController(ControllerTypeId.BuildingQueue)
+  ;
+  (UIUtil.PopFromBackStackByUiTab)(self)
   PersistentManager:SaveModelData((PersistentConfig.ePackage).UserData)
 end
 

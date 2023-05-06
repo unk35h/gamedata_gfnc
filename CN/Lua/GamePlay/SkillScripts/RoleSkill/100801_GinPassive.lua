@@ -2,7 +2,7 @@
 -- function num : 0 , upvalues : _ENV
 local bs_100801 = class("bs_100801", LuaSkillBase)
 local base = LuaSkillBase
-bs_100801.config = {buffId_159 = 100802}
+bs_100801.config = {weaponLv = 0, buffId_159 = 100802, buffId_atkspeed = 100803}
 bs_100801.ctor = function(self)
   -- function num : 0_0
 end
@@ -23,6 +23,9 @@ bs_100801.InitSkill = function(self, isMidwaySkill)
   self:AddBuffDieTrigger("bs_100801_3", 1, self.OnBuffDie, self.caster, nil, nil, nil, eBuffFeatureType.Taunt)
   self:AddTrigger(eSkillTriggerType.AfterBattleStart, "bs_100801_4", 1, self.OnAfterBattleStart)
   self.RoleAttackRange = (self.caster).attackRange
+  if (self.config).weaponLv >= 1 then
+    self:AddSelfTrigger(eSkillTriggerType.AfterPlaySkill, "bs_100801_5", 1, self.OnAfterPlaySkill)
+  end
 end
 
 bs_100801.OnAfterBattleStart = function(self)
@@ -61,8 +64,15 @@ bs_100801.OnBuffDie = function(self, buff, target, removeType)
   ((self.caster).recordTable).BJ = true
 end
 
+bs_100801.OnAfterPlaySkill = function(self, skill, role)
+  -- function num : 0_6 , upvalues : _ENV
+  if role == self.caster and skill.isCommonAttack and (self.config).weaponLv >= 1 and LuaSkillCtrl:CallRange(1, 1000) <= (self.arglist)[3] then
+    LuaSkillCtrl:CallBuff(self, self.caster, (self.config).buffId_atkspeed, 1, (self.arglist)[4], true)
+  end
+end
+
 bs_100801.OnCasterDie = function(self)
-  -- function num : 0_6 , upvalues : base
+  -- function num : 0_7 , upvalues : base
   (base.OnCasterDie)(self)
 end
 

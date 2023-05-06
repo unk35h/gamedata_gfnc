@@ -29,17 +29,23 @@ MailData.InitMailData = function(self, mailData)
   self.att = mailData.att
   self.expiredTm = mailData.expiredTm
   self.status = mailData.status
+  self.isTreasure = mailData.favorite
   self:DealSpecailParam()
   self:UpdateCouldShow()
 end
 
-MailData.GetState = function(self)
+MailData.GetIsTreasure = function(self)
   -- function num : 0_3
+  return self.isTreasure
+end
+
+MailData.GetState = function(self)
+  -- function num : 0_4
   return self.status
 end
 
 MailData.IsHaveAtt = function(self)
-  -- function num : 0_4 , upvalues : _ENV, MailEnum
+  -- function num : 0_5 , upvalues : _ENV, MailEnum
   if self.att ~= nil and (self.att).data ~= nil then
     if (table.count)((self.att).data) == 0 then
       return false
@@ -52,13 +58,13 @@ MailData.IsHaveAtt = function(self)
 end
 
 MailData.GetIsPicked = function(self)
-  -- function num : 0_5 , upvalues : MailEnum
+  -- function num : 0_6 , upvalues : MailEnum
   do return self:GetState() == (MailEnum.eMailDetailType).Received end
   -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
 
 MailData.GetTitle = function(self)
-  -- function num : 0_6 , upvalues : _ENV
+  -- function num : 0_7 , upvalues : _ENV
   if self.info ~= nil and (self.info).title ~= nil then
     return (self.info).title
   else
@@ -68,12 +74,12 @@ MailData.GetTitle = function(self)
 end
 
 MailData.GetMailEntryCode = function(self)
-  -- function num : 0_7
+  -- function num : 0_8
   return (self.info).code
 end
 
 MailData.GetSender = function(self)
-  -- function num : 0_8 , upvalues : _ENV
+  -- function num : 0_9 , upvalues : _ENV
   if self.info ~= nil and (self.info).senderName ~= nil then
     return (self.info).senderName
   else
@@ -82,8 +88,16 @@ MailData.GetSender = function(self)
   end
 end
 
+MailData.GetSenderPic = function(self)
+  -- function num : 0_10 , upvalues : _ENV, MailEnum
+  if self.info ~= nil and (self.info).npcPicId ~= nil and (ConfigData.banner_mail_npic)[(self.info).npcPicId] ~= nil then
+    return ((ConfigData.banner_mail_npic)[(self.info).npcPicId]).file, (MailEnum.SenderPicType).lPic
+  end
+  return nil, nil
+end
+
 MailData.GetContent = function(self)
-  -- function num : 0_9 , upvalues : _ENV
+  -- function num : 0_11 , upvalues : _ENV
   if self.info ~= nil and (self.info).content ~= nil then
     return (self.info).content
   else
@@ -93,7 +107,7 @@ MailData.GetContent = function(self)
 end
 
 MailData.GetTime = function(self, needRaw)
-  -- function num : 0_10 , upvalues : _ENV
+  -- function num : 0_12 , upvalues : _ENV
   if self.info ~= nil and (self.info).created ~= nil then
     if needRaw then
       return (self.info).created
@@ -120,12 +134,12 @@ MailData.GetTime = function(self, needRaw)
 end
 
 MailData.GetTimeBeforeExpired = function(self)
-  -- function num : 0_11 , upvalues : _ENV
+  -- function num : 0_13 , upvalues : _ENV
   return (math.ceil)((math.max)(self.expiredTm - PlayerDataCenter.timestamp, 0))
 end
 
 MailData.IsSignInRewardMail = function(self)
-  -- function num : 0_12 , upvalues : _ENV, MailEnum
+  -- function num : 0_14 , upvalues : _ENV, MailEnum
   local mailCfg = (ConfigData.mail)[(self.info).code]
   if mailCfg == nil then
     return false
@@ -135,7 +149,7 @@ MailData.IsSignInRewardMail = function(self)
 end
 
 MailData.IsSignInMonthCardReward = function(self)
-  -- function num : 0_13 , upvalues : _ENV
+  -- function num : 0_15 , upvalues : _ENV
   local mailCfg = (ConfigData.mail)[(self.info).code]
   if mailCfg == nil then
     return false
@@ -145,30 +159,31 @@ MailData.IsSignInMonthCardReward = function(self)
 end
 
 MailData.UpdateCouldShow = function(self)
-  -- function num : 0_14
+  -- function num : 0_16
   if self:IsSignInRewardMail() then
     self._couldShow = false
   end
 end
 
 MailData.GetCouldShow = function(self)
-  -- function num : 0_15
+  -- function num : 0_17
   return self._couldShow
 end
 
 MailData.Update = function(self, mailData)
-  -- function num : 0_16
+  -- function num : 0_18
   self.uid = mailData.uid
   self.info = mailData.info
   self.att = mailData.att
   self.expiredTm = mailData.expiredTm
   self.status = mailData.status
+  self.isTreasure = mailData.favorite
   self:DealSpecailParam()
   self:UpdateCouldShow()
 end
 
 MailData.DealSpecailParam = function(self)
-  -- function num : 0_17 , upvalues : _ENV
+  -- function num : 0_19 , upvalues : _ENV
   do
     if (self.info).titleParams ~= nil and #(self.info).titleParams > 0 then
       local paramsList = self:__DealSpecailParam_Local((self.info).titleParams)
@@ -188,7 +203,7 @@ MailData.DealSpecailParam = function(self)
 end
 
 MailData.__DealSpecailParam_Local = function(self, params)
-  -- function num : 0_18 , upvalues : MailParamKey, _ENV
+  -- function num : 0_20 , upvalues : MailParamKey, _ENV
   local list = {}
   for i = 1, #params do
     local temp = params[i]
@@ -245,12 +260,12 @@ MailData.__DealSpecailParam_Local = function(self, params)
 end
 
 MailData.GetExtraParams = function(self)
-  -- function num : 0_19
+  -- function num : 0_21
   return (self.info).extraParams
 end
 
 MailData.Delete = function(self)
-  -- function num : 0_20
+  -- function num : 0_22
   self.isDeleted = true
 end
 

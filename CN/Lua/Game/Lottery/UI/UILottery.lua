@@ -47,6 +47,8 @@ UILottery.OnInit = function(self)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_AVGCharDun, self, self.OnClickCharDun)
   ;
+  (UIUtil.AddButtonListener)((self.ui).btn_QuickGift, self, self._OnClickQuickGift)
+  ;
   (UIUtil.AddButtonListener)((self.ui).btn_HeroInfo, self, self.__OnClickHeroInfo)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_ShowCharacter, self, self.__OnClickShowCharacter)
@@ -537,6 +539,7 @@ UILottery.RefreshCurLtrUI = function(self, changedPool)
         self:_TryUpdJpQZ()
         self:_RefreshLtrGroup()
         self:_RefreshNewRuleReddot()
+        self:_UpdQuickGiftBtn()
         if lastTempResLoader ~= nil then
           lastTempResLoader:Put2Pool()
           lastTempResLoader = nil
@@ -1177,8 +1180,36 @@ UILottery.OnClickCharDun = function(self)
   end
 end
 
+UILottery._UpdQuickGiftBtn = function(self)
+  -- function num : 0_55
+  local ok, giftIdList = (self.curPoolData):GetBuyableGiftIdList()
+  ;
+  (((self.ui).btn_QuickGift).gameObject):SetActive(ok)
+end
+
+UILottery._OnClickQuickGift = function(self)
+  -- function num : 0_56 , upvalues : _ENV
+  local ok, giftIdList = (self.curPoolData):GetBuyableGiftIdList()
+  if not ok then
+    self:_UpdQuickGiftBtn()
+    return 
+  end
+  UIManager:ShowWindowAsync(UIWindowTypeID.CommonThemedPacks, function(win)
+    -- function num : 0_56_0 , upvalues : giftIdList, self
+    if win == nil then
+      return 
+    end
+    win:InitLotteryQuickGift(giftIdList, function()
+      -- function num : 0_56_0_0 , upvalues : self
+      self:_UpdQuickGiftBtn()
+    end
+)
+  end
+)
+end
+
 UILottery.OnDelete = function(self)
-  -- function num : 0_55 , upvalues : _ENV, cs_MovieManager_ins, LotteryRtUtil, base
+  -- function num : 0_57 , upvalues : _ENV, cs_MovieManager_ins, LotteryRtUtil, base
   RedDotController:RemoveListener(RedDotDynPath.LotteryPrPoolPath, self.__UpdPoolReddotFunc)
   self:_RemoveBtnTenReddotListener()
   ;

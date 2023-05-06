@@ -27,7 +27,7 @@ UISetting.OnInit = function(self)
   self.ctrl = ControllerManager:GetController(ControllerTypeId.Setting, true)
   self.notifySettingNode = nil
   ;
-  (UIUtil.SetTopStatus)(self, self.Delete, nil, nil, nil, true)
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.Delete)):PushTopStatusDataToBackStack()
 end
 
 local InitStartup = {
@@ -278,7 +278,7 @@ end
 
 UISetting.CloseSettingClicked = function(self)
   -- function num : 0_15 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UISetting.UserLogout = function(self)

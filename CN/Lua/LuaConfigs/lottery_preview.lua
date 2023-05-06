@@ -66,6 +66,8 @@ local lottery_preview = {
 [1065] = {hero_up_id = 1065, previewPic = "Lottery/PreviewPicture/PrePic_1065"}
 , 
 [1066] = {hero_up_id = 1066, previewPic = "Lottery/PreviewPicture/PrePic_1066"}
+, 
+[1067] = {hero_up_id = 1067, previewPic = "Lottery/PreviewPicture/PrePic_1067"}
 }
 local __default_values = {hero_up_id = 1008, previewPic = "Lottery/PreviewPicture/PrePic_1008"}
 local base = {__index = __default_values, __newindex = function()

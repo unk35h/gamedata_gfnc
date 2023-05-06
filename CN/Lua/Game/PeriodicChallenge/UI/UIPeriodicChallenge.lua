@@ -181,7 +181,7 @@ UIPeriodicChallenge.RefreshUncompletedEp = function(self)
         end
         local challengeTaskUI = UIManager:GetWindow(UIWindowTypeID.SectorTask)
         if challengeTaskUI ~= nil then
-          (UIUtil.OnClickBack)()
+          (UIUtil.OnClickBackByUiTab)(self)
         end
       end
     end
@@ -245,7 +245,7 @@ end
 UIPeriodicChallenge.__CloseLevelDetailWindow = function(self)
   -- function num : 0_10 , upvalues : _ENV
   if self.selectedItem ~= nil then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByWinId)(UIWindowTypeID.SectorLevelDetail)
   end
 end
 

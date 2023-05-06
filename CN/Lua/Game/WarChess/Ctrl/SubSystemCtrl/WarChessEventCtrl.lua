@@ -4,6 +4,7 @@ local base = require("Game.WarChess.Ctrl.SubSystemCtrl.Base.WarChessSubSystemCtr
 local WarChessEventCtrl = class("WarChessEventCtrl", base)
 local eWarChessEnum = require("Game.WarChess.eWarChessEnum")
 local WarChessHelper = require("Game.Warchess.WarChessHelper")
+local WarchessEventUtil = require("Game.Warchess.WarchessEventUtil")
 local cs_MessageCommon = CS.MessageCommon
 WarChessEventCtrl.ctor = function(self, wcCtrl)
   -- function num : 0_0
@@ -55,19 +56,8 @@ WarChessEventCtrl.EnterNextWCEvent = function(self, eventSystemData)
 end
 
 WarChessEventCtrl.__DealEventData = function(self)
-  -- function num : 0_4 , upvalues : _ENV
-  local eventId = (self.__eventSystemData).eventId
-  self.__eventCfg = (ConfigData.warchess_event)[eventId]
-  self.__choiceDatas = {}
-  for index,choiceId in ipairs((self.__eventSystemData).choices) do
-    local choiceData = {index = index - 1, couldChoice = ((self.__eventSystemData).choiceApply)[index], choiceCfg = (ConfigData.warchess_event_choice)[choiceId]}
-    if choiceData.choiceCfg == nil then
-      error("choice cfg not exist choiceId:" .. tostring(choiceId))
-      return 
-    end
-    ;
-    (table.insert)(self.__choiceDatas, choiceData)
-  end
+  -- function num : 0_4 , upvalues : WarchessEventUtil
+  self.__eventCfg = WarchessEventUtil:DealEventDataByMsg(self.__eventSystemData)
 end
 
 WarChessEventCtrl.GetWCEventConfig = function(self)

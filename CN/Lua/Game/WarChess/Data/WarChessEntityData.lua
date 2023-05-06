@@ -19,11 +19,13 @@ WarChessEntityData.ctor = function(self, BFId, worldLogicPos, unitCfg)
   self.__totalHp = 1
   self.__monsterBattleRoomId = nil
   self.__monsterDropIconList = nil
+  self.__monsterRandomRotate = nil
   self.__entity = nil
   self.__FXDataDic = {}
   self.__headIconOverraidId = nil
   self.__alarmCfg = nil
   self.__symbioticId = nil
+  self.__wantedMonster = nil
   local entityResCfg = (ConfigData.warchess_entity_res)[unitCfg.resId]
   if entityResCfg == nil then
     error((string.format)("Cant get warchess_entity_res, id = %s", unitCfg.resId))
@@ -77,9 +79,15 @@ WarChessEntityData.UpdateWCEntityAddParam = function(self, unitParam)
   -- function num : 0_4
   if unitParam == nil then
     self.__symbioticId = nil
+    self.__wantedMonster = nil
     return 
   end
-  self.__symbioticId = unitParam.symbiotic
+  if unitParam.symbiotic ~= nil and unitParam.symbiotic ~= 0 then
+    self.__symbioticId = unitParam.symbiotic
+  else
+    self.__symbioticId = nil
+  end
+  self.__wantedMonster = unitParam.wantedMonster
 end
 
 WarChessEntityData.WCEntityGetParentGO = function(self)
@@ -165,53 +173,28 @@ WarChessEntityData.GetResModelName = function(self)
   end
 end
 
-WarChessEntityData.GetResEffectID = function(self)
+WarChessEntityData.AutoAddFx = function(self)
   -- function num : 0_13 , upvalues : _ENV
   if self:GetEntityIsMonster() then
     local battleRoomId = self:GetBattleRoomID()
     if battleRoomId == nil then
-      return nil
+      return 
     end
     local monsterGroupCfg = (ConfigData.warchess_room_monster)[battleRoomId]
     if monsterGroupCfg == nil then
       error("表怪物组不存在 battleRoomId:" .. tostring(battleRoomId))
-      return nil
+      return 
     end
-    local specialEffectName = monsterGroupCfg.special_effect
-    if specialEffectName ~= "" then
-      return tonumber(specialEffectName)
-    else
-      return nil
+    local fxId = monsterGroupCfg.special_effect
+    if fxId ~= nil and fxId ~= 0 then
+      self:UpdateEntityMonsterFX(true, fxId)
+      return 
     end
-  end
-  do
-    return nil
-  end
-end
-
-WarChessEntityData.SetEntityFxData = function(self, effectID, animaCtrl)
-  -- function num : 0_14 , upvalues : WarChessFXData
-  if effectID ~= nil and self:GetEntityIsMonster() then
-    local fxData = (WarChessFXData.New)(false, effectID, false, false, self)
-    -- DECOMPILER ERROR at PC18: Confused about usage of register: R4 in 'UnsetPending'
-
-    if fxData:GetWCFxResName() ~= nil then
-      (self.__FXDataDic)[effectID] = fxData
-    end
-  end
-end
-
-WarChessEntityData.SetEntityEffect = function(self, effectName, effectGO)
-  -- function num : 0_15
-  if effectName ~= nil and effectGO ~= nil and self:GetEntityIsMonster() then
-    (effectGO.transform):SetParent((self:WCEntityGetParentGO()).transform)
-    ;
-    (self.__entity):SetEntityEffect(effectName, effectGO)
   end
 end
 
 WarChessEntityData.GetMonsterMatConfig = function(self)
-  -- function num : 0_16 , upvalues : _ENV
+  -- function num : 0_14 , upvalues : _ENV
   if self:GetEntityIsMonster() then
     local battleRoomId = self:GetBattleRoomID()
     if battleRoomId == nil then
@@ -230,32 +213,32 @@ WarChessEntityData.GetMonsterMatConfig = function(self)
 end
 
 WarChessEntityData.GetIsEmptyEntity = function(self)
-  -- function num : 0_17
+  -- function num : 0_15
   return (self._entityResCfg).is_effect
 end
 
 WarChessEntityData.GetInteractShowOffset = function(self)
-  -- function num : 0_18
+  -- function num : 0_16
   return (self._entityResCfg).height
 end
 
 WarChessEntityData.GetEntityUnit = function(self)
-  -- function num : 0_19
+  -- function num : 0_17
   return self.unitCfg
 end
 
 WarChessEntityData.GetEntityUnitId = function(self)
-  -- function num : 0_20
+  -- function num : 0_18
   return (self.unitCfg).id
 end
 
 WarChessEntityData.GetEntityInteractions = function(self)
-  -- function num : 0_21
+  -- function num : 0_19
   return (self.unitCfg).interactions
 end
 
 WarChessEntityData.GetEntityCouldInteract = function(self)
-  -- function num : 0_22 , upvalues : _ENV, WarChessConditionCheck
+  -- function num : 0_20 , upvalues : _ENV, WarChessConditionCheck
   if #self:GetEntityInteractions() < 1 then
     return false
   end
@@ -272,22 +255,22 @@ WarChessEntityData.GetEntityCouldInteract = function(self)
 end
 
 WarChessEntityData.GetEntityInteractionRange = function(self)
-  -- function num : 0_23
+  -- function num : 0_21
   return (self.unitCfg).opRange
 end
 
 WarChessEntityData.GetEntityIsMonster = function(self)
-  -- function num : 0_24
+  -- function num : 0_22
   return (self._entityResCfg).is_monster
 end
 
 WarChessEntityData.IsWCUnitMonster = function(self)
-  -- function num : 0_25
+  -- function num : 0_23
   return self:GetEntityIsMonster()
 end
 
 WarChessEntityData.GetFirstEntityInertactWithCat = function(self, specificCat)
-  -- function num : 0_26 , upvalues : _ENV
+  -- function num : 0_24 , upvalues : _ENV
   for _,interactCfg in pairs((self.unitCfg).interactions) do
     if interactCfg.cat == specificCat then
       return interactCfg
@@ -297,17 +280,17 @@ WarChessEntityData.GetFirstEntityInertactWithCat = function(self, specificCat)
 end
 
 WarChessEntityData.SaveEnitityAnimArg = function(self, nameHash, animaId)
-  -- function num : 0_27
+  -- function num : 0_25
   self.__saveAnimData = {nameHash = nameHash, animaId = animaId}
 end
 
 WarChessEntityData.GetEnitityAnimArg = function(self)
-  -- function num : 0_28
+  -- function num : 0_26
   return self.__saveAnimData
 end
 
 WarChessEntityData.PlayEntityAnimation = function(self, animaId, trigger, callback)
-  -- function num : 0_29
+  -- function num : 0_27
   if (self._entityResCfg).is_monster then
     (self.__entity):PlayWCMonsterAnimation(animaId, trigger, callback)
   else
@@ -320,14 +303,14 @@ WarChessEntityData.PlayEntityAnimation = function(self, animaId, trigger, callba
 end
 
 WarChessEntityData.ReapplyEntityAnimation = function(self, saveAnim)
-  -- function num : 0_30
+  -- function num : 0_28
   if (self._entityResCfg).is_monster then
     (self.__entity):SetWCEntityAnimation(saveAnim.nameHash, saveAnim.animaId)
   end
 end
 
 WarChessEntityData.PlayMonsetAttackAnimation = function(self, teamData, callback)
-  -- function num : 0_31 , upvalues : _ENV
+  -- function num : 0_29 , upvalues : _ENV
   local attack_animation_play_rate = 1.5
   if (self._entityResCfg).is_monster then
     local wcCtrl = WarChessManager:GetWarChessCtrl()
@@ -337,7 +320,7 @@ WarChessEntityData.PlayMonsetAttackAnimation = function(self, teamData, callback
     ;
     (self.__entity):PlayAttackAnimation(showPos, attack_animation_play_rate)
     self.__monsterAttackTimerId = TimerManager:StartTimer(1 / attack_animation_play_rate, function()
-    -- function num : 0_31_0 , upvalues : self, callback
+    -- function num : 0_29_0 , upvalues : self, callback
     (self.__entity):EndPlayAttackAnimation()
     if callback ~= nil then
       callback()
@@ -355,17 +338,17 @@ WarChessEntityData.PlayMonsetAttackAnimation = function(self, teamData, callback
 end
 
 WarChessEntityData.GetFxDataDic = function(self)
-  -- function num : 0_32
+  -- function num : 0_30
   return self.__FXDataDic
 end
 
 WarChessEntityData.GetBattleRoomID = function(self)
-  -- function num : 0_33
+  -- function num : 0_31
   return self.__monsterBattleRoomId
 end
 
 WarChessEntityData.__GenBattleRoomID = function(self)
-  -- function num : 0_34 , upvalues : _ENV, eWarChessEnum, WarChessSeasonUtil
+  -- function num : 0_32 , upvalues : _ENV, eWarChessEnum, WarChessSeasonUtil
   if self.unitCfg == nil then
     self.__monsterBattleRoomId = nil
     return 
@@ -391,7 +374,7 @@ WarChessEntityData.__GenBattleRoomID = function(self)
 end
 
 WarChessEntityData.__GenDropIcons = function(self)
-  -- function num : 0_35 , upvalues : _ENV
+  -- function num : 0_33 , upvalues : _ENV
   if self.__monsterBattleRoomId == nil then
     self.__monsterDropIconList = nil
     return 
@@ -406,12 +389,12 @@ WarChessEntityData.__GenDropIcons = function(self)
 end
 
 WarChessEntityData.GetDropIcons = function(self)
-  -- function num : 0_36
+  -- function num : 0_34
   return self.__monsterDropIconList
 end
 
 WarChessEntityData.__GenAlarmCfg = function(self)
-  -- function num : 0_37 , upvalues : _ENV, WarChessHelper, eWarChessEnum
+  -- function num : 0_35 , upvalues : _ENV, WarChessHelper, eWarChessEnum
   if self.unitCfg == nil then
     self.__alarmCfg = {isAlarm = false, distance = 0}
     return 
@@ -436,12 +419,12 @@ WarChessEntityData.__GenAlarmCfg = function(self)
 end
 
 WarChessEntityData.GetAlarmCfg = function(self)
-  -- function num : 0_38
+  -- function num : 0_36
   return self.__alarmCfg
 end
 
 WarChessEntityData.TryReGenWCMonsterHP = function(self, battleSystemData)
-  -- function num : 0_39 , upvalues : _ENV, ExplorationEnum
+  -- function num : 0_37 , upvalues : _ENV, ExplorationEnum
   if battleSystemData == nil then
     return 
   end
@@ -455,7 +438,7 @@ WarChessEntityData.TryReGenWCMonsterHP = function(self, battleSystemData)
 end
 
 WarChessEntityData.GenWCMonsterHP = function(self, hpDic)
-  -- function num : 0_40 , upvalues : _ENV
+  -- function num : 0_38 , upvalues : _ENV
   local count = 0
   local totalRate = 0
   for _,hpPer in pairs(hpDic) do
@@ -466,7 +449,7 @@ WarChessEntityData.GenWCMonsterHP = function(self, hpDic)
 end
 
 WarChessEntityData.GetWCMonsterHP = function(self)
-  -- function num : 0_41
+  -- function num : 0_39
   if (self.unitCfg).monsterHurtHpRecord ~= nil then
     return self.__totalHp - (self.unitCfg).monsterHurtHpRecord / 10000
   end
@@ -474,7 +457,7 @@ WarChessEntityData.GetWCMonsterHP = function(self)
 end
 
 WarChessEntityData.GetWCUnitInterActIcon = function(self)
-  -- function num : 0_42 , upvalues : _ENV
+  -- function num : 0_40 , upvalues : _ENV
   local iconId = (self._entityResCfg).icon
   if self:GetEntityIsMonster() then
     local battleRoomId = self:GetBattleRoomID()
@@ -497,7 +480,7 @@ WarChessEntityData.GetWCUnitInterActIcon = function(self)
 end
 
 WarChessEntityData.IsBossMonster = function(self)
-  -- function num : 0_43 , upvalues : _ENV, eWarChessEnum
+  -- function num : 0_41 , upvalues : _ENV, eWarChessEnum
   if self:GetEntityIsMonster() then
     local battleRoomId = self:GetBattleRoomID()
     if battleRoomId == nil then
@@ -515,17 +498,17 @@ WarChessEntityData.IsBossMonster = function(self)
 end
 
 WarChessEntityData.GetWcEntitySuccessAudio = function(self)
-  -- function num : 0_44
+  -- function num : 0_42
   return (self._entityResCfg).successAudio
 end
 
 WarChessEntityData.GetWcEntityAniAudioDic = function(self)
-  -- function num : 0_45
+  -- function num : 0_43
   return (self._entityResCfg).aniAudioDic
 end
 
 WarChessEntityData.GetWCEntityRotate = function(self, isNum)
-  -- function num : 0_46 , upvalues : _ENV, WarChessHelper
+  -- function num : 0_44 , upvalues : _ENV, WarChessHelper
   if self.unitCfg == nil then
     return 
   end
@@ -544,14 +527,14 @@ WarChessEntityData.GetWCEntityRotate = function(self, isNum)
 end
 
 WarChessEntityData.GetWCEntityBindPoint = function(self, name)
-  -- function num : 0_47 , upvalues : _ENV
+  -- function num : 0_45 , upvalues : _ENV
   if self.__entity ~= nil then
     return ((self.__entity).entityGo):FindComponent(name, eUnityComponentID.Transform)
   end
 end
 
 WarChessEntityData.CleanTimerAndTween = function(self)
-  -- function num : 0_48 , upvalues : _ENV
+  -- function num : 0_46 , upvalues : _ENV
   if self.__monsterAttackTimerId ~= nil then
     TimerManager:StopTimer(self.__monsterAttackTimerId)
     self.__monsterAttackTimerId = nil
@@ -559,7 +542,7 @@ WarChessEntityData.CleanTimerAndTween = function(self)
 end
 
 WarChessEntityData.WCDeleteEntityGo = function(self)
-  -- function num : 0_49 , upvalues : _ENV
+  -- function num : 0_47 , upvalues : _ENV
   local wcCtrl = WarChessManager:GetWarChessCtrl()
   self:CleanTimerAndTween()
   ;
@@ -570,7 +553,7 @@ WarChessEntityData.WCDeleteEntityGo = function(self)
 end
 
 WarChessEntityData.GetCouldWalkLength = function(self)
-  -- function num : 0_50 , upvalues : _ENV, WarChessHelper
+  -- function num : 0_48 , upvalues : _ENV, WarChessHelper
   if not self:GetEntityIsMonster() then
     error("common entity not have move abiliity")
     return nil
@@ -583,7 +566,7 @@ WarChessEntityData.GetCouldWalkLength = function(self)
 end
 
 WarChessEntityData.GetFxCount = function(self)
-  -- function num : 0_51 , upvalues : eWarChessEnum
+  -- function num : 0_49 , upvalues : eWarChessEnum
   if (self.unitCfg).cat == (eWarChessEnum.eEntityCat).counterDownChest then
     return ((self.unitCfg).pms)[1]
   end
@@ -591,7 +574,7 @@ WarChessEntityData.GetFxCount = function(self)
 end
 
 WarChessEntityData.SetEntityHeadIcon = function(self, unitUI)
-  -- function num : 0_52
+  -- function num : 0_50
   if unitUI == nil or unitUI.off == 0 then
     self.__headIconOverraidId = nil
     return 
@@ -601,17 +584,61 @@ WarChessEntityData.SetEntityHeadIcon = function(self, unitUI)
 end
 
 WarChessEntityData.GetEntityHeadIcon = function(self)
-  -- function num : 0_53
+  -- function num : 0_51
   return self.__headIconOverraidId
 end
 
 WarChessEntityData.GetEntitySymbioticId = function(self)
-  -- function num : 0_54
+  -- function num : 0_52
   return self.__symbioticId
 end
 
+WarChessEntityData.UpdateEntityMonsterFX = function(self, isAdd, fxid)
+  -- function num : 0_53 , upvalues : _ENV
+  local wcCtrl = WarChessManager:GetWarChessCtrl()
+  if fxid == nil or fxid == 0 then
+    error("wanted fx not exist")
+    return 
+  end
+  if isAdd and (self:GetFxDataDic())[fxid] == nil then
+    (wcCtrl.animaCtrl):UpdateClientFxData(self, fxid, true, false, true, nil)
+  end
+  if not isAdd and (self:GetFxDataDic())[fxid] ~= nil then
+    (wcCtrl.animaCtrl):UpdateClientFxData(self, fxid, false, false, true, nil)
+  end
+end
+
+WarChessEntityData.UpdateEntityWantedMonsterFX = function(self)
+  -- function num : 0_54 , upvalues : _ENV
+  local fxid = (ConfigData.game_config).wcWantedMonsterId
+  self:UpdateEntityMonsterFX(self.__wantedMonster, fxid)
+end
+
+WarChessEntityData.GetEntityRandonRotate = function(self)
+  -- function num : 0_55 , upvalues : _ENV, WarChessHelper
+  if self:GetEntityIsMonster() then
+    local battleRoomId = self:GetBattleRoomID()
+    if battleRoomId == nil then
+      return nil
+    end
+    local monsterGroupCfg = (ConfigData.warchess_room_monster)[battleRoomId]
+    if monsterGroupCfg.random_rotate == nil or #monsterGroupCfg.random_rotate < 2 then
+      return nil
+    end
+    local min = (monsterGroupCfg.random_rotate)[1]
+    local max = (monsterGroupCfg.random_rotate)[2]
+    if self.__monsterRandomRotate == nil then
+      self.__monsterRandomRotate = (WarChessHelper.GetRandomRotate)(min, max)
+    end
+    return self.__monsterRandomRotate
+  end
+  do
+    return nil
+  end
+end
+
 WarChessEntityData.WCEntityDataOnSceneUnload = function(self)
-  -- function num : 0_55
+  -- function num : 0_56
   self:CleanTimerAndTween()
   if self.__entity ~= nil then
     (self.__entity):EntityOnSceneUnload()

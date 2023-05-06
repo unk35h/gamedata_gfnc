@@ -9,15 +9,15 @@ local activity_answer_library = {
 , 
 {answer_1right = 46305, answer_2 = 52411, answer_3 = 170608, answer_4 = 160884, title = 386984, title_id = 4}
 , 
-{answer_2 = 365283, answer_3 = 189659, answer_4 = 472491, title = 239953, title_id = 5}
+{answer_1right = 501167, answer_2 = 365283, answer_3 = 189659, answer_4 = 472491, title = 239953, title_id = 5}
 , 
-{answer_2 = 425940, answer_3 = 279575, answer_4 = 213507, title = 89120, title_id = 6}
+{answer_1right = 501167, answer_2 = 425940, answer_3 = 279575, answer_4 = 213507, title = 89120, title_id = 6}
 , 
-{answer_1right = 340881, answer_2 = 467766, answer_3 = 49418, answer_4 = 81491, title = 384877, title_id = 7}
+{answer_1right = 340881, answer_2 = 191878, answer_3 = 49418, answer_4 = 81491, title = 384877, title_id = 7}
 , 
 {answer_1right = 109425, answer_2 = 245103, answer_3 = 521869, answer_4 = 32693, title = 172667, title_id = 8}
 , 
-{answer_1right = "T1642", answer_2 = "T1641", title = 315384, title_id = 9}
+{answer_1right = "T1642", answer_2 = "T1641", answer_3 = "T3485", answer_4 = "T800", title = 315384, title_id = 9}
 , 
 {answer_1right = 495165, answer_2 = 383973, answer_3 = 504830, answer_4 = 490149, title = 423270, title_id = 10}
 , 
@@ -39,9 +39,9 @@ local activity_answer_library = {
 , 
 {answer_1right = 235162, answer_2 = 213154, answer_3 = 392640, answer_4 = 152242, title = 221532, title_id = 19}
 , 
-{answer_1right = 453828, answer_2 = 125863, answer_3 = 13199, answer_4 = 129816, title = 106226, title_id = 20}
+{answer_1right = 453828, answer_2 = 125863, answer_4 = 129816, title = 106226, title_id = 20}
 , 
-{answer_1right = 504810, answer_3 = 208774, answer_4 = 219029, title = 349857, title_id = 21}
+{answer_1right = 504810, answer_2 = "2A,2B,2C,2D", answer_3 = 208774, answer_4 = 219029, title = 349857, title_id = 21}
 , 
 {answer_1right = 500473, answer_2 = 196416, answer_3 = 35058, answer_4 = 103404, title = 239609, title_id = 22}
 , 
@@ -60,17 +60,98 @@ local activity_answer_library = {
 {answer_1right = 365283, answer_2 = 73980, answer_3 = 63247, answer_4 = 512348, title = 127384, title_id = 29}
 , 
 {answer_1right = 231791, answer_2 = 304585, answer_3 = 210734, answer_4 = 285909, title = 8003, title_id = 30}
+, 
+{answer_1right = 274558, answer_2 = 264787, answer_3 = 477009, answer_4 = 176199, title = 403146, title_id = 31}
+, 
+{answer_1right = 126444, answer_2 = 424012, answer_3 = 488452, answer_4 = 492510, title = 660, title_id = 32}
+, 
+{answer_1right = 162831, answer_2 = 284673, answer_3 = 98709, answer_4 = 35950, title = 338636, title_id = 33}
+, 
+{answer_1right = 523996, answer_2 = 88019, answer_3 = 344062, answer_4 = 46305, title = 98224, title_id = 34}
+, 
+{answer_2 = 82891, answer_3 = 403087, answer_4 = 432074, title = 37530, title_id = 35}
+, 
+{answer_1right = 19165, answer_2 = 338221, answer_3 = 56544, answer_4 = 368678, title = 486150, title_id = 36}
+, 
+{answer_1right = 121008, answer_2 = 421865, answer_3 = 449592, title = 220720, title_id = 37}
+, 
+{answer_1right = 36722, answer_2 = 189484, answer_4 = 167345, title = 31084, title_id = 38}
+, 
+{answer_1right = 344043, answer_2 = 213507, answer_3 = 82891, title = 321073, title_id = 39}
+, 
+{answer_1right = 506263, answer_2 = 521594, answer_3 = 311266, answer_4 = 496160, title = 131751, title_id = 40}
+, 
+{answer_1right = 362779, answer_2 = 184666, answer_3 = 491578, answer_4 = 319222, title = 489265, title_id = 41}
+, 
+{answer_1right = 414784, answer_2 = 485274, answer_3 = 95756, answer_4 = 186903, title = 65988, title_id = 42}
+, 
+{answer_1right = 189484, answer_3 = 488452, answer_4 = 511896, title = 448104, title_id = 43}
+, 
+{answer_1right = 73014, answer_2 = 276549, answer_3 = 393767, answer_4 = 480084, title = 477466, title_id = 44}
+, 
+{answer_1right = 475622, answer_2 = 85158, answer_3 = 289378, answer_4 = 485220, title = 515707, title_id = 45}
+, 
+{answer_1right = 339175, answer_2 = 327245, answer_3 = 514717, answer_4 = 494626, title = 336977, title_id = 46}
+, 
+{answer_1right = "2", answer_2 = "1", answer_3 = "3", answer_4 = "4", title = 232284, title_id = 47}
+, 
+{answer_1right = 82239, answer_2 = 388908, answer_3 = 458510, answer_4 = 494659, title = 49893, title_id = 48}
+, 
+{answer_1right = 511896, answer_2 = 14037, answer_3 = 516981, answer_4 = 121008, title = 141136, title_id = 49}
+, 
+{answer_1right = 448601, answer_2 = 304585, answer_3 = 231791, answer_4 = 247873, title = 489873, title_id = 50}
+, 
+{answer_1right = 319666, answer_2 = 89159, answer_3 = 409888, answer_4 = 237886, title = 400075, title_id = 51}
+, 
+{answer_1right = 95756, answer_2 = 446855, answer_3 = 491564, answer_4 = 508506, title = 471367, title_id = 52}
+, 
+{answer_1right = 108362, answer_2 = 254403, answer_3 = 210120, answer_4 = 110428, title = 93142, title_id = 53}
+, 
+{answer_1right = "ME78", answer_2 = "RX93", answer_3 = "PTX001", answer_4 = "F91", title = 149306, title_id = 54}
+, 
+{answer_1right = 73980, answer_2 = 365283, answer_3 = 472491, answer_4 = 228619, title = 83898, title_id = 55}
+, 
+{answer_1right = 464803, answer_3 = 73980, answer_4 = 36722, title = 370742, title_id = 56}
+, 
+{answer_1right = 253898, answer_2 = 500504, answer_3 = 202198, answer_4 = 91008, title = 164953, title_id = 57}
+, 
+{answer_1right = 167345, answer_2 = 454781, answer_3 = 60190, answer_4 = 226887, title = 36908, title_id = 58}
+, 
+{answer_1right = 2766, answer_2 = 249158, answer_3 = 171274, answer_4 = 88362, title = 148386, title_id = 59}
+, 
+{answer_1right = 249157, answer_2 = 444655, answer_3 = 195837, answer_4 = 497954, title = 182450, title_id = 60}
+, 
+{answer_1right = 43974, answer_3 = 365283, answer_4 = 508749, title = 359375, title_id = 61}
+, 
+{answer_1right = 275598, answer_2 = 355602, answer_3 = 429178, answer_4 = 306185, title = 502573, title_id = 62}
+, 
+{answer_1right = 163183, answer_2 = 42805, answer_3 = 295823, answer_4 = 508398, title = 170016, title_id = 63}
+, 
+{answer_1right = 263496, answer_2 = 312315, answer_3 = 304537, answer_4 = 205103, title = 373501, title_id = 64}
+, 
+{answer_2 = 412120, answer_3 = 228619, answer_4 = 73980, title = 263784, title_id = 65}
+, 
+{answer_1right = 323270, answer_2 = 44237, answer_3 = "AI", answer_4 = 465270, title = 201373, title_id = 66}
+, 
+{answer_1right = 282325, answer_2 = 422606, answer_3 = 118013, answer_4 = 459512, title = 385047, title_id = 67}
+, 
+{answer_1right = 173758, answer_2 = 441570, answer_3 = 297821, answer_4 = 77978, title = 202063, title_id = 68}
+, 
+{answer_1right = 446168, answer_2 = 270854, answer_3 = 410131, answer_4 = 235197, title = 402777, title_id = 69}
+, 
+{answer_1right = 346583, answer_2 = 296267, answer_3 = 472491, answer_4 = 189659, title = 282842, title_id = 70}
 }
-local __default_values = {answer_1right = 501167, answer_2 = "2A,2B,2C,2D", answer_3 = "T3485", answer_4 = "T800", player_recommend = false, title = 102032, title_id = 1}
+local __default_values = {answer_1right = 226887, answer_2 = 295556, answer_3 = 13199, answer_4 = 170919, player_recommend = false, title = 102032, title_id = 1}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")
 end
 }
-for k,v in pairs(activity_answer_library) do
-  setmetatable(v, base)
+for k,v in (_ENV.pairs)(activity_answer_library) do
+  (_ENV.setmetatable)(v, base)
 end
 local __rawdata = {__basemetatable = base}
-setmetatable(activity_answer_library, {__index = __rawdata})
+;
+(_ENV.setmetatable)(activity_answer_library, {__index = __rawdata})
 return activity_answer_library
 

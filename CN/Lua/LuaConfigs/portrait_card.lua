@@ -108,6 +108,10 @@ local portrait_card = {
 [410053] = {icon = "UserInfo_52", id = 410053, name = 89184}
 , 
 [410054] = {icon = "UserInfo_53", id = 410054, name = 439500}
+, 
+[410055] = {icon = "UserInfo_54", id = 410055, name = 434773}
+, 
+[410056] = {icon = "UserInfo_55", id = 410056, name = 298796}
 }
 local __default_values = {icon = "UserInfo_0", id = 410001, is_hide = false, name = 107880}
 local base = {__index = __default_values, __newindex = function()

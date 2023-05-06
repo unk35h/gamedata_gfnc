@@ -216,7 +216,7 @@ end
 
 UIChipGift.OnClickCloseBtn = function(self)
   -- function num : 0_8 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIChipGift.OnBackChipGift = function(self)

@@ -534,9 +534,9 @@ UIWarChessInfo.PopInteractUI = function(self, interacts, data, unit, teamData, a
     end
     local couldUseNum = 0
     for _,interactCfg in pairs(interacts) do
-      -- DECOMPILER ERROR at PC142: Unhandled construct in 'MakeBoolean' P1
+      -- DECOMPILER ERROR at PC157: Unhandled construct in 'MakeBoolean' P1
 
-      if (WarChessConditionCheck.CheckGridConditionTree)(unit, interactCfg) and (eWarChessEnum.IntroInterActType)[interactCfg.cat] and (interactCfg.cat ~= eWCInteractType.infoWithoutTeam or teamData == nil) then
+      if (WarChessConditionCheck.CheckGridConditionTree)(unit, interactCfg) and (eWarChessEnum.IntroInterActType)[interactCfg.cat] and (interactCfg.cat ~= eWCInteractType.infoWithoutTeam or teamData == nil) and (interactCfg.cat ~= eWCInteractType.gridIntr or teamData == nil or not (CommonUtil.GetIsWarChessQuickInteract)() or GuideManager.inGuide) then
         if actCallback ~= nil then
           self:HideShowInfo()
           actCallback(interactCfg, true)
@@ -552,7 +552,17 @@ UIWarChessInfo.PopInteractUI = function(self, interacts, data, unit, teamData, a
       elseif not notSeletedTeam and (interactCfg.cat ~= eWCInteractType.battle or not teamData:GetWCTeamIsGhost()) then
         local costAP = ((self.wcCtrl).interactCtrl):GetWCIneractionAPCost(interactCfg)
         ;
-        (self.OPNode):SetWCAct(actCallback, interactCfg, costAP, isMonster)
+        (self.OPNode):SetWCAct(actCallback, interactCfg, costAP, isMonster, function(callback)
+    -- function num : 0_18_1 , upvalues : isMonster, notSeletedTeam, self, data, teamData
+    if isMonster and not notSeletedTeam then
+      ((self.wcCtrl).mapCtrl):GetMonsterCouldSecKill(data, teamData, callback)
+    else
+      if callback ~= nil then
+        callback(false)
+      end
+    end
+  end
+)
         couldUseNum = couldUseNum + 1
       end
     end
@@ -561,7 +571,7 @@ UIWarChessInfo.PopInteractUI = function(self, interacts, data, unit, teamData, a
     end
     AudioManager:PlayAudioById(1233)
     do return true end
-    -- DECOMPILER ERROR: 14 unprocessed JMP targets
+    -- DECOMPILER ERROR: 15 unprocessed JMP targets
   end
 end
 

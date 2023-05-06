@@ -319,7 +319,27 @@ end
     return 
   end
   local data = winter23Ctrl:GetWinter23DataByActId(actId)
+  if data == nil then
+    return 
+  end
   data:RefreshRedWinter23Tech()
+  local ActLbUtil = require("Game.ActivityLobby.ActLbUtil")
+  ;
+  (ActLbUtil.ActLbActivityRunningTimeout)(activityFrameData:GetActivityFrameId())
+  MsgCenter:Broadcast(eMsgEventId.SectorActivityRunEnd, activityFrameData.actId)
+end
+, [(ActivityFrameEnum.eActivityType).Season] = function(activityFrameData)
+  -- function num : 0_11 , upvalues : _ENV
+  local actId = activityFrameData.actId
+  local seasonCtrl = ControllerManager:GetController(ControllerTypeId.ActivitySeason)
+  if seasonCtrl == nil then
+    return 
+  end
+  local data = seasonCtrl:GetSeasonDataByActId(actId)
+  if data == nil then
+    return 
+  end
+  data:RefreshRedSeasonTech()
   local ActLbUtil = require("Game.ActivityLobby.ActLbUtil")
   ;
   (ActLbUtil.ActLbActivityRunningTimeout)(activityFrameData:GetActivityFrameId())

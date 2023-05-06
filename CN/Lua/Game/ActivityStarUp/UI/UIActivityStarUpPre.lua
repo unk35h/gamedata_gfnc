@@ -62,7 +62,7 @@ end
 
 UIActivityStarUpPre.__OnCloseFunc = function(self)
   -- function num : 0_5 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 return UIActivityStarUpPre

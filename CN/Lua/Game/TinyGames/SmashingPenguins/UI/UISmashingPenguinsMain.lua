@@ -362,7 +362,7 @@ end
 
 UISmashingPenguinsMain.OnQuitGameBtnClick = function(self)
   -- function num : 0_20 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UISmashingPenguinsMain.OnPauseGameBtnClick = function(self)

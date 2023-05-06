@@ -184,14 +184,9 @@ UIEpRewardBag.InitEpRewardBag = function(self, rewardList, stageCfg, inEp, first
   ;
   (((self.ui).btn_Close).gameObject):SetActive(not showClose or canGetReward)
   GuideManager:TryTriggerGuide(eGuideCondition.InEpRewardBagSettle)
-  if not self.inEp then
-    (UIUtil.SetTopStatus)(nil, nil, nil, nil, nil, true)
-  end
-  if not self.SettedTopStatus then
-    (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
-    self.SettedTopStatus = true
-  end
-  -- DECOMPILER ERROR: 28 unprocessed JMP targets
+  ;
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack(true)
+  -- DECOMPILER ERROR: 26 unprocessed JMP targets
 end
 
 UIEpRewardBag._InitRewardData = function(self, rewardDic)
@@ -362,7 +357,6 @@ end
 
 UIEpRewardBag.BackAction = function(self)
   -- function num : 0_9 , upvalues : _ENV
-  self.SettedTopStatus = false
   local exitFunc = function()
     -- function num : 0_9_0 , upvalues : self, _ENV
     self.pickInfo = {}
@@ -380,11 +374,8 @@ UIEpRewardBag.BackAction = function(self)
     local itemCfg = (ConfigData.item)[self._currencyId]
     local itemName = (LanguageUtil.GetLocaleText)(itemCfg.name)
     window:ShowTextBoxWithYesAndNo((string.format)(ConfigData:GetTipContent(756), itemName, itemName), exitFunc, function()
-    -- function num : 0_9_1 , upvalues : self, _ENV
-    if not self.SettedTopStatus then
-      (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
-      self.SettedTopStatus = true
-    end
+    -- function num : 0_9_1 , upvalues : _ENV, self
+    (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack(true)
   end
 )
     window:ShowDontRemindTog(function(isOn)
@@ -401,10 +392,7 @@ end
 
 UIEpRewardBag._OnClickClose = function(self)
   -- function num : 0_10 , upvalues : _ENV
-  if self.SettedTopStatus then
-    (UIUtil.PopFromBackStack)()
-    self.SettedTopStatus = false
-  end
+  (UIUtil.PopFromBackStackByUiTab)(self)
   if self.closeFunc ~= nil then
     (self.closeFunc)(self.rewardDic, self.pickInfo)
     self.closeFunc = nil
@@ -413,15 +401,13 @@ UIEpRewardBag._OnClickClose = function(self)
   if self.inEp then
     self:Hide()
   else
-    ;
-    (UIUtil.PopFromBackStack)()
     self:Delete()
   end
 end
 
 UIEpRewardBag._OnClickGiveup = function(self)
   -- function num : 0_11 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIEpRewardBag.SetEpRewardBagCloseFunc = function(self, closeFunc)

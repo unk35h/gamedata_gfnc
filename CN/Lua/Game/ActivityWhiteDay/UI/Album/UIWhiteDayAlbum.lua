@@ -13,10 +13,10 @@ local UINWhiteDayLookPhotoNode = require("Game.ActivityWhiteDay.UI.Album.UINWhit
 local UINWhiteDayAlbHeroList = require("Game.ActivityWhiteDay.UI.Album.UINWhiteDayAlbHeroList")
 UIWhiteDayAlbum.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, cs_ResLoader, UINWhiteDayAlbumPageItem, UINWhiteDayAlbumItem
-  (UIUtil.SetTopStatus)(self, self.OnClickClose, nil, nil, nil, true)
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack()
   self.resloader = (cs_ResLoader.Create)()
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Close, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Close, self, self.OnClickClose)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_GetPhoto, self, self.OnWDClickGetAlbum)
   ;
@@ -411,7 +411,7 @@ UIWhiteDayAlbum.__OnOpenSkinPanel = function(self, selectSkinId)
   if win ~= nil then
     (UIUtil.ReturnUntil2Marker)(UIWindowTypeID.HeroSkin, false)
     ;
-    (UIUtil.PopFromBackStack)()
+    (UIUtil.PopFromBackStackByUiTab)(self)
     win:InitSkinBySkinList(selectSkinId, skinIdList, win.buyCallback, win.closeCallback)
   else
     UIManager:ShowWindowAsync(UIWindowTypeID.HeroSkin, function(win)
@@ -433,14 +433,19 @@ UIWhiteDayAlbum.__OnOpenSkinPanel = function(self, selectSkinId)
   end
 end
 
-UIWhiteDayAlbum.OnClickClose = function(self)
+UIWhiteDayAlbum.BackAction = function(self)
   -- function num : 0_23
   self:__RemoveWDGetPhotoReddot()
   self:Delete()
 end
 
+UIWhiteDayAlbum.OnClickClose = function(self)
+  -- function num : 0_24 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIWhiteDayAlbum.OnDelete = function(self)
-  -- function num : 0_24 , upvalues : _ENV, base
+  -- function num : 0_25 , upvalues : _ENV, base
   if self.resloader ~= nil then
     (self.resloader):Put2Pool()
     self.resloader = nil

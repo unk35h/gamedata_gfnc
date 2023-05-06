@@ -126,7 +126,7 @@ end
 
 UIAdjPreset.OnClickConfirm = function(self)
   -- function num : 0_8 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIAdjPreset.__BackAdjPresetWin = function(self)

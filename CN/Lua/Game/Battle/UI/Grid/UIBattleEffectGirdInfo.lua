@@ -20,10 +20,7 @@ end
 
 UIBattleEffectGirdInfo.InitBattleGridInfo = function(self, dynEffectGrid, worldPos)
   -- function num : 0_1 , upvalues : _ENV
-  if not self.SettedTopStatus then
-    (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
-    self.SettedTopStatus = true
-  end
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack(true)
   local position = (UIManager:World2UIPosition(worldPos))
   local offsetRatio = nil
   if position.x <= 0 and position.y >= 0 then
@@ -40,7 +37,7 @@ UIBattleEffectGirdInfo.InitBattleGridInfo = function(self, dynEffectGrid, worldP
     end
   end
   local arrowOffset = (self.gridInfoSizeDelta / 2 + (self.ui).gridInfoOffset) * offsetRatio + position
-  -- DECOMPILER ERROR at PC76: Confused about usage of register: R6 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC75: Confused about usage of register: R6 in 'UnsetPending'
 
   ;
   ((self.battleGirdInfoNode).transform).localPosition = (Vector3.New)(arrowOffset.x, arrowOffset.y, 0)
@@ -51,14 +48,11 @@ end
 UIBattleEffectGirdInfo.BackAction = function(self)
   -- function num : 0_2
   self:Hide()
-  self.SettedTopStatus = false
 end
 
 UIBattleEffectGirdInfo.OnFingerDown = function(self)
   -- function num : 0_3 , upvalues : _ENV
-  if self.SettedTopStatus then
-    (UIUtil.OnClickBack)()
-  end
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIBattleEffectGirdInfo.OnDelete = function(self)

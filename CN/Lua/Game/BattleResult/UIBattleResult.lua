@@ -362,7 +362,7 @@ end
 
 UIBattleResult.ExitBattleResult = function(self)
   -- function num : 0_13 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIBattleResult.FadeDelete = function(self)

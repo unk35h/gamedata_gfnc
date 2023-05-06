@@ -283,7 +283,7 @@ UIEventComebackMain.__CutDown = function(self)
     ;
     ((self.ui).tex_Time):SetIndex(2, "0")
     ;
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
     return 
   end
   if diff < 60 then

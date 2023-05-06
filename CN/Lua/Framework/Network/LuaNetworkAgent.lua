@@ -25,6 +25,7 @@ LuaNetworkAgent.__ClearQuitData = function(self)
   NetworkManager:ResetAllNetwork()
   UIManager:DeleteAllWindow()
   UIManager:HideAllWindow()
+  UIManager:DeleteWindow(UIWindowTypeID.TopStatus)
   ControllerManager:DeleteAllController()
   ;
   ((CS.UIManager).Instance):DeleteAllWindow()
@@ -43,7 +44,7 @@ LuaNetworkAgent.__ClearQuitData = function(self)
   PersistentManager:HandleLogOut()
   ;
   (UIManager.csUIManager):DisableUIPPVolume()
-  -- DECOMPILER ERROR at PC86: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC91: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   (Time.unity_time).timeScale = 1

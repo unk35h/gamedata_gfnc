@@ -58,6 +58,12 @@ local common_ranklist = {
 {id = 28, option_name = 426997, precise_max = 200}
 , 
 {id = 29, option_name = 260143, option_show_type = 1, rank_title = 85482}
+, 
+{hero_num = 10, id = 30, option_name = 140121, percent_show = 5000, rank_title = 187330}
+, 
+{hero_num = 10, id = 31, option_name = 140121, percent_show = 5000, rank_title = 474426}
+, 
+{hero_num = 10, id = 32, option_name = 140121, percent_show = 5000, rank_title = 203846}
 }
 local __default_values = {hero_num = 5, hero_show_type = 0, id = 1, option_name = 508726, option_show_type = 0, percent_show = 0, precise_max = 100, rank_title = 48669, rank_title_en = "RANKING", time_switch = false}
 local base = {__index = __default_values, __newindex = function()

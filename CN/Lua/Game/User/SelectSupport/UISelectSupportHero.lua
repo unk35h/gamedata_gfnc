@@ -7,24 +7,24 @@ UISelectSupportHero.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV
   self.netWorkCtrl = NetworkManager:GetNetwork(NetworkTypeID.Object)
   ;
-  (UIUtil.SetTopStatus)(self, self.OnReturnClick)
+  ((((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):SetTopStatusVisible(true)):PushTopStatusDataToBackStack()
   ;
-  (UIUtil.AddButtonListenerWithArg)((self.ui).btn_Cancel, self, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListenerWithArg)((self.ui).btn_Cancel, self, self.OnReturnClick)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Comfirm, self, self.OnClickConfirm)
   self.itemDic = {}
   self.heroList = {}
   self.__curSelectedHeroData = nil
   self.__onClickHeroHeadItem = BindCallback(self, self.OnClickHeroHeadItem)
-  -- DECOMPILER ERROR at PC42: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC48: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.ui).loopScrollRect).onInstantiateItem = BindCallback(self, self.__OnNewItem)
-  -- DECOMPILER ERROR at PC49: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC55: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.ui).loopScrollRect).onChangeItem = BindCallback(self, self.__OnChangeItem)
-  -- DECOMPILER ERROR at PC56: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC62: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.ui).loopScrollRect).onReturnItem = BindCallback(self, self.__OnReturnItem)
@@ -152,7 +152,7 @@ UISelectSupportHero.OnClickConfirm = function(self)
       (self.onChangeCallback)()
     end
     ;
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 )
   else
@@ -166,14 +166,14 @@ UISelectSupportHero.OnClickConfirm = function(self)
       (self.onChangeCallback)()
     end
     ;
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 )
       end
     else
       do
         ;
-        (UIUtil.OnClickBack)()
+        (UIUtil.OnClickBackByUiTab)(self)
       end
     end
   end
@@ -186,13 +186,18 @@ UISelectSupportHero._OnHeroUpdate = function(self)
   end
 end
 
-UISelectSupportHero.OnReturnClick = function(self, isClickBackground)
+UISelectSupportHero.BackAction = function(self)
   -- function num : 0_8
   self:Delete()
 end
 
+UISelectSupportHero.OnReturnClick = function(self, isClickBackground)
+  -- function num : 0_9 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UISelectSupportHero.OnDelete = function(self)
-  -- function num : 0_9 , upvalues : _ENV, base
+  -- function num : 0_10 , upvalues : _ENV, base
   MsgCenter:RemoveListener(eMsgEventId.UpdateHero, self.__OnHeroUpdate)
   ;
   (base.OnDelete)(self)

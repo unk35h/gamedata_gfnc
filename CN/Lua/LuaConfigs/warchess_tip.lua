@@ -1238,6 +1238,58 @@ local warchess_tip = {
 , 
 {context = 414383, heroId = 1066, id = 500017, index = 5, is_need_focus = false, monsterid = 0, x = 0, y = 0}
 }
+, 
+[500018] = {
+{context = 50998, heroId = 1067, id = 500018, index = 1, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 277338, heroId = 1067, id = 500018, index = 2, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 447262, heroId = 1067, id = 500018, index = 3, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 121464, heroId = 1001, id = 500018, index = 4, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 54833, heroId = 1067, id = 500018, index = 5, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 486512, heroId = 1001, id = 500018, index = 6, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 332511, heroId = 1067, id = 500018, index = 7, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 241464, heroId = 1001, id = 500018, index = 8, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 413583, heroId = 1001, id = 500018, index = 9, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 326266, heroId = 1067, id = 500018, index = 10, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 202724, heroId = 1067, id = 500018, index = 11, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+}
+, 
+[500019] = {
+{context = 80410, heroId = 1067, id = 500019, index = 1, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 456753, heroId = 1067, id = 500019, index = 2, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 193265, heroId = 1067, id = 500019, index = 3, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+}
+, 
+[500020] = {
+{context = 235671, heroId = 1067, id = 500020, index = 1, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 354530, heroId = 1067, id = 500020, index = 2, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 482390, heroId = 1067, id = 500020, index = 3, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 470944, heroId = 1001, id = 500020, index = 4, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 56042, heroId = 1067, id = 500020, index = 5, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 152113, heroId = 1001, id = 500020, index = 6, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 173100, heroId = 1067, id = 500020, index = 7, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 126965, heroId = 1001, id = 500020, index = 8, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+, 
+{context = 30603, heroId = 1067, id = 500020, index = 9, is_need_focus = false, monsterid = 0, x = 0, y = 0}
+}
 }
 return warchess_tip
 

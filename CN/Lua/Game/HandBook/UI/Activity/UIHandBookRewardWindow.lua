@@ -6,9 +6,9 @@ local UINHandBookRewardItem = require("Game.HandBook.UI.Activity.UINHandBookRewa
 local cs_Tweening = (CS.DG).Tweening
 UIHandBookRewardWindow.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, UINHandBookRewardItem
-  (UIUtil.SetTopStatus)(self, self.Delete)
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.Delete)):PushTopStatusDataToBackStack()
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Close, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Close, self, self.OnClickBack)
   self._rewardPool = (UIItemPool.New)(UINHandBookRewardItem, (self.ui).item)
   ;
   ((self.ui).item):SetActive(false)
@@ -64,8 +64,13 @@ UIHandBookRewardWindow.PlayBookRewardAni = function(self, worldPos)
   end
 end
 
+UIHandBookRewardWindow.OnClickBack = function(self)
+  -- function num : 0_3 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIHandBookRewardWindow.OnDelete = function(self)
-  -- function num : 0_3 , upvalues : base
+  -- function num : 0_4 , upvalues : base
   ((self.ui).main):DOComplete()
   ;
   (self._rewardPool):DeleteAll()

@@ -74,7 +74,7 @@ end
 
 UINCarnival22EnvDetail.OnClickHide = function(self)
   -- function num : 0_6 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 return UINCarnival22EnvDetail

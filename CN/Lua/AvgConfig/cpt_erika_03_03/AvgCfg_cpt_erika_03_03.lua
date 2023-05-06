@@ -479,7 +479,7 @@ imgTween = {
 , 
 [63] = {content = 630, contentType = 4, speakerName = 13}
 , 
-[64] = {content = 640, contentType = 4, speakerName = 12, 
+[64] = {content = 640, contentType = 4, speakerName = 13, 
 imgTween = {
 {imgId = 176, delay = 0, duration = 0.2, posId = 3, alpha = 0, isDark = false}
 , 

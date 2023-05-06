@@ -7,6 +7,8 @@ UIFactoryQuickProduce.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, UINFactoryOrderNode
   self.factoryController = ControllerManager:GetController(ControllerTypeId.Factory, false)
   ;
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack()
+  ;
   (UIUtil.AddButtonListener)((self.ui).btn_background, self, self.OnclickClose)
   ;
   (((self.ui).tween_factoryOrderNode).onRewind):AddListener(BindCallback(self, self.Delete))
@@ -15,11 +17,11 @@ UIFactoryQuickProduce.OnInit = function(self)
   self.factoryOrderNode = (UINFactoryOrderNode.New)(true)
   ;
   (self.factoryOrderNode):Init((self.ui).factoryOrderNode)
-  -- DECOMPILER ERROR at PC45: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC54: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.factoryOrderNode).ui).quickPurchaseRoot = (self.ui).quickPurchaseRoot
-  -- DECOMPILER ERROR at PC51: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC60: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   (self.factoryOrderNode).closeQuickProduceNode = BindCallback(self, self.OnclickClose)
@@ -48,13 +50,18 @@ UIFactoryQuickProduce.OpenQuickProduce = function(self, targetOrderData, closeCa
 )
 end
 
-UIFactoryQuickProduce.OnclickClose = function(self)
+UIFactoryQuickProduce.BackAction = function(self)
   -- function num : 0_2
   self:OrderNodesPlayOver()
 end
 
-UIFactoryQuickProduce.OrderNodesPlayOver = function(self)
+UIFactoryQuickProduce.OnclickClose = function(self)
   -- function num : 0_3 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
+UIFactoryQuickProduce.OrderNodesPlayOver = function(self)
+  -- function num : 0_4 , upvalues : _ENV
   ((self.ui).tween_factoryOrderNode):DOPlayBackwards()
   -- DECOMPILER ERROR at PC6: Confused about usage of register: R1 in 'UnsetPending'
 
@@ -64,14 +71,14 @@ UIFactoryQuickProduce.OrderNodesPlayOver = function(self)
 end
 
 UIFactoryQuickProduce.OnTweenComplete = function(self)
-  -- function num : 0_4
+  -- function num : 0_5
   -- DECOMPILER ERROR at PC2: Confused about usage of register: R1 in 'UnsetPending'
 
   ((self.ui).fade).blocksRaycasts = true
 end
 
 UIFactoryQuickProduce.OnDelete = function(self)
-  -- function num : 0_5 , upvalues : base
+  -- function num : 0_6 , upvalues : base
   (self.factoryOrderNode):Delete()
   -- DECOMPILER ERROR at PC5: Confused about usage of register: R1 in 'UnsetPending'
 

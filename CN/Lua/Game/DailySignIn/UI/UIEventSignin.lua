@@ -425,7 +425,7 @@ UIEventSignin.OnClickCloseSign = function(self)
     return 
   end
   ;
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIEventSignin.CloseEventSignin = function(self)

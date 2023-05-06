@@ -14,6 +14,7 @@ local FormationUtil = require("Game.Formation.FormationUtil")
 local UINAutoModuleSwitch = require("Game.Exploration.UI.AutoMode.UINAutoModuleSwitch")
 local EpCommonUtil = require("Game.Exploration.Util.EpCommonUtil")
 local ExplorationEnum = require("Game.Exploration.ExplorationEnum")
+local eWarChessEnum = require("Game.WarChess.eWarChessEnum")
 UIBattle.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, UINGamePlayScore, BattleUtil, ExplorationEnum, EpCommonUtil, UINAutoModuleSwitch, UINBtnCommanderSkill, UINBattleDeployChipEft
   self.resLoader = ((CS.ResLoader).Create)()
@@ -35,6 +36,8 @@ UIBattle.OnInit = function(self)
   (UIUtil.AddButtonListener)((self.ui).btn_PauseNormal, self, self._OnClickPauseNormal)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Setting, self, self._OnClickSetting)
+  ;
+  (UIUtil.AddButtonListener)((self.ui).btn_Healing, self, self.OnClickHealing)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_HideUI, self, self.__OnClickHideUIState)
   ;
@@ -131,7 +134,7 @@ UIBattle.InitUIBattle = function(self, breakBattleFunc)
 end
 
 UIBattle.InitUIBattleDeploy = function(self, onlyDeploy, startBattleFunc, savaDeployFunc, getDeployAliveRoleCount, heroList)
-  -- function num : 0_3 , upvalues : _ENV
+  -- function num : 0_3 , upvalues : _ENV, eWarChessEnum
   self.startBattleFunc = startBattleFunc
   self.savaDeployFunc = savaDeployFunc
   self.getDeployAliveRoleCount = getDeployAliveRoleCount
@@ -188,6 +191,19 @@ UIBattle.InitUIBattleDeploy = function(self, onlyDeploy, startBattleFunc, savaDe
   (((self.ui).btn_ShowUI).gameObject):SetActive(false)
   ;
   ((self.ui).frame):SetActive(true)
+  if WarChessSeasonManager:IsInWCS() then
+    local spitemCfg = WarChessSeasonManager:GetWcSSpItemConfigByLogicType((eWarChessEnum.WCSpecialItemLogicType).healing)
+    if spitemCfg ~= nil then
+      (((self.ui).btn_Healing).gameObject):SetActive(true)
+      local healingItemId, healingCount = WarChessSeasonManager:GetWcSSpItemByLogicType((eWarChessEnum.WCSpecialItemLogicType).healing)
+      local itemCfg = (ConfigData.item)[healingItemId]
+      local itemName = (LanguageUtil.GetLocaleText)(itemCfg.name)
+      -- DECOMPILER ERROR at PC168: Confused about usage of register: R13 in 'UnsetPending'
+
+      ;
+      ((self.ui).tex_Name_Healing).text = itemName
+    end
+  end
 end
 
 UIBattle.InitUIBattleRunning = function(self, pauseFunc, speedUpFunc, autoBattleFunc, autoBattleUltFunc, autoBattleUltMaxEnergyFunc, battleUIStateFunc)
@@ -200,6 +216,8 @@ UIBattle.InitUIBattleRunning = function(self, pauseFunc, speedUpFunc, autoBattle
   self.battleUIStateFunc = battleUIStateFunc
   self:OnSpeedUpChange(((self.ui).speedArray)[self.curSpeedIndex])
   self:OnAutoBattleChange(((self.ui).tog_Auto).isOn)
+  ;
+  (((self.ui).btn_Healing).gameObject):SetActive(false)
   self:__SwitchUIState(true)
   self:CloseCstChange()
   self:EndChipEft()
@@ -947,10 +965,8 @@ UIBattle.ShowSummonRoleInfoBattleRunning = function(self, entity)
     (self.__lastEntityView):ShowViewTag(true)
   end
 )
-  if not self.SettedTopStatus then
-    (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
-    self.SettedTopStatus = true
-  end
+  ;
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack(true)
 end
 
 UIBattle.ShowMonsterOrNeutralRoleInfo = function(self, battleCharacterView, monsterOrNeutral)
@@ -1002,10 +1018,8 @@ UIBattle.ShowMonsterOrNeutralRoleInfo = function(self, battleCharacterView, mons
     end
   end
 )
-    if not self.SettedTopStatus then
-      (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
-      self.SettedTopStatus = true
-    end
+    ;
+    (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack(true)
   end
 end
 
@@ -1016,7 +1030,6 @@ end
 
 UIBattle.BackAction = function(self)
   -- function num : 0_52 , upvalues : _ENV
-  self.SettedTopStatus = false
   if not self.onEnemyDetailUnlock then
     return 
   end
@@ -1036,9 +1049,7 @@ end
 
 UIBattle.HideMonsterOrNeutralRoleInfo = function(self)
   -- function num : 0_53 , upvalues : _ENV
-  if self.SettedTopStatus then
-    (UIUtil.OnClickBack)()
-  end
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIBattle.IsRoleInfoShow = function(self)
@@ -1202,8 +1213,24 @@ UIBattle.__OnClickShowUIState = function(self)
   ((self.ui).frame):SetActive(true)
 end
 
+UIBattle.OnClickHealing = function(self)
+  -- function num : 0_64 , upvalues : _ENV, eWarChessEnum
+  if self.isShowEnemyDetail then
+    self:HideMonsterOrNeutralRoleInfo()
+  end
+  local spitemCfg = WarChessSeasonManager:GetWcSSpItemConfigByLogicType((eWarChessEnum.WCSpecialItemLogicType).healing)
+  local WarchessEventUtil = require("Game.Warchess.WarchessEventUtil")
+  WarchessEventUtil:ApplyWcEventInBattle((spitemCfg.ex_arg1)[1], true, function()
+    -- function num : 0_64_0 , upvalues : _ENV
+    local wcCtrl = WarChessManager:GetWarChessCtrl()
+    ;
+    (wcCtrl.battleCtrl):SetWCUseedEventSystemInbattle()
+  end
+)
+end
+
 UIBattle.OnDelete = function(self)
-  -- function num : 0_64 , upvalues : _ENV, base
+  -- function num : 0_65 , upvalues : _ENV, base
   TimerManager:StopTimer(self._StartChipEftTimer)
   MsgCenter:RemoveListener(eMsgEventId.WaveComing, self.__callWaveComingAction)
   MsgCenter:RemoveListener(eMsgEventId.OnEpChipListChange, self.__OnChipChangeEvent)

@@ -2893,6 +2893,110 @@
       "BreakNum": 10
     },
     {
+      "Id": 500,
+      "Name": "怪物词条-加物防",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        4
+      ],
+      "TierNum": [
+        1000001069
+      ]
+    },
+    {
+      "Id": 501,
+      "Name": "怪物词条-减攻击",
+      "IsShow": true,
+      "Icon": "ICON_LBuff_4",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "ResistanceFormula": 1005,
+      "DurationType": 2,
+      "AttributeID": [
+        203
+      ],
+      "TierNum": [
+        1000001074
+      ],
+      "BuffType": 2
+    },
+    {
+      "Id": 502,
+      "Name": "怪物词条-加算防",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        26
+      ],
+      "TierNum": [
+        1000001069
+      ]
+    },
+    {
+      "Id": 503,
+      "Name": "怪物词条-减算力",
+      "IsShow": true,
+      "Icon": "ICON_LBuff_4",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "ResistanceFormula": 1005,
+      "DurationType": 2,
+      "AttributeID": [
+        226
+      ],
+      "TierNum": [
+        1000001074
+      ],
+      "BuffType": 2
+    },
+    {
+      "Id": 504,
+      "Name": "怪物词条-闪避提升",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        7
+      ],
+      "TierNum": [
+        1000001069
+      ]
+    },
+    {
+      "Id": 505,
+      "Name": "怪物词条-受到暴击伤害提升",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "ExtraBaseNum": "19:1000001069"
+    },
+    {
+      "Id": 506,
+      "Name": "怪物词条-减伤",
+      "IsShow": true,
+      "Icon": "ICON_LBuff_4",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        20
+      ],
+      "TierNum": [
+        1000001071
+      ],
+      "BuffType": 2
+    },
+    {
       "Id": 999,
       "Name": "测试buff",
       "IsShow": true,
@@ -7640,6 +7744,362 @@
       ]
     },
     {
+      "Id": 2073,
+      "Name": "巨像化",
+      "IsShow": true,
+      "Icon": "ICON_LBuff_120",
+      "Level": 1,
+      "MaxTier": 5,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "SkillList": [
+        20229
+      ],
+      "MatShow": 34,
+      "AttributeID": [
+        203,
+        226
+      ],
+      "TierNum": [
+        200,
+        200
+      ],
+      "DeathBuffRetain": true,
+      "BuffType": 1
+    },
+    {
+      "Id": 2074,
+      "Name": "92079我方算力增加",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        226
+      ],
+      "BaseNum": [
+        1000001069
+      ]
+    },
+    {
+      "Id": 2075,
+      "Name": "92080我方攻击增加",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        203
+      ],
+      "BaseNum": [
+        1000001069
+      ]
+    },
+    {
+      "Id": 2076,
+      "Name": "92085敌方算防削弱",
+      "Level": 1,
+      "MaxTier": 20,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        227
+      ],
+      "TierNum": [
+        1000001070
+      ]
+    },
+    {
+      "Id": 2077,
+      "Name": "92085敌方物防削弱",
+      "Level": 1,
+      "MaxTier": 20,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        204
+      ],
+      "TierNum": [
+        1000001072
+      ]
+    },
+    {
+      "Id": 2078,
+      "Name": "92086敌方物防削弱",
+      "Level": 1,
+      "MaxTier": 999999,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        26
+      ],
+      "TierNum": [
+        1
+      ]
+    },
+    {
+      "Id": 2079,
+      "Name": "92090我方攻速上升",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        205
+      ],
+      "BaseNum": [
+        1000001071
+      ]
+    },
+    {
+      "Id": 2080,
+      "Name": "93041我方攻速上升",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        205
+      ],
+      "TierNum": [
+        1000001069
+      ]
+    },
+    {
+      "Id": 2081,
+      "Name": "92090我方攻速上升",
+      "Level": 1,
+      "MaxTier": 999999,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        26
+      ],
+      "TierNum": [
+        1
+      ]
+    },
+    {
+      "Id": 2082,
+      "Name": "4001039我方攻击上升",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        203
+      ],
+      "BaseNum": [
+        1000001069
+      ]
+    },
+    {
+      "Id": 2083,
+      "Name": "4001039我方全体攻速上升",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        205
+      ],
+      "BaseNum": [
+        1000001073
+      ]
+    },
+    {
+      "Id": 2084,
+      "Name": "4001243双防下降",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        204,
+        227
+      ],
+      "TierNum": [
+        1000001070,
+        1000001070
+      ]
+    },
+    {
+      "Id": 2085,
+      "Name": "4010422召唤物伤害上升",
+      "Level": 1,
+      "MaxTier": 5,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        19
+      ],
+      "TierNum": [
+        1000001069
+      ]
+    },
+    {
+      "Id": 2086,
+      "Name": "4010423闪避率上升",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        107
+      ],
+      "BaseNum": [
+        1000001071
+      ]
+    },
+    {
+      "Id": 2087,
+      "Name": "4010426伤害上升",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        19
+      ],
+      "BaseNum": [
+        1000001071
+      ]
+    },
+    {
+      "Id": 2088,
+      "Name": "92085算防下降",
+      "Level": 1,
+      "MaxTier": 999999,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        204,
+        227
+      ],
+      "TierNum": [
+        1000001070,
+        1000001072
+      ]
+    },
+    {
+      "Id": 2089,
+      "Name": "92085物防下降",
+      "Level": 1,
+      "MaxTier": 999999,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        204,
+        227
+      ],
+      "TierNum": [
+        1000001070,
+        1000001072
+      ]
+    },
+    {
+      "Id": 2090,
+      "Name": "4020001眩晕",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "Feature": "7,26",
+      "IsControl": true,
+      "BreakSkill": true,
+      "DurationType": 2,
+      "CreationShow": [
+        90
+      ],
+      "BuffType": 2
+    },
+    {
+      "Id": 2091,
+      "Name": "4020002强制位移1",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "Feature": "13:1",
+      "IsControl": true,
+      "BreakSkill": true,
+      "DurationType": 2,
+      "BuffType": 2
+    },
+    {
+      "Id": 2092,
+      "Name": "4020003充能速率提高",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "CreationShow": [
+        12075
+      ],
+      "AttributeID": [
+        23
+      ],
+      "TierNum": [
+        1000001071
+      ]
+    },
+    {
+      "Id": 2093,
+      "Name": "92081算力增加",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        226
+      ],
+      "BaseNum": [
+        1000001069
+      ]
+    },
+    {
+      "Id": 2094,
+      "Name": "92082攻击力增加",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        203
+      ],
+      "BaseNum": [
+        1000001069
+      ]
+    },
+    {
+      "Id": 2095,
+      "Name": "40001134双防下降",
+      "Level": 1,
+      "MaxTier": 4,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        204,
+        227
+      ],
+      "TierNum": [
+        1000001070,
+        1000001070
+      ]
+    },
+    {
+      "Id": 2096,
+      "Name": "92086动态吸血",
+      "Level": 1,
+      "MaxTier": 20,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "AttributeID": [
+        18
+      ],
+      "TierNum": [
+        1000001071
+      ]
+    },
+    {
       "Id": 3001,
       "Name": "伤残",
       "IsShow": true,
@@ -10561,6 +11021,46 @@
       ],
       "TierNum": [
         50
+      ],
+      "BuffType": 1
+    },
+    {
+      "Id": 100803,
+      "Name": "琴专武-攻击速度提升",
+      "IsShow": true,
+      "Icon": "ICON_LBuff_20",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "CreationShow": [
+        100810
+      ],
+      "AttributeID": [
+        205
+      ],
+      "TierNum": [
+        1000001077
+      ],
+      "BuffType": 1
+    },
+    {
+      "Id": 100804,
+      "Name": "琴专武-攻击力提升",
+      "IsShow": true,
+      "Icon": "ICON_LBuff_82",
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "DurationType": 2,
+      "CreationShow": [
+        100811
+      ],
+      "AttributeID": [
+        203
+      ],
+      "TierNum": [
+        1000001075
       ],
       "BuffType": 1
     },
@@ -14025,6 +14525,48 @@
       "IsControl": true,
       "ResistanceFormula": 1005,
       "DurationType": 2,
+      "BuffType": 2
+    },
+    {
+      "Id": 106701,
+      "Name": "卡斯卡迪亚-流血",
+      "IsShow": true,
+      "Icon": "ICON_LBuff_16",
+      "Level": 1,
+      "MaxTier": 3,
+      "RefreshTier": true,
+      "Feature": "9:15",
+      "ResistanceFormula": 1005,
+      "DurationType": 2,
+      "CreationShow": [
+        106706
+      ],
+      "BuffType": 2
+    },
+    {
+      "Id": 106702,
+      "Name": "卡斯卡迪亚-流血trigger",
+      "ConflictSelf": true,
+      "Level": 1,
+      "MaxTier": 3,
+      "DurationType": 2,
+      "Duration": 1
+    },
+    {
+      "Id": 106703,
+      "Name": "卡斯卡迪亚-减疗2",
+      "BuffGroupId": 106703,
+      "Level": 1,
+      "MaxTier": 1,
+      "RefreshTier": true,
+      "ResistanceFormula": 1005,
+      "DurationType": 2,
+      "AttributeID": [
+        22
+      ],
+      "TierNum": [
+        1000001078
+      ],
       "BuffType": 2
     },
     {

@@ -74,7 +74,7 @@ UIChristmas22Unlock.OnClickNext = function(self)
   if #self._infoList < self._nextIndex then
     (self._unlockInfo):ClearActUnlockInfo()
     ;
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   else
     self:__ShowMessage()
   end
@@ -82,7 +82,7 @@ end
 
 UIChristmas22Unlock.OnClickJump = function(self)
   -- function num : 0_5 , upvalues : _ENV, ActCommonEnum
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
   local info = (self._infoList)[self._nextIndex]
   if not (self._actData):IsActivityRunning() then
     return 
@@ -92,12 +92,12 @@ UIChristmas22Unlock.OnClickJump = function(self)
   if info == nil then
     return 
   end
-  -- DECOMPILER ERROR at PC27: Unhandled construct in 'MakeBoolean' P1
+  -- DECOMPILER ERROR at PC28: Unhandled construct in 'MakeBoolean' P1
 
   if info.unlockType == (ActCommonEnum.ActUnlockType).NormalAvg and self._avgFunc ~= nil then
     (self._avgFunc)()
   end
-  -- DECOMPILER ERROR at PC38: Unhandled construct in 'MakeBoolean' P1
+  -- DECOMPILER ERROR at PC39: Unhandled construct in 'MakeBoolean' P1
 
   if info.unlockType == (ActCommonEnum.ActUnlockType).EnvDifficulty and self._envFunc ~= nil then
     (self._envFunc)()

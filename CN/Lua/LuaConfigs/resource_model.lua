@@ -8,14 +8,13 @@ local __rt_5 = {101608, 101609}
 local __rt_6 = {101903, 101904}
 local __rt_7 = {102203}
 local __rt_8 = {102301}
-local __rt_9 = {102510, 102511}
-local __rt_10 = {102605, 102606, 102607}
-local __rt_11 = {103804, 103805, 103806, 103807, 103808}
-local __rt_12 = {104216}
-local __rt_13 = {104419, 104420, 104421, 104422}
-local __rt_14 = {[5] = 103, [6] = 104, [7] = 105, [8] = 106, [9] = 107, [10] = 108, [11] = 109}
-local __rt_15 = {[5] = 208403, [9] = 208402}
-local __rt_16 = {[5] = 208502, [9] = 208503}
+local __rt_9 = {102605, 102606, 102607}
+local __rt_10 = {103804, 103805, 103806, 103807, 103808}
+local __rt_11 = {104216}
+local __rt_12 = {104419, 104420, 104421, 104422}
+local __rt_13 = {[5] = 103, [6] = 104, [7] = 105, [8] = 106, [9] = 107, [10] = 108, [11] = 109}
+local __rt_14 = {[5] = 208403, [9] = 208402}
+local __rt_15 = {[5] = 208502, [9] = 208503}
 local resource_model = {
 [1000] = {atk1_frames = 21, atk1_trigger_frames = 4, atk2_frames = 28, atk2_trigger_frames = 4}
 , 
@@ -53,7 +52,11 @@ spec_idle_effect_id = {100718}
 win_effect_id = {100708, 100711}
 }
 , 
-[1008] = {atk1_frames = 33, atk1_trigger_frames = 18, atk2_frames = 55, atk2_trigger_frames = 42, base_move_spd = 80, id = 1008, res_Name = "gin", win_effect_id = __rt_3}
+[1008] = {atk1_frames = 33, atk1_trigger_frames = 18, atk2_frames = 55, atk2_trigger_frames = 42, base_move_spd = 80, id = 1008, res_Name = "gin", 
+spec_effect_id = {100812}
+, 
+spec_idle_effect_id = {100813}
+, win_effect_id = __rt_3}
 , 
 [1009] = {atk1_frames = 22, atk1_trigger_frames = 8, atk2_frames = 19, atk2_trigger_frames = 9, id = 1009, res_Name = "mai"}
 , 
@@ -139,9 +142,11 @@ win_effect_id = {102409, 102410, 102411}
 spec_effect_id = {102517}
 , 
 spec_idle_effect_id = {102518}
-, win_effect_id = __rt_9}
 , 
-[1026] = {atk1_frames = 27, atk1_trigger_frames = 13, atk2_frames = 27, atk2_trigger_frames = 15, id = 1026, res_Name = "nanaka", win_effect_id = __rt_10}
+win_effect_id = {102510, 102511, 102519, 102520, 102521, 102522, 102523, 102524}
+}
+, 
+[1026] = {atk1_frames = 27, atk1_trigger_frames = 13, atk2_frames = 27, atk2_trigger_frames = 15, id = 1026, res_Name = "nanaka", win_effect_id = __rt_9}
 , 
 [1027] = {atk1_frames = 32, atk1_trigger_frames = 6, atk2_frames = 32, atk2_trigger_frames = 6, base_move_spd = 80, hit_target_type = 2, id = 1027, res_Name = "zion", 
 win_effect_id = {102701}
@@ -189,7 +194,7 @@ win_effect_id = {103601, 103602, 103603}
 win_effect_id = {103701, 103702, 103703, 103704, 103705, 103706, 103707, 103708, 103709}
 }
 , 
-[1038] = {atk1_frames = 25, atk1_trigger_frames = 5, atk2_frames = 25, atk2_trigger_frames = 5, base_move_spd = 150, id = 1038, res_Name = "sakuya", win_effect_id = __rt_11}
+[1038] = {atk1_frames = 25, atk1_trigger_frames = 5, atk2_frames = 25, atk2_trigger_frames = 5, base_move_spd = 150, id = 1038, res_Name = "sakuya", win_effect_id = __rt_10}
 , 
 [1039] = {atk1_frames = 33, atk1_trigger_frames = 6, atk2_frames = 33, atk2_trigger_frames = 10, base_move_spd = 130, id = 1039, res_Name = "centaureissi", 
 spec_effect_id = {103910}
@@ -209,13 +214,13 @@ spec_idle_effect_id = {104130}
 win_effect_id = {104119, 104120, 104121, 104123}
 }
 , 
-[1042] = {atk1_frames = 30, atk1_trigger_frames = 10, atk2_frames = 25, id = 1042, res_Name = "hatsuchiri", win_effect_id = __rt_12}
+[1042] = {atk1_frames = 30, atk1_trigger_frames = 10, atk2_frames = 25, id = 1042, res_Name = "hatsuchiri", win_effect_id = __rt_11}
 , 
 [1043] = {atk1_frames = 30, atk1_trigger_frames = 2, atk2_frames = 30, id = 1043, res_Name = "python", 
 win_effect_id = {104316, 104318, 104319, 104320, 104321}
 }
 , 
-[1044] = {atk1_frames = 38, atk1_trigger_frames = 10, atk2_frames = 41, atk2_trigger_frames = 10, hit_target_type = 0, id = 1044, res_Name = "kuro", win_effect_id = __rt_13}
+[1044] = {atk1_frames = 38, atk1_trigger_frames = 10, atk2_frames = 41, atk2_trigger_frames = 10, hit_target_type = 0, id = 1044, res_Name = "kuro", win_effect_id = __rt_12}
 , 
 [1045] = {atk1_frames = 20, atk1_trigger_frames = 12, atk2_frames = 20, atk2_trigger_frames = 15, id = 1045, res_Name = "sueyoi", 
 win_effect_id = {1045008, 1045009, 1045010, 1045011}
@@ -229,7 +234,9 @@ spec_idle_effect_id = {104623}
 win_effect_id = {104614, 104617, 104624, 104625}
 }
 , 
-[1047] = {atk1_frames = 23, atk1_trigger_frames = 12, atk2_frames = 30, atk2_trigger_frames = 15, id = 1047, res_Name = "sockdolager"}
+[1047] = {atk1_frames = 23, atk1_trigger_frames = 12, atk2_frames = 30, atk2_trigger_frames = 15, id = 1047, res_Name = "sockdolager", 
+win_effect_id = {104716}
+}
 , 
 [1048] = {atk1_frames = 25, atk1_trigger_frames = 11, atk2_frames = 20, atk2_trigger_frames = 8, id = 1048, res_Name = "nora", 
 win_effect_id = {104818, 104819, 104821, 104822, 104823}
@@ -309,6 +316,10 @@ win_effect_id = {106516, 106517, 106518}
 , 
 [1066] = {atk1_frames = 28, atk1_trigger_frames = 6, atk2_frames = 27, atk2_trigger_frames = 3, hit_target_type = 0, id = 1066, res_Name = "erika", 
 win_effect_id = {106617}
+}
+, 
+[1067] = {atk1_frames = 31, atk1_trigger_frames = 10, atk2_frames = 28, hit_target_type = 0, id = 1067, res_Name = "cascadia", 
+win_effect_id = {106711}
 }
 , 
 [2001] = {atk1_frames = 18, atk1_trigger_frames = 6, atk2_frames = 18, id = 2001, res_Name = "raider"}
@@ -447,13 +458,13 @@ win_effect_id = {106617}
 , 
 [2068] = {atk1_frames = 29, atk1_trigger_frames = 6, atk2_frames = 29, atk2_trigger_frames = 6, id = 2068, res_Name = "judge"}
 , 
-[2069] = {atk1_frames = 14, atk1_trigger_frames = 6, atk2_frames = 28, atk2_trigger_frames = 12, id = 2069, overide_bind_point = __rt_14, res_Name = "memechan_anna"}
+[2069] = {atk1_frames = 14, atk1_trigger_frames = 6, atk2_frames = 28, atk2_trigger_frames = 12, id = 2069, overide_bind_point = __rt_13, res_Name = "memechan_anna"}
 , 
-[2070] = {atk1_frames = 24, atk1_trigger_frames = 8, atk2_frames = 24, atk2_trigger_frames = 8, id = 2070, overide_bind_point = __rt_14, res_Name = "memechan_betty"}
+[2070] = {atk1_frames = 24, atk1_trigger_frames = 8, atk2_frames = 24, atk2_trigger_frames = 8, id = 2070, overide_bind_point = __rt_13, res_Name = "memechan_betty"}
 , 
-[2071] = {atk1_frames = 29, atk1_trigger_frames = 6, atk2_frames = 29, atk2_trigger_frames = 6, id = 2071, overide_bind_point = __rt_14, res_Name = "memechan_bonee"}
+[2071] = {atk1_frames = 29, atk1_trigger_frames = 6, atk2_frames = 29, atk2_trigger_frames = 6, id = 2071, overide_bind_point = __rt_13, res_Name = "memechan_bonee"}
 , 
-[2072] = {atk1_frames = 29, atk1_trigger_frames = 6, atk2_frames = 29, atk2_trigger_frames = 6, id = 2072, overide_bind_point = __rt_14, res_Name = "memechan_sakuya"}
+[2072] = {atk1_frames = 29, atk1_trigger_frames = 6, atk2_frames = 29, atk2_trigger_frames = 6, id = 2072, overide_bind_point = __rt_13, res_Name = "memechan_sakuya"}
 , 
 [2073] = {atk1_frames = 26, atk1_trigger_frames = 9, atk2_frames = 26, atk2_trigger_frames = 11, hit_target_type = 2, id = 2073, res_Name = "whisper"}
 , 
@@ -473,11 +484,11 @@ win_effect_id = {106617}
 , 
 [2082] = {atk1_frames = 23, atk1_trigger_frames = 9, atk2_frames = 23, atk2_trigger_frames = 9, id = 2082, res_Name = "silence_summoner"}
 , 
-[2083] = {atk1_frames = 14, atk1_trigger_frames = 6, atk2_frames = 28, atk2_trigger_frames = 12, id = 2083, overide_bind_point = __rt_14, res_Name = "memechan_lam"}
+[2083] = {atk1_frames = 14, atk1_trigger_frames = 6, atk2_frames = 28, atk2_trigger_frames = 12, id = 2083, overide_bind_point = __rt_13, res_Name = "memechan_lam"}
 , 
-[2084] = {atk1_frames = 24, atk1_trigger_frames = 8, atk2_frames = 24, atk2_trigger_frames = 8, id = 2084, overide_bind_point = __rt_14, res_Name = "memechan_magnhilda"}
+[2084] = {atk1_frames = 24, atk1_trigger_frames = 8, atk2_frames = 24, atk2_trigger_frames = 8, id = 2084, overide_bind_point = __rt_13, res_Name = "memechan_magnhilda"}
 , 
-[2085] = {atk1_frames = 14, atk1_trigger_frames = 6, atk2_frames = 28, atk2_trigger_frames = 12, id = 2085, overide_bind_point = __rt_14, res_Name = "memechan_nora"}
+[2085] = {atk1_frames = 14, atk1_trigger_frames = 6, atk2_frames = 28, atk2_trigger_frames = 12, id = 2085, overide_bind_point = __rt_13, res_Name = "memechan_nora"}
 , 
 [2086] = {atk1_frames = 29, atk2_frames = 29, id = 2086, res_Name = "occulator"}
 , 
@@ -485,9 +496,9 @@ win_effect_id = {106617}
 overide_bind_point = {[5] = 208302, [9] = 208303}
 , res_Name = "firechaser"}
 , 
-[2088] = {atk1_frames = 21, atk1_trigger_frames = 9, atk2_frames = 21, atk2_trigger_frames = 9, id = 2088, overide_bind_point = __rt_15, res_Name = "evilsower"}
+[2088] = {atk1_frames = 21, atk1_trigger_frames = 9, atk2_frames = 21, atk2_trigger_frames = 9, id = 2088, overide_bind_point = __rt_14, res_Name = "evilsower"}
 , 
-[2089] = {atk1_frames = 21, atk1_trigger_frames = 8, atk2_frames = 20, atk2_trigger_frames = 8, id = 2089, overide_bind_point = __rt_16, res_Name = "dusteater"}
+[2089] = {atk1_frames = 21, atk1_trigger_frames = 8, atk2_frames = 20, atk2_trigger_frames = 8, id = 2089, overide_bind_point = __rt_15, res_Name = "dusteater"}
 , 
 [2090] = {atk1_frames = 28, atk1_trigger_frames = 8, atk2_frames = 25, atk2_trigger_frames = 9, id = 2090, 
 overide_bind_point = {[9] = 208601}
@@ -533,7 +544,7 @@ overide_bind_point = {[9] = 208601}
 , 
 [2115] = {atk1_frames = 25, atk1_trigger_frames = 12, atk2_frames = 24, atk2_trigger_frames = 14, id = 2115, res_Name = "snooper_red"}
 , 
-[2116] = {atk1_frames = 21, atk1_trigger_frames = 9, atk2_frames = 21, atk2_trigger_frames = 9, hit_target_type = 2, id = 2116, overide_bind_point = __rt_15, res_Name = "evilsower_red"}
+[2116] = {atk1_frames = 21, atk1_trigger_frames = 9, atk2_frames = 21, atk2_trigger_frames = 9, hit_target_type = 2, id = 2116, overide_bind_point = __rt_14, res_Name = "evilsower_red"}
 , 
 [2117] = {atk1_frames = 30, atk2_frames = 30, id = 2117, res_Name = "jiangyu_wuxia_hx"}
 , 
@@ -593,7 +604,7 @@ overide_bind_point = {[9] = 208601}
 , 
 [3027] = {atk1_frames = 28, atk1_trigger_frames = 10, atk2_frames = 29, atk2_trigger_frames = 10, id = 3027, res_Name = "puzzle_monster"}
 , 
-[3028] = {atk1_trigger_frames = 0, atk2_trigger_frames = 0, id = 3028, overide_bind_point = __rt_16, res_Name = "dusteater_weiba"}
+[3028] = {atk1_trigger_frames = 0, atk2_trigger_frames = 0, id = 3028, overide_bind_point = __rt_15, res_Name = "dusteater_weiba"}
 , 
 [3029] = {atk1_trigger_frames = 0, atk2_trigger_frames = 0, base_move_spd = 0, death_frames = 0, hit_target_type = 2, id = 3029, res_Name = "deco01"}
 , 
@@ -643,11 +654,13 @@ win_effect_id = {102008}
 , 
 [102300] = {atk1_frames = 22, atk1_trigger_frames = 12, atk2_frames = 22, atk2_trigger_frames = 10, hit_target_type = 2, id = 102300, res_Name = "bonee", win_effect_id = __rt_8}
 , 
-[102500] = {atk1_frames = 29, atk1_trigger_frames = 9, atk2_frames = 26, atk2_trigger_frames = 10, id = 102500, res_Name = "twigs", win_effect_id = __rt_9}
+[102500] = {atk1_frames = 29, atk1_trigger_frames = 9, atk2_frames = 26, atk2_trigger_frames = 10, id = 102500, res_Name = "twigs", 
+win_effect_id = {102510, 102511}
+}
 , 
 [102501] = {atk1_frames = 29, atk1_trigger_frames = 9, atk2_frames = 26, atk2_trigger_frames = 10, id = 102501, res_Name = "twigs_swimsuit"}
 , 
-[102600] = {atk1_frames = 27, atk1_trigger_frames = 13, atk2_frames = 27, atk2_trigger_frames = 15, id = 102600, res_Name = "nanaka", win_effect_id = __rt_10}
+[102600] = {atk1_frames = 27, atk1_trigger_frames = 13, atk2_frames = 27, atk2_trigger_frames = 15, id = 102600, res_Name = "nanaka", win_effect_id = __rt_9}
 , 
 [103200] = {atk1_frames = 41, atk2_frames = 41, base_move_spd = 150, id = 103200, res_Name = "octogen", 
 win_effect_id = {103210}
@@ -659,7 +672,7 @@ win_effect_id = {103210}
 win_effect_id = {103701}
 }
 , 
-[103800] = {atk1_frames = 25, atk1_trigger_frames = 5, atk2_frames = 25, atk2_trigger_frames = 5, base_move_spd = 150, id = 103800, res_Name = "sakuya", win_effect_id = __rt_11}
+[103800] = {atk1_frames = 25, atk1_trigger_frames = 5, atk2_frames = 25, atk2_trigger_frames = 5, base_move_spd = 150, id = 103800, res_Name = "sakuya", win_effect_id = __rt_10}
 , 
 [103900] = {atk1_frames = 33, atk1_trigger_frames = 6, atk2_frames = 33, atk2_trigger_frames = 10, base_move_spd = 130, id = 103900, res_Name = "centaureissi"}
 , 
@@ -667,13 +680,13 @@ win_effect_id = {103701}
 win_effect_id = {104119, 104120, 104121}
 }
 , 
-[104200] = {atk1_frames = 30, atk1_trigger_frames = 10, atk2_frames = 25, id = 104200, res_Name = "hatsuchiri", win_effect_id = __rt_12}
+[104200] = {atk1_frames = 30, atk1_trigger_frames = 10, atk2_frames = 25, id = 104200, res_Name = "hatsuchiri", win_effect_id = __rt_11}
 , 
 [104300] = {atk1_frames = 30, atk1_trigger_frames = 2, atk2_frames = 30, id = 104300, res_Name = "python", 
 win_effect_id = {104316}
 }
 , 
-[104400] = {atk1_frames = 38, atk1_trigger_frames = 10, atk2_frames = 41, atk2_trigger_frames = 10, hit_target_type = 0, id = 104400, res_Name = "kuro", win_effect_id = __rt_13}
+[104400] = {atk1_frames = 38, atk1_trigger_frames = 10, atk2_frames = 41, atk2_trigger_frames = 10, hit_target_type = 0, id = 104400, res_Name = "kuro", win_effect_id = __rt_12}
 , 
 [104900] = {atk1_frames = 23, atk2_frames = 25, atk2_trigger_frames = 11, id = 104900, res_Name = "magnhilda"}
 , 

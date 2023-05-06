@@ -146,7 +146,7 @@ end
 
 UISnakeGame._OnBtnGamePause = function(self)
   -- function num : 0_10 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UISnakeGame._OnReturnClick = function(self)

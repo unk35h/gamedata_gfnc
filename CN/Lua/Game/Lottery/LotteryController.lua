@@ -489,9 +489,8 @@ end
 LotteryController.LtrShowEnd = function(self, isSkip, notNeedPopPreview)
   -- function num : 0_25 , upvalues : _ENV
   UIManager:HideWindow(UIWindowTypeID.LotteryShow)
-  if not isSkip then
-    (UIUtil.PopFromBackStack)()
-  end
+  ;
+  (UIUtil.PopFromBackStackByWinId)(UIWindowTypeID.LotteryShow)
   if self.rewardElemList == nil then
     return 
   end

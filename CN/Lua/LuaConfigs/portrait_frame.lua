@@ -116,6 +116,10 @@ local portrait_frame = {
 [400057] = {achieve = 18, achieve_name = 48023, icon = "UsertHeadFrame_56", id = 400057, name = 224129}
 , 
 [400058] = {icon = "UsertHeadFrame_57", id = 400058, name = 507379, type = 3, type_name = 298575}
+, 
+[400059] = {achieve_name = 304823, icon = "UsertHeadFrame_58", id = 400059, name = 64968}
+, 
+[400060] = {icon = "UsertHeadFrame_59", id = 400060, name = 205419, type = 3, type_name = 298575}
 }
 local __default_values = {achieve = 3, achieve_name = 36087, dyn_frame = "", fx_type = 0, icon = "UsertHeadFrame_0", id = 400001, is_hide = false, locked = 0, name = 130350, type = 4, type_name = 384123}
 local base = {__index = __default_values, __newindex = function()
@@ -127,7 +131,7 @@ for k,v in pairs(portrait_frame) do
   setmetatable(v, base)
 end
 local __rawdata = {__basemetatable = base, 
-typeCount = {1, 4, 18, 34, 1; [0] = 1}
+typeCount = {1, 4, 19, 35, 1; [0] = 1}
 , 
 types = {325556, 465779, 298575, 384123, 222034; [0] = 178435}
 }

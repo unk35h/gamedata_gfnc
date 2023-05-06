@@ -24,9 +24,7 @@ end
 
 UICurrentChip.InitCurrentChip = function(self, chipDataList)
   -- function num : 0_1 , upvalues : _ENV, ChipEnum
-  (UIUtil.Push2BackStack)(self, self.Delete)
-  ;
-  (UIUtil.HideTopStatus)()
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self._BackAction)):PushTopStatusDataToBackStack()
   self.careerChipDataDic = {}
   for _,chipData in ipairs(chipDataList) do
     local key = nil
@@ -38,7 +36,7 @@ UICurrentChip.InitCurrentChip = function(self, chipDataList)
     local list = (self.careerChipDataDic)[key]
     if list == nil then
       list = {}
-      -- DECOMPILER ERROR at PC32: Confused about usage of register: R9 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC33: Confused about usage of register: R9 in 'UnsetPending'
 
       ;
       (self.careerChipDataDic)[key] = list
@@ -118,25 +116,30 @@ UICurrentChip.OnSelectCareerTag = function(self, careerTag, flag)
   end
 end
 
+UICurrentChip._BackAction = function(self)
+  -- function num : 0_3
+  self:Delete()
+end
+
 UICurrentChip.OnClickCloseCurrentChip = function(self)
-  -- function num : 0_3 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  -- function num : 0_4 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UICurrentChip.SetCurrentChipCloseFunc = function(self, func)
-  -- function num : 0_4
+  -- function num : 0_5
   self.closeFunc = func
 end
 
 UICurrentChip.OnHide = function(self)
-  -- function num : 0_5 , upvalues : _ENV
+  -- function num : 0_6 , upvalues : _ENV
   if ExplorationManager:GetDynPlayer() == nil then
     UIManager:ShowWindowOnly(UIWindowTypeID.TopStatus)
   end
 end
 
 UICurrentChip.OnDelete = function(self)
-  -- function num : 0_6 , upvalues : _ENV, base
+  -- function num : 0_7 , upvalues : _ENV, base
   if self.resloader ~= nil then
     (self.resloader):Put2Pool()
     self.resloader = nil

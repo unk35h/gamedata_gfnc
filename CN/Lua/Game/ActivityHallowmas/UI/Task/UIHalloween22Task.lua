@@ -190,7 +190,7 @@ end
 
 UIHalloween22Task.OnClickTaskClose = function(self)
   -- function num : 0_9 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIHalloween22Task.OnCloseHalloweenTask = function(self)

@@ -59,6 +59,9 @@ bs_106302.PlaySkill = function(self, data)
         self:RealPlaySkill_yellow()
       end
     end
+    if self.colorNum > 20 then
+      self.colorNum = 20
+    end
   end
 end
 

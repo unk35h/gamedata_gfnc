@@ -31,7 +31,7 @@ end
 
 UINATHDungeonInfo.__OnClickCloseBtnInfo = function(self)
   -- function num : 0_3 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 return UINATHDungeonInfo

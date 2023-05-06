@@ -12,23 +12,20 @@ end
 
 UINCSTSkillDetail.InitCSTSkillDetail = function(self, cmdSkillCtrl, cmdSkillData, resLoader, isEquip)
   -- function num : 0_1 , upvalues : _ENV
-  if not self.SettedTopStatus then
-    (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
-    self.SettedTopStatus = true
-  end
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack(true)
   self.cmdSkillCtrl = cmdSkillCtrl
   self.cmdSkillData = cmdSkillData
   self.resLoader = resLoader
   self.isEquip = isEquip
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R5 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC18: Confused about usage of register: R5 in 'UnsetPending'
 
   ;
   ((self.ui).tex_Name).text = cmdSkillData:GetName()
-  -- DECOMPILER ERROR at PC24: Confused about usage of register: R5 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC23: Confused about usage of register: R5 in 'UnsetPending'
 
   ;
   ((self.ui).tex_Desc).text = cmdSkillData:GetDescribe()
-  -- DECOMPILER ERROR at PC27: Confused about usage of register: R5 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC26: Confused about usage of register: R5 in 'UnsetPending'
 
   ;
   ((self.ui).img_Icon).enabled = false
@@ -122,14 +119,11 @@ end
 UINCSTSkillDetail.BackAction = function(self)
   -- function num : 0_4
   self:Hide()
-  self.SettedTopStatus = false
 end
 
 UINCSTSkillDetail.HideSelf = function(self)
   -- function num : 0_5 , upvalues : _ENV
-  if self.SettedTopStatus then
-    (UIUtil.OnClickBack)()
-  end
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UINCSTSkillDetail.OnDelete = function(self)

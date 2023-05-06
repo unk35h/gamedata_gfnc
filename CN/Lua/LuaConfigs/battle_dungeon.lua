@@ -160,7 +160,7 @@ local __rt_157 = {2537, 8101, 8102, 8103}
 local __rt_158 = {2537, 8102}
 local __rt_159 = {2537, 8103}
 local __rt_160 = {2538, 8101}
-if not createtable or not createtable(261, 0) then
+if not createtable or not createtable(274, 0) then
   local __rt = {}
 end
 __rt[1] = {2538, 8101, 8102, 8103}
@@ -262,192 +262,205 @@ __rt[96] = {2566, 8101}
 __rt[97] = {2566, 8101, 8102, 8103}
 __rt[98] = {2566, 8102}
 __rt[99] = {2566, 8103}
-__rt[100] = {10}
-__rt[101] = {1003}
-__rt[102] = {3000}
-__rt[103] = {100}
-__rt[104] = {12}
-__rt[105] = {5000}
-__rt[106] = {7, 3}
-__rt[107] = {1, 0}
-__rt[108] = {15}
-__rt[109] = {18}
-__rt[110] = {20}
-__rt[111] = {24}
-__rt[112] = {27}
-__rt[113] = {12000}
-__rt[114] = {30}
-__rt[115] = {1012}
-__rt[116] = {1000}
-__rt[117] = {101}
-__rt[118] = {2000}
-__rt[119] = {6001}
-__rt[120] = {2}
-__rt[121] = {8017}
-__rt[122] = {3}
-__rt[123] = {7}
-__rt[124] = {1}
-__rt[125] = {8018}
-__rt[126] = {6002}
-__rt[127] = {8099}
-__rt[128] = {1804}
-__rt[129] = {1814}
-__rt[130] = {1814, 1809}
-__rt[131] = {25}
-__rt[132] = {1819}
-__rt[133] = {1819, 1814}
-__rt[134] = {1824}
-__rt[135] = {1824, 1819}
-__rt[136] = {1803}
-__rt[137] = {1813}
-__rt[138] = {1813, 1808}
-__rt[139] = {1818}
-__rt[140] = {1818, 1813}
-__rt[141] = {1823}
-__rt[142] = {1823, 1818}
-__rt[143] = {1805}
-__rt[144] = {1815}
-__rt[145] = {1815, 1810}
-__rt[146] = {1820}
-__rt[147] = {1820, 1815}
-__rt[148] = {1825}
-__rt[149] = {1825, 1820}
-__rt[150] = {1802}
-__rt[151] = {1812}
-__rt[152] = {1812, 1807}
-__rt[153] = {1817}
-__rt[154] = {1817, 1812}
-__rt[155] = {1822}
-__rt[156] = {1822, 1817}
-__rt[157] = {1801}
-__rt[158] = {1811}
-__rt[159] = {1811, 1806}
-__rt[160] = {1816}
-__rt[161] = {1816, 1811}
-__rt[162] = {1821}
-__rt[163] = {1821, 1816}
-__rt[164] = {1501}
-__rt[165] = {200}
-__rt[166] = {5, 1}
-__rt[167] = {300}
-__rt[168] = {500}
-__rt[169] = {1901}
-__rt[170] = {1902}
-__rt[171] = {1902, 1901}
-__rt[172] = {6}
-__rt[173] = {1903}
-__rt[174] = {40}
-__rt[175] = {25008}
-__rt[176] = {1019, 1003}
-__rt[177] = {1018}
-__rt[178] = {5011}
-__rt[179] = {8217}
-__rt[180] = {1020, 5009}
-__rt[181] = {1008}
-__rt[182] = {50}
-__rt[183] = {6003}
-__rt[184] = {1502}
-__rt[185] = {1002, 5009}
-__rt[186] = {1006}
-__rt[187] = {3001, 5009}
-__rt[188] = {1, 1}
-__rt[189] = {300, 1}
-__rt[190] = {4}
-__rt[191] = {400, 1}
-__rt[192] = {600, 1}
-__rt[193] = {1503}
-__rt[194] = {50000}
-__rt[195] = {1504, 1020}
-__rt[196] = {30, 5}
-__rt[197] = {1026}
-__rt[198] = {60}
-__rt[199] = {70}
-__rt[200] = {80}
-__rt[201] = {90}
-__rt[202] = {12, 7}
-__rt[203] = {-1, 1}
-__rt[204] = {20038}
-__rt[205] = {20048}
-__rt[206] = {20176}
-__rt[207] = {20044}
-__rt[208] = {20180}
-__rt[209] = {[5031] = 1, [5111] = 2, [5141] = 3}
-__rt[210] = {5031, 5111, 5141}
-__rt[211] = {3, 3, 3}
-__rt[212] = {
-{
-chip_ids = {80003, 80004, 80002}
-, chip_lvs = __rt[211]}
-}
-__rt[213] = {40033}
-__rt[214] = {[5014] = 1, [5024] = 2, [5031] = 3}
-__rt[215] = {5014, 5024, 5031}
+__rt[100] = {2567, 8101}
+__rt[101] = {2567, 8101, 8102, 8103}
+__rt[102] = {2567, 8102}
+__rt[103] = {2567, 8103}
+__rt[104] = {10}
+__rt[105] = {1003}
+__rt[106] = {3000}
+__rt[107] = {100}
+__rt[108] = {12}
+__rt[109] = {5000}
+__rt[110] = {7, 3}
+__rt[111] = {1, 0}
+__rt[112] = {15}
+__rt[113] = {18}
+__rt[114] = {20}
+__rt[115] = {24}
+__rt[116] = {27}
+__rt[117] = {12000}
+__rt[118] = {30}
+__rt[119] = {1012}
+__rt[120] = {1000}
+__rt[121] = {101}
+__rt[122] = {2000}
+__rt[123] = {6001}
+__rt[124] = {2}
+__rt[125] = {8017}
+__rt[126] = {3}
+__rt[127] = {7}
+__rt[128] = {1}
+__rt[129] = {8018}
+__rt[130] = {6002}
+__rt[131] = {8099}
+__rt[132] = {1804}
+__rt[133] = {1814}
+__rt[134] = {1814, 1809}
+__rt[135] = {25}
+__rt[136] = {1819}
+__rt[137] = {1819, 1814}
+__rt[138] = {1824}
+__rt[139] = {1824, 1819}
+__rt[140] = {1803}
+__rt[141] = {1813}
+__rt[142] = {1813, 1808}
+__rt[143] = {1818}
+__rt[144] = {1818, 1813}
+__rt[145] = {1823}
+__rt[146] = {1823, 1818}
+__rt[147] = {1805}
+__rt[148] = {1815}
+__rt[149] = {1815, 1810}
+__rt[150] = {1820}
+__rt[151] = {1820, 1815}
+__rt[152] = {1825}
+__rt[153] = {1825, 1820}
+__rt[154] = {1802}
+__rt[155] = {1812}
+__rt[156] = {1812, 1807}
+__rt[157] = {1817}
+__rt[158] = {1817, 1812}
+__rt[159] = {1822}
+__rt[160] = {1822, 1817}
+__rt[161] = {1801}
+__rt[162] = {1811}
+__rt[163] = {1811, 1806}
+__rt[164] = {1816}
+__rt[165] = {1816, 1811}
+__rt[166] = {1821}
+__rt[167] = {1821, 1816}
+__rt[168] = {1501}
+__rt[169] = {200}
+__rt[170] = {5, 1}
+__rt[171] = {300}
+__rt[172] = {500}
+__rt[173] = {1901}
+__rt[174] = {1902}
+__rt[175] = {1902, 1901}
+__rt[176] = {6}
+__rt[177] = {1903}
+__rt[178] = {40}
+__rt[179] = {25008}
+__rt[180] = {1019, 1003}
+__rt[181] = {1018}
+__rt[182] = {5011}
+__rt[183] = {8217}
+__rt[184] = {1020, 5009}
+__rt[185] = {1008}
+__rt[186] = {50}
+__rt[187] = {6003}
+__rt[188] = {1502}
+__rt[189] = {1002, 5009}
+__rt[190] = {1006}
+__rt[191] = {3001, 5009}
+__rt[192] = {1, 1}
+__rt[193] = {300, 1}
+__rt[194] = {4}
+__rt[195] = {400, 1}
+__rt[196] = {600, 1}
+__rt[197] = {1503}
+__rt[198] = {50000}
+__rt[199] = {1504, 1020}
+__rt[200] = {30, 5}
+__rt[201] = {1026}
+__rt[202] = {60}
+__rt[203] = {70}
+__rt[204] = {80}
+__rt[205] = {90}
+__rt[206] = {12, 7}
+__rt[207] = {-1, 1}
+__rt[208] = {20038}
+__rt[209] = {20048}
+__rt[210] = {20176}
+__rt[211] = {20044}
+__rt[212] = {20180}
+__rt[213] = {[5031] = 1, [5111] = 2, [5141] = 3}
+__rt[214] = {5031, 5111, 5141}
+__rt[215] = {3, 3, 3}
 __rt[216] = {
 {
-chip_ids = {80001, 80002, 80008}
-, chip_lvs = __rt[211]}
+chip_ids = {80003, 80004, 80002}
+, chip_lvs = __rt[215]}
 }
-__rt[217] = {[5014] = 1, [5024] = 2, [5131] = 3}
-__rt[218] = {5014, 5024, 5131}
-__rt[219] = {
+__rt[217] = {40033}
+__rt[218] = {[5014] = 1, [5024] = 2, [5031] = 3}
+__rt[219] = {5014, 5024, 5031}
+__rt[220] = {
+{
+chip_ids = {80001, 80002, 80008}
+, chip_lvs = __rt[215]}
+}
+__rt[221] = {[5014] = 1, [5024] = 2, [5131] = 3}
+__rt[222] = {5014, 5024, 5131}
+__rt[223] = {
 {
 chip_ids = {80005, 80006, 80007}
-, chip_lvs = __rt[211]}
+, chip_lvs = __rt[215]}
 }
-__rt[220] = {150}
-__rt[221] = {3001}
-__rt[222] = {1020}
-__rt[223] = {[5014] = 1, [5031] = 3, [5111] = 2}
-__rt[224] = {5014, 5111, 5031}
-__rt[225] = {
+__rt[224] = {150}
+__rt[225] = {3001}
+__rt[226] = {1020}
+__rt[227] = {[5014] = 1, [5031] = 3, [5111] = 2}
+__rt[228] = {5014, 5111, 5031}
+__rt[229] = {
 {
 chip_ids = {80011, 80012, 80013}
-, chip_lvs = __rt[211]}
+, chip_lvs = __rt[215]}
 }
-__rt[226] = {5007}
-__rt[227] = {
+__rt[230] = {5007}
+__rt[231] = {
 {
 chip_ids = {80014, 80015, 80016}
-, chip_lvs = __rt[211]}
+, chip_lvs = __rt[215]}
 }
-__rt[228] = {
+__rt[232] = {
 {
 chip_ids = {80017, 80018, 80019}
-, chip_lvs = __rt[211]}
+, chip_lvs = __rt[215]}
 }
-__rt[229] = {1829}
-__rt[230] = {8137}
-__rt[231] = {21233, 21234}
-__rt[232] = {12, 23, 7}
-__rt[233] = {23, 7}
-__rt[234] = {1203}
-__rt[235] = {3, 7}
-__rt[236] = {0, 1}
-__rt[237] = {120}
-__rt[238] = {1205}
-__rt[239] = {1049}
-__rt[240] = {3, 12}
-__rt[241] = {0, 1666252799}
-__rt[242] = {1207}
-__rt[243] = {1051}
-__rt[244] = {0, 1668671999}
-__rt[245] = {1209}
-__rt[246] = {1052}
-__rt[247] = {0, 1671091199}
-__rt[248] = {40033, 22205}
-__rt[249] = {1214}
-__rt[250] = {1054}
-__rt[251] = {0, 1673510395}
-__rt[252] = {1219}
-__rt[253] = {1056}
-__rt[254] = {0, 1675929599}
-__rt[255] = {1221}
-__rt[256] = {1061}
-__rt[257] = {0, 1678348799}
-__rt[258] = {1226}
-__rt[259] = {1063}
-__rt[260] = {0, 1681977599}
-__rt[261] = {1211, 1212}
+__rt[233] = {1829}
+__rt[234] = {8137}
+__rt[235] = {21233, 21234}
+__rt[236] = {12, 23, 7}
+__rt[237] = {23, 7}
+__rt[238] = {1203}
+__rt[239] = {3, 7}
+__rt[240] = {0, 1}
+__rt[241] = {120}
+__rt[242] = {1205}
+__rt[243] = {1049}
+__rt[244] = {3, 12}
+__rt[245] = {0, 1666252799}
+__rt[246] = {1207}
+__rt[247] = {1051}
+__rt[248] = {0, 1668671999}
+__rt[249] = {1209}
+__rt[250] = {1052}
+__rt[251] = {0, 1671091199}
+__rt[252] = {40033, 22205}
+__rt[253] = {1214}
+__rt[254] = {1054}
+__rt[255] = {0, 1673510395}
+__rt[256] = {1219}
+__rt[257] = {1056}
+__rt[258] = {0, 1675929599}
+__rt[259] = {1221}
+__rt[260] = {1061}
+__rt[261] = {0, 1678348799}
+__rt[262] = {1226}
+__rt[263] = {1063}
+__rt[264] = {0, 1681977599}
+__rt[265] = {1229}
+__rt[266] = {1065}
+__rt[267] = {0, 1684396799}
+__rt[268] = {1211, 1212}
+__rt[269] = {280, 800}
+__rt[270] = {420, 1300}
+__rt[271] = {540, 1800}
+__rt[272] = {700, 2300}
+__rt[273] = {1000, 3300}
+__rt[274] = {1064, 1227}
 local battle_dungeon = {
 [5011] = {first_reward_ids = __rt_4, first_reward_nums = __rt_5, frequency_day = 1, id = 5011, name = 398346, normal_drop = __rt_6, play_para = 10011, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
@@ -779,7 +792,7 @@ pre_para1 = {5154, 1015}
 pre_para1 = {5155, 1015}
 , pre_para2 = __rt_15}
 , 
-[5161] = {first_reward_ids = __rt_72, first_reward_nums = __rt_5, frequency_day = 1, id = 5161, name = 195708, normal_drop = __rt_73, pre_condition = __rt_1, pre_para2 = __rt_1}
+[5161] = {first_reward_ids = __rt_72, first_reward_nums = __rt_5, frequency_day = 1, id = 5161, name = 195708, normal_drop = __rt_73, play_para = 10161, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [5162] = {combat = 1250, first_reward_ids = __rt_72, first_reward_nums = __rt_5, frequency_day = 1, id = 5162, name = 134131, normal_drop = __rt_73, play_para = 10162, 
 pre_para1 = {5161, 1016}
@@ -1285,7 +1298,7 @@ pre_para1 = {5384, 1038}
 pre_para1 = {5385, 1038}
 , pre_para2 = __rt_15}
 , 
-[5391] = {first_reward_ids = __rt[4], first_reward_nums = __rt_5, frequency_day = 1, id = 5391, name = 507169, normal_drop = __rt[5], play_para = 10391, pre_condition = __rt_1, pre_para2 = __rt_1}
+[5391] = {first_reward_ids = __rt[4], first_reward_nums = __rt_5, frequency_day = 1, id = 5391, name = 507169, normal_drop = __rt[5], pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [5392] = {combat = 1250, first_reward_ids = __rt[4], first_reward_nums = __rt_5, frequency_day = 1, id = 5392, name = 445592, normal_drop = __rt[5], play_para = 10392, 
 pre_para1 = {5391, 1039}
@@ -1395,7 +1408,7 @@ pre_para1 = {5434, 1043}
 pre_para1 = {5435, 1043}
 , pre_para2 = __rt_15}
 , 
-[5441] = {first_reward_ids = __rt[24], first_reward_nums = __rt_5, frequency_day = 1, id = 5441, name = 103466, normal_drop = __rt[25], pre_condition = __rt_1, pre_para2 = __rt_1}
+[5441] = {first_reward_ids = __rt[24], first_reward_nums = __rt_5, frequency_day = 1, id = 5441, name = 103466, normal_drop = __rt[25], play_para = 10161, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [5442] = {combat = 1250, first_reward_ids = __rt[24], first_reward_nums = __rt_5, frequency_day = 1, id = 5442, name = 41889, normal_drop = __rt[25], play_para = 10162, 
 pre_para1 = {5441, 1044}
@@ -1439,7 +1452,7 @@ pre_para1 = {5454, 1045}
 pre_para1 = {5455, 1045}
 , pre_para2 = __rt_15}
 , 
-[5461] = {first_reward_ids = __rt[32], first_reward_nums = __rt_5, frequency_day = 1, id = 5461, name = 124908, normal_drop = __rt[33], pre_condition = __rt_1, pre_para2 = __rt_1}
+[5461] = {first_reward_ids = __rt[32], first_reward_nums = __rt_5, frequency_day = 1, id = 5461, name = 124908, normal_drop = __rt[33], play_para = 10161, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [5462] = {combat = 1250, first_reward_ids = __rt[32], first_reward_nums = __rt_5, frequency_day = 1, id = 5462, name = 63331, normal_drop = __rt[33], play_para = 10162, 
 pre_para1 = {5461, 1046}
@@ -1461,7 +1474,7 @@ pre_para1 = {5464, 1046}
 pre_para1 = {5465, 1046}
 , pre_para2 = __rt_15}
 , 
-[5481] = {first_reward_ids = __rt[36], first_reward_nums = __rt_5, frequency_day = 1, id = 5481, name = 355412, normal_drop = __rt[37], pre_condition = __rt_1, pre_para2 = __rt_1}
+[5481] = {first_reward_ids = __rt[36], first_reward_nums = __rt_5, frequency_day = 1, id = 5481, name = 355412, normal_drop = __rt[37], play_para = 10161, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [5482] = {combat = 1250, first_reward_ids = __rt[36], first_reward_nums = __rt_5, frequency_day = 1, id = 5482, name = 293835, normal_drop = __rt[37], play_para = 10162, 
 pre_para1 = {5481, 1048}
@@ -1505,7 +1518,7 @@ pre_para1 = {5494, 1049}
 pre_para1 = {5495, 1049}
 , pre_para2 = __rt_15}
 , 
-[5501] = {first_reward_ids = __rt[44], first_reward_nums = __rt_5, frequency_day = 1, id = 5501, name = 213623, normal_drop = __rt[45], pre_condition = __rt_1, pre_para2 = __rt_1}
+[5501] = {first_reward_ids = __rt[44], first_reward_nums = __rt_5, frequency_day = 1, id = 5501, name = 213623, normal_drop = __rt[45], play_para = 10161, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [5502] = {combat = 1250, first_reward_ids = __rt[44], first_reward_nums = __rt_5, frequency_day = 1, id = 5502, name = 152046, normal_drop = __rt[45], play_para = 10162, 
 pre_para1 = {5501, 1050}
@@ -1527,7 +1540,7 @@ pre_para1 = {5504, 1050}
 pre_para1 = {5505, 1050}
 , pre_para2 = __rt_15}
 , 
-[5511] = {first_reward_ids = __rt[48], first_reward_nums = __rt_5, frequency_day = 1, id = 5511, name = 490630, normal_drop = __rt[49], pre_condition = __rt_1, pre_para2 = __rt_1}
+[5511] = {first_reward_ids = __rt[48], first_reward_nums = __rt_5, frequency_day = 1, id = 5511, name = 490630, normal_drop = __rt[49], play_para = 10161, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [5512] = {combat = 1250, first_reward_ids = __rt[48], first_reward_nums = __rt_5, frequency_day = 1, id = 5512, name = 429053, normal_drop = __rt[49], play_para = 10162, 
 pre_para1 = {5511, 1051}
@@ -1571,7 +1584,7 @@ pre_para1 = {5524, 1052}
 pre_para1 = {5525, 1052}
 , pre_para2 = __rt_15}
 , 
-[5531] = {first_reward_ids = __rt[56], first_reward_nums = __rt_5, frequency_day = 1, id = 5531, name = 57922, normal_drop = __rt[57], pre_condition = __rt_1, pre_para2 = __rt_1}
+[5531] = {first_reward_ids = __rt[56], first_reward_nums = __rt_5, frequency_day = 1, id = 5531, name = 57922, normal_drop = __rt[57], play_para = 10161, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [5532] = {combat = 1250, first_reward_ids = __rt[56], first_reward_nums = __rt_5, frequency_day = 1, id = 5532, name = 520633, normal_drop = __rt[57], play_para = 10162, 
 pre_para1 = {5531, 1053}
@@ -1593,7 +1606,7 @@ pre_para1 = {5534, 1053}
 pre_para1 = {5535, 1053}
 , pre_para2 = __rt_15}
 , 
-[5541] = {first_reward_ids = __rt[60], first_reward_nums = __rt_5, frequency_day = 1, id = 5541, name = 414393, normal_drop = __rt[61], play_para = 10391, pre_condition = __rt_1, pre_para2 = __rt_1}
+[5541] = {first_reward_ids = __rt[60], first_reward_nums = __rt_5, frequency_day = 1, id = 5541, name = 414393, normal_drop = __rt[61], pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [5542] = {combat = 1250, first_reward_ids = __rt[60], first_reward_nums = __rt_5, frequency_day = 1, id = 5542, name = 352816, normal_drop = __rt[61], play_para = 10392, 
 pre_para1 = {5541, 1054}
@@ -1703,7 +1716,7 @@ pre_para1 = {5594, 1059}
 pre_para1 = {5595, 1059}
 , pre_para2 = __rt_15}
 , 
-[5601] = {first_reward_ids = __rt[80], first_reward_nums = __rt_5, frequency_day = 1, id = 5601, name = 46592, normal_drop = __rt[81], play_para = 10391, pre_condition = __rt_1, pre_para2 = __rt_1}
+[5601] = {first_reward_ids = __rt[80], first_reward_nums = __rt_5, frequency_day = 1, id = 5601, name = 46592, normal_drop = __rt[81], pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [5602] = {combat = 1250, first_reward_ids = __rt[80], first_reward_nums = __rt_5, frequency_day = 1, id = 5602, name = 509303, normal_drop = __rt[81], play_para = 10392, 
 pre_para1 = {5601, 1060}
@@ -1725,7 +1738,7 @@ pre_para1 = {5604, 1060}
 pre_para1 = {5605, 1060}
 , pre_para2 = __rt_15}
 , 
-[5611] = {first_reward_ids = __rt[84], first_reward_nums = __rt_5, frequency_day = 1, id = 5611, name = 223706, normal_drop = __rt[85], play_para = 10391, pre_condition = __rt_1, pre_para2 = __rt_1}
+[5611] = {first_reward_ids = __rt[84], first_reward_nums = __rt_5, frequency_day = 1, id = 5611, name = 223706, normal_drop = __rt[85], pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [5612] = {combat = 1250, first_reward_ids = __rt[84], first_reward_nums = __rt_5, frequency_day = 1, id = 5612, name = 162129, normal_drop = __rt[85], play_para = 10392, 
 pre_para1 = {5611, 1061}
@@ -1747,7 +1760,7 @@ pre_para1 = {5614, 1061}
 pre_para1 = {5615, 1061}
 , pre_para2 = __rt_15}
 , 
-[5621] = {first_reward_ids = __rt[88], first_reward_nums = __rt_5, frequency_day = 1, id = 5621, name = 192189, normal_drop = __rt[89], play_para = 10391, pre_condition = __rt_1, pre_para2 = __rt_1}
+[5621] = {first_reward_ids = __rt[88], first_reward_nums = __rt_5, frequency_day = 1, id = 5621, name = 192189, normal_drop = __rt[89], pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [5622] = {combat = 1250, first_reward_ids = __rt[88], first_reward_nums = __rt_5, frequency_day = 1, id = 5622, name = 130612, normal_drop = __rt[89], play_para = 10392, 
 pre_para1 = {5621, 1062}
@@ -1769,7 +1782,7 @@ pre_para1 = {5624, 1062}
 pre_para1 = {5625, 1062}
 , pre_para2 = __rt_15}
 , 
-[5631] = {first_reward_ids = __rt[92], first_reward_nums = __rt_5, frequency_day = 1, id = 5631, name = 168175, normal_drop = __rt[93], play_para = 10391, pre_condition = __rt_1, pre_para2 = __rt_1}
+[5631] = {first_reward_ids = __rt[92], first_reward_nums = __rt_5, frequency_day = 1, id = 5631, name = 168175, normal_drop = __rt[93], pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [5632] = {combat = 1250, first_reward_ids = __rt[92], first_reward_nums = __rt_5, frequency_day = 1, id = 5632, name = 106598, normal_drop = __rt[93], play_para = 10392, 
 pre_para1 = {5631, 1063}
@@ -1791,7 +1804,7 @@ pre_para1 = {5634, 1063}
 pre_para1 = {5635, 1063}
 , pre_para2 = __rt_15}
 , 
-[5661] = {first_reward_ids = __rt[96], first_reward_nums = __rt_5, frequency_day = 1, id = 5661, name = 360316, normal_drop = __rt[97], play_para = 10391, pre_condition = __rt_1, pre_para2 = __rt_1}
+[5661] = {first_reward_ids = __rt[96], first_reward_nums = __rt_5, frequency_day = 1, id = 5661, name = 360316, normal_drop = __rt[97], pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [5662] = {combat = 1250, first_reward_ids = __rt[96], first_reward_nums = __rt_5, frequency_day = 1, id = 5662, name = 298739, normal_drop = __rt[97], play_para = 10392, 
 pre_para1 = {5661, 1066}
@@ -1813,1205 +1826,1227 @@ pre_para1 = {5664, 1066}
 pre_para1 = {5665, 1066}
 , pre_para2 = __rt_15}
 , 
+[5671] = {first_reward_ids = __rt[100], first_reward_nums = __rt_5, frequency_day = 1, id = 5671, name = 147068, normal_drop = __rt[101], pre_condition = __rt_1, pre_para2 = __rt_1}
+, 
+[5672] = {combat = 1250, first_reward_ids = __rt[100], first_reward_nums = __rt_5, frequency_day = 1, id = 5672, name = 85491, normal_drop = __rt[101], play_para = 10392, 
+pre_para1 = {5671, 1067}
+, pre_para2 = __rt_8}
+, 
+[5673] = {combat = 2250, first_reward_ids = __rt[102], first_reward_nums = __rt_5, frequency_day = 1, id = 5673, name = 23914, normal_drop = __rt[101], play_para = 10393, 
+pre_para1 = {5672, 1067}
+, pre_para2 = __rt_10}
+, 
+[5674] = {combat = 3000, first_reward_ids = __rt[102], frequency_day = 1, id = 5674, name = 486625, normal_drop = __rt[101], play_para = 10394, 
+pre_para1 = {5673, 1067}
+, pre_para2 = __rt_12}
+, 
+[5675] = {combat = 3400, first_reward_ids = __rt[103], frequency_day = 1, id = 5675, name = 425048, normal_drop = __rt[101], play_para = 10395, 
+pre_para1 = {5674, 1067}
+, pre_para2 = __rt_14}
+, 
+[5676] = {combat = 3950, first_reward_ids = __rt[103], frequency_day = 1, id = 5676, name = 363471, normal_drop = __rt[101], play_para = 10396, 
+pre_para1 = {5675, 1067}
+, pre_para2 = __rt_15}
+, 
 [9999] = {combat = 1250, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 5, first_reward_nums = __rt_1, id = 9999, module_id = 2000, name = 451691, play_para = 999, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [10000] = {cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 9, first_reward_nums = __rt_1, module_id = 2000, name = 186073, play_para = 1000, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [10001] = {cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 9, first_reward_nums = __rt_1, id = 10001, module_id = 2000, name = 515590, play_para = 1001, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
-[10011] = {cost_itemNums = __rt[100], dungeon_type = 10, first_reward_ids = __rt[101], first_reward_nums = __rt[102], id = 10011, module_id = 1701, name = 486909, normal_drop = __rt[101], play_para = 20011, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[103]}
+[10011] = {cost_itemNums = __rt[104], dungeon_type = 10, first_reward_ids = __rt[105], first_reward_nums = __rt[106], id = 10011, module_id = 1701, name = 486909, normal_drop = __rt[105], play_para = 20011, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[107]}
 , 
-[10012] = {combat = 2250, cost_itemNums = __rt[104], dungeon_type = 10, first_reward_ids = __rt[101], first_reward_nums = __rt[105], id = 10012, module_id = 1701, name = 425332, normal_drop = __rt[101], play_para = 20012, pre_condition = __rt[106], 
+[10012] = {combat = 2250, cost_itemNums = __rt[108], dungeon_type = 10, first_reward_ids = __rt[105], first_reward_nums = __rt[109], id = 10012, module_id = 1701, name = 425332, normal_drop = __rt[105], play_para = 20012, pre_condition = __rt[110], 
 pre_para1 = {10011, 2107}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[10013] = {combat = 3200, cost_itemNums = __rt[108], dungeon_type = 10, first_reward_ids = __rt[101], 
+[10013] = {combat = 3200, cost_itemNums = __rt[112], dungeon_type = 10, first_reward_ids = __rt[105], 
 first_reward_nums = {6000}
-, id = 10013, module_id = 1701, name = 363755, normal_drop = __rt[101], play_para = 20013, pre_condition = __rt[106], 
+, id = 10013, module_id = 1701, name = 363755, normal_drop = __rt[105], play_para = 20013, pre_condition = __rt[110], 
 pre_para1 = {10012, 2112}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[10014] = {combat = 4800, cost_itemNums = __rt[109], dungeon_type = 10, first_reward_ids = __rt[101], 
+[10014] = {combat = 4800, cost_itemNums = __rt[113], dungeon_type = 10, first_reward_ids = __rt[105], 
 first_reward_nums = {8000}
-, id = 10014, module_id = 1701, name = 302178, normal_drop = __rt[101], play_para = 20014, pre_condition = __rt[106], 
+, id = 10014, module_id = 1701, name = 302178, normal_drop = __rt[105], play_para = 20014, pre_condition = __rt[110], 
 pre_para1 = {10013, 3105}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[10015] = {combat = 5500, cost_itemNums = __rt[110], dungeon_type = 10, first_reward_ids = __rt[101], 
+[10015] = {combat = 5500, cost_itemNums = __rt[114], dungeon_type = 10, first_reward_ids = __rt[105], 
 first_reward_nums = {9000}
-, id = 10015, module_id = 1701, name = 240601, normal_drop = __rt[101], play_para = 20015, pre_condition = __rt[106], 
+, id = 10015, module_id = 1701, name = 240601, normal_drop = __rt[105], play_para = 20015, pre_condition = __rt[110], 
 pre_para1 = {10014, 3108}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[10016] = {combat = 7000, cost_itemNums = __rt[111], dungeon_type = 10, first_reward_ids = __rt[101], 
+[10016] = {combat = 7000, cost_itemNums = __rt[115], dungeon_type = 10, first_reward_ids = __rt[105], 
 first_reward_nums = {10000}
-, id = 10016, module_id = 1701, name = 179024, normal_drop = __rt[101], play_para = 20016, pre_condition = __rt[106], 
+, id = 10016, module_id = 1701, name = 179024, normal_drop = __rt[105], play_para = 20016, pre_condition = __rt[110], 
 pre_para1 = {10015, 3113}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[10017] = {combat = 8000, cost_itemNums = __rt[112], dungeon_type = 10, first_reward_ids = __rt[101], first_reward_nums = __rt[113], id = 10017, module_id = 1701, name = 117447, normal_drop = __rt[101], play_para = 20017, pre_condition = __rt[106], 
+[10017] = {combat = 8000, cost_itemNums = __rt[116], dungeon_type = 10, first_reward_ids = __rt[105], first_reward_nums = __rt[117], id = 10017, module_id = 1701, name = 117447, normal_drop = __rt[105], play_para = 20017, pre_condition = __rt[110], 
 pre_para1 = {10016, 4104}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[10018] = {combat = 10400, cost_itemNums = __rt[114], dungeon_type = 10, first_reward_ids = __rt[101], 
+[10018] = {combat = 10400, cost_itemNums = __rt[118], dungeon_type = 10, first_reward_ids = __rt[105], 
 first_reward_nums = {15000}
-, id = 10018, module_id = 1701, name = 55870, normal_drop = __rt[101], play_para = 20018, pre_condition = __rt[106], 
+, id = 10018, module_id = 1701, name = 55870, normal_drop = __rt[105], play_para = 20018, pre_condition = __rt[110], 
 pre_para1 = {10017, 4110}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[11000] = {cost_itemNums = __rt[100], dungeon_type = 11, first_reward_ids = __rt[115], first_reward_nums = __rt[116], id = 11000, module_id = 1702, name = 415856, normal_drop = __rt[115], play_para = 20021, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[117]}
+[11000] = {cost_itemNums = __rt[104], dungeon_type = 11, first_reward_ids = __rt[119], first_reward_nums = __rt[120], id = 11000, module_id = 1702, name = 415856, normal_drop = __rt[119], play_para = 20021, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[121]}
 , 
-[11001] = {combat = 1400, cost_itemNums = __rt[104], dungeon_type = 11, first_reward_ids = __rt[115], first_reward_nums = __rt[118], id = 11001, module_id = 1702, name = 354279, normal_drop = __rt[115], play_para = 20022, pre_condition = __rt[106], 
+[11001] = {combat = 1400, cost_itemNums = __rt[108], dungeon_type = 11, first_reward_ids = __rt[119], first_reward_nums = __rt[122], id = 11001, module_id = 1702, name = 354279, normal_drop = __rt[119], play_para = 20022, pre_condition = __rt[110], 
 pre_para1 = {11000, 1112}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[11002] = {combat = 2400, cost_itemNums = __rt[108], dungeon_type = 11, first_reward_ids = __rt[115], first_reward_nums = __rt[102], id = 11002, module_id = 1702, name = 292702, normal_drop = __rt[115], play_para = 20023, pre_condition = __rt[106], 
+[11002] = {combat = 2400, cost_itemNums = __rt[112], dungeon_type = 11, first_reward_ids = __rt[119], first_reward_nums = __rt[106], id = 11002, module_id = 1702, name = 292702, normal_drop = __rt[119], play_para = 20023, pre_condition = __rt[110], 
 pre_para1 = {11001, 2106}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[11003] = {combat = 3400, cost_itemNums = __rt[109], dungeon_type = 11, first_reward_ids = __rt[115], 
+[11003] = {combat = 3400, cost_itemNums = __rt[113], dungeon_type = 11, first_reward_ids = __rt[119], 
 first_reward_nums = {4000}
-, id = 11003, module_id = 1702, name = 231125, normal_drop = __rt[115], play_para = 20024, pre_condition = __rt[106], 
+, id = 11003, module_id = 1702, name = 231125, normal_drop = __rt[119], play_para = 20024, pre_condition = __rt[110], 
 pre_para1 = {11002, 2113}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[11004] = {combat = 4800, cost_itemNums = __rt[110], dungeon_type = 11, first_reward_ids = __rt[115], first_reward_nums = __rt[105], id = 11004, module_id = 1702, name = 169548, normal_drop = __rt[115], play_para = 20025, pre_condition = __rt[106], 
+[11004] = {combat = 4800, cost_itemNums = __rt[114], dungeon_type = 11, first_reward_ids = __rt[119], first_reward_nums = __rt[109], id = 11004, module_id = 1702, name = 169548, normal_drop = __rt[119], play_para = 20025, pre_condition = __rt[110], 
 pre_para1 = {11003, 3106}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[11005] = {combat = 7700, cost_itemNums = __rt[111], dungeon_type = 11, first_reward_ids = __rt[115], 
+[11005] = {combat = 7700, cost_itemNums = __rt[115], dungeon_type = 11, first_reward_ids = __rt[119], 
 first_reward_nums = {7000}
-, id = 11005, module_id = 1702, name = 107971, normal_drop = __rt[115], play_para = 20026, pre_condition = __rt[106], 
+, id = 11005, module_id = 1702, name = 107971, normal_drop = __rt[119], play_para = 20026, pre_condition = __rt[110], 
 pre_para1 = {11004, 4102}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[11006] = {combat = 9200, cost_itemNums = __rt[112], dungeon_type = 11, first_reward_ids = __rt[115], 
+[11006] = {combat = 9200, cost_itemNums = __rt[116], dungeon_type = 11, first_reward_ids = __rt[119], 
 first_reward_nums = {9500}
-, id = 11006, module_id = 1702, name = 46394, normal_drop = __rt[115], play_para = 20027, pre_condition = __rt[106], 
+, id = 11006, module_id = 1702, name = 46394, normal_drop = __rt[119], play_para = 20027, pre_condition = __rt[110], 
 pre_para1 = {11005, 4107}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[11007] = {combat = 10200, cost_itemNums = __rt[114], dungeon_type = 11, first_reward_ids = __rt[115], first_reward_nums = __rt[113], id = 11007, module_id = 1702, name = 509105, normal_drop = __rt[115], play_para = 20028, pre_condition = __rt[106], 
+[11007] = {combat = 10200, cost_itemNums = __rt[118], dungeon_type = 11, first_reward_ids = __rt[119], first_reward_nums = __rt[117], id = 11007, module_id = 1702, name = 509105, normal_drop = __rt[119], play_para = 20028, pre_condition = __rt[110], 
 pre_para1 = {11006, 4113}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12000] = {combat = 3500, cost_itemNums = __rt[108], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 12, first_reward_ids = __rt[119], first_reward_nums = __rt[120], id = 12000, module_id = 1703, name = 470568, normal_drop = __rt[121], play_para = 20031, pre_condition = __rt_1, pre_para2 = __rt_1}
+[12000] = {combat = 3500, cost_itemNums = __rt[112], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 12, first_reward_ids = __rt[123], first_reward_nums = __rt[124], id = 12000, module_id = 1703, name = 470568, normal_drop = __rt[125], play_para = 20031, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
-[12001] = {combat = 4250, cost_itemNums = __rt[108], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=5", dungeon_type = 12, first_reward_ids = __rt[119], first_reward_nums = __rt[122], id = 12001, module_id = 1703, name = 408991, normal_drop = __rt[121], play_para = 20032, pre_condition = __rt[123], pre_para1 = __rt[113]}
+[12001] = {combat = 4250, cost_itemNums = __rt[112], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=5", dungeon_type = 12, first_reward_ids = __rt[123], first_reward_nums = __rt[126], id = 12001, module_id = 1703, name = 408991, normal_drop = __rt[125], play_para = 20032, pre_condition = __rt[127], pre_para1 = __rt[117]}
 , 
-[12002] = {combat = 6000, cost_itemNums = __rt[108], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=6", dungeon_type = 12, first_reward_ids = __rt[119], first_reward_nums = __rt_3, id = 12002, module_id = 1703, name = 347414, normal_drop = __rt[121], play_para = 20033, pre_condition = __rt[123], 
+[12002] = {combat = 6000, cost_itemNums = __rt[112], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=6", dungeon_type = 12, first_reward_ids = __rt[123], first_reward_nums = __rt_3, id = 12002, module_id = 1703, name = 347414, normal_drop = __rt[125], play_para = 20033, pre_condition = __rt[127], 
 pre_para1 = {12001}
 }
 , 
-[12003] = {combat = 8000, cost_itemNums = __rt[110], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=7", dungeon_type = 12, first_reward_ids = __rt[119], 
+[12003] = {combat = 8000, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=7", dungeon_type = 12, first_reward_ids = __rt[123], 
 first_reward_nums = {8}
-, id = 12003, module_id = 1704, name = 414648, normal_drop = __rt[125], play_para = 20034, pre_condition = __rt[106], 
+, id = 12003, module_id = 1704, name = 414648, normal_drop = __rt[129], play_para = 20034, pre_condition = __rt[110], 
 pre_para1 = {12002, 3112}
-, pre_para2 = __rt[107]}
+, pre_para2 = __rt[111]}
 , 
-[12004] = {combat = 8750, cost_itemNums = __rt[110], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=7", dungeon_type = 12, first_reward_ids = __rt[126], first_reward_nums = __rt[120], id = 12004, module_id = 1704, name = 353071, normal_drop = __rt[125], play_para = 20035, pre_condition = __rt[123], 
+[12004] = {combat = 8750, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=7", dungeon_type = 12, first_reward_ids = __rt[130], first_reward_nums = __rt[124], id = 12004, module_id = 1704, name = 353071, normal_drop = __rt[129], play_para = 20035, pre_condition = __rt[127], 
 pre_para1 = {12003}
 }
 , 
-[12005] = {combat = 9250, cost_itemNums = __rt[111], day_extra_show = "1=11_14|2=12_17|3=15_18|4=16_19|5=13_20|6=11_12_13_14_15_16_17_18_19_20|7=11_12_13_14_15_16_17_18_19_20", day_extra_type = true, dungeon_type = 12, first_reward_ids = __rt[126], first_reward_nums = __rt[120], id = 12005, module_id = 1704, name = 291494, normal_drop = __rt[125], play_para = 20036, pre_condition = __rt[123], 
+[12005] = {combat = 9250, cost_itemNums = __rt[115], day_extra_show = "1=11_14|2=12_17|3=15_18|4=16_19|5=13_20|6=11_12_13_14_15_16_17_18_19_20|7=11_12_13_14_15_16_17_18_19_20", day_extra_type = true, dungeon_type = 12, first_reward_ids = __rt[130], first_reward_nums = __rt[124], id = 12005, module_id = 1704, name = 291494, normal_drop = __rt[129], play_para = 20036, pre_condition = __rt[127], 
 pre_para1 = {12004}
 , tex_index = 1}
 , 
-[12006] = {combat = 11250, cost_itemNums = __rt[111], day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", day_extra_type = true, dungeon_type = 12, first_reward_ids = __rt[126], first_reward_nums = __rt[120], id = 12006, module_id = 1704, name = 229917, normal_drop = __rt[125], play_para = 20037, pre_condition = __rt[123], 
+[12006] = {combat = 11250, cost_itemNums = __rt[115], day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", day_extra_type = true, dungeon_type = 12, first_reward_ids = __rt[130], first_reward_nums = __rt[124], id = 12006, module_id = 1704, name = 229917, normal_drop = __rt[129], play_para = 20037, pre_condition = __rt[127], 
 pre_para1 = {12005}
 , tex_index = 1}
 , 
-[12007] = {combat = 13250, cost_itemNums = __rt[112], day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", day_extra_type = true, dungeon_type = 12, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12007, module_id = 1715, name = 324927, normal_drop = __rt[127], play_para = 20038, pre_condition = __rt[106], 
+[12007] = {combat = 13250, cost_itemNums = __rt[116], day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", day_extra_type = true, dungeon_type = 12, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12007, module_id = 1715, name = 324927, normal_drop = __rt[131], play_para = 20038, pre_condition = __rt[110], 
 pre_para1 = {12006, 4111}
-, pre_para2 = __rt[107], tex_index = 1}
+, pre_para2 = __rt[111], tex_index = 1}
 , 
-[12008] = {combat = 17750, cost_itemNums = __rt[112], day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", day_extra_type = true, dungeon_type = 12, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12008, module_id = 1715, name = 263350, normal_drop = __rt[127], play_para = 20039, pre_condition = __rt[123], 
+[12008] = {combat = 17750, cost_itemNums = __rt[116], day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", day_extra_type = true, dungeon_type = 12, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12008, module_id = 1715, name = 263350, normal_drop = __rt[131], play_para = 20039, pre_condition = __rt[127], 
 pre_para1 = {12007}
 , tex_index = 1}
 , 
-[12009] = {combat = 20500, cost_itemNums = __rt[114], day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", day_extra_type = true, dungeon_type = 12, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12009, module_id = 1715, name = 201773, normal_drop = __rt[127], play_para = 20040, pre_condition = __rt[123], 
+[12009] = {combat = 20500, cost_itemNums = __rt[118], day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", day_extra_type = true, dungeon_type = 12, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12009, module_id = 1715, name = 201773, normal_drop = __rt[131], play_para = 20040, pre_condition = __rt[127], 
 pre_para1 = {12008}
 , tex_index = 1}
 , 
-[12010] = {combat = 22500, cost_itemNums = __rt[114], day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", day_extra_type = true, dungeon_type = 12, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12010, module_id = 1715, name = 140196, normal_drop = __rt[127], play_para = 20041, pre_condition = __rt[123], 
+[12010] = {combat = 22500, cost_itemNums = __rt[118], day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", day_extra_type = true, dungeon_type = 12, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12010, module_id = 1715, name = 140196, normal_drop = __rt[131], play_para = 20041, pre_condition = __rt[127], 
 pre_para1 = {12009}
 , tex_index = 1}
 , 
-[12011] = {combat = 25250, cost_itemNums = __rt[114], day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", day_extra_type = true, dungeon_type = 12, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12011, module_id = 1715, name = 78619, normal_drop = __rt[127], play_para = 20042, pre_condition = __rt[123], 
+[12011] = {combat = 25250, cost_itemNums = __rt[118], day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", day_extra_type = true, dungeon_type = 12, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12011, module_id = 1715, name = 78619, normal_drop = __rt[131], play_para = 20042, pre_condition = __rt[127], 
 pre_para1 = {12010}
 , tex_index = 1}
 , 
-[12012] = {combat = 13000, cost_itemNums = __rt[112], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", day_extra_type = true, dungeon_type = 29, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12012, module_id = 1716, name = 469897, normal_drop = __rt[127], play_para = 20098, pre_condition = __rt_1, pre_para2 = __rt_1, tex_index = 2}
+[12012] = {combat = 13000, cost_itemNums = __rt[116], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", day_extra_type = true, dungeon_type = 29, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12012, module_id = 1716, name = 469897, normal_drop = __rt[131], play_para = 20098, pre_condition = __rt_1, pre_para2 = __rt_1, tex_index = 2}
 , 
-[12013] = {combat = 17250, cost_itemNums = __rt[112], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", day_extra_type = true, dungeon_type = 29, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12013, module_id = 1716, name = 408320, normal_drop = __rt[127], play_para = 20099, pre_condition = __rt[123], 
+[12013] = {combat = 17250, cost_itemNums = __rt[116], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", day_extra_type = true, dungeon_type = 29, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12013, module_id = 1716, name = 408320, normal_drop = __rt[131], play_para = 20099, pre_condition = __rt[127], 
 pre_para1 = {12012}
 , tex_index = 2}
 , 
-[12014] = {combat = 25200, cost_itemNums = __rt[114], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", day_extra_type = true, dungeon_type = 29, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12014, module_id = 1716, name = 346743, normal_drop = __rt[127], play_para = 20100, pre_condition = __rt[123], 
+[12014] = {combat = 25200, cost_itemNums = __rt[118], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", day_extra_type = true, dungeon_type = 29, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12014, module_id = 1716, name = 346743, normal_drop = __rt[131], play_para = 20100, pre_condition = __rt[127], 
 pre_para1 = {12013}
 , tex_index = 2}
 , 
-[12015] = {combat = 32250, cost_itemNums = __rt[114], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", day_extra_type = true, dungeon_type = 29, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12015, module_id = 1716, name = 285166, normal_drop = __rt[127], play_para = 20101, pre_condition = __rt[123], 
+[12015] = {combat = 32250, cost_itemNums = __rt[118], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", day_extra_type = true, dungeon_type = 29, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12015, module_id = 1716, name = 285166, normal_drop = __rt[131], play_para = 20101, pre_condition = __rt[127], 
 pre_para1 = {12014}
 , tex_index = 2}
 , 
-[12016] = {cost_itemNums = __rt[108], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, first_reward_ids = __rt[128], first_reward_nums = __rt[100], id = 12016, module_id = 1705, name = 271130, normal_drop = __rt[128], play_para = 20044, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[103]}
+[12016] = {cost_itemNums = __rt[112], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, first_reward_ids = __rt[132], first_reward_nums = __rt[104], id = 12016, module_id = 1705, name = 271130, normal_drop = __rt[132], play_para = 20044, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[107]}
 , 
-[12017] = {combat = 2750, cost_itemNums = __rt[109], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, 
+[12017] = {combat = 2750, cost_itemNums = __rt[113], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, 
 first_reward_ids = {1809}
-, first_reward_nums = __rt[100], id = 12017, module_id = 1705, name = 209553, 
+, first_reward_nums = __rt[104], id = 12017, module_id = 1705, name = 209553, 
 normal_drop = {1809, 1804}
-, play_para = 20045, pre_condition = __rt[106], 
+, play_para = 20045, pre_condition = __rt[110], 
 pre_para1 = {12016, 2107}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[12018] = {combat = 3650, cost_itemNums = __rt[110], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, first_reward_ids = __rt[129], first_reward_nums = __rt[100], id = 12018, module_id = 1705, name = 147976, normal_drop = __rt[130], play_para = 20046, pre_condition = __rt[106], 
+[12018] = {combat = 3650, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, first_reward_ids = __rt[133], first_reward_nums = __rt[104], id = 12018, module_id = 1705, name = 147976, normal_drop = __rt[134], play_para = 20046, pre_condition = __rt[110], 
 pre_para1 = {12017, 3104}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[12019] = {combat = 7150, cost_itemNums = __rt[110], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, first_reward_ids = __rt[129], first_reward_nums = __rt[100], id = 12019, module_id = 1705, name = 86399, normal_drop = __rt[130], play_para = 20047, pre_condition = __rt[106], 
+[12019] = {combat = 7150, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, first_reward_ids = __rt[133], first_reward_nums = __rt[104], id = 12019, module_id = 1705, name = 86399, normal_drop = __rt[134], play_para = 20047, pre_condition = __rt[110], 
 pre_para1 = {12018, 3111}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[12020] = {combat = 9250, cost_itemNums = __rt[131], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, first_reward_ids = __rt[132], first_reward_nums = __rt[100], id = 12020, module_id = 1705, name = 24822, normal_drop = __rt[133], play_para = 20048, pre_condition = __rt[106], 
+[12020] = {combat = 9250, cost_itemNums = __rt[135], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, first_reward_ids = __rt[136], first_reward_nums = __rt[104], id = 12020, module_id = 1705, name = 24822, normal_drop = __rt[137], play_para = 20048, pre_condition = __rt[110], 
 pre_para1 = {12019, 3115}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[12021] = {combat = 14100, cost_itemNums = __rt[131], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, first_reward_ids = __rt[132], first_reward_nums = __rt[100], id = 12021, module_id = 1705, name = 487533, normal_drop = __rt[133], play_para = 20049, pre_condition = __rt[106], 
+[12021] = {combat = 14100, cost_itemNums = __rt[135], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, first_reward_ids = __rt[136], first_reward_nums = __rt[104], id = 12021, module_id = 1705, name = 487533, normal_drop = __rt[137], play_para = 20049, pre_condition = __rt[110], 
 pre_para1 = {12020, 4109}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[12022] = {combat = 15700, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, first_reward_ids = __rt[134], first_reward_nums = __rt[100], id = 12022, module_id = 1705, name = 425956, normal_drop = __rt[135], play_para = 20050, pre_condition = __rt[106], 
+[12022] = {combat = 15700, cost_itemNums = __rt[118], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, first_reward_ids = __rt[138], first_reward_nums = __rt[104], id = 12022, module_id = 1705, name = 425956, normal_drop = __rt[139], play_para = 20050, pre_condition = __rt[110], 
 pre_para1 = {12021, 4114}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[12023] = {combat = 18550, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, first_reward_ids = __rt[134], first_reward_nums = __rt[100], id = 12023, module_id = 1705, name = 364379, normal_drop = __rt[135], play_para = 20051, pre_condition = __rt[106], 
+[12023] = {combat = 18550, cost_itemNums = __rt[118], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 14, first_reward_ids = __rt[138], first_reward_nums = __rt[104], id = 12023, module_id = 1705, name = 364379, normal_drop = __rt[139], play_para = 20051, pre_condition = __rt[110], 
 pre_para1 = {12022, 4202}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[12024] = {cost_itemNums = __rt[108], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, first_reward_ids = __rt[136], first_reward_nums = __rt[100], id = 12024, module_id = 1706, name = 329113, normal_drop = __rt[136], play_para = 20052, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[117]}
+[12024] = {cost_itemNums = __rt[112], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, first_reward_ids = __rt[140], first_reward_nums = __rt[104], id = 12024, module_id = 1706, name = 329113, normal_drop = __rt[140], play_para = 20052, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[121]}
 , 
-[12025] = {combat = 2750, cost_itemNums = __rt[109], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, 
+[12025] = {combat = 2750, cost_itemNums = __rt[113], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, 
 first_reward_ids = {1808}
-, first_reward_nums = __rt[100], id = 12025, module_id = 1706, name = 267536, 
+, first_reward_nums = __rt[104], id = 12025, module_id = 1706, name = 267536, 
 normal_drop = {1808, 1803}
-, play_para = 20053, pre_condition = __rt[106], 
+, play_para = 20053, pre_condition = __rt[110], 
 pre_para1 = {12024, 2107}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12026] = {combat = 3650, cost_itemNums = __rt[110], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, first_reward_ids = __rt[137], first_reward_nums = __rt[100], id = 12026, module_id = 1706, name = 205959, normal_drop = __rt[138], play_para = 20054, pre_condition = __rt[106], 
+[12026] = {combat = 3650, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, first_reward_ids = __rt[141], first_reward_nums = __rt[104], id = 12026, module_id = 1706, name = 205959, normal_drop = __rt[142], play_para = 20054, pre_condition = __rt[110], 
 pre_para1 = {12025, 3104}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12027] = {combat = 7150, cost_itemNums = __rt[110], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, first_reward_ids = __rt[137], first_reward_nums = __rt[100], id = 12027, module_id = 1706, name = 144382, normal_drop = __rt[138], play_para = 20055, pre_condition = __rt[106], 
+[12027] = {combat = 7150, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, first_reward_ids = __rt[141], first_reward_nums = __rt[104], id = 12027, module_id = 1706, name = 144382, normal_drop = __rt[142], play_para = 20055, pre_condition = __rt[110], 
 pre_para1 = {12026, 3111}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12028] = {combat = 9250, cost_itemNums = __rt[131], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, first_reward_ids = __rt[139], first_reward_nums = __rt[100], id = 12028, module_id = 1706, name = 82805, normal_drop = __rt[140], play_para = 20056, pre_condition = __rt[106], 
+[12028] = {combat = 9250, cost_itemNums = __rt[135], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, first_reward_ids = __rt[143], first_reward_nums = __rt[104], id = 12028, module_id = 1706, name = 82805, normal_drop = __rt[144], play_para = 20056, pre_condition = __rt[110], 
 pre_para1 = {12027, 3115}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12029] = {combat = 14100, cost_itemNums = __rt[131], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, first_reward_ids = __rt[139], first_reward_nums = __rt[100], id = 12029, module_id = 1706, name = 21228, normal_drop = __rt[140], play_para = 20057, pre_condition = __rt[106], 
+[12029] = {combat = 14100, cost_itemNums = __rt[135], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, first_reward_ids = __rt[143], first_reward_nums = __rt[104], id = 12029, module_id = 1706, name = 21228, normal_drop = __rt[144], play_para = 20057, pre_condition = __rt[110], 
 pre_para1 = {12028, 4109}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12030] = {combat = 15700, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, first_reward_ids = __rt[141], first_reward_nums = __rt[100], id = 12030, module_id = 1706, name = 483939, normal_drop = __rt[142], play_para = 20058, pre_condition = __rt[106], 
+[12030] = {combat = 15700, cost_itemNums = __rt[118], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, first_reward_ids = __rt[145], first_reward_nums = __rt[104], id = 12030, module_id = 1706, name = 483939, normal_drop = __rt[146], play_para = 20058, pre_condition = __rt[110], 
 pre_para1 = {12029, 4114}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12031] = {combat = 18550, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, first_reward_ids = __rt[141], first_reward_nums = __rt[100], id = 12031, module_id = 1706, name = 422362, normal_drop = __rt[142], play_para = 20059, pre_condition = __rt[106], 
+[12031] = {combat = 18550, cost_itemNums = __rt[118], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 15, first_reward_ids = __rt[145], first_reward_nums = __rt[104], id = 12031, module_id = 1706, name = 422362, normal_drop = __rt[146], play_para = 20059, pre_condition = __rt[110], 
 pre_para1 = {12030, 4202}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12032] = {cost_itemNums = __rt[108], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, first_reward_ids = __rt[143], first_reward_nums = __rt[100], id = 12032, module_id = 1707, name = 461509, normal_drop = __rt[143], play_para = 20044, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[103]}
+[12032] = {cost_itemNums = __rt[112], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, first_reward_ids = __rt[147], first_reward_nums = __rt[104], id = 12032, module_id = 1707, name = 461509, normal_drop = __rt[147], play_para = 20044, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[107]}
 , 
-[12033] = {combat = 2750, cost_itemNums = __rt[109], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, 
+[12033] = {combat = 2750, cost_itemNums = __rt[113], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, 
 first_reward_ids = {1810}
-, first_reward_nums = __rt[100], id = 12033, module_id = 1707, name = 399932, 
+, first_reward_nums = __rt[104], id = 12033, module_id = 1707, name = 399932, 
 normal_drop = {1810, 1805}
-, play_para = 20045, pre_condition = __rt[106], 
+, play_para = 20045, pre_condition = __rt[110], 
 pre_para1 = {12032, 2107}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[12034] = {combat = 3650, cost_itemNums = __rt[110], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, first_reward_ids = __rt[144], first_reward_nums = __rt[100], id = 12034, module_id = 1707, name = 338355, normal_drop = __rt[145], play_para = 20046, pre_condition = __rt[106], 
+[12034] = {combat = 3650, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, first_reward_ids = __rt[148], first_reward_nums = __rt[104], id = 12034, module_id = 1707, name = 338355, normal_drop = __rt[149], play_para = 20046, pre_condition = __rt[110], 
 pre_para1 = {12033, 3104}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[12035] = {combat = 7150, cost_itemNums = __rt[110], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, first_reward_ids = __rt[144], first_reward_nums = __rt[100], id = 12035, module_id = 1707, name = 276778, normal_drop = __rt[145], play_para = 20047, pre_condition = __rt[106], 
+[12035] = {combat = 7150, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, first_reward_ids = __rt[148], first_reward_nums = __rt[104], id = 12035, module_id = 1707, name = 276778, normal_drop = __rt[149], play_para = 20047, pre_condition = __rt[110], 
 pre_para1 = {12034, 3111}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[12036] = {combat = 9250, cost_itemNums = __rt[131], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, first_reward_ids = __rt[146], first_reward_nums = __rt[100], id = 12036, module_id = 1707, name = 215201, normal_drop = __rt[147], play_para = 20048, pre_condition = __rt[106], 
+[12036] = {combat = 9250, cost_itemNums = __rt[135], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, first_reward_ids = __rt[150], first_reward_nums = __rt[104], id = 12036, module_id = 1707, name = 215201, normal_drop = __rt[151], play_para = 20048, pre_condition = __rt[110], 
 pre_para1 = {12035, 3115}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[12037] = {combat = 14100, cost_itemNums = __rt[131], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, first_reward_ids = __rt[146], first_reward_nums = __rt[100], id = 12037, module_id = 1707, name = 153624, normal_drop = __rt[147], play_para = 20049, pre_condition = __rt[106], 
+[12037] = {combat = 14100, cost_itemNums = __rt[135], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, first_reward_ids = __rt[150], first_reward_nums = __rt[104], id = 12037, module_id = 1707, name = 153624, normal_drop = __rt[151], play_para = 20049, pre_condition = __rt[110], 
 pre_para1 = {12036, 4109}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[12038] = {combat = 15700, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, first_reward_ids = __rt[148], first_reward_nums = __rt[100], id = 12038, module_id = 1707, name = 92047, normal_drop = __rt[149], play_para = 20050, pre_condition = __rt[106], 
+[12038] = {combat = 15700, cost_itemNums = __rt[118], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, first_reward_ids = __rt[152], first_reward_nums = __rt[104], id = 12038, module_id = 1707, name = 92047, normal_drop = __rt[153], play_para = 20050, pre_condition = __rt[110], 
 pre_para1 = {12037, 4114}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[12039] = {combat = 18550, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, first_reward_ids = __rt[148], first_reward_nums = __rt[100], id = 12039, module_id = 1707, name = 30470, normal_drop = __rt[149], play_para = 20051, pre_condition = __rt[106], 
+[12039] = {combat = 18550, cost_itemNums = __rt[118], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 16, first_reward_ids = __rt[152], first_reward_nums = __rt[104], id = 12039, module_id = 1707, name = 30470, normal_drop = __rt[153], play_para = 20051, pre_condition = __rt[110], 
 pre_para1 = {12038, 4202}
-, pre_para2 = __rt[107], sup_career = __rt[103]}
+, pre_para2 = __rt[111], sup_career = __rt[107]}
 , 
-[12040] = {cost_itemNums = __rt[108], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, first_reward_ids = __rt[150], first_reward_nums = __rt[100], id = 12040, module_id = 1708, name = 284608, normal_drop = __rt[150], play_para = 20052, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[117]}
+[12040] = {cost_itemNums = __rt[112], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, first_reward_ids = __rt[154], first_reward_nums = __rt[104], id = 12040, module_id = 1708, name = 284608, normal_drop = __rt[154], play_para = 20052, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[121]}
 , 
-[12041] = {combat = 2750, cost_itemNums = __rt[109], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, 
+[12041] = {combat = 2750, cost_itemNums = __rt[113], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, 
 first_reward_ids = {1807}
-, first_reward_nums = __rt[100], id = 12041, module_id = 1708, name = 223031, 
+, first_reward_nums = __rt[104], id = 12041, module_id = 1708, name = 223031, 
 normal_drop = {1807, 1802}
-, play_para = 20053, pre_condition = __rt[106], 
+, play_para = 20053, pre_condition = __rt[110], 
 pre_para1 = {12040, 2107}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12042] = {combat = 3650, cost_itemNums = __rt[110], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, first_reward_ids = __rt[151], first_reward_nums = __rt[100], id = 12042, module_id = 1708, name = 161454, normal_drop = __rt[152], play_para = 20054, pre_condition = __rt[106], 
+[12042] = {combat = 3650, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, first_reward_ids = __rt[155], first_reward_nums = __rt[104], id = 12042, module_id = 1708, name = 161454, normal_drop = __rt[156], play_para = 20054, pre_condition = __rt[110], 
 pre_para1 = {12041, 3104}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12043] = {combat = 7150, cost_itemNums = __rt[110], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, first_reward_ids = __rt[151], first_reward_nums = __rt[100], id = 12043, module_id = 1708, name = 99877, normal_drop = __rt[152], play_para = 20055, pre_condition = __rt[106], 
+[12043] = {combat = 7150, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, first_reward_ids = __rt[155], first_reward_nums = __rt[104], id = 12043, module_id = 1708, name = 99877, normal_drop = __rt[156], play_para = 20055, pre_condition = __rt[110], 
 pre_para1 = {12042, 3111}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12044] = {combat = 9250, cost_itemNums = __rt[131], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, first_reward_ids = __rt[153], first_reward_nums = __rt[100], id = 12044, module_id = 1708, name = 38300, normal_drop = __rt[154], play_para = 20056, pre_condition = __rt[106], 
+[12044] = {combat = 9250, cost_itemNums = __rt[135], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, first_reward_ids = __rt[157], first_reward_nums = __rt[104], id = 12044, module_id = 1708, name = 38300, normal_drop = __rt[158], play_para = 20056, pre_condition = __rt[110], 
 pre_para1 = {12043, 3115}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12045] = {combat = 14100, cost_itemNums = __rt[131], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, first_reward_ids = __rt[153], first_reward_nums = __rt[100], id = 12045, module_id = 1708, name = 501011, normal_drop = __rt[154], play_para = 20057, pre_condition = __rt[106], 
+[12045] = {combat = 14100, cost_itemNums = __rt[135], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, first_reward_ids = __rt[157], first_reward_nums = __rt[104], id = 12045, module_id = 1708, name = 501011, normal_drop = __rt[158], play_para = 20057, pre_condition = __rt[110], 
 pre_para1 = {12044, 4109}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12046] = {combat = 15700, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, first_reward_ids = __rt[155], first_reward_nums = __rt[100], id = 12046, module_id = 1708, name = 439434, normal_drop = __rt[156], play_para = 20058, pre_condition = __rt[106], 
+[12046] = {combat = 15700, cost_itemNums = __rt[118], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, first_reward_ids = __rt[159], first_reward_nums = __rt[104], id = 12046, module_id = 1708, name = 439434, normal_drop = __rt[160], play_para = 20058, pre_condition = __rt[110], 
 pre_para1 = {12045, 4114}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12047] = {combat = 18550, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, first_reward_ids = __rt[155], first_reward_nums = __rt[100], id = 12047, module_id = 1708, name = 377857, normal_drop = __rt[156], play_para = 20059, pre_condition = __rt[106], 
+[12047] = {combat = 18550, cost_itemNums = __rt[118], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 17, first_reward_ids = __rt[159], first_reward_nums = __rt[104], id = 12047, module_id = 1708, name = 377857, normal_drop = __rt[160], play_para = 20059, pre_condition = __rt[110], 
 pre_para1 = {12046, 4202}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12048] = {cost_itemNums = __rt[108], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, first_reward_ids = __rt[157], first_reward_nums = __rt[100], id = 12048, module_id = 1709, name = 53963, normal_drop = __rt[157], play_para = 20052, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[117]}
+[12048] = {cost_itemNums = __rt[112], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, first_reward_ids = __rt[161], first_reward_nums = __rt[104], id = 12048, module_id = 1709, name = 53963, normal_drop = __rt[161], play_para = 20052, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[121]}
 , 
-[12049] = {combat = 2750, cost_itemNums = __rt[109], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, 
+[12049] = {combat = 2750, cost_itemNums = __rt[113], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, 
 first_reward_ids = {1806}
-, first_reward_nums = __rt[100], id = 12049, module_id = 1709, name = 516674, 
+, first_reward_nums = __rt[104], id = 12049, module_id = 1709, name = 516674, 
 normal_drop = {1806, 1801}
-, play_para = 20053, pre_condition = __rt[106], 
+, play_para = 20053, pre_condition = __rt[110], 
 pre_para1 = {12048, 2107}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12050] = {combat = 3650, cost_itemNums = __rt[110], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, first_reward_ids = __rt[158], first_reward_nums = __rt[100], id = 12050, module_id = 1709, name = 455097, normal_drop = __rt[159], play_para = 20054, pre_condition = __rt[106], 
+[12050] = {combat = 3650, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, first_reward_ids = __rt[162], first_reward_nums = __rt[104], id = 12050, module_id = 1709, name = 455097, normal_drop = __rt[163], play_para = 20054, pre_condition = __rt[110], 
 pre_para1 = {12049, 3104}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12051] = {combat = 7150, cost_itemNums = __rt[110], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, first_reward_ids = __rt[158], first_reward_nums = __rt[100], id = 12051, module_id = 1709, name = 393520, normal_drop = __rt[159], play_para = 20055, pre_condition = __rt[106], 
+[12051] = {combat = 7150, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, first_reward_ids = __rt[162], first_reward_nums = __rt[104], id = 12051, module_id = 1709, name = 393520, normal_drop = __rt[163], play_para = 20055, pre_condition = __rt[110], 
 pre_para1 = {12050, 3111}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12052] = {combat = 9250, cost_itemNums = __rt[131], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, first_reward_ids = __rt[160], first_reward_nums = __rt[100], id = 12052, module_id = 1709, name = 331943, normal_drop = __rt[161], play_para = 20056, pre_condition = __rt[106], 
+[12052] = {combat = 9250, cost_itemNums = __rt[135], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, first_reward_ids = __rt[164], first_reward_nums = __rt[104], id = 12052, module_id = 1709, name = 331943, normal_drop = __rt[165], play_para = 20056, pre_condition = __rt[110], 
 pre_para1 = {12051, 3115}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12053] = {combat = 14100, cost_itemNums = __rt[131], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, first_reward_ids = __rt[160], first_reward_nums = __rt[100], id = 12053, module_id = 1709, name = 270366, normal_drop = __rt[161], play_para = 20057, pre_condition = __rt[106], 
+[12053] = {combat = 14100, cost_itemNums = __rt[135], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, first_reward_ids = __rt[164], first_reward_nums = __rt[104], id = 12053, module_id = 1709, name = 270366, normal_drop = __rt[165], play_para = 20057, pre_condition = __rt[110], 
 pre_para1 = {12052, 4109}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12054] = {combat = 15700, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, first_reward_ids = __rt[162], first_reward_nums = __rt[100], id = 12054, module_id = 1709, name = 208789, normal_drop = __rt[163], play_para = 20058, pre_condition = __rt[106], 
+[12054] = {combat = 15700, cost_itemNums = __rt[118], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, first_reward_ids = __rt[166], first_reward_nums = __rt[104], id = 12054, module_id = 1709, name = 208789, normal_drop = __rt[167], play_para = 20058, pre_condition = __rt[110], 
 pre_para1 = {12053, 4114}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12055] = {combat = 18550, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, first_reward_ids = __rt[162], first_reward_nums = __rt[100], id = 12055, module_id = 1709, name = 147212, normal_drop = __rt[163], play_para = 20059, pre_condition = __rt[106], 
+[12055] = {combat = 18550, cost_itemNums = __rt[118], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 18, first_reward_ids = __rt[166], first_reward_nums = __rt[104], id = 12055, module_id = 1709, name = 147212, normal_drop = __rt[167], play_para = 20059, pre_condition = __rt[110], 
 pre_para1 = {12054, 4202}
-, pre_para2 = __rt[107], sup_career = __rt[117]}
+, pre_para2 = __rt[111], sup_career = __rt[121]}
 , 
-[12056] = {combat = 7600, cost_itemNums = __rt[108], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[164], first_reward_nums = __rt[165], id = 12056, module_id = 1710, name = 350943, normal_drop = __rt[164], play_para = 20060, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[166]}
+[12056] = {combat = 7600, cost_itemNums = __rt[112], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[168], first_reward_nums = __rt[169], id = 12056, module_id = 1710, name = 350943, normal_drop = __rt[168], play_para = 20060, pre_condition = __rt_1, pre_para2 = __rt_1, sup_career = __rt[170]}
 , 
-[12057] = {combat = 11650, cost_itemNums = __rt[108], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[164], first_reward_nums = __rt[167], id = 12057, module_id = 1710, name = 289366, normal_drop = __rt[164], play_para = 20061, pre_condition = __rt[106], 
+[12057] = {combat = 11650, cost_itemNums = __rt[112], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[168], first_reward_nums = __rt[171], id = 12057, module_id = 1710, name = 289366, normal_drop = __rt[168], play_para = 20061, pre_condition = __rt[110], 
 pre_para1 = {12056, 3202}
-, pre_para2 = __rt[107], sup_career = __rt[166]}
+, pre_para2 = __rt[111], sup_career = __rt[170]}
 , 
-[12058] = {combat = 16200, cost_itemNums = __rt[110], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[164], 
+[12058] = {combat = 16200, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[168], 
 first_reward_nums = {400}
-, id = 12058, module_id = 1710, name = 227789, normal_drop = __rt[164], play_para = 20062, pre_condition = __rt[106], 
+, id = 12058, module_id = 1710, name = 227789, normal_drop = __rt[168], play_para = 20062, pre_condition = __rt[110], 
 pre_para1 = {12057, 3203}
-, pre_para2 = __rt[107], sup_career = __rt[166]}
+, pre_para2 = __rt[111], sup_career = __rt[170]}
 , 
-[12059] = {combat = 18250, cost_itemNums = __rt[110], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[164], first_reward_nums = __rt[168], id = 12059, module_id = 1710, name = 166212, normal_drop = __rt[164], play_para = 20063, pre_condition = __rt[106], 
+[12059] = {combat = 18250, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[168], first_reward_nums = __rt[172], id = 12059, module_id = 1710, name = 166212, normal_drop = __rt[168], play_para = 20063, pre_condition = __rt[110], 
 pre_para1 = {12058, 3204}
-, pre_para2 = __rt[107], sup_career = __rt[166]}
+, pre_para2 = __rt[111], sup_career = __rt[170]}
 , 
-[12060] = {combat = 21400, cost_itemNums = __rt[131], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[164], 
+[12060] = {combat = 21400, cost_itemNums = __rt[135], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[168], 
 first_reward_nums = {600}
-, id = 12060, module_id = 1710, name = 104635, normal_drop = __rt[164], play_para = 20064, pre_condition = __rt[106], 
+, id = 12060, module_id = 1710, name = 104635, normal_drop = __rt[168], play_para = 20064, pre_condition = __rt[110], 
 pre_para1 = {12059, 4202}
-, pre_para2 = __rt[107], sup_career = __rt[166]}
+, pre_para2 = __rt[111], sup_career = __rt[170]}
 , 
-[12061] = {combat = 22250, cost_itemNums = __rt[131], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[164], 
+[12061] = {combat = 22250, cost_itemNums = __rt[135], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[168], 
 first_reward_nums = {700}
-, id = 12061, module_id = 1710, name = 43058, normal_drop = __rt[164], play_para = 20065, pre_condition = __rt[106], 
+, id = 12061, module_id = 1710, name = 43058, normal_drop = __rt[168], play_para = 20065, pre_condition = __rt[110], 
 pre_para1 = {12060, 4203}
-, pre_para2 = __rt[107], sup_career = __rt[166]}
+, pre_para2 = __rt[111], sup_career = __rt[170]}
 , 
-[12062] = {combat = 24850, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[164], 
+[12062] = {combat = 24850, cost_itemNums = __rt[118], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[168], 
 first_reward_nums = {800}
-, id = 12062, module_id = 1710, name = 505769, normal_drop = __rt[164], play_para = 20066, pre_condition = __rt[106], 
+, id = 12062, module_id = 1710, name = 505769, normal_drop = __rt[168], play_para = 20066, pre_condition = __rt[110], 
 pre_para1 = {12061, 4204}
-, pre_para2 = __rt[107], sup_career = __rt[166]}
+, pre_para2 = __rt[111], sup_career = __rt[170]}
 , 
-[12063] = {combat = 32250, cost_itemNums = __rt[114], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[164], first_reward_nums = __rt[116], id = 12063, module_id = 1710, name = 444192, normal_drop = __rt[164], play_para = 20067, pre_condition = __rt[106], 
+[12063] = {combat = 32250, cost_itemNums = __rt[118], day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 19, first_reward_ids = __rt[168], first_reward_nums = __rt[120], id = 12063, module_id = 1710, name = 444192, normal_drop = __rt[168], play_para = 20067, pre_condition = __rt[110], 
 pre_para1 = {12062, 4205}
-, pre_para2 = __rt[107], sup_career = __rt[166]}
+, pre_para2 = __rt[111], sup_career = __rt[170]}
 , 
-[12064] = {combat = 40000, cost_itemNums = __rt[114], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", day_extra_type = true, dungeon_type = 29, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12064, module_id = 1716, name = 223589, normal_drop = __rt[127], play_para = 20102, pre_condition = __rt[123], 
+[12064] = {combat = 40000, cost_itemNums = __rt[118], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", day_extra_type = true, dungeon_type = 29, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12064, module_id = 1716, name = 223589, normal_drop = __rt[131], play_para = 20102, pre_condition = __rt[127], 
 pre_para1 = {12015}
 , tex_index = 2}
 , 
-[12071] = {combat = 18250, cost_itemNums = __rt[100], dungeon_type = 31, first_reward_ids = __rt[169], first_reward_nums = __rt_3, id = 12071, module_id = 1717, name = 83110, normal_drop = __rt[169], play_para = 20093, pre_condition = __rt_1, pre_para2 = __rt_1}
+[12071] = {combat = 18250, cost_itemNums = __rt[104], dungeon_type = 31, first_reward_ids = __rt[173], first_reward_nums = __rt_3, id = 12071, module_id = 1717, name = 83110, normal_drop = __rt[173], play_para = 20093, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
-[12072] = {combat = 21400, cost_itemNums = __rt[108], dungeon_type = 31, first_reward_ids = __rt[170], first_reward_nums = __rt[122], id = 12072, module_id = 1717, name = 21533, normal_drop = __rt[171], play_para = 20094, pre_condition = __rt[123], 
+[12072] = {combat = 21400, cost_itemNums = __rt[112], dungeon_type = 31, first_reward_ids = __rt[174], first_reward_nums = __rt[126], id = 12072, module_id = 1717, name = 21533, normal_drop = __rt[175], play_para = 20094, pre_condition = __rt[127], 
 pre_para1 = {12071}
 }
 , 
-[12073] = {combat = 22250, cost_itemNums = __rt[110], dungeon_type = 31, first_reward_ids = __rt[170], first_reward_nums = __rt[172], id = 12073, module_id = 1717, name = 484244, normal_drop = __rt[171], play_para = 20095, pre_condition = __rt[123], 
+[12073] = {combat = 22250, cost_itemNums = __rt[114], dungeon_type = 31, first_reward_ids = __rt[174], first_reward_nums = __rt[176], id = 12073, module_id = 1717, name = 484244, normal_drop = __rt[175], play_para = 20095, pre_condition = __rt[127], 
 pre_para1 = {12072}
 }
 , 
-[12074] = {combat = 24850, cost_itemNums = __rt[131], dungeon_type = 31, first_reward_ids = __rt[173], first_reward_nums = __rt[120], id = 12074, module_id = 1717, name = 422667, normal_drop = __rt[171], play_para = 20096, pre_condition = __rt[123], 
+[12074] = {combat = 24850, cost_itemNums = __rt[135], dungeon_type = 31, first_reward_ids = __rt[177], first_reward_nums = __rt[124], id = 12074, module_id = 1717, name = 422667, normal_drop = __rt[175], play_para = 20096, pre_condition = __rt[127], 
 pre_para1 = {12073}
 }
 , 
-[12075] = {combat = 32250, cost_itemNums = __rt[114], dungeon_type = 31, first_reward_ids = __rt[173], first_reward_nums = __rt[122], id = 12075, module_id = 1717, name = 361090, 
+[12075] = {combat = 32250, cost_itemNums = __rt[118], dungeon_type = 31, first_reward_ids = __rt[177], first_reward_nums = __rt[126], id = 12075, module_id = 1717, name = 361090, 
 normal_drop = {1903, 1902}
-, play_para = 20097, pre_condition = __rt[123], 
+, play_para = 20097, pre_condition = __rt[127], 
 pre_para1 = {12074}
 }
 , 
-[12101] = {combat = 13000, cost_itemNums = __rt[112], day_extra_show = "0=30_31_32_33_34", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[124], id = 12101, module_id = 1720, name = 371747, normal_drop = __rt[127], play_para = 20110, pre_condition = __rt_1, pre_para2 = __rt_1, tex_index = 2}
+[12101] = {combat = 13000, cost_itemNums = __rt[116], day_extra_show = "0=30_31_32_33_34", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[128], id = 12101, module_id = 1720, name = 371747, normal_drop = __rt[131], play_para = 20110, pre_condition = __rt_1, pre_para2 = __rt_1, tex_index = 2}
 , 
-[12102] = {combat = 17250, cost_itemNums = __rt[112], day_extra_show = "0=30_31_32_33_34", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[124], id = 12102, module_id = 1720, name = 310170, normal_drop = __rt[127], play_para = 20111, pre_condition = __rt[123], 
+[12102] = {combat = 17250, cost_itemNums = __rt[116], day_extra_show = "0=30_31_32_33_34", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[128], id = 12102, module_id = 1720, name = 310170, normal_drop = __rt[131], play_para = 20111, pre_condition = __rt[127], 
 pre_para1 = {12101}
 , tex_index = 2}
 , 
-[12103] = {combat = 28500, cost_itemNums = __rt[114], day_extra_show = "0=30_31_32_33_34", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[120], id = 12103, module_id = 1720, name = 248593, normal_drop = __rt[127], play_para = 20112, pre_condition = __rt[123], 
+[12103] = {combat = 28500, cost_itemNums = __rt[118], day_extra_show = "0=30_31_32_33_34", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[124], id = 12103, module_id = 1720, name = 248593, normal_drop = __rt[131], play_para = 20112, pre_condition = __rt[127], 
 pre_para1 = {12102}
 , tex_index = 2}
 , 
-[12104] = {combat = 40000, cost_itemNums = __rt[114], day_extra_show = "0=30_31_32_33_34", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[120], id = 12104, module_id = 1720, name = 187016, normal_drop = __rt[127], play_para = 20113, pre_condition = __rt[123], 
+[12104] = {combat = 40000, cost_itemNums = __rt[118], day_extra_show = "0=30_31_32_33_34", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[124], id = 12104, module_id = 1720, name = 187016, normal_drop = __rt[131], play_para = 20113, pre_condition = __rt[127], 
 pre_para1 = {12103}
 , tex_index = 2}
 , 
-[12105] = {combat = 52000, cost_itemNums = __rt[114], day_extra_show = "0=30_31_32_33_34", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12105, module_id = 1720, name = 125439, normal_drop = __rt[127], play_para = 20114, pre_condition = __rt[123], 
+[12105] = {combat = 52000, cost_itemNums = __rt[118], day_extra_show = "0=30_31_32_33_34", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12105, module_id = 1720, name = 125439, normal_drop = __rt[131], play_para = 20114, pre_condition = __rt[127], 
 pre_para1 = {12104}
 , tex_index = 2}
 , 
-[12106] = {combat = 60000, cost_itemNums = __rt[174], day_extra_show = "0=30_31_32_33_34", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12106, module_id = 1720, name = 63862, normal_drop = __rt[127], play_para = 20115, pre_condition = __rt[123], 
+[12106] = {combat = 60000, cost_itemNums = __rt[178], day_extra_show = "0=30_31_32_33_34", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12106, module_id = 1720, name = 63862, normal_drop = __rt[131], play_para = 20115, pre_condition = __rt[127], 
 pre_para1 = {12105}
 , tex_index = 2}
 , 
-[12107] = {combat = 13000, cost_itemNums = __rt[112], day_extra_show = "0=35_36_37_38_39", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[124], id = 12107, module_id = 1721, name = 23069, normal_drop = __rt[127], play_para = 20116, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[175], tex_index = 2}
+[12107] = {combat = 13000, cost_itemNums = __rt[116], day_extra_show = "0=35_36_37_38_39", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[128], id = 12107, module_id = 1721, name = 23069, normal_drop = __rt[131], play_para = 20116, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[179], tex_index = 2}
 , 
-[12108] = {combat = 17250, cost_itemNums = __rt[112], day_extra_show = "0=35_36_37_38_39", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[124], id = 12108, module_id = 1721, name = 485780, normal_drop = __rt[127], play_para = 20117, pre_condition = __rt[123], 
+[12108] = {combat = 17250, cost_itemNums = __rt[116], day_extra_show = "0=35_36_37_38_39", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[128], id = 12108, module_id = 1721, name = 485780, normal_drop = __rt[131], play_para = 20117, pre_condition = __rt[127], 
 pre_para1 = {12107}
-, protocol = __rt[175], tex_index = 2}
+, protocol = __rt[179], tex_index = 2}
 , 
-[12109] = {combat = 28500, cost_itemNums = __rt[114], day_extra_show = "0=35_36_37_38_39", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[120], id = 12109, module_id = 1721, name = 424203, normal_drop = __rt[127], play_para = 20118, pre_condition = __rt[123], 
+[12109] = {combat = 28500, cost_itemNums = __rt[118], day_extra_show = "0=35_36_37_38_39", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[124], id = 12109, module_id = 1721, name = 424203, normal_drop = __rt[131], play_para = 20118, pre_condition = __rt[127], 
 pre_para1 = {12108}
-, protocol = __rt[175], tex_index = 2}
+, protocol = __rt[179], tex_index = 2}
 , 
-[12110] = {combat = 40000, cost_itemNums = __rt[114], day_extra_show = "0=35_36_37_38_39", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[120], id = 12110, module_id = 1721, name = 362626, normal_drop = __rt[127], play_para = 20119, pre_condition = __rt[123], 
+[12110] = {combat = 40000, cost_itemNums = __rt[118], day_extra_show = "0=35_36_37_38_39", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[124], id = 12110, module_id = 1721, name = 362626, normal_drop = __rt[131], play_para = 20119, pre_condition = __rt[127], 
 pre_para1 = {12109}
-, protocol = __rt[175], tex_index = 2}
+, protocol = __rt[179], tex_index = 2}
 , 
-[12111] = {combat = 52000, cost_itemNums = __rt[114], day_extra_show = "0=35_36_37_38_39", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12111, module_id = 1721, name = 301049, normal_drop = __rt[127], play_para = 20120, pre_condition = __rt[123], 
+[12111] = {combat = 52000, cost_itemNums = __rt[118], day_extra_show = "0=35_36_37_38_39", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12111, module_id = 1721, name = 301049, normal_drop = __rt[131], play_para = 20120, pre_condition = __rt[127], 
 pre_para1 = {12110}
-, protocol = __rt[175], tex_index = 2}
+, protocol = __rt[179], tex_index = 2}
 , 
-[12112] = {combat = 60000, cost_itemNums = __rt[174], day_extra_show = "0=35_36_37_38_39", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12112, module_id = 1721, name = 239472, normal_drop = __rt[127], play_para = 20121, pre_condition = __rt[123], 
+[12112] = {combat = 60000, cost_itemNums = __rt[178], day_extra_show = "0=35_36_37_38_39", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12112, module_id = 1721, name = 239472, normal_drop = __rt[131], play_para = 20121, pre_condition = __rt[127], 
 pre_para1 = {12111}
-, protocol = __rt[175], tex_index = 2}
+, protocol = __rt[179], tex_index = 2}
 , 
-[12113] = {combat = 13000, cost_itemNums = __rt[112], day_extra_show = "0=40_41_44_42_43", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[124], id = 12113, module_id = 1722, name = 506340, normal_drop = __rt[127], play_para = 20122, pre_condition = __rt_1, pre_para2 = __rt_1, tex_index = 2}
+[12113] = {combat = 13000, cost_itemNums = __rt[116], day_extra_show = "0=40_41_44_42_43", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[128], id = 12113, module_id = 1722, name = 506340, normal_drop = __rt[131], play_para = 20122, pre_condition = __rt_1, pre_para2 = __rt_1, tex_index = 2}
 , 
-[12114] = {combat = 17250, cost_itemNums = __rt[112], day_extra_show = "0=40_41_44_42_43", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[124], id = 12114, module_id = 1722, name = 444763, normal_drop = __rt[127], play_para = 20123, pre_condition = __rt[123], 
+[12114] = {combat = 17250, cost_itemNums = __rt[116], day_extra_show = "0=40_41_44_42_43", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[128], id = 12114, module_id = 1722, name = 444763, normal_drop = __rt[131], play_para = 20123, pre_condition = __rt[127], 
 pre_para1 = {12113}
 , tex_index = 2}
 , 
-[12115] = {combat = 28500, cost_itemNums = __rt[114], day_extra_show = "0=40_41_44_42_43", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[120], id = 12115, module_id = 1722, name = 383186, normal_drop = __rt[127], play_para = 20124, pre_condition = __rt[123], 
+[12115] = {combat = 28500, cost_itemNums = __rt[118], day_extra_show = "0=40_41_44_42_43", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[124], id = 12115, module_id = 1722, name = 383186, normal_drop = __rt[131], play_para = 20124, pre_condition = __rt[127], 
 pre_para1 = {12114}
 , tex_index = 2}
 , 
-[12116] = {combat = 40000, cost_itemNums = __rt[114], day_extra_show = "0=40_41_44_42_43", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[120], id = 12116, module_id = 1722, name = 321609, normal_drop = __rt[127], play_para = 20125, pre_condition = __rt[123], 
+[12116] = {combat = 40000, cost_itemNums = __rt[118], day_extra_show = "0=40_41_44_42_43", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[124], id = 12116, module_id = 1722, name = 321609, normal_drop = __rt[131], play_para = 20125, pre_condition = __rt[127], 
 pre_para1 = {12115}
 , tex_index = 2}
 , 
-[12117] = {combat = 52000, cost_itemNums = __rt[114], day_extra_show = "0=40_41_44_42_43", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12117, module_id = 1722, name = 260032, normal_drop = __rt[127], play_para = 20126, pre_condition = __rt[123], 
+[12117] = {combat = 52000, cost_itemNums = __rt[118], day_extra_show = "0=40_41_44_42_43", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12117, module_id = 1722, name = 260032, normal_drop = __rt[131], play_para = 20126, pre_condition = __rt[127], 
 pre_para1 = {12116}
 , tex_index = 2}
 , 
-[12118] = {combat = 60000, cost_itemNums = __rt[174], day_extra_show = "0=40_41_44_42_43", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12118, module_id = 1722, name = 198455, normal_drop = __rt[127], play_para = 20127, pre_condition = __rt[123], 
+[12118] = {combat = 60000, cost_itemNums = __rt[178], day_extra_show = "0=40_41_44_42_43", day_extra_type = true, dungeon_type = 41, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12118, module_id = 1722, name = 198455, normal_drop = __rt[131], play_para = 20127, pre_condition = __rt[127], 
 pre_para1 = {12117}
 , tex_index = 2}
 , 
-[12119] = {combat = 30000, cost_itemNums = __rt[110], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", dungeon_type = 44, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12119, module_id = 1723, name = 315131, normal_drop = __rt[127], play_para = 20128, pre_condition = __rt_1, pre_para2 = __rt_1, tex_index = 3}
+[12119] = {combat = 30000, cost_itemNums = __rt[114], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", dungeon_type = 44, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12119, module_id = 1723, name = 315131, normal_drop = __rt[131], play_para = 20128, pre_condition = __rt_1, pre_para2 = __rt_1, tex_index = 3}
 , 
-[12120] = {combat = 38000, cost_itemNums = __rt[111], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", dungeon_type = 44, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12120, module_id = 1723, name = 253554, normal_drop = __rt[127], play_para = 20129, pre_condition = __rt[123], 
+[12120] = {combat = 38000, cost_itemNums = __rt[115], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", dungeon_type = 44, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12120, module_id = 1723, name = 253554, normal_drop = __rt[131], play_para = 20129, pre_condition = __rt[127], 
 pre_para1 = {12119}
 , tex_index = 3}
 , 
-[12121] = {combat = 45000, cost_itemNums = __rt[112], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", dungeon_type = 44, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12121, module_id = 1723, name = 191977, normal_drop = __rt[127], play_para = 20130, pre_condition = __rt[123], 
+[12121] = {combat = 45000, cost_itemNums = __rt[116], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", dungeon_type = 44, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12121, module_id = 1723, name = 191977, normal_drop = __rt[131], play_para = 20130, pre_condition = __rt[127], 
 pre_para1 = {12120}
 , tex_index = 3}
 , 
-[12122] = {combat = 57000, cost_itemNums = __rt[114], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", dungeon_type = 44, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12122, module_id = 1723, name = 130400, normal_drop = __rt[127], play_para = 20131, pre_condition = __rt[123], 
+[12122] = {combat = 57000, cost_itemNums = __rt[118], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", dungeon_type = 44, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12122, module_id = 1723, name = 130400, normal_drop = __rt[131], play_para = 20131, pre_condition = __rt[127], 
 pre_para1 = {12121}
 , tex_index = 3}
 , 
-[12123] = {combat = 62000, cost_itemNums = __rt[114], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", dungeon_type = 44, first_reward_ids = __rt[126], first_reward_nums = __rt[122], id = 12123, module_id = 1723, name = 68823, normal_drop = __rt[127], play_para = 20132, pre_condition = __rt[123], 
+[12123] = {combat = 62000, cost_itemNums = __rt[118], day_extra_show = "1=11_14_7_8_22|2=12_17_4_9_27|3=15_18_1_2_25|4=16_19_3_5_21|5=13_20_6_10_26|6=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27|7=11_12_13_14_15_16_17_18_19_20_21_22_25_26_27", dungeon_type = 44, first_reward_ids = __rt[130], first_reward_nums = __rt[126], id = 12123, module_id = 1723, name = 68823, normal_drop = __rt[131], play_para = 20132, pre_condition = __rt[127], 
 pre_para1 = {12122}
 , tex_index = 3}
 , 
-[22000] = {combat = 4350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 26, first_reward_nums = __rt_1, id = 22000, module_id = 2900, name = 58972, normal_drop = __rt[176], play_para = 20068, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22000] = {combat = 4350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=4", dungeon_type = 26, first_reward_nums = __rt_1, id = 22000, module_id = 2900, name = 58972, normal_drop = __rt[180], play_para = 20068, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22001] = {combat = 5050, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=5", dungeon_type = 26, first_reward_nums = __rt_1, id = 22001, module_id = 2900, name = 58972, normal_drop = __rt[176], play_para = 20069, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22001] = {combat = 5050, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=5", dungeon_type = 26, first_reward_nums = __rt_1, id = 22001, module_id = 2900, name = 58972, normal_drop = __rt[180], play_para = 20069, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22002] = {combat = 8000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=6", dungeon_type = 26, first_reward_nums = __rt_1, id = 22002, module_id = 2900, name = 58972, normal_drop = __rt[176], play_para = 20070, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22002] = {combat = 8000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=6", dungeon_type = 26, first_reward_nums = __rt_1, id = 22002, module_id = 2900, name = 58972, normal_drop = __rt[180], play_para = 20070, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22003] = {combat = 5050, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=5", dungeon_type = 26, first_reward_nums = __rt_1, id = 22003, module_id = 2900, name = 58972, normal_drop = __rt[176], play_para = 20071, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22003] = {combat = 5050, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=5", dungeon_type = 26, first_reward_nums = __rt_1, id = 22003, module_id = 2900, name = 58972, normal_drop = __rt[180], play_para = 20071, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22004] = {combat = 8000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=6", dungeon_type = 26, first_reward_nums = __rt_1, id = 22004, module_id = 2900, name = 58972, normal_drop = __rt[176], play_para = 20072, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22004] = {combat = 8000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=6", dungeon_type = 26, first_reward_nums = __rt_1, id = 22004, module_id = 2900, name = 58972, normal_drop = __rt[180], play_para = 20072, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22005] = {combat = 10950, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=7", dungeon_type = 26, first_reward_nums = __rt_1, id = 22005, module_id = 2901, name = 95138, normal_drop = __rt[176], play_para = 20073, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22005] = {combat = 10950, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=7", dungeon_type = 26, first_reward_nums = __rt_1, id = 22005, module_id = 2901, name = 95138, normal_drop = __rt[180], play_para = 20073, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22006] = {combat = 12150, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=7", dungeon_type = 26, first_reward_nums = __rt_1, id = 22006, module_id = 2901, name = 95138, normal_drop = __rt[176], play_para = 20074, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22006] = {combat = 12150, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=4|2=4|3=4|4=4|5=4|6=4|7=7", dungeon_type = 26, first_reward_nums = __rt_1, id = 22006, module_id = 2901, name = 95138, normal_drop = __rt[180], play_para = 20074, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22007] = {combat = 14100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14|2=12_17|3=15_18|4=16_19|5=13_20|6=11_12_13_14_15_16_17_18_19_20|7=11_12_13_14_15_16_17_18_19_20", dungeon_type = 26, first_reward_nums = __rt_1, id = 22007, module_id = 2901, name = 95138, normal_drop = __rt[176], play_para = 20075, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22007] = {combat = 14100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14|2=12_17|3=15_18|4=16_19|5=13_20|6=11_12_13_14_15_16_17_18_19_20|7=11_12_13_14_15_16_17_18_19_20", dungeon_type = 26, first_reward_nums = __rt_1, id = 22007, module_id = 2901, name = 95138, normal_drop = __rt[180], play_para = 20075, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22008] = {combat = 14600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22008, module_id = 2901, name = 95138, normal_drop = __rt[176], play_para = 20076, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22008] = {combat = 14600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22008, module_id = 2901, name = 95138, normal_drop = __rt[180], play_para = 20076, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22009] = {combat = 14100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14|2=12_17|3=15_18|4=16_19|5=13_20|6=11_12_13_14_15_16_17_18_19_20|7=11_12_13_14_15_16_17_18_19_20", dungeon_type = 26, first_reward_nums = __rt_1, id = 22009, module_id = 2901, name = 95138, normal_drop = __rt[176], play_para = 20077, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22009] = {combat = 14100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14|2=12_17|3=15_18|4=16_19|5=13_20|6=11_12_13_14_15_16_17_18_19_20|7=11_12_13_14_15_16_17_18_19_20", dungeon_type = 26, first_reward_nums = __rt_1, id = 22009, module_id = 2901, name = 95138, normal_drop = __rt[180], play_para = 20077, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22010] = {combat = 14600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22010, module_id = 2901, name = 95138, normal_drop = __rt[176], play_para = 20078, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22010] = {combat = 14600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22010, module_id = 2901, name = 95138, normal_drop = __rt[180], play_para = 20078, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22011] = {combat = 15100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22011, module_id = 2902, name = 341036, normal_drop = __rt[176], play_para = 20079, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22011] = {combat = 15100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22011, module_id = 2902, name = 341036, normal_drop = __rt[180], play_para = 20079, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22012] = {combat = 22450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22012, module_id = 2902, name = 341036, normal_drop = __rt[176], play_para = 20080, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22012] = {combat = 22450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22012, module_id = 2902, name = 341036, normal_drop = __rt[180], play_para = 20080, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22013] = {combat = 29100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22013, module_id = 2902, name = 341036, normal_drop = __rt[176], play_para = 20081, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22013] = {combat = 29100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22013, module_id = 2902, name = 341036, normal_drop = __rt[180], play_para = 20081, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22014] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22014, module_id = 2902, name = 341036, normal_drop = __rt[176], play_para = 20082, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22014] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22014, module_id = 2902, name = 341036, normal_drop = __rt[180], play_para = 20082, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22015] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22015, module_id = 2902, name = 341036, normal_drop = __rt[176], play_para = 20083, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22015] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22015, module_id = 2902, name = 341036, normal_drop = __rt[180], play_para = 20083, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22016] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22016, module_id = 2902, name = 341036, normal_drop = __rt[176], play_para = 20084, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22016] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22016, module_id = 2902, name = 341036, normal_drop = __rt[180], play_para = 20084, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22017] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22017, module_id = 2902, name = 341036, normal_drop = __rt[176], play_para = 20085, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22017] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22017, module_id = 2902, name = 341036, normal_drop = __rt[180], play_para = 20085, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22018] = {combat = 15100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22018, module_id = 2903, name = 154156, normal_drop = __rt[176], play_para = 20086, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22018] = {combat = 15100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22018, module_id = 2903, name = 154156, normal_drop = __rt[180], play_para = 20086, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22019] = {combat = 22450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22019, module_id = 2903, name = 154156, normal_drop = __rt[176], play_para = 20087, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22019] = {combat = 22450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22019, module_id = 2903, name = 154156, normal_drop = __rt[180], play_para = 20087, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22020] = {combat = 29100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22020, module_id = 2903, name = 154156, normal_drop = __rt[176], play_para = 20088, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22020] = {combat = 29100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22020, module_id = 2903, name = 154156, normal_drop = __rt[180], play_para = 20088, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22021] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22021, module_id = 2903, name = 154156, normal_drop = __rt[176], play_para = 20089, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22021] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22021, module_id = 2903, name = 154156, normal_drop = __rt[180], play_para = 20089, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22022] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22022, module_id = 2903, name = 154156, normal_drop = __rt[176], play_para = 20090, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22022] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22022, module_id = 2903, name = 154156, normal_drop = __rt[180], play_para = 20090, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22023] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22023, module_id = 2903, name = 154156, normal_drop = __rt[176], play_para = 20091, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22023] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22023, module_id = 2903, name = 154156, normal_drop = __rt[180], play_para = 20091, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22024] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22024, module_id = 2903, name = 154156, normal_drop = __rt[176], play_para = 20092, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22024] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22024, module_id = 2903, name = 154156, normal_drop = __rt[180], play_para = 20092, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22025] = {combat = 22450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22025, module_id = 2904, name = 147141, normal_drop = __rt[176], play_para = 20103, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22025] = {combat = 22450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22025, module_id = 2904, name = 147141, normal_drop = __rt[180], play_para = 20103, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22026] = {combat = 29100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22026, module_id = 2904, name = 147141, normal_drop = __rt[176], play_para = 20104, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22026] = {combat = 29100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22026, module_id = 2904, name = 147141, normal_drop = __rt[180], play_para = 20104, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22027] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22027, module_id = 2904, name = 147141, normal_drop = __rt[176], play_para = 20105, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22027] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22027, module_id = 2904, name = 147141, normal_drop = __rt[180], play_para = 20105, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22028] = {combat = 38500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22028, module_id = 2904, name = 147141, normal_drop = __rt[176], play_para = 20106, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22028] = {combat = 38500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22028, module_id = 2904, name = 147141, normal_drop = __rt[180], play_para = 20106, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22029] = {combat = 42350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22029, module_id = 2904, name = 147141, normal_drop = __rt[176], play_para = 20107, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22029] = {combat = 42350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22029, module_id = 2904, name = 147141, normal_drop = __rt[180], play_para = 20107, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22030] = {combat = 45500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22030, module_id = 2904, name = 147141, normal_drop = __rt[176], play_para = 20108, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22030] = {combat = 45500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22030, module_id = 2904, name = 147141, normal_drop = __rt[180], play_para = 20108, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[22031] = {combat = 54450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22031, module_id = 2904, name = 147141, normal_drop = __rt[176], play_para = 20109, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
+[22031] = {combat = 54450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, day_extra_show = "1=11_14_7_8|2=12_17_4_9|3=15_18_1_2|4=16_19_3_5|5=13_20_6_10|6=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10|7=11_12_13_14_15_16_17_18_19_20_1_2_3_4_5_6_7_8_9_10", dungeon_type = 26, first_reward_nums = __rt_1, id = 22031, module_id = 2904, name = 147141, normal_drop = __rt[180], play_para = 20109, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[27001] = {combat = 7100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27001, module_id = 3100, name = 394449, play_para = 2000001, pre_condition = __rt_1, pre_para2 = __rt_1}
+[27001] = {combat = 7100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27001, module_id = 3100, name = 394449, play_para = 2000001, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
-[27002] = {combat = 7150, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27002, module_id = 3100, name = 332872, play_para = 2000002, pre_condition = __rt[123], 
+[27002] = {combat = 7150, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27002, module_id = 3100, name = 332872, play_para = 2000002, pre_condition = __rt[127], 
 pre_para1 = {27001}
 }
 , 
-[27003] = {combat = 7800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt[124], id = 27003, module_id = 3100, name = 271295, play_para = 2000003, pre_condition = __rt[123], 
+[27003] = {combat = 7800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt[128], id = 27003, module_id = 3100, name = 271295, play_para = 2000003, pre_condition = __rt[127], 
 pre_para1 = {27002}
 }
 , 
-[27004] = {combat = 8400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[179], first_reward_nums = __rt[120], id = 27004, module_id = 3100, name = 209718, play_para = 2000004, pre_condition = __rt[123], 
+[27004] = {combat = 8400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27004, module_id = 3100, name = 209718, play_para = 2000004, pre_condition = __rt[127], 
 pre_para1 = {27003}
 }
 , 
-[27005] = {combat = 9200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27005, module_id = 3100, name = 148141, play_para = 2000005, pre_condition = __rt[123], 
+[27005] = {combat = 9200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27005, module_id = 3100, name = 148141, play_para = 2000005, pre_condition = __rt[127], 
 pre_para1 = {27004}
 }
 , 
-[27006] = {combat = 11000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27006, module_id = 3100, name = 86564, play_para = 2000006, pre_condition = __rt[123], 
+[27006] = {combat = 11000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27006, module_id = 3100, name = 86564, play_para = 2000006, pre_condition = __rt[127], 
 pre_para1 = {27005}
 }
 , 
-[27007] = {combat = 12200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27007, module_id = 3100, name = 24987, play_para = 2000007, pre_condition = __rt[123], 
+[27007] = {combat = 12200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt[128], id = 27007, module_id = 3100, name = 24987, play_para = 2000007, pre_condition = __rt[127], 
 pre_para1 = {27006}
 }
 , 
-[27008] = {combat = 13400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27008, module_id = 3100, name = 487698, play_para = 2000008, pre_condition = __rt[123], 
+[27008] = {combat = 13400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27008, module_id = 3100, name = 487698, play_para = 2000008, pre_condition = __rt[127], 
 pre_para1 = {27007}
 }
 , 
-[27009] = {combat = 14900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[120], id = 27009, module_id = 3100, name = 426121, play_para = 2000009, pre_condition = __rt[123], 
+[27009] = {combat = 14900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt[124], id = 27009, module_id = 3100, name = 426121, play_para = 2000009, pre_condition = __rt[127], 
 pre_para1 = {27008}
 }
 , 
-[27010] = {combat = 15400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], 
+[27010] = {combat = 15400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[189], 
 first_reward_nums = {100, 1}
-, id = 27010, module_id = 3100, name = 319509, play_para = 2000010, pre_condition = __rt[123], 
+, id = 27010, module_id = 3100, name = 319509, play_para = 2000010, pre_condition = __rt[127], 
 pre_para1 = {27009}
 }
 , 
-[27011] = {combat = 16200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27011, module_id = 3100, name = 257932, play_para = 2000011, pre_condition = __rt[123], 
+[27011] = {combat = 16200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27011, module_id = 3100, name = 257932, play_para = 2000011, pre_condition = __rt[127], 
 pre_para1 = {27010}
 }
 , 
-[27012] = {combat = 16700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt[124], id = 27012, module_id = 3100, name = 196355, play_para = 2000012, pre_condition = __rt[123], 
+[27012] = {combat = 16700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt[128], id = 27012, module_id = 3100, name = 196355, play_para = 2000012, pre_condition = __rt[127], 
 pre_para1 = {27011}
 }
 , 
-[27013] = {combat = 17200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[179], first_reward_nums = __rt[120], id = 27013, module_id = 3100, name = 134778, play_para = 2000013, pre_condition = __rt[123], 
+[27013] = {combat = 17200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27013, module_id = 3100, name = 134778, play_para = 2000013, pre_condition = __rt[127], 
 pre_para1 = {27012}
 }
 , 
-[27014] = {combat = 17700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27014, module_id = 3100, name = 73201, play_para = 2000014, pre_condition = __rt[123], 
+[27014] = {combat = 17700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27014, module_id = 3100, name = 73201, play_para = 2000014, pre_condition = __rt[127], 
 pre_para1 = {27013}
 }
 , 
-[27015] = {combat = 18300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27015, module_id = 3100, name = 11624, play_para = 2000015, pre_condition = __rt[123], 
+[27015] = {combat = 18300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27015, module_id = 3100, name = 11624, play_para = 2000015, pre_condition = __rt[127], 
 pre_para1 = {27014}
 }
 , 
-[27016] = {combat = 19100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27016, module_id = 3100, name = 474335, play_para = 2000016, pre_condition = __rt[123], 
+[27016] = {combat = 19100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27016, module_id = 3100, name = 474335, play_para = 2000016, pre_condition = __rt[127], 
 pre_para1 = {27015}
 }
 , 
-[27017] = {combat = 20000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27017, module_id = 3100, name = 412758, play_para = 2000017, pre_condition = __rt[123], 
+[27017] = {combat = 20000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27017, module_id = 3100, name = 412758, play_para = 2000017, pre_condition = __rt[127], 
 pre_para1 = {27016}
 }
 , 
-[27018] = {combat = 21400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27018, module_id = 3100, name = 351181, play_para = 2000018, pre_condition = __rt[123], 
+[27018] = {combat = 21400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt[128], id = 27018, module_id = 3100, name = 351181, play_para = 2000018, pre_condition = __rt[127], 
 pre_para1 = {27017}
 }
 , 
-[27019] = {combat = 22200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[120], id = 27019, module_id = 3100, name = 289604, play_para = 2000019, pre_condition = __rt[123], 
+[27019] = {combat = 22200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt[124], id = 27019, module_id = 3100, name = 289604, play_para = 2000019, pre_condition = __rt[127], 
 pre_para1 = {27018}
 }
 , 
-[27020] = {combat = 22700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt[188], id = 27020, module_id = 3100, name = 155978, play_para = 2000020, pre_condition = __rt[123], 
+[27020] = {combat = 22700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[191], first_reward_nums = __rt[192], id = 27020, module_id = 3100, name = 155978, play_para = 2000020, pre_condition = __rt[127], 
 pre_para1 = {27019}
 }
 , 
-[27021] = {combat = 23500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27021, module_id = 3100, name = 94401, play_para = 2000021, pre_condition = __rt[123], 
+[27021] = {combat = 23500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27021, module_id = 3100, name = 94401, play_para = 2000021, pre_condition = __rt[127], 
 pre_para1 = {27020}
 }
 , 
-[27022] = {combat = 24400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt[124], id = 27022, module_id = 3100, name = 32825, play_para = 2000022, pre_condition = __rt[123], 
+[27022] = {combat = 24400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt[128], id = 27022, module_id = 3100, name = 32825, play_para = 2000022, pre_condition = __rt[127], 
 pre_para1 = {27021}
 }
 , 
-[27023] = {combat = 25300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27023, module_id = 3100, name = 495535, play_para = 2000023, pre_condition = __rt[123], 
+[27023] = {combat = 25300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27023, module_id = 3100, name = 495535, play_para = 2000023, pre_condition = __rt[127], 
 pre_para1 = {27022}
 }
 , 
-[27024] = {combat = 26000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27024, module_id = 3100, name = 433958, play_para = 2000024, pre_condition = __rt[123], 
+[27024] = {combat = 26000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27024, module_id = 3100, name = 433958, play_para = 2000024, pre_condition = __rt[127], 
 pre_para1 = {27023}
 }
 , 
-[27025] = {combat = 27300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27025, module_id = 3100, name = 372381, play_para = 2000025, pre_condition = __rt[123], 
+[27025] = {combat = 27300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27025, module_id = 3100, name = 372381, play_para = 2000025, pre_condition = __rt[127], 
 pre_para1 = {27024}
 }
 , 
-[27026] = {combat = 28000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt_3, id = 27026, module_id = 3100, name = 310804, play_para = 2000026, pre_condition = __rt[123], 
+[27026] = {combat = 28000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt_3, id = 27026, module_id = 3100, name = 310804, play_para = 2000026, pre_condition = __rt[127], 
 pre_para1 = {27025}
 }
 , 
-[27027] = {combat = 29400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27027, module_id = 3100, name = 249227, play_para = 2000027, pre_condition = __rt[123], 
+[27027] = {combat = 29400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt[128], id = 27027, module_id = 3100, name = 249227, play_para = 2000027, pre_condition = __rt[127], 
 pre_para1 = {27026}
 }
 , 
-[27028] = {combat = 30800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27028, module_id = 3100, name = 187650, play_para = 2000028, pre_condition = __rt[123], 
+[27028] = {combat = 30800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27028, module_id = 3100, name = 187650, play_para = 2000028, pre_condition = __rt[127], 
 pre_para1 = {27027}
 }
 , 
-[27029] = {combat = 31500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[120], id = 27029, module_id = 3100, name = 126073, play_para = 2000029, pre_condition = __rt[123], 
+[27029] = {combat = 31500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt[124], id = 27029, module_id = 3100, name = 126073, play_para = 2000029, pre_condition = __rt[127], 
 pre_para1 = {27028}
 }
 , 
-[27030] = {combat = 32200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], 
+[27030] = {combat = 32200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[189], 
 first_reward_nums = {200, 1}
-, id = 27030, module_id = 3100, name = 516735, play_para = 2000030, pre_condition = __rt[123], 
+, id = 27030, module_id = 3100, name = 516735, play_para = 2000030, pre_condition = __rt[127], 
 pre_para1 = {27029}
 }
 , 
-[27031] = {combat = 32250, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[179], first_reward_nums = __rt[120], id = 27031, module_id = 3100, name = 455158, play_para = 2000031, pre_condition = __rt[123], 
+[27031] = {combat = 32250, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27031, module_id = 3100, name = 455158, play_para = 2000031, pre_condition = __rt[127], 
 pre_para1 = {27030}
 }
 , 
-[27032] = {combat = 32300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt[124], id = 27032, module_id = 3100, name = 393581, play_para = 2000032, pre_condition = __rt[123], 
+[27032] = {combat = 32300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt[128], id = 27032, module_id = 3100, name = 393581, play_para = 2000032, pre_condition = __rt[127], 
 pre_para1 = {27031}
 }
 , 
-[27033] = {combat = 32400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27033, module_id = 3100, name = 332004, play_para = 2000033, pre_condition = __rt[123], 
+[27033] = {combat = 32400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27033, module_id = 3100, name = 332004, play_para = 2000033, pre_condition = __rt[127], 
 pre_para1 = {27032}
 }
 , 
-[27034] = {combat = 32450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27034, module_id = 3100, name = 270427, play_para = 2000034, pre_condition = __rt[123], 
+[27034] = {combat = 32450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27034, module_id = 3100, name = 270427, play_para = 2000034, pre_condition = __rt[127], 
 pre_para1 = {27033}
 }
 , 
-[27035] = {combat = 32500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27035, module_id = 3100, name = 208850, play_para = 2000035, pre_condition = __rt[123], 
+[27035] = {combat = 32500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27035, module_id = 3100, name = 208850, play_para = 2000035, pre_condition = __rt[127], 
 pre_para1 = {27034}
 }
 , 
-[27036] = {combat = 32550, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27036, module_id = 3100, name = 147273, play_para = 2000036, pre_condition = __rt[123], 
+[27036] = {combat = 32550, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27036, module_id = 3100, name = 147273, play_para = 2000036, pre_condition = __rt[127], 
 pre_para1 = {27035}
 }
 , 
-[27037] = {combat = 32600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27037, module_id = 3100, name = 85696, play_para = 2000037, pre_condition = __rt[123], 
+[27037] = {combat = 32600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27037, module_id = 3100, name = 85696, play_para = 2000037, pre_condition = __rt[127], 
 pre_para1 = {27036}
 }
 , 
-[27038] = {combat = 32650, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27038, module_id = 3100, name = 24119, play_para = 2000038, pre_condition = __rt[123], 
+[27038] = {combat = 32650, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27038, module_id = 3100, name = 24119, play_para = 2000038, pre_condition = __rt[127], 
 pre_para1 = {27037}
 }
 , 
-[27039] = {combat = 32700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt_3, id = 27039, module_id = 3100, name = 486830, play_para = 2000039, pre_condition = __rt[123], 
+[27039] = {combat = 32700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt_3, id = 27039, module_id = 3100, name = 486830, play_para = 2000039, pre_condition = __rt[127], 
 pre_para1 = {27038}
 }
 , 
-[27040] = {combat = 33800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt[188], id = 27040, module_id = 3100, name = 353204, play_para = 2000040, pre_condition = __rt[123], 
+[27040] = {combat = 33800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[191], first_reward_nums = __rt[192], id = 27040, module_id = 3100, name = 353204, play_para = 2000040, pre_condition = __rt[127], 
 pre_para1 = {27039}
 }
 , 
-[27041] = {combat = 34600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27041, module_id = 3100, name = 291627, play_para = 2000041, pre_condition = __rt[123], 
+[27041] = {combat = 34600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27041, module_id = 3100, name = 291627, play_para = 2000041, pre_condition = __rt[127], 
 pre_para1 = {27040}
 }
 , 
-[27042] = {combat = 35700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt[120], id = 27042, module_id = 3100, name = 230050, play_para = 2000042, pre_condition = __rt[123], 
+[27042] = {combat = 35700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt[124], id = 27042, module_id = 3100, name = 230050, play_para = 2000042, pre_condition = __rt[127], 
 pre_para1 = {27041}
 }
 , 
-[27043] = {combat = 36600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27043, module_id = 3100, name = 168473, play_para = 2000043, pre_condition = __rt[123], 
+[27043] = {combat = 36600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27043, module_id = 3100, name = 168473, play_para = 2000043, pre_condition = __rt[127], 
 pre_para1 = {27042}
 }
 , 
-[27044] = {combat = 37500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27044, module_id = 3100, name = 106896, play_para = 2000044, pre_condition = __rt[123], 
+[27044] = {combat = 37500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27044, module_id = 3100, name = 106896, play_para = 2000044, pre_condition = __rt[127], 
 pre_para1 = {27043}
 }
 , 
-[27045] = {combat = 37700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27045, module_id = 3100, name = 45319, play_para = 2000045, pre_condition = __rt[123], 
+[27045] = {combat = 37700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27045, module_id = 3100, name = 45319, play_para = 2000045, pre_condition = __rt[127], 
 pre_para1 = {27044}
 }
 , 
-[27046] = {combat = 37900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27046, module_id = 3100, name = 508030, play_para = 2000046, pre_condition = __rt[123], 
+[27046] = {combat = 37900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27046, module_id = 3100, name = 508030, play_para = 2000046, pre_condition = __rt[127], 
 pre_para1 = {27045}
 }
 , 
-[27047] = {combat = 38100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[120], id = 27047, module_id = 3100, name = 446453, play_para = 2000047, pre_condition = __rt[123], 
+[27047] = {combat = 38100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt[124], id = 27047, module_id = 3100, name = 446453, play_para = 2000047, pre_condition = __rt[127], 
 pre_para1 = {27046}
 }
 , 
-[27048] = {combat = 38200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27048, module_id = 3100, name = 384876, play_para = 2000048, pre_condition = __rt[123], 
+[27048] = {combat = 38200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27048, module_id = 3100, name = 384876, play_para = 2000048, pre_condition = __rt[127], 
 pre_para1 = {27047}
 }
 , 
-[27049] = {combat = 38250, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27049, module_id = 3100, name = 323299, play_para = 2000049, pre_condition = __rt[123], 
+[27049] = {combat = 38250, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27049, module_id = 3100, name = 323299, play_para = 2000049, pre_condition = __rt[127], 
 pre_para1 = {27048}
 }
 , 
-[27050] = {combat = 38300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[189], id = 27050, module_id = 3100, name = 189673, play_para = 2000050, pre_condition = __rt[123], 
+[27050] = {combat = 38300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[189], first_reward_nums = __rt[193], id = 27050, module_id = 3100, name = 189673, play_para = 2000050, pre_condition = __rt[127], 
 pre_para1 = {27049}
 }
 , 
-[27051] = {combat = 38350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27051, module_id = 3100, name = 128096, play_para = 2000051, pre_condition = __rt[123], 
+[27051] = {combat = 38350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27051, module_id = 3100, name = 128096, play_para = 2000051, pre_condition = __rt[127], 
 pre_para1 = {27050}
 }
 , 
-[27052] = {combat = 38400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27052, module_id = 3100, name = 66519, play_para = 2000052, pre_condition = __rt[123], 
+[27052] = {combat = 38400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27052, module_id = 3100, name = 66519, play_para = 2000052, pre_condition = __rt[127], 
 pre_para1 = {27051}
 }
 , 
-[27053] = {combat = 38500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt[120], id = 27053, module_id = 3100, name = 4942, play_para = 2000053, pre_condition = __rt[123], 
+[27053] = {combat = 38500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt[124], id = 27053, module_id = 3100, name = 4942, play_para = 2000053, pre_condition = __rt[127], 
 pre_para1 = {27052}
 }
 , 
-[27054] = {combat = 38550, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[179], first_reward_nums = __rt[120], id = 27054, module_id = 3100, name = 467653, play_para = 2000054, pre_condition = __rt[123], 
+[27054] = {combat = 38550, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27054, module_id = 3100, name = 467653, play_para = 2000054, pre_condition = __rt[127], 
 pre_para1 = {27053}
 }
 , 
-[27055] = {combat = 38600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27055, module_id = 3100, name = 406076, play_para = 2000055, pre_condition = __rt[123], 
+[27055] = {combat = 38600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27055, module_id = 3100, name = 406076, play_para = 2000055, pre_condition = __rt[127], 
 pre_para1 = {27054}
 }
 , 
-[27056] = {combat = 38650, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27056, module_id = 3100, name = 344499, play_para = 2000056, pre_condition = __rt[123], 
+[27056] = {combat = 38650, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27056, module_id = 3100, name = 344499, play_para = 2000056, pre_condition = __rt[127], 
 pre_para1 = {27055}
 }
 , 
-[27057] = {combat = 39100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[120], id = 27057, module_id = 3100, name = 282922, play_para = 2000057, pre_condition = __rt[123], 
+[27057] = {combat = 39100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt[124], id = 27057, module_id = 3100, name = 282922, play_para = 2000057, pre_condition = __rt[127], 
 pre_para1 = {27056}
 }
 , 
-[27058] = {combat = 39800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27058, module_id = 3100, name = 221345, play_para = 2000058, pre_condition = __rt[123], 
+[27058] = {combat = 39800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27058, module_id = 3100, name = 221345, play_para = 2000058, pre_condition = __rt[127], 
 pre_para1 = {27057}
 }
 , 
-[27059] = {combat = 41100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[122], id = 27059, module_id = 3100, name = 159768, play_para = 2000059, pre_condition = __rt[123], 
+[27059] = {combat = 41100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt[126], id = 27059, module_id = 3100, name = 159768, play_para = 2000059, pre_condition = __rt[127], 
 pre_para1 = {27058}
 }
 , 
-[27060] = {combat = 42000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[189], id = 27060, module_id = 3100, name = 26142, play_para = 2000060, pre_condition = __rt[123], 
+[27060] = {combat = 42000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[189], first_reward_nums = __rt[193], id = 27060, module_id = 3100, name = 26142, play_para = 2000060, pre_condition = __rt[127], 
 pre_para1 = {27059}
 }
 , 
-[27061] = {combat = 42500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27061, module_id = 3100, name = 488853, play_para = 2000061, pre_condition = __rt[123], 
+[27061] = {combat = 42500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27061, module_id = 3100, name = 488853, play_para = 2000061, pre_condition = __rt[127], 
 pre_para1 = {27060}
 }
 , 
-[27062] = {combat = 42550, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt[120], id = 27062, module_id = 3100, name = 427276, play_para = 2000062, pre_condition = __rt[123], 
+[27062] = {combat = 42550, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt[124], id = 27062, module_id = 3100, name = 427276, play_para = 2000062, pre_condition = __rt[127], 
 pre_para1 = {27061}
 }
 , 
-[27063] = {combat = 42600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[179], first_reward_nums = __rt[120], id = 27063, module_id = 3100, name = 365699, play_para = 2000063, pre_condition = __rt[123], 
+[27063] = {combat = 42600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27063, module_id = 3100, name = 365699, play_para = 2000063, pre_condition = __rt[127], 
 pre_para1 = {27062}
 }
 , 
-[27064] = {combat = 42650, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27064, module_id = 3100, name = 304122, play_para = 2000064, pre_condition = __rt[123], 
+[27064] = {combat = 42650, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27064, module_id = 3100, name = 304122, play_para = 2000064, pre_condition = __rt[127], 
 pre_para1 = {27063}
 }
 , 
-[27065] = {combat = 43700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27065, module_id = 3100, name = 242545, play_para = 2000065, pre_condition = __rt[123], 
+[27065] = {combat = 43700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27065, module_id = 3100, name = 242545, play_para = 2000065, pre_condition = __rt[127], 
 pre_para1 = {27064}
 }
 , 
-[27066] = {combat = 43750, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27066, module_id = 3100, name = 180968, play_para = 2000066, pre_condition = __rt[123], 
+[27066] = {combat = 43750, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27066, module_id = 3100, name = 180968, play_para = 2000066, pre_condition = __rt[127], 
 pre_para1 = {27065}
 }
 , 
-[27067] = {combat = 43800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27067, module_id = 3100, name = 119391, play_para = 2000067, pre_condition = __rt[123], 
+[27067] = {combat = 43800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27067, module_id = 3100, name = 119391, play_para = 2000067, pre_condition = __rt[127], 
 pre_para1 = {27066}
 }
 , 
-[27068] = {combat = 43850, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[120], id = 27068, module_id = 3100, name = 57814, play_para = 2000068, pre_condition = __rt[123], 
+[27068] = {combat = 43850, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt[124], id = 27068, module_id = 3100, name = 57814, play_para = 2000068, pre_condition = __rt[127], 
 pre_para1 = {27067}
 }
 , 
-[27069] = {combat = 43900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[122], id = 27069, module_id = 3100, name = 520525, play_para = 2000069, pre_condition = __rt[123], 
+[27069] = {combat = 43900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt[126], id = 27069, module_id = 3100, name = 520525, play_para = 2000069, pre_condition = __rt[127], 
 pre_para1 = {27068}
 }
 , 
-[27070] = {combat = 44100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt_5, id = 27070, module_id = 3100, name = 386899, play_para = 2000070, pre_condition = __rt[123], 
+[27070] = {combat = 44100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[191], first_reward_nums = __rt_5, id = 27070, module_id = 3100, name = 386899, play_para = 2000070, pre_condition = __rt[127], 
 pre_para1 = {27069}
 }
 , 
-[27071] = {combat = 44300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27071, module_id = 3100, name = 325322, play_para = 2000071, pre_condition = __rt[123], 
+[27071] = {combat = 44300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27071, module_id = 3100, name = 325322, play_para = 2000071, pre_condition = __rt[127], 
 pre_para1 = {27070}
 }
 , 
-[27072] = {combat = 44500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt[120], id = 27072, module_id = 3100, name = 263745, play_para = 2000072, pre_condition = __rt[123], 
+[27072] = {combat = 44500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt[124], id = 27072, module_id = 3100, name = 263745, play_para = 2000072, pre_condition = __rt[127], 
 pre_para1 = {27071}
 }
 , 
-[27073] = {combat = 44700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27073, module_id = 3100, name = 202168, play_para = 2000073, pre_condition = __rt[123], 
+[27073] = {combat = 44700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27073, module_id = 3100, name = 202168, play_para = 2000073, pre_condition = __rt[127], 
 pre_para1 = {27072}
 }
 , 
-[27074] = {combat = 45300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27074, module_id = 3100, name = 140591, play_para = 2000074, pre_condition = __rt[123], 
+[27074] = {combat = 45300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27074, module_id = 3100, name = 140591, play_para = 2000074, pre_condition = __rt[127], 
 pre_para1 = {27073}
 }
 , 
-[27075] = {combat = 46400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27075, module_id = 3100, name = 79014, play_para = 2000075, pre_condition = __rt[123], 
+[27075] = {combat = 46400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27075, module_id = 3100, name = 79014, play_para = 2000075, pre_condition = __rt[127], 
 pre_para1 = {27074}
 }
 , 
-[27076] = {combat = 47000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt_3, id = 27076, module_id = 3100, name = 17437, play_para = 2000076, pre_condition = __rt[123], 
+[27076] = {combat = 47000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt_3, id = 27076, module_id = 3100, name = 17437, play_para = 2000076, pre_condition = __rt[127], 
 pre_para1 = {27075}
 }
 , 
-[27077] = {combat = 48100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[120], id = 27077, module_id = 3100, name = 480148, play_para = 2000077, pre_condition = __rt[123], 
+[27077] = {combat = 48100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt[124], id = 27077, module_id = 3100, name = 480148, play_para = 2000077, pre_condition = __rt[127], 
 pre_para1 = {27076}
 }
 , 
-[27078] = {combat = 49200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27078, module_id = 3100, name = 418571, play_para = 2000078, pre_condition = __rt[123], 
+[27078] = {combat = 49200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27078, module_id = 3100, name = 418571, play_para = 2000078, pre_condition = __rt[127], 
 pre_para1 = {27077}
 }
 , 
-[27079] = {combat = 50300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[190], id = 27079, module_id = 3100, name = 356994, play_para = 2000079, pre_condition = __rt[123], 
+[27079] = {combat = 50300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt[194], id = 27079, module_id = 3100, name = 356994, play_para = 2000079, pre_condition = __rt[127], 
 pre_para1 = {27078}
 }
 , 
-[27080] = {combat = 50400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt_5, id = 27080, module_id = 3100, name = 223368, play_para = 2000080, pre_condition = __rt[123], 
+[27080] = {combat = 50400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[191], first_reward_nums = __rt_5, id = 27080, module_id = 3100, name = 223368, play_para = 2000080, pre_condition = __rt[127], 
 pre_para1 = {27079}
 }
 , 
-[27081] = {combat = 50500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[179], first_reward_nums = __rt[120], id = 27081, module_id = 3100, name = 161791, play_para = 2000081, pre_condition = __rt[123], 
+[27081] = {combat = 50500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27081, module_id = 3100, name = 161791, play_para = 2000081, pre_condition = __rt[127], 
 pre_para1 = {27080}
 }
 , 
-[27082] = {combat = 50600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt[122], id = 27082, module_id = 3100, name = 100214, play_para = 2000082, pre_condition = __rt[123], 
+[27082] = {combat = 50600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt[126], id = 27082, module_id = 3100, name = 100214, play_para = 2000082, pre_condition = __rt[127], 
 pre_para1 = {27081}
 }
 , 
-[27083] = {combat = 50700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27083, module_id = 3100, name = 38637, play_para = 2000083, pre_condition = __rt[123], 
+[27083] = {combat = 50700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27083, module_id = 3100, name = 38637, play_para = 2000083, pre_condition = __rt[127], 
 pre_para1 = {27082}
 }
 , 
-[27084] = {combat = 50800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27084, module_id = 3100, name = 501348, play_para = 2000084, pre_condition = __rt[123], 
+[27084] = {combat = 50800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27084, module_id = 3100, name = 501348, play_para = 2000084, pre_condition = __rt[127], 
 pre_para1 = {27083}
 }
 , 
-[27085] = {combat = 51000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27085, module_id = 3100, name = 439771, play_para = 2000085, pre_condition = __rt[123], 
+[27085] = {combat = 51000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27085, module_id = 3100, name = 439771, play_para = 2000085, pre_condition = __rt[127], 
 pre_para1 = {27084}
 }
 , 
-[27086] = {combat = 51100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27086, module_id = 3100, name = 378194, play_para = 2000086, pre_condition = __rt[123], 
+[27086] = {combat = 51100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27086, module_id = 3100, name = 378194, play_para = 2000086, pre_condition = __rt[127], 
 pre_para1 = {27085}
 }
 , 
-[27087] = {combat = 51300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27087, module_id = 3100, name = 316617, play_para = 2000087, pre_condition = __rt[123], 
+[27087] = {combat = 51300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27087, module_id = 3100, name = 316617, play_para = 2000087, pre_condition = __rt[127], 
 pre_para1 = {27086}
 }
 , 
-[27088] = {combat = 51400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27088, module_id = 3100, name = 255040, play_para = 2000088, pre_condition = __rt[123], 
+[27088] = {combat = 51400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27088, module_id = 3100, name = 255040, play_para = 2000088, pre_condition = __rt[127], 
 pre_para1 = {27087}
 }
 , 
-[27089] = {combat = 51450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt_3, id = 27089, module_id = 3100, name = 193463, play_para = 2000089, pre_condition = __rt[123], 
+[27089] = {combat = 51450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt_3, id = 27089, module_id = 3100, name = 193463, play_para = 2000089, pre_condition = __rt[127], 
 pre_para1 = {27088}
 }
 , 
-[27090] = {combat = 51500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], id = 27090, module_id = 3100, name = 59837, play_para = 2000090, pre_condition = __rt[123], 
+[27090] = {combat = 51500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[191], id = 27090, module_id = 3100, name = 59837, play_para = 2000090, pre_condition = __rt[127], 
 pre_para1 = {27089}
 }
 , 
-[27091] = {combat = 51550, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27091, module_id = 3100, name = 522548, play_para = 2000091, pre_condition = __rt[123], 
+[27091] = {combat = 51550, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27091, module_id = 3100, name = 522548, play_para = 2000091, pre_condition = __rt[127], 
 pre_para1 = {27090}
 }
 , 
-[27092] = {combat = 51600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt[122], id = 27092, module_id = 3100, name = 460971, play_para = 2000092, pre_condition = __rt[123], 
+[27092] = {combat = 51600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt[126], id = 27092, module_id = 3100, name = 460971, play_para = 2000092, pre_condition = __rt[127], 
 pre_para1 = {27091}
 }
 , 
-[27093] = {combat = 52900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27093, module_id = 3100, name = 399394, play_para = 2000093, pre_condition = __rt[123], 
+[27093] = {combat = 52900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27093, module_id = 3100, name = 399394, play_para = 2000093, pre_condition = __rt[127], 
 pre_para1 = {27092}
 }
 , 
-[27094] = {combat = 53000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27094, module_id = 3100, name = 337817, play_para = 2000094, pre_condition = __rt[123], 
+[27094] = {combat = 53000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27094, module_id = 3100, name = 337817, play_para = 2000094, pre_condition = __rt[127], 
 pre_para1 = {27093}
 }
 , 
-[27095] = {combat = 53050, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27095, module_id = 3100, name = 276240, play_para = 2000095, pre_condition = __rt[123], 
+[27095] = {combat = 53050, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27095, module_id = 3100, name = 276240, play_para = 2000095, pre_condition = __rt[127], 
 pre_para1 = {27094}
 }
 , 
-[27096] = {combat = 53100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27096, module_id = 3100, name = 214663, play_para = 2000096, pre_condition = __rt[123], 
+[27096] = {combat = 53100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27096, module_id = 3100, name = 214663, play_para = 2000096, pre_condition = __rt[127], 
 pre_para1 = {27095}
 }
 , 
-[27097] = {combat = 53200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[120], id = 27097, module_id = 3100, name = 153086, play_para = 2000097, pre_condition = __rt[123], 
+[27097] = {combat = 53200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt[124], id = 27097, module_id = 3100, name = 153086, play_para = 2000097, pre_condition = __rt[127], 
 pre_para1 = {27096}
 }
 , 
-[27098] = {combat = 53300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27098, module_id = 3100, name = 91509, play_para = 2000098, pre_condition = __rt[123], 
+[27098] = {combat = 53300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27098, module_id = 3100, name = 91509, play_para = 2000098, pre_condition = __rt[127], 
 pre_para1 = {27097}
 }
 , 
-[27099] = {combat = 53400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27099, module_id = 3100, name = 29932, play_para = 2000099, pre_condition = __rt[123], 
+[27099] = {combat = 53400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27099, module_id = 3100, name = 29932, play_para = 2000099, pre_condition = __rt[127], 
 pre_para1 = {27098}
 }
 , 
-[27100] = {combat = 53450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[191], id = 27100, module_id = 3100, name = 216225, play_para = 2000100, pre_condition = __rt[123], 
+[27100] = {combat = 53450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[189], first_reward_nums = __rt[195], id = 27100, module_id = 3100, name = 216225, play_para = 2000100, pre_condition = __rt[127], 
 pre_para1 = {27099}
 }
 , 
-[27101] = {combat = 53500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27101, module_id = 3100, name = 154648, play_para = 2000101, pre_condition = __rt[123], 
+[27101] = {combat = 53500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27101, module_id = 3100, name = 154648, play_para = 2000101, pre_condition = __rt[127], 
 pre_para1 = {27100}
 }
 , 
-[27102] = {combat = 53600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27102, module_id = 3100, name = 93071, play_para = 2000102, pre_condition = __rt[123], 
+[27102] = {combat = 53600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27102, module_id = 3100, name = 93071, play_para = 2000102, pre_condition = __rt[127], 
 pre_para1 = {27101}
 }
 , 
-[27103] = {combat = 53700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt[122], id = 27103, module_id = 3100, name = 31494, play_para = 2000103, pre_condition = __rt[123], 
+[27103] = {combat = 53700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt[126], id = 27103, module_id = 3100, name = 31494, play_para = 2000103, pre_condition = __rt[127], 
 pre_para1 = {27102}
 }
 , 
-[27104] = {combat = 53800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[179], first_reward_nums = __rt[120], id = 27104, module_id = 3100, name = 494205, play_para = 2000104, pre_condition = __rt[123], 
+[27104] = {combat = 53800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27104, module_id = 3100, name = 494205, play_para = 2000104, pre_condition = __rt[127], 
 pre_para1 = {27103}
 }
 , 
-[27105] = {combat = 53850, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27105, module_id = 3100, name = 432628, play_para = 2000105, pre_condition = __rt[123], 
+[27105] = {combat = 53850, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27105, module_id = 3100, name = 432628, play_para = 2000105, pre_condition = __rt[127], 
 pre_para1 = {27104}
 }
 , 
-[27106] = {combat = 54000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27106, module_id = 3100, name = 371051, play_para = 2000106, pre_condition = __rt[123], 
+[27106] = {combat = 54000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27106, module_id = 3100, name = 371051, play_para = 2000106, pre_condition = __rt[127], 
 pre_para1 = {27105}
 }
 , 
-[27107] = {combat = 54050, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[122], id = 27107, module_id = 3100, name = 309474, play_para = 2000107, pre_condition = __rt[123], 
+[27107] = {combat = 54050, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt[126], id = 27107, module_id = 3100, name = 309474, play_para = 2000107, pre_condition = __rt[127], 
 pre_para1 = {27106}
 }
 , 
-[27108] = {combat = 54100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27108, module_id = 3100, name = 247897, play_para = 2000108, pre_condition = __rt[123], 
+[27108] = {combat = 54100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27108, module_id = 3100, name = 247897, play_para = 2000108, pre_condition = __rt[127], 
 pre_para1 = {27107}
 }
 , 
-[27109] = {combat = 54200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[190], id = 27109, module_id = 3100, name = 186320, play_para = 2000109, pre_condition = __rt[123], 
+[27109] = {combat = 54200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt[194], id = 27109, module_id = 3100, name = 186320, play_para = 2000109, pre_condition = __rt[127], 
 pre_para1 = {27108}
 }
 , 
-[27110] = {combat = 54300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[191], id = 27110, module_id = 3100, name = 52694, play_para = 2000110, pre_condition = __rt[123], 
+[27110] = {combat = 54300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[189], first_reward_nums = __rt[195], id = 27110, module_id = 3100, name = 52694, play_para = 2000110, pre_condition = __rt[127], 
 pre_para1 = {27109}
 }
 , 
-[27111] = {combat = 54500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27111, module_id = 3100, name = 515405, play_para = 2000111, pre_condition = __rt[123], 
+[27111] = {combat = 54500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27111, module_id = 3100, name = 515405, play_para = 2000111, pre_condition = __rt[127], 
 pre_para1 = {27110}
 }
 , 
-[27112] = {combat = 54600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt[122], id = 27112, module_id = 3100, name = 453829, play_para = 2000112, pre_condition = __rt[123], 
+[27112] = {combat = 54600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt[126], id = 27112, module_id = 3100, name = 453829, play_para = 2000112, pre_condition = __rt[127], 
 pre_para1 = {27111}
 }
 , 
-[27113] = {combat = 54800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[179], first_reward_nums = __rt[120], id = 27113, module_id = 3100, name = 392251, play_para = 2000113, pre_condition = __rt[123], 
+[27113] = {combat = 54800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27113, module_id = 3100, name = 392251, play_para = 2000113, pre_condition = __rt[127], 
 pre_para1 = {27112}
 }
 , 
-[27114] = {combat = 54900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27114, module_id = 3100, name = 330674, play_para = 2000114, pre_condition = __rt[123], 
+[27114] = {combat = 54900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27114, module_id = 3100, name = 330674, play_para = 2000114, pre_condition = __rt[127], 
 pre_para1 = {27113}
 }
 , 
-[27115] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27115, module_id = 3100, name = 269097, play_para = 2000115, pre_condition = __rt[123], 
+[27115] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27115, module_id = 3100, name = 269097, play_para = 2000115, pre_condition = __rt[127], 
 pre_para1 = {27114}
 }
 , 
-[27116] = {combat = 55200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27116, module_id = 3100, name = 207520, play_para = 2000116, pre_condition = __rt[123], 
+[27116] = {combat = 55200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27116, module_id = 3100, name = 207520, play_para = 2000116, pre_condition = __rt[127], 
 pre_para1 = {27115}
 }
 , 
-[27117] = {combat = 55300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27117, module_id = 3100, name = 145943, play_para = 2000117, pre_condition = __rt[123], 
+[27117] = {combat = 55300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27117, module_id = 3100, name = 145943, play_para = 2000117, pre_condition = __rt[127], 
 pre_para1 = {27116}
 }
 , 
-[27118] = {combat = 55500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[122], id = 27118, module_id = 3100, name = 84366, play_para = 2000118, pre_condition = __rt[123], 
+[27118] = {combat = 55500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt[126], id = 27118, module_id = 3100, name = 84366, play_para = 2000118, pre_condition = __rt[127], 
 pre_para1 = {27117}
 }
 , 
-[27119] = {combat = 55700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[190], id = 27119, module_id = 3100, name = 22789, play_para = 2000119, pre_condition = __rt[123], 
+[27119] = {combat = 55700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt[194], id = 27119, module_id = 3100, name = 22789, play_para = 2000119, pre_condition = __rt[127], 
 pre_para1 = {27118}
 }
 , 
-[27120] = {combat = 55800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], id = 27120, module_id = 3100, name = 413451, play_para = 2000120, pre_condition = __rt[123], 
+[27120] = {combat = 55800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[191], id = 27120, module_id = 3100, name = 413451, play_para = 2000120, pre_condition = __rt[127], 
 pre_para1 = {27119}
 }
 , 
-[27121] = {combat = 56000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27121, module_id = 3100, name = 351874, play_para = 2000121, pre_condition = __rt[123], 
+[27121] = {combat = 56000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27121, module_id = 3100, name = 351874, play_para = 2000121, pre_condition = __rt[127], 
 pre_para1 = {27120}
 }
 , 
-[27122] = {combat = 56100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt[190], id = 27122, module_id = 3100, name = 290297, play_para = 2000122, pre_condition = __rt[123], 
+[27122] = {combat = 56100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt[194], id = 27122, module_id = 3100, name = 290297, play_para = 2000122, pre_condition = __rt[127], 
 pre_para1 = {27121}
 }
 , 
-[27123] = {combat = 56200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27123, module_id = 3100, name = 228720, play_para = 2000123, pre_condition = __rt[123], 
+[27123] = {combat = 56200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27123, module_id = 3100, name = 228720, play_para = 2000123, pre_condition = __rt[127], 
 pre_para1 = {27122}
 }
 , 
-[27124] = {combat = 56700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27124, module_id = 3100, name = 167143, play_para = 2000124, pre_condition = __rt[123], 
+[27124] = {combat = 56700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27124, module_id = 3100, name = 167143, play_para = 2000124, pre_condition = __rt[127], 
 pre_para1 = {27123}
 }
 , 
-[27125] = {combat = 57000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27125, module_id = 3100, name = 105566, play_para = 2000125, pre_condition = __rt[123], 
+[27125] = {combat = 57000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27125, module_id = 3100, name = 105566, play_para = 2000125, pre_condition = __rt[127], 
 pre_para1 = {27124}
 }
 , 
-[27126] = {combat = 57300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt_3, id = 27126, module_id = 3100, name = 43989, play_para = 2000126, pre_condition = __rt[123], 
+[27126] = {combat = 57300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt_3, id = 27126, module_id = 3100, name = 43989, play_para = 2000126, pre_condition = __rt[127], 
 pre_para1 = {27125}
 }
 , 
-[27127] = {combat = 57700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[122], id = 27127, module_id = 3100, name = 506700, play_para = 2000127, pre_condition = __rt[123], 
+[27127] = {combat = 57700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt[126], id = 27127, module_id = 3100, name = 506700, play_para = 2000127, pre_condition = __rt[127], 
 pre_para1 = {27126}
 }
 , 
-[27128] = {combat = 57800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27128, module_id = 3100, name = 445123, play_para = 2000128, pre_condition = __rt[123], 
+[27128] = {combat = 57800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27128, module_id = 3100, name = 445123, play_para = 2000128, pre_condition = __rt[127], 
 pre_para1 = {27127}
 }
 , 
-[27129] = {combat = 58000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[172], id = 27129, module_id = 3100, name = 383546, play_para = 2000129, pre_condition = __rt[123], 
+[27129] = {combat = 58000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt[176], id = 27129, module_id = 3100, name = 383546, play_para = 2000129, pre_condition = __rt[127], 
 pre_para1 = {27128}
 }
 , 
-[27130] = {combat = 58050, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], 
+[27130] = {combat = 58050, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[189], 
 first_reward_nums = {500, 1}
-, id = 27130, module_id = 3100, name = 249920, play_para = 2000130, pre_condition = __rt[123], 
+, id = 27130, module_id = 3100, name = 249920, play_para = 2000130, pre_condition = __rt[127], 
 pre_para1 = {27129}
 }
 , 
-[27131] = {combat = 58100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[179], first_reward_nums = __rt[120], id = 27131, module_id = 3100, name = 188343, play_para = 2000131, pre_condition = __rt[123], 
+[27131] = {combat = 58100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27131, module_id = 3100, name = 188343, play_para = 2000131, pre_condition = __rt[127], 
 pre_para1 = {27130}
 }
 , 
-[27132] = {combat = 58300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt[190], id = 27132, module_id = 3100, name = 126766, play_para = 2000132, pre_condition = __rt[123], 
+[27132] = {combat = 58300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt[194], id = 27132, module_id = 3100, name = 126766, play_para = 2000132, pre_condition = __rt[127], 
 pre_para1 = {27131}
 }
 , 
-[27133] = {combat = 58500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27133, module_id = 3100, name = 65189, play_para = 2000133, pre_condition = __rt[123], 
+[27133] = {combat = 58500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27133, module_id = 3100, name = 65189, play_para = 2000133, pre_condition = __rt[127], 
 pre_para1 = {27132}
 }
 , 
-[27134] = {combat = 58700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27134, module_id = 3100, name = 3612, play_para = 2000134, pre_condition = __rt[123], 
+[27134] = {combat = 58700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27134, module_id = 3100, name = 3612, play_para = 2000134, pre_condition = __rt[127], 
 pre_para1 = {27133}
 }
 , 
-[27135] = {combat = 59100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27135, module_id = 3100, name = 466323, play_para = 2000135, pre_condition = __rt[123], 
+[27135] = {combat = 59100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27135, module_id = 3100, name = 466323, play_para = 2000135, pre_condition = __rt[127], 
 pre_para1 = {27134}
 }
 , 
-[27136] = {combat = 59300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27136, module_id = 3100, name = 404746, play_para = 2000136, pre_condition = __rt[123], 
+[27136] = {combat = 59300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27136, module_id = 3100, name = 404746, play_para = 2000136, pre_condition = __rt[127], 
 pre_para1 = {27135}
 }
 , 
-[27137] = {combat = 59500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27137, module_id = 3100, name = 343169, play_para = 2000137, pre_condition = __rt[123], 
+[27137] = {combat = 59500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27137, module_id = 3100, name = 343169, play_para = 2000137, pre_condition = __rt[127], 
 pre_para1 = {27136}
 }
 , 
-[27138] = {combat = 59700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27138, module_id = 3100, name = 281592, play_para = 2000138, pre_condition = __rt[123], 
+[27138] = {combat = 59700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27138, module_id = 3100, name = 281592, play_para = 2000138, pre_condition = __rt[127], 
 pre_para1 = {27137}
 }
 , 
-[27139] = {combat = 59900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt_3, id = 27139, module_id = 3100, name = 220015, play_para = 2000139, pre_condition = __rt[123], 
+[27139] = {combat = 59900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[188], first_reward_nums = __rt_3, id = 27139, module_id = 3100, name = 220015, play_para = 2000139, pre_condition = __rt[127], 
 pre_para1 = {27138}
 }
 , 
-[27140] = {combat = 60100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], id = 27140, module_id = 3100, name = 86389, play_para = 2000140, pre_condition = __rt[123], 
+[27140] = {combat = 60100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[191], id = 27140, module_id = 3100, name = 86389, play_para = 2000140, pre_condition = __rt[127], 
 pre_para1 = {27139}
 }
 , 
-[27141] = {combat = 60300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27141, module_id = 3100, name = 24812, play_para = 2000141, pre_condition = __rt[123], 
+[27141] = {combat = 60300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27141, module_id = 3100, name = 24812, play_para = 2000141, pre_condition = __rt[127], 
 pre_para1 = {27140}
 }
 , 
-[27142] = {combat = 60500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[178], first_reward_nums = __rt_3, id = 27142, module_id = 3100, name = 487523, play_para = 2000142, pre_condition = __rt[123], 
+[27142] = {combat = 60500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[182], first_reward_nums = __rt_3, id = 27142, module_id = 3100, name = 487523, play_para = 2000142, pre_condition = __rt[127], 
 pre_para1 = {27141}
 }
 , 
-[27143] = {combat = 60700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27143, module_id = 3100, name = 425946, play_para = 2000143, pre_condition = __rt[123], 
+[27143] = {combat = 60700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27143, module_id = 3100, name = 425946, play_para = 2000143, pre_condition = __rt[127], 
 pre_para1 = {27142}
 }
 , 
-[27144] = {combat = 60900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27144, module_id = 3100, name = 364369, play_para = 2000144, pre_condition = __rt[123], 
+[27144] = {combat = 60900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27144, module_id = 3100, name = 364369, play_para = 2000144, pre_condition = __rt[127], 
 pre_para1 = {27143}
 }
 , 
-[27145] = {combat = 61100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27145, module_id = 3100, name = 302792, play_para = 2000145, pre_condition = __rt[123], 
+[27145] = {combat = 61100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27145, module_id = 3100, name = 302792, play_para = 2000145, pre_condition = __rt[127], 
 pre_para1 = {27144}
 }
 , 
-[27146] = {combat = 61300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[164], first_reward_nums = __rt[118], id = 27146, module_id = 3100, name = 241215, play_para = 2000146, pre_condition = __rt[123], 
+[27146] = {combat = 61300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[168], first_reward_nums = __rt[122], id = 27146, module_id = 3100, name = 241215, play_para = 2000146, pre_condition = __rt[127], 
 pre_para1 = {27145}
 }
 , 
-[27147] = {combat = 61500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[122], id = 27147, module_id = 3100, name = 179638, play_para = 2000147, pre_condition = __rt[123], 
+[27147] = {combat = 61500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], first_reward_nums = __rt[126], id = 27147, module_id = 3100, name = 179638, play_para = 2000147, pre_condition = __rt[127], 
 pre_para1 = {27146}
 }
 , 
-[27148] = {combat = 61700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[182], id = 27148, module_id = 3100, name = 118061, play_para = 2000148, pre_condition = __rt[123], 
+[27148] = {combat = 61700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[186], id = 27148, module_id = 3100, name = 118061, play_para = 2000148, pre_condition = __rt[127], 
 pre_para1 = {27147}
 }
 , 
-[27149] = {combat = 61900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27149, module_id = 3100, name = 56484, play_para = 2000149, pre_condition = __rt[123], 
+[27149] = {combat = 61900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27149, module_id = 3100, name = 56484, play_para = 2000149, pre_condition = __rt[127], 
 pre_para1 = {27148}
 }
 , 
-[27150] = {combat = 62100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[192], id = 27150, module_id = 3100, name = 447146, play_para = 2000150, pre_condition = __rt[123], 
+[27150] = {combat = 62100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[189], first_reward_nums = __rt[196], id = 27150, module_id = 3100, name = 447146, play_para = 2000150, pre_condition = __rt[127], 
 pre_para1 = {27149}
 }
 , 
-[27151] = {combat = 62300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[193], first_reward_nums = __rt[168], id = 27151, module_id = 3100, name = 385569, play_para = 2000151, pre_condition = __rt[123], 
+[27151] = {combat = 62300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[197], first_reward_nums = __rt[172], id = 27151, module_id = 3100, name = 385569, play_para = 2000151, pre_condition = __rt[127], 
 pre_para1 = {27150}
 }
 , 
-[27152] = {combat = 62500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27152, module_id = 3100, name = 323992, play_para = 2000152, pre_condition = __rt[123], 
+[27152] = {combat = 62500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27152, module_id = 3100, name = 323992, play_para = 2000152, pre_condition = __rt[127], 
 pre_para1 = {27151}
 }
 , 
-[27153] = {combat = 62700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[101], first_reward_nums = __rt[194], id = 27153, module_id = 3100, name = 262415, play_para = 2000153, pre_condition = __rt[123], 
+[27153] = {combat = 62700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[105], first_reward_nums = __rt[198], id = 27153, module_id = 3100, name = 262415, play_para = 2000153, pre_condition = __rt[127], 
 pre_para1 = {27152}
 }
 , 
-[27154] = {combat = 62900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27154, module_id = 3100, name = 200838, play_para = 2000154, pre_condition = __rt[123], 
+[27154] = {combat = 62900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27154, module_id = 3100, name = 200838, play_para = 2000154, pre_condition = __rt[127], 
 pre_para1 = {27153}
 }
 , 
-[27155] = {combat = 63100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[180], first_reward_nums = __rt[166], id = 27155, module_id = 3100, name = 139261, play_para = 2000155, pre_condition = __rt[123], 
+[27155] = {combat = 63100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[184], first_reward_nums = __rt[170], id = 27155, module_id = 3100, name = 139261, play_para = 2000155, pre_condition = __rt[127], 
 pre_para1 = {27154}
 }
 , 
-[27156] = {combat = 63300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[193], first_reward_nums = __rt[168], id = 27156, module_id = 3100, name = 77684, play_para = 2000156, pre_condition = __rt[123], 
+[27156] = {combat = 63300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[197], first_reward_nums = __rt[172], id = 27156, module_id = 3100, name = 77684, play_para = 2000156, pre_condition = __rt[127], 
 pre_para1 = {27155}
 }
 , 
-[27157] = {combat = 63500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[179], first_reward_nums = __rt[120], id = 27157, module_id = 3100, name = 16107, play_para = 2000157, pre_condition = __rt[123], 
+[27157] = {combat = 63500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27157, module_id = 3100, name = 16107, play_para = 2000157, pre_condition = __rt[127], 
 pre_para1 = {27156}
 }
 , 
-[27158] = {combat = 63700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[101], first_reward_nums = __rt[194], id = 27158, module_id = 3100, name = 478818, play_para = 2000158, pre_condition = __rt[123], 
+[27158] = {combat = 63700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[105], first_reward_nums = __rt[198], id = 27158, module_id = 3100, name = 478818, play_para = 2000158, pre_condition = __rt[127], 
 pre_para1 = {27157}
 }
 , 
-[27159] = {combat = 63900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[193], first_reward_nums = __rt[168], id = 27159, module_id = 3100, name = 417241, play_para = 2000159, pre_condition = __rt[123], 
+[27159] = {combat = 63900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[197], first_reward_nums = __rt[172], id = 27159, module_id = 3100, name = 417241, play_para = 2000159, pre_condition = __rt[127], 
 pre_para1 = {27158}
 }
 , 
-[27160] = {combat = 64100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[187], id = 27160, module_id = 3100, name = 283615, play_para = 2000160, pre_condition = __rt[123], 
+[27160] = {combat = 64100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[191], id = 27160, module_id = 3100, name = 283615, play_para = 2000160, pre_condition = __rt[127], 
 pre_para1 = {27159}
 }
 , 
-[27161] = {combat = 64300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27161, module_id = 3100, name = 222038, play_para = 2000161, pre_condition = __rt[123], 
+[27161] = {combat = 64300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27161, module_id = 3100, name = 222038, play_para = 2000161, pre_condition = __rt[127], 
 pre_para1 = {27160}
 }
 , 
-[27162] = {combat = 64500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[179], first_reward_nums = __rt[120], id = 27162, module_id = 3100, name = 160461, play_para = 2000162, pre_condition = __rt[123], 
+[27162] = {combat = 64500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27162, module_id = 3100, name = 160461, play_para = 2000162, pre_condition = __rt[127], 
 pre_para1 = {27161}
 }
 , 
-[27163] = {combat = 64700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[193], first_reward_nums = __rt[168], id = 27163, module_id = 3100, name = 98884, play_para = 2000163, pre_condition = __rt[123], 
+[27163] = {combat = 64700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[197], first_reward_nums = __rt[172], id = 27163, module_id = 3100, name = 98884, play_para = 2000163, pre_condition = __rt[127], 
 pre_para1 = {27162}
 }
 , 
-[27164] = {combat = 64900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27164, module_id = 3100, name = 37307, play_para = 2000164, pre_condition = __rt[123], 
+[27164] = {combat = 64900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27164, module_id = 3100, name = 37307, play_para = 2000164, pre_condition = __rt[127], 
 pre_para1 = {27163}
 }
 , 
-[27165] = {combat = 65100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[195], first_reward_nums = __rt[196], id = 27165, module_id = 3100, name = 500018, play_para = 2000165, pre_condition = __rt[123], 
+[27165] = {combat = 65100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[199], first_reward_nums = __rt[200], id = 27165, module_id = 3100, name = 500018, play_para = 2000165, pre_condition = __rt[127], 
 pre_para1 = {27164}
 }
 , 
-[27166] = {combat = 65300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[101], first_reward_nums = __rt[194], id = 27166, module_id = 3100, name = 438441, play_para = 2000166, pre_condition = __rt[123], 
+[27166] = {combat = 65300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[105], first_reward_nums = __rt[198], id = 27166, module_id = 3100, name = 438441, play_para = 2000166, pre_condition = __rt[127], 
 pre_para1 = {27165}
 }
 , 
-[27167] = {combat = 65500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27167, module_id = 3100, name = 376864, play_para = 2000167, pre_condition = __rt[123], 
+[27167] = {combat = 65500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27167, module_id = 3100, name = 376864, play_para = 2000167, pre_condition = __rt[127], 
 pre_para1 = {27166}
 }
 , 
-[27168] = {combat = 65700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[179], first_reward_nums = __rt[120], id = 27168, module_id = 3100, name = 315287, play_para = 2000168, pre_condition = __rt[123], 
+[27168] = {combat = 65700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27168, module_id = 3100, name = 315287, play_para = 2000168, pre_condition = __rt[127], 
 pre_para1 = {27167}
 }
 , 
-[27169] = {combat = 65900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[193], first_reward_nums = __rt[168], id = 27169, module_id = 3100, name = 253710, play_para = 2000169, pre_condition = __rt[123], 
+[27169] = {combat = 65900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[197], first_reward_nums = __rt[172], id = 27169, module_id = 3100, name = 253710, play_para = 2000169, pre_condition = __rt[127], 
 pre_para1 = {27168}
 }
 , 
@@ -3019,533 +3054,553 @@ pre_para1 = {27168}
 first_reward_ids = {8223, 5009}
 , 
 first_reward_nums = {20, 1}
-, id = 27170, module_id = 3100, name = 120084, play_para = 2000170, pre_condition = __rt[123], 
+, id = 27170, module_id = 3100, name = 120084, play_para = 2000170, pre_condition = __rt[127], 
 pre_para1 = {27169}
 }
 , 
-[27171] = {combat = 66600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[101], first_reward_nums = __rt[194], id = 27171, module_id = 3100, name = 58507, play_para = 2000171, pre_condition = __rt[123], 
+[27171] = {combat = 66600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[105], first_reward_nums = __rt[198], id = 27171, module_id = 3100, name = 58507, play_para = 2000171, pre_condition = __rt[127], 
 pre_para1 = {27170}
 }
 , 
-[27172] = {combat = 66800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[193], first_reward_nums = __rt[168], id = 27172, module_id = 3100, name = 521218, play_para = 2000172, pre_condition = __rt[123], 
+[27172] = {combat = 66800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[197], first_reward_nums = __rt[172], id = 27172, module_id = 3100, name = 521218, play_para = 2000172, pre_condition = __rt[127], 
 pre_para1 = {27171}
 }
 , 
-[27173] = {combat = 67200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27173, module_id = 3100, name = 459641, play_para = 2000173, pre_condition = __rt[123], 
+[27173] = {combat = 67200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27173, module_id = 3100, name = 459641, play_para = 2000173, pre_condition = __rt[127], 
 pre_para1 = {27172}
 }
 , 
-[27174] = {combat = 67400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[177], first_reward_nums = __rt[103], id = 27174, module_id = 3100, name = 398064, play_para = 2000174, pre_condition = __rt[123], 
+[27174] = {combat = 67400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[181], first_reward_nums = __rt[107], id = 27174, module_id = 3100, name = 398064, play_para = 2000174, pre_condition = __rt[127], 
 pre_para1 = {27173}
 }
 , 
-[27175] = {combat = 67900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[195], first_reward_nums = __rt[196], id = 27175, module_id = 3100, name = 336487, play_para = 2000175, pre_condition = __rt[123], 
+[27175] = {combat = 67900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[199], first_reward_nums = __rt[200], id = 27175, module_id = 3100, name = 336487, play_para = 2000175, pre_condition = __rt[127], 
 pre_para1 = {27174}
 }
 , 
-[27176] = {combat = 68100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[193], first_reward_nums = __rt[168], id = 27176, module_id = 3100, name = 274910, play_para = 2000176, pre_condition = __rt[123], 
+[27176] = {combat = 68100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[197], first_reward_nums = __rt[172], id = 27176, module_id = 3100, name = 274910, play_para = 2000176, pre_condition = __rt[127], 
 pre_para1 = {27175}
 }
 , 
-[27177] = {combat = 68500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[179], first_reward_nums = __rt[120], id = 27177, module_id = 3100, name = 213333, play_para = 2000177, pre_condition = __rt[123], 
+[27177] = {combat = 68500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[183], first_reward_nums = __rt[124], id = 27177, module_id = 3100, name = 213333, play_para = 2000177, pre_condition = __rt[127], 
 pre_para1 = {27176}
 }
 , 
-[27178] = {combat = 68700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[101], first_reward_nums = __rt[194], id = 27178, module_id = 3100, name = 151756, play_para = 2000178, pre_condition = __rt[123], 
+[27178] = {combat = 68700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[105], first_reward_nums = __rt[198], id = 27178, module_id = 3100, name = 151756, play_para = 2000178, pre_condition = __rt[127], 
 pre_para1 = {27177}
 }
 , 
-[27179] = {combat = 69200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[186], first_reward_nums = __rt[131], id = 27179, module_id = 3100, name = 90179, play_para = 2000179, pre_condition = __rt[123], 
+[27179] = {combat = 69200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[190], first_reward_nums = __rt[135], id = 27179, module_id = 3100, name = 90179, play_para = 2000179, pre_condition = __rt[127], 
 pre_para1 = {27178}
 }
 , 
-[27180] = {combat = 69400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[185], first_reward_nums = __rt[192], id = 27180, module_id = 3100, name = 480841, play_para = 2000180, pre_condition = __rt[123], 
+[27180] = {combat = 69400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_ids = __rt[189], first_reward_nums = __rt[196], id = 27180, module_id = 3100, name = 480841, play_para = 2000180, pre_condition = __rt[127], 
 pre_para1 = {27179}
 }
 , 
-[27181] = {combat = 69800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27181, module_id = 3100, name = 419264, play_para = 2000181, pre_condition = __rt[123], 
+[27181] = {combat = 69800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27181, module_id = 3100, name = 419264, play_para = 2000181, pre_condition = __rt[127], 
 pre_para1 = {27180}
 }
 , 
-[27182] = {combat = 70000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27182, module_id = 3100, name = 357687, play_para = 2000182, pre_condition = __rt[123], 
+[27182] = {combat = 70000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27182, module_id = 3100, name = 357687, play_para = 2000182, pre_condition = __rt[127], 
 pre_para1 = {27181}
 }
 , 
-[27183] = {combat = 70500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27183, module_id = 3100, name = 296110, play_para = 2000183, pre_condition = __rt[123], 
+[27183] = {combat = 70500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27183, module_id = 3100, name = 296110, play_para = 2000183, pre_condition = __rt[127], 
 pre_para1 = {27182}
 }
 , 
-[27184] = {combat = 70700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27184, module_id = 3100, name = 234533, play_para = 2000184, pre_condition = __rt[123], 
+[27184] = {combat = 70700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27184, module_id = 3100, name = 234533, play_para = 2000184, pre_condition = __rt[127], 
 pre_para1 = {27183}
 }
 , 
-[27185] = {combat = 71100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27185, module_id = 3100, name = 172956, play_para = 2000185, pre_condition = __rt[123], 
+[27185] = {combat = 71100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27185, module_id = 3100, name = 172956, play_para = 2000185, pre_condition = __rt[127], 
 pre_para1 = {27184}
 }
 , 
-[27186] = {combat = 71300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27186, module_id = 3100, name = 111379, play_para = 2000186, pre_condition = __rt[123], 
+[27186] = {combat = 71300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27186, module_id = 3100, name = 111379, play_para = 2000186, pre_condition = __rt[127], 
 pre_para1 = {27185}
 }
 , 
-[27187] = {combat = 71700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27187, module_id = 3100, name = 49802, play_para = 2000187, pre_condition = __rt[123], 
+[27187] = {combat = 71700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27187, module_id = 3100, name = 49802, play_para = 2000187, pre_condition = __rt[127], 
 pre_para1 = {27186}
 }
 , 
-[27188] = {combat = 72000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27188, module_id = 3100, name = 512513, play_para = 2000188, pre_condition = __rt[123], 
+[27188] = {combat = 72000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27188, module_id = 3100, name = 512513, play_para = 2000188, pre_condition = __rt[127], 
 pre_para1 = {27187}
 }
 , 
-[27189] = {combat = 72400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27189, module_id = 3100, name = 450936, play_para = 2000189, pre_condition = __rt[123], 
+[27189] = {combat = 72400, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27189, module_id = 3100, name = 450936, play_para = 2000189, pre_condition = __rt[127], 
 pre_para1 = {27188}
 }
 , 
-[27190] = {combat = 72600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27190, module_id = 3100, name = 317310, play_para = 2000190, pre_condition = __rt[123], 
+[27190] = {combat = 72600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27190, module_id = 3100, name = 317310, play_para = 2000190, pre_condition = __rt[127], 
 pre_para1 = {27189}
 }
 , 
-[27191] = {combat = 73000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27191, module_id = 3100, name = 255733, play_para = 2000191, pre_condition = __rt[123], 
+[27191] = {combat = 73000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27191, module_id = 3100, name = 255733, play_para = 2000191, pre_condition = __rt[127], 
 pre_para1 = {27190}
 }
 , 
-[27192] = {combat = 73200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27192, module_id = 3100, name = 194156, play_para = 2000192, pre_condition = __rt[123], 
+[27192] = {combat = 73200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27192, module_id = 3100, name = 194156, play_para = 2000192, pre_condition = __rt[127], 
 pre_para1 = {27191}
 }
 , 
-[27193] = {combat = 73700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27193, module_id = 3100, name = 132579, play_para = 2000193, pre_condition = __rt[123], 
+[27193] = {combat = 73700, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27193, module_id = 3100, name = 132579, play_para = 2000193, pre_condition = __rt[127], 
 pre_para1 = {27192}
 }
 , 
-[27194] = {combat = 73900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27194, module_id = 3100, name = 71002, play_para = 2000194, pre_condition = __rt[123], 
+[27194] = {combat = 73900, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27194, module_id = 3100, name = 71002, play_para = 2000194, pre_condition = __rt[127], 
 pre_para1 = {27193}
 }
 , 
-[27195] = {combat = 74300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27195, module_id = 3100, name = 9425, play_para = 2000195, pre_condition = __rt[123], 
+[27195] = {combat = 74300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27195, module_id = 3100, name = 9425, play_para = 2000195, pre_condition = __rt[127], 
 pre_para1 = {27194}
 }
 , 
-[27196] = {combat = 74500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27196, module_id = 3100, name = 472136, play_para = 2000196, pre_condition = __rt[123], 
+[27196] = {combat = 74500, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27196, module_id = 3100, name = 472136, play_para = 2000196, pre_condition = __rt[127], 
 pre_para1 = {27195}
 }
 , 
-[27197] = {combat = 75000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27197, module_id = 3100, name = 410559, play_para = 2000197, pre_condition = __rt[123], 
+[27197] = {combat = 75000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27197, module_id = 3100, name = 410559, play_para = 2000197, pre_condition = __rt[127], 
 pre_para1 = {27196}
 }
 , 
-[27198] = {combat = 75200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27198, module_id = 3100, name = 348982, play_para = 2000198, pre_condition = __rt[123], 
+[27198] = {combat = 75200, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27198, module_id = 3100, name = 348982, play_para = 2000198, pre_condition = __rt[127], 
 pre_para1 = {27197}
 }
 , 
-[27199] = {combat = 75600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27199, module_id = 3100, name = 287405, play_para = 2000199, pre_condition = __rt[123], 
+[27199] = {combat = 75600, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27199, module_id = 3100, name = 287405, play_para = 2000199, pre_condition = __rt[127], 
 pre_para1 = {27198}
 }
 , 
-[27200] = {combat = 75800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27200, module_id = 3100, name = 419760, play_para = 2000200, pre_condition = __rt[123], 
+[27200] = {combat = 75800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, first_reward_nums = __rt_1, id = 27200, module_id = 3100, name = 419760, play_para = 2000200, pre_condition = __rt[127], 
 pre_para1 = {27199}
 }
 , 
-[28001] = {combat = 16900, cost_itemIds = __rt[197], cost_itemNums = __rt[198], dungeon_type = 28, first_reward_nums = __rt_1, id = 28001, module_id = 3200, name = 227396, play_para = 515101, pre_condition = __rt[122], 
+[28001] = {combat = 16900, cost_itemIds = __rt[201], cost_itemNums = __rt[202], dungeon_type = 28, first_reward_nums = __rt_1, id = 28001, module_id = 3200, name = 227396, play_para = 515101, pre_condition = __rt[126], 
 pre_para1 = {110011102}
 , pre_para2 = __rt_1, show_function = true}
 , 
-[28002] = {combat = 25350, cost_itemIds = __rt[197], cost_itemNums = __rt[199], dungeon_type = 28, first_reward_nums = __rt_1, id = 28002, module_id = 3200, name = 164947, play_para = 515102, pre_condition = __rt[106], 
+[28002] = {combat = 25350, cost_itemIds = __rt[201], cost_itemNums = __rt[203], dungeon_type = 28, first_reward_nums = __rt_1, id = 28002, module_id = 3200, name = 164947, play_para = 515102, pre_condition = __rt[110], 
 pre_para1 = {28001, 110011105}
-, pre_para2 = __rt[107], show_function = true}
+, pre_para2 = __rt[111], show_function = true}
 , 
-[28003] = {combat = 34060, cost_itemIds = __rt[197], cost_itemNums = __rt[200], dungeon_type = 28, first_reward_nums = __rt_1, id = 28003, module_id = 3200, name = 90621, play_para = 515103, pre_condition = __rt[106], 
+[28003] = {combat = 34060, cost_itemIds = __rt[201], cost_itemNums = __rt[204], dungeon_type = 28, first_reward_nums = __rt_1, id = 28003, module_id = 3200, name = 90621, play_para = 515103, pre_condition = __rt[110], 
 pre_para1 = {28002, 110011108}
-, pre_para2 = __rt[107], show_function = true}
+, pre_para2 = __rt[111], show_function = true}
 , 
-[28004] = {combat = 40625, cost_itemIds = __rt[197], cost_itemNums = __rt[201], dungeon_type = 28, first_reward_nums = __rt_1, id = 28004, module_id = 3200, name = 443094, play_para = 515104, pre_condition = __rt[106], 
+[28004] = {combat = 40625, cost_itemIds = __rt[201], cost_itemNums = __rt[205], dungeon_type = 28, first_reward_nums = __rt_1, id = 28004, module_id = 3200, name = 443094, play_para = 515104, pre_condition = __rt[110], 
 pre_para1 = {28003, 110011110}
-, pre_para2 = __rt[107], show_function = true}
+, pre_para2 = __rt[111], show_function = true}
 , 
-[28005] = {combat = 52200, cost_itemIds = __rt[197], cost_itemNums = __rt[103], dungeon_type = 28, first_reward_nums = __rt_1, id = 28005, module_id = 3200, name = 252668, play_para = 515105, pre_condition = __rt[106], 
+[28005] = {combat = 52200, cost_itemIds = __rt[201], cost_itemNums = __rt[107], dungeon_type = 28, first_reward_nums = __rt_1, id = 28005, module_id = 3200, name = 252668, play_para = 515105, pre_condition = __rt[110], 
 pre_para1 = {28004, 110011112}
-, pre_para2 = __rt[107], show_function = true}
+, pre_para2 = __rt[111], show_function = true}
 , 
-[28006] = {combat = 15800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28006, module_id = 3202, play_para = 517101, pre_condition = __rt[202], 
+[28006] = {combat = 15800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28006, module_id = 3202, play_para = 517101, pre_condition = __rt[206], 
 pre_para1 = {1638864000, 28005}
-, pre_para2 = __rt[203], protocol = __rt[204], show_function = true}
+, pre_para2 = __rt[207], protocol = __rt[208], show_function = true}
 , 
-[28007] = {combat = 22450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28007, module_id = 3202, play_para = 517102, pre_condition = __rt[202], 
+[28007] = {combat = 22450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28007, module_id = 3202, play_para = 517102, pre_condition = __rt[206], 
 pre_para1 = {1638864000, 28006}
-, pre_para2 = __rt[203], protocol = __rt[205], show_function = true}
+, pre_para2 = __rt[207], protocol = __rt[209], show_function = true}
 , 
-[28008] = {combat = 29100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28008, module_id = 3202, play_para = 517103, pre_condition = __rt[202], 
+[28008] = {combat = 29100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28008, module_id = 3202, play_para = 517103, pre_condition = __rt[206], 
 pre_para1 = {1638864000, 28007}
-, pre_para2 = __rt[203], protocol = __rt[206], show_function = true}
+, pre_para2 = __rt[207], protocol = __rt[210], show_function = true}
 , 
-[28009] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28009, module_id = 3202, play_para = 517104, pre_condition = __rt[202], 
+[28009] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28009, module_id = 3202, play_para = 517104, pre_condition = __rt[206], 
 pre_para1 = {1638864000, 28008}
-, pre_para2 = __rt[203], show_function = true}
+, pre_para2 = __rt[207], show_function = true}
 , 
-[28010] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28010, module_id = 3202, play_para = 517105, pre_condition = __rt[202], 
+[28010] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28010, module_id = 3202, play_para = 517105, pre_condition = __rt[206], 
 pre_para1 = {1638864000, 28009}
-, pre_para2 = __rt[203], protocol = __rt[207], show_function = true}
+, pre_para2 = __rt[207], protocol = __rt[211], show_function = true}
 , 
-[28011] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28011, module_id = 3202, play_para = 517106, pre_condition = __rt[202], 
+[28011] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28011, module_id = 3202, play_para = 517106, pre_condition = __rt[206], 
 pre_para1 = {1638864000, 28010}
-, pre_para2 = __rt[203], show_function = true}
+, pre_para2 = __rt[207], show_function = true}
 , 
-[28012] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28012, module_id = 3202, play_para = 517107, pre_condition = __rt[202], 
+[28012] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28012, module_id = 3202, play_para = 517107, pre_condition = __rt[206], 
 pre_para1 = {1638864000, 28011}
-, pre_para2 = __rt[203], protocol = __rt[208], show_function = true}
+, pre_para2 = __rt[207], protocol = __rt[212], show_function = true}
 , 
-[28101] = {combat = 16900, cost_itemIds = __rt[197], cost_itemNums = __rt[198], dungeon_type = 28, first_reward_nums = __rt_1, id = 28101, module_id = 3200, name = 227396, play_para = 517108, pre_condition = __rt[122], 
+[28101] = {combat = 16900, cost_itemIds = __rt[201], cost_itemNums = __rt[202], dungeon_type = 28, first_reward_nums = __rt_1, id = 28101, module_id = 3200, name = 227396, play_para = 517108, pre_condition = __rt[126], 
 pre_para1 = {110012102}
 , pre_para2 = __rt_1, show_function = true}
 , 
-[28102] = {combat = 25350, cost_itemIds = __rt[197], cost_itemNums = __rt[199], dungeon_type = 28, first_reward_nums = __rt_1, id = 28102, module_id = 3200, name = 164947, play_para = 517109, pre_condition = __rt[106], 
+[28102] = {combat = 25350, cost_itemIds = __rt[201], cost_itemNums = __rt[203], dungeon_type = 28, first_reward_nums = __rt_1, id = 28102, module_id = 3200, name = 164947, play_para = 517109, pre_condition = __rt[110], 
 pre_para1 = {28101, 110012105}
-, pre_para2 = __rt[107], show_function = true}
+, pre_para2 = __rt[111], show_function = true}
 , 
-[28103] = {combat = 34060, cost_itemIds = __rt[197], cost_itemNums = __rt[200], dungeon_type = 28, first_reward_nums = __rt_1, id = 28103, module_id = 3200, name = 90621, play_para = 517110, pre_condition = __rt[106], 
+[28103] = {combat = 34060, cost_itemIds = __rt[201], cost_itemNums = __rt[204], dungeon_type = 28, first_reward_nums = __rt_1, id = 28103, module_id = 3200, name = 90621, play_para = 517110, pre_condition = __rt[110], 
 pre_para1 = {28102, 110012108}
-, pre_para2 = __rt[107], show_function = true}
+, pre_para2 = __rt[111], show_function = true}
 , 
-[28104] = {combat = 40625, cost_itemIds = __rt[197], cost_itemNums = __rt[201], dungeon_type = 28, first_reward_nums = __rt_1, id = 28104, module_id = 3200, name = 443094, play_para = 517111, pre_condition = __rt[106], 
+[28104] = {combat = 40625, cost_itemIds = __rt[201], cost_itemNums = __rt[205], dungeon_type = 28, first_reward_nums = __rt_1, id = 28104, module_id = 3200, name = 443094, play_para = 517111, pre_condition = __rt[110], 
 pre_para1 = {28103, 110012110}
-, pre_para2 = __rt[107], show_function = true}
+, pre_para2 = __rt[111], show_function = true}
 , 
-[28105] = {combat = 52200, cost_itemIds = __rt[197], cost_itemNums = __rt[103], dungeon_type = 28, first_reward_nums = __rt_1, id = 28105, module_id = 3200, name = 252668, play_para = 517112, pre_condition = __rt[106], 
+[28105] = {combat = 52200, cost_itemIds = __rt[201], cost_itemNums = __rt[107], dungeon_type = 28, first_reward_nums = __rt_1, id = 28105, module_id = 3200, name = 252668, play_para = 517112, pre_condition = __rt[110], 
 pre_para1 = {28104, 110012112}
-, pre_para2 = __rt[107], show_function = true}
+, pre_para2 = __rt[111], show_function = true}
 , 
-[28106] = {combat = 15800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28106, module_id = 3202, play_para = 517113, pre_condition = __rt[202], 
+[28106] = {combat = 15800, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28106, module_id = 3202, play_para = 517113, pre_condition = __rt[206], 
 pre_para1 = {1638864000, 28105}
-, pre_para2 = __rt[203], protocol = __rt[204], show_function = true}
+, pre_para2 = __rt[207], protocol = __rt[208], show_function = true}
 , 
-[28107] = {combat = 22450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28107, module_id = 3202, play_para = 517114, pre_condition = __rt[202], 
+[28107] = {combat = 22450, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28107, module_id = 3202, play_para = 517114, pre_condition = __rt[206], 
 pre_para1 = {1638864000, 28106}
-, pre_para2 = __rt[203], protocol = __rt[205], show_function = true}
+, pre_para2 = __rt[207], protocol = __rt[209], show_function = true}
 , 
-[28108] = {combat = 29100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28108, module_id = 3202, play_para = 517115, pre_condition = __rt[202], 
+[28108] = {combat = 29100, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28108, module_id = 3202, play_para = 517115, pre_condition = __rt[206], 
 pre_para1 = {1638864000, 28107}
-, pre_para2 = __rt[203], protocol = __rt[206], show_function = true}
+, pre_para2 = __rt[207], protocol = __rt[210], show_function = true}
 , 
-[28109] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28109, module_id = 3202, play_para = 517116, pre_condition = __rt[202], 
+[28109] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28109, module_id = 3202, play_para = 517116, pre_condition = __rt[206], 
 pre_para1 = {1638864000, 28108}
-, pre_para2 = __rt[203], show_function = true}
+, pre_para2 = __rt[207], show_function = true}
 , 
-[28110] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28110, module_id = 3202, play_para = 517117, pre_condition = __rt[202], 
+[28110] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28110, module_id = 3202, play_para = 517117, pre_condition = __rt[206], 
 pre_para1 = {1638864000, 28109}
-, pre_para2 = __rt[203], protocol = __rt[207], show_function = true}
+, pre_para2 = __rt[207], protocol = __rt[211], show_function = true}
 , 
-[28111] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28111, module_id = 3202, play_para = 517118, pre_condition = __rt[202], 
+[28111] = {combat = 33300, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28111, module_id = 3202, play_para = 517118, pre_condition = __rt[206], 
 pre_para1 = {1638864000, 28110}
-, pre_para2 = __rt[203], show_function = true}
+, pre_para2 = __rt[207], show_function = true}
 , 
-[28112] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28112, module_id = 3202, play_para = 517119, pre_condition = __rt[202], 
+[28112] = {combat = 40350, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 30, first_reward_nums = __rt_1, id = 28112, module_id = 3202, play_para = 517119, pre_condition = __rt[206], 
 pre_para1 = {1638864000, 28111}
-, pre_para2 = __rt[203], protocol = __rt[208], show_function = true}
+, pre_para2 = __rt[207], protocol = __rt[212], show_function = true}
 , 
-[29001] = {close_cmdskill = true, combat = 18600, const_commander_skill_id = "5031=1|5111=1|5141=1", const_cstIdPosDic = __rt[209], const_cstIds = __rt[210], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[212], first_reward_ids = __rt[164], first_reward_nums = __rt[105], id = 29001, module_id = 3100, name = 294472, play_para = 2500001, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[213], show_function = true}
+[29001] = {close_cmdskill = true, combat = 18600, const_commander_skill_id = "5031=1|5111=1|5141=1", const_cstIdPosDic = __rt[213], const_cstIds = __rt[214], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[216], first_reward_ids = __rt[168], first_reward_nums = __rt[109], id = 29001, module_id = 3100, name = 294472, play_para = 2500001, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[217], show_function = true}
 , 
-[29002] = {close_cmdskill = true, combat = 19200, const_commander_skill_id = "5014=1|5024=1|5031=1", const_cstIdPosDic = __rt[214], const_cstIds = __rt[215], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[216], first_reward_ids = __rt[184], first_reward_nums = __rt[190], id = 29002, module_id = 3100, name = 232895, play_para = 2500002, pre_condition = __rt[123], 
+[29002] = {close_cmdskill = true, combat = 19200, const_commander_skill_id = "5014=1|5024=1|5031=1", const_cstIdPosDic = __rt[218], const_cstIds = __rt[219], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[220], first_reward_ids = __rt[188], first_reward_nums = __rt[194], id = 29002, module_id = 3100, name = 232895, play_para = 2500002, pre_condition = __rt[127], 
 pre_para1 = {29001}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[29003] = {close_cmdskill = true, combat = 20010, const_commander_skill_id = "5014=1|5024=1|5131=1", const_cstIdPosDic = __rt[217], const_cstIds = __rt[218], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[219], first_reward_ids = __rt[181], first_reward_nums = __rt[167], id = 29003, module_id = 3100, name = 171318, play_para = 2500003, pre_condition = __rt[123], 
+[29003] = {close_cmdskill = true, combat = 20010, const_commander_skill_id = "5014=1|5024=1|5131=1", const_cstIdPosDic = __rt[221], const_cstIds = __rt[222], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[223], first_reward_ids = __rt[185], first_reward_nums = __rt[171], id = 29003, module_id = 3100, name = 171318, play_para = 2500003, pre_condition = __rt[127], 
 pre_para1 = {29002}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[29004] = {close_cmdskill = true, combat = 20880, const_commander_skill_id = "5031=1|5111=1|5141=1", const_cstIdPosDic = __rt[209], const_cstIds = __rt[210], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[212], 
+[29004] = {close_cmdskill = true, combat = 20880, const_commander_skill_id = "5031=1|5111=1|5141=1", const_cstIdPosDic = __rt[213], const_cstIds = __rt[214], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[216], 
 first_reward_ids = {5008}
-, first_reward_nums = __rt[120], id = 29004, module_id = 3100, name = 109741, play_para = 2500004, pre_condition = __rt[123], 
+, first_reward_nums = __rt[124], id = 29004, module_id = 3100, name = 109741, play_para = 2500004, pre_condition = __rt[127], 
 pre_para1 = {29003}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[29005] = {close_cmdskill = true, combat = 21290, const_commander_skill_id = "5014=1|5024=1|5031=1", const_cstIdPosDic = __rt[214], const_cstIds = __rt[215], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[216], 
+[29005] = {close_cmdskill = true, combat = 21290, const_commander_skill_id = "5014=1|5024=1|5031=1", const_cstIdPosDic = __rt[218], const_cstIds = __rt[219], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[220], 
 first_reward_ids = {8218}
-, first_reward_nums = __rt[190], id = 29005, module_id = 3100, name = 48164, play_para = 2500005, pre_condition = __rt[123], 
+, first_reward_nums = __rt[194], id = 29005, module_id = 3100, name = 48164, play_para = 2500005, pre_condition = __rt[127], 
 pre_para1 = {29004}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[29006] = {close_cmdskill = true, combat = 22360, const_commander_skill_id = "5014=1|5024=1|5131=1", const_cstIdPosDic = __rt[217], const_cstIds = __rt[218], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[219], first_reward_ids = __rt[183], first_reward_nums = __rt_3, id = 29006, module_id = 3100, name = 510875, play_para = 2500006, pre_condition = __rt[123], 
+[29006] = {close_cmdskill = true, combat = 22360, const_commander_skill_id = "5014=1|5024=1|5131=1", const_cstIdPosDic = __rt[221], const_cstIds = __rt[222], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[223], first_reward_ids = __rt[187], first_reward_nums = __rt_3, id = 29006, module_id = 3100, name = 510875, play_para = 2500006, pre_condition = __rt[127], 
 pre_para1 = {29005}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[29007] = {close_cmdskill = true, combat = 22680, const_commander_skill_id = "5031=1|5111=1|5141=1", const_cstIdPosDic = __rt[209], const_cstIds = __rt[210], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[212], first_reward_ids = __rt[177], first_reward_nums = __rt[220], id = 29007, module_id = 3100, name = 449298, play_para = 2500007, pre_condition = __rt[123], 
+[29007] = {close_cmdskill = true, combat = 22680, const_commander_skill_id = "5031=1|5111=1|5141=1", const_cstIdPosDic = __rt[213], const_cstIds = __rt[214], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[216], first_reward_ids = __rt[181], first_reward_nums = __rt[224], id = 29007, module_id = 3100, name = 449298, play_para = 2500007, pre_condition = __rt[127], 
 pre_para1 = {29006}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[29008] = {close_cmdskill = true, combat = 22860, const_commander_skill_id = "5014=1|5024=1|5031=1", const_cstIdPosDic = __rt[214], const_cstIds = __rt[215], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[216], first_reward_ids = __rt[221], first_reward_nums = __rt[124], id = 29008, module_id = 3100, name = 387721, play_para = 2500008, pre_condition = __rt[123], 
+[29008] = {close_cmdskill = true, combat = 22860, const_commander_skill_id = "5014=1|5024=1|5031=1", const_cstIdPosDic = __rt[218], const_cstIds = __rt[219], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[220], first_reward_ids = __rt[225], first_reward_nums = __rt[128], id = 29008, module_id = 3100, name = 387721, play_para = 2500008, pre_condition = __rt[127], 
 pre_para1 = {29007}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[29009] = {close_cmdskill = true, combat = 23210, const_commander_skill_id = "5014=1|5024=1|5131=1", const_cstIdPosDic = __rt[217], const_cstIds = __rt[218], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[219], first_reward_ids = __rt[222], first_reward_nums = __rt[100], id = 29009, module_id = 3100, name = 326144, play_para = 2500009, pre_condition = __rt[123], 
+[29009] = {close_cmdskill = true, combat = 23210, const_commander_skill_id = "5014=1|5024=1|5131=1", const_cstIdPosDic = __rt[221], const_cstIds = __rt[222], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[223], first_reward_ids = __rt[226], first_reward_nums = __rt[104], id = 29009, module_id = 3100, name = 326144, play_para = 2500009, pre_condition = __rt[127], 
 pre_para1 = {29008}
 , 
 protocol = {20227, 40033}
 , show_function = true}
 , 
-[29010] = {close_cmdskill = true, combat = 23500, const_commander_skill_id = "5014=1|5024=1|5131=1", const_cstIdPosDic = __rt[217], const_cstIds = __rt[218], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, 
+[29010] = {close_cmdskill = true, combat = 23500, const_commander_skill_id = "5014=1|5024=1|5131=1", const_cstIdPosDic = __rt[221], const_cstIds = __rt[222], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, 
 enter_chip_select = {
 {
 chip_ids = {80002, 80004, 80006}
-, chip_lvs = __rt[211]}
+, chip_lvs = __rt[215]}
 }
 , 
 first_reward_ids = {500003}
-, first_reward_nums = __rt[124], id = 29010, module_id = 3100, name = 491338, play_para = 2500010, pre_condition = __rt[123], 
+, first_reward_nums = __rt[128], id = 29010, module_id = 3100, name = 491338, play_para = 2500010, pre_condition = __rt[127], 
 pre_para1 = {29009}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[29011] = {close_cmdskill = true, combat = 18600, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[223], const_cstIds = __rt[224], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[225], first_reward_ids = __rt[226], first_reward_nums = __rt[100], id = 29011, module_id = 3100, name = 185022, play_para = 2500011, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[213], show_function = true}
+[29011] = {close_cmdskill = true, combat = 18600, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[227], const_cstIds = __rt[228], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[229], first_reward_ids = __rt[230], first_reward_nums = __rt[104], id = 29011, module_id = 3100, name = 185022, play_para = 2500011, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[217], show_function = true}
 , 
-[29012] = {close_cmdskill = true, combat = 19200, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[223], const_cstIds = __rt[224], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[227], first_reward_ids = __rt[184], first_reward_nums = __rt[190], id = 29012, module_id = 3100, name = 123445, play_para = 2500012, pre_condition = __rt[123], 
+[29012] = {close_cmdskill = true, combat = 19200, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[227], const_cstIds = __rt[228], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[231], first_reward_ids = __rt[188], first_reward_nums = __rt[194], id = 29012, module_id = 3100, name = 123445, play_para = 2500012, pre_condition = __rt[127], 
 pre_para1 = {29011}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[29013] = {close_cmdskill = true, combat = 20010, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[223], const_cstIds = __rt[224], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[228], first_reward_ids = __rt[229], first_reward_nums = __rt_3, id = 29013, module_id = 3100, name = 61868, play_para = 2500013, pre_condition = __rt[123], 
+[29013] = {close_cmdskill = true, combat = 20010, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[227], const_cstIds = __rt[228], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[232], first_reward_ids = __rt[233], first_reward_nums = __rt_3, id = 29013, module_id = 3100, name = 61868, play_para = 2500013, pre_condition = __rt[127], 
 pre_para1 = {29012}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[29014] = {close_cmdskill = true, combat = 20880, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[223], const_cstIds = __rt[224], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[225], first_reward_ids = __rt[183], first_reward_nums = __rt_3, id = 29014, module_id = 3100, name = 291, play_para = 2500014, pre_condition = __rt[123], 
+[29014] = {close_cmdskill = true, combat = 20880, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[227], const_cstIds = __rt[228], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[229], first_reward_ids = __rt[187], first_reward_nums = __rt_3, id = 29014, module_id = 3100, name = 291, play_para = 2500014, pre_condition = __rt[127], 
 pre_para1 = {29013}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[29015] = {close_cmdskill = true, combat = 21290, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[223], const_cstIds = __rt[224], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[227], first_reward_ids = __rt[101], 
+[29015] = {close_cmdskill = true, combat = 21290, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[227], const_cstIds = __rt[228], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[231], first_reward_ids = __rt[105], 
 first_reward_nums = {100000}
-, id = 29015, module_id = 3100, name = 463002, play_para = 2500015, pre_condition = __rt[123], 
+, id = 29015, module_id = 3100, name = 463002, play_para = 2500015, pre_condition = __rt[127], 
 pre_para1 = {29014}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[29016] = {close_cmdskill = true, combat = 22360, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[223], const_cstIds = __rt[224], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[228], first_reward_ids = __rt[226], first_reward_nums = __rt[100], id = 29016, module_id = 3100, name = 401425, play_para = 2500016, pre_condition = __rt[123], 
+[29016] = {close_cmdskill = true, combat = 22360, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[227], const_cstIds = __rt[228], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[232], first_reward_ids = __rt[230], first_reward_nums = __rt[104], id = 29016, module_id = 3100, name = 401425, play_para = 2500016, pre_condition = __rt[127], 
 pre_para1 = {29015}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[29017] = {close_cmdskill = true, combat = 22680, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[223], const_cstIds = __rt[224], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[225], first_reward_ids = __rt[229], first_reward_nums = __rt_3, id = 29017, module_id = 3100, name = 339848, play_para = 2500017, pre_condition = __rt[123], 
+[29017] = {close_cmdskill = true, combat = 22680, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[227], const_cstIds = __rt[228], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[229], first_reward_ids = __rt[233], first_reward_nums = __rt_3, id = 29017, module_id = 3100, name = 339848, play_para = 2500017, pre_condition = __rt[127], 
 pre_para1 = {29016}
 , 
 protocol = {22102, 40033}
 , show_function = true}
 , 
-[29018] = {close_cmdskill = true, combat = 22860, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[223], const_cstIds = __rt[224], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[227], first_reward_ids = __rt[221], first_reward_nums = __rt[124], id = 29018, module_id = 3100, name = 278271, play_para = 2500018, pre_condition = __rt[123], 
+[29018] = {close_cmdskill = true, combat = 22860, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[227], const_cstIds = __rt[228], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[231], first_reward_ids = __rt[225], first_reward_nums = __rt[128], id = 29018, module_id = 3100, name = 278271, play_para = 2500018, pre_condition = __rt[127], 
 pre_para1 = {29017}
 , 
 protocol = {20019, 40033}
 , show_function = true}
 , 
-[29019] = {close_cmdskill = true, combat = 23210, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[223], const_cstIds = __rt[224], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[228], first_reward_ids = __rt[222], first_reward_nums = __rt[100], id = 29019, module_id = 3100, name = 216694, play_para = 2500019, pre_condition = __rt[123], 
+[29019] = {close_cmdskill = true, combat = 23210, const_commander_skill_id = "5014=1|5111=1|5031=1", const_cstIdPosDic = __rt[227], const_cstIds = __rt[228], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, enter_chip_select = __rt[232], first_reward_ids = __rt[226], first_reward_nums = __rt[104], id = 29019, module_id = 3100, name = 216694, play_para = 2500019, pre_condition = __rt[127], 
 pre_para1 = {29018}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[29020] = {close_cmdskill = true, combat = 23500, const_commander_skill_id = "5014=1|5024=1|5131=1", const_cstIdPosDic = __rt[217], const_cstIds = __rt[218], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, 
+[29020] = {close_cmdskill = true, combat = 23500, const_commander_skill_id = "5014=1|5024=1|5131=1", const_cstIdPosDic = __rt[221], const_cstIds = __rt[222], cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 27, 
 enter_chip_select = {
 {
 chip_ids = {80019, 80016, 80017}
-, chip_lvs = __rt[211]}
+, chip_lvs = __rt[215]}
 }
 , 
 first_reward_ids = {720152}
-, first_reward_nums = __rt[124], id = 29020, module_id = 3100, name = 468940, play_para = 2500020, pre_condition = __rt[123], 
+, first_reward_nums = __rt[128], id = 29020, module_id = 3100, name = 468940, play_para = 2500020, pre_condition = __rt[127], 
 pre_para1 = {29019}
-, protocol = __rt[213], show_function = true}
+, protocol = __rt[217], show_function = true}
 , 
-[33001] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 33, first_reward_ids = __rt[230], first_reward_nums = __rt[120], id = 33001, module_id = 3700, name = 60733, play_para = 1103401, 
+[33001] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 33, first_reward_ids = __rt[234], first_reward_nums = __rt[124], id = 33001, module_id = 3700, name = 60733, play_para = 1103401, 
 pre_condition = {12, 23}
 , 
 pre_para1 = {-1, 17001}
 , 
 pre_para2 = {1655971199, 30}
-, protocol = __rt[231]}
+, protocol = __rt[235]}
 , 
-[33002] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 33, first_reward_ids = __rt[230], first_reward_nums = __rt[120], id = 33002, module_id = 3700, name = 291150, play_para = 1103501, pre_condition = __rt[232], 
+[33002] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 33, first_reward_ids = __rt[234], first_reward_nums = __rt[124], id = 33002, module_id = 3700, name = 291150, play_para = 1103501, pre_condition = __rt[236], 
 pre_para1 = {-1, 17001, 33001}
 , 
 pre_para2 = {1655971199, 35, 1}
-, protocol = __rt[231]}
+, protocol = __rt[235]}
 , 
-[33003] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 33, first_reward_ids = __rt[230], first_reward_nums = __rt[120], id = 33003, module_id = 3700, name = 389838, play_para = 1103601, pre_condition = __rt[232], 
+[33003] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 33, first_reward_ids = __rt[234], first_reward_nums = __rt[124], id = 33003, module_id = 3700, name = 389838, play_para = 1103601, pre_condition = __rt[236], 
 pre_para1 = {-1, 17001, 33002}
 , 
 pre_para2 = {1655971199, 40, 1}
-, protocol = __rt[231]}
+, protocol = __rt[235]}
 , 
-[33011] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 33, first_reward_ids = __rt[230], first_reward_nums = __rt[120], id = 33011, module_id = 3700, name = 60733, play_para = 1104401, 
+[33011] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 33, first_reward_ids = __rt[234], first_reward_nums = __rt[124], id = 33011, module_id = 3700, name = 60733, play_para = 1104401, 
 pre_condition = {23}
 , 
 pre_para1 = {17002}
-, pre_para2 = __rt[114], protocol = __rt[231]}
+, pre_para2 = __rt[118], protocol = __rt[235]}
 , 
-[33012] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 33, first_reward_ids = __rt[230], first_reward_nums = __rt[120], id = 33012, module_id = 3700, name = 291150, play_para = 1104501, pre_condition = __rt[233], 
+[33012] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 33, first_reward_ids = __rt[234], first_reward_nums = __rt[124], id = 33012, module_id = 3700, name = 291150, play_para = 1104501, pre_condition = __rt[237], 
 pre_para1 = {17002, 33011}
 , 
 pre_para2 = {35, 1}
-, protocol = __rt[231]}
+, protocol = __rt[235]}
 , 
-[33013] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 33, first_reward_ids = __rt[230], first_reward_nums = __rt[120], id = 33013, module_id = 3700, name = 389838, play_para = 1104601, pre_condition = __rt[233], 
+[33013] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 33, first_reward_ids = __rt[234], first_reward_nums = __rt[124], id = 33013, module_id = 3700, name = 389838, play_para = 1104601, pre_condition = __rt[237], 
 pre_para1 = {17002, 33012}
 , 
 pre_para2 = {40, 1}
-, protocol = __rt[231]}
+, protocol = __rt[235]}
 , 
-[35001] = {combat = 5000, cost_itemIds = __rt[234], cost_itemNums = __rt[198], dungeon_type = 35, first_reward_nums = __rt_1, id = 35001, module_id = 4001, name = 448034, play_para = 3016201, pre_condition = __rt[122], 
+[35001] = {combat = 5000, cost_itemIds = __rt[238], cost_itemNums = __rt[202], dungeon_type = 35, first_reward_nums = __rt_1, id = 35001, module_id = 4001, name = 448034, play_para = 3016201, pre_condition = __rt[126], 
 pre_para1 = {140011101}
 , pre_para2 = __rt_1}
 , 
-[35002] = {combat = 20000, cost_itemIds = __rt[234], cost_itemNums = __rt[200], dungeon_type = 35, first_reward_nums = __rt_1, id = 35002, module_id = 4001, name = 385813, play_para = 3016202, pre_condition = __rt[235], 
+[35002] = {combat = 20000, cost_itemIds = __rt[238], cost_itemNums = __rt[204], dungeon_type = 35, first_reward_nums = __rt_1, id = 35002, module_id = 4001, name = 385813, play_para = 3016202, pre_condition = __rt[239], 
 pre_para1 = {140011113, 35001}
-, pre_para2 = __rt[236]}
+, pre_para2 = __rt[240]}
 , 
-[35003] = {combat = 35000, cost_itemIds = __rt[234], cost_itemNums = __rt[103], dungeon_type = 35, first_reward_nums = __rt_1, id = 35003, module_id = 4001, name = 417774, play_para = 3016203, pre_condition = __rt[235], 
+[35003] = {combat = 35000, cost_itemIds = __rt[238], cost_itemNums = __rt[107], dungeon_type = 35, first_reward_nums = __rt_1, id = 35003, module_id = 4001, name = 417774, play_para = 3016203, pre_condition = __rt[239], 
 pre_para1 = {140011116, 35002}
-, pre_para2 = __rt[236]}
+, pre_para2 = __rt[240]}
 , 
-[35004] = {combat = 45000, cost_itemIds = __rt[234], cost_itemNums = __rt[237], dungeon_type = 35, first_reward_nums = __rt_1, id = 35004, module_id = 4001, name = 385474, play_para = 3016204, pre_condition = __rt[235], 
+[35004] = {combat = 45000, cost_itemIds = __rt[238], cost_itemNums = __rt[241], dungeon_type = 35, first_reward_nums = __rt_1, id = 35004, module_id = 4001, name = 385474, play_para = 3016204, pre_condition = __rt[239], 
 pre_para1 = {140011118, 35003}
-, pre_para2 = __rt[236]}
+, pre_para2 = __rt[240]}
 , 
-[35005] = {combat = 60000, cost_itemIds = __rt[234], cost_itemNums = __rt[220], dungeon_type = 35, first_reward_nums = __rt_1, id = 35005, module_id = 4001, name = 361841, play_para = 3016205, pre_condition = __rt[235], 
+[35005] = {combat = 60000, cost_itemIds = __rt[238], cost_itemNums = __rt[224], dungeon_type = 35, first_reward_nums = __rt_1, id = 35005, module_id = 4001, name = 361841, play_para = 3016205, pre_condition = __rt[239], 
 pre_para1 = {140011120, 35004}
-, pre_para2 = __rt[236]}
+, pre_para2 = __rt[240]}
 , 
-[36001] = {combat = 5000, cost_itemIds = __rt[238], cost_itemNums = __rt[174], dungeon_type = 36, first_reward_ids = __rt[239], first_reward_nums = __rt[165], id = 36001, module_id = 3001, name = 506573, normal_drop = __rt[239], play_para = 1058001, pre_condition = __rt[240], 
+[36001] = {combat = 5000, cost_itemIds = __rt[242], cost_itemNums = __rt[178], dungeon_type = 36, first_reward_ids = __rt[243], first_reward_nums = __rt[169], id = 36001, module_id = 3001, name = 506573, normal_drop = __rt[243], play_para = 1058001, pre_condition = __rt[244], 
 pre_para1 = {100091101, 1664438400}
-, pre_para2 = __rt[241], protocol = __rt[213]}
+, pre_para2 = __rt[245], protocol = __rt[217]}
 , 
-[36002] = {combat = 20000, cost_itemIds = __rt[238], cost_itemNums = __rt[198], dungeon_type = 36, first_reward_ids = __rt[239], first_reward_nums = __rt[165], id = 36002, module_id = 3001, name = 221454, normal_drop = __rt[239], play_para = 1058002, pre_condition = __rt[240], 
+[36002] = {combat = 20000, cost_itemIds = __rt[242], cost_itemNums = __rt[202], dungeon_type = 36, first_reward_ids = __rt[243], first_reward_nums = __rt[169], id = 36002, module_id = 3001, name = 221454, normal_drop = __rt[243], play_para = 1058002, pre_condition = __rt[244], 
 pre_para1 = {100091102, 1664438400}
-, pre_para2 = __rt[241], protocol = __rt[213]}
+, pre_para2 = __rt[245], protocol = __rt[217]}
 , 
-[36003] = {combat = 35000, cost_itemIds = __rt[238], cost_itemNums = __rt[200], dungeon_type = 36, first_reward_ids = __rt[239], first_reward_nums = __rt[165], id = 36003, module_id = 3001, name = 245010, normal_drop = __rt[239], play_para = 1058003, pre_condition = __rt[240], 
+[36003] = {combat = 35000, cost_itemIds = __rt[242], cost_itemNums = __rt[204], dungeon_type = 36, first_reward_ids = __rt[243], first_reward_nums = __rt[169], id = 36003, module_id = 3001, name = 245010, normal_drop = __rt[243], play_para = 1058003, pre_condition = __rt[244], 
 pre_para1 = {100091103, 1664438400}
-, pre_para2 = __rt[241], protocol = __rt[213]}
+, pre_para2 = __rt[245], protocol = __rt[217]}
 , 
-[36004] = {combat = 45000, cost_itemIds = __rt[238], cost_itemNums = __rt[103], dungeon_type = 36, first_reward_ids = __rt[239], first_reward_nums = __rt[165], id = 36004, module_id = 3001, name = 139203, normal_drop = __rt[239], play_para = 1058004, pre_condition = __rt[240], 
+[36004] = {combat = 45000, cost_itemIds = __rt[242], cost_itemNums = __rt[107], dungeon_type = 36, first_reward_ids = __rt[243], first_reward_nums = __rt[169], id = 36004, module_id = 3001, name = 139203, normal_drop = __rt[243], play_para = 1058004, pre_condition = __rt[244], 
 pre_para1 = {100091104, 1664438400}
-, pre_para2 = __rt[241], protocol = __rt[213]}
+, pre_para2 = __rt[245], protocol = __rt[217]}
 , 
-[36005] = {combat = 52500, cost_itemIds = __rt[238], cost_itemNums = __rt[237], dungeon_type = 36, first_reward_ids = __rt[239], first_reward_nums = __rt[165], id = 36005, module_id = 3001, name = 427676, normal_drop = __rt[239], play_para = 1058005, pre_condition = __rt[240], 
+[36005] = {combat = 52500, cost_itemIds = __rt[242], cost_itemNums = __rt[241], dungeon_type = 36, first_reward_ids = __rt[243], first_reward_nums = __rt[169], id = 36005, module_id = 3001, name = 427676, normal_drop = __rt[243], play_para = 1058005, pre_condition = __rt[244], 
 pre_para1 = {100091106, 1664438400}
-, pre_para2 = __rt[241], protocol = __rt[213]}
+, pre_para2 = __rt[245], protocol = __rt[217]}
 , 
-[37001] = {combat = 5000, cost_itemIds = __rt[242], cost_itemNums = __rt[174], dungeon_type = 36, first_reward_ids = __rt[243], first_reward_nums = __rt[165], id = 37001, module_id = 3001, name = 148886, normal_drop = __rt[243], play_para = 1059001, pre_condition = __rt[240], 
+[37001] = {combat = 5000, cost_itemIds = __rt[246], cost_itemNums = __rt[178], dungeon_type = 36, first_reward_ids = __rt[247], first_reward_nums = __rt[169], id = 37001, module_id = 3001, name = 148886, normal_drop = __rt[247], play_para = 1059001, pre_condition = __rt[244], 
 pre_para1 = {100101101, 1666857600}
-, pre_para2 = __rt[244], protocol = __rt[213]}
+, pre_para2 = __rt[248], protocol = __rt[217]}
 , 
-[37002] = {combat = 20000, cost_itemIds = __rt[242], cost_itemNums = __rt[198], dungeon_type = 36, first_reward_ids = __rt[243], first_reward_nums = __rt[165], id = 37002, module_id = 3001, name = 131589, normal_drop = __rt[243], play_para = 1059002, pre_condition = __rt[240], 
+[37002] = {combat = 20000, cost_itemIds = __rt[246], cost_itemNums = __rt[202], dungeon_type = 36, first_reward_ids = __rt[247], first_reward_nums = __rt[169], id = 37002, module_id = 3001, name = 131589, normal_drop = __rt[247], play_para = 1059002, pre_condition = __rt[244], 
 pre_para1 = {100101102, 1666857600}
-, pre_para2 = __rt[244], protocol = __rt[213]}
+, pre_para2 = __rt[248], protocol = __rt[217]}
 , 
-[37003] = {combat = 35000, cost_itemIds = __rt[242], cost_itemNums = __rt[200], dungeon_type = 36, first_reward_ids = __rt[243], first_reward_nums = __rt[165], id = 37003, module_id = 3001, name = 238467, normal_drop = __rt[243], play_para = 1059003, pre_condition = __rt[240], 
+[37003] = {combat = 35000, cost_itemIds = __rt[246], cost_itemNums = __rt[204], dungeon_type = 36, first_reward_ids = __rt[247], first_reward_nums = __rt[169], id = 37003, module_id = 3001, name = 238467, normal_drop = __rt[247], play_para = 1059003, pre_condition = __rt[244], 
 pre_para1 = {100101103, 1666857600}
-, pre_para2 = __rt[244], protocol = __rt[213]}
+, pre_para2 = __rt[248], protocol = __rt[217]}
 , 
-[37004] = {combat = 45000, cost_itemIds = __rt[242], cost_itemNums = __rt[103], dungeon_type = 36, first_reward_ids = __rt[243], first_reward_nums = __rt[165], id = 37004, module_id = 3001, name = 203948, normal_drop = __rt[243], play_para = 1059004, pre_condition = __rt[240], 
+[37004] = {combat = 45000, cost_itemIds = __rt[246], cost_itemNums = __rt[107], dungeon_type = 36, first_reward_ids = __rt[247], first_reward_nums = __rt[169], id = 37004, module_id = 3001, name = 203948, normal_drop = __rt[247], play_para = 1059004, pre_condition = __rt[244], 
 pre_para1 = {100101104, 1666857600}
-, pre_para2 = __rt[244], protocol = __rt[213]}
+, pre_para2 = __rt[248], protocol = __rt[217]}
 , 
-[37005] = {combat = 52500, cost_itemIds = __rt[242], cost_itemNums = __rt[237], dungeon_type = 36, first_reward_ids = __rt[243], first_reward_nums = __rt[165], id = 37005, module_id = 3001, name = 338194, normal_drop = __rt[243], play_para = 1059005, pre_condition = __rt[240], 
+[37005] = {combat = 52500, cost_itemIds = __rt[246], cost_itemNums = __rt[241], dungeon_type = 36, first_reward_ids = __rt[247], first_reward_nums = __rt[169], id = 37005, module_id = 3001, name = 338194, normal_drop = __rt[247], play_para = 1059005, pre_condition = __rt[244], 
 pre_para1 = {100101106, 1666857600}
-, pre_para2 = __rt[244], protocol = __rt[213]}
+, pre_para2 = __rt[248], protocol = __rt[217]}
 , 
-[38001] = {combat = 5000, cost_itemIds = __rt[245], cost_itemNums = __rt[174], dungeon_type = 36, first_reward_ids = __rt[246], first_reward_nums = __rt[165], id = 38001, module_id = 3001, name = 455509, normal_drop = __rt[246], play_para = 1060001, pre_condition = __rt[240], 
+[38001] = {combat = 5000, cost_itemIds = __rt[249], cost_itemNums = __rt[178], dungeon_type = 36, first_reward_ids = __rt[250], first_reward_nums = __rt[169], id = 38001, module_id = 3001, name = 455509, normal_drop = __rt[250], play_para = 1060001, pre_condition = __rt[244], 
 pre_para1 = {100111101, 1669276800}
-, pre_para2 = __rt[247], protocol = __rt[248]}
+, pre_para2 = __rt[251], protocol = __rt[252]}
 , 
-[38002] = {combat = 20000, cost_itemIds = __rt[245], cost_itemNums = __rt[198], dungeon_type = 36, first_reward_ids = __rt[246], first_reward_nums = __rt[165], id = 38002, module_id = 3001, name = 345367, normal_drop = __rt[246], play_para = 1060002, pre_condition = __rt[240], 
+[38002] = {combat = 20000, cost_itemIds = __rt[249], cost_itemNums = __rt[202], dungeon_type = 36, first_reward_ids = __rt[250], first_reward_nums = __rt[169], id = 38002, module_id = 3001, name = 345367, normal_drop = __rt[250], play_para = 1060002, pre_condition = __rt[244], 
 pre_para1 = {100111102, 1669276800}
-, pre_para2 = __rt[247], protocol = __rt[248]}
+, pre_para2 = __rt[251], protocol = __rt[252]}
 , 
-[38003] = {combat = 35000, cost_itemIds = __rt[245], cost_itemNums = __rt[200], dungeon_type = 36, first_reward_ids = __rt[246], first_reward_nums = __rt[165], id = 38003, module_id = 3001, name = 447338, normal_drop = __rt[246], play_para = 1060003, pre_condition = __rt[240], 
+[38003] = {combat = 35000, cost_itemIds = __rt[249], cost_itemNums = __rt[204], dungeon_type = 36, first_reward_ids = __rt[250], first_reward_nums = __rt[169], id = 38003, module_id = 3001, name = 447338, normal_drop = __rt[250], play_para = 1060003, pre_condition = __rt[244], 
 pre_para1 = {100111103, 1669276800}
-, pre_para2 = __rt[247], protocol = __rt[248]}
+, pre_para2 = __rt[251], protocol = __rt[252]}
 , 
-[38004] = {combat = 43500, cost_itemIds = __rt[245], cost_itemNums = __rt[103], dungeon_type = 36, first_reward_ids = __rt[246], first_reward_nums = __rt[165], id = 38004, module_id = 3001, name = 508467, normal_drop = __rt[246], play_para = 1060004, pre_condition = __rt[240], 
+[38004] = {combat = 43500, cost_itemIds = __rt[249], cost_itemNums = __rt[107], dungeon_type = 36, first_reward_ids = __rt[250], first_reward_nums = __rt[169], id = 38004, module_id = 3001, name = 508467, normal_drop = __rt[250], play_para = 1060004, pre_condition = __rt[244], 
 pre_para1 = {100111104, 1669276800}
-, pre_para2 = __rt[247], protocol = __rt[248]}
+, pre_para2 = __rt[251], protocol = __rt[252]}
 , 
-[38005] = {combat = 57200, cost_itemIds = __rt[245], cost_itemNums = __rt[237], dungeon_type = 36, first_reward_ids = __rt[246], first_reward_nums = __rt[165], id = 38005, module_id = 3001, name = 476122, normal_drop = __rt[246], play_para = 1060005, pre_condition = __rt[240], 
+[38005] = {combat = 57200, cost_itemIds = __rt[249], cost_itemNums = __rt[241], dungeon_type = 36, first_reward_ids = __rt[250], first_reward_nums = __rt[169], id = 38005, module_id = 3001, name = 476122, normal_drop = __rt[250], play_para = 1060005, pre_condition = __rt[244], 
 pre_para1 = {100111106, 1669276800}
-, pre_para2 = __rt[247], protocol = __rt[248]}
+, pre_para2 = __rt[251], protocol = __rt[252]}
 , 
-[39001] = {combat = 5000, cost_itemIds = __rt[249], cost_itemNums = __rt[174], dungeon_type = 36, first_reward_ids = __rt[250], first_reward_nums = __rt[165], id = 39001, module_id = 3001, name = 190124, normal_drop = __rt[250], play_para = 1061001, pre_condition = __rt[240], 
+[39001] = {combat = 5000, cost_itemIds = __rt[253], cost_itemNums = __rt[178], dungeon_type = 36, first_reward_ids = __rt[254], first_reward_nums = __rt[169], id = 39001, module_id = 3001, name = 190124, normal_drop = __rt[254], play_para = 1061001, pre_condition = __rt[244], 
 pre_para1 = {100121101, 1671696000}
-, pre_para2 = __rt[251], protocol = __rt[213]}
+, pre_para2 = __rt[255], protocol = __rt[217]}
 , 
-[39002] = {combat = 20000, cost_itemIds = __rt[249], cost_itemNums = __rt[198], dungeon_type = 36, first_reward_ids = __rt[250], first_reward_nums = __rt[165], id = 39002, module_id = 3001, name = 125377, normal_drop = __rt[250], play_para = 1061002, pre_condition = __rt[240], 
+[39002] = {combat = 20000, cost_itemIds = __rt[253], cost_itemNums = __rt[202], dungeon_type = 36, first_reward_ids = __rt[254], first_reward_nums = __rt[169], id = 39002, module_id = 3001, name = 125377, normal_drop = __rt[254], play_para = 1061002, pre_condition = __rt[244], 
 pre_para1 = {100121102, 1671696000}
-, pre_para2 = __rt[251], protocol = __rt[213]}
+, pre_para2 = __rt[255], protocol = __rt[217]}
 , 
-[39003] = {combat = 35000, cost_itemIds = __rt[249], cost_itemNums = __rt[200], dungeon_type = 36, first_reward_ids = __rt[250], first_reward_nums = __rt[165], id = 39003, module_id = 3001, name = 143761, normal_drop = __rt[250], play_para = 1061003, pre_condition = __rt[240], 
+[39003] = {combat = 35000, cost_itemIds = __rt[253], cost_itemNums = __rt[204], dungeon_type = 36, first_reward_ids = __rt[254], first_reward_nums = __rt[169], id = 39003, module_id = 3001, name = 143761, normal_drop = __rt[254], play_para = 1061003, pre_condition = __rt[244], 
 pre_para1 = {100121103, 1671696000}
-, pre_para2 = __rt[251], protocol = __rt[213]}
+, pre_para2 = __rt[255], protocol = __rt[217]}
 , 
-[39004] = {combat = 43500, cost_itemIds = __rt[249], cost_itemNums = __rt[103], dungeon_type = 36, first_reward_ids = __rt[250], first_reward_nums = __rt[165], id = 39004, module_id = 3001, name = 483646, normal_drop = __rt[250], play_para = 1061004, pre_condition = __rt[240], 
+[39004] = {combat = 43500, cost_itemIds = __rt[253], cost_itemNums = __rt[107], dungeon_type = 36, first_reward_ids = __rt[254], first_reward_nums = __rt[169], id = 39004, module_id = 3001, name = 483646, normal_drop = __rt[254], play_para = 1061004, pre_condition = __rt[244], 
 pre_para1 = {100121104, 1671696000}
-, pre_para2 = __rt[251], protocol = __rt[213]}
+, pre_para2 = __rt[255], protocol = __rt[217]}
 , 
-[39005] = {combat = 57200, cost_itemIds = __rt[249], cost_itemNums = __rt[237], dungeon_type = 36, first_reward_ids = __rt[250], first_reward_nums = __rt[165], id = 39005, module_id = 3001, name = 517400, normal_drop = __rt[250], play_para = 1061005, pre_condition = __rt[240], 
+[39005] = {combat = 57200, cost_itemIds = __rt[253], cost_itemNums = __rt[241], dungeon_type = 36, first_reward_ids = __rt[254], first_reward_nums = __rt[169], id = 39005, module_id = 3001, name = 517400, normal_drop = __rt[254], play_para = 1061005, pre_condition = __rt[244], 
 pre_para1 = {100121106, 1671696000}
-, pre_para2 = __rt[251], protocol = __rt[213]}
+, pre_para2 = __rt[255], protocol = __rt[217]}
 , 
-[40001] = {combat = 5000, cost_itemIds = __rt[252], cost_itemNums = __rt[174], dungeon_type = 36, first_reward_ids = __rt[253], first_reward_nums = __rt[165], id = 40001, module_id = 3001, name = 291064, normal_drop = __rt[253], play_para = 1062001, pre_condition = __rt[240], 
+[40001] = {combat = 5000, cost_itemIds = __rt[256], cost_itemNums = __rt[178], dungeon_type = 36, first_reward_ids = __rt[257], first_reward_nums = __rt[169], id = 40001, module_id = 3001, name = 291064, normal_drop = __rt[257], play_para = 1062001, pre_condition = __rt[244], 
 pre_para1 = {100131101, 1673942400}
-, pre_para2 = __rt[254], protocol = __rt[213]}
+, pre_para2 = __rt[258], protocol = __rt[217]}
 , 
-[40002] = {combat = 20000, cost_itemIds = __rt[252], cost_itemNums = __rt[198], dungeon_type = 36, first_reward_ids = __rt[253], first_reward_nums = __rt[165], id = 40002, module_id = 3001, name = 399129, normal_drop = __rt[253], play_para = 1062002, pre_condition = __rt[240], 
+[40002] = {combat = 20000, cost_itemIds = __rt[256], cost_itemNums = __rt[202], dungeon_type = 36, first_reward_ids = __rt[257], first_reward_nums = __rt[169], id = 40002, module_id = 3001, name = 399129, normal_drop = __rt[257], play_para = 1062002, pre_condition = __rt[244], 
 pre_para1 = {100131102, 1673942400}
-, pre_para2 = __rt[254], protocol = __rt[213]}
+, pre_para2 = __rt[258], protocol = __rt[217]}
 , 
-[40003] = {combat = 35000, cost_itemIds = __rt[252], cost_itemNums = __rt[200], dungeon_type = 36, first_reward_ids = __rt[253], first_reward_nums = __rt[165], id = 40003, module_id = 3001, name = 216319, normal_drop = __rt[253], play_para = 1062003, pre_condition = __rt[240], 
+[40003] = {combat = 35000, cost_itemIds = __rt[256], cost_itemNums = __rt[204], dungeon_type = 36, first_reward_ids = __rt[257], first_reward_nums = __rt[169], id = 40003, module_id = 3001, name = 216319, normal_drop = __rt[257], play_para = 1062003, pre_condition = __rt[244], 
 pre_para1 = {100131103, 1673942400}
-, pre_para2 = __rt[254], protocol = __rt[213]}
+, pre_para2 = __rt[258], protocol = __rt[217]}
 , 
-[40004] = {combat = 43500, cost_itemIds = __rt[252], cost_itemNums = __rt[103], dungeon_type = 36, first_reward_ids = __rt[253], first_reward_nums = __rt[165], id = 40004, module_id = 3001, name = 253841, normal_drop = __rt[253], play_para = 1062004, pre_condition = __rt[240], 
+[40004] = {combat = 43500, cost_itemIds = __rt[256], cost_itemNums = __rt[107], dungeon_type = 36, first_reward_ids = __rt[257], first_reward_nums = __rt[169], id = 40004, module_id = 3001, name = 253841, normal_drop = __rt[257], play_para = 1062004, pre_condition = __rt[244], 
 pre_para1 = {100131104, 1673942400}
-, pre_para2 = __rt[254], protocol = __rt[213]}
+, pre_para2 = __rt[258], protocol = __rt[217]}
 , 
-[40005] = {combat = 57200, cost_itemIds = __rt[252], cost_itemNums = __rt[237], dungeon_type = 36, first_reward_ids = __rt[253], first_reward_nums = __rt[165], id = 40005, module_id = 3001, name = 223498, normal_drop = __rt[253], play_para = 1062005, pre_condition = __rt[240], 
+[40005] = {combat = 57200, cost_itemIds = __rt[256], cost_itemNums = __rt[241], dungeon_type = 36, first_reward_ids = __rt[257], first_reward_nums = __rt[169], id = 40005, module_id = 3001, name = 223498, normal_drop = __rt[257], play_para = 1062005, pre_condition = __rt[244], 
 pre_para1 = {100131105, 1673942400}
-, pre_para2 = __rt[254], 
+, pre_para2 = __rt[258], 
 protocol = {40033, 25008}
 }
 , 
-[41001] = {combat = 5000, cost_itemIds = __rt[255], cost_itemNums = __rt[174], dungeon_type = 36, first_reward_ids = __rt[256], first_reward_nums = __rt[165], id = 41001, module_id = 3001, name = 88726, normal_drop = __rt[256], play_para = 1063001, pre_condition = __rt[240], 
+[41001] = {combat = 5000, cost_itemIds = __rt[259], cost_itemNums = __rt[178], dungeon_type = 36, first_reward_ids = __rt[260], first_reward_nums = __rt[169], id = 41001, module_id = 3001, name = 88726, normal_drop = __rt[260], play_para = 1063001, pre_condition = __rt[244], 
 pre_para1 = {100141101, 1676534400}
-, pre_para2 = __rt[257], protocol = __rt[213]}
+, pre_para2 = __rt[261], protocol = __rt[217]}
 , 
-[41002] = {combat = 20000, cost_itemIds = __rt[255], cost_itemNums = __rt[198], dungeon_type = 36, first_reward_ids = __rt[256], first_reward_nums = __rt[165], id = 41002, module_id = 3001, name = 317583, normal_drop = __rt[256], play_para = 1063002, pre_condition = __rt[240], 
+[41002] = {combat = 20000, cost_itemIds = __rt[259], cost_itemNums = __rt[202], dungeon_type = 36, first_reward_ids = __rt[260], first_reward_nums = __rt[169], id = 41002, module_id = 3001, name = 317583, normal_drop = __rt[260], play_para = 1063002, pre_condition = __rt[244], 
 pre_para1 = {100141102, 1676534400}
-, pre_para2 = __rt[257], protocol = __rt[213]}
+, pre_para2 = __rt[261], protocol = __rt[217]}
 , 
-[41003] = {combat = 35000, cost_itemIds = __rt[255], cost_itemNums = __rt[200], dungeon_type = 36, first_reward_ids = __rt[256], first_reward_nums = __rt[165], id = 41003, module_id = 3001, name = 509458, normal_drop = __rt[256], play_para = 1063003, pre_condition = __rt[240], 
+[41003] = {combat = 35000, cost_itemIds = __rt[259], cost_itemNums = __rt[204], dungeon_type = 36, first_reward_ids = __rt[260], first_reward_nums = __rt[169], id = 41003, module_id = 3001, name = 509458, normal_drop = __rt[260], play_para = 1063003, pre_condition = __rt[244], 
 pre_para1 = {100141103, 1676534400}
-, pre_para2 = __rt[257], protocol = __rt[213]}
+, pre_para2 = __rt[261], protocol = __rt[217]}
 , 
-[41004] = {combat = 43500, cost_itemIds = __rt[255], cost_itemNums = __rt[103], dungeon_type = 36, first_reward_ids = __rt[256], first_reward_nums = __rt[165], id = 41004, module_id = 3001, name = 361748, normal_drop = __rt[256], play_para = 1063004, pre_condition = __rt[240], 
+[41004] = {combat = 43500, cost_itemIds = __rt[259], cost_itemNums = __rt[107], dungeon_type = 36, first_reward_ids = __rt[260], first_reward_nums = __rt[169], id = 41004, module_id = 3001, name = 361748, normal_drop = __rt[260], play_para = 1063004, pre_condition = __rt[244], 
 pre_para1 = {100141104, 1676534400}
-, pre_para2 = __rt[257], protocol = __rt[213]}
+, pre_para2 = __rt[261], protocol = __rt[217]}
 , 
-[41005] = {combat = 55200, cost_itemIds = __rt[255], cost_itemNums = __rt[237], dungeon_type = 36, first_reward_ids = __rt[256], first_reward_nums = __rt[165], id = 41005, module_id = 3001, name = 510953, normal_drop = __rt[256], play_para = 1063005, pre_condition = __rt[240], 
+[41005] = {combat = 55200, cost_itemIds = __rt[259], cost_itemNums = __rt[241], dungeon_type = 36, first_reward_ids = __rt[260], first_reward_nums = __rt[169], id = 41005, module_id = 3001, name = 510953, normal_drop = __rt[260], play_para = 1063005, pre_condition = __rt[244], 
 pre_para1 = {100141105, 1676534400}
-, pre_para2 = __rt[257], protocol = __rt[213]}
+, pre_para2 = __rt[261], protocol = __rt[217]}
 , 
-[42001] = {combat = 5000, cost_itemIds = __rt[258], cost_itemNums = __rt[174], dungeon_type = 36, first_reward_ids = __rt[259], first_reward_nums = __rt[165], id = 42001, module_id = 3001, name = 89658, normal_drop = __rt[259], play_para = 1064001, pre_condition = __rt[240], 
+[42001] = {combat = 5000, cost_itemIds = __rt[262], cost_itemNums = __rt[178], dungeon_type = 36, first_reward_ids = __rt[263], first_reward_nums = __rt[169], id = 42001, module_id = 3001, name = 89658, normal_drop = __rt[263], play_para = 1064001, pre_condition = __rt[244], 
 pre_para1 = {100151101, 1680163200}
-, pre_para2 = __rt[260], protocol = __rt[213]}
+, pre_para2 = __rt[264], protocol = __rt[217]}
 , 
-[42002] = {combat = 20000, cost_itemIds = __rt[258], cost_itemNums = __rt[198], dungeon_type = 36, first_reward_ids = __rt[259], first_reward_nums = __rt[165], id = 42002, module_id = 3001, name = 352836, normal_drop = __rt[259], play_para = 1064002, pre_condition = __rt[240], 
+[42002] = {combat = 20000, cost_itemIds = __rt[262], cost_itemNums = __rt[202], dungeon_type = 36, first_reward_ids = __rt[263], first_reward_nums = __rt[169], id = 42002, module_id = 3001, name = 352836, normal_drop = __rt[263], play_para = 1064002, pre_condition = __rt[244], 
 pre_para1 = {100151102, 1680163200}
-, pre_para2 = __rt[260], protocol = __rt[213]}
+, pre_para2 = __rt[264], protocol = __rt[217]}
 , 
-[42003] = {combat = 35000, cost_itemIds = __rt[258], cost_itemNums = __rt[200], dungeon_type = 36, first_reward_ids = __rt[259], first_reward_nums = __rt[165], id = 42003, module_id = 3001, name = 103170, normal_drop = __rt[259], play_para = 1064003, pre_condition = __rt[240], 
+[42003] = {combat = 35000, cost_itemIds = __rt[262], cost_itemNums = __rt[204], dungeon_type = 36, first_reward_ids = __rt[263], first_reward_nums = __rt[169], id = 42003, module_id = 3001, name = 103170, normal_drop = __rt[263], play_para = 1064003, pre_condition = __rt[244], 
 pre_para1 = {100151103, 1680163200}
-, pre_para2 = __rt[260], protocol = __rt[213]}
+, pre_para2 = __rt[264], protocol = __rt[217]}
 , 
-[42004] = {combat = 43500, cost_itemIds = __rt[258], cost_itemNums = __rt[103], dungeon_type = 36, first_reward_ids = __rt[259], first_reward_nums = __rt[165], id = 42004, module_id = 3001, name = 442960, normal_drop = __rt[259], play_para = 1064004, pre_condition = __rt[240], 
+[42004] = {combat = 43500, cost_itemIds = __rt[262], cost_itemNums = __rt[107], dungeon_type = 36, first_reward_ids = __rt[263], first_reward_nums = __rt[169], id = 42004, module_id = 3001, name = 442960, normal_drop = __rt[263], play_para = 1064004, pre_condition = __rt[244], 
 pre_para1 = {100151104, 1680163200}
-, pre_para2 = __rt[260], protocol = __rt[213]}
+, pre_para2 = __rt[264], protocol = __rt[217]}
 , 
-[42005] = {combat = 55200, cost_itemIds = __rt[258], cost_itemNums = __rt[237], dungeon_type = 36, first_reward_ids = __rt[259], first_reward_nums = __rt[165], id = 42005, module_id = 3001, name = 329829, normal_drop = __rt[259], play_para = 1064005, pre_condition = __rt[240], 
+[42005] = {combat = 55200, cost_itemIds = __rt[262], cost_itemNums = __rt[241], dungeon_type = 36, first_reward_ids = __rt[263], first_reward_nums = __rt[169], id = 42005, module_id = 3001, name = 329829, normal_drop = __rt[263], play_para = 1064005, pre_condition = __rt[244], 
 pre_para1 = {100151105, 1680163200}
-, pre_para2 = __rt[260], protocol = __rt[213]}
+, pre_para2 = __rt[264], protocol = __rt[217]}
 , 
-[66666] = {combat = 0, cost_itemNums = __rt[108], day_extra_show = "1=1_2_11_12|2=3_4_13_14|3=5_6_15_16|4=7_8_17_18|5=9_10_19_20|6=120002|7=120002", deploy_rows = 3, dungeon_type = 9, 
+[43001] = {combat = 5000, cost_itemIds = __rt[265], cost_itemNums = __rt[178], dungeon_type = 36, first_reward_ids = __rt[266], first_reward_nums = __rt[169], id = 43001, module_id = 3001, name = 312206, normal_drop = __rt[266], play_para = 1065001, pre_condition = __rt[244], 
+pre_para1 = {100161101, 1682582400}
+, pre_para2 = __rt[267], protocol = __rt[217]}
+, 
+[43002] = {combat = 20000, cost_itemIds = __rt[265], cost_itemNums = __rt[202], dungeon_type = 36, first_reward_ids = __rt[266], first_reward_nums = __rt[169], id = 43002, module_id = 3001, name = 191457, normal_drop = __rt[266], play_para = 1065002, pre_condition = __rt[244], 
+pre_para1 = {100161102, 1682582400}
+, pre_para2 = __rt[267], protocol = __rt[217]}
+, 
+[43003] = {combat = 35000, cost_itemIds = __rt[265], cost_itemNums = __rt[204], dungeon_type = 36, first_reward_ids = __rt[266], first_reward_nums = __rt[169], id = 43003, module_id = 3001, name = 96503, normal_drop = __rt[266], play_para = 1065003, pre_condition = __rt[244], 
+pre_para1 = {100161103, 1682582400}
+, pre_para2 = __rt[267], protocol = __rt[217]}
+, 
+[43004] = {combat = 43500, cost_itemIds = __rt[265], cost_itemNums = __rt[107], dungeon_type = 36, first_reward_ids = __rt[266], first_reward_nums = __rt[169], id = 43004, module_id = 3001, name = 177813, normal_drop = __rt[266], play_para = 1065004, pre_condition = __rt[244], 
+pre_para1 = {100161104, 1682582400}
+, pre_para2 = __rt[267], protocol = __rt[217]}
+, 
+[43005] = {combat = 55200, cost_itemIds = __rt[265], cost_itemNums = __rt[241], dungeon_type = 36, first_reward_ids = __rt[266], first_reward_nums = __rt[169], id = 43005, module_id = 3001, name = 35784, normal_drop = __rt[266], play_para = 1065005, pre_condition = __rt[244], 
+pre_para1 = {100161105, 1682582400}
+, pre_para2 = __rt[267], protocol = __rt[217]}
+, 
+[66666] = {combat = 0, cost_itemNums = __rt[112], day_extra_show = "1=1_2_11_12|2=3_4_13_14|3=5_6_15_16|4=7_8_17_18|5=9_10_19_20|6=120002|7=120002", deploy_rows = 3, dungeon_type = 9, 
 first_reward_ids = {8019}
-, first_reward_nums = __rt[124], id = 66666, module_id = 2000, name = 367459, 
+, first_reward_nums = __rt[128], id = 66666, module_id = 2000, name = 367459, 
 normal_drop = {8017, 8018, 8019}
 , play_para = 1000, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true, size_row = 7}
 , 
@@ -3555,39 +3610,29 @@ normal_drop = {8017, 8018, 8019}
 , 
 [66669] = {combat = 0, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 40, first_reward_nums = __rt_1, id = 66669, module_id = 2000, name = 317539, play_para = 1000, pre_condition = __rt_1, pre_para2 = __rt_1, show_function = true}
 , 
-[220021] = {combat = 5000, cost_itemNums = __rt[114], dungeon_type = 38, first_reward_ids = __rt[261], 
-first_reward_nums = {280, 800}
-, id = 220021, module_id = 4300, name = 274777, play_para = 525101, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[213]}
+[220021] = {combat = 5000, cost_itemNums = __rt[118], dungeon_type = 38, first_reward_ids = __rt[268], first_reward_nums = __rt[269], id = 220021, module_id = 4300, name = 274777, play_para = 525101, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[217]}
 , 
-[220022] = {combat = 20000, cost_itemNums = __rt[174], dungeon_type = 38, first_reward_ids = __rt[261], 
-first_reward_nums = {420, 1300}
-, id = 220022, module_id = 4300, name = 138095, play_para = 525102, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[213]}
+[220022] = {combat = 20000, cost_itemNums = __rt[178], dungeon_type = 38, first_reward_ids = __rt[268], first_reward_nums = __rt[270], id = 220022, module_id = 4300, name = 138095, play_para = 525102, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[217]}
 , 
-[220023] = {combat = 35000, cost_itemNums = __rt[182], dungeon_type = 38, first_reward_ids = __rt[261], 
-first_reward_nums = {540, 1800}
-, id = 220023, module_id = 4300, name = 287889, play_para = 525103, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[213]}
+[220023] = {combat = 35000, cost_itemNums = __rt[186], dungeon_type = 38, first_reward_ids = __rt[268], first_reward_nums = __rt[271], id = 220023, module_id = 4300, name = 287889, play_para = 525103, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[217]}
 , 
-[220024] = {combat = 45000, cost_itemNums = __rt[198], dungeon_type = 38, first_reward_ids = __rt[261], 
-first_reward_nums = {700, 2300}
-, id = 220024, module_id = 4300, name = 168407, play_para = 525104, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[213]}
+[220024] = {combat = 45000, cost_itemNums = __rt[202], dungeon_type = 38, first_reward_ids = __rt[268], first_reward_nums = __rt[272], id = 220024, module_id = 4300, name = 168407, play_para = 525104, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[217]}
 , 
-[220025] = {combat = 60000, cost_itemNums = __rt[200], dungeon_type = 38, first_reward_ids = __rt[261], 
-first_reward_nums = {1000, 3300}
-, id = 220025, module_id = 4300, name = 350523, play_para = 525105, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[213]}
+[220025] = {combat = 60000, cost_itemNums = __rt[204], dungeon_type = 38, first_reward_ids = __rt[268], first_reward_nums = __rt[273], id = 220025, module_id = 4300, name = 350523, play_para = 525105, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[217]}
 , 
 [240001] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 39, 
 first_reward_ids = {1055, 1216, 2534}
 , 
 first_reward_nums = {500, 2500, 5}
-, id = 240001, module_id = 4500, name = 139376, play_para = 1113107, pre_condition = __rt[122], 
+, id = 240001, module_id = 4500, name = 139376, play_para = 1113107, pre_condition = __rt[126], 
 pre_para1 = {240011113}
-, pre_para2 = __rt_1, protocol = __rt[175]}
+, pre_para2 = __rt_1, protocol = __rt[179]}
 , 
 [240002] = {combat = 55000, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 39, 
 first_reward_ids = {1055, 1216, 1504}
 , 
 first_reward_nums = {500, 3000, 5}
-, id = 240002, module_id = 4500, name = 375527, play_para = 1113105, pre_condition = __rt[123], 
+, id = 240002, module_id = 4500, name = 375527, play_para = 1113105, pre_condition = __rt[127], 
 pre_para1 = {240001}
 }
 , 
@@ -3595,9 +3640,19 @@ pre_para1 = {240001}
 first_reward_ids = {1055, 1216, 1503}
 , 
 first_reward_nums = {500, 3500, 500}
-, id = 240003, module_id = 4500, name = 143110, play_para = 1113106, pre_condition = __rt[123], 
+, id = 240003, module_id = 4500, name = 143110, play_para = 1113106, pre_condition = __rt[127], 
 pre_para1 = {240002}
 }
+, 
+[250021] = {combat = 5000, cost_itemNums = __rt[178], dungeon_type = 45, first_reward_ids = __rt[274], first_reward_nums = __rt[269], id = 250021, module_id = 4300, name = 327006, play_para = 535101, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[217]}
+, 
+[250022] = {combat = 20000, cost_itemNums = __rt[186], dungeon_type = 45, first_reward_ids = __rt[274], first_reward_nums = __rt[270], id = 250022, module_id = 4300, name = 132235, play_para = 535102, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[217]}
+, 
+[250023] = {combat = 35000, cost_itemNums = __rt[202], dungeon_type = 45, first_reward_ids = __rt[274], first_reward_nums = __rt[271], id = 250023, module_id = 4300, name = 461752, play_para = 535103, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[217]}
+, 
+[250024] = {combat = 45000, cost_itemNums = __rt[204], dungeon_type = 45, first_reward_ids = __rt[274], first_reward_nums = __rt[272], id = 250024, module_id = 4300, name = 266981, play_para = 535104, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[217]}
+, 
+[250025] = {combat = 60000, cost_itemNums = __rt[107], dungeon_type = 45, first_reward_ids = __rt[274], first_reward_nums = __rt[273], id = 250025, module_id = 4300, name = 72210, play_para = 535105, pre_condition = __rt_1, pre_para2 = __rt_1, protocol = __rt[217]}
 , 
 [530101] = {bench_combat = 2130, combat = 4860, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 32, first_reward_nums = __rt_1, id = 530101, module_id = 3400, name = 23257, play_para = 530101, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
@@ -3609,7 +3664,7 @@ pre_para1 = {240002}
 , 
 [530105] = {bench_combat = 2130, combat = 4860, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 32, first_reward_nums = __rt_1, id = 530105, module_id = 3400, name = 62729, play_para = 530105, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
-[530106] = {bench_combat = 2130, combat = 4860, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 32, first_reward_nums = __rt_1, id = 530106, module_id = 3400, name = 19165, play_para = 530106, pre_condition = __rt_1, pre_para2 = __rt_1}
+[530106] = {bench_combat = 2130, combat = 4860, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 32, first_reward_nums = __rt_1, id = 530106, module_id = 3400, name = 19166, play_para = 530106, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
 [530107] = {bench_combat = 2130, combat = 4860, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 32, first_reward_nums = __rt_1, id = 530107, module_id = 3400, name = 437382, play_para = 530107, pre_condition = __rt_1, pre_para2 = __rt_1}
 , 
@@ -3721,7 +3776,7 @@ pre_para1 = {240002}
 , 
 [540010] = {combat = 50250, cost_itemIds = __rt_1, cost_itemNums = __rt_1, dungeon_type = 34, first_reward_nums = __rt_1, id = 540010, module_id = 3900, name = 53044, play_para = 540010, pre_condition = __rt_1, pre_para2 = __rt_1}
 }
-local __default_values = {bench_combat = 0, close_cmdskill = false, combat = 900, condition = 0, const_commander_skill_id = "", const_cstIdPosDic = __rt_1, const_cstIds = __rt_1, cost_itemIds = __rt_2, cost_itemNums = __rt_3, day_extra_show = "", day_extra_type = false, deploy_rows = 2, drop_group = "", dungeon_type = 500, enter_chip_select = __rt_1, first_reward_ids = __rt_1, first_reward_nums = __rt_11, frequency_day = -1, grid_scale_factor = 100, id = 10000, inf_career = __rt_1, module_id = 1400, name = 248292, normal_drop = __rt_1, play_para = 10161, pre_condition = __rt_7, pre_para1 = __rt_1, pre_para2 = __rt[124], protocol = __rt_1, show_function = false, size_col = 5, size_row = 6, sup_career = __rt_1, tex_index = 0}
+local __default_values = {bench_combat = 0, close_cmdskill = false, combat = 900, condition = 0, const_commander_skill_id = "", const_cstIdPosDic = __rt_1, const_cstIds = __rt_1, cost_itemIds = __rt_2, cost_itemNums = __rt_3, day_extra_show = "", day_extra_type = false, deploy_rows = 2, drop_group = "", dungeon_type = 500, enter_chip_select = __rt_1, first_reward_ids = __rt_1, first_reward_nums = __rt_11, frequency_day = -1, grid_scale_factor = 100, id = 10000, inf_career = __rt_1, module_id = 1400, name = 248292, normal_drop = __rt_1, play_para = 10391, pre_condition = __rt_7, pre_para1 = __rt_1, pre_para2 = __rt[128], protocol = __rt_1, show_function = false, size_col = 5, size_row = 6, sup_career = __rt_1, tex_index = 0}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")

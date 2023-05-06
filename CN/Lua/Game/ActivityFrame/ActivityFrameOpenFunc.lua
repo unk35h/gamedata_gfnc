@@ -276,7 +276,7 @@ end
         return 
       end
       local msg = args[0]
-      adcCtrl:AddADC(msg.activityDaiyChallenge)
+      adcCtrl:AddADC(msg.activityDailyChallenge)
       SendSingleOver()
     end
 )
@@ -397,6 +397,26 @@ end
       end
       local msg = args[0]
       invitationCtrl:AddInvitation(msg.activityInvitation)
+      SendSingleOver()
+    end
+)
+  end
+)
+end
+, [(ActivityFrameEnum.eActivityType).Season] = function(activityFrameData)
+  -- function num : 0_22 , upvalues : _ENV, SendSingle, SendSingleOver
+  local actId = activityFrameData.actId
+  local activitySeasonCtrl = ControllerManager:GetController(ControllerTypeId.ActivitySeason, true)
+  SendSingle(function()
+    -- function num : 0_22_0 , upvalues : _ENV, activityFrameData, activitySeasonCtrl, SendSingleOver
+    (NetworkManager:GetNetwork(NetworkTypeID.ActivityFrame)):CS_ACTIVITY_SingleConcreteInfo(activityFrameData:GetActivityFrameId(), function(args)
+      -- function num : 0_22_0_0 , upvalues : _ENV, activitySeasonCtrl, SendSingleOver
+      if args.Count == 0 then
+        error("args.Count == 0")
+        return 
+      end
+      local msg = args[0]
+      activitySeasonCtrl:InitSeasons(msg.activitySeason)
       SendSingleOver()
     end
 )

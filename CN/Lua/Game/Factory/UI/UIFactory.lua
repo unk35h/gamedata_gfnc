@@ -123,7 +123,7 @@ UIFactory.OnClickRoom = function(self, roomEntity)
           ;
           (self.orderListNode):DeSelect()
           ;
-          (UIUtil.PopFromBackStack)()
+          (UIUtil.PopFromBackStackByUiTab)(self)
           return 
         end
       end
@@ -142,14 +142,14 @@ UIFactory.OnClick3DBG = function(self, isNeedPop)
       ;
       (self.orderListNode):DeSelect()
       if isNeedPop == true then
-        (UIUtil.PopFromBackStack)()
+        (UIUtil.ForcePopFromBackStack)()
       end
       return 
     end
     self.lastSelectRoomIndex = nil
     self:_CloseOrderNodes()
     if isNeedPop == true then
-      (UIUtil.PopFromBackStack)()
+      (UIUtil.ForcePopFromBackStack)()
     end
   end
 end

@@ -7,6 +7,8 @@ local __rt_4 = {22002}
 local __rt_5 = {2}
 local __rt_6 = {3}
 local __rt_7 = {4}
+local __rt_8 = {5, 6, 7, 8}
+local __rt_9 = {1, 2, 3, 4}
 local warchess_season_general_env = {
 {difficulty_id = __rt_1, 
 env_task = {9458, 9459, 9460}
@@ -36,15 +38,19 @@ preConditions = {
 }
 , preConditionsNum = 3, pre_desc = 184539}
 , 
-{
-difficulty_id = {5, 6, 7, 8}
-, general_env_des = 384335, id = 4, rank_id = 27}
+{difficulty_id = __rt_8, general_env_des = 384335, general_env_des2 = 185648, general_env_name = 207212, id = 4, rank_id = 27}
 , 
 {general_env_des = 237390, general_env_des2 = 317621, general_env_name = 271846, id = 5, rank_id = 26}
+, 
+{general_env_des = 479105, general_env_name = 462920, id = 6, rank_id = 30}
+, 
+{difficulty_id = __rt_8, general_env_des = 436101, general_env_des2 = 279492, id = 7, rank_id = 31}
+, 
+{
+difficulty_id = {9, 10, 11, 12}
+, general_env_des = 222940, general_env_des2 = 513575, general_env_name = 154124, id = 8, rank_id = 32}
 }
-local __default_values = {
-difficulty_id = {1, 2, 3, 4}
-, env_task = __rt_2, general_env_des = 378369, general_env_des2 = 185648, general_env_icon = "ICON_xy_JNH_23", general_env_name = 207212, id = 1, pre1_condition = __rt_2, pre1_para1 = __rt_2, pre1_para2 = __rt_2, pre2_condition = __rt_2, pre2_para1 = __rt_2, pre2_para2 = __rt_2, pre3_condition = __rt_2, pre3_para1 = __rt_2, pre3_para2 = __rt_2, preConditions = __rt_2, preConditionsNum = 0, pre_desc = "", rank_id = 0}
+local __default_values = {difficulty_id = __rt_9, env_task = __rt_2, general_env_des = 378369, general_env_des2 = 163091, general_env_icon = "ICON_xy_JNH_23", general_env_name = 10048, id = 1, pre1_condition = __rt_2, pre1_para1 = __rt_2, pre1_para2 = __rt_2, pre2_condition = __rt_2, pre2_para1 = __rt_2, pre2_para2 = __rt_2, pre3_condition = __rt_2, pre3_para1 = __rt_2, pre3_para2 = __rt_2, preConditions = __rt_2, preConditionsNum = 0, pre_desc = "", rank_id = 0}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")

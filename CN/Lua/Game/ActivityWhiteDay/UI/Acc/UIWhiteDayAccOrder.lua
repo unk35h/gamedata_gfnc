@@ -16,9 +16,9 @@ UIWhiteDayAccOrder.OnInit = function(self)
   ;
   (self.accTicketItem):Init((self.ui).uINBaseItemWithCount_ticket)
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Back, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Back, self, self.__OnClickClose)
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Cancle, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Cancle, self, self.__OnClickClose)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Confirm, self, self.__OnClickConfirm)
   ;
@@ -208,7 +208,7 @@ UIWhiteDayAccOrder.__OnClickConfirm = function(self)
     self.accSelectNum = 0
     self:__AfterSelectNumChange()
     ;
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 )
 end
@@ -248,7 +248,7 @@ UIWhiteDayAccOrder.__OnItemUpdate = function(self, itemUpdate)
   self:__RefreshItemUI()
 end
 
-UIWhiteDayAccOrder.__OnClickClose = function(self)
+UIWhiteDayAccOrder.BackAction = function(self)
   -- function num : 0_15 , upvalues : _ENV
   if self.lineTimerId ~= nil then
     TimerManager:StopTimer(self.lineTimerId)
@@ -258,24 +258,29 @@ UIWhiteDayAccOrder.__OnClickClose = function(self)
   self:Hide()
 end
 
+UIWhiteDayAccOrder.__OnClickClose = function(self)
+  -- function num : 0_16 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIWhiteDayAccOrder.OnShow = function(self)
-  -- function num : 0_16 , upvalues : _ENV, base
+  -- function num : 0_17 , upvalues : _ENV, base
   MsgCenter:AddListener(eMsgEventId.UpdateItem, self.__onItemUpdate)
   ;
-  (UIUtil.SetTopStatus)(self, self.__OnClickClose, nil, nil, nil, true)
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack()
   ;
   (base.OnShow)(self)
 end
 
 UIWhiteDayAccOrder.OnHide = function(self)
-  -- function num : 0_17 , upvalues : _ENV, base
+  -- function num : 0_18 , upvalues : _ENV, base
   MsgCenter:RemoveListener(eMsgEventId.UpdateItem, self.__onItemUpdate)
   ;
   (base.OnHide)(self)
 end
 
 UIWhiteDayAccOrder.OnDelete = function(self)
-  -- function num : 0_18 , upvalues : _ENV, base
+  -- function num : 0_19 , upvalues : _ENV, base
   if self.lineTimerId ~= nil then
     TimerManager:StopTimer(self.lineTimerId)
     self.lineTimerId = nil

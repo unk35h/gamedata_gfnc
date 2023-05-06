@@ -428,6 +428,32 @@ local pay_product = {
 [100498] = {id = 100498, name = 336760, sdk_id = 9}
 , 
 [100499] = {id = 100499, name = 462481, sdk_id = 10}
+, 
+[100500] = {id = 100500, name = 330345, sdk_id = 51}
+, 
+[100501] = {id = 100501, name = 56421, sdk_id = 60}
+, 
+[100502] = {id = 100502, name = 324112, sdk_id = 65}
+, 
+[100503] = {id = 100503, name = 87360, sdk_id = 19}
+, 
+[100504] = {id = 100504, name = 87360, sdk_id = 27}
+, 
+[100505] = {id = 100505, name = 298691, sdk_id = 55}
+, 
+[100506] = {id = 100506}
+, 
+[100507] = {id = 100507, name = 363420, sdk_id = 57}
+, 
+[100508] = {id = 100508, name = 113687, sdk_id = 43}
+, 
+[100509] = {id = 100509, name = 270660, sdk_id = 99}
+, 
+[100510] = {id = 100510, name = 455594, sdk_id = 26}
+, 
+[100511] = {id = 100511, name = 513587, sdk_id = 38}
+, 
+[100512] = {id = 100512, name = 294296, sdk_id = 19}
 }
 local __default_values = {id = 100001, name = 55251, sdk_id = 32}
 local base = {__index = __default_values, __newindex = function()

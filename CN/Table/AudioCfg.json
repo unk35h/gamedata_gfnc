@@ -7417,6 +7417,66 @@
       "Type": 2
     },
     {
+      "Id": 106701,
+      "Name": "Atk_Cascadia_01",
+      "Sheet": "Chara_Cascadia",
+      "Type": 2
+    },
+    {
+      "Id": 106702,
+      "Name": "Atk_Cascadia_Hit_01",
+      "Sheet": "Chara_Cascadia",
+      "Type": 2
+    },
+    {
+      "Id": 106703,
+      "Name": "Skill_Cascadia_Passive_01",
+      "Sheet": "Chara_Cascadia",
+      "Type": 2
+    },
+    {
+      "Id": 106704,
+      "Name": "Skill_Cascadia_Passive_Hit_01",
+      "Sheet": "Chara_Cascadia",
+      "Type": 2
+    },
+    {
+      "Id": 106705,
+      "Name": "Skill_Cascadia_Passive_Loop",
+      "Sheet": "Chara_Cascadia",
+      "Type": 3
+    },
+    {
+      "Id": 106706,
+      "Name": "Skill_Cascadia_01",
+      "Sheet": "Chara_Cascadia",
+      "Type": 2
+    },
+    {
+      "Id": 106707,
+      "Name": "Skill_Cascadia_Hit_01",
+      "Sheet": "Chara_Cascadia",
+      "Type": 2
+    },
+    {
+      "Id": 106708,
+      "Name": "Skill_Cascadia_EX_Start",
+      "Sheet": "Chara_Cascadia",
+      "Type": 2
+    },
+    {
+      "Id": 106709,
+      "Name": "Skill_Cascadia_EX_Cast",
+      "Sheet": "Chara_Cascadia",
+      "Type": 2
+    },
+    {
+      "Id": 106710,
+      "Name": "Skill_Cascadia_EX_Cast_End",
+      "Sheet": "Chara_Cascadia",
+      "Type": 2
+    },
+    {
       "Id": 200102,
       "Name": "Atk_Raider_02",
       "Sheet": "Mon_Raider",

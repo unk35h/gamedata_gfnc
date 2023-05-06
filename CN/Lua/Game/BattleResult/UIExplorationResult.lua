@@ -14,10 +14,7 @@ local SectorEnum = require("Game.Sector.SectorEnum")
 UIExplorationResult.EpResultType = {None = 0, CompleteEp = 1, CompleteEpFloor = 2, Fail = 3}
 UIExplorationResult.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, cs_ResLoader, UINBaseItemWithCount, UIExplorationResult
-  if not self.SettedTopStatus then
-    (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
-    self.SettedTopStatus = true
-  end
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack(true)
   self.sectorNetworkCtrl = NetworkManager:GetNetwork(NetworkTypeID.Sector)
   self.isWin = false
   self.rewardsRecord = {}
@@ -157,7 +154,6 @@ end
 UIExplorationResult.BackAction = function(self)
   -- function num : 0_7
   if ((self.ui).btn_Return).isActiveAndEnabled then
-    self.SettedTopStatus = false
     if self.isWin then
       self:__AfterSettleWin()
     else
@@ -168,12 +164,10 @@ UIExplorationResult.BackAction = function(self)
     return 
   else
     if ((self.ui).btn_SuccessSettle).isActiveAndEnabled then
-      self.SettedTopStatus = false
       self:OnBtnSuccessSettle()
       return 
     else
       if ((self.ui).btn_GoNext).isActiveAndEnabled then
-        self.SettedTopStatus = false
         self:OnGoNextBtnClicked()
         return 
       end
@@ -184,9 +178,7 @@ end
 
 UIExplorationResult.OnReturnClicked = function(self)
   -- function num : 0_8 , upvalues : _ENV
-  if self.SettedTopStatus then
-    (UIUtil.OnClickBack)()
-  end
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIExplorationResult.OnRestartClicked = function(self)
@@ -710,7 +702,7 @@ UIExplorationResult.ShowMVP = function(self)
       if heroData == nil then
         local heroCfg = (ConfigData.hero_data)[heroId]
         heroData = (HeroData.New)({
-basic = {id = heroId, level = 1, exp = 0, star = heroCfg.rank, potentialLvl = 0, ts = -1, career = heroCfg.career, company = heroCfg.camp}
+basic = {id = heroId, level = 1, exp = 0, star = heroCfg.rank, potentialLvl = 0, ts = -1, career = heroCfg.career, company = heroCfg.camp, skinId = (PlayerDataCenter.skinData):DealNotSelfHaveHeroSkinOverraid(0, heroId)}
 })
       end
       ExplorationManager:PlayMVPVoice(heroId)
@@ -925,12 +917,7 @@ UIExplorationResult.__AfterSettleWin = function(self)
 end
 
 UIExplorationResult.OnDelete = function(self)
-  -- function num : 0_38 , upvalues : _ENV, base
-  if self.SettedTopStatus then
-    self.SettedTopStatus = false
-    ;
-    (UIUtil.PopFromBackStack)()
-  end
+  -- function num : 0_38 , upvalues : base
   if self.resLoader ~= nil then
     (self.resLoader):Put2Pool()
     self.resLoader = nil

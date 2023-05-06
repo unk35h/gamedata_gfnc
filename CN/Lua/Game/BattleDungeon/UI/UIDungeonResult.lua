@@ -16,6 +16,8 @@ local DungeonTypeData = require("Game.Dungeon.DungeonTypeData")
 UIDungeonResult.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, UIRewardItem, UICharacterItem, UINResultCompleteNode
   self.resloader = ((CS.ResLoader).Create)()
+  ;
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack()
   self.rewardItemPool = (UIItemPool.New)(UIRewardItem, (self.ui).obj_rewardItem)
   self.heroHeadItemPool = (UIItemPool.New)(UICharacterItem, (self.ui).obj_heroHeadItem)
   ;
@@ -466,7 +468,7 @@ UIDungeonResult.SetContinueCallback = function(self, callback)
   self.continueCallback = callback
 end
 
-UIDungeonResult.__OnBtnContinueClick = function(self)
+UIDungeonResult.BackAction = function(self)
   -- function num : 0_16
   if self.continueCallback ~= nil then
     (self.continueCallback)()
@@ -474,26 +476,31 @@ UIDungeonResult.__OnBtnContinueClick = function(self)
   self:Delete()
 end
 
+UIDungeonResult.__OnBtnContinueClick = function(self)
+  -- function num : 0_17 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIDungeonResult.InitDungeonRacingResult = function(self, frame, isCheat, isNew)
-  -- function num : 0_17
+  -- function num : 0_18
   local item = (self._completeNodePool):GetOne()
   item:InitResultCompleteTime(frame, isCheat, isNew)
 end
 
 UIDungeonResult.InitDungeonScoreResult = function(self, score, isNew)
-  -- function num : 0_18 , upvalues : _ENV
+  -- function num : 0_19 , upvalues : _ENV
   local item = (self._completeNodePool):GetOne()
   item:InitResultCompleteItem(2, tostring(score), isNew)
 end
 
 UIDungeonResult.InitDungeonScoreAddRateResult = function(self, scoreAdd, isNew)
-  -- function num : 0_19 , upvalues : _ENV
+  -- function num : 0_20 , upvalues : _ENV
   local item = (self._completeNodePool):GetOne()
   item:InitResultCompleteItem(1, tostring((math.floor)(scoreAdd / 10)) .. "%", isNew)
 end
 
 UIDungeonResult.DungeonSetPlayeAgain = function(self, playerAgainCallback, dInterfaceData, dungeonStageData)
-  -- function num : 0_20 , upvalues : _ENV
+  -- function num : 0_21 , upvalues : _ENV
   self.playerAgainCallback = playerAgainCallback
   self.dungeonStageData = dungeonStageData
   self.__dInterfaceData = dInterfaceData
@@ -535,7 +542,7 @@ UIDungeonResult.DungeonSetPlayeAgain = function(self, playerAgainCallback, dInte
 end
 
 UIDungeonResult.__updateBattleRemainLimit = function(self, dungeonStageData, isDisplayDungeonLimit)
-  -- function num : 0_21 , upvalues : _ENV
+  -- function num : 0_22 , upvalues : _ENV
   do
     if dungeonStageData ~= nil then
       local moduleRemainNum, moduleTotalNum, moduleUsedNum = (dungeonStageData.dungeonData):GetDungeonPlayLeftLimitNum()
@@ -568,7 +575,7 @@ UIDungeonResult.__updateBattleRemainLimit = function(self, dungeonStageData, isD
 end
 
 UIDungeonResult.DungeonSetPlayeNext = function(self, playerAgainCallback, dInterfaceData)
-  -- function num : 0_22 , upvalues : _ENV
+  -- function num : 0_23 , upvalues : _ENV
   self.playerAgainCallback = playerAgainCallback
   self.__dInterfaceData = dInterfaceData
   if dInterfaceData ~= nil and dInterfaceData:AbleContinueNextLevel() then
@@ -588,16 +595,16 @@ UIDungeonResult.DungeonSetPlayeNext = function(self, playerAgainCallback, dInter
 end
 
 UIDungeonResult.__OnBtnPlayerAgainClick = function(self)
-  -- function num : 0_23
+  -- function num : 0_24
   if self.playerAgainCallback ~= nil then
     (self.playerAgainCallback)(self.__dInterfaceData)
   end
 end
 
 UIDungeonResult.__OnBtnSkadaClick = function(self)
-  -- function num : 0_24 , upvalues : _ENV, cs_BattleStatistics
+  -- function num : 0_25 , upvalues : _ENV, cs_BattleStatistics
   UIManager:ShowWindowAsync(UIWindowTypeID.ResultSkada, function(window)
-    -- function num : 0_24_0 , upvalues : cs_BattleStatistics, self
+    -- function num : 0_25_0 , upvalues : cs_BattleStatistics, self
     if window == nil then
       return 
     end
@@ -607,7 +614,7 @@ UIDungeonResult.__OnBtnSkadaClick = function(self)
 end
 
 UIDungeonResult.OnDelete = function(self)
-  -- function num : 0_25 , upvalues : _ENV, base
+  -- function num : 0_26 , upvalues : _ENV, base
   MsgCenter:RemoveListener(eMsgEventId.OnScreenSizeChanged, self.__OnScreenSizeChanged)
   UIManager:DeleteWindow(UIWindowTypeID.BattleResultExtra)
   self.resultData = nil

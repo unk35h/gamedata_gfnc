@@ -12,16 +12,18 @@ UINResultCompleteNode.InitResultCompleteTime = function(self, frame, isCheat, is
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_FloatingBG, self, self.__OnBtnFloatingBG)
   ;
+  (((self.ui).btn_ErrorIcon).gameObject):SetActive(true)
+  ;
   ((self.ui).completeTime):SetIndex(0)
-  -- DECOMPILER ERROR at PC26: Confused about usage of register: R4 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC32: Confused about usage of register: R4 in 'UnsetPending'
 
   ;
   ((self.ui).tex_Time).text = (BattleUtil.FrameToTimeString)(frame, true)
-  -- DECOMPILER ERROR at PC36: Confused about usage of register: R4 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC42: Confused about usage of register: R4 in 'UnsetPending'
 
   ;
   ((self.ui).tex_Title).text = (LanguageUtil.GetLocaleText)(ConfigData:GetTipContent(8801))
-  -- DECOMPILER ERROR at PC46: Confused about usage of register: R4 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC52: Confused about usage of register: R4 in 'UnsetPending'
 
   ;
   ((self.ui).tex_Content).text = (LanguageUtil.GetLocaleText)(ConfigData:GetTipContent(8802))
@@ -39,8 +41,10 @@ end
 
 UINResultCompleteNode.InitResultCompleteItem = function(self, index, des, isNew)
   -- function num : 0_2
+  (((self.ui).btn_ErrorIcon).gameObject):SetActive(false)
+  ;
   ((self.ui).completeTime):SetIndex(index)
-  -- DECOMPILER ERROR at PC7: Confused about usage of register: R4 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC13: Confused about usage of register: R4 in 'UnsetPending'
 
   ;
   ((self.ui).tex_Time).text = des

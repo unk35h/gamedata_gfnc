@@ -68,6 +68,7 @@ local __rt_65 = {2563}
 local __rt_66 = {2564}
 local __rt_67 = {2565}
 local __rt_68 = {2566}
+local __rt_69 = {2567}
 local friendship_award = {
 [1001] = {
 [2] = {describe = 257862, friendship_level = 2}
@@ -1519,6 +1520,28 @@ local friendship_award = {
 [13] = {awardIds = __rt_68, describe = 3066, friendship_level = 13, heroID = 1066, open = "INFOSTORY5"}
 , 
 [14] = {awardIds = __rt_68, awardNums = __rt_3, describe = 217160, friendship_level = 14, heroID = 1066, is_audio = true, open = "RELATIONSHIP5"}
+}
+, 
+[1067] = {
+[2] = {awardIds = __rt_69, describe = 257862, friendship_level = 2, heroID = 1067}
+, 
+[3] = {awardIds = __rt_69, describe = 63091, friendship_level = 3, heroID = 1067, open = "INFOSTORY2"}
+, 
+[4] = {awardIds = __rt_69, awardNums = __rt_3, describe = 471956, friendship_level = 4, heroID = 1067, is_audio = true, open = "RELATIONSHIP1"}
+, 
+[6] = {awardIds = __rt_69, awardNums = __rt_3, describe = 277185, friendship_level = 6, heroID = 1067, is_audio = true, open = "RELATIONSHIP2"}
+, 
+[7] = {awardIds = __rt_69, describe = 392608, friendship_level = 7, heroID = 1067, open = "INFOSTORY3"}
+, 
+[8] = {awardIds = __rt_69, awardNums = __rt_3, describe = 82414, friendship_level = 8, heroID = 1067, is_audio = true, open = "RELATIONSHIP3"}
+, 
+[10] = {awardIds = __rt_69, heroID = 1067, open = "INFOSTORY4"}
+, 
+[11] = {awardIds = __rt_69, awardNums = __rt_3, describe = 411931, friendship_level = 11, heroID = 1067, is_audio = true, open = "RELATIONSHIP4"}
+, 
+[13] = {awardIds = __rt_69, describe = 3066, friendship_level = 13, heroID = 1067, open = "INFOSTORY5"}
+, 
+[14] = {awardIds = __rt_69, awardNums = __rt_3, describe = 217160, friendship_level = 14, heroID = 1067, is_audio = true, open = "RELATIONSHIP5"}
 }
 }
 local __default_values = {awardIds = __rt_1, awardNums = __rt_2, describe = 197837, friendship_level = 10, heroID = 1001, is_audio = false, open = "INFOSTORY1"}

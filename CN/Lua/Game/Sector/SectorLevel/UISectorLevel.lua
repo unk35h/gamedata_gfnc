@@ -353,7 +353,7 @@ UISectorLevel.ShowLevelDetailWindow = function(self, callback)
   end
 
   if self.dungeonLevelDetail ~= nil and (self.dungeonLevelDetail).active then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByWinId)(UIWindowTypeID.DungeonLevelDetail)
     self._delayopenFunc = openFunc
   else
     openFunc()
@@ -406,7 +406,7 @@ UISectorLevel.OnDungeonItemClicked = function(self, levelDungeonItem)
   end
 
   if self.levelDetailWindow ~= nil and (self.levelDetailWindow).active then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByWinId)(UIWindowTypeID.SectorLevelDetail)
     self._delayopenFunc = openFunc
   else
     openFunc()
@@ -558,8 +558,12 @@ end
 
 UISectorLevel.__ClickLevelListBgFunc = function(self)
   -- function num : 0_24 , upvalues : _ENV
-  if (self.levelDetailWindow ~= nil and (self.levelDetailWindow).active) or self.dungeonLevelDetail ~= nil and (self.dungeonLevelDetail).active then
-    (UIUtil.OnClickBack)()
+  if self.levelDetailWindow ~= nil and (self.levelDetailWindow).active then
+    (UIUtil.OnClickBackByWinId)(UIWindowTypeID.SectorLevelDetail)
+  else
+    if self.dungeonLevelDetail ~= nil and (self.dungeonLevelDetail).active then
+      (UIUtil.OnClickBackByWinId)(UIWindowTypeID.DungeonLevelDetail)
+    end
   end
 end
 

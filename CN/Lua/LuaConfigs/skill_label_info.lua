@@ -41,7 +41,7 @@ local skill_label_info = {
 , 
 {describe = 204297, id = 20, name = 103404}
 , 
-{describe = 296675, icon_color = 1, id = 21, name = 112749}
+{describe = 418269, icon_color = 1, id = 21, name = 112749}
 , 
 {describe = 413812, id = 22, name = 360397}
 , 
@@ -95,7 +95,7 @@ local skill_label_info = {
 , 
 {describe = 346687, icon_color = 3, id = 47, name = 70162}
 , 
-{describe = 144848, icon_color = 3, id = 48, name = 137291}
+{describe = 144849, icon_color = 3, id = 48, name = 137291}
 , 
 {describe = 286482, icon = "ICON_LBuff_19", id = 49}
 , 
@@ -180,6 +180,8 @@ local skill_label_info = {
 {describe = 99440, id = 89, name = 178260}
 , 
 {describe = 215569, icon_color = 1, id = 90, name = 55894}
+, 
+{describe = 282850, icon_color = 1, id = 91, name = 54728}
 ; 
 [10101] = {describe = 119179, icon_color = 1, id = 10101, name = 67926}
 , 

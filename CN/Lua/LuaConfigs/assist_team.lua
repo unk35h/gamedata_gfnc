@@ -67,6 +67,9 @@ local __rt_64 = {1174}
 local __rt_65 = {1064}
 local __rt_66 = {1001, 1002, 1003, 1064, 1049}
 local __rt_67 = {1192, 1192, 1192}
+local __rt_68 = {1200, 1200}
+local __rt_69 = {1067, 1065}
+local __rt_70 = {1067, 1051}
 local assist_team = {
 {
 assist_lvs = {100, 1000, 100, 100, 100}
@@ -695,6 +698,20 @@ param1 = {1022, 1007, 1008}
 {assist_lvs = __rt_42, id = 179, 
 param1 = {1003, 1002, 1001}
 }
+, 
+{
+assist_lvs = {1193}
+, id = 180, 
+param1 = {1067}
+}
+, 
+{assist_lvs = __rt_68, extra_add = 6, id = 181, param1 = __rt_69}
+, 
+{assist_lvs = __rt_68, extra_add = 6, id = 182, param1 = __rt_70}
+, 
+{assist_lvs = __rt_68, extra_add = 6, id = 183, param1 = __rt_69}
+, 
+{assist_lvs = __rt_68, extra_add = 6, id = 184, param1 = __rt_70}
 }
 local __default_values = {assist_lvs = __rt_21, extra_add = 0, friend_support = false, id = 1, param1 = __rt_4, show_battlepow = false}
 local base = {__index = __default_values, __newindex = function()

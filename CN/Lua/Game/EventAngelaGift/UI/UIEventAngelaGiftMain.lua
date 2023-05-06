@@ -157,7 +157,7 @@ end
 
 UIEventAngelaGiftMain.OnClickClose = function(self)
   -- function num : 0_6 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIEventAngelaGiftMain.OnDelete = function(self)

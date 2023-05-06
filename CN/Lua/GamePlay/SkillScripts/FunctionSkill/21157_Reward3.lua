@@ -22,7 +22,9 @@ bs_21157.OnRoleDie = function(self, killer, role)
       for i = 0, targetlist.Count - 1 do
         local targetRole = targetlist[i]
         if targetRole.belongNum == eBattleRoleBelong.player then
-          LuaSkillCtrl:CallHeal(value, self, targetRole, true)
+          local skillResult = LuaSkillCtrl:CallSkillResultNoEffect(self, targetRole)
+          LuaSkillCtrl:HealResultWithConfig(self, skillResult, 6, {value}, true, true)
+          skillResult:EndResult()
         end
       end
     end

@@ -31,7 +31,7 @@ local sign_minigame_text = {
 , 
 {content = 218139, id = 15}
 }
-local __default_values = {content = 114175, id = 1}
+local __default_values = {content = 114176, id = 1}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")

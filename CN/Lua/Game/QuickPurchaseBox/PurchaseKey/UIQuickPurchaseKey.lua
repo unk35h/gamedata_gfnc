@@ -82,12 +82,12 @@ UIQuickPurchaseKey.SlideIn = function(self, isJumpIn, isHideLeftBtn)
     local backData = (UIUtil.PeekBackStack)()
     if backData == nil or backData.backAction == nil then
       if (ControllerManager:GetController(ControllerTypeId.HomeController)).homeState == (HomeEnum.eHomeState).Normal then
-        (UIUtil.SetTopStatus)(nil, nil, nil, nil, nil, nil)
+        (UIUtil.SetTopStatus)(self, self.SlideOut, nil, nil, nil, nil)
         ;
         (UIUtil.SetCurButtonGroupActive)(not isHideLeftBtn)
       else
         ;
-        (UIUtil.SetTopStatus)(nil, nil, {1001, 1002, 1007}, nil, nil, nil)
+        (UIUtil.SetTopStatus)(self, self.SlideOut, {1001, 1002, 1007}, nil, nil, nil)
         ;
         (UIUtil.SetCurButtonGroupActive)(not isHideLeftBtn)
       end
@@ -114,7 +114,7 @@ UIQuickPurchaseKey.SlideOut = function(self, isHome, popBackStack)
   if not self.slideInOver then
     self:OnSlideInClose()
     if popBackStack then
-      (UIUtil.PopFromBackStack)()
+      (UIUtil.PopFromBackStackByUiTab)(self)
     end
     if self.closeCallback ~= nil then
       (self.closeCallback)()
@@ -134,11 +134,11 @@ UIQuickPurchaseKey.SlideOut = function(self, isHome, popBackStack)
   ((self.ui).tween_side):DOPlayBackwards()
   if popBackStack then
     if not self.isJumpIn then
-      (UIUtil.PopFromBackStack)()
+      (UIUtil.PopFromBackStackByUiTab)(self)
       self.isJumpIn = nil
     else
       ;
-      (UIUtil.PopFromBackStack)()
+      (UIUtil.PopFromBackStackByUiTab)(self)
     end
   end
 end

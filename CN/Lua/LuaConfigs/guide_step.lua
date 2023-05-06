@@ -1409,6 +1409,20 @@ condition_arg = {7007}
 , 
 [4020219] = {delay = 0, id = 4020219, info = 483479, info_pos = "3", info_type = 1002, step_type = 4, wait_target = false}
 , 
+[6100001] = {condition = 31, delay = 0, id = 6100001, info = 29095, info_pos = "3", info_type = 1002, step_type = 4, wait_target = false}
+, 
+[6100002] = {id = 6100002, info = 322218, info_pos = "3", info_type = 1002, target_name = "Top/Btn_Menu", target_parent = 3501, target_type = 1}
+, 
+[6100003] = {id = 6100003, info = 413047, info_pos = "2", info_type = 1002, target_name = "ButtonGroup/Btn_Setting", target_parent = 205, target_type = 1}
+, 
+[6100004] = {id = 6100004, info = 466984, info_pos = "3", info_type = 1002, step_type = 5, target_name = "Frame/Detail/GameSetPanel/List/3", target_parent = 45, target_type = 1}
+, 
+[6100005] = {delay = 0, id = 6100005, info = 111912, info_pos = "3", info_type = 1002, step_type = 4, wait_target = false}
+, 
+[6100006] = {delay = 0, id = 6100006, info = 45493, info_pos = "3", info_type = 1002, step_type = 4, wait_target = false}
+, 
+[6100007] = {delay = 0, guide_skip = false, id = 6100007, info_type = 0, pic_id = 46, step_type = 7, wait_target = false}
+, 
 [60300011] = {condition = 27, delay = 1, id = 60300011, info = 3141, info_pos = "6", info_type = 1014, step_type = 4}
 , 
 [60300012] = {id = 60300012, info = 436445, info_pos = "6", info_type = 1014, target_name = "ProductCanvas/Obj_OrderSlot(Clone)", target_parent = 1641, target_type = 1}
@@ -1585,7 +1599,7 @@ condition_arg = {7007}
 , 
 [501010309] = {delay = 1, guide_skip = false, id = 501010309, info = 60264, info_pos = "1", info_type = 1016, target_name = "4_4/OpHolder/OpBtnGroup/2", target_parent = 3502, target_type = 1}
 , 
-[501010310] = {delay = 2, guide_skip = false, id = 501010310, info = 400896, info_pos = "1", info_type = 1016, target_name = "Frame/PropList/93002/Root/ItemHolder/Btn_Select", target_parent = 3531, target_type = 1}
+[501010310] = {delay = 2, guide_skip = false, id = 501010310, info = 400897, info_pos = "1", info_type = 1016, target_name = "Frame/PropList/93002/Root/ItemHolder/Btn_Select", target_parent = 3531, target_type = 1}
 , 
 [501010311] = {delay = 0, guide_skip = false, id = 501010311, info = 161626, info_pos = "1", info_type = 1016, step_type = 4, wait_target = false}
 , 
@@ -2241,7 +2255,7 @@ custom_size = {500, 500}
 , 
 [508000003] = {delay = 0, id = 508000003, info = 29062, info_pos = "1", info_type = 1010, step_type = 4, wait_target = false}
 , 
-[508000004] = {id = 508000004, info = 67128, info_pos = "1", info_type = 1043, target_name = "Trans_Down/UINWarChessDeploy(Clone)/Frame/NormalMode/Deploy/Btn_BattleStart", target_parent = 3501, target_type = 1}
+[508000004] = {id = 508000004, info = 88778, info_pos = "1", info_type = 1043, target_name = "Trans_Down/UINWarChessDeploy(Clone)/Frame/NormalMode/Deploy/Btn_BattleStart", target_parent = 3501, target_type = 1}
 , 
 [508000005] = {custom_code = "GuideUtil.StartWCGridClickGuide(2,2)", delay = 0, id = 508000005, info = 340342, info_pos = "1", info_type = 1010, step_type = 3, wait_target = false}
 , 
@@ -2251,7 +2265,7 @@ custom_size = {500, 500}
 , 
 [508000008] = {custom_code = "GuideUtil.StartWCGridClickGuide(4,3)", delay = 0, id = 508000008, info = 57471, info_pos = "1", info_type = 1043, step_type = 3, wait_target = false}
 , 
-[508000009] = {id = 508000009, info = 255542, info_pos = "1", info_type = 1043, step_type = 5, target_name = "UINWCEnemyDetail/Layout", target_parent = 3503, target_type = 1}
+[508000009] = {id = 508000009, info = 220439, info_pos = "1", info_type = 1043, step_type = 5, target_name = "UINWCEnemyDetail/Layout", target_parent = 3503, target_type = 1}
 , 
 [508000010] = {id = 508000010, info = 105950, info_pos = "1", info_type = 1043, step_type = 5, target_name = "4_3/OpHolder/OpBtnGroup/1/Obj_ActionPoint", target_parent = 3502, target_type = 1}
 , 
@@ -2273,7 +2287,7 @@ custom_size = {500, 500}
 , 
 [508000019] = {custom_code = "GuideUtil.StartWCGridClickGuide(6,4)", delay = 0, id = 508000019, info_pos = "1", info_type = 0, step_type = 3, wait_target = false}
 , 
-[508000020] = {id = 508000020, info = 63509, info_pos = "15", info_type = 1043, step_type = 5, target_name = "6_4/OpHolder/OpBtnGroup/2/Obj_ActionPoint", target_parent = 3502, target_type = 1}
+[508000020] = {id = 508000020, info = 274095, info_pos = "15", info_type = 1043, step_type = 5, target_name = "6_4/OpHolder/OpBtnGroup/2/Obj_ActionPoint", target_parent = 3502, target_type = 1}
 , 
 [508000021] = {id = 508000021, info = 186649, info_pos = "15", info_type = 1010, target_name = "6_4/OpHolder/OpBtnGroup/2", target_parent = 3502, target_type = 1}
 , 
@@ -2295,41 +2309,47 @@ custom_size = {500, 500}
 , 
 [508011007] = {custom_code = "GuideUtil.StartWCGridClickGuide(2,2)", guide_skip = false, id = 508011007, info = 305090, info_pos = "1", info_type = 1010, step_type = 3, wait_target = false}
 , 
-[508011008] = {guide_skip = false, id = 508011008, info = 391443, info_pos = "1", info_type = 1010, target_name = "2_2/OpHolder/OpBtnGroup/1", target_parent = 3502, target_type = 1}
+[508011008] = {guide_skip = false, id = 508011008, info = 147787, info_pos = "1", info_type = 1010, target_name = "2_2/OpHolder/OpBtnGroup/1", target_parent = 3502, target_type = 1}
 , 
 [508011009] = {custom_code = "GuideUtil.StartWCGridClickGuide(2,2)", guide_skip = false, id = 508011009, info = 312115, info_pos = "1", info_type = 1010, step_type = 3}
 , 
 [508011010] = {delay = 0, guide_skip = false, id = 508011010, info = 252319, info_pos = "1", info_type = 1043, step_type = 4, wait_target = false}
 , 
-[508011011] = {guide_skip = false, id = 508011011, info = 317851, info_pos = "1", info_type = 1022, target_name = "Trans_Down/UINWarChessInPlay(Clone)/TeamList/Rect/2/TeamScale/TeamItem/Bottom", target_parent = 3501, target_type = 1}
+[508011011] = {guide_skip = false, id = 508011011, info = 439325, info_pos = "1", info_type = 1043, target_name = "Trans_Down/UINWarChessInPlay(Clone)/TeamList/Rect/2/TeamScale/TeamItem/Bottom", target_parent = 3501, target_type = 1}
 , 
 [508011012] = {delay = 0, guide_skip = false, id = 508011012, info = 2669, info_pos = "5", info_type = 1022, step_type = 4, wait_target = false}
+, 
+[508012000] = {custom_code = "GuideUtil.WCCameraFocus(4,3,0.5)", delay = 0, guide_skip = false, id = 508012000, info_type = 0, step_type = 3, wait_target = false}
 , 
 [508012001] = {delay = 0, guide_skip = false, id = 508012001, info = 450869, info_pos = "5", info_type = 1022, step_type = 4, wait_target = false}
 , 
 [508012002] = {delay = 0, guide_skip = false, id = 508012002, info = 384548, info_pos = "1", info_type = 1010, step_type = 4, wait_target = false}
 , 
-[508012003] = {custom_code = "GuideUtil.StartWCGridClickGuide(4,4)", guide_skip = false, id = 508012003, info = 168877, info_pos = "5", info_type = 1043, step_type = 3, wait_target = false}
+[508012003] = {custom_code = "GuideUtil.StartWCGridClickGuide(4,4)", guide_skip = false, id = 508012003, info = 346141, info_pos = "5", info_type = 1043, step_type = 3, wait_target = false}
 , 
-[508012004] = {delay = 0, guide_skip = false, id = 508012004, info = 205741, info_pos = "5", info_type = 1043, step_type = 4, wait_target = false}
+[508012004] = {delay = 0, guide_skip = false, id = 508012004, info = 337573, info_pos = "5", info_type = 1043, step_type = 4, wait_target = false}
 , 
 [508012005] = {delay = 1, guide_skip = false, id = 508012005, info = 265948, info_pos = "5", info_type = 1043, target_name = "4_4/OpHolder/OpBtnGroup/2", target_parent = 3502, target_type = 1}
 , 
 [508012006] = {delay = 2, guide_skip = false, id = 508012006, info = 215113, info_pos = "5", info_type = 1022, target_name = "Frame/PropList/93002/Root/ItemHolder/Btn_Select", target_parent = 3531, target_type = 1}
 , 
-[508012007] = {delay = 0, guide_skip = false, id = 508012007, info = 166220, info_pos = "1", info_type = 1043, step_type = 4, wait_target = false}
+[508012007] = {delay = 0, guide_skip = false, id = 508012007, info = 38166, info_pos = "1", info_type = 1043, step_type = 4, wait_target = false}
 , 
 [508012008] = {guide_skip = false, id = 508012008, info = 298086, info_pos = "5", info_type = 1022, target_name = "Frame/TeamList/UINWarChessSelectTeam/1/Btn_Equip", target_parent = 3531, target_type = 1}
 , 
-[508013000] = {custom_code = "GuideUtil.StartWCGridClickGuide(2,6)", guide_skip = false, id = 508013000, info = 280140, info_pos = "1", info_type = 1010, step_type = 3}
+[508013000] = {custom_code = "GuideUtil.WCCameraFocus(2,5,0.5)", delay = 0, guide_skip = false, id = 508013000, info_type = 0, step_type = 3, wait_target = false}
 , 
-[508013001] = {guide_skip = false, id = 508013001, info = 104359, info_pos = "1", info_type = 1010, step_type = 4}
+[508013001] = {custom_code = "GuideUtil.StartWCGridClickGuide(2,6)", guide_skip = false, id = 508013001, info = 280140, info_pos = "1", info_type = 1010, step_type = 3}
 , 
-[508013002] = {delay = 0, guide_skip = false, id = 508013002, info = 68320, info_pos = "1", info_type = 1043, target_name = "Trans_Down/UINWarChessInPlay(Clone)/Btn_TurnEnd", target_parent = 3501, target_type = 1, wait_target = false}
+[508013002] = {guide_skip = false, id = 508013002, info = 226189, info_pos = "1", info_type = 1010, step_type = 4}
 , 
-[508013003] = {guide_skip = false, id = 508013003, info = 434196, info_pos = "1", info_type = 1043, target_name = "Frame/YesNoNode/ButtonYes", target_parent = 1200, target_type = 1}
+[508013003] = {delay = 0, guide_skip = false, id = 508013003, info = 464258, info_pos = "1", info_type = 1043, target_name = "Trans_Down/UINWarChessInPlay(Clone)/Btn_TurnEnd", target_parent = 3501, target_type = 1, wait_target = false}
 , 
-[508013004] = {custom_size = __rt_6, delay = 0, guide_skip = false, id = 508013004, info = 314922, info_pos = "1", info_type = 1010, step_type = 5, target_name = "AreaRoot/0,0/2,6", target_parent = "Test_WarChess", target_type = 2, wait_target = false}
+[508013004] = {guide_skip = false, id = 508013004, info = 434196, info_pos = "1", info_type = 1043, target_name = "Frame/YesNoNode/ButtonYes", target_parent = 1200, target_type = 1}
+, 
+[508013005] = {custom_size = __rt_6, delay = 0, guide_skip = false, id = 508013005, info = 314922, info_pos = "1", info_type = 1010, step_type = 5, target_name = "AreaRoot/0,0/2,6", target_parent = "Test_WarChess", target_type = 2, wait_target = false}
+, 
+[508014000] = {custom_code = "GuideUtil.WCCameraFocus(2,6,0.5)", delay = 0, guide_skip = false, id = 508014000, info_type = 0, step_type = 3, wait_target = false}
 , 
 [508014001] = {custom_size = __rt_6, guide_skip = false, id = 508014001, info = 430382, info_pos = "5", info_type = 1022, step_type = 5, target_name = "AreaRoot/0,0/5,5", target_parent = "Test_WarChess", target_type = 2}
 , 
@@ -2339,27 +2359,33 @@ custom_size = {500, 500}
 , 
 [508021002] = {guide_skip = false, id = 508021002, info = 157134, info_pos = "1", info_type = 1043, target_name = "Trans_Down/UINWarChessDeploy(Clone)/Frame/NormalMode/Deploy/Btn_BattleStart", target_parent = 3501, target_type = 1}
 , 
+[508022000] = {custom_code = "GuideUtil.WCCameraFocus(1,1,0.5)", delay = 0, guide_skip = false, id = 508022000, info_type = 0, step_type = 3, wait_target = false}
+, 
 [508022001] = {custom_code = "GuideUtil.StartWCGridClickGuide(2,1)", guide_skip = false, id = 508022001, info = 121910, info_pos = "1", info_type = 1010, step_type = 3, wait_target = false}
 , 
-[508022002] = {guide_skip = false, id = 508022002, info = 366410, info_pos = "1", info_type = 1043, target_name = "2_1/OpHolder/OpBtnGroup/2", target_parent = 3502, target_type = 1}
+[508022002] = {guide_skip = false, id = 508022002, info = 262952, info_pos = "1", info_type = 1043, target_name = "2_1/OpHolder/OpBtnGroup/2", target_parent = 3502, target_type = 1}
 , 
-[508023000] = {guide_skip = false, id = 508023000, info = 229732, info_pos = "1", info_type = 1010, step_type = 4, wait_target = false}
+[508023000] = {custom_code = "GuideUtil.WCCameraFocus(3,1,0.5)", delay = 0, guide_skip = false, id = 508023000, info_type = 0, step_type = 3, wait_target = false}
 , 
-[508023001] = {guide_skip = false, id = 508023001, info = 434813, info_pos = "1", info_type = 1043, step_type = 4, wait_target = false}
+[508023001] = {custom_size = __rt_6, guide_skip = false, id = 508023001, info = 229732, info_pos = "1", info_type = 1010, step_type = 5, target_name = "AreaRoot/0,0/3,2", target_parent = "Test_WarChess", target_type = 2, wait_target = false}
 , 
-[508023002] = {custom_code = "GuideUtil.StartWCGridClickGuide(4,1)", guide_skip = false, id = 508023002, info = 303020, info_pos = "1", info_type = 1010, step_type = 3, wait_target = false}
+[508023002] = {guide_skip = false, id = 508023002, info = 114175, info_pos = "1", info_type = 1043, step_type = 4, wait_target = false}
 , 
-[508023003] = {guide_skip = false, id = 508023003, info = 8237, info_pos = "1", info_type = 1043, target_name = "4_1/OpHolder/OpBtnGroup/2", target_parent = 3502, target_type = 1}
+[508023003] = {custom_code = "GuideUtil.StartWCGridClickGuide(4,1)", guide_skip = false, id = 508023003, info = 303020, info_pos = "1", info_type = 1010, step_type = 3, wait_target = false}
 , 
-[508023004] = {guide_skip = false, id = 508023004, info = 417023, info_pos = "1", info_type = 1010, target_name = "Frame/EpStoreRoom/BuyNode/BuyList/Rect/GroupItem/StoreChipItem(Clone)", target_parent = 3506, target_type = 1}
+[508023004] = {guide_skip = false, id = 508023004, info = 8237, info_pos = "1", info_type = 1043, target_name = "4_1/OpHolder/OpBtnGroup/2", target_parent = 3502, target_type = 1}
 , 
-[508023005] = {guide_skip = false, id = 508023005, info = 444540, info_pos = "1", info_type = 1010, target_name = "Frame/UINWarChessSelectTeam/1/Btn_Buy", target_parent = 3532, target_type = 1}
+[508023005] = {guide_skip = false, id = 508023005, info = 417023, info_pos = "1", info_type = 1010, target_name = "Frame/EpStoreRoom/BuyNode/BuyList/Rect/GroupItem/StoreChipItem(Clone)", target_parent = 3506, target_type = 1}
 , 
-[508023006] = {guide_skip = false, id = 508023006, info = 329283, info_pos = "1", info_type = 1010, target_name = "Frame/Btn_Return", target_parent = 3532, target_type = 1}
+[508023006] = {guide_skip = false, id = 508023006, info = 444540, info_pos = "1", info_type = 1010, target_name = "Frame/UINWarChessSelectTeam/1/Btn_Buy", target_parent = 3532, target_type = 1}
+, 
+[508023007] = {guide_skip = false, id = 508023007, info = 329283, info_pos = "1", info_type = 1010, target_name = "Frame/Btn_Return", target_parent = 3532, target_type = 1}
+, 
+[508024000] = {custom_code = "GuideUtil.WCCameraFocus(2,3,0.5)", delay = 0, guide_skip = false, id = 508024000, info_type = 0, step_type = 3, wait_target = false}
 , 
 [508024001] = {delay = 0, guide_skip = false, id = 508024001, info = 95347, info_pos = "1", info_type = 1010, step_type = 4, wait_target = false}
 , 
-[508024002] = {custom_code = "GuideUtil.StartWCGridClickGuide(2,3)", guide_skip = false, id = 508024002, info = 419347, info_pos = "1", info_type = 1043, step_type = 3, wait_target = false}
+[508024002] = {custom_code = "GuideUtil.StartWCGridClickGuide(2,3)", guide_skip = false, id = 508024002, info = 364693, info_pos = "1", info_type = 1043, step_type = 3, wait_target = false}
 , 
 [508024003] = {guide_skip = false, id = 508024003, info_type = 0, target_name = "2_3/OpHolder/OpBtnGroup/2", target_parent = 3502, target_type = 1}
 , 
@@ -2377,47 +2403,51 @@ custom_size = {500, 500}
 , 
 [508024010] = {guide_skip = false, id = 508024010, info = 189335, info_pos = "1", info_type = 1010, target_name = "Frame/EpStoreRoom/UINBuffDetail/btn_Buy", target_parent = 3506, target_type = 1}
 , 
-[508025000] = {custom_code = "GuideUtil.StartWCGridClickGuide(4,3)", guide_skip = false, id = 508025000, info_type = 0, step_type = 3}
+[508025000] = {custom_code = "GuideUtil.WCCameraFocus(4,3,0.5)", delay = 0, guide_skip = false, id = 508025000, info_type = 0, step_type = 3, wait_target = false}
 , 
-[508025001] = {custom_code = "GuideUtil.StartWCGridClickGuide(5,3)", guide_skip = false, id = 508025001, info = 443247, info_pos = "1", info_type = 1010, step_type = 3, wait_target = false}
+[508025001] = {custom_code = "GuideUtil.StartWCGridClickGuide(4,3)", guide_skip = false, id = 508025001, info_pos = "16", info_type = 0, step_type = 3}
 , 
-[508025002] = {guide_skip = false, id = 508025002, info = 2174, info_pos = "1", info_type = 1043, target_name = "5_3/OpHolder/OpBtnGroup/2", target_parent = 3502, target_type = 1}
+[508025002] = {custom_code = "GuideUtil.StartWCGridClickGuide(5,3)", guide_skip = false, id = 508025002, info = 443247, info_pos = "16", info_type = 1010, step_type = 3, wait_target = false}
 , 
-[508025003] = {custom_code = "GuideUtil.StartWCGridClickGuide(5,3)", guide_skip = false, id = 508025003, info = 85797, info_pos = "1", info_type = 1010, step_type = 3, target_type = 2}
+[508025003] = {guide_skip = false, id = 508025003, info = 2174, info_pos = "16", info_type = 1043, target_name = "5_3/OpHolder/OpBtnGroup/2", target_parent = 3502, target_type = 1}
 , 
-[508025004] = {custom_code = "GuideUtil.StartWCGridClickGuide(6,3)", guide_skip = false, id = 508025004, info = 403364, info_pos = "1", info_type = 1010, step_type = 3, wait_target = false}
+[508025004] = {custom_code = "GuideUtil.StartWCGridClickGuide(5,3)", guide_skip = false, id = 508025004, info = 85797, info_pos = "16", info_type = 1010, step_type = 3, target_type = 2}
 , 
-[508025005] = {guide_skip = false, id = 508025005, info = 96268, info_pos = "1", info_type = 1010, target_name = "6_3/OpHolder/OpBtnGroup/2", target_parent = 3502, target_type = 1}
+[508025005] = {custom_code = "GuideUtil.StartWCGridClickGuide(6,3)", guide_skip = false, id = 508025005, info = 403364, info_pos = "16", info_type = 1010, step_type = 3, wait_target = false}
 , 
-[508025006] = {delay = 1, guide_skip = false, id = 508025006, info = 200302, info_pos = "1", info_type = 1043, target_name = "Trans_Down/UINWarChessInPlay(Clone)/TeamList/Rect/Btn_DeployNewTeam", target_parent = 3501, target_type = 1}
+[508025006] = {guide_skip = false, id = 508025006, info = 96268, info_pos = "16", info_type = 1010, target_name = "6_3/OpHolder/OpBtnGroup/2", target_parent = 3502, target_type = 1}
 , 
-[508025007] = {delay = 0, guide_skip = false, id = 508025007, info = 438378, info_pos = "5", info_type = 1003, step_type = 4, wait_target = false}
+[508025007] = {delay = 1, guide_skip = false, id = 508025007, info = 200302, info_pos = "1", info_type = 1043, target_name = "Trans_Down/UINWarChessInPlay(Clone)/TeamList/Rect/Btn_DeployNewTeam", target_parent = 3501, target_type = 1}
 , 
-[508025008] = {delay = 0, guide_skip = false, id = 508025008, info = 119971, info_pos = "1", info_type = 1003, step_type = 4, wait_target = false}
+[508025008] = {delay = 0, guide_skip = false, id = 508025008, info = 438378, info_pos = "5", info_type = 1003, step_type = 4, wait_target = false}
 , 
-[508025009] = {custom_code = "GuideUtil.StartWarChessDeploy(2,4,5)", delay = 0, guide_skip = false, id = 508025009, info = 112355, info_pos = "5", info_type = 1003, step_type = 3, wait_target = false}
+[508025009] = {delay = 0, guide_skip = false, id = 508025009, info_pos = "1", info_type = 1003, step_type = 4, wait_target = false}
 , 
-[508025010] = {guide_skip = false, id = 508025010, info_pos = "5", info_type = 0, target_name = "Trans_Down/UINWarChessDeploy(Clone)/Frame/NormalMode/DynDeploy/Btn_ApplyDynDeploy", target_parent = 3501, target_type = 1}
+[508025010] = {custom_code = "GuideUtil.StartWarChessDeploy(2,4,5)", delay = 0, guide_skip = false, id = 508025010, info = 119971, info_pos = "5", info_type = 1003, step_type = 3, wait_target = false}
 , 
-[508026001] = {delay = 0, guide_skip = false, id = 508026001, info = 304311, info_pos = "5", info_type = 1003, step_type = 4, wait_target = false}
+[508025011] = {guide_skip = false, id = 508025011, info = 112355, info_pos = "5", info_type = 1003, target_name = "Trans_Down/UINWarChessDeploy(Clone)/Frame/NormalMode/DynDeploy/Btn_ApplyDynDeploy", target_parent = 3501, target_type = 1}
 , 
-[508026002] = {delay = 0, guide_skip = false, id = 508026002, info = 457555, info_pos = "5", info_type = 1003, step_type = 4, wait_target = false}
+[508026000] = {custom_code = "GuideUtil.WCCameraFocus(6,4,0.5)", delay = 0, guide_skip = false, id = 508026000, info_type = 0, step_type = 3, wait_target = false}
 , 
-[508026003] = {guide_skip = false, id = 508026003, info = 356116, info_pos = "5", info_type = 1010, step_type = 5, target_name = "Top/ResList/Coin2", target_parent = 3501, target_type = 1}
+[508026001] = {delay = 0, guide_skip = false, id = 508026001, info = 304311, info_pos = "17", info_type = 1003, step_type = 4, wait_target = false}
 , 
-[508026004] = {delay = 0, guide_skip = false, id = 508026004, info = 107182, info_pos = "1", info_type = 1003, step_type = 4, wait_target = false}
+[508026002] = {delay = 0, guide_skip = false, id = 508026002, info = 457555, info_pos = "17", info_type = 1003, step_type = 4, wait_target = false}
 , 
-[508026005] = {delay = 0, guide_skip = false, id = 508026005, info = 328766, info_pos = "1", info_type = 1010, step_type = 4, wait_target = false}
+[508026003] = {guide_skip = false, id = 508026003, info = 356116, info_pos = "7", info_type = 1010, step_type = 5, target_name = "Top/ResList/Coin2", target_parent = 3501, target_type = 1}
 , 
-[508026006] = {delay = 0, guide_skip = false, id = 508026006, info = 122621, info_pos = "1", info_type = 1003, step_type = 4, wait_target = false}
+[508026004] = {delay = 0, guide_skip = false, id = 508026004, info = 107182, info_pos = "17", info_type = 1003, step_type = 4, wait_target = false}
 , 
-[508026007] = {guide_skip = false, id = 508026007, info = 408496, info_pos = "5", info_type = 1010, target_name = "Trans_Down/UINWarChessInPlay(Clone)/TeamList/Rect/1/TeamScale/TeamItem/Bottom", target_parent = 3501, target_type = 1}
+[508026005] = {delay = 0, guide_skip = false, id = 508026005, info = 328766, info_pos = "7", info_type = 1010, step_type = 4, wait_target = false}
+, 
+[508026006] = {delay = 0, guide_skip = false, id = 508026006, info = 122621, info_pos = "17", info_type = 1003, step_type = 4, wait_target = false}
+, 
+[508026007] = {guide_skip = false, id = 508026007, info = 57362, info_pos = "7", info_type = 1010, target_name = "Trans_Down/UINWarChessInPlay(Clone)/TeamList/Rect/1/TeamScale/TeamItem/Bottom", target_parent = 3501, target_type = 1}
 , 
 [508026008] = {guide_skip = false, id = 508026008, info_type = 0, target_name = "Trans_Down/UINWarChessInPlay(Clone)/TeamList/Rect/1/TeamScale/TeamItem/Bottom", target_parent = 3501, target_type = 1}
 , 
 [508026009] = {custom_code = "GuideUtil.StartWCGridClickGuide(4,2)", guide_skip = false, id = 508026009, info_type = 0, step_type = 3, wait_target = false}
 , 
-[508026010] = {guide_skip = false, id = 508026010, info_type = 0, target_name = "Trans_Down/UINWarChessInPlay(Clone)/TeamList/Rect/1/TeamScale/TeamItem/Bottom", target_parent = 3501, target_type = 1}
+[508026010] = {custom_code = "GuideUtil.WCCameraFocus(4,1,0.5)", guide_skip = false, id = 508026010, info_type = 0, step_type = 3}
 , 
 [508026011] = {custom_code = "GuideUtil.StartWCGridClickGuide(4,1)", guide_skip = false, id = 508026011, info_type = 0, step_type = 3, wait_target = false}
 , 
@@ -2579,7 +2609,7 @@ custom_size = {500, 500}
 , 
 [601010309] = {delay = 1, guide_skip = false, id = 601010309, info = 60264, info_pos = "1", info_type = 1016, target_name = "4_4/OpHolder/OpBtnGroup/2", target_parent = 3502, target_type = 1}
 , 
-[601010310] = {delay = 2, guide_skip = false, id = 601010310, info = 400896, info_pos = "1", info_type = 1016, target_name = "Frame/PropList/93002/Root/ItemHolder/Btn_Select", target_parent = 3531, target_type = 1}
+[601010310] = {delay = 2, guide_skip = false, id = 601010310, info = 400897, info_pos = "1", info_type = 1016, target_name = "Frame/PropList/93002/Root/ItemHolder/Btn_Select", target_parent = 3531, target_type = 1}
 , 
 [601010311] = {delay = 0, guide_skip = false, id = 601010311, info = 161626, info_pos = "1", info_type = 1016, step_type = 4, wait_target = false}
 , 

@@ -83,9 +83,8 @@ UIAthItemDetail.OnClickInstallAth = function(self)
   -- function num : 0_4 , upvalues : _ENV
   if self.installFunc ~= nil then
     (self.installFunc)(self.athData)
-    if self.SettedTopStatus then
-      (UIUtil.OnClickBack)()
-    end
+    ;
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 end
 
@@ -93,9 +92,8 @@ UIAthItemDetail.OnClickUninstallAth = function(self)
   -- function num : 0_5 , upvalues : _ENV
   if self.uninstallFunc ~= nil then
     (self.uninstallFunc)(self.athData)
-    if self.SettedTopStatus then
-      (UIUtil.OnClickBack)()
-    end
+    ;
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 end
 
@@ -103,9 +101,8 @@ UIAthItemDetail.OnClickReplaceAth = function(self)
   -- function num : 0_6 , upvalues : _ENV
   if self.replaceFunc ~= nil then
     (self.replaceFunc)(self.replaceAthData, self.athData)
-    if self.SettedTopStatus then
-      (UIUtil.OnClickBack)()
-    end
+    ;
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 end
 
@@ -133,23 +130,17 @@ end
 
 UIAthItemDetail.__OnClickClose = function(self)
   -- function num : 0_8 , upvalues : _ENV
-  if self.SettedTopStatus then
-    (UIUtil.OnClickBack)()
-  end
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIAthItemDetail.BackAction = function(self)
   -- function num : 0_9
   self:Hide()
-  self.SettedTopStatus = false
 end
 
 UIAthItemDetail.OnShow = function(self)
   -- function num : 0_10 , upvalues : _ENV, base
-  if not self.SettedTopStatus then
-    (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
-    self.SettedTopStatus = true
-  end
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack(true)
   ;
   (base.OnShow)(self)
   MsgCenter:AddListener(eMsgEventId.OnAthDataUpdate1, self.__onAthDataUpdate)

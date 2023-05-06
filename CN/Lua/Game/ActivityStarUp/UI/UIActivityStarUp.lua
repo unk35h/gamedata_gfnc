@@ -196,12 +196,12 @@ end
 
 UIActivityStarUp.OnTaskChangeItem = function(self, go, index)
   -- function num : 0_9
-  ((self.taskItemDic)[go]):InitItem((self.childTasks)[index + 1])
+  ((self.taskItemDic)[go]):InitItem(self.activityInfo, (self.childTasks)[index + 1])
 end
 
 UIActivityStarUp.CloseUINoClick = function(self)
   -- function num : 0_10 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIActivityStarUp.OnClickPreview = function(self)

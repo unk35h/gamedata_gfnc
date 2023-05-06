@@ -380,7 +380,7 @@ end
 UISupportHeroList.OnClickRefreshBtn = function(self)
   -- function num : 0_9 , upvalues : _ENV
   if (self.usedHeroPanel).active then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
   self:InitSelectSupportHeroList(self.selectCallback, self.selectCareer, self.fomationData, true)
 end
@@ -403,7 +403,7 @@ UISupportHeroList.OnClickUseCard = function(self, cardItem)
     (self.selectCallback)(cardItem.friednSupportHeroData)
   end
   ;
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UISupportHeroList.RfreshSupportTimeLimit = function(self)

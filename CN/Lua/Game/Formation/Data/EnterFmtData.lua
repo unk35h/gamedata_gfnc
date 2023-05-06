@@ -943,16 +943,16 @@ EnterFmtData.__TryGenOfficialSupportData = function(self)
   if self.__officialSupportCfgId == nil or self.__officialSupportCfgId == 0 then
     return 
   end
-  local warchessAssistCfg = (ConfigData.warchess_assist)[self.__officialSupportCfgId]
-  if warchessAssistCfg == nil then
-    error("warchessAssistCfg not exist, wcAssist id:" .. tostring(self.__officialSupportCfgId))
+  local officialAssistCfg = (ConfigData.official_assist)[self.__officialSupportCfgId]
+  if officialAssistCfg == nil then
+    error("officialAssistCfg not exist, wcAssist id:" .. tostring(self.__officialSupportCfgId))
     return 
   end
   self.__isHaveOfficialSupport = true
   self.__allOfficialSupportHeroDataDic = {}
-  for index,heroId in ipairs(warchessAssistCfg.param1) do
-    local assistCfgId = (warchessAssistCfg.assist_lvs)[index]
-    local power = (warchessAssistCfg.effective)[index]
+  for index,heroId in ipairs(officialAssistCfg.param1) do
+    local assistCfgId = (officialAssistCfg.assist_lvs)[index]
+    local power = (officialAssistCfg.effective)[index]
     local assisLvCfg = (ConfigData.assist_level)[assistCfgId]
     local osHeroData = (OfficialSupportHeroData.GenOfficialSupportHeroData)(heroId, assisLvCfg, power)
     osHeroData:SetOfficialSupportCfgId(self.__officialSupportCfgId)

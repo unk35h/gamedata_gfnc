@@ -11,6 +11,7 @@ local CS_Ease = ((CS.DG).Tweening).Ease
 UINHomeLeft.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, ActivityFrameEnum
   (UIUtil.LuaUIBindingTable)(self.transform, self.ui)
+  self.resloader = ((CS.ResLoader).Create)()
   ;
   (UIUtil.AddButtonListenerWithArg)((self.ui).btn_HideUI, self, self.SetShowMainUI, false)
   ;
@@ -158,9 +159,10 @@ UINHomeLeft.OnClickActivity = function(self, enterType, activityId)
         return 
       end
       keyExertionController:OpenKeyExertion(keyExertionData:GetActId(), function(window)
-    -- function num : 0_6_1 , upvalues : _ENV
+    -- function num : 0_6_1 , upvalues : self, _ENV
     if window ~= nil then
-      window:SetFromWhichUI(eBaseWinFromWhere.home)
+      (self.homeUI):OpenOtherCoverWin()
+      window:SetFromWhichUI(eBaseWinFromWhere.homeCorver)
     end
   end
 )
@@ -621,13 +623,17 @@ UINHomeLeft.__RefreshKeyExertion = function(self, tokenId)
   if tokenId ~= nil and tokenId ~= currentTokenId then
     return 
   end
-  -- DECOMPILER ERROR at PC33: Confused about usage of register: R6 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC38: Confused about usage of register: R6 in 'UnsetPending'
+
+  ;
+  ((self.ui).img_LukcyBag).texture = (self.resloader):LoadABAsset(PathConsts:GetActivityKeyExertionPath((keyExertionData:GetKeyExertionMainCfg()).enter_picture))
+  -- DECOMPILER ERROR at PC45: Confused about usage of register: R6 in 'UnsetPending'
 
   ;
   ((self.ui).img_Icon).sprite = CRH:GetSpriteByItemId(currentTokenId)
   ;
   ((self.ui).tex_Count):SetIndex(0, tostring(keyExertionData:GetKeyExertionPackageFragmentNum()), tostring(keyExertionData:GetKeyExertionPackageFragmentMaxNum()))
-  -- DECOMPILER ERROR at PC51: Confused about usage of register: R6 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC63: Confused about usage of register: R6 in 'UnsetPending'
 
   ;
   ((self.ui).tex_Name).text = (keyExertionData.actInfo).name
@@ -708,6 +714,10 @@ UINHomeLeft.OnDelete = function(self)
   if self.bannerUI ~= nil then
     (self.bannerUI):Delete()
     self.bannerUI = nil
+  end
+  if self.resloader ~= nil then
+    (self.resloader):Put2Pool()
+    self.resloader = nil
   end
   if self._heroVoiceTextTimerId ~= nil then
     TimerManager:StopTimer(self._heroVoiceTextTimerId)

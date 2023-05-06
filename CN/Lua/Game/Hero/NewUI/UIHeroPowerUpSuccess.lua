@@ -30,7 +30,7 @@ end
 
 UIHeroPowerUpSuccess.OnClickClose = function(self)
   -- function num : 0_3 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIHeroPowerUpSuccess.OnBtnCloseClicked = function(self)

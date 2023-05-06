@@ -82,7 +82,7 @@ end
 UINRealDailyEntry.__CloseLevelDetailWindow = function(self)
   -- function num : 0_6 , upvalues : _ENV
   if (self.parentNode).selectedItem ~= nil then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
   end
 end
 

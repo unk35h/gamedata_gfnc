@@ -240,6 +240,51 @@
       "OutlineColorIntensity": 500,
       "OutlineWider": 10,
       "OutlineScale": 3
+    },
+    {
+      "Id": 30,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#00FF00",
+      "OutlineColorIntensity": 500,
+      "OutlineWider": 10,
+      "OutlineScale": 3
+    },
+    {
+      "Id": 31,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#FFFF00",
+      "OutlineColorIntensity": 500,
+      "OutlineWider": 10,
+      "OutlineScale": 3
+    },
+    {
+      "Id": 32,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#FF0000",
+      "OutlineColorIntensity": 500,
+      "OutlineWider": 10,
+      "OutlineScale": 3
+    },
+    {
+      "Id": 33,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#B5B08A",
+      "OutlineColorIntensity": 500,
+      "OutlineWider": 10,
+      "OutlineScale": 3
+    },
+    {
+      "Id": 34,
+      "LoopCount": 1,
+      "OutlineEnable": true,
+      "OutlineColor": "#00D3FF",
+      "OutlineColorIntensity": 400,
+      "OutlineWider": 10,
+      "OutlineScale": 3
     }
   ]
 }

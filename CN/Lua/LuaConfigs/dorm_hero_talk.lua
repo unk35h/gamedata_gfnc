@@ -264,6 +264,10 @@ talk_list = {"dorm_lind_01", "dorm_lind_02", "dorm_lind_03", "dorm_lind_04", "do
 [1066] = {hero_id = 1066, 
 talk_list = {"dorm_erika_01", "dorm_erika_02", "dorm_erika_03", "dorm_erika_04", "dorm_erika_05"}
 }
+, 
+[1067] = {hero_id = 1067, 
+talk_list = {"dorm_cascadia_01", "dorm_cascadia_02", "dorm_cascadia_03", "dorm_cascadia_04", "dorm_cascadia_05"}
+}
 }
 local __default_values = {hero_id = 1001, pre_para = __rt_1, pre_type = __rt_2, 
 talk_list = {"dorm_abigail_01", "dorm_abigail_02", "dorm_abigail_03", "dorm_abigail_04", "dorm_abigail_05"}

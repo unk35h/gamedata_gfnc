@@ -127,8 +127,28 @@ end
 
 -- DECOMPILER ERROR at PC28: Confused about usage of register: R0 in 'UnsetPending'
 
-CommonUtil.DefaultItemsSortList = function(item_ids, item_nums, sortDic)
+CommonUtil.GetIsWarChessQuickMove = function()
   -- function num : 0_8 , upvalues : _ENV
+  local setCtrl = ControllerManager:GetController(ControllerTypeId.Setting, true)
+  local index = setCtrl:GetGSMultSettingIndex(eGameSetDescType.quick_move)
+  do return index == 1 end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+end
+
+-- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+
+CommonUtil.GetIsWarChessQuickInteract = function()
+  -- function num : 0_9 , upvalues : _ENV
+  local setCtrl = ControllerManager:GetController(ControllerTypeId.Setting, true)
+  local index = setCtrl:GetGSMultSettingIndex(eGameSetDescType.quick_interaction)
+  do return index == 1 end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+end
+
+-- DECOMPILER ERROR at PC34: Confused about usage of register: R0 in 'UnsetPending'
+
+CommonUtil.DefaultItemsSortList = function(item_ids, item_nums, sortDic)
+  -- function num : 0_10 , upvalues : _ENV
   local itemList = {}
   local itemNumDic = {}
   for idx,id in pairs(item_ids) do
@@ -156,10 +176,10 @@ CommonUtil.DefaultItemsSortList = function(item_ids, item_nums, sortDic)
   return item_ids, item_nums
 end
 
--- DECOMPILER ERROR at PC31: Confused about usage of register: R0 in 'UnsetPending'
+-- DECOMPILER ERROR at PC37: Confused about usage of register: R0 in 'UnsetPending'
 
 CommonUtil.DefaultItemsSort = function(itemCfgs, sortDic)
-  -- function num : 0_9 , upvalues : _ENV
+  -- function num : 0_11 , upvalues : _ENV
   if #itemCfgs == 1 then
     return itemCfgs
   end
@@ -169,7 +189,7 @@ CommonUtil.DefaultItemsSort = function(itemCfgs, sortDic)
   end
   ;
   (table.sort)(itemCfgs, function(a, b)
-    -- function num : 0_9_0 , upvalues : count, sortDic
+    -- function num : 0_11_0 , upvalues : count, sortDic
     local aSort = 1
     local bSort = 1
     if count ~= 0 then
@@ -198,25 +218,25 @@ CommonUtil.DefaultItemsSort = function(itemCfgs, sortDic)
   return itemCfgs
 end
 
--- DECOMPILER ERROR at PC33: Confused about usage of register: R0 in 'UnsetPending'
-
-CommonUtil.UInt32Max = 4294967295
--- DECOMPILER ERROR at PC35: Confused about usage of register: R0 in 'UnsetPending'
-
-CommonUtil.Int32Max = 2147483647
--- DECOMPILER ERROR at PC37: Confused about usage of register: R0 in 'UnsetPending'
-
-CommonUtil.UInt16Max = 65535
 -- DECOMPILER ERROR at PC39: Confused about usage of register: R0 in 'UnsetPending'
 
-CommonUtil.Int16Max = 32767
+CommonUtil.UInt32Max = 4294967295
+-- DECOMPILER ERROR at PC41: Confused about usage of register: R0 in 'UnsetPending'
+
+CommonUtil.Int32Max = 2147483647
 -- DECOMPILER ERROR at PC43: Confused about usage of register: R0 in 'UnsetPending'
 
+CommonUtil.UInt16Max = 65535
+-- DECOMPILER ERROR at PC45: Confused about usage of register: R0 in 'UnsetPending'
+
+CommonUtil.Int16Max = 32767
+-- DECOMPILER ERROR at PC49: Confused about usage of register: R0 in 'UnsetPending'
+
 CommonUtil.Int64Max = math.maxinteger
--- DECOMPILER ERROR at PC47: Confused about usage of register: R0 in 'UnsetPending'
+-- DECOMPILER ERROR at PC53: Confused about usage of register: R0 in 'UnsetPending'
 
 CommonUtil.Int64Min = math.mininteger
--- DECOMPILER ERROR at PC49: Confused about usage of register: R0 in 'UnsetPending'
+-- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
 
 CommonUtil.DaySeconds = 86400
 

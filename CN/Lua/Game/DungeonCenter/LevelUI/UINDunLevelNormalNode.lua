@@ -85,14 +85,14 @@ UINDunLevelNormalNode.RefreshDLevelReward = function(self)
       end
       rewardCount = self:__CreateDetailRewardItem(rewardCount, (self.ui).normalList, R18_PC160, num, false, false)
     end
-  elseif dunLevelType == (DungeonLevelEnum.DunLevelType).HeroGrow or dungeonType == (DungeonLevelEnum.DunLevelType).Season then
+  elseif dunLevelType == (DungeonLevelEnum.DunLevelType).HeroGrow or dungeonType == (DungeonLevelEnum.DunLevelType).Season or dungeonType == (DungeonLevelEnum.DunLevelType).SeasonI then
     (((self.ui).maybeList).gameObject):SetActive(true)
     local first_reward_ids, first_reward_nums = dunLevelData:GetDungeonFirstReward()
     ;
     ((self.ui).txtInfo_firsRewardList):SetIndex(0)
     for index,rewardId in ipairs(first_reward_ids) do
       local rewardNum = first_reward_nums[index]
-      -- DECOMPILER ERROR at PC194: Overwrote pending register: R18 in 'AssignReg'
+      -- DECOMPILER ERROR at PC198: Overwrote pending register: R18 in 'AssignReg'
 
       rewardCount = self:__CreateDetailRewardItem(rewardCount, R18_PC160, rewardId, rewardNum, isPicked, false)
     end
@@ -104,11 +104,11 @@ UINDunLevelNormalNode.RefreshDLevelReward = function(self)
       elseif numTable.max >= 1000 then
         num = tostring(numTable.min) .. "+"
       else
-        -- DECOMPILER ERROR at PC228: Overwrote pending register: R18 in 'AssignReg'
+        -- DECOMPILER ERROR at PC232: Overwrote pending register: R18 in 'AssignReg'
 
         num = tostring(numTable.min) .. "-" .. R18_PC160
       end
-      -- DECOMPILER ERROR at PC233: Overwrote pending register: R18 in 'AssignReg'
+      -- DECOMPILER ERROR at PC237: Overwrote pending register: R18 in 'AssignReg'
 
       rewardCount = self:__CreateDetailRewardItem(R18_PC160, (self.ui).maybeList, itemId, num, false, false)
     end

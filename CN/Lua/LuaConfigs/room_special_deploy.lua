@@ -18,9 +18,10 @@ local __rt_13 = {true, true, true, true; [0] = true}
 local __rt_14 = {[2] = true}
 local __rt_15 = {[0] = true, [2] = true, [4] = true}
 local __rt_16 = {true; [3] = true}
-local __rt_17 = {true; [0] = true, [3] = true, [4] = true}
-local __rt_18 = {[4] = true}
-local __rt_19 = {}
+local __rt_17 = {true, true; [0] = true, [4] = true}
+local __rt_18 = {true; [0] = true, [3] = true, [4] = true}
+local __rt_19 = {[4] = true}
+local __rt_20 = {}
 local room_special_deploy = {__rt_2, __rt_2, 
 {
 deployGridDic = {__rt_4, __rt_4, __rt_5; [0] = __rt_3}
@@ -73,9 +74,7 @@ deployGridDic = {[2] = __rt_12, [3] = __rt_16, [4] = __rt_14}
 }
 , 
 {
-deployGridDic = {__rt_11, __rt_13, __rt_13, 
-{true, true; [0] = true, [4] = true}
-}
+deployGridDic = {__rt_11, __rt_13, __rt_13, __rt_17}
 }
 , 
 {
@@ -83,21 +82,21 @@ deployGridDic = {[0] = __rt_15, [3] = __rt_15, [6] = __rt_15}
 }
 , 
 {
-deployGridDic = {__rt_1, __rt_1, __rt_1, __rt_1, __rt_17, __rt_15; [0] = __rt_13}
+deployGridDic = {__rt_1, __rt_1, __rt_1, __rt_1, __rt_18, __rt_15; [0] = __rt_13}
 }
 , 
 {
-deployGridDic = {__rt_1; [0] = __rt_17, [5] = __rt_17, [6] = __rt_1}
+deployGridDic = {__rt_1; [0] = __rt_18, [5] = __rt_18, [6] = __rt_1}
 }
 , 
 {
-deployGridDic = {__rt_1; [0] = __rt_12, [5] = __rt_17, [6] = __rt_14}
+deployGridDic = {__rt_1; [0] = __rt_12, [5] = __rt_18, [6] = __rt_14}
 }
 , 
 {
 deployGridDic = {__rt_12, 
 {true, true; [0] = true}
-; [0] = __rt_11, [6] = __rt_18}
+; [0] = __rt_11, [6] = __rt_19}
 }
 , 
 {
@@ -115,7 +114,7 @@ deployGridDic = {[0] = __rt_14, [2] = __rt_15, [4] = __rt_15, [6] = __rt_14}
 {
 deployGridDic = {__rt_13; [0] = __rt_13, [3] = __rt_14, [4] = __rt_14}
 }
-, __rt_19, __rt_19, __rt_19, 
+, __rt_20, __rt_20, __rt_20, 
 {
 deployGridDic = {[0] = __rt_1, [6] = __rt_1}
 }
@@ -141,21 +140,53 @@ deployGridDic = {__rt_15; [0] = __rt_13, [5] = __rt_15, [6] = __rt_15}
 }
 , 
 {
-deployGridDic = {__rt_12, __rt_1, __rt_1, __rt_17, __rt_14}
+deployGridDic = {__rt_12, __rt_1, __rt_1, __rt_18, __rt_14}
 }
 , 
 {
-deployGridDic = {[2] = __rt_14, [3] = __rt_17, [4] = __rt_13, [5] = __rt_14}
+deployGridDic = {[2] = __rt_14, [3] = __rt_18, [4] = __rt_13, [5] = __rt_14}
 }
 , 
 {
 deployGridDic = {[0] = __rt_15, [6] = __rt_15}
 }
+, 
+{
+deployGridDic = {__rt_14, __rt_16, __rt_12}
+}
+, 
+{
+deployGridDic = {__rt_15; [0] = __rt_13, [5] = __rt_14}
+}
+, 
+{
+deployGridDic = {__rt_14, __rt_14; [0] = __rt_12, [6] = __rt_14}
+}
+, 
+{
+deployGridDic = {__rt_14; [3] = __rt_16, [4] = __rt_15}
+}
+, 
+{
+deployGridDic = {__rt_15; [0] = __rt_13, [5] = __rt_14, [6] = __rt_14}
+}
+, 
+{
+deployGridDic = {__rt_1, __rt_19; [0] = __rt_17, [6] = __rt_14}
+}
+, 
+{
+deployGridDic = {__rt_16, __rt_16; [0] = __rt_16}
+}
+, 
+{
+deployGridDic = {__rt_12, __rt_14; [0] = __rt_12, [5] = __rt_14, [6] = __rt_14}
+}
 }
 local __default_values = {
 deployGridDic = {
 [0] = {[0] = true}
-, [6] = __rt_18}
+, [6] = __rt_19}
 }
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV

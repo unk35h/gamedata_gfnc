@@ -15,7 +15,7 @@ UIDormComfort.OnInit = function(self)
   self.comfortItemPool = (UIItemPool.New)(UINDormComfortItem, (self.ui).comfortLvItem)
   self.__ReqComfortRewardPick = BindCallback(self, self.ReqComfortRewardPick)
   ;
-  (UIUtil.SetTopStatus)(nil, nil, nil, nil, nil, true)
+  (UIUtil.SetTopStatus)(self, self.BackAction, nil, nil, nil, true)
 end
 
 UIDormComfort.InitDormComfortUI = function(self, dormRoomData)
@@ -130,15 +130,18 @@ UIDormComfort.ReqComfortRewardPick = function(self, comfortLevelCfg, comfortItem
 )
 end
 
-UIDormComfort.OnCloseClicked = function(self)
-  -- function num : 0_6 , upvalues : _ENV
+UIDormComfort.BackAction = function(self)
+  -- function num : 0_6
   self:Delete()
-  ;
-  (UIUtil.OnClickBack)()
+end
+
+UIDormComfort.OnCloseClicked = function(self)
+  -- function num : 0_7 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIDormComfort.OnDelete = function(self)
-  -- function num : 0_7 , upvalues : base
+  -- function num : 0_8 , upvalues : base
   (base.OnDelete)(self)
 end
 

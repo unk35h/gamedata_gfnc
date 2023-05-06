@@ -804,11 +804,11 @@ local training_task = {
 , 
 {hero_id = 1065, id = 10652, indx = 2, param = 30, reward = "1002=20|1805=10|1602=800", rewardCounts = __rt_3, rewardIds = __rt_17, type = 1}
 , 
-{hero_id = 1065, id = 10655, indx = 5, param = 60, reward = "1002=100|1820=5|1602=1500", rewardCounts = __rt_9, rewardIds = __rt_20, type = 1}
+{hero_id = 1065, id = 10653, indx = 3, param = 40, reward = "1002=50|1810=10|1602=1000", rewardCounts = __rt_5, rewardIds = __rt_18, type = 1}
 , 
 {hero_id = 1065, id = 10654, indx = 4, param = 50, reward = "1002=50|1815=5|1602=1200", rewardCounts = __rt_7, rewardIds = __rt_19, type = 1}
 , 
-{hero_id = 1065, id = 10653, indx = 3, param = 40, reward = "1002=50|1810=10|1602=1000", rewardCounts = __rt_5, rewardIds = __rt_18, type = 1}
+{hero_id = 1065, id = 10655, indx = 5, param = 60, reward = "1002=100|1820=5|1602=1500", rewardCounts = __rt_9, rewardIds = __rt_20, type = 1}
 }
 , 
 [1066] = {
@@ -821,6 +821,18 @@ local training_task = {
 {hero_id = 1066, id = 10664, indx = 4, param = 50, reward = "1002=50|1813=5|1603=1200", rewardCounts = __rt_7, rewardIds = __rt_24, type = 1}
 , 
 {hero_id = 1066, id = 10663, indx = 3, param = 40, reward = "1002=50|1808=10|1603=1000", rewardCounts = __rt_5, rewardIds = __rt_23, type = 1}
+}
+, 
+[1067] = {
+{hero_id = 1067, id = 10675, indx = 5, param = 60, reward = "1002=100|1820=5|1602=1500", rewardCounts = __rt_9, rewardIds = __rt_20, type = 1}
+, 
+{hero_id = 1067, id = 10674, indx = 4, param = 50, reward = "1002=50|1815=5|1602=1200", rewardCounts = __rt_7, rewardIds = __rt_19, type = 1}
+, 
+{hero_id = 1067, id = 10673, indx = 3, param = 40, reward = "1002=50|1810=10|1602=1000", rewardCounts = __rt_5, rewardIds = __rt_18, type = 1}
+, 
+{hero_id = 1067, id = 10671, indx = 1, param = 20, reward = "1002=20|1602=600", rewardCounts = __rt_1, rewardIds = __rt_16, type = 1}
+, 
+{hero_id = 1067, id = 10672, indx = 2, param = 30, reward = "1002=20|1805=10|1602=800", rewardCounts = __rt_3, rewardIds = __rt_17, type = 1}
 }
 }
 return training_task

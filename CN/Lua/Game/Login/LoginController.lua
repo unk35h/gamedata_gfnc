@@ -24,6 +24,8 @@ LoginController.OnLoginUserDataComplete = function(self, noShowLoading)
   local skipGuide, onlyFirst = (GR.SkipGameGuide)()
   if skipGuide then
     GuideManager:SetGMSkipGuide(not onlyFirst)
+    UIManager:ShowWindow(UIWindowTypeID.TopStatus)
+    UIManager:HideWindow(UIWindowTypeID.TopStatus)
     self.noShowLoading = noShowLoading or false
     if (GuideManager.firstBattleGuideCtrl):TryStartFirstBattleGuide() then
       return 
@@ -116,16 +118,6 @@ LoginController.__LoadingHome = function(self)
     -- function num : 0_4_0 , upvalues : _ENV
     local homeCtr = ControllerManager:GetController(ControllerTypeId.HomeController, true)
     homeCtr:OnEnterHome()
-    UIManager:ShowWindowAsync(UIWindowTypeID.TopStatus, function(window)
-      -- function num : 0_4_0_0
-      if window ~= nil then
-        window:Hide()
-      end
-    end
-)
-    while UIManager:GetWindow(UIWindowTypeID.TopStatus) == nil do
-      (coroutine.yield)(nil)
-    end
     UIManager:ShowWindowAsync(UIWindowTypeID.Home)
     while UIManager:GetWindow(UIWindowTypeID.Home) == nil do
       (coroutine.yield)(nil)

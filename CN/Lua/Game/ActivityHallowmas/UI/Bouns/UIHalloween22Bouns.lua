@@ -210,7 +210,7 @@ end
 
 UIHalloween22Bouns.OnClickCloseBouns = function(self)
   -- function num : 0_15 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIHalloween22Bouns.OnCloseBouns = function(self, tohome)

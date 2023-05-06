@@ -729,7 +729,7 @@ UINLevelNormalNode.ShowWeeklyChallengeRank = function(self)
           local rankId = actSector3Ctrl:GetHardLevelRankId((self.LevelDtail).challengeId)
           do
             if rankId ~= nil then
-              (UIUtil.OnClickBack)()
+              (UIUtil.ForceOnClickBack)()
               UIManager:ShowWindowAsync(UIWindowTypeID.CommonRank, function(rankWindow)
     -- function num : 0_14_0 , upvalues : rankId
     if rankWindow == nil then
@@ -743,7 +743,7 @@ UINLevelNormalNode.ShowWeeklyChallengeRank = function(self)
         end
         local challengeId = (self.LevelDtail).challengeId
         ;
-        (UIUtil.OnClickBack)()
+        (UIUtil.OnClickBackByWinId)(UIWindowTypeID.SectorLevelDetail)
         UIManager:ShowWindowAsync(UIWindowTypeID.WeeklyChallengeRank, function(win)
     -- function num : 0_14_1 , upvalues : challengeId
     if win ~= nil then

@@ -553,7 +553,7 @@ end
 DormRoomCtrl.ExitDormRoomEdit = function(self, editSuccess, fromTopStates)
   -- function num : 0_27 , upvalues : _ENV, CS_DormCameraController
   if not fromTopStates then
-    (UIUtil.PopFromBackStack)()
+    (UIUtil.ForcePopFromBackStack)()
   end
   ;
   (UIUtil.SetTopStatusBtnShow)(true, true)

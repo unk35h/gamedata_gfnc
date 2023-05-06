@@ -27,6 +27,7 @@ ActivityKeyExertionController.InitKeyExertion = function(self, actFrameData)
   ;
   (self._dataDic)[actFrameData:GetActId()] = data
   data:InitKeyExertionData(actFrameData:GetActId())
+  data:SetBigRewardPickedCount(actFrameData.bigReward)
 end
 
 ActivityKeyExertionController.OpenKeyExertion = function(self, actId, callback)
@@ -122,8 +123,23 @@ ActivityKeyExertionController.__TaskProcessUpdate = function(self, taskData)
   end
 end
 
-ActivityKeyExertionController.__ItemUpdate = function(self, itemDic)
+ActivityKeyExertionController.UpdateAllKeyExertionData = function(self, msg)
   -- function num : 0_8 , upvalues : _ENV
+  for _,msgData in pairs(msg) do
+    local diffData = (self._dataDic)[msgData.actId]
+    if diffData ~= nil then
+      diffData:SetBigRewardPickedCount(msgData.bigReward)
+    end
+  end
+  local uiKeyExertionMain = UIManager:GetWindow(UIWindowTypeID.ActivityKeyExertion)
+  if uiKeyExertionMain ~= nil then
+    uiKeyExertionMain:RefreshKeyExertionRewards()
+    uiKeyExertionMain:UpdateLogicPreviewNode()
+  end
+end
+
+ActivityKeyExertionController.__ItemUpdate = function(self, itemDic)
+  -- function num : 0_9 , upvalues : _ENV
   for _,data in pairs(self._dataDic) do
     if itemDic[data:GetKeyExertionTokenId()] ~= nil then
       data:RefreshKeyExertionRedPackage()
@@ -133,20 +149,20 @@ ActivityKeyExertionController.__ItemUpdate = function(self, itemDic)
 end
 
 ActivityKeyExertionController.RemoveKeyExertion = function(self, id)
-  -- function num : 0_9
+  -- function num : 0_10
   -- DECOMPILER ERROR at PC1: Confused about usage of register: R2 in 'UnsetPending'
 
   (self._dataDic)[id] = nil
 end
 
 ActivityKeyExertionController.IsHaveKeyExertion = function(self)
-  -- function num : 0_10 , upvalues : _ENV
+  -- function num : 0_11 , upvalues : _ENV
   do return (table.count)(self._dataDic) > 0 end
   -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
 
 ActivityKeyExertionController.OnDelete = function(self)
-  -- function num : 0_11 , upvalues : _ENV, eDynConfigData
+  -- function num : 0_12 , upvalues : _ENV, eDynConfigData
   ConfigData:ReleaseDynCfg(eDynConfigData.activity_keyExertion_main)
   MsgCenter:RemoveListener(eMsgEventId.TaskUpdate, self.__TaskChangeCallback)
   MsgCenter:RemoveListener(eMsgEventId.UpdateItem, self._OnItemChangeFunc)

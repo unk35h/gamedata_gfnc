@@ -7,7 +7,7 @@ local SectorLevelDetailEnum = require("Game.Sector.Enum.SectorLevelDetailEnum")
 local cs_MessageCommon = CS.MessageCommon
 UISectorLevelDetail.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, UINLevelDetail
-  (UIUtil.AddButtonListener)((self.ui).btn_Close, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Close, self, self.OnClickBack)
   self.resloader = ((CS.ResLoader).Create)()
   self.levelDetailNode = (UINLevelDetail.New)()
   ;
@@ -42,10 +42,10 @@ UISectorLevelDetail.InitSectorLevelAvgDetail = function(self, sectorId, avgCfg, 
   -- function num : 0_2 , upvalues : _ENV, SectorLevelDetailEnum
   self:CleanLastDetail()
   if self.isPushBack2Stack then
-    (UIUtil.PopFromBackStack)()
+    (UIUtil.PopFromBackStackByUiTab)(self)
   end
   ;
-  (UIUtil.SetTopStatus)(self, self.OnClickSectorLevelDetailBackBtn, {ConstGlobalItem.SKey})
+  (((((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.OnClickSectorLevelDetailBackBtn)):SetTopStatusResData({ConstGlobalItem.SKey})):SetTopStatusVisible(true)):PushTopStatusDataToBackStack()
   self.isPushBack2Stack = true
   self:GetBackgroundTexture(sectorId, avgCfg.id, (SectorLevelDetailEnum.eDetailType).Avg)
   ;
@@ -58,10 +58,10 @@ UISectorLevelDetail.InitInfinityLevelDetailNode = function(self, sectorId, level
   -- function num : 0_3 , upvalues : _ENV
   self:CleanLastDetail()
   if self.isPushBack2Stack then
-    (UIUtil.PopFromBackStack)()
+    (UIUtil.PopFromBackStackByUiTab)(self)
   end
   ;
-  (UIUtil.SetTopStatus)(self, self.OnClickSectorLevelDetailBackBtn, {ConstGlobalItem.SKey})
+  (((((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.OnClickSectorLevelDetailBackBtn)):SetTopStatusResData({ConstGlobalItem.SKey})):SetTopStatusVisible(true)):PushTopStatusDataToBackStack()
   self.isPushBack2Stack = true
   self:GetBackgroundTexture(sectorId)
   ;
@@ -75,7 +75,7 @@ UISectorLevelDetail.InitInfinityLevelDetailNode = function(self, sectorId, level
   else
     tips = ConfigData:GetTipContent(TipContent.EndLessUnfinishedTips)
   end
-  -- DECOMPILER ERROR at PC56: Confused about usage of register: R5 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC66: Confused about usage of register: R5 in 'UnsetPending'
 
   ;
   ((self.ui).tex_Tips).text = tips
@@ -85,10 +85,10 @@ UISectorLevelDetail.InitPeriodicChallengeDetailNode = function(self, challengeId
   -- function num : 0_4 , upvalues : _ENV, SectorLevelDetailEnum
   self:CleanLastDetail()
   if self.isPushBack2Stack then
-    (UIUtil.PopFromBackStack)()
+    (UIUtil.PopFromBackStackByUiTab)(self)
   end
   ;
-  (UIUtil.SetTopStatus)(self, self.OnClickSectorLevelDetailBackBtn, {ConstGlobalItem.SKey})
+  (((((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.OnClickSectorLevelDetailBackBtn)):SetTopStatusResData({ConstGlobalItem.SKey})):SetTopStatusVisible(true)):PushTopStatusDataToBackStack()
   self.isPushBack2Stack = true
   self:GetBackgroundTexture(nil, challengeId, (SectorLevelDetailEnum.eDetailType).PeriodicChallenge)
   ;
@@ -99,10 +99,10 @@ UISectorLevelDetail.InitWeeklyChallengeDetailNode = function(self, challengeId, 
   -- function num : 0_5 , upvalues : _ENV, SectorLevelDetailEnum
   self:CleanLastDetail()
   if self.isPushBack2Stack then
-    (UIUtil.PopFromBackStack)()
+    (UIUtil.PopFromBackStackByUiTab)(self)
   end
   ;
-  (UIUtil.SetTopStatus)(self, self.OnClickSectorLevelDetailBackBtn, {ConstGlobalItem.SKey})
+  (((((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.OnClickSectorLevelDetailBackBtn)):SetTopStatusResData({ConstGlobalItem.SKey})):SetTopStatusVisible(true)):PushTopStatusDataToBackStack()
   self.isPushBack2Stack = true
   self:GetBackgroundTexture(nil, challengeId, (SectorLevelDetailEnum.eDetailType).WeeklyChallenge)
   ;
@@ -113,24 +113,24 @@ UISectorLevelDetail.__InitWarchessDetailNode = function(self, sectorId, stageCfg
   -- function num : 0_6 , upvalues : _ENV
   self:CleanLastDetail()
   if self.isPushBack2Stack then
-    (UIUtil.PopFromBackStack)()
+    (UIUtil.PopFromBackStackByUiTab)(self)
   end
   self.isPushBack2Stack = true
   self:GetBackgroundTexture(sectorId)
   ;
   (self.levelDetailNode):InitWarchessDetailNode(sectorId, stageCfg, isLocked)
   ;
-  (UIUtil.SetTopStatus)(self, self.OnClickSectorLevelDetailBackBtn, {stageCfg.cost_strength_id})
+  (((((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.OnClickSectorLevelDetailBackBtn)):SetTopStatusResData({stageCfg.cost_strength_id})):SetTopStatusVisible(true)):PushTopStatusDataToBackStack()
 end
 
 UISectorLevelDetail.__InitNormalDetailNode = function(self, sectorId, stageCfg, isLocked)
   -- function num : 0_7 , upvalues : _ENV, SectorLevelDetailEnum
   self:CleanLastDetail()
   if self.isPushBack2Stack then
-    (UIUtil.PopFromBackStack)()
+    (UIUtil.PopFromBackStackByUiTab)(self)
   end
   ;
-  (UIUtil.SetTopStatus)(self, self.OnClickSectorLevelDetailBackBtn, {ConstGlobalItem.SKey})
+  (((((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.OnClickSectorLevelDetailBackBtn)):SetTopStatusResData({ConstGlobalItem.SKey})):SetTopStatusVisible(true)):PushTopStatusDataToBackStack()
   self.isPushBack2Stack = true
   self.stageId = sectorStageId
   self.stageCfg = stageCfg
@@ -175,27 +175,32 @@ UISectorLevelDetail.OnClickSectorLevelDetailBackBtn = function(self, toHome)
   end
 end
 
+UISectorLevelDetail.OnClickBack = function(self)
+  -- function num : 0_13 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UISectorLevelDetail.RefreshDtailNormalNode = function(self)
-  -- function num : 0_13
+  -- function num : 0_14
   if self.levelDetailNode ~= nil then
     (self.levelDetailNode):RefreshDtailNormalNode()
   end
 end
 
 UISectorLevelDetail.SetCloseWhenClickEmpty = function(self, flag)
-  -- function num : 0_14
+  -- function num : 0_15
   (((self.ui).btn_Close).gameObject):SetActive(flag)
 end
 
 UISectorLevelDetail.OnShow = function(self)
-  -- function num : 0_15 , upvalues : base
+  -- function num : 0_16 , upvalues : base
   (base.OnShow)(self)
   ;
   (self.levelDetailNode):OnShow()
 end
 
 UISectorLevelDetail.OnHide = function(self)
-  -- function num : 0_16
+  -- function num : 0_17
   (self.levelDetailNode):OnHide()
   if self.hideEndEvent ~= nil then
     (self.hideEndEvent)()
@@ -203,7 +208,7 @@ UISectorLevelDetail.OnHide = function(self)
 end
 
 UISectorLevelDetail.GetBackgroundTexture = function(self, sectorId, challengeId, detailType)
-  -- function num : 0_17 , upvalues : _ENV
+  -- function num : 0_18 , upvalues : _ENV
   if self._tempSectorId == sectorId and self._tempStageId == challengeId and self._tempDetailType == self._tempDetailType then
     return 
   end
@@ -217,12 +222,12 @@ UISectorLevelDetail.GetBackgroundTexture = function(self, sectorId, challengeId,
 end
 
 UISectorLevelDetail.SetAdditionBuffList = function(self, buffList)
-  -- function num : 0_18
+  -- function num : 0_19
   (self.levelDetailNode):SetShowAdditionBuffList(buffList)
 end
 
 UISectorLevelDetail.SetActivityEndButCouldReview = function(self, isActivityRunning)
-  -- function num : 0_19
+  -- function num : 0_20
   -- DECOMPILER ERROR at PC2: Confused about usage of register: R2 in 'UnsetPending'
 
   (self.levelDetailNode).__couldNotStatrBattle = not isActivityRunning
@@ -231,22 +236,22 @@ UISectorLevelDetail.SetActivityEndButCouldReview = function(self, isActivityRunn
 end
 
 UISectorLevelDetail.SetDetailCustomEnterFmtCallback = function(self, callback)
-  -- function num : 0_20
+  -- function num : 0_21
   (self.levelDetailNode):SetDetailNodeCustomEnterFmtCallback(callback)
 end
 
 UISectorLevelDetail.SetDetailExBattleStartCallback = function(self, callback)
-  -- function num : 0_21
+  -- function num : 0_22
   (self.levelDetailNode):SetDetailNodeExBattleStartCallback(callback)
 end
 
 UISectorLevelDetail.SetDetailSelectCanEnterCallback = function(self, callback)
-  -- function num : 0_22
+  -- function num : 0_23
   (self.levelDetailNode):SetDetailNodeSelectCanEnterCallback(callback)
 end
 
 UISectorLevelDetail.OnDelete = function(self)
-  -- function num : 0_23 , upvalues : base
+  -- function num : 0_24 , upvalues : base
   (self.levelDetailNode):Delete()
   if self.resloader ~= nil then
     (self.resloader):Put2Pool()

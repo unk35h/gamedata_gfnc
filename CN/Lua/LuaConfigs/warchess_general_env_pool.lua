@@ -10,6 +10,12 @@ local warchess_general_env_pool = {
 {id = 4}
 , 
 {id = 5}
+, 
+{id = 6}
+, 
+{id = 7}
+, 
+{id = 8}
 }
 local __default_values = {id = 1, strategy_id = 0}
 local base = {__index = __default_values, __newindex = function()

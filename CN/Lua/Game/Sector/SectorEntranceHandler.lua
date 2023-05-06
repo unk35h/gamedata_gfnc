@@ -119,7 +119,15 @@ SectorEntranceHandler.TrySpecialExitSeason = function(lastWCS, successCallback)
             return Winter23Ctrl:TryEnterWT23Season(seasonId, successCallback)
           end
         end
-        return false
+        do
+          if actType == (ActivityFrameEnum.eActivityType).Season then
+            local sesonCtrl = ControllerManager:GetController(ControllerTypeId.ActivitySeason)
+            if sesonCtrl ~= nil then
+              return sesonCtrl:OpenSeason(actId, true, successCallback)
+            end
+          end
+          return false
+        end
       end
     end
   end

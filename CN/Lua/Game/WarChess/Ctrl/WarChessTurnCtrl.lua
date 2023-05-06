@@ -62,6 +62,8 @@ WarChessTurnCtrl.SendTurnOver = function(self)
     if isSucess then
       local roundNum = argList[1]
       self.turnNum = roundNum
+      ;
+      ((self.wcCtrl).mapCtrl):CleanCacheMonsterPower()
       MsgCenter:Broadcast(eMsgEventId.WC_TurnStart, self.turnNum)
       UIManager:ShowWindowAsync(UIWindowTypeID.WarChessNotice, function(window)
       -- function num : 0_7_0_0

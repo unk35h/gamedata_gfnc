@@ -229,6 +229,10 @@ local warchess_fx_res = {
 , 
 [30077] = {id = 30077, prefab_res = "FXP_lvzhou_lv2_end"}
 , 
+[30078] = {id = 30078, prefab_res = "FXP_baozha_0428"}
+, 
+[30079] = {id = 30079, prefab_res = "FXP_007_Arena_001_I_xuanshang"}
+, 
 [40001] = {id = 40001, prefab_res = "FXP_Monster_lv1"}
 , 
 [40002] = {id = 40002, prefab_res = "FXP_Monster_lv2"}
@@ -255,10 +259,11 @@ local base = {__index = __default_values, __newindex = function()
   error("Attempt to modify read-only table")
 end
 }
-for k,v in pairs(warchess_fx_res) do
-  setmetatable(v, base)
+for k,v in (_ENV.pairs)(warchess_fx_res) do
+  (_ENV.setmetatable)(v, base)
 end
 local __rawdata = {__basemetatable = base}
-setmetatable(warchess_fx_res, {__index = __rawdata})
+;
+(_ENV.setmetatable)(warchess_fx_res, {__index = __rawdata})
 return warchess_fx_res
 

@@ -56,6 +56,10 @@ local battle_skill_hurt_result_config = {
 {basehurt_formula = 9993, crit_formula = 10003, crithur_ratio = 10196, id = 27, lifesteal_formula = 0, spell_lifesteal_formula = 0}
 , 
 {basehurt_formula = 10127, def_formula = 0, id = 28, lifesteal_formula = 0, spell_lifesteal_formula = 0}
+, 
+{basehurt_formula = 106704, crit_formula = 9992, def_formula = 0, hit_formula = 9991, hurt_type = 0, id = 29, returndamage_formula = 1000}
+, 
+{basehurt_formula = 106702, def_formula = 0, hurt_type = 0, id = 30}
 }
 local __default_values = {basehurt_formula = 3010, correct_formula = 9989, crit_formula = 0, crithur_ratio = 9995, def_formula = 9996, hit_formula = 0, hurt_type = -1, id = 1, lifesteal_formula = 1001, minhurt_formula = 9994, returndamage_formula = 0, spell_lifesteal_formula = 1002}
 local base = {__index = __default_values, __newindex = function()

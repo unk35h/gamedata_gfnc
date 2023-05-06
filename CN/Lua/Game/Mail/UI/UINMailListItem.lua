@@ -32,32 +32,43 @@ UINMailListItem.InitMailItem = function(self, mailData)
     ((self.ui).tex_Time):SetIndex(0, tostring(num))
   else
     do
-      ;
-      ((self.ui).tex_Time):SetIndex(1)
-      local mailState = mailData:GetState()
-      if mailState == (MailEnum.eMailDetailType).None then
-        ((self.ui).img_IsRead):SetIndex(0)
-        -- DECOMPILER ERROR at PC44: Confused about usage of register: R4 in 'UnsetPending'
-
+      if time == 0 and mailData.isTreasure then
+        local ymd, hm = mailData:GetTime()
         ;
-        ((self.ui).canvasGroup).alpha = 1
+        ((self.ui).tex_Time):SetIndex(2, ymd, hm)
       else
-        ;
-        ((self.ui).img_IsRead):SetIndex(1)
-        -- DECOMPILER ERROR at PC61: Confused about usage of register: R4 in 'UnsetPending'
-
-        ;
-        ((self.ui).canvasGroup).alpha = (self.mailData).isSelected and 1 or 0.35
-      end
-      local isHaveAtt, attDic, isPicked = mailData:IsHaveAtt()
-      ;
-      (((self.ui).img_HasReward).gameObject):SetActive(isHaveAtt)
-      if isHaveAtt then
-        if isPicked then
-          ((self.ui).img_HasReward):SetIndex(1)
-        else
+        do
           ;
-          ((self.ui).img_HasReward):SetIndex(0)
+          ((self.ui).tex_Time):SetIndex(1)
+          local mailState = mailData:GetState()
+          if mailState == (MailEnum.eMailDetailType).None then
+            ((self.ui).img_IsRead):SetIndex(0)
+            -- DECOMPILER ERROR at PC59: Confused about usage of register: R4 in 'UnsetPending'
+
+            ;
+            ((self.ui).canvasGroup).alpha = 1
+          else
+            ;
+            ((self.ui).img_IsRead):SetIndex(1)
+            -- DECOMPILER ERROR at PC76: Confused about usage of register: R4 in 'UnsetPending'
+
+            ;
+            ((self.ui).canvasGroup).alpha = (self.mailData).isSelected and 1 or 0.35
+          end
+          local isTreasure = mailData:GetIsTreasure()
+          ;
+          ((self.ui).img_Collect):SetActive(isTreasure)
+          local isHaveAtt, attDic, isPicked = mailData:IsHaveAtt()
+          ;
+          (((self.ui).img_HasReward).gameObject):SetActive(isHaveAtt)
+          if isHaveAtt then
+            if isPicked then
+              ((self.ui).img_HasReward):SetIndex(1)
+            else
+              ;
+              ((self.ui).img_HasReward):SetIndex(0)
+            end
+          end
         end
       end
     end

@@ -10,7 +10,6 @@ local __rt_7 = {"1", "7", "2", "3", "4", "5", "6"}
 local __rt_8 = {267678, 267678, 284979, 189171, 189171, 298723, 323367}
 local __rt_9 = {"1", "2", "3", "4", "5", "6", "7"}
 local __rt_10 = {"1", "2", "3", "4", "5", "6", "7", "8", "9"}
-local __rt_11 = {382039, 414224, 255226, 287873, 249929, 248957, 277469, 343914, 211034}
 local tips = {
 {content = __rt_1, path = "weekly", title = __rt_2}
 , 
@@ -144,7 +143,11 @@ title = {349607, 284394}
 title = {50924, 520278, 101590, 175251, 67528, 299484}
 }
 , 
-{content = __rt_10, id = 30, path = "activity_winter23_season", title = __rt_11}
+{
+content = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"}
+, id = 30, path = "activity_winter23_season", 
+title = {382039, 414224, 255226, 287873, 249929, 248957, 277469, 343914, 211034, 508672}
+}
 , 
 {content = __rt_1, id = 31, path = "towerDefence_brief", 
 title = {298822, 509175}
@@ -194,9 +197,19 @@ title = {193321, 436175, 478392, 29774, 189171}
 title = {130622}
 }
 , 
-{content = __rt_10, id = 43, path = "activity_christmas_season", title = __rt_11}
+{content = __rt_10, id = 43, path = "activity_christmas_season", 
+title = {382039, 414224, 255226, 287873, 249929, 248957, 277469, 343914, 211034}
+}
 , 
 {content = __rt_7, id = 44, path = "activity_carnival22_replication"}
+, 
+{content = __rt_9, id = 45, path = "activity_season_01", 
+title = {193321, 107980, 101590, 57318, 412892, 73764, 189171}
+}
+, 
+{id = 46, path = "monster_skill", 
+title = {508672}
+}
 }
 local __default_values = {content = __rt_3, guide_vedio = false, id = 1, path = "level", title = __rt_8}
 local base = {__index = __default_values, __newindex = function()

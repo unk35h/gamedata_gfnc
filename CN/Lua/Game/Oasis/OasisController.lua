@@ -1293,7 +1293,7 @@ OasisController.OnFingerTap = function(self, leanFinger)
     return 
   end
   if self.__oasisState == (OasisEnum.OasisState).SkyControl and not leanFinger.StartedOverGui and not leanFinger.IsOverGui then
-    (UIUtil.OnClickBack)()
+    (UIUtil.OnClickBackByUiTab)(self)
     return 
   end
   if leanFinger.StartedOverGui or leanFinger.IsOverGui or self.__inputMode == InputMode.None then

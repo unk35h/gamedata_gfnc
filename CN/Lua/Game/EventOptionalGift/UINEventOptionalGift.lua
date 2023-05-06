@@ -63,7 +63,7 @@ UINEventOptionalGift.RefreshOptionalGift = function(self)
 end
 
 UINEventOptionalGift.__RefreshSouldState = function(self)
-  -- function num : 0_3
+  -- function num : 0_3 , upvalues : _ENV
   local soldOut = (self._giftInfo):IsSoldOut()
   ;
   ((self.ui).img_SoldOut):SetActive(soldOut)
@@ -75,6 +75,15 @@ UINEventOptionalGift.__RefreshSouldState = function(self)
 
   ;
   ((self.ui).reward).alpha = soldOut and 0.7 or 1
+  local isLimit, times, limitTimes = (self._giftInfo):GetLimitBuyCount()
+  if isLimit then
+    ((self.ui).tex_Times):SetIndex(0, tostring(limitTimes - times))
+  else
+    -- DECOMPILER ERROR at PC54: Confused about usage of register: R5 in 'UnsetPending'
+
+    ;
+    (((self.ui).tex_Times).text).text = nil
+  end
 end
 
 UINEventOptionalGift.__OnSelectCustom = function(self, index, item)

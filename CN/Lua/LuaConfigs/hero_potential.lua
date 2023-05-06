@@ -1186,6 +1186,22 @@ local hero_potential = {
 ; 
 [0] = {algorithm_space = __rt_51, atrDic = __rt_77, cost = __rt_78, hero_id = 1066, magic_pen = __rt_77}
 }
+, 
+[1067] = {
+{algorithm_space = __rt_55, atrDic = __rt_56, cost = __rt_57, extra = __rt_58, hero_id = 1067, level_max = 20, magic_pen = __rt_56, potential_level = 1}
+, 
+{algorithm_space = __rt_59, atrDic = __rt_60, cost = __rt_61, extra = __rt_62, hero_id = 1067, level_max = 30, magic_pen = __rt_60, potential_level = 2}
+, 
+{algorithm_space = __rt_63, atrDic = __rt_64, cost = __rt_65, extra = __rt_66, hero_id = 1067, level_max = 40, magic_pen = __rt_64, potential_level = 3}
+, 
+{algorithm_space = __rt_67, atrDic = __rt_68, cost = __rt_69, extra = __rt_70, hero_id = 1067, level_max = 50, magic_pen = __rt_68, potential_level = 4}
+, 
+{algorithm_space = __rt_71, atrDic = __rt_72, cost = __rt_73, extra = __rt_74, hero_id = 1067, level_max = 60, magic_pen = __rt_72, potential_level = 5}
+, 
+{algorithm_space = __rt_71, atrDic = __rt_75, cost = __rt_130, extra = __rt_76, hero_id = 1067, level_max = 70, magic_pen = __rt_75, potential_level = 6}
+; 
+[0] = {algorithm_space = __rt_51, atrDic = __rt_52, cost = __rt_53, extra = __rt_54, hero_id = 1067, magic_pen = __rt_52}
+}
 }
 local __default_values = {algorithm_space = __rt_45, atrDic = __rt_27, cost = __rt_47, extra = __rt_4, hero_id = 1001, level_max = 10, magic_pen = __rt_27, potential_level = 0}
 local base = {__index = __default_values, __newindex = function()

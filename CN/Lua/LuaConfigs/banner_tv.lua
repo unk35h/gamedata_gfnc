@@ -7,9 +7,10 @@ local __rt_4 = {2}
 local __rt_5 = {4}
 local __rt_6 = {5}
 local __rt_7 = {20001}
-local __rt_8 = {106}
-local __rt_9 = {102}
-local __rt_10 = {107}
+local __rt_8 = {105}
+local __rt_9 = {106}
+local __rt_10 = {102}
+local __rt_11 = {107}
 local banner_tv = {
 {
 [0] = {jump_id = 0, type_id = 1}
@@ -180,6 +181,18 @@ jump_arg = {17002}
 , 
 [47] = {extra_id = 47, 
 jump_arg = {10015}
+, jump_id = 109, type_id = 2}
+, 
+[48] = {extra_id = 48, 
+jump_arg = {10016}
+, jump_id = 109, type_id = 2}
+, 
+[49] = {extra_id = 49, 
+jump_arg = {31001}
+, jump_id = 109, type_id = 2}
+, 
+[50] = {extra_id = 50, 
+jump_arg = {23002}
 , jump_id = 109, type_id = 2}
 }
 , 
@@ -519,6 +532,22 @@ jump_arg = {90}
 {extra_id = 84, 
 jump_arg = {89}
 }
+, 
+{extra_id = 85, 
+jump_arg = {92}
+}
+, 
+{extra_id = 86, 
+jump_arg = {93}
+}
+, 
+{extra_id = 87, 
+jump_arg = {95}
+}
+, 
+{extra_id = 88, 
+jump_arg = {94}
+}
 ; 
 [0] = {}
 }
@@ -560,21 +589,19 @@ jump_arg = {701}
 jump_arg = {104}
 , jump_id = 105, type_id = 8}
 , 
-{extra_id = 8, 
-jump_arg = {105}
-, jump_id = 105, type_id = 8}
+{extra_id = 8, jump_arg = __rt_8, jump_id = 105, type_id = 8}
 , 
-{extra_id = 9, jump_arg = __rt_8, jump_id = 105, type_id = 8}
+{extra_id = 9, jump_arg = __rt_9, jump_id = 105, type_id = 8}
 , 
-{extra_id = 10, jump_arg = __rt_9, jump_id = 105, type_id = 8}
+{extra_id = 10, jump_arg = __rt_10, jump_id = 105, type_id = 8}
 , 
-{extra_id = 11, jump_arg = __rt_10, jump_id = 105, type_id = 8}
+{extra_id = 11, jump_arg = __rt_11, jump_id = 105, type_id = 8}
 , 
 {extra_id = 12, 
 jump_arg = {108}
 , jump_id = 105, type_id = 8}
 , 
-{extra_id = 13, jump_arg = __rt_9, jump_id = 105, type_id = 8}
+{extra_id = 13, jump_arg = __rt_10, jump_id = 105, type_id = 8}
 , 
 {extra_id = 14, 
 jump_arg = {109}
@@ -608,13 +635,15 @@ jump_arg = {113}
 jump_arg = {114}
 , jump_id = 105, type_id = 8}
 , 
-{extra_id = 22, jump_arg = __rt_8, jump_id = 105, type_id = 8}
+{extra_id = 22, jump_arg = __rt_9, jump_id = 105, type_id = 8}
 , 
 {extra_id = 23, 
 jump_arg = {115}
 , jump_id = 105, type_id = 8}
 , 
-{extra_id = 24, jump_arg = __rt_10, jump_id = 105, type_id = 8}
+{extra_id = 24, jump_arg = __rt_11, jump_id = 105, type_id = 8}
+, 
+{extra_id = 25, jump_arg = __rt_8, jump_id = 105, type_id = 8}
 ; 
 [0] = {jump_id = 105, type_id = 8}
 }
@@ -770,6 +799,10 @@ jump_arg = {1018}
 , 
 {extra_id = 32, 
 jump_arg = {1019}
+, jump_id = 109, type_id = 14}
+, 
+{extra_id = 33, 
+jump_arg = {1020}
 , jump_id = 109, type_id = 14}
 ; 
 [0] = {jump_id = 109, type_id = 14}

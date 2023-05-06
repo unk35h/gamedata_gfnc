@@ -117,7 +117,7 @@ end
 
 UIEpRewardPreview._OnCloseClick = function(self)
   -- function num : 0_6 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIEpRewardPreview.OnDelete = function(self)

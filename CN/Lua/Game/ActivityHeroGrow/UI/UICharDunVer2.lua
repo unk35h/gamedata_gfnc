@@ -8,6 +8,7 @@ local SectorEnum = require("Game.Sector.SectorEnum")
 local SectorStageDetailHelper = require("Game.Sector.SectorStageDetailHelper")
 local HeroCubismInteration = require("Game.Hero.Live2D.HeroCubismInteration")
 local ActivityCharDunConfig = require("Game.ActivityHeroGrow.ActivityCharDunConfig")
+local emptyString = ""
 UICharDunVer2.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, cs_ResLoader
   (UIUtil.SetTopStatus)(self, self.OnCloseSelf)
@@ -25,6 +26,7 @@ UICharDunVer2.OnInit = function(self)
   self.__RefreshChallengeBtnStateEvent = BindCallback(self, self.__RefreshChallengeBtnState)
   MsgCenter:AddListener(eMsgEventId.HeroGrowActivityUpdate, self.__RefreshChallengeBtnStateEvent)
   MsgCenter:AddListener(eMsgEventId.HeroGrowActivityTimePass, self.__RefreshChallengeBtnStateEvent)
+  MsgCenter:AddListener(eMsgEventId.HeroGrowActivityRunEnd, self.__RefreshChallengeBtnStateEvent)
   self.__RefreshLvBtnStateCallback = BindCallback(self, self.__RefreshLvBtnState)
   MsgCenter:AddListener(eMsgEventId.UpdateItem, self.__RefreshLvBtnStateCallback)
   self.__RefreshTaskBtnStateCallback = BindCallback(self, self.__RefreshTaskBtnState)
@@ -112,7 +114,7 @@ UICharDunVer2.OnShowCharacterDungeonUI = function(self)
 end
 
 UICharDunVer2.__ReplaceByUICfg = function(self)
-  -- function num : 0_6 , upvalues : _ENV
+  -- function num : 0_6 , upvalues : _ENV, emptyString
   local uiCfg = (ConfigData.activity_hero_ui_config)[(self._heroGrowAct):GetActId()]
   local atlasPath = PathConsts:GetSpriteAtlasPath("CharDunVer2Icon")
   ;
@@ -268,6 +270,20 @@ UICharDunVer2.__ReplaceByUICfg = function(self)
 
           ;
           (((self.ui).Img_Down).transform).sizeDelta = (Vector2.Temp)((uiCfg.main_down_size)[1], (uiCfg.main_down_size)[2])
+        end
+        do
+          if uiCfg.animation_prefab ~= nil and uiCfg.animation_prefab ~= emptyString then
+            local nameResPath = PathConsts:GetCharDunPrefabPath(uiCfg.animation_prefab)
+            ;
+            (self._resloader):LoadABAssetAsync(nameResPath, function(prefab)
+    -- function num : 0_6_5 , upvalues : _ENV, self
+    if IsNull(prefab) or IsNull(self.transform) then
+      return 
+    end
+    local go = prefab:Instantiate((self.ui).obj_AnimationHolder)
+  end
+)
+          end
         end
       end
     end
@@ -559,6 +575,7 @@ UICharDunVer2.OnDelete = function(self)
   MsgCenter:RemoveListener(eMsgEventId.HeroGrowActivityUpdate, self.__RefreshChallengeBtnStateEvent)
   MsgCenter:RemoveListener(eMsgEventId.HeroGrowActivityTimePass, self.__RefreshChallengeBtnStateEvent)
   MsgCenter:RemoveListener(eMsgEventId.HeroGrowActivityUpdate, self.__RefreshTaskBtnStateCallback)
+  MsgCenter:RemoveListener(eMsgEventId.HeroGrowActivityRunEnd, self.__RefreshChallengeBtnStateEvent)
   ;
   (base.OnDelete)(self)
 end

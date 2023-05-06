@@ -74,12 +74,16 @@ ultimate_reward_ids = {11, 400052, 5009, 410046, 721050}
 ultimate_reward_ids = {11, 400054, 5009, 410049, 721052}
 , version = 1, weekly_exp = 2250}
 , 
-{banner_skin = 306303, describe2 = 164084, id = 18, limit_reward_id = 8146, limit_reward_num = 1, preview_reward_ids = __rt_4, preview_reward_nums = __rt_5, senior_price = 100201, skin_coin_id = 1050, skin_coin_pay = 120, skin_coin_shop = 703, supply_price = 100204, ultimate_price = 100203, 
+{banner_skin = 306303, describe2 = 164084, id = 18, 
 ultimate_reward_ids = {11, 400056, 5009, 410051, 721054}
 , version = 1, weekly_exp = 2250}
 , 
 {banner_skin = 302605, describe2 = 409749, id = 19, limit_reward_id = 8146, limit_reward_num = 1, preview_reward_ids = __rt_4, preview_reward_nums = __rt_5, senior_price = 100205, skin_coin_id = 1050, skin_coin_pay = 119, skin_coin_shop = 703, supply_price = 100207, ultimate_price = 100206, 
 ultimate_reward_ids = {11, 400058, 5009, 410054, 721056}
+, version = 1, weekly_exp = 2250}
+, 
+{banner_skin = 305104, describe2 = 55340, id = 20, limit_reward_id = 8146, limit_reward_num = 1, preview_reward_ids = __rt_4, preview_reward_nums = __rt_5, senior_price = 100201, skin_coin_id = 1050, skin_coin_pay = 120, skin_coin_shop = 703, supply_price = 100204, ultimate_price = 100203, 
+ultimate_reward_ids = {11, 400060, 5009, 410055, 721057}
 , version = 1, weekly_exp = 2250}
 ; 
 [101] = {activeItemId = 1037, color = __rt_2, condition_para1 = 1037, 

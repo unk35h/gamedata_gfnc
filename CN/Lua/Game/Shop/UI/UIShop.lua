@@ -20,7 +20,7 @@ local UINTimeLimitShopBar = require("Game.ShopMain.UINTimeLimitShopBar")
 local UINRuleTouchShopBar = require("Game.ShopMain.UINRuleTouchShopBar")
 UIShop.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV, cs_Resloader, UINShopPageButtonList, UINShopTogs, ShopEnum, UINShopNormalGoodsList, UINShopHeroGoodsList, UINMonthCard, UINRecommeShop, UINShopNormalGiftList, UINShopNormalRechargeList, UINShopFntItemList, UINShopThemeSkinList, UINShopRefreshNode, UINSupportShopBar, UINTimeLimitShopBar, UINRuleTouchShopBar
-  (UIUtil.SetTopStatus)(self, self.OnReturnClicked, nil, nil, nil)
+  ((((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.OnReturnClicked)):SetTopStatusVisible(true)):PushTopStatusDataToBackStack()
   self.shopCtrl = ControllerManager:GetController(ControllerTypeId.Shop, true)
   self.resloader = (cs_Resloader.Create)()
   self.curSelectShopId = nil

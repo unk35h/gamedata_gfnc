@@ -12,7 +12,7 @@ UIPreviewSkin.OnInit = function(self)
   (((self.ui).img_Star).gameObject):SetActive(false)
   self.starList = {}
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_background, self, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_background, self, self.__OnClickClose)
 end
 
 UIPreviewSkin.OnShow = function(self)
@@ -34,13 +34,13 @@ UIPreviewSkin.ShowSkinPreview = function(self, skinId, heroStar, notSetBackFunc)
   self.skinId = skinId
   self.heroStar = heroStar
   if not notSetBackFunc then
-    (UIUtil.SetTopStatus)(self, self.__OnClickClose)
+    ((((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):SetTopStatusVisible(true)):PushTopStatusDataToBackStack()
   end
   local heroId = (self.skinCtrl):GetHeroId(skinId)
   local skinCfg = (ConfigData.skin)[skinId]
   local resModelCfg = (self.skinCtrl):GetResModel(heroId, skinCfg ~= nil and skinCfg.id or nil)
   local heroData = (PlayerDataCenter.heroDic)[heroId]
-  -- DECOMPILER ERROR at PC33: Confused about usage of register: R8 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC40: Confused about usage of register: R8 in 'UnsetPending'
 
   ;
   ((self.ui).tex_HeroName).text = heroData:GetName()
@@ -160,7 +160,7 @@ UIPreviewSkin.GenCoverJumpReturnCallback = function(self)
 
 end
 
-UIPreviewSkin.__OnClickClose = function(self)
+UIPreviewSkin.BackAction = function(self)
   -- function num : 0_7 , upvalues : waitRecorverNUM
   if waitRecorverNUM > 0 then
     self:__RecycleAllPic()
@@ -170,8 +170,13 @@ UIPreviewSkin.__OnClickClose = function(self)
   self:Delete()
 end
 
+UIPreviewSkin.__OnClickClose = function(self)
+  -- function num : 0_8 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIPreviewSkin.__RecycleAllPic = function(self)
-  -- function num : 0_8 , upvalues : _ENV, HeroCubismInteration
+  -- function num : 0_9 , upvalues : _ENV, HeroCubismInteration
   if self.Live2DResloader ~= nil then
     (self.Live2DResloader):Put2Pool()
     self.Live2DResloader = nil
@@ -195,7 +200,7 @@ UIPreviewSkin.__RecycleAllPic = function(self)
 end
 
 UIPreviewSkin.OnDelete = function(self)
-  -- function num : 0_9 , upvalues : base
+  -- function num : 0_10 , upvalues : base
   self:__RecycleAllPic()
   ;
   (base.OnDelete)(self)

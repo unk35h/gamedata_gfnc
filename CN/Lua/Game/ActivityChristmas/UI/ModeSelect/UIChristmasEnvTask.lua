@@ -7,16 +7,16 @@ UIChristmasEnvTask.OnInit = function(self)
   -- function num : 0_0 , upvalues : _ENV
   (UIUtil.SetTopStatus)(self, self.OnCloseTask, nil, nil, nil, true)
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Close, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Close, self, self.OnClickBack)
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_background, nil, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_background, self, self.OnClickBack)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_ReceiveAll, self, self.OnClickGetAllTask)
-  -- DECOMPILER ERROR at PC36: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC34: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.ui).loop_scroll).onInstantiateItem = BindCallback(self, self.__OnNewItem)
-  -- DECOMPILER ERROR at PC43: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC41: Confused about usage of register: R1 in 'UnsetPending'
 
   ;
   ((self.ui).loop_scroll).onChangeItem = BindCallback(self, self.__OnChangeItem)
@@ -163,13 +163,18 @@ UIChristmasEnvTask.__TaskProcessUpdate = function(self, taskData)
   end
 end
 
+UIChristmasEnvTask.OnClickBack = function(self)
+  -- function num : 0_11 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIChristmasEnvTask.OnCloseTask = function(self)
-  -- function num : 0_11
+  -- function num : 0_12
   self:Delete()
 end
 
 UIChristmasEnvTask.OnDelete = function(self)
-  -- function num : 0_12 , upvalues : _ENV, base
+  -- function num : 0_13 , upvalues : _ENV, base
   MsgCenter:RemoveListener(eMsgEventId.TaskUpdate, self.__TaskChangeCallback)
   ;
   (base.OnDelete)(self)

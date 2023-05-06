@@ -53,7 +53,7 @@ end
 
 UINAthListSort._OnClickBg = function(self)
   -- function num : 0_4 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
   ;
   (self.athListRoot):ChangeAthListSort(self.curKindType, self.curKindValue, self.curName)
 end

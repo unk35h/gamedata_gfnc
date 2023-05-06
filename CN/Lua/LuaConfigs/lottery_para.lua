@@ -62,25 +62,30 @@ local __rt_59 = {2052}
 local __rt_60 = {[1051] = true}
 local __rt_61 = {[2551] = 30}
 local __rt_62 = {2051}
-local __rt_63 = {[1053] = true}
-local __rt_64 = {[2553] = 30}
-local __rt_65 = {2053}
-local __rt_66 = {[1055] = true}
-local __rt_67 = {[2555] = 30}
-local __rt_68 = {2055}
-local __rt_69 = {0, 1, 5, 50}
-local __rt_70 = {0, 666, 0, 129, 0, 14}
-local __rt_71 = {0, 0, 0, 0, 0, 5000}
-local __rt_72 = {[1057] = true}
-local __rt_73 = {[2557] = 30}
-local __rt_74 = {2057}
-local __rt_75 = {[1058] = true}
-local __rt_76 = {[2558] = 30}
-local __rt_77 = {2058}
-local __rt_78 = {100051}
-local __rt_79 = {[1065] = true}
-local __rt_80 = {[2565] = 30}
-local __rt_81 = {2065}
+local __rt_63 = {[1050] = true}
+local __rt_64 = {[2550] = 30}
+local __rt_65 = {2050}
+local __rt_66 = {[1053] = true}
+local __rt_67 = {[2553] = 30}
+local __rt_68 = {2053}
+local __rt_69 = {[1055] = true}
+local __rt_70 = {[2555] = 30}
+local __rt_71 = {2055}
+local __rt_72 = {0, 1, 5, 50}
+local __rt_73 = {0, 666, 0, 129, 0, 14}
+local __rt_74 = {0, 0, 0, 0, 0, 5000}
+local __rt_75 = {[1057] = true}
+local __rt_76 = {[2557] = 30}
+local __rt_77 = {2057}
+local __rt_78 = {[1058] = true}
+local __rt_79 = {[2558] = 30}
+local __rt_80 = {2058}
+local __rt_81 = {100051}
+local __rt_82 = {[1065] = true}
+local __rt_83 = {[2565] = 30}
+local __rt_84 = {2065}
+local __rt_85 = {15, 6, 207}
+local __rt_86 = {221, 220, 6}
 local lottery_para = {
 {bg_path = "Lottery_Main_1", des1 = 74089, des2 = 364988, des3 = "", intro_des = 186139, is_pt = false, line = 995, name = 109204, name_path = "Lottery_Enter_1", nav_tag = 0, nav_tagIcon = 0, nav_tagName = "", 
 prob = {0, 653, 0, 129, 0, 13}
@@ -194,13 +199,7 @@ pt_rewardItemIdList = {2028}
 , 
 [41] = {bg_path = "Lottery_Main_33", costId1 = 1001, costId2 = 1001, costId3 = 0, costNum1 = 1500, costNum2 = 1500, costNum3 = 0, count_limit = 10, des1 = 359592, des2 = 231342, des3 = "", drawTypeDic = __rt_12, guaranteeNums = 0, guaranteeType = 0, is_guarantee = false, is_prompt = true, is_pt = false, line = 1, lottery_id = 41, prob = __rt_53, prob_in = __rt_3, prob_up = __rt_3, pt_rewardCostNumList = __rt_3, sp_time_show = "", title1 = 463393, title3 = ""}
 , 
-[42] = {bg_path = "Lottery_Main_34", des1 = 1547, 
-heroUpAllDic = {[1050] = true}
-, intro_des = 32994, line = 3, lottery_id = 42, name = 437478, name_path = "Lottery_Enter_30", 
-pt_first_reward = {[2550] = 30}
-, pt_mark = 2050, 
-pt_rewardItemIdList = {2050}
-}
+[42] = {bg_path = "Lottery_Main_34", des1 = 1547, heroUpAllDic = __rt_63, intro_des = 32994, line = 3, lottery_id = 42, name = 437478, name_path = "Lottery_Enter_30", pt_first_reward = __rt_64, pt_mark = 2050, pt_rewardItemIdList = __rt_65}
 , 
 [43] = {des1 = 230905, heroUpAllDic = __rt_28, intro_des = 81264, lottery_id = 43, name = 772, name_path = "Lottery_Enter_12", pt_first_reward = __rt_29, pt_mark = 2010, pt_rewardItemIdList = __rt_30}
 , 
@@ -208,7 +207,7 @@ pt_rewardItemIdList = {2050}
 , 
 [45] = {bg_path = "Lottery_Main_35", costId1 = 1001, costId2 = 1001, costId3 = 0, costNum1 = 1500, costNum2 = 1500, costNum3 = 0, count_limit = 10, des1 = 181581, des2 = 231342, des3 = "", drawTypeDic = __rt_12, guaranteeNums = 0, guaranteeType = 0, is_guarantee = false, is_prompt = true, is_pt = false, line = 1, lottery_id = 45, prob = __rt_53, prob_in = __rt_3, prob_up = __rt_3, pt_rewardCostNumList = __rt_3, sp_time_show = "", title1 = 463393, title3 = ""}
 , 
-[46] = {bg_path = "Lottery_Main_36", des1 = 287803, heroUpAllDic = __rt_63, intro_des = 96616, line = 3, lottery_id = 46, name = 303242, name_path = "Lottery_Enter_31", pt_first_reward = __rt_64, pt_mark = 2053, pt_rewardItemIdList = __rt_65}
+[46] = {bg_path = "Lottery_Main_36", des1 = 287803, heroUpAllDic = __rt_66, intro_des = 96616, line = 3, lottery_id = 46, name = 303242, name_path = "Lottery_Enter_31", pt_first_reward = __rt_67, pt_mark = 2053, pt_rewardItemIdList = __rt_68}
 , 
 [47] = {bg_path = "Lottery_Main_23", des1 = 328249, heroUpAllDic = __rt_50, intro_des = 279260, lottery_id = 47, name = 97809, name_path = "Lottery_Enter_23", pt_first_reward = __rt_51, pt_mark = 2048, pt_rewardItemIdList = __rt_52}
 , 
@@ -226,9 +225,9 @@ pt_rewardItemIdList = {2054}
 , 
 [51] = {bg_path = "Lottery_Main_6", des1 = 510217, heroUpAllDic = __rt_13, intro_des = 202508, line = 4, lottery_id = 51, name = 388618, name_path = "Lottery_Enter_6", prob_star = 200, pt_first_reward = __rt_14, pt_mark = 2022, pt_rewardItemIdList = __rt_15}
 , 
-[52] = {bg_path = "Lottery_Main_39", des1 = 508138, des2 = 344673, heroUpAllDic = __rt_66, intro_des = 498902, lottery_id = 52, name = 394895, name_path = "Lottery_Enter_33", nav_tagIcon = 4, nav_tagName = 384123, new_rule_reddot = 1, pt_first_reward = __rt_67, pt_mark = 2055, pt_rewardItemIdList = __rt_68}
+[52] = {bg_path = "Lottery_Main_39", des1 = 508138, des2 = 344673, heroUpAllDic = __rt_69, intro_des = 498902, lottery_id = 52, name = 394895, name_path = "Lottery_Enter_33", nav_tagIcon = 4, nav_tagName = 384123, new_rule_reddot = 1, pt_first_reward = __rt_70, pt_mark = 2055, pt_rewardItemIdList = __rt_71}
 , 
-[53] = {bg_path = "Lottery_Main_39", big_prize_extra_id = 2555, big_prize_extra_num = 40, change_rule = __rt_69, des1 = 483842, des2 = 446888, des3 = 204228, heroUpAllDic = __rt_66, intro_des = 498902, lottery_id = 53, name = 394895, name_path = "Lottery_Enter_33", nav_tagIcon = 4, nav_tagName = 384123, new_rule_reddot = 1, prob = __rt_70, prob_in = __rt_71, prob_star = 200, pt_first_reward = __rt_67, pt_mark = 2055, pt_rewardItemIdList = __rt_68, repeat_type = 1, title2 = 215841}
+[53] = {bg_path = "Lottery_Main_39", big_prize_extra_id = 2555, big_prize_extra_num = 40, change_rule = __rt_72, des1 = 483842, des2 = 446888, des3 = 204228, heroUpAllDic = __rt_69, intro_des = 498902, lottery_id = 53, name = 394895, name_path = "Lottery_Enter_33", nav_tagIcon = 4, nav_tagName = 384123, new_rule_reddot = 1, prob = __rt_73, prob_in = __rt_74, prob_star = 200, pt_first_reward = __rt_70, pt_mark = 2055, pt_rewardItemIdList = __rt_71, repeat_type = 1, title2 = 215841}
 , 
 [54] = {bg_path = "Lottery_Main_40", costId1 = 1001, costId2 = 1001, costId3 = 0, costNum1 = 1500, costNum2 = 1500, costNum3 = 0, count_limit = 10, des1 = 365800, des2 = 231342, des3 = "", drawTypeDic = __rt_12, guaranteeNums = 0, guaranteeType = 0, is_guarantee = false, is_prompt = true, is_pt = false, line = 1, lottery_id = 54, prob = __rt_53, prob_in = __rt_3, prob_up = __rt_3, pt_rewardCostNumList = __rt_3, sp_time_show = "", title1 = 463393, title3 = ""}
 , 
@@ -236,19 +235,19 @@ pt_rewardItemIdList = {2054}
 , 
 [56] = {des1 = 343843, heroUpAllDic = __rt_28, intro_des = 81264, line = 7, lottery_id = 56, name = 772, name_path = "Lottery_Enter_12", nav_tagIcon = 4, nav_tagName = 384123, new_rule_reddot = 1, pt_first_reward = __rt_29, pt_mark = 2010, pt_rewardItemIdList = __rt_30}
 , 
-[57] = {big_prize_extra_id = 2510, big_prize_extra_num = 40, change_rule = __rt_69, des1 = 453883, des2 = 446888, des3 = 204228, heroUpAllDic = __rt_28, intro_des = 81264, line = 7, lottery_id = 57, name = 772, name_path = "Lottery_Enter_12", nav_tagIcon = 4, nav_tagName = 384123, new_rule_reddot = 1, prob = __rt_70, prob_in = __rt_71, prob_star = 200, pt_first_reward = __rt_29, pt_mark = 2010, pt_rewardItemIdList = __rt_30, repeat_type = 1, title2 = 215841}
+[57] = {big_prize_extra_id = 2510, big_prize_extra_num = 40, change_rule = __rt_72, des1 = 453883, des2 = 446888, des3 = 204228, heroUpAllDic = __rt_28, intro_des = 81264, line = 7, lottery_id = 57, name = 772, name_path = "Lottery_Enter_12", nav_tagIcon = 4, nav_tagName = 384123, new_rule_reddot = 1, prob = __rt_73, prob_in = __rt_74, prob_star = 200, pt_first_reward = __rt_29, pt_mark = 2010, pt_rewardItemIdList = __rt_30, repeat_type = 1, title2 = 215841}
 , 
 [58] = {bg_path = "Lottery_Main_42", costId1 = 1001, costId2 = 1001, costId3 = 0, costNum1 = 1500, costNum2 = 1500, costNum3 = 0, count_limit = 10, des1 = 6256, des2 = 231342, des3 = "", drawTypeDic = __rt_12, guaranteeNums = 0, guaranteeType = 0, is_guarantee = false, is_prompt = true, is_pt = false, line = 1, lottery_id = 58, prob = __rt_53, prob_in = __rt_3, prob_up = __rt_3, pt_rewardCostNumList = __rt_3, sp_time_show = "", title1 = 463393, title3 = ""}
 , 
-[59] = {bg_path = "Lottery_Main_43", des1 = 479301, des2 = 344673, heroUpAllDic = __rt_72, intro_des = 128798, line = 4, lottery_id = 59, name = 43399, name_path = "Lottery_Enter_34", nav_tagIcon = 4, nav_tagName = 384123, new_rule_reddot = 1, pt_first_reward = __rt_73, pt_mark = 2057, pt_rewardItemIdList = __rt_74}
+[59] = {bg_path = "Lottery_Main_43", des1 = 479301, des2 = 344673, heroUpAllDic = __rt_75, intro_des = 128798, line = 4, lottery_id = 59, name = 43399, name_path = "Lottery_Enter_34", nav_tagIcon = 4, nav_tagName = 384123, new_rule_reddot = 1, pt_first_reward = __rt_76, pt_mark = 2057, pt_rewardItemIdList = __rt_77}
 , 
-[60] = {bg_path = "Lottery_Main_43", big_prize_extra_id = 2557, big_prize_extra_num = 40, change_rule = __rt_69, des1 = 455005, des2 = 446888, des3 = 204228, heroUpAllDic = __rt_72, intro_des = 128798, line = 4, lottery_id = 60, name = 43399, name_path = "Lottery_Enter_34", nav_tagIcon = 4, nav_tagName = 384123, new_rule_reddot = 1, prob = __rt_70, prob_in = __rt_71, prob_star = 200, pt_first_reward = __rt_73, pt_mark = 2057, pt_rewardItemIdList = __rt_74, repeat_type = 1, title2 = 215841}
+[60] = {bg_path = "Lottery_Main_43", big_prize_extra_id = 2557, big_prize_extra_num = 40, change_rule = __rt_72, des1 = 455005, des2 = 446888, des3 = 204228, heroUpAllDic = __rt_75, intro_des = 128798, line = 4, lottery_id = 60, name = 43399, name_path = "Lottery_Enter_34", nav_tagIcon = 4, nav_tagName = 384123, new_rule_reddot = 1, prob = __rt_73, prob_in = __rt_74, prob_star = 200, pt_first_reward = __rt_76, pt_mark = 2057, pt_rewardItemIdList = __rt_77, repeat_type = 1, title2 = 215841}
 , 
 [61] = {bg_path = "Lottery_Main_11", des1 = 180843, heroUpAllDic = __rt_25, intro_des = 443912, line = 6, lottery_id = 61, name = 135225, name_path = "Lottery_Enter_11", new_rule_reddot = 1, pt_first_reward = __rt_26, pt_mark = 2043, pt_rewardItemIdList = __rt_27}
 , 
-[63] = {bg_path = "Lottery_Main_Video_1", bg_type = 2, costIdTenPrior = 3009, costNumTenPrior = 1, des1 = 201443, des2 = 234043, des3 = 438877, guaranteeType = 2, heroUpAllDic = __rt_75, intro_des = 110130, line = 3, lottery_id = 63, name = 202980, name_path = "Lottery_Enter_35", nav_tagIcon = 5, nav_tagName = 26351, new_rule_reddot = 2, pt_first_reward = __rt_76, pt_mark = 2058, pt_rewardItemIdList = __rt_77, title1 = 56738}
+[63] = {bg_path = "Lottery_Main_Video_1", bg_type = 2, costIdTenPrior = 3009, costNumTenPrior = 1, des1 = 201443, des2 = 234043, des3 = 438877, guaranteeType = 2, heroUpAllDic = __rt_78, intro_des = 110130, line = 3, lottery_id = 63, name = 202980, name_path = "Lottery_Enter_35", nav_tagIcon = 5, nav_tagName = 26351, new_rule_reddot = 2, pt_first_reward = __rt_79, pt_mark = 2058, pt_rewardItemIdList = __rt_80, title1 = 56738}
 , 
-[64] = {bg_path = "Lottery_Main_Video_1", bg_type = 2, big_prize_extra_id = 2558, big_prize_extra_num = 40, change_rule = __rt_69, costIdTenPrior = 3009, costNumTenPrior = 1, des1 = 215163, des2 = 312561, des3 = 449810, guaranteeType = 2, heroUpAllDic = __rt_75, intro_des = 110130, line = 3, lottery_id = 64, name = 202980, name_path = "Lottery_Enter_35", nav_tagIcon = 5, nav_tagName = 26351, new_rule_reddot = 2, prob = __rt_70, prob_in = __rt_71, prob_star = 200, pt_first_reward = __rt_76, pt_mark = 2058, pt_rewardItemIdList = __rt_77, repeat_type = 1, title1 = 56738, title2 = 215841}
+[64] = {bg_path = "Lottery_Main_Video_1", bg_type = 2, big_prize_extra_id = 2558, big_prize_extra_num = 40, change_rule = __rt_72, costIdTenPrior = 3009, costNumTenPrior = 1, des1 = 215163, des2 = 312561, des3 = 449810, guaranteeType = 2, heroUpAllDic = __rt_78, intro_des = 110130, line = 3, lottery_id = 64, name = 202980, name_path = "Lottery_Enter_35", nav_tagIcon = 5, nav_tagName = 26351, new_rule_reddot = 2, prob = __rt_73, prob_in = __rt_74, prob_star = 200, pt_first_reward = __rt_79, pt_mark = 2058, pt_rewardItemIdList = __rt_80, repeat_type = 1, title1 = 56738, title2 = 215841}
 , 
 [65] = {bg_path = "Lottery_Main_15", des1 = 476840, heroUpAllDic = __rt_35, intro_des = 75088, lottery_id = 65, name = 235419, name_path = "Lottery_Enter_15", new_rule_reddot = 1, pt_first_reward = __rt_36, pt_mark = 2039, pt_rewardItemIdList = __rt_37}
 , 
@@ -266,7 +265,7 @@ pt_rewardItemIdList = {2059}
 , 
 [69] = {bg_path = "Lottery_Main_19", des1 = 482517, heroUpAllDic = __rt_41, intro_des = 340480, lottery_id = 69, name = 307086, name_path = "Lottery_Enter_18", pt_first_reward = __rt_42, pt_mark = 2045, pt_rewardItemIdList = __rt_43}
 , 
-[70] = {bg_path = "Lottery_Main_26", des1 = 302140, heroUpAllDic = __rt_54, intro_des = 407164, jump_arg = __rt_78, jump_id = 107, line = 4, lottery_id = 70, name = 245286, name_path = "Lottery_Enter_26", pt_first_reward = __rt_55, pt_mark = 2049, pt_rewardItemIdList = __rt_56}
+[70] = {bg_path = "Lottery_Main_26", des1 = 302140, heroUpAllDic = __rt_54, intro_des = 407164, jump_arg = __rt_81, jump_id = 107, line = 4, lottery_id = 70, name = 245286, name_path = "Lottery_Enter_26", pt_first_reward = __rt_55, pt_mark = 2049, pt_rewardItemIdList = __rt_56}
 , 
 [71] = {bg_path = "Lottery_Main_46", costId1 = 1001, costId2 = 1001, costId3 = 0, costNum1 = 1500, costNum2 = 1500, costNum3 = 0, count_limit = 10, des1 = 256106, des2 = 231342, des3 = "", drawTypeDic = __rt_12, guaranteeNums = 0, guaranteeType = 0, is_guarantee = false, is_prompt = true, is_pt = false, line = 1, lottery_id = 71, prob = __rt_53, prob_in = __rt_3, prob_up = __rt_3, pt_rewardCostNumList = __rt_3, sp_time_show = "", title1 = 463393, title3 = ""}
 , 
@@ -292,7 +291,7 @@ pt_first_reward = {[2561] = 30}
 pt_rewardItemIdList = {2061}
 }
 , 
-[77] = {bg_path = "Lottery_Main_43", des1 = 327846, des2 = 344673, heroUpAllDic = __rt_72, intro_des = 128798, line = 6, lottery_id = 77, name = 43399, name_path = "Lottery_Enter_34", pt_first_reward = __rt_73, pt_mark = 2057, pt_rewardItemIdList = __rt_74}
+[77] = {bg_path = "Lottery_Main_43", des1 = 327846, des2 = 344673, heroUpAllDic = __rt_75, intro_des = 128798, line = 6, lottery_id = 77, name = 43399, name_path = "Lottery_Enter_34", pt_first_reward = __rt_76, pt_mark = 2057, pt_rewardItemIdList = __rt_77}
 , 
 [78] = {bg_path = "Lottery_Main_16", des1 = 326740, heroUpAllDic = __rt_38, intro_des = 102068, 
 jump_arg = {100021}
@@ -310,7 +309,7 @@ pt_rewardItemIdList = {2062}
 , 
 [81] = {bg_path = "Lottery_Main_32", des1 = 408573, heroUpAllDic = __rt_60, intro_des = 112998, lottery_id = 81, name = 130360, name_path = "Lottery_Enter_29", pt_first_reward = __rt_61, pt_mark = 2051, pt_rewardItemIdList = __rt_62}
 , 
-[82] = {bg_path = "Lottery_Main_54", des1 = 123303, heroUpAllDic = __rt_66, intro_des = 31440, line = 6, lottery_id = 82, name = 394895, name_path = "Lottery_Enter_33", pt_first_reward = __rt_67, pt_mark = 2055, pt_rewardItemIdList = __rt_68}
+[82] = {bg_path = "Lottery_Main_54", des1 = 123303, heroUpAllDic = __rt_69, intro_des = 31440, line = 6, lottery_id = 82, name = 394895, name_path = "Lottery_Enter_33", pt_first_reward = __rt_70, pt_mark = 2055, pt_rewardItemIdList = __rt_71}
 , 
 [83] = {bg_path = "Lottery_Main_52", costId1 = 1001, costId2 = 1001, costId3 = 0, costNum1 = 1500, costNum2 = 1500, costNum3 = 0, count_limit = 10, des1 = 62936, des2 = 231342, des3 = "", drawTypeDic = __rt_12, guaranteeNums = 0, guaranteeType = 0, is_guarantee = false, is_prompt = true, is_pt = false, line = 1, lottery_id = 83, prob = __rt_53, prob_in = __rt_3, prob_up = __rt_3, pt_rewardCostNumList = __rt_3, sp_time_show = "", title1 = 463393, title3 = ""}
 , 
@@ -326,27 +325,45 @@ pt_rewardItemIdList = {2063}
 jump_arg = {100031}
 , jump_id = 107, lottery_id = 85, name = 510567, name_path = "Lottery_Enter_19", pt_first_reward = __rt_45, pt_mark = 2046, pt_rewardItemIdList = __rt_46}
 , 
-[86] = {bg_path = "Lottery_Main_55", costIdTenPrior = 3010, costNumTenPrior = 1, des1 = 170477, des2 = 234043, des3 = 438877, guaranteeType = 3, heroUpAllDic = __rt_79, intro_des = 104200, line = 3, lottery_id = 86, name = 40368, name_path = "Lottery_Enter_41", nav_tagIcon = 6, nav_tagName = 26351, new_rule_reddot = 2, pt_first_reward = __rt_80, pt_mark = 2065, pt_rewardItemIdList = __rt_81, title1 = 56738}
+[86] = {bg_path = "Lottery_Main_55", costIdTenPrior = 3010, costNumTenPrior = 1, des1 = 170477, des2 = 234043, des3 = 438877, guaranteeType = 3, heroUpAllDic = __rt_82, intro_des = 104200, line = 3, lottery_id = 86, name = 40368, name_path = "Lottery_Enter_41", nav_tagIcon = 6, nav_tagName = 26351, new_rule_reddot = 2, pt_first_reward = __rt_83, pt_mark = 2065, pt_rewardItemIdList = __rt_84, title1 = 56738}
 , 
-[87] = {bg_path = "Lottery_Main_55", big_prize_extra_id = 2565, big_prize_extra_num = 40, change_rule = __rt_69, costIdTenPrior = 3010, costNumTenPrior = 1, des1 = 364789, des2 = 312561, des3 = 449810, guaranteeType = 3, heroUpAllDic = __rt_79, intro_des = 104200, line = 3, lottery_id = 87, name = 40368, name_path = "Lottery_Enter_41", nav_tagIcon = 6, nav_tagName = 26351, new_rule_reddot = 2, prob = __rt_70, prob_in = __rt_71, prob_star = 200, pt_first_reward = __rt_80, pt_mark = 2065, pt_rewardItemIdList = __rt_81, repeat_type = 1, title1 = 56738, title2 = 215841}
+[87] = {bg_path = "Lottery_Main_55", big_prize_extra_id = 2565, big_prize_extra_num = 40, change_rule = __rt_72, costIdTenPrior = 3010, costNumTenPrior = 1, des1 = 364789, des2 = 312561, des3 = 449810, guaranteeType = 3, heroUpAllDic = __rt_82, intro_des = 104200, line = 3, lottery_id = 87, name = 40368, name_path = "Lottery_Enter_41", nav_tagIcon = 6, nav_tagName = 26351, new_rule_reddot = 2, prob = __rt_73, prob_in = __rt_74, prob_star = 200, pt_first_reward = __rt_83, pt_mark = 2065, pt_rewardItemIdList = __rt_84, repeat_type = 1, title1 = 56738, title2 = 215841}
 , 
-[88] = {bg_path = "Lottery_Main_26", des1 = 201251, heroUpAllDic = __rt_54, intro_des = 407164, jump_arg = __rt_78, jump_id = 107, line = 4, lottery_id = 88, name = 245286, name_path = "Lottery_Enter_26", pt_first_reward = __rt_55, pt_mark = 2049, pt_rewardItemIdList = __rt_56}
+[88] = {bg_path = "Lottery_Main_26", des1 = 201251, heroUpAllDic = __rt_54, intro_des = 407164, jump_arg = __rt_81, jump_id = 107, line = 4, lottery_id = 88, name = 245286, name_path = "Lottery_Enter_26", pt_first_reward = __rt_55, pt_mark = 2049, pt_rewardItemIdList = __rt_56}
 , 
-[89] = {bg_path = "Lottery_Main_36", des1 = 325164, heroUpAllDic = __rt_63, intro_des = 96616, 
+[89] = {bg_path = "Lottery_Main_36", des1 = 325164, heroUpAllDic = __rt_66, intro_des = 96616, 
 jump_arg = {100071}
-, jump_id = 107, line = 4, lottery_id = 89, name = 303242, name_path = "Lottery_Enter_31", pt_first_reward = __rt_64, pt_mark = 2053, pt_rewardItemIdList = __rt_65}
+, jump_id = 107, lottery_id = 89, name = 303242, name_path = "Lottery_Enter_31", pt_first_reward = __rt_67, pt_mark = 2053, pt_rewardItemIdList = __rt_68}
 , 
 [90] = {bg_path = "Lottery_Main_56", costId1 = 1001, costId2 = 1001, costId3 = 0, costNum1 = 1500, costNum2 = 1500, costNum3 = 0, count_limit = 10, des1 = 491915, des2 = 231342, des3 = "", drawTypeDic = __rt_12, guaranteeNums = 0, guaranteeType = 0, is_guarantee = false, is_prompt = true, is_pt = false, line = 1, lottery_id = 90, prob = __rt_31, prob_in = __rt_3, prob_up = __rt_3, pt_rewardCostNumList = __rt_3, sp_time_show = "", title1 = 463393, title3 = ""}
 , 
-[91] = {bg_path = "Lottery_Main_57", des1 = 481969, 
+[91] = {bg_path = "Lottery_Main_57", des1 = 481969, gift_id = __rt_85, 
 heroUpAllDic = {[1066] = true}
 , intro_des = 275302, line = 3, lottery_id = 91, name = 462209, name_path = "Lottery_Enter_42", 
 pt_first_reward = {[2566] = 30}
 , pt_mark = 2066, 
 pt_rewardItemIdList = {2066}
 }
+, 
+[92] = {bg_path = "Lottery_Main_34", des1 = 504086, gift_id = __rt_85, heroUpAllDic = __rt_63, intro_des = 32994, lottery_id = 92, name = 437478, name_path = "Lottery_Enter_30", pt_first_reward = __rt_64, pt_mark = 2050, pt_rewardItemIdList = __rt_65}
+, 
+[93] = {bg_path = "Lottery_Main_58", des1 = 426439, gift_id = __rt_86, 
+heroUpAllDic = {[1067] = true}
+, intro_des = 393310, line = 3, lottery_id = 93, name = 237420, name_path = "Lottery_Enter_43", 
+pt_first_reward = {[2567] = 30}
+, pt_mark = 2067, 
+pt_rewardItemIdList = {2067}
 }
-local __default_values = {bg1_path = "", bg_path = "Lottery_Main_12", bg_type = 1, big_prize_extra_id = 0, big_prize_extra_num = 0, cd = 0, change_rule = __rt_1, costId1 = 3001, costId2 = 3001, costId3 = 1001, costIdTenPrior = 0, costNum1 = 1, costNum2 = 10, costNum3 = 50, costNumTenPrior = 0, count_limit = 0, des1 = "", des2 = 151999, des3 = 193295, drawTypeDic = __rt_2, guaranteeNums = 60, guaranteeType = 1, heroUpAllDic = __rt_3, intro_avg = 0, intro_des = 381301, intro_path = "", is_guarantee = true, is_prompt = false, is_pt = true, jump_arg = __rt_3, jump_id = 0, line = 5, lottery_id = 1, name = 477438, name_path = "Lottery_Enter_5", nav_tag = 1, nav_tagIcon = 1, nav_tagName = 8625, new_rule_reddot = 0, pool_client_type = 1, pool_type = 1, prob = __rt_6, prob_in = __rt_7, prob_item = 0, prob_star = 360, prob_up = __rt_8, pt_first_reward = __rt_3, pt_mark = 0, pt_rewardCostNumList = __rt_10, pt_rewardItemIdList = __rt_3, repeat_type = 0, sp_time_show = 436816, special_up = 0, title1 = 53316, title2 = 272622, title3 = 323871, up_des = 299843, up_hero1_para = __rt_4, up_hero2_para = __rt_4, up_reward1 = 1026, up_reward2 = 1022, up_title = 174944}
+, 
+[94] = {bg_path = "Lottery_Main_59", costId1 = 1001, costId2 = 1001, costId3 = 0, costNum1 = 1500, costNum2 = 1500, costNum3 = 0, count_limit = 10, des1 = 313904, des2 = 231342, des3 = "", drawTypeDic = __rt_12, 
+gift_id = {221}
+, guaranteeNums = 0, guaranteeType = 0, is_guarantee = false, is_prompt = true, is_pt = false, line = 1, lottery_id = 94, prob = __rt_53, prob_in = __rt_3, prob_up = __rt_3, pt_rewardCostNumList = __rt_3, sp_time_show = "", title1 = 463393, title3 = ""}
+, 
+[95] = {bg_path = "Lottery_Main_28", des1 = 86392, gift_id = __rt_86, heroUpAllDic = __rt_57, intro_des = 469958, 
+jump_arg = {100061}
+, jump_id = 107, line = 4, lottery_id = 95, name = 306075, name_path = "Lottery_Enter_28", pt_first_reward = __rt_58, pt_mark = 2052, pt_rewardItemIdList = __rt_59}
+}
+local __default_values = {bg1_path = "", bg_path = "Lottery_Main_12", bg_type = 1, big_prize_extra_id = 0, big_prize_extra_num = 0, cd = 0, change_rule = __rt_1, costId1 = 3001, costId2 = 3001, costId3 = 1001, costIdTenPrior = 0, costNum1 = 1, costNum2 = 10, costNum3 = 50, costNumTenPrior = 0, count_limit = 0, des1 = "", des2 = 151999, des3 = 193295, drawTypeDic = __rt_2, gift_id = __rt_3, guaranteeNums = 60, guaranteeType = 1, heroUpAllDic = __rt_3, intro_avg = 0, intro_des = 381301, intro_path = "", is_guarantee = true, is_prompt = false, is_pt = true, jump_arg = __rt_3, jump_id = 0, line = 5, lottery_id = 1, name = 477438, name_path = "Lottery_Enter_5", nav_tag = 1, nav_tagIcon = 1, nav_tagName = 8625, new_rule_reddot = 0, pool_client_type = 1, pool_type = 1, prob = __rt_6, prob_in = __rt_7, prob_item = 0, prob_star = 360, prob_up = __rt_8, pt_first_reward = __rt_3, pt_mark = 0, pt_rewardCostNumList = __rt_10, pt_rewardItemIdList = __rt_3, repeat_type = 0, sp_time_show = 436816, special_up = 0, title1 = 53316, title2 = 272622, title3 = 323871, up_des = 299843, up_hero1_para = __rt_4, up_hero2_para = __rt_4, up_reward1 = 1026, up_reward2 = 1022, up_title = 174944}
 local base = {__index = __default_values, __newindex = function()
   -- function num : 0_0 , upvalues : _ENV
   error("Attempt to modify read-only table")

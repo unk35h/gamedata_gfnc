@@ -569,7 +569,7 @@ end
 
 UIFlappyBird.OnReturnClicked = function(self)
   -- function num : 0_40 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIFlappyBird.__ShowGuideNode = function(self)

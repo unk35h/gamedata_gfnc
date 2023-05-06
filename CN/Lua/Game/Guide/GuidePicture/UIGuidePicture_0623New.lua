@@ -10,9 +10,9 @@ UIGuidePicture_0623New.OnInit = function(self)
   ConfigData:LoadDynCfg(eDynConfigData.guide_describe)
   ConfigData:LoadDynCfg(eDynConfigData.tips)
   ;
-  (UIUtil.SetTopStatus)(self, self.OnBtnCloseClicked, nil, nil, nil, true)
+  (((UIUtil.CreateNewTopStatusData)(self)):SetTopStatusBackAction(self.BackAction)):PushTopStatusDataToBackStack()
   ;
-  (UIUtil.AddButtonListener)((self.ui).btn_Close, self, UIUtil.OnClickBack)
+  (UIUtil.AddButtonListener)((self.ui).btn_Close, self, self.OnBtnCloseClicked)
   ;
   (UIUtil.AddButtonListener)((self.ui).btn_Last, self, self.OnLastPageClicked)
   ;
@@ -119,7 +119,7 @@ UIGuidePicture_0623New.EnterCurrentGuidePage = function(self)
   ((self.ui).picList):SetPageIndex(self.curPageNum - 1)
 end
 
-UIGuidePicture_0623New.OnBtnCloseClicked = function(self)
+UIGuidePicture_0623New.BackAction = function(self)
   -- function num : 0_5
   if self.completeAction ~= nil then
     (self.completeAction)()
@@ -127,8 +127,13 @@ UIGuidePicture_0623New.OnBtnCloseClicked = function(self)
   self:Delete()
 end
 
+UIGuidePicture_0623New.OnBtnCloseClicked = function(self)
+  -- function num : 0_6 , upvalues : _ENV
+  (UIUtil.OnClickBackByUiTab)(self)
+end
+
 UIGuidePicture_0623New.OnLastPageClicked = function(self)
-  -- function num : 0_6
+  -- function num : 0_7
   if self.curPageNum <= 1 then
     return 
   end
@@ -137,7 +142,7 @@ UIGuidePicture_0623New.OnLastPageClicked = function(self)
 end
 
 UIGuidePicture_0623New.OnNextPageClicked = function(self)
-  -- function num : 0_7
+  -- function num : 0_8
   if self.pageCount <= self.curPageNum then
     return 
   end
@@ -147,7 +152,7 @@ UIGuidePicture_0623New.OnNextPageClicked = function(self)
 end
 
 UIGuidePicture_0623New._InitPagePointUI = function(self, pageIndex)
-  -- function num : 0_8 , upvalues : _ENV
+  -- function num : 0_9 , upvalues : _ENV
   local totalWidth = self._pointWidthUnit * self.pageCount
   -- DECOMPILER ERROR at PC10: Confused about usage of register: R3 in 'UnsetPending'
 
@@ -157,7 +162,7 @@ UIGuidePicture_0623New._InitPagePointUI = function(self, pageIndex)
 end
 
 UIGuidePicture_0623New.RefreshPagePointUI = function(self, pageIndex)
-  -- function num : 0_9 , upvalues : _ENV
+  -- function num : 0_10 , upvalues : _ENV
   local moveX = pageIndex * self._pointWidthUnit
   -- DECOMPILER ERROR at PC10: Confused about usage of register: R3 in 'UnsetPending'
 
@@ -166,7 +171,7 @@ UIGuidePicture_0623New.RefreshPagePointUI = function(self, pageIndex)
 end
 
 UIGuidePicture_0623New.OnDelete = function(self)
-  -- function num : 0_10 , upvalues : _ENV, eDynConfigData, base
+  -- function num : 0_11 , upvalues : _ENV, eDynConfigData, base
   ((self.ui).picList):onPageIndexChanged("-", self.__OnPageIndexChanged)
   ConfigData:ReleaseDynCfg(eDynConfigData.guide_describe)
   ConfigData:ReleaseDynCfg(eDynConfigData.tips)
@@ -175,7 +180,7 @@ UIGuidePicture_0623New.OnDelete = function(self)
 end
 
 UIGuidePicture_0623New.OnDeleteEntity = function(self)
-  -- function num : 0_11 , upvalues : cs_MovieManager, base
+  -- function num : 0_12 , upvalues : cs_MovieManager, base
   if self.resloader ~= nil then
     (self.resloader):Put2Pool()
     self.resloader = nil

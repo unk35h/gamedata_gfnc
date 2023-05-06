@@ -12,26 +12,36 @@ UINActivityKeyExertionTask.OnInit = function(self)
   (UIUtil.AddButtonListener)((self.ui).btn_Receive, self, self.OnClickConfirm)
 end
 
-UINActivityKeyExertionTask.InitActivityKeyExertionTask = function(self, taskId, rewardFunc)
+UINActivityKeyExertionTask.InitActivityKeyExertionTask = function(self, keyExertionData, rewardFunc)
   -- function num : 0_1 , upvalues : _ENV
-  self._taskId = taskId
+  self._data = keyExertionData
+  self._taskId = keyExertionData:GetKeyExertionCurrentTaskId()
   self._taskData = (PlayerDataCenter.allTaskData):GetTaskDataById(self._taskId, true)
   self._rewardFunc = rewardFunc
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R3 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC20: Confused about usage of register: R3 in 'UnsetPending'
 
   ;
   ((self.ui).tex_Tip).text = (LanguageUtil.GetLocaleText)(((self._taskData).stcData).task_intro)
   local firstRewardIds, _ = (self._taskData):GetTaskCfgRewards()
   local firstRewardCfg = (ConfigData.item)[firstRewardIds[1]]
   local itemName = (LanguageUtil.GetLocaleText)(firstRewardCfg.name)
-  -- DECOMPILER ERROR at PC35: Confused about usage of register: R7 in 'UnsetPending'
-
-  ;
-  ((self.ui).img_Reward).sprite = CRH:GetSpriteByItemId(firstRewardCfg.id)
   -- DECOMPILER ERROR at PC38: Confused about usage of register: R7 in 'UnsetPending'
 
   ;
+  ((self.ui).img_Reward).sprite = CRH:GetSpriteByItemId(firstRewardCfg.id)
+  -- DECOMPILER ERROR at PC41: Confused about usage of register: R7 in 'UnsetPending'
+
+  ;
   ((self.ui).tex_Name).text = itemName
+  local mainColor = (self._data):GetKeyExertionMainColor()
+  -- DECOMPILER ERROR at PC47: Confused about usage of register: R8 in 'UnsetPending'
+
+  ;
+  ((self.ui).img_Fill).color = mainColor
+  -- DECOMPILER ERROR at PC50: Confused about usage of register: R8 in 'UnsetPending'
+
+  ;
+  ((self.ui).img_Receive).color = mainColor
   self:RefreshKeyExertionTask()
 end
 

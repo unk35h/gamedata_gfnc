@@ -102,7 +102,7 @@ end
 
 UIEventBattlePassPurchase.OnBtnCloseClick = function(self)
   -- function num : 0_6 , upvalues : _ENV
-  (UIUtil.OnClickBack)()
+  (UIUtil.OnClickBackByUiTab)(self)
 end
 
 UIEventBattlePassPurchase.OnReturnClick = function(self)

@@ -2414,6 +2414,14 @@ local reward_purchase = {
 {id = 1206, item_price = 23809, stage_id = 13}
 , 
 {id = 1207, item_price = 0, stage_id = 1}
+, 
+{id = 1208, item_price = 12500, stage_id = 22}
+, 
+{id = 1209, item_price = 11111, stage_id = 23}
+, 
+{id = 1210, item_price = 10000, stage_id = 24}
+, 
+{id = 1211, item_price = 0, stage_id = 22}
 }
 local __default_values = {currency = 1007, id = 1, item_price = 1000000, stage_id = 5300}
 local base = {__index = __default_values, __newindex = function()
@@ -2740,6 +2748,12 @@ currencyIndexDic = {
 {currencyId = 1007, stageId = 1}
 , 
 {currencyId = 1007, stageId = 13}
+, 
+{currencyId = 1007, stageId = 22}
+, 
+{currencyId = 1007, stageId = 23}
+, 
+{currencyId = 1007, stageId = 24}
 }
 }
 , 
@@ -2822,6 +2836,10 @@ rewardPurchaseDic = {
 [4] = {1192, 1193, 1194, 1195, 1189, 1190, 1191}
 , 
 [5] = {1205, 1206}
+}
+, 
+[1064] = {
+[5] = {1208, 1209, 1210}
 }
 , 
 [1101] = {
@@ -2954,6 +2972,10 @@ rewardPurchaseDic = {
 [4] = {1196}
 , 
 [5] = {1207}
+}
+, 
+[1227] = {
+[5] = {1211}
 }
 , 
 [1501] = {
